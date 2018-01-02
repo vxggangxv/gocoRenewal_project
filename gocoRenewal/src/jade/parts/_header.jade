@@ -1,0 +1,75 @@
+header.rnL-header.clr.bsLs
+	block header
+		.rn-container
+			.d-box.clr
+				a.logo-a(href='/views')
+					img.l-img(src='http://img.go.co.kr/logo.png', alt='고코투어')
+				.schBox
+					// 키워드검색시 유사 상품 노출
+					span#schBor.schBor
+						input(type='text', tabindex='1', title='검색어', placeholder='어디로 떠나고 싶으신가요?', value='')
+					button.schBtn(type='submit', tabindex='2', title='검색')
+						span.c-ic.i-mag
+					.schEx
+						ul.ul1
+							li
+								a(href='#')
+									span.s1.thColor1 제주
+									span.s2.s-i-Arr.rArr
+									span.s3 데이즈호텔서귀포오션
+							li
+								a(href='#')
+									span.s1.thColor1 제주
+									span.s2.s-i-Arr.rArr
+									span.s3 더클라우트호텔
+							li
+								a(href='#')
+									span.s1.thColor1 제주
+									span.s2.s-i-Arr.rArr
+									span.s3 켄싱턴제주호텔
+							li
+								a(href='#')
+									span.s1.thColor1 제주
+									span.s2.s-i-Arr.rArr
+									span.s3 부영호텔&amp;리조제주
+							li
+								a(href='#')
+									span.s1.thColor1 제주
+									span.s2.s-i-Arr.rArr
+									span.s3 하워드존슨 호텔 제주서귀포하버
+							li
+								a(href='#')
+									span.s1.thColor1 제주
+									span.s2.s-i-Arr.rArr
+									span.s3 전체
+						.d-area
+							span.thColor1 고코투어 앱
+							| 을 통해 예약하면 
+							span.thColor1 3만원
+							|  쿠폰팩 즉시 지급! 
+							a.a1(href='#') 앱설치하기
+			
+				.dLink-box
+					// 새로운 이벤트 있을 경우 i-new 아이콘 추가
+					a(href='#')
+						| 이벤트 
+						span.i-new
+					span.mgl
+					a(href='#') 숙소 추천받기
+					span.mgl
+					a(href='#') 광고/입점 제휴문의
+			.flr-box
+				ul.rnL-nv.clr
+					li
+						a.myArea(href='/views/search')
+							span.c-ic.i-comp
+							|  내 주변
+					// 새로운 예약내역 있을 경우 i-new 아이콘 추가
+					li
+						a(href='#')
+							| 예약내역 
+							span.i-new
+					li
+						a(href='#') 마이페이지
+					li.last
+						a.lgn(href='#') 로그아웃

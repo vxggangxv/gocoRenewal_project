@@ -1,0 +1,473 @@
+//- 템플릿 상속 & 확장: extends, block
+extends parts/_docTemplate
+
+prepend stylesheets
+	//- link(rel="stylesheet", href="/static.go.co.kr/css/renew/libs/jquery.bxslider.css")
+	link(rel="stylesheet", href="/static/css/renew/libs/jquery.bxslider.css")
+
+append stylesheets
+	
+
+append scripts
+	script(src="/static/js/renew/libs/jquery.bxslider.min.js")
+	script(src="/static/js/renew" + initPage + "init.js")
+
+block contents
+	.rnM-mainDoor.bsLs
+		.rn-container
+			strong.main-text.ftfm-mg
+				span.s1 지금 예약한다면 슈퍼 그뤠잇!
+				span.s2 여행 가라고 등 떠미는 고코투어 특가!
+			#rn-schBox.rn-schBox.clr
+				h2.hidden 숙소검색
+				.rn-schInner.clr
+					.d1.d-cmm
+						p.p0 지역선택
+						p.p1.cm-s1
+							span.regName 서울
+							span.regDetail 강남구
+					.d2.d2-1.d-cmm
+						p.p0 체크인
+						p.p1.cm-s2 2017-10-11
+					.d2.d2-2.d-cmm
+						p.p0 체크아웃
+						p.p1.cm-s3 2017-10-11
+					.d3.d-cmm
+						p.p0 유형선택
+						p.p1.cm-s1 전체
+					.d4.d-cmm
+						p.p0 객실/인원 선택
+						p.p1.cm-s1
+							span.s1 객실 1&nbsp;
+							span.s2 성인 2명
+					.rnModal-sec
+						// 지역
+						.rnSltReg.rn-modal
+							.slt-dep1
+								ul.clr
+									li
+										a(href='javascript:;') 서울
+									li
+										a(href='javascript:;') 경기
+									li
+										a(href='javascript:;') 인천
+									li.on
+										a(href='javascript:;') 강원
+									li
+										a(href='javascript:;') 대전
+									li
+										a(href='javascript:;') 충북
+									li
+										a(href='javascript:;') 충남
+									li
+										a(href='javascript:;') 부산
+									li
+										a(href='javascript:;') 울산
+									li
+										a(href='javascript:;') 경남
+									li
+										a(href='javascript:;') 대구
+									li
+										a(href='javascript:;') 경북
+									li
+										a(href='javascript:;') 광주
+									li
+										a(href='javascript:;') 전남
+									li
+										a(href='javascript:;') 전북
+									li
+										a(href='javascript:;') 제주
+							.slt-dep2
+								ul.clr
+									li
+										a(href='javascript:;') 평창군
+									li
+										a(href='javascript:;') 강릉시
+									li
+										a(href='javascript:;') 춘천시
+									li
+										a(href='javascript:;') 양양군
+									li
+										a(href='javascript:;') 홍천군
+									li
+										a(href='javascript:;') 속초시
+									li
+										a(href='javascript:;') 횡성군
+									li
+										a(href='javascript:;') 고성군
+									li
+										a(href='javascript:;') 원주시
+									li
+										a(href='javascript:;') 영원군
+									li
+										a(href='javascript:;') 정선시
+									li
+										a(href='javascript:;') 동해시
+									li
+										a(href='javascript:;')
+									li
+										a(href='javascript:;')
+									li
+										a(href='javascript:;')
+									li
+										a(href='javascript:;')
+									li
+										a(href='javascript:;')
+						// 달력
+						.rnSltCal.rn-modal.clr
+							.cal-inner
+								p.p-1
+									a.prev-a(href='')
+									em 2017년 06월
+								table.cal-tb
+									thead
+										tr
+											th.sun 일
+											th 월
+											th 화
+											th 수
+											th 목
+											th 금
+											th.sat 토
+									tbody
+										tr
+											td.off
+												div
+											td.off
+												div
+											td.off
+												div
+											td.off
+												div
+											td.off
+												div 1
+											td.off
+												div 2
+											td.off
+												div 3
+										tr
+											td.off
+												div 4
+											td.off
+												div 5
+											td.off
+												div 6
+											td.off
+												div 7
+											td.off
+												div 8
+											td.off
+												div 9
+											td.off
+												div 10
+										tr
+											td.off
+												div 11
+											td.off
+												div 12
+											td.off
+												div 13
+											td.off
+												div 14
+											td.off
+												div 15
+											td.off
+												div 16
+											td.off
+												div 17
+										tr
+											td.off
+												div 18
+											td.off
+												div 19
+											td.off
+												div 20
+											td.off
+												div 21
+											td.off
+												div 22
+											td.off
+												div 23
+											td.off
+												div 24
+										tr
+											td.off
+												div 25
+											// 날짜 미선택시
+											//
+												<td><div>26</div></td>
+												<td><div>27</div></td>
+												<td><div>28</div></td>
+											// 날짜 선택시
+											td.chkIn
+												div
+													| 26
+													span.c-ic.i-chkIn
+											td.ing
+												div 27
+											td.chkOut
+												div
+													| 28
+													span.c-ic.i-chkOut
+											td
+												div 29
+											td
+												div 30
+											td
+												div
+										tr
+											td
+												div
+											td
+												div
+											td
+												div
+											td
+												div
+											td
+												div
+											td
+												div
+											td
+												div
+							.cal-inner
+								p.p-1
+									em 2017년 07월
+									a.next-a(href='javascript:;')
+								table.cal-tb
+									thead
+										tr
+											th.sun 일
+											th 월
+											th 화
+											th 수
+											th 목
+											th 금
+											th.sat 토
+									tbody
+										tr
+											td
+												div
+											td
+												div
+											td
+												div
+											td
+												div
+											td
+												div
+											td
+												div
+											td.sat
+												div 1
+										tr
+											td
+												div 2
+											td
+												div 3
+											td
+												div 4
+											td
+												div 5
+											td
+												div 6
+											td
+												div 7
+											td.sat
+												div 8
+										tr
+											td
+												div 9
+											td
+												div 10
+											td
+												div 11
+											td
+												div 12
+											td
+												div 13
+											td
+												div 14
+											td.sat
+												div 15
+										tr
+											td
+												div 16
+											td
+												div 17
+											td
+												div 18
+											td
+												div 19
+											td
+												div 20
+											td
+												div 21
+											td.sat
+												div 22
+										tr
+											td
+												div 23
+											td
+												div 24
+											td
+												div 25
+											td
+												div 26
+											td
+												div 27
+											td
+												div 28
+											td.sat
+												div 29
+							.clr
+							.d-area
+								a.a1(href='#')
+									span.c-ic.i-today
+									|  오늘 날짜로 변경
+								// 날짜 미선택시
+								// <a href="#" class="a2">선택완료</a>
+								// 날짜 선택시
+								a.a2.on(href='#') 선택완료
+						// 유형
+						.rnSltCtg.rn-modal
+							ul.ul1
+								li
+									a(href='javascript:;') 전체
+								li
+									a(href='javascript:;') 호텔
+								li
+									a(href='javascript:;') 리조트
+								li
+									a(href='javascript:;') 콘도
+								li
+									a(href='javascript:;') 레지던스
+								li
+									a(href='javascript:;') 모텔
+								li
+									a(href='javascript:;') 유스호스텔
+								li
+									a(href='javascript:;') 펜션
+								li
+									a(href='javascript:;') 카라반
+								li
+									a(href='javascript:;') 풀빌라
+								li
+									a(href='javascript:;') 입장권
+						// 객실/인원 선택
+						.rnSltNum.rn-modal
+							ul.ul1
+								li
+									span.s-lbl 객실
+									.quan.clr
+										span.s-l
+										// 숫자 증가시 on클래스 추가
+										input.inp.on(type='text', placeholder='0', value='1')
+										span.s-r
+								li
+									span.s-lbl 성인
+									.quan.clr
+										span.s-l
+										input.inp(type='text', placeholder='0')
+										span.s-r
+								li
+									span.s-lbl 소아
+									.quan.clr
+										span.s-l
+										input.inp(type='text', placeholder='0')
+										span.s-r
+				.rn-schBtn
+					button(type='button')
+						span.c-ic.i-mag
+						|  검색
+	.rnM-contents
+				.rn-container
+					.pic-sec.bsLs
+						ul.ul1.clr
+							li.li-1
+								a(href='javascript:;')
+									span.c-ic2
+									span.s-text 국내숙박
+							li.li-2
+								a(href='javascript:;')
+									span.c-ic2
+									span.s-text 입장권
+							li.li-3
+								a(href='javascript:;')
+									span.c-ic2
+									span.s-text 해외숙박
+							li.li-4
+								a(href='javascript:;')
+									span.c-ic2
+									span.s-text 해외입장권
+				.bn-sec
+					.rn-container
+						ul#bnSlider-1.bxSlider-1
+							li.li-1
+								img.bn-img(src='http://img.go.co.kr/renew/bn1_img.png', alt='고코투어모바일APP혜택')
+								.bn-contents
+									p.p1 모바일로 더 쉽고 편리하게!
+									p.p2
+										| 고코투어 모바일 
+										span.s1 APP
+									p.p3
+										| 이젠 고코투어를 더 쉽고 편하게 만나보세요!
+										br
+										| 								고코투어 앱으로 
+										span.f-bd 더 많은 혜택
+										| 을 누리자!
+									.d-store
+										a(href='#')
+											img(src='http://img.go.co.kr/renew/ggStoreBtn.png', alt='구글스토어')
+										a(href='#')
+											img(src='http://img.go.co.kr/renew/appStoreBtn.png', alt='앱스토어')
+							li.li-2
+								img.bn-img(src='http://img.go.co.kr/renew/bn2_img.png', alt='고코투어와함께하세요')
+								.bn-contents
+									p.p1
+										| 귀사에 
+										span.f-bd 예약서비스의 최고 경쟁력
+										| 을 드립니다.
+									p.p2
+										| 고코투어와 
+										span.s1 함께 하세요!
+									p.p3
+										| 고코투어는 여러 분야의 협력업체와 제휴를 통하여
+										br
+										| 								고객에게 보다 감각적이고 새로운 서비스를 제공합니다.
+									.d-btnArea
+										a.a1(href='#') 고고투어 광고 신청
+				.add-sec
+					.rn-container
+						ul.ul1.clr
+							li.clr
+								.d1
+									img(src='http://img.go.co.kr/renew/lowPrcImg.png', alt='온라인최저가 보장')
+								.d2
+									p.p1 온라인 최저가 보상
+									p.p2.ftfm-mg
+										| 동일한 숙박에 대해 더 저렴한
+										br
+										| 									요금을 발견하셨다면 고코투어가
+										br
+										| 									보상해드리겠습니다.
+							li.clr
+								.d1
+									img(src='http://img.go.co.kr/mobile/i_gc.png', alt='고코투어앱')
+								.d2.ftfm-mg
+									p.p1 무료 앱 다운로드
+									p.p2
+										| 이동 중에도 다양한 상품을 찾고
+										br
+										| 									푸짐한 혜택을 더 할 수 있습니다.
+							li.clr
+								.d1
+									img(src='http://img.go.co.kr/renew/secuImg.png', alt='보안예약')
+								.d2.ftfm-mg
+									p.p1 보안 예약
+									p.p2
+										| 암호화 기술을 사용하여
+										br
+										| 									고객님의 소중한 데이터를 안전하게
+										br
+										| 									보호합니다.

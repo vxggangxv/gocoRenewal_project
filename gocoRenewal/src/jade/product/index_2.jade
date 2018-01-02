@@ -1,0 +1,914 @@
+extends index
+
+block prd-tb
+    #prd-tb.tbody
+        .d-item
+            ul.tr
+                li.nth-1
+                    span.s-name 디럭스온돌들[그라운드뷰]
+                    span.c-ic3.i-iv
+                li.nth-2 2인 / 3인
+                li.nth-3
+                    s 330,000원
+                    span.orig-pric 94,000원~
+                li.nth-4
+                    s 94,000원
+                    span.spec-pric 89,000원~
+                    a.app-bk(href='javascript:;')
+                        | APP
+                        br
+                        | 예약
+            .tr-detail
+                ul.ul-step.type2.clr
+                    li.nth-1
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt STEP1 객실선택
+                        span.rightB
+                    li.nth-2
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt STEP2 패키지선택
+                        span.c-ic3.i-ivW(onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');")
+                        span.rightB
+                        .pop-layer
+                            h3
+                                | 패키지 안내
+                                a.close-a(href='javascript:;', onclick="$(this).closest('div').toggleClass('on');")
+                                    img(src='http://img.go.co.kr/mobile/my_close.png', alt='닫기')
+                            ul.ul-1.clr
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_1.png', alt='조식패키지')
+                                        p 조식 패키지
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_2.png', alt='바베큐 테이블')
+                                        p 바베큐 테이블
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_3.png', alt='전동 바이크')
+                                        p 전동 바이크
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_4.png', alt='조개잡이')
+                                        p 조개잡이
+                    li.nth-3
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt 패키지 안내
+                        span.rightB
+                .d-detail
+                    .rn-container.area-trd-comp
+                        .trd-comp-1
+                            .pdtCal
+                                p.p-1
+                                    a.prev-a.ic-lArrow(href='javascript:;')
+                                    | 2017년 10월
+                                    a.next-a.ic-rArrow(href='javascript:;')
+                                table.cal-tb
+                                    thead
+                                        tr
+                                            th.sun 일
+                                            th 월
+                                            th 화
+                                            th 수
+                                            th 목
+                                            th 금
+                                            th.sat 토
+                                    tbody
+                                        tr
+                                            td.off.sun
+                                                div
+                                            td.off
+                                                div
+                                            td.off
+                                                div
+                                            td.off
+                                                div
+                                            td.chkIn
+                                                div
+                                                    span.s-txt 1
+                                                    img.i-chkIn(src='http://img.go.co.kr/i_chkIn.png', alt='체크인')
+                                                    span.prc 52,000
+                                            td.chkOut
+                                                div
+                                                    span.s-txt 2
+                                                    img.i-chkIn(src='http://img.go.co.kr/renew/i_chkOut.png', alt='체크인')
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 3
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 4
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 5
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 6
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 7
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 8
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 9
+                                                    span.prc 52,000
+                                            td.sat.ddLine
+                                                div
+                                                    span.s-txt 10
+                                                    img.i-ddLine(src='http://img.go.co.kr/renew/i_ddLine.png', alt='예약마감')
+                                                    s.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 11
+                                                    span.prc 52,000
+                                            td.undef
+                                                div
+                                                    span.s-txt 12
+                                                    img.i-undef(src='http://img.go.co.kr/renew/i_undef.png', alt='예약마감')
+                                                    span.prc 0
+                                            td
+                                                div
+                                                    span.s-txt 13
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 14
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 15
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 16
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 17
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 18
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 19
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 20
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 21
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 22
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 23
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 24
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 25
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 26
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 27
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 28
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 29
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 30
+                                                    span.prc 52,000
+                                            td.off.sat
+                                                div
+                            .d-ps
+                                | 이용을 원하시는 날짜를 선택하시면 이용박수 선택이 가능합니다.
+                                br
+                                | 											달력에 표시된 요금은 세금 미포함 금액입니다.
+                            //
+                                <div class="area-slt">
+                                <div class="d1">
+                                <span class="s-lbl">객실</span>
+                                <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                <span class="s-lbl">성인</span>
+                                <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                <span class="s-lbl">소아</span>
+                                <select name="" id="">
+                                <option value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                </div>
+                                <div class="d2 clr">
+                                <span class="s-l">객실단품금액</span>
+                                <span class="s-r">94,000원</span>
+                                </div>
+                                </div>
+                        .trd-compX-2
+                            p.p-1
+                                span.s-lbl 투숙인원
+                                select.wd-1(name='', id='')
+                                    option(value='') 성인1
+                                span.s-txt 소아
+                                select.wd-1(name='', id='')
+                                    option(value='') 0
+                                    option(value='') 1
+                            p.p-2.f-bd
+                                | 기준인원 : 2명 / 최대인원 2명(1객실)
+                            p.p-3.dot
+                                | 기준 인원 초과 시 인원 추가 비용은 현장 결제
+                                br
+                                |    											부탁드립니다.
+                            p.p-3.dot
+                                | 최대인원 초과 시 입실이 불가능합니다.
+                            hr
+                            p.p-2.f-bd 객실/ 베트타입 선택
+                            p.p-1
+                                span.s-lbl 객실
+                                select.wd-1(name='', id='')
+                                    option(value='') 1
+                            p.p-1
+                                span.s-lbl 베드타입
+                                select.wd-2(name='', id='')
+                                    option(value='') 트윈[싱글+싱글]
+                            p.p-1
+                        .trd-compX-3
+                            ul.ul-tb
+                                li
+                                    span.s-lbl 객실명
+                                    span.s-txt 디럭스 온돌[그라운드뷰]
+                                li
+                                    span.s-lbl 베드타입
+                                    span.s-txt 트윈[싱글+싱글]
+                                li
+                                    span.s-lbl 이용기간
+                                    span.s-txt 2017.10.02~2017.10.03 / 1박
+                                li
+                                    span.s-lbl 투숙인원
+                                    span.s-txt 성인 1명 / 소아 1명
+                                li
+                                    span.s-lbl 구매혜택
+                                    span.s-txt
+                                        | 카드무이자
+                                        img(src='http://img.go.co.kr/btn_card.jpg', alt='카드무이자')
+                            .d-bottom
+                                p.p-1
+                                    span.s-txt 최종 결제금액
+                                    span.s-pric
+                                        span.s-1 94,000
+                                        span.s-won 원
+                                p.p-2 (VAT,봉사료,예약수수료 포함)
+                                p.area-btn
+                                    a.a-btn(href='#') 예약하기
+        .d-item
+            ul.tr
+                li.nth-1
+                    span.s-name 오션투유 호텔 리노베이션
+                    span.c-ic3.i-iv
+                li.nth-2 4인 / 7인
+                li.nth-3
+                    s 330,000원
+                    span.orig-pric 94,000원~
+                li.nth-4
+                    s 94,000원
+                    span.spec-pric 89,000원~
+                    a.app-bk(href='javascript:;')
+                        | APP
+                        br
+                        | 예약
+            .tr-detail
+                ul.ul-step.type2.clr
+                    li.nth-1
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt STEP1 객실선택
+                        span.rightB
+                    li.nth-2
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt STEP2 패키지선택
+                        span.c-ic3.i-ivW(onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');")
+                        span.rightB
+                        .pop-layer
+                            h3
+                                | 패키지 안내
+                                a.close-a(href='javascript:;', onclick="$(this).closest('div').toggleClass('on');")
+                                    img(src='http://img.go.co.kr/mobile/my_close.png', alt='닫기')
+                            ul.ul-1.clr
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_1.png', alt='조식패키지')
+                                        p 조식 패키지
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_2.png', alt='바베큐 테이블')
+                                        p 바베큐 테이블
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_3.png', alt='전동 바이크')
+                                        p 전동 바이크
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_4.png', alt='조개잡이')
+                                        p 조개잡이
+                    li.nth-3
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt 패키지 안내
+                        span.rightB
+                .d-detail
+                    .rn-container.area-trd-comp
+                        .trd-comp-1
+                            .pdtCal
+                                p.p-1
+                                    a.prev-a.ic-lArrow(href='javascript:;')
+                                    | 2017년 10월
+                                    a.next-a.ic-rArrow(href='javascript:;')
+                                table.cal-tb
+                                    thead
+                                        tr
+                                            th.sun 일
+                                            th 월
+                                            th 화
+                                            th 수
+                                            th 목
+                                            th 금
+                                            th.sat 토
+                                    tbody
+                                        tr
+                                            td.off.sun
+                                                div
+                                            td.off
+                                                div
+                                            td.off
+                                                div
+                                            td.off
+                                                div
+                                            td.chkIn
+                                                div
+                                                    span.s-txt 1
+                                                    img.i-chkIn(src='http://img.go.co.kr/i_chkIn.png', alt='체크인')
+                                                    span.prc 52,000
+                                            td.chkOut
+                                                div
+                                                    span.s-txt 2
+                                                    img.i-chkIn(src='http://img.go.co.kr/renew/i_chkOut.png', alt='체크인')
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 3
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 4
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 5
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 6
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 7
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 8
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 9
+                                                    span.prc 52,000
+                                            td.sat.ddLine
+                                                div
+                                                    span.s-txt 10
+                                                    img.i-ddLine(src='http://img.go.co.kr/renew/i_ddLine.png', alt='예약마감')
+                                                    s.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 11
+                                                    span.prc 52,000
+                                            td.undef
+                                                div
+                                                    span.s-txt 12
+                                                    img.i-undef(src='http://img.go.co.kr/renew/i_undef.png', alt='예약마감')
+                                                    span.prc 0
+                                            td
+                                                div
+                                                    span.s-txt 13
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 14
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 15
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 16
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 17
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 18
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 19
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 20
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 21
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 22
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 23
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 24
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 25
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 26
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 27
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 28
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 29
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 30
+                                                    span.prc 52,000
+                                            td.off.sat
+                                                div
+                            .d-ps
+                                | 이용을 원하시는 날짜를 선택하시면 이용박수 선택이 가능합니다.
+                                br
+                                | 											달력에 표시된 요금은 세금 미포함 금액입니다.
+                            //
+                                <div class="area-slt">
+                                <div class="d1">
+                                <span class="s-lbl">객실</span>
+                                <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                <span class="s-lbl">성인</span>
+                                <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                <span class="s-lbl">소아</span>
+                                <select name="" id="">
+                                <option value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                </div>
+                                <div class="d2 clr">
+                                <span class="s-l">객실단품금액</span>
+                                <span class="s-r">94,000원</span>
+                                </div>
+                                </div>
+                        .trd-compX-2
+                            p.p-1
+                                span.s-lbl 투숙인원
+                                select.wd-1(name='', id='')
+                                    option(value='') 성인1
+                                span.s-txt 소아
+                                select.wd-1(name='', id='')
+                                    option(value='') 0
+                                    option(value='') 1
+                            p.p-2.f-bd
+                                | 기준인원 : 2명 / 최대인원 2명(1객실)
+                            p.p-3.dot
+                                | 기준 인원 초과 시 인원 추가 비용은 현장 결제
+                                br
+                                |    											부탁드립니다.
+                            p.p-3.dot
+                                | 최대인원 초과 시 입실이 불가능합니다.
+                            hr
+                            p.p-2.f-bd 객실/ 베트타입 선택
+                            p.p-1
+                                span.s-lbl 객실
+                                select.wd-1(name='', id='')
+                                    option(value='') 1
+                            p.p-1
+                                span.s-lbl 베드타입
+                                select.wd-2(name='', id='')
+                                    option(value='') 트윈[싱글+싱글]
+                            p.p-1
+                        .trd-compX-3
+                            ul.ul-tb
+                                li
+                                    span.s-lbl 객실명
+                                    span.s-txt 디럭스 온돌[그라운드뷰]
+                                li
+                                    span.s-lbl 베드타입
+                                    span.s-txt 트윈[싱글+싱글]
+                                li
+                                    span.s-lbl 이용기간
+                                    span.s-txt 2017.10.02~2017.10.03 / 1박
+                                li
+                                    span.s-lbl 투숙인원
+                                    span.s-txt 성인 1명 / 소아 1명
+                                li
+                                    span.s-lbl 구매혜택
+                                    span.s-txt
+                                        | 카드무이자
+                                        img(src='http://img.go.co.kr/btn_card.jpg', alt='카드무이자')
+                            .d-bottom
+                                p.p-1
+                                    span.s-txt 최종 결제금액
+                                    span.s-pric
+                                        span.s-1 94,000
+                                        span.s-won 원
+                                p.p-2 (VAT,봉사료,예약수수료 포함)
+                                p.area-btn
+                                    a.a-btn(href='#') 예약하기
+        .d-item
+            ul.tr
+                li.nth-1
+                    span.s-name 오션투유 콘도
+                    span.c-ic3.i-iv
+                li.nth-2 4인 / 7인
+                li.nth-3
+                    s 330,000원
+                    span.orig-pric 84,000원~
+                li.nth-4
+                    s 94,000원
+                    span.spec-pric 79,000원~
+                    a.app-bk(href='javascript:;')
+                        | APP
+                        br
+                        | 예약
+            .tr-detail
+                ul.ul-step.type2.clr
+                    li.nth-1
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt STEP1 객실선택
+                        span.rightB
+                    li.nth-2
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt STEP2 패키지선택
+                        span.c-ic3.i-ivW(onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');")
+                        span.rightB
+                        .pop-layer
+                            h3
+                                | 패키지 안내
+                                a.close-a(href='javascript:;', onclick="$(this).closest('div').toggleClass('on');")
+                                    img(src='http://img.go.co.kr/mobile/my_close.png', alt='닫기')
+                            ul.ul-1.clr
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_1.png', alt='조식패키지')
+                                        p 조식 패키지
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_2.png', alt='바베큐 테이블')
+                                        p 바베큐 테이블
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_3.png', alt='전동 바이크')
+                                        p 전동 바이크
+                                li
+                                    a(href='')
+                                        div
+                                            img(src='http://img.go.co.kr/renew/product/pkgImg_4.png', alt='조개잡이')
+                                        p 조개잡이
+                    li.nth-3
+                        span.left-topB
+                        span.left-bottomB
+                        span.s-txt 패키지 안내
+                        span.rightB
+                .d-detail
+                    .rn-container.area-trd-comp
+                        .trd-comp-1
+                            .pdtCal
+                                p.p-1
+                                    a.prev-a.ic-lArrow(href='javascript:;')
+                                    | 2017년 10월
+                                    a.next-a.ic-rArrow(href='javascript:;')
+                                table.cal-tb
+                                    thead
+                                        tr
+                                            th.sun 일
+                                            th 월
+                                            th 화
+                                            th 수
+                                            th 목
+                                            th 금
+                                            th.sat 토
+                                    tbody
+                                        tr
+                                            td.off.sun
+                                                div
+                                            td.off
+                                                div
+                                            td.off
+                                                div
+                                            td.off
+                                                div
+                                            td.chkIn
+                                                div
+                                                    span.s-txt 1
+                                                    img.i-chkIn(src='http://img.go.co.kr/i_chkIn.png', alt='체크인')
+                                                    span.prc 52,000
+                                            td.chkOut
+                                                div
+                                                    span.s-txt 2
+                                                    img.i-chkIn(src='http://img.go.co.kr/renew/i_chkOut.png', alt='체크인')
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 3
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 4
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 5
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 6
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 7
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 8
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 9
+                                                    span.prc 52,000
+                                            td.sat.ddLine
+                                                div
+                                                    span.s-txt 10
+                                                    img.i-ddLine(src='http://img.go.co.kr/renew/i_ddLine.png', alt='예약마감')
+                                                    s.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 11
+                                                    span.prc 52,000
+                                            td.undef
+                                                div
+                                                    span.s-txt 12
+                                                    img.i-undef(src='http://img.go.co.kr/renew/i_undef.png', alt='예약마감')
+                                                    span.prc 0
+                                            td
+                                                div
+                                                    span.s-txt 13
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 14
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 15
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 16
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 17
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 18
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 19
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 20
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 21
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 22
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 23
+                                                    span.prc 52,000
+                                            td.sat
+                                                div
+                                                    span.s-txt 24
+                                                    span.prc 52,000
+                                        tr
+                                            td.sun
+                                                div
+                                                    span.s-txt 25
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 26
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 27
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 28
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 29
+                                                    span.prc 52,000
+                                            td
+                                                div
+                                                    span.s-txt 30
+                                                    span.prc 52,000
+                                            td.off.sat
+                                                div
+                            .d-ps
+                                | 이용을 원하시는 날짜를 선택하시면 이용박수 선택이 가능합니다.
+                                br
+                                | 											달력에 표시된 요금은 세금 미포함 금액입니다.
+                            //
+                                <div class="area-slt">
+                                <div class="d1">
+                                <span class="s-lbl">객실</span>
+                                <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                <span class="s-lbl">성인</span>
+                                <select name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                <span class="s-lbl">소아</span>
+                                <select name="" id="">
+                                <option value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                </select>
+                                </div>
+                                <div class="d2 clr">
+                                <span class="s-l">객실단품금액</span>
+                                <span class="s-r">94,000원</span>
+                                </div>
+                                </div>
+                        .trd-compX-2
+                            p.p-1
+                                span.s-lbl 투숙인원
+                                select.wd-1(name='', id='')
+                                    option(value='') 성인1
+                                span.s-txt 소아
+                                select.wd-1(name='', id='')
+                                    option(value='') 0
+                                    option(value='') 1
+                            p.p-2.f-bd
+                                | 기준인원 : 2명 / 최대인원 2명(1객실)
+                            p.p-3.dot
+                                | 기준 인원 초과 시 인원 추가 비용은 현장 결제
+                                br
+                                |    											부탁드립니다.
+                            p.p-3.dot
+                                | 최대인원 초과 시 입실이 불가능합니다.
+                            hr
+                            p.p-2.f-bd 객실/ 베트타입 선택
+                            p.p-1
+                                span.s-lbl 객실
+                                select.wd-1(name='', id='')
+                                    option(value='') 1
+                            p.p-1
+                                span.s-lbl 베드타입
+                                select.wd-2(name='', id='')
+                                    option(value='') 트윈[싱글+싱글]
+                            p.p-1
+                        .trd-compX-3
+                            ul.ul-tb
+                                li
+                                    span.s-lbl 객실명
+                                    span.s-txt 디럭스 온돌[그라운드뷰]
+                                li
+                                    span.s-lbl 베드타입
+                                    span.s-txt 트윈[싱글+싱글]
+                                li
+                                    span.s-lbl 이용기간
+                                    span.s-txt 2017.10.02~2017.10.03 / 1박
+                                li
+                                    span.s-lbl 투숙인원
+                                    span.s-txt 성인 1명 / 소아 1명
+                                li
+                                    span.s-lbl 구매혜택
+                                    span.s-txt
+                                        | 카드무이자
+                                        img(src='http://img.go.co.kr/btn_card.jpg', alt='카드무이자')
+                            .d-bottom
+                                p.p-1
+                                    span.s-txt 최종 결제금액
+                                    span.s-pric
+                                        span.s-1 94,000
+                                        span.s-won 원
+                                p.p-2 (VAT,봉사료,예약수수료 포함)
+                                p.area-btn
+                                    a.a-btn(href='#') 예약하기
+                                    

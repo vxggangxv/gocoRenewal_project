@@ -1,0 +1,40 @@
+extends index
+
+//- 맵
+block mOuter
+
+//- 퍼센트
+block reserPerc
+
+//- 베스트상품
+block bestC
+
+//- 추천상품
+block h2Box-1
+    .h2-box
+        h2.borB
+            span.h2-sch
+                | 검색결과
+                span.f-sm
+                    span.thColor1 [한화리조트]
+                    | 에 대해 숙박 가능한 상품이 
+                    span.f-bd 23개 검색
+                    | 되었습니다.
+        #drop-box.drop-box
+            .drop-btn
+                span.c-ic.i-alg
+                span.s-txt 정렬: 추천순
+                span.c-ic.i-dArr
+            ul.drop-menu
+                li
+                    a(href='javascript:;') 평점
+                li
+                    a(href='javascript:;') 낮은 가격
+                li
+                    a(href='javascript:;') 높은 가격
+                li
+                    a(href='javascript:;') 호텔 등급
+                li
+                    a(href='javascript:;') 추천순
+
+    

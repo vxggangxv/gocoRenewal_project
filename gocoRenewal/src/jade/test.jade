@@ -1,0 +1,25 @@
+//- 템플릿 상속 & 확장: extends, block
+extends parts/_docTemplate
+
+//- 환경설정 덮어쓰기
+append config
+	-var curPage='/views/test.html'
+	-var pageTitle='Jade 템플릿 엔진 설치 및 활용'
+	-var metaDesc='Jade 템플릿 엔진을 Gulp에서 활용하는 방법을 공부합니다.'
+	-var metaKeywords='Jade, Template, 템플릿, Gulp, 설치, Node.js'
+
+//- 문서 제목 변경설정
+//- block pageTitle
+//- 	| Jade 템플릿 엔진 설치 및 활용
+
+
+//- 콘텐츠 변경설정
+block contents
+	h2(lang="en") Gulp &amp; gulp-jade Module
+	p  
+		a(href="http://gulpjs.com", target="_blank") Gulp
+		| 를 활용하면 Jade 사용이 손쉬워집니다.
+	p 
+		a(href="https://github.com/phated/gulp-jade", target="_blank") 사용법
+		| 을 공부해보세요.
+		
