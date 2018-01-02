@@ -1,0 +1,17 @@
++gnbNavi([
+	{link: '/views/', content: '홈'},
+	{link: '/views/test.html', content: '테스트'},
+	{link: '/views/about/index.html', content: '소개'},
+	{
+		link: '/views/products/index.html',
+		content: '제품',
+		child: [
+			{link: '/views/products/screen', content: '스크린'},
+			{link: '/views/products/keyboard', content: '키보드'}
+		]
+	},
+	{link: '/views/support/index.html', content: '지원'}
+], {
+	'id': 'gnb',
+	'class': 'gnb container'
+})
