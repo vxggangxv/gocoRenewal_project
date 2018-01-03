@@ -7,9 +7,10 @@ prepend stylesheets
 
 append stylesheets
 	
+prepend scripts
+	script(src="/static/js/renew/libs/jquery.bxslider.min.js")
 
 append scripts
-	script(src="/static/js/renew/libs/jquery.bxslider.min.js")
 	script(src="/static/js/renew" + initPage + "init.js")
 
 block contents

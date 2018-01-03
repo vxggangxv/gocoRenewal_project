@@ -10,11 +10,13 @@ prepend stylesheets
     link(rel="stylesheet", href="/static/css/renew/libs/ion.rangeSlider.css")
     link(rel="stylesheet", href="/static/css/renew/libs/ion.rangeSlider.custom.css")
 
-append scripts
+prepend scripts
     //- script(src="http://static.go.co.kr/js/renew/libs/jquery.lazyload.min.js")
     //- script(src="http://static.go.co.kr/js/renew/libs/ion.rangeSlider.min.js")
     script(src="/static/js/renew/libs/jquery.lazyload.min.js")
     script(src="/static/js/renew/libs/ion.rangeSlider.min.js")
+
+append scripts
     script(src="/static/js/renew" + initPage + "init.js")
 
 block contents

@@ -9,11 +9,13 @@ prepend stylesheets
     link(rel="stylesheet", href="/static/css/renew/libs/jquery.bxslider.css")
     link(rel="stylesheet", href="/static/css/renew/libs/prettyPhoto.css")
 
-append scripts
+prepend scripts
     //- script(src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js")
     //- script(src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js")
     script(src="/static/js/renew/libs/jquery.bxslider.min.js")
     script(src="/static/js/renew/libs/jquery.prettyPhoto.js")
+
+append scripts
     script(src="/static/js/renew" + initPage + "init.js")
 
 block contents
