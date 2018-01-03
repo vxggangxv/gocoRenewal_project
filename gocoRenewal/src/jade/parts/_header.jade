@@ -4,8 +4,8 @@ header.rnL-header.clr.bsLs
 			.d-box.clr
 				a.logo-a(href='/views')
 					img.l-img(src='http://img.go.co.kr/logo.png', alt='고코투어')
+				// 키워드검색시 유사 상품 노출
 				.schBox
-					// 키워드검색시 유사 상품 노출
 					span#schBor.schBor
 						input(type='text', tabindex='1', title='검색어', placeholder='어디로 떠나고 싶으신가요?', value='')
 					button.schBtn(type='submit', tabindex='2', title='검색')
@@ -49,15 +49,15 @@ header.rnL-header.clr.bsLs
 							|  쿠폰팩 즉시 지급! 
 							a.a1(href='#') 앱설치하기
 			
+				// 새로운 이벤트 있을 경우 i-new 아이콘 추가
 				.dLink-box
-					// 새로운 이벤트 있을 경우 i-new 아이콘 추가
-					a(href='#')
+					a(href='/views/event')
 						| 이벤트 
 						span.i-new
 					span.mgl
-					a(href='#') 숙소 추천받기
+					a(href='/views/customer') 숙소 추천받기
 					span.mgl
-					a(href='#') 광고/입점 제휴문의
+					a(href='/views/aliance') 광고/입점 제휴문의
 			.flr-box
 				ul.rnL-nv.clr
 					li
@@ -66,10 +66,10 @@ header.rnL-header.clr.bsLs
 							|  내 주변
 					// 새로운 예약내역 있을 경우 i-new 아이콘 추가
 					li
-						a(href='#')
+						a(href='/my/booking.html')
 							| 예약내역 
 							span.i-new
 					li
-						a(href='#') 마이페이지
+						a(href='/my') 마이페이지
 					li.last
-						a.lgn(href='#') 로그아웃
+						a.lgn(href='/user') 로그아웃
