@@ -1,0 +1,3274 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/product/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+        <% include ../parts/_filterBar.ejs %>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+			<!--상품소개-->
+			<section class="rn-container sec-prd-basic">
+				<h2>[리조트] ★오션투유리조트 속초설악비치 호텔앤콘도 [총판]</h2>
+
+				<div class="prd-basic clr">
+					<div class="prd-imgBox">
+						<ul class="bxS" id="bxS-1">
+							<li><img class="bxImg" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491388368_1.jpg" title="오션투유 리조트 외관" /></li>
+							<li><img class="bxImg" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203944_2.jpg" title="오션투유 리조트 실내" /></li>
+							<li><img class="bxImg" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_3.jpg" title="오션투유 룸1" /></li>
+							<li><img class="bxImg" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_4.jpg" title="오션투유 룸2" /></li>
+						</ul>
+
+						<div class="bxP" id="bxP-1">
+							<a data-slide-index="0" href=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491388368_1.jpg" /></a>
+							<a data-slide-index="1" href=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203944_2.jpg" /></a>
+							<a data-slide-index="2" href=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_3.jpg" /></a>
+							<a class="more-a" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203910_4.jpg" rel="prettyPhoto[gallery1]" title="오션투유 룸2"><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_4.jpg" rel="prettyPhoto[gallery1]"/></a>
+							<a class="hidden" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491388368_1.jpg" rel="prettyPhoto[gallery1]" title="오션투유 리조트 외관"></a>
+							<a class="hidden" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203944_2.jpg" rel="prettyPhoto[gallery1]" title="오션투유 실내"></a>
+							<a class="hidden" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203910_3.jpg" rel="prettyPhoto[gallery1]" title="오션투유 룸1"></a>
+							<a class="hidden" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1426829685_in1.jpg" rel="prettyPhoto[gallery1]" title="사이즈조절예시이미지"></a>
+						</div>
+					</div>
+					<div class="prd-infoBox" id="prd-infBox">
+						<div class="d1">
+							<a class="a1" href="javascript:;"><span>리얼리뷰</span> <span class="thColor1 num">435</span><span>건</span></a>
+							<span class="mgl"></span>
+							<a class="a2" href="javascript:;" onclick="$(this).toggleClass('on');"><span class="c-ic3 prd-cmm i-heart"></span><span class="s1">찜하기</span></a>
+							<span class="mgl"></span>
+							<a class="a3" href="javascript:;" onclick="$('#share-pop-layer').toggleClass('on');"><span class="c-ic3 prd-cmm i-share"></span><span class="s1">공유</span></a>
+							<span class="mgl"></span>
+							<a class="a4" href="javascript:;"><span class="c-ic3 prd-cmm i-users"></span><span class="s1">단체문의</span></a>
+							<span class="mgl"></span>
+							<a class="a5" href="javascript:;" onclick="$('#app_download_pop').show();"><span class="c-ic3 prd-cmm i-coupon"></span><span class="s1">3만원 할인</span><span class="c-ic3 prd-cmm i-down"></span></a>
+
+							<!-- 공유 팝업 -->
+							<div class="pop-layer" id="share-pop-layer">
+								<ul class="ul-1 clr">
+									<li class="nth-1">
+										<a href="">
+											<div><span class="c-ic3 sha-cmm i-twit"></span></div>
+											<p>트위터</p>
+										</a>
+									</li>
+									<li class="nth-2">
+										<a href="">
+											<div><span class="c-ic3 sha-cmm i-faceb"></span></div>
+											<p>페이스북</p>
+										</a>
+									</li>
+									<li class="nth-3">
+										<a href="">
+											<div><span class="c-ic3 sha-cmm i-email"></span></div>
+											<p>이메일</p>
+										</a>
+									</li>
+									<li class="nth-4">
+										<a href="">
+											<div><span class="c-ic3 sha-cmm i-sms"></span></div>
+											<p>문자</p>
+										</a>
+									</li>
+								</ul>
+								<a href="javascript:;" onclick="$(this).closest('.pop-layer').hide();" class="clsBtn a-i-x a-x"></a>
+							</div>
+						</div>
+						<div class="d-date clr">
+							<div class="d-date-1">
+								<p class="p1">체크인</p>
+								<p class="p2"><span class="c-ic2 i-chkIn"></span></p>
+								<p class="p3">2017-10-18</p>
+							</div>
+							<div class="d-date-2">
+								<p class="p2"><span class="c-ic3 i-term"></span></p>
+								<p class="p3">1박</p>
+							</div>
+							<div class="d-date-3">
+								<p class="p1">체크아웃</p>
+								<p class="p2"><span class="c-ic2 i-chkOut"></span></p>
+								<p class="p3">2017-10-19</p>
+							</div>
+
+							<!--달력-->
+							<div class="rnSltCal rn-modal type02 clr" id="prd-sltCal">
+
+								<div class="cal-inner">
+									<p class="p-1"><a href="" class="prev-a"></a><em>2017년 06월</em></p>
+									<table class="cal-tb">
+										<thead>
+											<tr>
+												<th class="sun">일</th>
+												<th>월</th>
+												<th>화</th>
+												<th>수</th>
+												<th>목</th>
+												<th>금</th>
+												<th class="sat">토</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="off"><div></div></td>
+												<td class="off"><div></div></td>
+												<td class="off"><div></div></td>
+												<td class="off"><div></div></td>
+												<td class="off"><div>1</div></td>
+												<td class="off"><div>2</div></td>
+												<td class="off"><div>3</div></td>
+											</tr>
+											<tr>
+												<td class="off"><div>4</div></td>
+												<td class="off"><div>5</div></td>
+												<td class="off"><div>6</div></td>
+												<td class="off"><div>7</div></td>
+												<td class="off"><div>8</div></td>
+												<td class="off"><div>9</div></td>
+												<td class="off"><div>10</div></td>
+											</tr>
+											<tr>
+												<td class="off"><div>11</div></td>
+												<td class="off"><div>12</div></td>
+												<td class="off"><div>13</div></td>
+												<td class="off"><div>14</div></td>
+												<td class="off"><div>15</div></td>
+												<td class="off"><div>16</div></td>
+												<td class="off"><div>17</div></td>
+											</tr>
+											<tr>
+												<td class="off"><div>18</div></td>
+												<td class="off"><div>19</div></td>
+												<td class="off"><div>20</div></td>
+												<td class="off"><div>21</div></td>
+												<td class="off"><div>22</div></td>
+												<td class="off"><div>23</div></td>
+												<td class="off"><div>24</div></td>
+											</tr>
+											<tr>
+												<td class="off"><div>25</div></td>
+												<td class="chkIn"><div>26<span class="c-ic i-chkIn"></span></div></td>
+												<td class="ing"><div>27</div></td>
+												<td class="chkOut"><div>28<span class="c-ic i-chkOut"></span></div></td>
+												<td><div>29</div></td>
+												<td><div>30</div></td>
+												<td><div></div></td>
+											</tr>
+											<tr>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="cal-inner">
+									<p class="p-1"><em>2017년 07월</em><a href="javascript:;" class="next-a"></a></p>
+									<table class="cal-tb">
+										<thead>
+											<tr>
+												<th class="sun">일</th>
+												<th>월</th>
+												<th>화</th>
+												<th>수</th>
+												<th>목</th>
+												<th>금</th>
+												<th class="sat">토</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td><div></div></td>
+												<td class="sat"><div>1</div></td>
+											</tr>
+											<tr>
+												<td><div>2</div></td>
+												<td><div>3</div></td>
+												<td><div>4</div></td>
+												<td><div>5</div></td>
+												<td><div>6</div></td>
+												<td><div>7</div></td>
+												<td class="sat"><div>8</div></td>
+											</tr>
+											<tr>
+												<td><div>9</div></td>
+												<td><div>10</div></td>
+												<td><div>11</div></td>
+												<td><div>12</div></td>
+												<td><div>13</div></td>
+												<td><div>14</div></td>
+												<td class="sat"><div>15</div></td>
+											</tr>
+											<tr>
+												<td><div>16</div></td>
+												<td><div>17</div></td>
+												<td><div>18</div></td>
+												<td><div>19</div></td>
+												<td><div>20</div></td>
+												<td><div>21</div></td>
+												<td class="sat"><div>22</div></td>
+											</tr>
+											<tr>
+												<td><div>23</div></td>
+												<td><div>24</div></td>
+												<td><div>25</div></td>
+												<td><div>26</div></td>
+												<td><div>27</div></td>
+												<td><div>28</div></td>
+												<td class="sat"><div>29</div></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<div class="clr"></div>
+								<div class="d-area">
+									<a href="#" class="a1"><span class="c-ic i-today"></span> 오늘 날짜로 변경</a>
+									<a href="#" class="a2 on">선택완료</a>
+								</div>
+							</div>
+						</div>
+						<div class="d3 d-cmm">
+							<span class="s-lbl">분류</span>
+							<span class="s-txt">리조트 (총 객실 수: 249개)</span>
+						</div>
+						<div class="d4 d-cmm">
+							<span class="s-lbl">주소</span>
+							<span class="s-txt">강원 고성군 죽왕면 삼포리 243-13</span>
+							<a href="javascript:;"><img class="mvImg" src="http://img.go.co.kr/landing/point_icon02.jpg" alt="지도보기"></a>
+						</div>
+						<div class="d5 d-cmm">
+							<span class="s-lbl">이용시간</span>
+							<span class="s-txt">체크인 15:00 / 체크아웃 11:00</span>
+						</div>
+						<div class="d6 d-cmm">
+							<span class="s-lbl">홈페이지</span>
+							<span class="s-txt">http://www.ocezn2you.co.kr</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--예약하기-->
+			<div class="sec-prd-buy" id="sec-prd-buy">
+				<div class="rn-container prd-buy" id="prd-buy">
+					<ul class="ul1 clr">
+						<li class="li1">
+							<p class="p0">
+								<button type="button" class="appe-s-reset btn-chk">날짜확인</button>
+							</p>
+							<p class="p1 ftfm-mg">
+								<span class="s1">2017-10-18</span>
+								<span class="s2 c-ic3 i-rArrW"></span>
+								<span class="s3">2017-10-18</span>
+							</p>
+						</li>
+						<li class="li2">
+							<p class="p0">
+								<button type="button" class="appe-s-reset btn-chk">객실확인</button>
+								<span class="s-name">오션뷰 호텔 리노베이션</span>
+							</p>
+							<p class="p1">
+								객실 1 / 성인 2명, 소아 0명
+							</p>
+						</li>
+						<li class="li3">
+							<span class="s-box">
+								<s>330,000원</s>
+								<span class="s-pric">94,000</span>
+							</span>
+							<button type="button" class="appe-s-reset btn-b ftfm-mg">예약하기</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--상품리스트-->
+			<section class="sec-prd-list" id="sec-prd-list">
+
+				<div class="thead rn-container">
+					<ul class="tr clr">
+						<li class="nth-1">상품선택</li>
+						<li class="nth-2">기준인원/최대인원</li>
+						<li class="nth-3">요금(세금 봉사료 포함) <span class="s-q" onclick="$('#discount_pop').fadeIn('fast');">?</span></li>
+						<li class="nth-4">고코 앱 특가 <span class="c-ic3 i-lowP" onclick="$('#lowestPric_pop').show();"></span></li>
+					</ul>
+					<!-- ? 아이콘 클릭 시 등장 -->
+					<div id="discount_pop" class="on">
+						<div class="tit">회원 추가할인 안내
+							<a href="javascript: $('#discount_pop').hide();" title="닫기"><img class="clsImg" src="http://img.go.co.kr/btn_x2.jpg" alt="닫기"></a>
+						</div>
+						<div class="text">
+							<p><b>1. 적립금 할인</b></p>
+							<p class="dot">회원가입시 바로 사용 가능한 <span>30,000원 쿠폰팩이 지급</span>됩니다.</p>
+							<p class="dot"> 로그인 후 결제시 <span>결제금액의 1%</span>를 적립금으로 돌려드립니다.</p>
+							<br>
+							<p><b>2. 쿠폰 할인</b></p>
+							<p class="dot"><span> 회원에게만 할인쿠폰</span>이 제공됩니다.</p>
+							<p class="dot">회원가입 후 다양한 쿠폰 혜택을 누리세요.</p>
+						</div>
+					</div>
+					<!-- 최저가 보상제 안내 팝업 -->
+					<div class="lowestPric_pop" id="lowestPric_pop">
+						<div class="lowestPric_area">
+							<div class="price_top">
+								<img src="http://img.go.co.kr/price_all_pop_title.jpg" alt="최저가보상제안내">
+								<a href="javascript:$('#lowestPric_pop').hide();" class="pop_close"><img src="http://img.go.co.kr/price_all_pop_close.jpg" alt="닫기"></a>
+							</div>
+							<div class="price_mid">
+								<p class="note_txt">
+									고코투어 보다 더 <strong>저렴한 요금을 발견</strong>하셨다면 <strong>신고</strong>해 주십시요.<br>
+									고코투어 캐시로 그 <strong>차액을 전액 보상</strong>해 드립니다.
+								</p>
+								<ul class="list_guide">
+									<li>
+										<p>
+											최저가로 보장 받은 예약건은 완전하게 이용이 완료되어야<br>
+											그 차액을 보상 받을 수 있습니다.
+										</p>
+									</li>
+									<li>
+										<p>최저가 보장제는 다음의 내용으로 진행 됩니다.</p>
+										<div class="list_guide_inner">
+											<ul>
+												<li>
+													1. 타 판매사이트의 판매가격이 고코보다 싸다면, 접수해 주세요.
+													<ul>
+														<li>- 접수는 아래 신고하기로 접수하시면 됩니다.</li>
+													</ul>
+												</li>
+												<li>
+													2. 접수시에는 타 판매사이트 최종 결제 진행방법을 안내해 주셔야합니다.
+													<ul>
+														<li>- 판매처, 판매처의 URL 혹은 카테고리, 캡쳐 등</li>
+														<li>- 고코투어 관리자가 객관적으로 확인 가능하여야 합닌다.</li>
+													</ul>
+												</li>
+												<li>3. 담당자가 확인 후 고객님께 답변 메일을 발송합니다.</li>
+												<li>4. 시설 이용일 기준으로 3일(영업일) 이내에 그 차액을 고코투어캐쉬로 지급됩니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p>아래의 조건과 부합되어야 합니다.</p>
+										<div class="list_guide_inner">
+											<ul>
+												<li>1. 예약 상품과 동일기간, 동일시설, 동일객실, 동일인원인 상품이어야 합니다.</li>
+												<li>2. 예약 상품과 변경 및 취소 등의 조건이 동일하여야 합니다.</li>
+												<li>3. 타 판매처의 자체 할인금(추천인할인, 적립금차감)에 의한 할인 가격은 제외됩니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p>다음의 상품은 최저가 보장에서 제외됩니다.</p>
+										<div class="list_guide_inner">
+											<ul>
+												<li>1. 전일 또는 당일 예약상품은 불가합니다.(담당자 확인 불가)</li>
+												<li>2. 고코투어 담당자가 해당 상품의 예약이 가능 하여야 합니다.(불가한 경우, 보상불가)</li>
+												<li>3. 취소 또는 환불된 상품</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_decl">
+									<a onclick="javascript:;">신고하기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="tbody" id="prd-tb">
+					<div class="d-item">
+						<ul class="tr">
+							<li class="nth-1">
+								<span class="s-name">오션투유 콘도 리노베이션</span><span class="c-ic3 i-iv"></span>
+							</li>
+							<li class="nth-2">4인 / 7인</li>
+							<li class="nth-3">
+								<s>330,000원</s>
+								<span class="orig-pric">94,000원~</span>
+							</li>
+							<li class="nth-4">
+								<s>94,000원</s>
+								<span class="spec-pric">89,000원~</span>
+								<a href="javascript:;" class="app-bk">APP<br>예약</a>
+							</li>
+						</ul>
+						<div class="tr-detail">
+							<ul class="ul-step type1 clr">
+								<li class="nth-1">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP1 객실선택</span>
+									<span class="rightB"></span>
+								</li>
+								<li class="nth-2">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP2 패키지선택</span>
+									<span class="c-ic3 i-ivW" onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');"></span>
+									<span class="rightB"></span>
+
+									<div class="pop-layer">
+										<h3>
+											패키지 안내
+											<a href="javascript:;" onclick="$(this).closest('div').toggleClass('on');" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+										</h3>
+
+										<ul class="ul-1 clr">
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_1.png" alt="조식패키지"></div>
+													<p>조식 패키지</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_2.png" alt="바베큐 테이블"></div>
+													<p>바베큐 테이블</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_3.png" alt="전동 바이크"></div>
+													<p>전동 바이크</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_4.png" alt="조개잡이"></div>
+													<p>조개잡이</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nth-3">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">패키지 안내</span>
+									<span class="rightB"></span>
+								</li>
+							</ul>
+
+							<div class="d-detail">
+
+								<div class="rn-container area-trd-comp">
+									<div class="trd-comp-1">
+										<div class="pdtCal">
+											<p class="p-1"><a href="javascript:;" class="prev-a ic-lArrow"></a>2017년 10월<a href="javascript:;" class="next-a ic-rArrow"></a></p>
+											<table class="cal-tb">
+												<thead>
+													<tr>
+														<th class="sun">일</th>
+														<th>월</th>
+														<th>화</th>
+														<th>수</th>
+														<th>목</th>
+														<th>금</th>
+														<th class="sat">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="off sun"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="chkIn"><div><span class="s-txt">1</span><img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="chkOut"><div><span class="s-txt">2</span><img src="http://img.go.co.kr/renew/i_chkOut.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">3</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">4</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">5</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">6</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">7</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">8</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">9</span><span class="prc">52,000</span></div></td>
+														<td class="sat ddLine"><div><span class="s-txt">10</span><img src="http://img.go.co.kr/renew/i_ddLine.png" alt="예약마감" class="i-ddLine"><s class="prc">52,000</s></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">11</span><span class="prc">52,000</span></div></td>
+														<td class="undef"><div><span class="s-txt">12</span><img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span></div></td>
+														<td><div><span class="s-txt">13</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">14</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">15</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">16</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">17</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">18</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">19</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">20</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">21</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">22</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">23</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">24</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">25</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">26</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">27</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">28</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">29</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">30</span><span class="prc">52,000</span></div></td>
+														<td class="off sat"><div></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="area-slt">
+											<div class="d1">
+												<span class="s-lbl">객실</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">성인</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">소아</span>
+												<select name="" id="">
+													<option value="">0</option>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+											<div class="d2 clr">
+												<span class="s-l">객실단품금액</span>
+												<span class="s-r">94,000원</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="trd-comp-2">
+										<div class="part-con clr" id="part-con-1">
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">조식 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-2">우거지 갈비탕</span>
+																	<div class="pdt-prc">
+																		<s>8,000원</s><span class="c-red">7,500원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">황태 해장국</span>
+																	<div class="pdt-prc">
+																		<s>8,000원</s><span class="c-red">7,500원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">광어 미역국</span>
+																	<div class="pdt-prc">
+																		<s>12,000원</s><span class="c-red">11,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 last">주중 조식은, 메인 음식을 포함하여 김치, <br>무생채, 젓갈, 나물, 튀김이 제공됩니다.</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	조식패키지 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1">
+																		주중 조식은, 메인 음식을 포함하여 김치, 무생채, 젓갈, 나물, 튀김이 제공됩니다.<br>
+																		조식 운영시간은 07:30 ~ 10:00 까지 이용 가능합니다.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">바베큐 테이블 대여</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-1">이용시간</span>
+																	<select name="" id="">
+																		<option value="">1부 16:00~18:00</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">테이블 수</span>
+																	<div class="pdt-prc">
+																		<s>30,000원</s><span class="c-red">15,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt last"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위<br>그릴, 집게, 가위</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	바베큐 테이블 대여 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위</p>
+																	<p class="type-1 p-txt"><span class="dot">2.</span> 이용시간은 2시간이며, 연장이 필요할 경우 미리 예약바랍니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">3.</span> 음식은 제공되지 않으니, 직접 준비해 오셔야 합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">4.</span> 야외 바베큐장으로, 기상악화시에는운영되지않습니다.  <br>이 경우 결제하신 금액은 환불 처리 됩니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">5.</span> 예약 후 , 시간에 맞춰 프론트에 이용요청 주시면 바로 이용하실 수 있습니다.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">전동바이크 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">1인승 1시간</span>
+																	<div class="pdt-prc">
+																		<s>15,000원</s><span class="c-red">14,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">1인승 2시간</span>
+																	<div class="pdt-prc">
+																		<s>26,000원</s><span class="c-red">24,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">2인승 1시간</span>
+																	<div class="pdt-prc">
+																		<s>20,000원</s><span class="c-red">18,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">2인승 2시간</span>
+																	<div class="pdt-prc">
+																		<s>35,000원</s><span class="c-red">30,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt"><span class="dot">1.</span>전동바이크 운영시간은 9:00~20:00 까지입니다.(20:00시 까지 반납) </p>
+															<p class="type-1 p-txt"><span class="dot">2.</span>전동바이크 탑승 전, 운전면허증 확인은 필수입니다.(현장확인, 미소지시 이용불가) </p>
+															<p class="type-1 p-txt last"><span class="dot">3.</span>보호장비 착용시에만 이용가능합니다.<br> (무상대여)</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	전동바이크 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 전동바이크 운영시간은 오전 9:00~20:00 까지입니다.(20:00시 까지 반납)</p>
+																	<p class="type-1 p-txt"><span class="dot">2.</span> 전동바이크 탑승 전, 운전면허증 확인은 필수입니다.(현장확인, 미소지시 이용불가)</p>
+																	<p class="type-1 p-txt"><span class="dot">3.</span> 보호장비 착용시에만 이용가능합니다.(무상대여)</p>
+																	<p class="type-1 p-txt"><span class="dot">4.</span> 국도 및 백사장 방향은 주행 불가합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">5.</span> 대여자 본인이외에, 제 3자의 운행은 불가합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">6.</span> 사고 및 분실, 파손에 따른 책임은, 대여자 100% 본인 부담 처리됩니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">7.</span> 사고 및 고장시에는 사무실로 전화 바랍니다.(문의 : 010-4429-0250)</p>
+																	<p class="type-1 p-txt"><span class="dot">8.</span> 우천시 이용 불가하며, 이용불가시 전액 환불처리 해드립니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">9.</span> 2인승의 경우, 동승자의 몸무게가 40Kg을 초과한 경우 탑승할 수 없습니다.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">조개잡기 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">양동이/삽/조개갈퀴 세트</span>
+																	<div class="pdt-prc">
+																		<s>10,000원</s><span class="c-red">9,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt last"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	조개잡기 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 더미 텍스트</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="d-total clr">
+											<span class="s-l">객실 + 패키지 금액</span>
+
+											<span class="s-r">
+												(<span class="c-red">94,000</span>원+<span class="c-red">7,500</span>원+<span class="c-red">25,000</span>원+<span class="c-red">14,000</span>원+<span class="c-red">9,000</span>원) = <span class="c-red f-bd">149,500</span>원
+											</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="d-item">
+						<ul class="tr">
+							<li class="nth-1">
+								<span class="s-name">오션투유 호텔 리노베이션</span><span class="c-ic3 i-iv"></span>
+							</li>
+							<li class="nth-2">4인 / 7인</li>
+							<li class="nth-3">
+								<s>330,000원</s>
+								<span class="orig-pric">94,000원~</span>
+							</li>
+							<li class="nth-4">
+								<s>94,000원</s>
+								<span class="spec-pric">89,000원~</span>
+								<a href="javascript:;" class="app-bk">APP<br>예약</a>
+							</li>
+						</ul>
+						<div class="tr-detail">
+							<ul class="ul-step clr">
+								<li class="nth-1">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP1 객실선택</span>
+									<span class="rightB"></span>
+								</li>
+								<li class="nth-2">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP2 패키지선택</span>
+									<span class="c-ic3 i-ivW" onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');"></span>
+									<span class="rightB"></span>
+
+									<div class="pop-layer">
+										<h3>
+											패키지 안내
+											<a href="javascript:;" onclick="$(this).closest('div').toggleClass('on');" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+										</h3>
+
+										<ul class="ul-1 clr">
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_1.png" alt="조식패키지"></div>
+													<p>조식 패키지</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_2.png" alt="바베큐 테이블"></div>
+													<p>바베큐 테이블</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_3.png" alt="전동 바이크"></div>
+													<p>전동 바이크</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_4.png" alt="조개잡이"></div>
+													<p>조개잡이</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nth-3">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">패키지 안내</span>
+									<span class="rightB"></span>
+								</li>
+							</ul>
+
+							<div class="d-detail">
+
+								<div class="rn-container area-trd-comp">
+									<div class="trd-comp-1">
+										<div class="pdtCal">
+											<p class="p-1"><a href="javascript:;" class="prev-a ic-lArrow"></a>2017년 10월<a href="javascript:;" class="next-a ic-rArrow"></a></p>
+											<table class="cal-tb">
+												<thead>
+													<tr>
+														<th class="sun">일</th>
+														<th>월</th>
+														<th>화</th>
+														<th>수</th>
+														<th>목</th>
+														<th>금</th>
+														<th class="sat">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="off sun"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="chkIn"><div><span class="s-txt">1</span><img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="chkOut"><div><span class="s-txt">2</span><img src="http://img.go.co.kr/renew/i_chkOut.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">3</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">4</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">5</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">6</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">7</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">8</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">9</span><span class="prc">52,000</span></div></td>
+														<td class="sat ddLine"><div><span class="s-txt">10</span><img src="http://img.go.co.kr/renew/i_ddLine.png" alt="예약마감" class="i-ddLine"><s class="prc">52,000</s></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">11</span><span class="prc">52,000</span></div></td>
+														<td class="undef"><div><span class="s-txt">12</span><img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span></div></td>
+														<td><div><span class="s-txt">13</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">14</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">15</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">16</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">17</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">18</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">19</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">20</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">21</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">22</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">23</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">24</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">25</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">26</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">27</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">28</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">29</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">30</span><span class="prc">52,000</span></div></td>
+														<td class="off sat"><div></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="area-slt">
+											<div class="d1">
+												<span class="s-lbl">객실</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">성인</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">소아</span>
+												<select name="" id="">
+													<option value="">0</option>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+											<div class="d2 clr">
+												<span class="s-l">객실단품금액</span>
+												<span class="s-r">94,000원</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="trd-comp-2">
+										<div class="part-con clr" id="part-con">
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">조식 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-2">우거지 갈비탕</span>
+																	<div class="pdt-prc">
+																		<s>8,000원</s><span class="c-red">7,500원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">황태 해장국</span>
+																	<div class="pdt-prc">
+																		<s>8,000원</s><span class="c-red">7,500원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">광어 미역국</span>
+																	<div class="pdt-prc">
+																		<s>12,000원</s><span class="c-red">11,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 last">주중 조식은, 메인 음식을 포함하여 김치, <br>무생채, 젓갈, 나물, 튀김이 제공됩니다.</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	조식패키지 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1">
+																		주중 조식은, 메인 음식을 포함하여 김치, 무생채, 젓갈, 나물, 튀김이 제공됩니다.<br>
+																		조식 운영시간은 07:30 ~ 10:00 까지 이용 가능합니다.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">바베큐 테이블 대여</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-1">이용시간</span>
+																	<select name="" id="">
+																		<option value="">1부 16:00~18:00</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">테이블 수</span>
+																	<div class="pdt-prc">
+																		<s>30,000원</s><span class="c-red">15,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt last"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위<br>그릴, 집게, 가위</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	바베큐 테이블 대여 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위</p>
+																	<p class="type-1 p-txt"><span class="dot">2.</span> 이용시간은 2시간이며, 연장이 필요할 경우 미리 예약바랍니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">3.</span> 음식은 제공되지 않으니, 직접 준비해 오셔야 합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">4.</span> 야외 바베큐장으로, 기상악화시에는운영되지않습니다.  <br>이 경우 결제하신 금액은 환불 처리 됩니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">5.</span> 예약 후 , 시간에 맞춰 프론트에 이용요청 주시면 바로 이용하실 수 있습니다.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">전동바이크 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">1인승 1시간</span>
+																	<div class="pdt-prc">
+																		<s>15,000원</s><span class="c-red">14,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">1인승 2시간</span>
+																	<div class="pdt-prc">
+																		<s>26,000원</s><span class="c-red">24,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">2인승 1시간</span>
+																	<div class="pdt-prc">
+																		<s>20,000원</s><span class="c-red">18,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">2인승 2시간</span>
+																	<div class="pdt-prc">
+																		<s>35,000원</s><span class="c-red">30,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt"><span class="dot">1.</span>전동바이크 운영시간은 9:00~20:00 까지입니다.(20:00시 까지 반납) </p>
+															<p class="type-1 p-txt"><span class="dot">2.</span>전동바이크 탑승 전, 운전면허증 확인은 필수입니다.(현장확인, 미소지시 이용불가) </p>
+															<p class="type-1 p-txt last"><span class="dot">3.</span>보호장비 착용시에만 이용가능합니다.<br> (무상대여)</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	전동바이크 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 전동바이크 운영시간은 오전 9:00~20:00 까지입니다.(20:00시 까지 반납)</p>
+																	<p class="type-1 p-txt"><span class="dot">2.</span> 전동바이크 탑승 전, 운전면허증 확인은 필수입니다.(현장확인, 미소지시 이용불가)</p>
+																	<p class="type-1 p-txt"><span class="dot">3.</span> 보호장비 착용시에만 이용가능합니다.(무상대여)</p>
+																	<p class="type-1 p-txt"><span class="dot">4.</span> 국도 및 백사장 방향은 주행 불가합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">5.</span> 대여자 본인이외에, 제 3자의 운행은 불가합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">6.</span> 사고 및 분실, 파손에 따른 책임은, 대여자 100% 본인 부담 처리됩니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">7.</span> 사고 및 고장시에는 사무실로 전화 바랍니다.(문의 : 010-4429-0250)</p>
+																	<p class="type-1 p-txt"><span class="dot">8.</span> 우천시 이용 불가하며, 이용불가시 전액 환불처리 해드립니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">9.</span> 2인승의 경우, 동승자의 몸무게가 40Kg을 초과한 경우 탑승할 수 없습니다.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">조개잡기 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">양동이/삽/조개갈퀴 세트</span>
+																	<div class="pdt-prc">
+																		<s>10,000원</s><span class="c-red">9,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt last"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	조개잡기 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 더미 텍스트</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="d-total clr">
+											<span class="s-l">객실 + 패키지 금액</span>
+
+											<span class="s-r">
+												(<span class="c-red">94,000</span>원+<span class="c-red">7,500</span>원+<span class="c-red">25,000</span>원+<span class="c-red">14,000</span>원+<span class="c-red">9,000</span>원) = <span class="c-red f-bd">149,500</span>원
+											</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="d-item">
+						<ul class="tr">
+							<li class="nth-1">
+								<span class="s-name">오션투유 콘도</span><span class="c-ic3 i-iv"></span>
+							</li>
+							<li class="nth-2">4인 / 7인</li>
+							<li class="nth-3">
+								<s>330,000원</s>
+								<span class="orig-pric">84,000원~</span>
+							</li>
+							<li class="nth-4">
+								<s>94,000원</s>
+								<span class="spec-pric">79,000원~</span>
+								<a href="javascript:;" class="app-bk">APP<br>예약</a>
+							</li>
+						</ul>
+						<div class="tr-detail">
+							<ul class="ul-step clr">
+								<li class="nth-1">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP1 객실선택</span>
+									<span class="rightB"></span>
+								</li>
+								<li class="nth-2">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP2 패키지선택</span>
+									<span class="c-ic3 i-ivW" onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');"></span>
+									<span class="rightB"></span>
+
+									<div class="pop-layer">
+										<h3>
+											패키지 안내
+											<a href="javascript:;" onclick="$(this).closest('div').toggleClass('on');" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+										</h3>
+
+										<ul class="ul-1 clr">
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_1.png" alt="조식패키지"></div>
+													<p>조식 패키지</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_2.png" alt="바베큐 테이블"></div>
+													<p>바베큐 테이블</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_3.png" alt="전동 바이크"></div>
+													<p>전동 바이크</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_4.png" alt="조개잡이"></div>
+													<p>조개잡이</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nth-3">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">패키지 안내</span>
+									<span class="rightB"></span>
+								</li>
+							</ul>
+
+							<div class="d-detail">
+
+								<div class="rn-container area-trd-comp">
+									<div class="trd-comp-1">
+										<div class="pdtCal">
+											<p class="p-1"><a href="javascript:;" class="prev-a ic-lArrow"></a>2017년 10월<a href="javascript:;" class="next-a ic-rArrow"></a></p>
+											<table class="cal-tb">
+												<thead>
+													<tr>
+														<th class="sun">일</th>
+														<th>월</th>
+														<th>화</th>
+														<th>수</th>
+														<th>목</th>
+														<th>금</th>
+														<th class="sat">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="off sun"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="chkIn"><div><span class="s-txt">1</span><img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="chkOut"><div><span class="s-txt">2</span><img src="http://img.go.co.kr/renew/i_chkOut.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">3</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">4</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">5</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">6</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">7</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">8</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">9</span><span class="prc">52,000</span></div></td>
+														<td class="sat ddLine"><div><span class="s-txt">10</span><img src="http://img.go.co.kr/renew/i_ddLine.png" alt="예약마감" class="i-ddLine"><s class="prc">52,000</s></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">11</span><span class="prc">52,000</span></div></td>
+														<td class="undef"><div><span class="s-txt">12</span><img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span></div></td>
+														<td><div><span class="s-txt">13</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">14</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">15</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">16</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">17</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">18</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">19</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">20</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">21</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">22</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">23</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">24</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">25</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">26</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">27</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">28</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">29</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">30</span><span class="prc">52,000</span></div></td>
+														<td class="off sat"><div></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="area-slt">
+											<div class="d1">
+												<span class="s-lbl">객실</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">성인</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">소아</span>
+												<select name="" id="">
+													<option value="">0</option>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+											<div class="d2 clr">
+												<span class="s-l">객실단품금액</span>
+												<span class="s-r">94,000원</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="trd-comp-2">
+										<div class="part-con clr" id="part-con">
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">조식 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-2">우거지 갈비탕</span>
+																	<div class="pdt-prc">
+																		<s>8,000원</s><span class="c-red">7,500원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">황태 해장국</span>
+																	<div class="pdt-prc">
+																		<s>8,000원</s><span class="c-red">7,500원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">광어 미역국</span>
+																	<div class="pdt-prc">
+																		<s>12,000원</s><span class="c-red">11,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 last">주중 조식은, 메인 음식을 포함하여 김치, <br>무생채, 젓갈, 나물, 튀김이 제공됩니다.</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	조식패키지 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1">
+																		주중 조식은, 메인 음식을 포함하여 김치, 무생채, 젓갈, 나물, 튀김이 제공됩니다.<br>
+																		조식 운영시간은 07:30 ~ 10:00 까지 이용 가능합니다.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">바베큐 테이블 대여</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-1">이용시간</span>
+																	<select name="" id="">
+																		<option value="">1부 16:00~18:00</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">테이블 수</span>
+																	<div class="pdt-prc">
+																		<s>30,000원</s><span class="c-red">15,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt last"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위<br>그릴, 집게, 가위</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	바베큐 테이블 대여 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위</p>
+																	<p class="type-1 p-txt"><span class="dot">2.</span> 이용시간은 2시간이며, 연장이 필요할 경우 미리 예약바랍니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">3.</span> 음식은 제공되지 않으니, 직접 준비해 오셔야 합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">4.</span> 야외 바베큐장으로, 기상악화시에는운영되지않습니다.  <br>이 경우 결제하신 금액은 환불 처리 됩니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">5.</span> 예약 후 , 시간에 맞춰 프론트에 이용요청 주시면 바로 이용하실 수 있습니다.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">전동바이크 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">1인승 1시간</span>
+																	<div class="pdt-prc">
+																		<s>15,000원</s><span class="c-red">14,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">1인승 2시간</span>
+																	<div class="pdt-prc">
+																		<s>26,000원</s><span class="c-red">24,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">2인승 1시간</span>
+																	<div class="pdt-prc">
+																		<s>20,000원</s><span class="c-red">18,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">2인승 2시간</span>
+																	<div class="pdt-prc">
+																		<s>35,000원</s><span class="c-red">30,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt"><span class="dot">1.</span>전동바이크 운영시간은 9:00~20:00 까지입니다.(20:00시 까지 반납) </p>
+															<p class="type-1 p-txt"><span class="dot">2.</span>전동바이크 탑승 전, 운전면허증 확인은 필수입니다.(현장확인, 미소지시 이용불가) </p>
+															<p class="type-1 p-txt last"><span class="dot">3.</span>보호장비 착용시에만 이용가능합니다.<br> (무상대여)</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	전동바이크 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 전동바이크 운영시간은 오전 9:00~20:00 까지입니다.(20:00시 까지 반납)</p>
+																	<p class="type-1 p-txt"><span class="dot">2.</span> 전동바이크 탑승 전, 운전면허증 확인은 필수입니다.(현장확인, 미소지시 이용불가)</p>
+																	<p class="type-1 p-txt"><span class="dot">3.</span> 보호장비 착용시에만 이용가능합니다.(무상대여)</p>
+																	<p class="type-1 p-txt"><span class="dot">4.</span> 국도 및 백사장 방향은 주행 불가합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">5.</span> 대여자 본인이외에, 제 3자의 운행은 불가합니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">6.</span> 사고 및 분실, 파손에 따른 책임은, 대여자 100% 본인 부담 처리됩니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">7.</span> 사고 및 고장시에는 사무실로 전화 바랍니다.(문의 : 010-4429-0250)</p>
+																	<p class="type-1 p-txt"><span class="dot">8.</span> 우천시 이용 불가하며, 이용불가시 전액 환불처리 해드립니다.</p>
+																	<p class="type-1 p-txt"><span class="dot">9.</span> 2인승의 경우, 동승자의 몸무게가 40Kg을 초과한 경우 탑승할 수 없습니다.</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<ul class="dep-1">
+												<li class="">
+													<div class="pkg-name">
+														<input type="checkbox"><span class="lbl">조개잡기 패키지</span>
+													</div>
+
+													<div class="pkg-con clr">
+														<div class="con-1">
+															<ul class="ul-1">
+																<li class="clr">
+																	<span class="lbl type-1">이용날짜</span>
+																	<select name="" id="">
+																		<option value="">2017-06-09</option>
+																	</select>
+																</li>
+																<li class="clr">
+																	<span class="lbl type-2">양동이/삽/조개갈퀴 세트</span>
+																	<div class="pdt-prc">
+																		<s>10,000원</s><span class="c-red">9,000원</span>
+																		<p class="quan clr">
+																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
+																		</p>
+																	</div>
+																</li>
+															</ul>
+														</div>
+														<div class="con-2">
+															<p class="type-1 nth-1">이용안내</p>
+															<p class="type-1 p-txt last"><span class="dot">1.</span> 패키지구성 : 테이블 (4인기준), 참숯, 그릴, 집게, 가위</p>
+															<p class="btn-p"><a href="javascript:;" onclick="$(this).parent().next().show();">더보기 <span class="i-plus-btn"></span></a></p>
+
+															<div class="pop-layer">
+																<h3>
+																	조개잡기 이용안내
+																	<a href="javascript:;" onclick="$(this).closest('div').hide();" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+																</h3>
+																<div class="txt-box">
+																	<p class="type-1 p-txt"><span class="dot">1.</span> 더미 텍스트</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="d-total clr">
+											<span class="s-l">객실 + 패키지 금액</span>
+
+											<span class="s-r">
+												(<span class="c-red">94,000</span>원+<span class="c-red">7,500</span>원+<span class="c-red">25,000</span>원+<span class="c-red">14,000</span>원+<span class="c-red">9,000</span>원) = <span class="c-red f-bd">149,500</span>원
+											</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+
+				<script>
+					$(function() {
+						// 상품별 갤러리 bxSlider 함수 연결
+						$("#prd-tb .i-iv").on('click', function() {
+							$(this).toggleClass('on');
+							var gLeft = $(this).position().left;
+							gLeft += 86;
+
+							var prdGall = $('<div class="prd-gal-pop" style="left:' + gLeft + 'px;">'
+									+	'<div class="tit-box">'
+									+		'<strong>마운틴뷰 호텔 리노베이션</strong>'
+									+		'<a href="javascript:;" class="a-i-x a-x"></a>'
+									+	'</div>'
+									+	'<div class="cont-box">'
+									+		'<ul class="prdGal">'
+									+			'<li><img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201278_out5.jpg" alt="마운틴"></li>'
+									+			'<li><img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201279_out6.jpg" alt="마운틴"></li>'
+									+		'</ul>'
+									+	'</div>'
+									+ '</div>');
+
+							if ($(this).next().css("display") == 'block') {
+								$(this).next().remove();
+							} else {
+								prdGall.insertAfter($(this));
+								$("#prd-tb .prd-gal-pop .a-x").click(function() {
+									$(this).closest(".prd-gal-pop").remove();
+								});
+								$("#prd-tb .prdGal").bxSlider({
+									auto:true,
+									autoControls: true,
+									speed: 500,
+									duration: 3000,
+									prevText: '<img src="http://img.go.co.kr/renew/common/btn_prev.png" alt="이전">',
+									nextText: '<img src="http://img.go.co.kr/renew/common/btn_next.png" alt="다음">',
+								});
+							}
+						});
+
+
+					});
+				</script>
+
+
+				<!-- 앱 유도 팝업 -->
+				<div class="app_download_pop" id="app_download_pop">
+					<div class="pop_Bg_bk"></div>
+					<div class="popwrap">
+						<div class="coupon_pack_pop">
+							<div class="coupon_pack_pop_top">
+								<img class="goco" src="http://img.go.co.kr/logo_sh_b.png">
+								<p><span class="orange_txt">고코투어 앱</span>설치 시 <span class="red_txt">30,000원</span> 쿠폰팩 즉시 지급!</p>
+								<a class="clsBtn" href="javascript:;" onclick="$(this).parents('.app_download_pop').hide();" title="닫기"><img src="http://img.go.co.kr/pop_close_Sbtn.png" alt="닫기"></a>
+							</div>
+							<div class="coupon_pack_pop_contents">
+								<ul class="clr">
+									<li class="goco_app_icon"><img src="http://img.go.co.kr/goco_app_Icon_m.png"></li>
+									<li class="txt_box">
+										<p class="title_txt">지금 고코투어 앱을 다운받으세요</p>
+										<p class="title_txt"> <span class="red_txt">30,000원</span> 쿠폰팩을 지급해드립니다!</p>
+										<p class="txt_s">
+											핸드폰 번호를 입력하시면<br><span class="orange_txt">앱 설치 방법 안내를 문자</span>로 보내드립니다.
+										</p>
+									</li>
+								</ul>
+								<ul class="input_Box clr">
+									<li class="recipient"><label>·받는사람</label><input type="text" name="phone_d1" maxlength="3"><span>-</span><input type="text" name="phone_d2" maxlength="4"><span>-</span><input type="text" name="phone_d3" maxlength="4"></li>
+									<li class="send_Btn"><input type="button" value="전송"></li>
+								</ul>
+								<p>* 문자로 발송드린 URL을 클릭하시면 앱설치가 가능한 설치페이지로 이동합니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<!--상품 상세 설명-->
+			<section class="rn-container sec-prd-common">
+				<div class="area-prd-detail" id="area-prd-detail">
+					<ul class="ul-tab clr">
+						<li class="on"><a href="javascript:;">상품소개</a></li>
+						<li class=""><a href="javascript:;">이용후기</a></li>
+						<li class=""><a href="javascript:;">오시는길</a></li>
+						<li class=""><a href="javascript:;">축제/관광지/맛집</a></li>
+						<li class=""><a href="javascript:;">상품문의</a></li>
+						<li class=""><a href="javascript:;">자주묻는질문</a></li>
+					</ul>
+
+					<ul class="ul-contents">
+						<li class="on li-intro">
+							<div class="d-row clr">
+								<div class="d-tit">기준인원 안내</div>
+								<div class="d-txt">
+									- 기준인원 초과시 추가요금 발생됩니다.(기준4/최대7인)<br>
+									- 1인 10,000원(8세 미만 무료)<br>
+									- 침구 추가시 1인세트 10,000원<br>
+									- 추가요금은 현장지불입니다.<br>
+									- 최대인원 초과시 입실 불가합니다.<br>
+									- 체크인시 인원확인 후 입실 가능합니다.
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">조식 이용인네</div>
+								<div class="d-txt">
+									토요일, 일요일, 월요일 및 공휴일 조식은 아메리칸식 뷔페로운영됩니다.<br>
+									- 소세지, 스크램블, 베이컨, 감자튀김, 샐러드, 시리얼 등 25여개의 메뉴로 제공됩니다.<br>
+									- 아메리칸식 뷔페 운영은 오션투유 1층 한식당 에서 운영됩니다.<br>
+									- 아메리칸식 뷔페 운영시간은 아침 7시 30분부터 10시 까지입니다.<br>
+									- 아메리칸식 뷔페 이용요금은 다음과 같습니다.<br>
+									ㄱ. 성인 1인 : 12,000원<br>
+									ㄴ. 소인 1인 :9,000원(36개월 이상 ~ 8세 미만)<br>
+									평일 조식은 단품 메뉴로 운영됩니다.<br>
+									- 메뉴 및 가격<br>
+									ㄱ. 광어미역국12,000원<br>
+									ㄴ. 우거지갈비탕8,000원<br>
+									ㄷ. 황태해장국8,000원<br>
+									- 평일조식은 한식당 에서 제공합니다.<br>
+									- 단품 메뉴는 조식이외에, 다연 운영시간내 언제든 이용가능합니다.<br>
+									- 다연 운영시간은 아침 7시 30분 부터 저녁 8시 까지입니다.(주말의 경우 저녁 9시 까지 운영)
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">바베큐장 이용안내</div>
+								<div class="d-txt">
+									- 리얼바베큐그릴이 구비된 200석 규모의 바베큐장을 운영하고 있습니다.<br>
+									- 바베큐장은 16시 부터 22시까지 운영합니다.<br>
+									- 4인기준 30,000원에 2시간 이용가능합니다.(추가인원 1인당 5,000원)<br>
+									- 바베큐장 예약시, 테이블+참숯+그릴+집게+가위 가 무료제공됩니다.<br>
+									- 음식은 제공하지 않으니, 직접준비하여 오시기 바랍니다.<br>
+									- 기상악화로 바베큐장을 운영하지 못하는경우에는 전액 환불해 드립니다.
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">배달서비스 이용안내</div>
+								<div class="d-txt">
+									- 계절 모듬회, 계절 모듬물회, 시카고리얼바베큐플레이츠를 리조트내 원하는 장소로 배달해 드립니다.<br>
+									- 모듬회는 대/중//소 사이즈로 선택이 가능합니다.<br>
+									  계절 모듬회(대) 70,000원 / 계절 모듬회(중) 50,000원 / 계절 모듬회(소) 30,000원<br>
+									- 계절 모듬물회는 1인에 10,000원으로 2인이상 주문가능합니다.<br>
+									  계절 물회(2인) 20,000원 /  계절 물회(3인) 30,000원 /  계절 물회(4인) 40,000원<br>
+									- 시카고리얼바베큐플레이츠 1쟁반 단위로 제공되며, 19,000원 입니다.
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">부대시설 안내</div>
+								<div class="d-txt">
+									- 오션투유 전동바이크 : 1인승, 2인승으로 구비되어 있으며, 1시간 단위로 이용이 가능합니다.<br>
+									  이용요금 : 1인승 1시간 15,000원1인승 2시간 26,000원2인승 1시간 20,000원2인승 2시간 30,000원<br>
+									- 라바짜 : 아메리카노 커피, 카푸치노 등 제공<br>
+									- 노래방 / 편의점 : 24:00시까지 운영
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">인사말</div>
+								<div class="d-txt">
+									- 설악/속초/고성 위치! 삼포해수욕장 바로 앞 오션투유리조트<br>
+									- 설악/속초/고성 아우르는 최고의 리조트!<br>
+									- 에메랄드 빛 삼포해변 1분거리!<br>
+									- 얕은 수심, 어린아이 위한 해수욕장!<br>
+									- 해변에서 조개잡이 가능 (조개잡이 물품 대여가능) <br>
+									- 속초, 설악 모든 해변과 근접! <br>
+									- 최대80%할인 , 특가할인
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">단체 문의</div>
+								<div class="d-txt">
+									오션투유콘도는 최대 1800명 까지 수용 가능한 대형콘도입니다.<br>
+									기업체/단체교육/워크샵/수학여행/수련회/세미나/ 워크샵/가족모임/행사/MICE(마이스)/설명회/연회장<br>
+									컨벤션/학회/기업행사/디너쇼/전시회/컨퍼런스/비지니스미팅/소규모모임/대규모모임
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">견적문의</div>
+								<div class="d-txt">
+									단체 상담 및 견적문의 (예약실 : 1666-5683)
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">패키지 및 테마안내</div>
+								<div class="d-txt">
+									[해수욕장숙소]삼포해수욕장 인근<br>
+									[바다전망]동해바다 전망객실 보유
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">부대시설</div>
+								<div class="d-txt">
+									<ul class="facil-pict clr">
+										<li>
+											<img src="http://img.go.co.kr/establishment_icon13.png" alt="조식" class="pictImg">
+											<p>조식</p>
+										</li>
+										<li>
+											<img src="http://img.go.co.kr/establishment_icon9.png" alt="주차" class="pictImg">
+											<p>주차장</p>
+										</li>
+										<li>
+											<img src="http://img.go.co.kr/establishment_icon8.png" alt="식당" class="pictImg">
+											<p>식당</p>
+										</li>
+										<li>
+											<img src="http://img.go.co.kr/establishment_icon12.png" alt="BBQ" class="pictImg">
+											<p>공용 BBQ</p>
+										</li>
+										<li>
+											<img src="http://img.go.co.kr/establishment_icon5.png" alt="편의점" class="pictImg">
+											<p>편의점</p>
+										</li>
+										<li>
+											<img src="http://img.go.co.kr/establishment_icon15.png" alt="WIFI" class="pictImg">
+											<p>와이파이</p>
+										</li>
+										<li>
+											<img src="http://img.go.co.kr/establishment_icon6.png" alt="카페" class="pictImg">
+											<p>카페</p>
+										</li>
+										<li>
+											<img src="http://img.go.co.kr/establishment_icon7.png" alt="레스토랑" class="pictImg">
+											<p>레스토랑</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">추천여행지</div>
+								<div class="d-txt">
+									삼포해수욕장: 오션투유리조트로 앞으로 펼쳐지는 해수욕장은 푸른 동해에서도 가장 깨끗한 해수욕장 중 하나로 꼽힙니다.<br>
+									잘 갖춰진 편의 시설과 깔끔한 민박단지로 구성되어 있습니다. 조개체험 가능합니다.
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">군부대</div>
+								<div class="d-txt">
+									<p class="p-elli">
+										22사단예하부대, 22사단, 율곡부대, 뇌종부대, 고성종합체육관, 22사단53연대, 22사단55연대, 22사단56연대, 22사단정비<br>
+										대대, 22사단수색대대, 22사단53연대수색중대, 22사단55연대수색중대, 22사단56연대수색중대,22사단포병연대, 22사단<br>
+										53연대 본부중대, 22사단55연대본부중대, 22사단56연대본부중대, 22사단신교대대, 22사단신병교육대, 22사단훈련소
+									</p>
+									<p class="fold-txt">
+										율곡신병교육대, 22보병사단, 강원도고성22사단, 육군22사단, 22보병사단,
+										강원도고성율곡부대, 강원도고성뇌종부대, 고성22사단, 고성율곡부대, 고성뇌종부대,율곡한울부대, 공병대,
+										수색대, 화확대, 보수대, 의무대, 헌병대, 기무대, 수송대, 공병대대, 수색대대, 화확대대, 보수대대,의무대대,
+										헌병대대, 기무대대, 수송대대, 56연대1대대, 56연대2대대, 56연대3대대, 율곡청룡, 율곡천마, 율곡불곰,
+										278포병대대,279포병대대, 280포병대대, 639포병대대, 율곡십자성대대, 율곡승리대대, 율곡왕포대대,
+										율곡쌍호, 율곡백호, 율곡비호, 율곡맹호, 55연대1대대, 55연대2대대, 55연대3대대, 연대본부, 쌍호수색중대,통신대대
+									</p>
+									<a href="javascript:;" class="a-btn" onclick="$(this).parent().find('.fold-txt').slideToggle('fast');">더보기</a>
+								</div>
+							</div>
+							<div class="d-row clr">
+								<div class="d-tit">추천여행지</div>
+								<div class="d-txt">
+									삼포해수욕장: 오션투유리조트로 앞으로 펼쳐지는 해수욕장은 푸른 동해에서도 가장 깨끗한 해수욕장 중 하나로 꼽힙니다.<br>
+									잘 갖춰진 편의 시설과 깔끔한 민박단지로 구성되어 있습니다. 조개체험 가능합니다.
+								</div>
+							</div>
+						</li>
+						<li class="li-review">
+							<div class="d-tit clr">
+								<div class="d-l">
+									<h3>
+										전체 평점
+										<span class="s-star">
+											<img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png">
+											<img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png">
+											<img src="http://img.go.co.kr/visor/star-off.png">
+										</span>
+									</h3>
+									<p class="p-1"><strong class="thColor1 f-bd">8.1</strong> / 10</p>
+									<p class="p-2">
+										숙박을 하신 고객님들이 작성한<br>
+										<span class="thColor1-2">435</span>건의 리얼리뷰가 있습니다.
+									</p>
+									<p class="p-3">
+										<a href="" class="a-btn"><span class="c-ic3 i-pen"></span> 리얼후기 쓰기</a>
+									</p>
+								</div>
+								<div class="d-r">
+									<p class="p-1 f-bd">
+										<span class="c-ic3 i-thumb"></span>
+										<span class="s-1 i-borL-tran">
+											<span class="thColor1-2">고코투어에서는 실제 이용하신 분들만 이용후기 작성</span>이 가능합니다.<br>
+											여행을 준비하는 다른 분들을 위해 생생한 이용후기를 올려주세요!
+										</span>
+									</p>
+									<p class="p-2">
+										<span class="f-bd">오션투유리조트 속초설악비치 호텔앤콘도</span> 에 대해서 다른 여행자에게도 알려주세요!<br>
+										제공해주신 이용후기는 다른 여행자에게 큰 도움이 되는 소중한 정보가 될 것입니다.
+									</p>
+									<p class="p-3">
+										이용후기 작성시 <span class="thColor1-2 f-bd">5,000원의 적립금</span>이 지급 됩니다. (첫 후기 작성 이후에는 1,000원이 적립됩니다.)
+									</p>
+								</div>
+							</div>
+
+							<table class="t-review" id="t-review">
+								<colgroup>
+									<col style="width: 140px;">
+									<col style="width: 516px;">
+									<col style="width: 150px;">
+									<col style="width: 140px;">
+									<col style="width: 140px;">
+								</colgroup>
+
+								<thead>
+									<tr>
+										<th>NO</th>
+										<th>제목</th>
+										<th>작성자</th>
+										<th>작성일</th>
+										<th>평점</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="tr-tit">
+										<td>543</td>
+										<td class="ta-left">좋아요</td>
+										<td>꼬**</td>
+										<td>2017.11.13</td>
+										<td><span class="thColor1-2 f-bd">10</span>/10</td>
+									</tr>
+									<tr class="tr-cont">
+										<td colspan="5">
+											<div class="d-txt">
+												더미텍스트
+											</div>
+											<hr>
+											<p class="p-1">
+												이 후기가 도움이 되었나요?
+												<img class="reco" src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천">
+												<span class="s-num">10</span>
+											</p>
+										</td>
+									</tr>
+									<tr class="tr-tit">
+										<td>542</td>
+										<td class="ta-left">잘다녀왔습니다</td>
+										<td>꼬**</td>
+										<td>2017.11.13</td>
+										<td><span class="thColor1-2 f-bd">10</span>/10</td>
+									</tr>
+									<tr class="tr-cont">
+										<td colspan="5">
+											<div class="d-txt">
+												후기보고 걱정했는데 제가 갔던방은 괜찮았어요! 제가갔을때 여쭤보니 계속 리모델링 하신다고하더라구요!<br>
+												특히 뷰가 너무좋았어요!!!!<br>
+												저는 파도소리들으면서 너무 좋았어요!! 엄마도 너무 좋았데여! ㅋㅋㅋ<br>
+											</div>
+											<hr>
+											<p class="p-1">
+												이 후기가 도움이 되었나요?
+												<img class="reco" src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천">
+												<span class="s-num">10</span>
+											</p>
+										</td>
+									</tr>
+									<tr class="tr-tit">
+										<td>542</td>
+										<td class="ta-left">잘다녀왔습니다</td>
+										<td>꼬**</td>
+										<td>2017.11.13</td>
+										<td><span class="thColor1-2 f-bd">10</span>/10</td>
+									</tr>
+									<tr class="tr-cont">
+										<td colspan="5">
+											<div class="d-txt">
+												후기보고 걱정했는데 제가 갔던방은 괜찮았어요! 제가갔을때 여쭤보니 계속 리모델링 하신다고하더라구요!<br>
+												특히 뷰가 너무좋았어요!!!!<br>
+												저는 파도소리들으면서 너무 좋았어요!! 엄마도 너무 좋았데여! ㅋㅋㅋ<br>
+											</div>
+											<hr>
+											<p class="p-1">
+												이 후기가 도움이 되었나요?
+												<img class="reco" src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천">
+												<span class="s-num">10</span>
+											</p>
+										</td>
+									</tr>
+									<tr class="tr-tit">
+										<td>542</td>
+										<td class="ta-left">잘다녀왔습니다</td>
+										<td>꼬**</td>
+										<td>2017.11.13</td>
+										<td><span class="thColor1-2 f-bd">10</span>/10</td>
+									</tr>
+									<tr class="tr-cont">
+										<td colspan="5">
+											<div class="d-txt">
+												후기보고 걱정했는데 제가 갔던방은 괜찮았어요! 제가갔을때 여쭤보니 계속 리모델링 하신다고하더라구요!<br>
+												특히 뷰가 너무좋았어요!!!!<br>
+												저는 파도소리들으면서 너무 좋았어요!! 엄마도 너무 좋았데여! ㅋㅋㅋ<br>
+											</div>
+											<hr>
+											<p class="p-1">
+												이 후기가 도움이 되었나요?
+												<img class="reco" src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천">
+												<span class="s-num">10</span>
+											</p>
+										</td>
+									</tr>
+									<tr class="tr-tit">
+										<td>542</td>
+										<td class="ta-left">잘다녀왔습니다</td>
+										<td>꼬**</td>
+										<td>2017.11.13</td>
+										<td><span class="thColor1-2 f-bd">10</span>/10</td>
+									</tr>
+									<tr class="tr-cont">
+										<td colspan="5">
+											<div class="d-txt">
+												후기보고 걱정했는데 제가 갔던방은 괜찮았어요! 제가갔을때 여쭤보니 계속 리모델링 하신다고하더라구요!<br>
+												특히 뷰가 너무좋았어요!!!!<br>
+												저는 파도소리들으면서 너무 좋았어요!! 엄마도 너무 좋았데여! ㅋㅋㅋ<br>
+											</div>
+											<hr>
+											<p class="p-1">
+												이 후기가 도움이 되었나요?
+												<img class="reco" src="http://img.go.co.kr/visor/icon_recommend.jpg" alt="추천">
+												<span class="s-num">10</span>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="pagenation" id="pagenation">
+								<a class="pprev" href="javascript:;">&lt;&lt;</a>
+								<a class="on" href="javascript:;">1</a>
+								<a href="javascript:;">2</a>
+								<a href="javascript:;">3</a>
+								<a href="javascript:;">4</a>
+								<a href="javascript:;">5</a>
+								<a href="javascript:;">6</a>
+								<a href="javascript:;">7</a>
+								<a href="javascript:;">8</a>
+								<a href="javascript:;">9</a>
+								<a href="javascript:;">10</a>
+								<a class="nnext" href="javascript:;">&gt;&gt;</a>
+							</div>
+
+						</li>
+						<li class="li-way">
+							<p class="p-1 f-bd">오션투유리조트 속초설악비치 호텔엔콘도 오시는길</p>
+							<p class="p-1">강원 고성군 죽왕면 삼포리 243-13 </p>
+							<div class="map-box">
+								지도위치
+							</div>
+						</li>
+						<li class="li-sights">
+							<div class="d-item clr">
+								<div class="d-img">
+									<img src="http://file.go.co.kr/info_tour/upload/0.41344600 1291599418" alt="삼포해수욕장">
+								</div>
+								<div class="d-txt">
+									<p class="p-tit">삼포해수욕장</p>
+									<p class="p-cont">
+										속초에서 북쪽으로 12km 떨어져 있는 삼포해변은 해당화와 울창한 소나무 솔숲이 유명합니다.<br>
+										이곳의 모래는 '우는 모래'라는 뜻의 명사로 불리워지며, 맞은편에는 흑도와 백도 그리고 호미섬이 있어 바다낚시터로도 이용되고
+										있습니다
+									</p>
+									<p class="p-bott">
+										<span class="c-ic3 i-spot"></span> 강원 고성군 죽왕면 삼포리 <span class="mgl"></span> 1.0Km 이내
+									</p>
+								</div>
+
+								<span class="s-sign"><span>관광지</span></span>
+							</div>
+							<div class="d-item clr">
+								<div class="d-img">
+									<img src="http://file.go.co.kr/info_tour/upload/0.61027900 1273285575" alt="관광지">
+								</div>
+								<div class="d-txt">
+									<p class="p-tit">송지호</p>
+									<p class="p-cont">
+										송지호는 호수 둘레가 4km인 동해안의 청정한 석호로 1977년에 주변이 국민관광지로 지정되어 자연호수와 죽도가 어우러져
+										경관이 수려합니다. 겨울철에는 고니 등 철새들이 많이 찾는 곳이며 재첩이 채취되는 이 곳에서는 채취시기에 소규모 마을축제로
+										"송지호 재첩잡이체험축제"를 개최하여 관광객에게 재첩을 직접 채취할 수 있는 기회를 제공하기도 합니다
+									</p>
+									<p class="p-bott">
+										<span class="c-ic3 i-spot"></span> 강원 고성군 죽왕면 인정리 , 오봉리 <span class="mgl"></span> 1.4Km 이내
+									</p>
+								</div>
+
+								<span class="s-sign"><span>관광지</span></span>
+							</div>
+							<div class="d-item clr">
+								<div class="d-img">
+									<img src="http://file.go.co.kr/info_tour/upload/0.73664900 1273296959" alt="관광지">
+								</div>
+								<div class="d-txt">
+									<p class="p-tit">천학정/문암포구</p>
+									<p class="p-cont">
+										고성군에 해안가 경치가 뛰어난 곳으로 잘 알려진 청간정 말고도 잘 알려지지 않은 천학정이 있습니다. 청간정에서 북으로 10분 정도
+										달려 아야진 고개를 넘어 교암리라는 마을에 위치하고 있으며~천학정은 1931년 지방유지 한치응, 최순문, 김성운 등이 발의하여
+										정면 2칸, 측면 2칸, 겹처마 팔각지붕의 단층으로 건립 되어 있습니다
+									</p>
+									<p class="p-bott">
+										<span class="c-ic3 i-spot"></span> 강원 고성군 토성면 교암리 <span class="mgl"></span> 3.8Km 이내
+									</p>
+								</div>
+
+								<span class="s-sign"><span>관광지</span></span>
+							</div>
+							<div class="d-item clr">
+								<div class="d-img">
+									<img src="http://file.go.co.kr/info_tour/upload/0.44736800 1273296040" alt="관광지">
+								</div>
+								<div class="d-txt">
+									<p class="p-tit">청간정</p>
+									<p class="p-cont">
+										토성면 청간리 81번지 동해안 산록에 위치한 청간정(淸澗亭)은 설악산 골짜기에서 흘러내리는 청간천과 만경청파가 넘실거리는
+										기암절벽 위에 팔각지붕의 중층누정으로 아담하게 세워져 있으며, 이곳에서 바라보는 일출과 월출시의 장엄함과, 밀려오는 파도가
+										마치 뭉게 구름이 일다가 안개처럼 사라져 가는 황홀경으로 관동팔경중 수일경으로 손꼽히고 있습니다
+									</p>
+									<p class="p-bott">
+										<span class="c-ic3 i-spot"></span> 강원 고성군 토성면 청간리 <span class="mgl"></span> 5.9Km 이내
+									</p>
+								</div>
+
+								<span class="s-sign"><span>관광지</span></span>
+							</div>
+							<div class="d-item clr">
+								<div class="d-img">
+									<img src="http://file.go.co.kr/info_tour/upload/0.07948900 1273223216" alt="관광지">
+								</div>
+								<div class="d-txt">
+									<p class="p-tit">봉포간이해변</p>
+									<p class="p-cont">
+										속초시청 북쪽으로 3km에 위치해 있으며 작은 포구를 중심으로 한 간이 해수욕장으로 지정되어 있습니다.<br>
+										물이 맑고 사질이 고우며, 특히 어족이 풍부해 바다낚시와 수영을 겸할 수 있어 여름 피서지로 각광받는 장소로 많은 관광객들의
+										발길이 닿는 곳 입니다
+									</p>
+									<p class="p-bott">
+										<span class="c-ic3 i-spot"></span> 강원 고성군 토성면 봉포리 <span class="mgl"></span> 8.1Km 이내
+									</p>
+								</div>
+
+								<span class="s-sign"><span>관광지</span></span>
+							</div>
+							<div class="d-item clr">
+								<div class="d-img">
+									<img src="http://file.go.co.kr/info_tour/upload/0.35811000 1291364424" alt="관광지">
+								</div>
+								<div class="d-txt">
+									<p class="p-tit">화암사</p>
+									<p class="p-cont">
+										화암사는 1915년 소실된 후 다시 지었으나 한국전쟁으로 전소되었습니다. 그 후 법당만 다시 지어 사찰의 격을 갖추지 못하였으나,
+										1991년 8월 이곳 신평들에서 개최되었던 제17회 세계잼버리대회의 개최준비를 위한 주변정비계획에 따라 기존건물인 법당을
+										철거하고 전체 사찰 건축들을 중건하여 오늘에 이르렀습니다.
+									</p>
+									<p class="p-bott">
+										<span class="c-ic3 i-spot"></span> 강원 고성군 토성면 신평리 136-11 <span class="mgl"></span> 11.4Km 이내
+									</p>
+								</div>
+
+								<span class="s-sign"><span>관광지</span></span>
+							</div>
+							<div class="d-item clr">
+								<div class="d-img">
+									<img src="http://file.go.co.kr/info_tour/tour_img/0.09267400 1291961164" alt="관광지">
+								</div>
+								<div class="d-txt">
+									<p class="p-tit">설악워터피아[보양온천]</p>
+									<p class="p-cont">
+										설악워터피아는 양이온인 나트륨, 칼슘, 마그네슘과 음이온인 탄산수소, 염소, 탄산, 황산 등이 함유된 중성탄산나트륨<br>
+										온천수로 100% 천연 온천수를 이용한 종합 온천 테마파크입니다
+									</p>
+									<p class="p-bott">
+										<span class="c-ic3 i-spot"></span> 강원 속초시 장사동 24-1 <span class="mgl"></span> 11.9Km 이내
+									</p>
+								</div>
+
+								<span class="s-sign"><span>관광지</span></span>
+							</div>
+							<div class="d-item clr">
+								<div class="d-img">
+									<img src="http://file.go.co.kr/info_food/upload/0.89902300 1275381653" alt="순두부찌개">
+								</div>
+								<div class="d-txt">
+									<p class="p-tit">옥돌할머니순두부(해수)</p>
+									<p class="p-cont">
+										옥돌할머니순두부는 100% 순수 우리콩으로 요리합니다.<br>
+										깊은 양념맛의 누구도 흉내낼 수 없는 명태양념구이, 옥돌할머니 순두부는 30년 전통으로 동해바다 청정수로 간을 하는<br>
+										설악권 순두부 전통 제조방법으로 최고의 요리가 나옵니다
+									</p>
+									<p class="p-bott">
+										<span class="c-ic3 i-spot"></span> 강원 고성군 죽왕면 삼포리 <span class="mgl"></span> 1.0Km 이내
+									</p>
+								</div>
+
+								<span class="s-sign type2"><span>맛집</span></span>
+							</div>
+
+							<div class="pagenation" id="pagenation">
+								<a class="pprev" href="javascript:;">&lt;&lt;</a>
+								<a class="on" href="javascript:;">1</a>
+								<a href="javascript:;">2</a>
+								<a href="javascript:;">3</a>
+								<a href="javascript:;">4</a>
+								<a href="javascript:;">5</a>
+								<a href="javascript:;">6</a>
+								<a href="javascript:;">7</a>
+								<a href="javascript:;">8</a>
+								<a href="javascript:;">9</a>
+								<a href="javascript:;">10</a>
+								<a class="nnext" href="javascript:;">&gt;&gt;</a>
+							</div>
+
+						</li>
+						<li class="li-contact">
+							<div class="d-box-1">
+								<p class="p-1 f-bd">오션투유리조트 속초설악비치 호텔엔콘도에 대해 문의사항이 있으신가요?</p>
+								<p class="p-2">
+									궁금하신 질문을 올려주시면 고코투어 담당자가 빠른 시간내에 친절하게 답변해드립니다
+									<span class="thColor1">* 예약변경/환불 및 취소 관련 문의는 1:1 게시판을 이용해주세요</span>
+								</p>
+								<div class="btn-area">
+									<!--페이지 링크-->
+									<a class="a-1" href="">자주묻는 질문 바로가기</a>
+									<!--문의하기 팝업 등장-->
+									<a class="a-2" href="javascript:;" onclick="$('#qna-pop-bg').show();">1:1 문의하기</a>
+								</div>
+							</div>
+							<div class="d-box-2">
+								<div class="inp-box">
+									<textarea name="" id="" cols="30" rows="10" class="write-area"></textarea>
+									<span class="s-ph"><span class="s1">예약변경/환불 및 취소 관련된 문의는 1:1 게시판</span>을 이용해주세요.</span>
+								</div>
+								<input type="button" value="문의등록">
+							</div>
+
+						</li>
+						<li class="li-faq">
+							<p class="p-row">
+								<span class="f-bd">궁굼한 점이 있으신가요?</span>
+								자주묻는질문 게시판을 먼저 확인해주세요
+							</p>
+							<ul class="q-tab clr" id="q-tab">
+								<li class="on"><a href="javascript:;">전체</a></li>
+								<li><a href="javascript:;">예약/이용</a></li>
+								<li><a href="javascript:;">결제/환불</a></li>
+								<li><a href="javascript:;">변경/취소</a></li>
+								<li><a href="javascript:;">기타문의</a></li>
+							</ul>
+							<script>
+								$(function() {
+									$("#q-tab li").on('click', function() {
+										$(this).addClass('on').siblings().removeClass('on');
+									});
+
+									$("#cus-call").on('click', function(e) {
+										e.preventDefault();
+										$("#tit-box em").hide();
+										$("#cus-box").show();
+									});
+								});
+							</script>
+							<div id="faq">
+								<table class="faq_t">
+									<colgroup>
+										<col style="width: 90px">
+										<col style="width: auto">
+										<col style="width: 70px">
+									</colgroup>
+									<thead>
+										<tr>
+											<th align="center">유형</th>
+											<th align="center">질문</th>
+											<th align="center">작성자</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="best">
+											<td>[BEST질문]</td>
+											<td class="tit tit_faq_cont0" id="bbsnum_592"><a href="javascript:;"><span class="question">Q.</span> 환불 문의 (조회:1,825 / 평균:2 / 참여자:5)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont0" class="">
+											<td colspan="3" class="reply">
+												<div>
+													가상계좌(무통장입금)의 경우 '결제취소'가 불가능하기에 환불의 방법으로 진행을 하고 있습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													가상계좌 결제시 입력한 환불계좌로 환불처리가 되며, 환불계좌가 틀린 경우</div>
+												<div>
+													환불입금이 진행되지 않으니 1:1문의를 통해 정확한 계좌 정보를 남겨 주십시오.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													-오후 4시까지 환불접수의 경우</div>
+												<div>
+													당일 오후 7시부터 순차적 환불</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													-오후 4시이후 환불접수의 경우</div>
+												<div>
+													영업일 기준 익일 오후 1시부터 순차적 환불</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													신용카드, 휴대폰, 네이버페이, 페이코의 경우 예약취소시 즉시 결제취소로 진행해드리고 있습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													<span style="font-size:16px;">※ 결제취소 및 환불 절차가 궁금하시면&nbsp;<span style="color: rgb(255, 0, 0);"><strong><a href="javascript:;">여기</a></strong></span>를 클릭해 주세요.</span>
+												</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="#" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr class="best">
+											<td>[BEST질문]</td>
+											<td class="tit tit_faq_cont1" id="bbsnum_494"><a href="javascript:;"><span class="question">Q.</span> 세금계산서 발행 가능 한가요?  (조회:862 / 평균:1 / 참여자:2)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont1" class="">
+											<td colspan="3" class="reply">
+												<p>
+													고객님이 현금 결제하신 경우에만 다음과 같이 발행해 드리고 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													고코투어는 고객님의 결제금액 전체를 매출로 신고하지 않고,</p>
+												<p>
+													여행알선 수수료만을 매출로 인식 및 신고하고 있기 때문에,</p>
+												<p>
+													고객님의 결제금액 중, 고코투어의 알선 수수료만큼의 계산서만 발행 가능합니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													차액분에 대한 계산서는 이용하신 시설로 요청하셔야 하며,</p>
+												<p>
+													일부 시설의 경우 발행되지 않을 수도 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													계산서 발행 문의는 고객센터(1666-1243) 또는 1:1 문의하기를 통해 접수하시면 됩니다.</p>
+												<p>
+													&nbsp;</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr class="best">
+											<td>[BEST질문]</td>
+											<td class="tit tit_faq_cont2" id="bbsnum_457"><a href="javascript:;"><span class="question">Q.</span> 결제 방법에는 어떤 것들이 있나요? (조회:1,029 / 평균:2 / 참여자:4)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont2">
+											<td colspan="3" class="reply">
+												<p>
+													&nbsp;</p>
+												<p>
+													고코투어에서 상품을 구매 시, 대금 결제 방법은 다음과 같습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													1.신용카드(법인카드 가능) 인증서방식(ISP 방식)</p>
+												<p>
+													&nbsp; &nbsp; - &nbsp;ISP 등록 후, 이용이 가능합니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													2.&nbsp;신용카드(법인카드 가능) 간편결제 방식</p>
+												<p>
+													&nbsp; &nbsp; - &nbsp;카드번호 / 유효기간 / 주민등록번호(사업자번호) / 비밀번호를 입력하는 결제방식</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													3.&nbsp;무통장입금(가상계좌)</p>
+												<p>
+													&nbsp; &nbsp; - 지정된 계좌로 송금하는 결제 방식</p>
+												<p>
+													&nbsp;<br> 4. 휴대폰결제&nbsp;</p>
+												<p>
+													&nbsp; &nbsp; - 휴대폰 소액결제를 이용하는 &nbsp;방식</p>
+												<p>
+													&nbsp;</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr class="best">
+											<td >[BEST질문]</td>
+											<td class="tit tit_faq_cont3" id="bbsnum_493"><a href="javascript:;"><span class="question">Q.</span> 결제 후, 객실 마감이면 어떻게 되나요?  (조회:3,830 / 평균:3 / 참여자:10)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont3">
+											<td colspan="3" class="reply">
+												<div>
+													"A"라는 펜션은</div>
+												<div>
+													객실 수가 10객실 뿐임에도 불구하고</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													고코투어 뿐만 아니라,</div>
+												<div>
+													데일리호텔, 야놀자, 여기어때 등, 여러 여행사에도 객실을 판매하고 있습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													펜션의 상품이 판매가 되면,</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													펜션의 관리인은</div>
+												<div>
+													각각의 여행사 관리자를 통해 객실 수량을 실시간으로 관리해야 하지만</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													객실판매 및 운영관리 등의 이유로</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													객실 수량 관리를 제 때에 진행하지 않아서</div>
+												<div>
+													오버부킹(객실마감)이 발생하고 있습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													고코투어는</div>
+												<div>
+													이런 불편 사항을 개선하기 위해서</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													객실확보 후 고객님들들께 판매하거나, 고코투어 단독판매 진행 등의 방식으로</div>
+												<div>
+													객실마감(오버부킹)이 없도록 노력하고 있지만</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													약 10,000개의 제휴 시설 모두를, 직접 운영 관리하기에는 일정부분 한계가 있습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													이는 모든 여행사에 동일한 문제로, 사실상 객실마감이 없는 여행사는 없습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													이렇게,</div>
+												<div>
+													시설의 부주의 또는 객실마감으로 인해서</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													<span style="color:#ff0000;">고객님의 예약건이 마감취소 되는 경우에는, 고객님의 결제는 안전하게 100% 환불 처리 됩니다.</span></div>
+												<p>
+													&nbsp;</p>
+												<p>
+													다만,<br> 결제 방법에 따라 PG사, 카드사, 은행에서 업무처리 하는 일정이 있어<br> 다음과 같이 실제 취소되기 까지는 소요 시간이 일부 필요합니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													<strong style="color: rgb(255, 0, 0);">[</strong><strong style="color: rgb(255, 0, 0);">카드결제 취소]</strong><br> &nbsp;
+												</p>
+												<p>
+													■ 결제 당일에 주문이 취소된 경우</p>
+												<p>
+													&nbsp; &nbsp; ☞ 주문 취소와 함께 카드 승인이 취소 됩니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													■ 결제 당일을 제외한 주문이 취소된 경우</p>
+												<p>
+													&nbsp; &nbsp;☞ 고코투어에서는 취소안내와 함께, 고객님의 결제취소를 즉시 PG사로 요청합니다.</p>
+												<p>
+													&nbsp; &nbsp;☞ PG사에서 카드사로 취소내역을 안내하지만, 카드사의 취소 정책에 일정 시간이 소요될 수 있습니다.</p>
+												<p>
+													&nbsp; &nbsp;☞ 보다 명확한 확인일 필요한 경우, 카드사로 직접문의 하시면 취소내역을 확인하실 수 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<div>
+													&nbsp; &nbsp;☞ PG사를 통하여 취소내역 확인방법 : 카드사에 결제된 PG사를 확인,</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp; &nbsp;☞ KCP 일 경우, 홈페이지 url: <a href="https://www.kcp.co.kr/center.paysearch.do">https://www.kcp.co.kr/center.paysearch.do</a> 에서 확인가능</div>
+												<div>
+													&nbsp; &nbsp;☞ 이니시스 일 경우, 홈페이지 url: <a href="https://www.inicis.com/payment_view">https://www.inicis.com/payment_view</a> 에서 확인가능</div>
+												<p>
+													&nbsp;</p>
+												<p>
+													<span style="color: rgb(255, 0, 0);"><strong>[휴대폰결제 취소]</strong></span><br> &nbsp;
+												</p>
+												<p>
+													■ 휴대폰으로 결제하신 경우, 주문 취소와 함께 휴대폰 결제 승인이 취소 됩니다.</p>
+												<p>
+													&nbsp;&nbsp; ☞ <a href="https://www.billgate.net/search/sc_pay_mobile.jsp" target="_blank"><span style="color: rgb(0, 0, 255);">“휴대폰 취소 여부 확인”</span></a> ← 클릭하시면 직접 취소 조회가 가능합니다.</p>
+												<p>
+													&nbsp; &nbsp;☞ 홈페이지 url:&nbsp;https://www.billgate.net/search/sc_pay_mobile.jsp</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													<span style="color: rgb(255, 0, 0);"><strong>[</strong><strong>무통장입금(가상계좌) 취소]</strong></span><br> &nbsp;
+												</p>
+												<p>
+													■ <strong>주문 건이 취소처리가 되면, 환불 금액 만큼 고객님의 계좌로 환불을 진행하고 있습니다.</strong></p>
+												<p>
+													&nbsp;&nbsp; ☞ <span style="color: rgb(255, 0, 0);">빠른 환불을 위해선 고객님이 정확한 계좌를 안내해 주셔야 합니다.</span></p>
+												<p>
+													&nbsp; &nbsp;☞<span style="color: rgb(255, 0, 0);"> 정확한 환불 진행을 위해, 고객님의 계좌 확인 등의 이슈로, 환불은 정해진 시간 진행됩니다.</span></p>
+												<p>
+													&nbsp; &nbsp; &nbsp; &nbsp; ㄱ.&nbsp;&nbsp; 16시 00분 이전에 환불 계좌 확인 : 취소일 18시부터 순차적 환불 진행</p>
+												<p>
+													&nbsp; &nbsp; &nbsp; &nbsp; ㄴ.&nbsp;&nbsp; 16시 00분 이후에 환불 계좌 확인 : 다음 영업일 18시부터 순차적 환불 진행 &nbsp;</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													<span style="color: rgb(255, 0, 0);"><strong>[네이버페이 취소]</strong></span></p>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													■ 결제 당일에 주문이 취소된 경우</div>
+												<div>
+													&nbsp; &nbsp; ☞ 주문 취소와 함께 카드 승인이 취소 됩니다.</div>
+												<p>
+													&nbsp;</p>
+												<p>
+													<strong style="color: rgb(255, 0, 0);">[페이코</strong><strong style="color: rgb(255, 0, 0);">&nbsp;취소]</strong><br> &nbsp;
+												</p>
+												<p>
+													■ 결제 당일에 주문이 취소된 경우</p>
+												<p>
+													&nbsp; &nbsp; ☞ 주문 취소와 함께 카드 승인이 취소 됩니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													■ 결제 당일을 제외한 주문이 취소된 경우</p>
+												<p>
+													&nbsp; &nbsp;☞ 고코투어에서는 취소안내와 함께, 고객님의 결제취소를 즉시 PG사로 요청합니다.</p>
+												<p>
+													&nbsp; &nbsp;☞ PG사에서 카드사로 취소내역을 안내하지만, 카드사의 취소 정책에 일정 시간이 소요될 수 있습니다.</p>
+												<p>
+													&nbsp; &nbsp;☞ 보다 명확한 확인일 필요한 경우, 카드사로 직접문의 하시면 취소내역을 확인하실 수 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<div>
+													&nbsp; &nbsp;☞ PG사이트 url:&nbsp;<a href="https://www.inicis.com/payment_view">https://www.inicis.com/payment_view</a></div>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr class="best">
+											<td>[BEST질문]</td>
+											<td class="tit tit_faq_cont4" id="bbsnum_597"><a href="javascript:;"><span class="question">Q.</span> 예약 가능하면 바로 입금하고 싶습니다. (조회:161 / 평균:5 / 참여자:1)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont4">
+											<td colspan="3" class="reply">
+												<p>
+													일부 시설의 경우,&nbsp;</p>
+												<p>
+													최종 결제 완료 후 해당 시설에서 방 제공 여부를 확인 할 수 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													최종 결제 하신 후 방이 없을 경우 근무일 기준 24시간 이내에 환불처리를 해드리고있으니,</p>
+												<p>
+													걱정마시고 우선 결제/예약 접수를 하시는 것이 예약완료 될 확률이 높습니다.</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr class="best">
+											<td>[BEST질문]</td>
+											<td class="tit tit_faq_cont5" id="bbsnum_507"><a href="javascript:;"><span class="question">Q.</span> 카드결제 할건데 2회 분할해서 결제 가능한가요? (조회:1,487 / 평균:1 / 참여자:2)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont5">
+											<td colspan="3" class="reply">
+												<p>
+													&nbsp;</p>
+												<p>
+													결제는 어떤 방식이든,</p>
+												<p>
+													고개님이 희망하시는 내용으로 진행 가능합니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													1. 동일카드로 2회이상 분할 결제 가능</p>
+												<p>
+													2. 일부는 카드. 일부는 현금으로 진행 가능</p>
+												<p>
+													3. 카드 2개 또는 그 이상으로 분할 결제 가능</p>
+												<p>
+													4. 기타 방식 가능</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													관련해서, 변경 및 처리가 필요하시면&nbsp;</p>
+												<p>
+													고객센터(1666-1243) 또는 1:1 문의하기를 통해서 남겨주시면</p>
+												<p>
+													전문 상담원들이 빠르게 처리해 드리도록 하겠습니다.</p>
+												<p>
+													&nbsp;</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[결제/환불]</td>
+											<td class="tit tit_faq_cont6" id="bbsnum_450"><a href="javascript:;"><span class="question">Q.</span> 예약접수 후 객실마감으로 문자가 왔는데 결제하면 예약완료 아닌가요? (조회:1,688 / 평균:3 / 참여자:6)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont6">
+											<td colspan="3" class="reply">
+												<div>
+													고코투어는</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													여러 시설과 고객님들을 연결해 주는 오픈마켓의 형태로 운영되고 있으며,</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													각 시설에서 객실현황/요금/상품 관리 등을 진행하고 있습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													이러한 관리상황에서도 불가피하게 마감으로 인해 예약건이 취소되는 상황이 발생할 수 있습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													그 이유는</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													각 시설에서는 한정된 객실을 여러 여행사와 고코투어가 같이 판매를 하다보니,</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													고코투어 사이트내의 객실현황을 실시간으로 수정이 불가피한 부분이 있습니다.&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													이러한 경우 고코투어는</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													고객님의 예약에 대하여 마감안내 문자를 보내드리고 &nbsp;결제하신 금액을 환불 해드리고 있습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													이용에 불편을 최소화할 수 있도록 항상 노력하겠습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													감사합니다.</div>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[결제/환불]</td>
+											<td class="tit tit_faq_cont7" id="bbsnum_491"><a href="javascript:;"><span class="question">Q.</span> 무통장 입금 후 카드 결제로 변경 가능 한가요? (조회:539 / 평균:1 / 참여자:2)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont7">
+											<td colspan="3" class="reply">
+												<p>
+													&nbsp;</p>
+												<p>
+													네 가능 합니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													고객센터로 전화 주시거나, 1:1문의에 고객님의 결제수단 변경을 원하시는 부분 전달해주시면,</p>
+												<p>
+													원하시는 결제 수단으로&nbsp;변경하여&nbsp;이용하실수 있도록 도와드리겠습니다.</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[결제/환불]</td>
+											<td class="tit tit_faq_cont8" id="bbsnum_519"><a href="javascript:;"><span class="question">Q.</span> ISP 인증을 통한 카드결제가 안되는데 왜 그런가요? (조회:1,485 / 평균:1 / 참여자:2)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont8">
+											<td colspan="3" class="reply">
+												<p>
+													&nbsp;</p>
+												<p>
+													카드결제가 안되실 경우에는 다음과 같이 해보시길 바랍니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													* 인터넷창을 모두 종료 후 홈페이지 재접속 및 결제</p>
+												<p>
+													* 컴퓨터 재부팅 후 홈페이지 접속 후 결제</p>
+												<p>
+													* 제어판에서 해당 결제프로그램 삭제 후 홈페이지 접속 및 결제프로그램 재설치</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													카드결제 시도 중 가맹점 에러라고 뜬 경우는, &nbsp;</p>
+												<p>
+													최근 신규 카드발급을 받으셨거나, ISP 인증서가 폐기 됬을 경우의 문제이며</p>
+												<p>
+													이 경우 카드사로 직접문의 하셔야 합니다.&nbsp;</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													<br> 위 내용으로 해결이 되지 않는 경우에는 고객센터 또는 1:1 문의하기를 통해 문의주시면</p>
+												<p>
+													친절하게 안내해 드리겠습니다.</p>
+												<p>
+													&nbsp;</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[결제/환불]</td>
+											<td class="tit tit_faq_cont9" id="bbsnum_577"><a href="javascript:;"><span class="question">Q.</span> 무통장으로 숙박상품을 예약했습니다.언제까지 입금하나요? (조회:238 / 평균:0 / 참여자:0)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont9">
+											<td colspan="3" class="reply">
+												<div>
+													결제수단을 무통장입금으로 숙박 예약을 접수할경우 접수일기준 3일전까지 입금하여야 예약진행이 가능합니다.</div>
+												<div>
+													기간 내에 입금되지 않을시 예약은 자동 취소됩니다.</div>
+												<div>
+													예약접수 후 가상계좌 문자받기를 클릭하면 가상계좌가 문자로 발송됩니다.</div>
+												<div>
+													문자를 받지 못하신경우 1666-1243으로 문의주시면 재발송해드리겠습니다.</div>
+												<div>
+													&nbsp;</div>
+												<div>
+													주말/공휴일은 은행영업일이 아니므로 인터넷뱅킹 또는 폰뱅킹을 이용하셔야 합니다.</div>
+												<div>
+													인터넷뱅킹이나 폰뱅킹 이용이 어려우신 경우</div>
+												<div>
+													결제변경을 마이페이지 예약내역에서 즉시결제하기 버튼을 클릭하면 결제수단변경이 가능합니다.&nbsp;</div>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[결제/환불]</td>
+											<td class="tit tit_faq_cont10" id="bbsnum_441"><a href="javascript:;"><span class="question">Q.</span> 결제 후, 예약번호가 전송되지 않습니다. (조회:1,271 / 평균:3 / 참여자:5)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont10">
+											<td colspan="3" class="reply">
+												<p>
+													<strong>국내최대&nbsp;숙박할인예약&nbsp;GO.CO.kr&nbsp;고코투어&nbsp;입니다.&nbsp;</strong></p>
+												<p>
+													<br>
+													<br> “고코투어”는&nbsp;실시간&nbsp;예약확정을&nbsp;원칙으로&nbsp;하며,
+												</p>
+												<p>
+													이를 위해 각&nbsp;숙박시설에서&nbsp;저희 사이트에&nbsp;자신의 객실현황을&nbsp;등록하는&nbsp;형태로&nbsp;운영되고&nbsp;있습니다.&nbsp;<br> &nbsp;
+												</p>
+												<p>
+													하지만, 최근&nbsp;일부&nbsp;숙박시설에서&nbsp;위와 같은&nbsp;형태의&nbsp;운영방식에&nbsp;미숙하여 숙박이&nbsp;마감&nbsp;되었음에도&nbsp;불구하고,</p>
+												<p>
+													마감처리를&nbsp;하지&nbsp;않거나,&nbsp;실시간으로&nbsp;정보를 갱신하지&nbsp;않아&nbsp;중복 및 초과예약이&nbsp;발생하여</p>
+												<p>
+													고객님들을 불편하게 하는 일이&nbsp;발생하고&nbsp;있습니다.&nbsp;<br> &nbsp;
+												</p>
+												<p>
+													이미&nbsp;판매의 형태가 정리 된&nbsp;대형 숙박시설의&nbsp;판매자분들은&nbsp;문제없이 저희 사이트를 통해 원활하게 객실을 판매하고 있으시지만,</p>
+												<p>
+													일부 소규모숙박시설,펜션등의&nbsp;사업주분들께서는 사이트 등록이 미숙하여 잘&nbsp;대응하지&nbsp;못하는&nbsp;경우가 발생하고 있어</p>
+												<p>
+													예약확정이&nbsp;늦어지거나,&nbsp;다수의&nbsp;사이트에&nbsp;동시&nbsp;판매&nbsp;하고&nbsp;있는&nbsp;등의&nbsp;이유로초과예약이&nbsp;접수&nbsp;되고있는 경우가 발생하고 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													이렇게 갑자기 판매하려는 객실이 없어진 경우,</p>
+												<p>
+													당사에서는 어쩔 수 없이 객실마감에&nbsp;따른&nbsp;취소&nbsp;처리를 할 수 밖에 없는 실정이며,</p>
+												<p>
+													이 과정에서 불가피하게 고객님들에게 양해를 구해야 하는 상황이 발생하게 됩니다.<br> &nbsp;&nbsp;
+												</p>
+												<p>
+													해서,</p>
+												<p>
+													결제한다고 예약확정이 이루어지는 것이 아니라,</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													시설로 부터 예약건에 대한 확정이 완전하게 승인처리 된 경우에만,</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													예약확정처리 되며, 이때 고객 님께 예약완료에 대한 문자 및 예약번호를 안내하고 있습니다.</p>
+												<p>
+													&nbsp;</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[결제/환불]</td>
+											<td class="tit tit_faq_cont11" id="bbsnum_449"><a href="javascript:;"><span class="question">Q.</span> 카드결제를 하였는데 무통장으로 변경하고 싶습니다. (조회:576 / 평균:1 / 참여자:2)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont11">
+											<td colspan="3" class="reply">
+												<p>
+													&nbsp;</p>
+												<p>
+													네 가능 합니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													고객센터로 전화 주시거나, 1:1문의에 고객님의 결제수단 변경을 원하시는 부분 전달해주시면,</p>
+												<p>
+													원하시는 결제 수단으로&nbsp;변경하여&nbsp;이용하실수 있도록 도와드리겠습니다.</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[결제/환불]</td>
+											<td class="tit tit_faq_cont12" id="bbsnum_488"><a href="javascript:;"><span class="question">Q.</span> 예약 후, 결제가 늦어지면 어떻게 되나요? (조회:567 / 평균:3 / 참여자:4)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont12">
+											<td colspan="3" class="reply">
+												<p>
+													&nbsp;</p>
+												<p>
+													예약후 결제가 이루어 지지않을 경우에는 예약대기 상태로 머물어&nbsp;있으며,</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													이 와중에 다른 고객분께서 예약 결제 완료를 하시면 해당객실은 예약을 하실수가 없습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													가급적 예약과 동시에 결제를 바랍니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													객실 가능 여부 통보 받으신 직후 결제(입금)해주시더라도,</p>
+												<p>
+													선착순 예약으로 인하여 객실은 마감 될수 있으며,</p>
+												<p>
+													마감으로 인해 발생되는 취소는 100% 환불&amp;카드취소 처리 가능합니다</p>
+												<p>
+													&nbsp;</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>[결제/환불]</td>
+											<td class="tit tit_faq_cont13" id="bbsnum_570"><a href="javascript:;"><span class="question">Q.</span> 객실마감 문자를 받았는데 결제는 언제 취소 되나요? (조회:318 / 평균:5 / 참여자:1)</a></td>
+											<td><img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO"></td>
+										</tr>
+										<tr id="faq_cont13">
+											<td colspan="3" class="reply">
+												<p>
+													예약해주신 시설의 객실이 마감된 상황으로 문자를 받으신 것 같습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													각 시설의 관리자가 수시로 객실현황을 수정하고 있지만</p>
+												<p>
+													객실은 실시간으로 여러 타 사이트에서 판매가 되고있어, 객실현황이 체크되는 부분에서 오차가 발생할 수 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													고코투어는</p>
+												<p>
+													그러한 상황이 발생되어 예약이 불가능할시 마감문자를 발송해 드린 후 바로 결제취소 및 환불을 도와드리고 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													하지만,</p>
+												<p>
+													카드사 혹은 은행의 영업시간으로 인하여 결제취소가 바로 처리되지 못하는 부분이 발생할 수 있습니다.</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													카드취소는</p>
+												<p>
+													당일 결제취소-당일에 취소처리됨</p>
+												<p>
+													당일 결제취소가 아닐 경우- 영업일 기준으로 3~5일정도 소요</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													환불은</p>
+												<p>
+													오후4시 이전 환불건-당일 오후 6시 이후 입금</p>
+												<p>
+													오후4시 이후 환불건-익일 오후 6시 이후 입금</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													(단, 취소 후 환불요청하신 날짜가 주말 또는 공휴일일 경우 다음 영업일 기준으로 처리되는 상황이 발생됨에 양해부탁드립니다)</p>
+												<p>
+													&nbsp;</p>
+												<p>
+													감사합니다.</p>
+
+												<div class="faq_more">
+													<h4>자주묻는질문을 다 봤지만, 아직 문제가 남으셨나요?</h4>
+													<p class="p-1">
+														<a href="#" class="btn-q">1:1 문의 하기<span class="gt">&gt;</span></a>
+														<a href="javascript:;" class="btn-x">닫기</a>
+													</p>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+
+						<div class="dropDown-bg" id="qna-pop-bg">
+								<div class="qna-wrap">
+									<div class="qna-th">
+										<p>1:1문의하기</p>
+										<a href="javascript:;" class="i-x" onclick="$(this).closest('#qna-pop-bg').hide();"><img src="http://img.go.co.kr/faq_modal_close.png" alt=""></a><!--버튼클릭시 레어어팝업 숨김-->
+									</div>
+
+
+									<table class="qna_t_write">
+										<colgroup>
+											<col width="100">
+											<col width="640">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>질문구분</th>
+												<td>
+													<!--<input type="radio" name="category1" id="reserve_ac" value="예약변경" disabled=""><label for="reserve_ac"> 예약변경</label>&nbsp;&nbsp;
+													<input type="radio" name="category1" id="cancel_ac" value="취소/환불요청" disabled=""><label for="cancel_ac"> 취소/환불요청</label>&nbsp;&nbsp;-->
+													<input type="radio" name="category1" id="money_ac" value="요금관련" checked=""><label for="money_ac"> 요금관련</label>&nbsp;&nbsp;
+													<input type="radio" name="category1" id="pay_ac" value="결제관련"><label for="pay_ac"> 결제관련</label>&nbsp;&nbsp;
+													<input type="radio" name="category1" id="etc_ac" value="기타"><label for="etc_ac"> 기타</label>&nbsp;&nbsp;
+													<input type="radio" name="category1" id="member_ac" value="회원정보/탈퇴"><label for="member_ac"> 회원정보/탈퇴</label>&nbsp;&nbsp;
+													<input type="radio" name="category1" id="group_inquiry" value="단체문의"><label for="group_inquiry"> 단체문의</label>&nbsp;&nbsp;
+												</td>
+											</tr>
+
+
+
+											<tr>
+												<th>제목</th>
+												<td>
+													<div class="qna_title_search_list">
+														<input name="subject" class="select02" id="subject" autocomplete="off" type="text" value="" onclick="$(this).next().show();">
+														<div class="q_list_box">
+															<a class="i-x" href="javascript:;" onclick="$(this).parent().hide();">X</a>
+															<ul>
+																<li><a href="#">예약확정은 언제 되나요?</a></li>
+																<li><a href="#">예약 취소는 어떻게 하나요?</a></li>
+																<li><a href="#">인원을 추가할 수 있나요?</a></li>
+																<li><a href="#">이용방법은 어떻게 되나요? </a></li>
+																<li><a href="#">소아(유아)의 기준 및 추가요금이 어떻게 되나요?</a></li>
+																<li><a href="#">예약확정에 대한 연락은 언제 받을 수 있나요?</a></li>
+																<li><a href="#">조식 인원을 추가하고 싶은데 가능한가요?</a></li>
+																<li><a href="#">만실(빈방없음) 예약 취소란?</a></li>
+																<li><a href="#">고코투어 믿을 만한 회사인가요?</a></li>
+																<li><a href="#">확정 전에 취소 하는 것도 위약금 규정이 발생되나요? </a></li>
+																<li><a href="#">결제 후, 호텔(시설)에 연락하니 예약이 아직 안되었다고 하네요?</a></li>
+																<li><a href="#">반려동물과 투숙이 가능할까요?</a></li>
+																<li><a href="#">스파 및 워터파크 패키지 구매시 해당시설에 무료 입장 가능한가요?</a></li>
+																<li><a href="#">예약취소시 취소/환불 절차</a></li>
+																<li><a href="#">[성함입실]이라고 문자가 왔습니다. 성함입실이 뭔가요?</a></li>
+																<li><a href="#">주문은 취소되었는데, 환불이 아직 안된 것 같습니다.</a></li>
+																<li><a href="#">예약을 2박3일 하고 1박만 이용 했을 경우 어떻게 되나요? </a></li>
+																<li><a href="#">고객센터 전화연결이 너무 안됩니다.</a></li>
+																<li><a href="#">결제 후, 객실 마감이면 어떻게 되나요? </a></li>
+																<li><a href="#">체크아웃을 연장 할수는 없나요? </a></li>
+																<li><a href="#">환불 문의</a></li>
+																<li><a href="#">예약 취소시, 위약금 규정은 어떻게 되나요?</a></li>
+																<li><a href="#">체크인 시간은 변경 가능한가요?</a></li>
+																<li><a href="#">객실 만실로인한 취소/환불 절차</a></li>
+																<li><a href="#">애완동물과 함께 투숙할 수 있나요?</a></li>
+																<li><a href="#">[해외] 호텔에 오니 예약 건이 없다고 합니다.</a></li>
+															</ul>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>작성자명</th>
+												<td><input name="name" class="select02" id="name" type="text" style="width:150px" readonly="" value="강혜준"></td>
+											</tr>
+											<tr>
+												<th>휴대폰</th>
+												<td>
+												<input class="select02" type="text" numberonly="true" maxlength="3" size="5" id="phone1" name="phone1" value="010"> -
+												<input class="select02" type="text" numberonly="true" maxlength="4" size="5" id="phone2" name="phone2" value=""> -
+												<input class="select02" type="text" numberonly="true" maxlength="4" size="5" id="phone3" name="phone3" value="">
+												</td>
+											</tr>
+											<tr>
+												<th>이메일</th>
+												<td>
+												<input class="select02" type="text" maxlength="30" size="30" id="email" name="email" value="vxggangxv@naver.com">
+												</td>
+											</tr>
+											<tr>
+												<th style="padding-bottom: 0; margin-bottom: 0;">내용</th>
+												<td colspan="3" style="padding-bottom: 0; margin-bottom: 0;">
+													<textarea name="contents" class="select03" id="contents">
+안녕하세요. 고코투어 입니다.
+고코투어는 통신판매와 여행보증보험에 가입되어 있는 회사입니다.
+
+따라서, 예약부터 최종 이용까지의 모든단계에서 혹시나 발생될 수 있는 고객님의 피해는 서울보증으로부터 모두 보장받을 수 있기 때문에 안심하시고 서비스를 이용하시면 됩니다.
+
+최근 성수기 예약으로 인하여 전화량이 늘었고, 이에 전화연결이 지연되고 있습니다.
+불편스럽더라도, 1:1 문의에 문의사항을 남겨주시면 확인하여
+고객님의 불편사항을 빠르게 처리해 드리겠습니다.
+
+안심하시고 조금만 기다려 주십시요.  감사합니다.
+													</textarea>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+
+									<div class="btn-area"><a href="#" class="btn-a">등록하기</a><a href="javascript:;" class="btn-a cancle" onclick="$('#qna-pop-bg').hide();">취소</a></div>
+								</div>
+							</div>
+
+					</ul>
+				</div>
+			</section>
+
+			<!--주변 다른 숙소-->
+			<section class="sec-prd-around">
+				<div class="prd-around">
+					<h2>[<strong>오션투유 리조트</strong>] 주변 다른 숙소도 보시겠어요?</h2>
+
+					<ul class="ul-list clr">
+						<li class="li-item">
+							<a href="">
+								<figure><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1476348760_main1.jpg" alt="현대수콘도미니엄"></figure>
+								<div class="d-txt">
+									<p class="p-name">현대수콘도미니엄</p>
+									<p class="p-pric"><span class="f-bd">52,000</span>원</p>
+								</div>
+							</a>
+						</li>
+						<li class="li-item">
+							<a href="">
+								<figure><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1498529278_main1.jpg" alt="낙산비치호텔"></figure>
+								<div class="d-txt">
+									<p class="p-name">낙산비치호텔</p>
+									<p class="p-pric"><span class="f-bd">77,000</span>원</p>
+								</div>
+							</a>
+						</li>
+						<li class="li-item">
+							<a href="">
+								<figure><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1503900859_main1.jpg" alt="동강시스타리조트"></figure>
+								<div class="d-txt">
+									<p class="p-name">동강시스타리조트</p>
+									<p class="p-pric"><span class="f-bd">84,900</span>원</p>
+								</div>
+							</a>
+						</li>
+						<li class="li-item">
+							<a href="">
+								<figure><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1488170837_main1.jpg" alt="강릉관광호텔"></figure>
+								<div class="d-txt">
+									<p class="p-name">강릉관광호텔</p>
+									<p class="p-pric"><span class="f-bd">80,000</span>원</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+
+</body>
+</html>

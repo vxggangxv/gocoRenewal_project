@@ -40,8 +40,8 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .on .i-chkIn, .i-chkIn.on {background-position: -30px -26px;}
 .on .i-chkOut, .i-chkOut.on {background-position: -60px -26px;}
 
-/*.c-ic3 {background: url(http://img.go.co.kr/renew/product/prd_sprt.png) no-repeat;}*/
-.c-ic3 {background: url(../../img/renew/product/prd_sprt.png) no-repeat;}
+.c-ic3 {background: url(http://img.go.co.kr/renew/product/prd_sprt.png) no-repeat;}
+/* .c-ic3 {background: url(../../img/renew/product/prd_sprt.png) no-repeat;} */
 .c-ic3.prd-cmm {height: 28px;}
 .c-ic3.i-heart {width: 16px;}
 .on .c-ic3.i-heart {background-position: -150px 0;}
@@ -344,4 +344,3 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnSltNum .quan > .s-l:before, .rnSltNum .quan > .s-r:before {left: 6px; top: 11px; width: 13px; height: 2px;}
 .rnSltNum .quan > .s-r:before {width: 12px; left: 6px;}
 .rnSltNum .quan > .s-r:after {width: 2px; height: 12px; left: 11px; top: 6px;}
-

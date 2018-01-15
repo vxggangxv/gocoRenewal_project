@@ -26,8 +26,8 @@ var gulp     = require('gulp'),
 	config   = require('./config.json');
 
 // ejs & CSS & JS 경로 설정
-var cssSrc   = config.staticOutput+'/css/*.css';
-var jsSrc   = config.staticOutput+'/js/*.js';
+var cssSrc   = config.staticOutput+'/css/**/*.css';
+var jsSrc   = config.staticOutput+'/js/**/*.js';
 // 밑줄 기호(_)가 붙은 파일은 컴파일 대상에서 제외.
 var ejsSrc  = config.input+'/ejs/**/!(_)*.ejs';
 // 부품(Parts) 폴더 _*.ejs 파일 주소

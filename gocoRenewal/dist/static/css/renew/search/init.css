@@ -36,7 +36,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-fOuter {position: relative; border-top: 4px solid #fa6b0a; border-left: 1px solid #ddd; background: #f9f9f9; height: 100%; overflow-y: auto;}
 .rnL-contents .rnL-fOuter .d1 {position: relative; width: 97.5%; float: right; padding: 20px 32px 20px 8px; font-size: 16px; border-bottom: 1px solid  #e2e2e2; font-size: 0;}
 .rnL-contents .rnL-fOuter .d1.last {padding-bottom: 80px;}
-.rnL-contents .rnL-fOuter h2 {color: #333; font-size: 21px;}
+.rnL-contents .rnL-fOuter h2 {color: #333; font-size: 21px; font-weight: 700;}
 .rnL-contents .rnL-fOuter .d1 .d1-1 {position: relative; margin-top: 10px; font-size: 16px;}
 .rnL-contents .rnL-fOuter .d1 .reset, .rnL-contents .rnL-fOuter .d1 .ht-grd {cursor: pointer;}
 .rnL-contents .rnL-fOuter .d1 .reset {position: relative; width: 100px; height: 36px; font-size: 15px; background: #fff; border-radius: 4px; border: 1px solid #c1c1c1; float: right; margin-top: -10px; top: 2px;}
@@ -64,7 +64,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-listOuter {position: relative; width: 938px; width: 55.9%; min-height: 960px; background: #fff;}
 .rnL-contents .rnL-listOuter .h2-box {position: relative;}
 .rnL-contents .rnL-listOuter h2.first {padding-top: 18px;}
-.rnL-contents .rnL-listOuter h2 {color: #191919; font-size: 21px; padding: 25px 0; line-height: 1;}
+.rnL-contents .rnL-listOuter h2 {color: #191919; font-size: 21px; padding: 25px 0; line-height: 1; font-weight: 700;}
 .rnL-contents .rnL-listOuter h2 > span {position: relative;}
 .rnL-contents .rnL-listOuter h2 .f-sm {display: inline-block; font-size: 17px; font-weight: 400; margin-left: 4px;}
 .rnL-contents .rnL-listOuter h2 .h2-sch {display: inline-block;}
