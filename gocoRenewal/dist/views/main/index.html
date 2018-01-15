@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+    <!-- /main/ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>고코 리뉴얼</title>
+    <!-- <meta name="descriptions" content="현재 페이지의 설명을 작성(200~300자 내외)합니다.">
+<meta name="keywords" content="현재 페이지와 관련된 키워드(10개 미만)를 입력해주세요."> -->
+    <link rel="stylesheet" href="/static/css/renew/reset.css">
+
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="/static/css/renew/common.css">
+    <link rel="stylesheet" href="/static/css/renew/main/init.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+        	  custom: {
+        		  families: ['Nanum Gothic', 'Noto Sans KR'],
+        		  urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css','http://fonts.googleapis.com/earlyaccess/notosanskr.css']
+        	  }
+          });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
+    <script>
+        Modernizr.Detectizr.detect();
+    </script>
+
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="/static/js/renew/common.js"></script>
+    <script src="/static/js/renew/main/init.js"></script>
+
+</head>
+
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <header class="rnL-header clr bsLs">
+            <div class="rn-container">
+                <div class="d-box clr">
+                    <a class="logo-a" href="#">
+                        <img class="l-img" src="http://img.go.co.kr/logo.png" alt="고코투어">
+                    </a>
+
+                    <div class="schBox">
+                        <!--키워드검색시 유사 상품 노출-->
+                        <span class="schBor" id="schBor">
+					<input type="text" tabindex="1" title="검색어" placeholder="어디로 떠나고 싶으신가요?" value="">
+				</span>
+                        <button class="schBtn" type="submit" tabindex="2" title="검색">
+                            <span class="c-ic i-mag"></span>
+                        </button>
+                        <div class="schEx">
+                            <ul class="ul1">
+                                <li>
+                                    <a href="#">
+                                        <span class="s1 thColor1">제주</span>
+                                        <span class="s2 s-i-Arr rArr"></span>
+                                        <span class="s3">데이즈호텔서귀포오션</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="s1 thColor1">제주</span>
+                                        <span class="s2 s-i-Arr rArr"></span>
+                                        <span class="s3">더클라우트호텔</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="s1 thColor1">제주</span>
+                                        <span class="s2 s-i-Arr rArr"></span>
+                                        <span class="s3">켄싱턴제주호텔</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="s1 thColor1">제주</span>
+                                        <span class="s2 s-i-Arr rArr"></span>
+                                        <span class="s3">부영호텔&amp;리조제주</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="s1 thColor1">제주</span>
+                                        <span class="s2 s-i-Arr rArr"></span>
+                                        <span class="s3">하워드존슨 호텔 제주서귀포하버</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="s1 thColor1">제주</span>
+                                        <span class="s2 s-i-Arr rArr"></span>
+                                        <span class="s3">전체</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-area"><span class="thColor1">고코투어 앱</span>을 통해 예약하면 <span class="thColor1">3만원</span> 쿠폰팩 즉시 지급! <a class="a1" href="#">앱설치하기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dLink-box">
+                        <!--새로운 이벤트 있을 경우 i-new 아이콘 추가 -->
+                        <a href="#">이벤트 <span class="i-new"></span></a>
+                        <span class="mgl"></span>
+                        <a href="#">숙소 추천받기</a>
+                        <span class="mgl"></span>
+                        <a href="#">광고/입점 제휴문의</a>
+                    </div>
+                </div>
+                <div class="flr-box">
+                    <ul class="rnL-nv clr">
+                        <li><a href="#" class="myArea"><span class="c-ic i-comp"></span> 내 주변</a>
+                        </li>
+                        <!--새로운 예약내역 있을 경우 i-new 아이콘 추가 -->
+                        <li><a href="#">예약내역 <span class="i-new"></span></a>
+                        </li>
+                        <li><a href="#">마이페이지</a>
+                        </li>
+                        <li class="last"><a href="#" class="lgn">로그아웃</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+        <div id="backDrop"></div>
+        <div class="rnM-mainDoor bsLs">
+            <div class="rn-container">
+                <strong class="main-text ftfm-mg">
+
+					<span class="s1">지금 예약한다면 슈퍼 그뤠잇!</span>
+
+					<span class="s2">여행 가라고 등 떠미는 고코투어 특가!</span>
+
+				</strong>
+
+                <div class="rn-schBox clr" id="rn-schBox">
+                    <h2 class="hidden">숙소검색</h2>
+
+                    <div class="rn-schInner clr">
+                        <div class="d1 d-cmm">
+                            <p class="p0">지역선택</p>
+                            <p class="p1 cm-s1"><span class="regName">서울</span><span class="regDetail">강남구</span>
+                            </p>
+                        </div>
+                        <div class="d2 d2-1 d-cmm">
+                            <p class="p0">체크인</p>
+                            <p class="p1 cm-s2">2017-10-11</p>
+                        </div>
+                        <div class="d2 d2-2 d-cmm">
+                            <p class="p0">체크아웃</p>
+                            <p class="p1 cm-s3">2017-10-11</p>
+                        </div>
+                        <div class="d3 d-cmm">
+                            <p class="p0">유형선택</p>
+                            <p class="p1 cm-s1">전체</p>
+                        </div>
+                        <div class="d4 d-cmm">
+                            <p class="p0">객실/인원 선택</p>
+                            <p class="p1 cm-s1"><span class="s1">객실 1</span>  <span class="s2">성인 2명</span>
+                            </p>
+                        </div>
+
+                        <div class="rnModal-sec">
+                            <!--지역-->
+                            <div class="rnSltReg rn-modal">
+                                <div class="slt-dep1">
+                                    <ul class="clr">
+                                        <li><a href="javascript:;">서울</a>
+                                        </li>
+                                        <li><a href="javascript:;">경기</a>
+                                        </li>
+                                        <li><a href="javascript:;">인천</a>
+                                        </li>
+                                        <li class="on"><a href="javascript:;">강원</a>
+                                        </li>
+                                        <li><a href="javascript:;">대전</a>
+                                        </li>
+                                        <li><a href="javascript:;">충북</a>
+                                        </li>
+                                        <li><a href="javascript:;">충남</a>
+                                        </li>
+                                        <li><a href="javascript:;">부산</a>
+                                        </li>
+                                        <li><a href="javascript:;">울산</a>
+                                        </li>
+                                        <li><a href="javascript:;">경남</a>
+                                        </li>
+                                        <li><a href="javascript:;">대구</a>
+                                        </li>
+                                        <li><a href="javascript:;">경북</a>
+                                        </li>
+                                        <li><a href="javascript:;">광주</a>
+                                        </li>
+                                        <li><a href="javascript:;">전남</a>
+                                        </li>
+                                        <li><a href="javascript:;">전북</a>
+                                        </li>
+                                        <li><a href="javascript:;">제주</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="slt-dep2">
+                                    <ul class="clr">
+                                        <li><a href="javascript:;">평창군</a>
+                                        </li>
+                                        <li><a href="javascript:;">강릉시</a>
+                                        </li>
+                                        <li><a href="javascript:;">춘천시</a>
+                                        </li>
+                                        <li><a href="javascript:;">양양군</a>
+                                        </li>
+                                        <li><a href="javascript:;">홍천군</a>
+                                        </li>
+                                        <li><a href="javascript:;">속초시</a>
+                                        </li>
+                                        <li><a href="javascript:;">횡성군</a>
+                                        </li>
+                                        <li><a href="javascript:;">고성군</a>
+                                        </li>
+                                        <li><a href="javascript:;">원주시</a>
+                                        </li>
+                                        <li><a href="javascript:;">영원군</a>
+                                        </li>
+                                        <li><a href="javascript:;">정선시</a>
+                                        </li>
+                                        <li><a href="javascript:;">동해시</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--달력-->
+                            <div class="rnSltCal rn-modal clr">
+
+                                <div class="cal-inner">
+                                    <p class="p-1">
+                                        <a href="" class="prev-a"></a><em>2017년 06월</em>
+                                    </p>
+                                    <table class="cal-tb">
+                                        <thead>
+                                            <tr>
+                                                <th class="sun">일</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th class="sat">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="off">
+                                                    <div></div>
+                                                </td>
+                                                <td class="off">
+                                                    <div></div>
+                                                </td>
+                                                <td class="off">
+                                                    <div></div>
+                                                </td>
+                                                <td class="off">
+                                                    <div></div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>1</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>2</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>3</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="off">
+                                                    <div>4</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>5</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>6</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>7</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>8</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>9</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>10</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="off">
+                                                    <div>11</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>12</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>13</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>14</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>15</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>16</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>17</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="off">
+                                                    <div>18</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>19</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>20</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>21</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>22</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>23</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>24</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="off">
+                                                    <div>25</div>
+                                                </td>
+                                                <!--날짜 미선택시-->
+                                                <!--<td><div>26</div></td>
+												<td><div>27</div></td>
+												<td><div>28</div></td>-->
+                                                <!--날짜 선택시-->
+                                                <td class="chkIn">
+                                                    <div>26<span class="c-ic i-chkIn"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="ing">
+                                                    <div>27</div>
+                                                </td>
+                                                <td class="chkOut">
+                                                    <div>28<span class="c-ic i-chkOut"></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>29</div>
+                                                </td>
+                                                <td>
+                                                    <div>30</div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cal-inner">
+                                    <p class="p-1"><em>2017년 07월</em>
+                                        <a href="javascript:;" class="next-a"></a>
+                                    </p>
+                                    <table class="cal-tb">
+                                        <thead>
+                                            <tr>
+                                                <th class="sun">일</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th class="sat">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>1</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>2</div>
+                                                </td>
+                                                <td>
+                                                    <div>3</div>
+                                                </td>
+                                                <td>
+                                                    <div>4</div>
+                                                </td>
+                                                <td>
+                                                    <div>5</div>
+                                                </td>
+                                                <td>
+                                                    <div>6</div>
+                                                </td>
+                                                <td>
+                                                    <div>7</div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>8</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>9</div>
+                                                </td>
+                                                <td>
+                                                    <div>10</div>
+                                                </td>
+                                                <td>
+                                                    <div>11</div>
+                                                </td>
+                                                <td>
+                                                    <div>12</div>
+                                                </td>
+                                                <td>
+                                                    <div>13</div>
+                                                </td>
+                                                <td>
+                                                    <div>14</div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>15</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>16</div>
+                                                </td>
+                                                <td>
+                                                    <div>17</div>
+                                                </td>
+                                                <td>
+                                                    <div>18</div>
+                                                </td>
+                                                <td>
+                                                    <div>19</div>
+                                                </td>
+                                                <td>
+                                                    <div>20</div>
+                                                </td>
+                                                <td>
+                                                    <div>21</div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>22</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>23</div>
+                                                </td>
+                                                <td>
+                                                    <div>24</div>
+                                                </td>
+                                                <td>
+                                                    <div>25</div>
+                                                </td>
+                                                <td>
+                                                    <div>26</div>
+                                                </td>
+                                                <td>
+                                                    <div>27</div>
+                                                </td>
+                                                <td>
+                                                    <div>28</div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>29</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="clr"></div>
+                                <div class="d-area">
+                                    <a href="#" class="a1"><span class="c-ic i-today"></span> 오늘 날짜로 변경</a>
+                                    <!--날짜 미선택시-->
+                                    <!--<a href="#" class="a2">선택완료</a>-->
+                                    <!--날짜 선택시-->
+                                    <a href="#" class="a2 on">선택완료</a>
+                                </div>
+                            </div>
+
+                            <!--유형-->
+                            <div class="rnSltCtg rn-modal">
+                                <ul class="ul1">
+                                    <li><a href="javascript:;">전체</a>
+                                    </li>
+                                    <li><a href="javascript:;">호텔</a>
+                                    </li>
+                                    <li><a href="javascript:;">리조트</a>
+                                    </li>
+                                    <li><a href="javascript:;">콘도</a>
+                                    </li>
+                                    <li><a href="javascript:;">레지던스</a>
+                                    </li>
+                                    <li><a href="javascript:;">모텔</a>
+                                    </li>
+                                    <li><a href="javascript:;">유스호스텔</a>
+                                    </li>
+                                    <li><a href="javascript:;">펜션</a>
+                                    </li>
+                                    <li><a href="javascript:;">카라반</a>
+                                    </li>
+                                    <li><a href="javascript:;">풀빌라</a>
+                                    </li>
+                                    <li><a href="javascript:;">입장권</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--객실/인원 선택-->
+                            <div class="rnSltNum rn-modal">
+                                <ul class="ul1">
+                                    <li>
+                                        <span class="s-lbl">객실</span>
+                                        <div class="quan clr">
+                                            <span class="s-l"></span>
+                                            <!--숫자 증가시 on클래스 추가-->
+                                            <input type="text" class="inp on" placeholder="0" value="1">
+                                            <span class="s-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="s-lbl">성인</span>
+                                        <div class="quan clr">
+                                            <span class="s-l"></span>
+                                            <input type="text" class="inp" placeholder="0">
+                                            <span class="s-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="s-lbl">소아</span>
+                                        <div class="quan clr">
+                                            <span class="s-l"></span>
+                                            <input type="text" class="inp" placeholder="0">
+                                            <span class="s-r"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="rn-schBtn">
+                        <button type="button"><span class="c-ic i-mag"></span> 검색</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="rnM-contents">
+            <div class="rn-container">
+                <div class="pic-sec bsLs">
+                    <ul class="ul1 clr">
+                        <li class="li-1"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">국내숙박</span></a>
+                        </li>
+                        <li class="li-2"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">입장권</span></a>
+                        </li>
+                        <li class="li-3"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">해외숙박</span></a>
+                        </li>
+                        <li class="li-4"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">해외입장권</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bn-sec">
+                <div class="rn-container">
+                    <ul id="bnSlider-1" class="bxSlider-1">
+                        <li class="li-1">
+                            <img class="bn-img" src="http://img.go.co.kr/renew/bn1_img.png" alt="고코투어모바일APP혜택">
+                            <div class="bn-contents">
+                                <p class="p1">모바일로 더 쉽고 편리하게!</p>
+                                <p class="p2">고코투어 모바일 <span class="s1">APP</span>
+                                </p>
+                                <p class="p3">이젠 고코투어를 더 쉽고 편하게 만나보세요!
+                                    <br>고코투어 앱으로 <span class="f-bd">더 많은 혜택</span>을 누리자!</p>
+                                <div class="d-store">
+                                    <a href="#">
+                                        <img src="http://img.go.co.kr/renew/ggStoreBtn.png" alt="구글스토어">
+                                    </a>
+                                    <a href="#">
+                                        <img src="http://img.go.co.kr/renew/appStoreBtn.png" alt="앱스토어">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li-2">
+                            <img class="bn-img" src="http://img.go.co.kr/renew/bn2_img.png" alt="고코투어와함께하세요">
+                            <div class="bn-contents">
+                                <p class="p1">귀사에 <span class="f-bd">예약서비스의 최고 경쟁력</span>을 드립니다.</p>
+                                <p class="p2">고코투어와 <span class="s1">함께 하세요!</span>
+                                </p>
+                                <p class="p3">고코투어는 여러 분야의 협력업체와 제휴를 통하여
+                                    <br>고객에게 보다 감각적이고 새로운 서비스를 제공합니다.</p>
+                                <div class="d-btnArea">
+                                    <a href="#" class="a1">고고투어 광고 신청</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="add-sec">
+                <div class="rn-container">
+                    <ul class="ul1 clr">
+                        <li class="clr">
+                            <div class="d1">
+                                <img src="http://img.go.co.kr/renew/lowPrcImg.png" alt="온라인최저가 보장">
+                            </div>
+                            <div class="d2">
+                                <p class="p1">온라인 최저가 보상</p>
+                                <p class="p2 ftfm-mg">
+                                    동일한 숙박에 대해 더 저렴한
+                                    <br>요금을 발견하셨다면 고코투어가
+                                    <br>보상해드리겠습니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="clr">
+                            <div class="d1">
+                                <img src="http://img.go.co.kr/mobile/i_gc.png" alt="고코투어앱">
+                            </div>
+                            <div class="d2 ftfm-mg">
+                                <p class="p1">무료 앱 다운로드</p>
+                                <p class="p2">
+                                    이동 중에도 다양한 상품을 찾고
+                                    <br>푸짐한 혜택을 더 할 수 있습니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="clr">
+                            <div class="d1">
+                                <img src="http://img.go.co.kr/renew/secuImg.png" alt="보안예약">
+                            </div>
+                            <div class="d2 ftfm-mg">
+                                <p class="p1">보안 예약</p>
+                                <p class="p2">
+                                    암호화 기술을 사용하여
+                                    <br>고객님의 소중한 데이터를 안전하게
+                                    <br>보호합니다.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <footer id="Footer" class="clr ftfm-mg">
+            <div class="f-area">
+                <div class="f-top">
+                    <div class="policy">
+                        <a href="javascript:utils.pop_open('http://www.go.co.kr/home/policy/join_policy_pop.php', 'join_policy', '')" title="이용약관">이용약관</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                        <a href="javascript:utils.pop_open('http://www.go.co.kr/home/policy/privacy_pop.php', 'privacy_policy', '')" title="개인정보처리방침"><b><font color="white">개인정보처리방침</font></b></a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                        <a href="http://www.go.co.kr/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의">광고/입점/제휴문의</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                        <a href="http://www.go.co.kr/home/customer/" title="고객센터">고객센터</a> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                        <a href="javascript:utils.on('#mailing_pop_wrap')">
+                            <img src="http://img.go.co.kr/icon_mail.jpg" alt="메일"> <span class="mail">매주 최저가/특가 상품 소식받기!</span>
+                        </a>
+                    </div>
+                    <div class="family-site">
+                        <span>패밀리사이트 바로가기&nbsp;▲</span>
+                        <ul class="site">
+                            <li>
+                                <div class="fam_btn"><a href="http://www.go.co.kr" target="_blank">고코투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.tournspa.co.kr" target="_blank">투어앤스파</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.tourgosu.co.kr" target="_blank">투어고수</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.todaygo.co.kr" target="_blank">투데이고</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.allgotour.co.kr" target="_blank">올고투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.todotour.co.kr" target="_blank">투두투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.toursoon.co.kr" target="_blank">투어순</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.hyutour.co.kr" target="_blank">휴투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.didimtour.co.kr" target="_blank">디딤투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.trip25.co.kr" target="_blank">트립25</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.oudigo.co.kr" target="_blank">어디고</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.borogogo.co.kr" target="_blank">바로고고</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.watour.co.kr" target="_blank">와투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.tourgirl.co.kr" target="_blank">투어걸</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.sinnatour.co.kr" target="_blank">신나투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.mitour.co.kr" target="_blank">미투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.dagaja.co.kr" target="_blank">다가자</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.tripgogo.co.kr" target="_blank">고고트립</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.hotplan.co.kr" target="_blank">핫플랜</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.gleetour.co.kr" target="_blank">글리투어</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fam_btn"><a href="http://www.shinetour.co.kr" target="_blank">샤인투어</a>
+                                </div>
+                            </li>
+                            <!-- 사장님 요청으로 이비즈네트웍스 추가 170504 -->
+                            <li>
+                                <div class="fam_btn"><a href="http://www.ebiznetworks.co.kr" target="_blank">이비즈네트웍스</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 2017-03-30 -->
+                    <script type="text/javascript">
+                        $('.family-site > span').click(function() {
+                        					$(this).next().toggle();
+                        				});
+                    </script>
+                    <!-- // 2017-03-30 -->
+                </div>
+
+                <div class="f-bottom">
+                    <!--이미지 변경-->
+                    <div class="f_logo">
+                        <img src="http://img.go.co.kr/f_logo.png" alt="고코투어푸터로고">
+                    </div>
+                    <div class="address">
+                        <!--내용 수정-->
+                        <p>
+                            (주)바로네트웍스<span class="mgl"></span>대표이사 : 전병권<span class="mgl"></span>메인문의 : help@go.co.kr
+                            <br>주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)
+                            <br>사업자등록번호 : 215-87-85373<span class="mgl"></span>통신판매업 : 제2017-서울강남-00561호<span class="mgl"></span>여행업등록번호 : 제2017-07호
+                            <br>여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<span class="mgl"></span>국외여행업등록번호 : 제2017호-26호
+                        </p>
+                        <p class="copy">
+                            copyright 2015 by GO.CO.KR co., all rights reserved.
+                        </p>
+
+                        <p class="store">
+                            <a href="http://www.go.co.kr/_appclick.php?val=ios" target="_blank">
+                                <img src="http://img.go.co.kr/appstore.png" arc="앱스토어바로가기">
+                            </a>
+                            <a href="http://www.go.co.kr/_appclick.php?val=android" target="_blank">
+                                <img src="http://img.go.co.kr/googleplay.png" arc="구글스토어바로가기">
+                            </a>
+                        </p>
+
+                    </div>
+                    <div class="customer">
+                        <p class="clr">
+                            고객센터
+                            <br>1666-1243 <span class="fl-r">(09:30 ~ 18:00)</span>
+                            <br>주말/공휴일 <span class="fl-r">(09:30 ~ 17:00)</span>
+                        </p>
+                    </div>
+
+                    <!--이미지 경로 변경-->
+                    <div class="four-list">
+                        <img src="http://img.go.co.kr/f_icon_01.jpg" border="0" alt="랭키닷컴1위">
+                        <a href="javascript:util.regist_pop('registration02')">
+                            <img src="http://img.go.co.kr/f_icon_02.jpg" border="0" alt="관광업등록증">
+                        </a>
+                        <a href="javascript:util.regist_pop('registration01')">
+                            <img src="http://img.go.co.kr/f_icon_03.jpg" border="0" alt="서울보증보험">
+                        </a>
+                        <img src="http://img.go.co.kr/f_icon_04.jpg" border="0" alt="신용카드결제">
+                        <img src="http://img.go.co.kr/f_icon_05.jpg" border="0" alt="휴대폰결제">
+                        <script language="JavaScript">
+                            function onopen() {
+                            						var site_com = "2158785373";
+                            						var url = "http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=" + site_com;
+                            						window.open(url, "communicationViewPopup", "width=750, height=700;");
+                            					}
+                        </script>
+                        <img src="http://img.go.co.kr/f_icon_06.jpg" alt="공정거래위원회" onclick="onopen();" style="cursor:pointer">
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
