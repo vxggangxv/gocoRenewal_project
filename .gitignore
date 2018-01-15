@@ -1,3 +1,17 @@
+#fontFile
+*.ttf
+*.woff
+*.woff2
+*.eot
+
+#sftpFile
+*.json
+
+# ImeageFile
+*.jpg
+*.png
+*.gif
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
