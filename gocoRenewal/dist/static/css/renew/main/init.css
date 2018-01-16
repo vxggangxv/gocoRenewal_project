@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 /*--- bxSlider 재정의 ---*/
 .bn-sec .bx-wrapper {position: relative; margin: 0 auto; border: none; width: 100%; box-shadow: none; height: 533px; background: #fafafa;}

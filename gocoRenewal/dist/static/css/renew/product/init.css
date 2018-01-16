@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 .rn-gwrap {min-width: 1430px;}
 
 .prd-basic .bx-wrapper .bx-caption {}
@@ -47,7 +47,7 @@
 .prd-basic .prd-infoBox .d1 .pop-layer:after {content: ""; border-bottom-color: #fff; top: -12px;}
 
 
-.prd-basic .prd-infoBox .d-date {position: relative; padding: 10px 50px; background: #f1f2f7; border-top: 1px solid #b8b8ba; border-bottom: 1px solid #b8b8ba; font-weight: 700; margin-top: 9px; z-index: 6;}
+.prd-basic .prd-infoBox .d-date {position: relative; padding: 10px 0px; text-align: center; background: #f1f2f7; border-top: 1px solid #b8b8ba; border-bottom: 1px solid #b8b8ba; font-weight: 700; margin-top: 9px; z-index: 6;}
 .prd-basic .prd-infoBox .d-date > div {display: inline-block; text-align: center; vertical-align: middle; position: relative;}
 .prd-basic .prd-infoBox .d-date > div > p {position: relative;}
 .prd-basic .prd-infoBox .d-date .p1 {color: #555; font-size: 15px;}
@@ -75,7 +75,7 @@
 .prd-basic .prd-infoBox .s-lbl {font-weight: 700; width: 115px; text-indent: 5px;}
 .prd-basic .prd-infoBox .s-txt {}
 
-
+.ie8 .prd-basic .prd-infoBox .d-date .d-date-1 .p3, .ie8 .prd-basic .prd-infoBox .d-date .d-date-3 .p3 {width: 140px;}
 
 .sec-prd-buy {position: relative; width: 100%; margin-top: 38px; height: 90px; background: #70707d;}
 .sec-prd-buy {}
@@ -208,7 +208,7 @@
 
 .pdtCal .cal-tb td.chkIn, .pdtCal .cal-tb td.chkOut, .pdtCal .cal-tb td.ddLine {position: relative; color: #fff; z-index: 1;}
 .pdtCal .cal-tb td.ddLine {color: #8f8f8f;}
-.pdtCal .cal-tb td.chkIn img, .pdtCal .cal-tb td.chkOut img 
+.pdtCal .cal-tb td.chkIn img, .pdtCal .cal-tb td.chkOut img
 , .pdtCal .cal-tb td.ddLine img, .pdtCal .cal-tb td.undef img {display: block; margin: -2px auto 0; position: relative; right: -1px;}
 .pdtCal .cal-tb td.ing > div {position: relative; background: #e5f4ff;}
 .pdtCal .cal-tb td.chkIn > div {background: #e33e3e;}
@@ -316,7 +316,7 @@
 .trd-comp-2 .c-red {font-size: 16px; color: #ff4748;}
 
 .trd-comp-2 input[type="checkbox"] {appearance: none; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none;
-    display: inline-block; position: relative; 
+    display: inline-block; position: relative;
     border: 1px solid #a5a5a5; width: 15px; height: 15px; border-radius: 0; outline: 0;
     background: #fff; margin-right: 5px; margin-left: 15px;
 }
@@ -496,7 +496,7 @@
 .li-review .t-review hr {border: 0; border-top: 1px solid #e4e4e4; width: 98%; margin: 0 auto;}
 .li-review .t-review .tr-cont td .p-1 {line-height: 2.8; color: #626262; padding-top: 2px;}
 .li-review .t-review .tr-cont td .p-1 > * {vertical-align: middle; position: relative; top: -2px;}
-.li-review .t-review .tr-cont td .p-1 .reco {margin: 0 3px 0 10px;} 
+.li-review .t-review .tr-cont td .p-1 .reco {margin: 0 3px 0 10px;}
 .li-review .t-review .tr-cont td .p-1 .s-num {border: 1px solid #cacaca; border-radius: 4px; padding: 2px 4px 4px;}
 .li-review .pagenation {text-align: center; font-size: 0; margin-top: 30px;}
 .li-review .pagenation a {display: inline-block; font-size: 14px; width: 32px; height: 32px; vertical-align: middle; line-height: 2.2em; border: 1px solid #ccc; color: #4c4c4c; font-family: "Nanum Gothic"; margin: 0 3px;}
