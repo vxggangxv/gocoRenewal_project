@@ -153,8 +153,9 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 
 /* 헤더영역 */
 .rnL-header {position: relative; border-top: 3px solid #fa6b0a; border-bottom: 1px solid #ddd; height: 93px;}
-.rnL-header .d-box {position: relative; top: 20px; font-size: 0;}
-.rnL-header .d-box .l-img {position: relative; width: 130px;}
+.rnL-header .d-box {position: relative; /*top: 20px;*/ top: 13px; font-size: 0;}
+.rnL-header .d-box .logo-a {position: relative; top: -4px;}
+.rnL-header .d-box .l-img {position: relative; /*width: 130px;*/}
 .rnL-header .d-box > *, .rnL-header .d-box .schBox > * {vertical-align: middle;}
 .rnL-header .d-box .schBox {position: relative; margin-left: 36px; display: inline-block;}
 .rnL-header .d-box .schBox .schBor, .rnL-header .d-box .schBox .schBtn {position: relative; top: 0px; height: 47px; margin-left: -4px;}
@@ -174,11 +175,11 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-header .d-box .schBox .schEx .d-area {position: relative; border-top: 1px solid #EBEEF3; font-size: 12.5px; padding: 8px 12px;}
 .rnL-header .d-box .schBox .schEx .d-area .a1 {position: absolute; right: 10px; top: 7px; border: 1px solid #bfc8d9; padding: 4px 6px; line-height: 1;}
 
-.rnL-header .d-box .dLink-box {position: relative;display: inline-block; margin-left: 40px; top: 1px;}
+.rnL-header .d-box .dLink-box {position: relative;display: inline-block; margin-left: 40px; top: 4px;}
 .rnL-header .d-box .dLink-box a {font-size: 16px; color: #4d4d4d; font-weight: 700;}
 .rnL-header .d-box .dLink-box .mgl {position: relative; width: 1px; height: 14px; background: #d6d6d6; top: -5px; margin: 0 14px;}
 
-.rnL-header .flr-box {position: absolute; right: 26px; top: 35px; font-size: 16px;}
+.rnL-header .flr-box {position: absolute; right: 26px; top: 36px; font-size: 16px;}
 .rnL-header .flr-box .rnL-nv {}
 .rnL-header .flr-box .rnL-nv > li {display: inline-block; margin: 0 17px;}
 .rnL-header .flr-box .rnL-nv > li.last {margin-right: 0;}

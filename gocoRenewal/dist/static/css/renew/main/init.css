@@ -24,14 +24,14 @@
 
 /* 공통 */
 .rnM-mainDoor .rn-container
-, .rnM-contents .rn-container 
+, .rnM-contents .rn-container
 	{position: relative; width: 1200px; padding-left: 5px; min-width: auto; margin: 0 auto; box-sizing: border-box;}
 
 /* 헤더 영역 */
 .rnL-header {position: relative; border-top: 3px solid #fa6b0a; border-bottom: 1px solid #ddd; height: 120px;}
-.rnL-header .d-box {position: relative; top: 31px; font-size: 0;}
-.rnL-header .flr-box {top: 47px;}
-.rnL-header .d-box .dLink-box {top: 2px;}
+.rnL-header .d-box {position: relative; /*top: 31px;*/ top: 28px; font-size: 0;}
+.rnL-header .flr-box {top: 51px;}
+/* .rnL-header .d-box .dLink-box {top: 4px;} */
 
 /* 대문 이미지 */
 .rnM-mainDoor {position: relative; width: 100%; height: 681px; background: #eaeaea url(http://img.go.co.kr/renew/mainDoor_01.jpg) no-repeat center; padding-top: 170px;}
@@ -99,7 +99,7 @@
 /* 배너 섹션 */
 .rnM-contents .bn-sec {position: relative; height: 535px; background: #fafafa; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;}
 .rnM-contents .bn-sec .bxSlider-1 > li
-, .rnM-contents .bn-sec .bxSlider-1 > li * 
+, .rnM-contents .bn-sec .bxSlider-1 > li *
 	{font-family: "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif; letter-spacing: 0.5px;}
 .rnM-contents .bn-sec .bxSlider-1 > li {position: relative; height: 533px;}
 .rnM-contents .bn-sec .bxSlider-1 > li .bn-contents {position: absolute;}
@@ -119,7 +119,7 @@
 .rnM-contents .bn-sec .bxSlider-1 .li-2 .bn-contents .d-btnArea {margin-top: 34px;}
 .rnM-contents .bn-sec .bxSlider-1 .li-2 .bn-contents .d-btnArea a {position: relative; display: inline-block; background: #ff6000; font-size: 16px; color: #fff; border-radius: 5px; padding: 6px 14px 8px; font-weight: 400;}
 .rnM-contents .bn-sec .bxSlider-1 .li-2 .bn-contents .d-btnArea a:after {
-	content: ""; position: relative; top: -2px; margin-left: 8px; display: inline-block; border: 1px solid #fff; width: 7px; height: 7px; 
+	content: ""; position: relative; top: -2px; margin-left: 8px; display: inline-block; border: 1px solid #fff; width: 7px; height: 7px;
 	border-left: 0; border-top: 0;
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
