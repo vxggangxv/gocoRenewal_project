@@ -17,277 +17,16 @@
 
         <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
 		<div id="backDrop"></div>
-        <% include ../parts/_filterBar.ejs %>
+        <% include ../parts/search/_filterBar.ejs %>
 
         <div class="rnL-contents">
 			<div class="rn-container">
-				<div class="rnL-mfOuter clr">
+                <div class="rnL-mfOuter clr">
+                    <!--필터검색-->
+    				<% include ../parts/search/_filtering_search.ejs %>
 
-					<div class="rnL-fOuter bsLs clr" id="rnL-fOuter">
-						<div class="d1">
-							<h2>검색결과 필터링</h2>
-							<div class="d1-1 clr">
-								<span class="ipCst">
-									<input type="checkbox" id="imd" class="chk-cst">
-									<label for="imd"></label>
-									<label for="imd">즉시 예약 가능한 숙소만 검색하기</label>
-								</span>
-								<button type="reset" class="reset">선택 초기화</button>
-							</div>
-						</div>
-						<div class="d1 clr">
-							<span class="lbl type1">숙소 유형</span>
-							<div class="d1-3">
-								<span class="ipCst nth-1">
-									<input type="checkbox" id="r-chk1" class="chk-cst">
-									<label for="r-chk1"></label>
-									<label for="r-chk1">호텔</label>
-								</span>
-								<span class="ipCst nth-2">
-									<input type="checkbox" id="r-chk2" class="chk-cst">
-									<label for="r-chk2"></label>
-									<label for="r-chk2">리조트</label>
-								</span>
-								<span class="ipCst nth-3">
-									<input type="checkbox" id="r-chk3" class="chk-cst">
-									<label for="r-chk3"></label>
-									<label for="r-chk3">콘도</label>
-								</span>
-								<span class="ipCst nth-4">
-									<input type="checkbox" id="r-chk4" class="chk-cst">
-									<label for="r-chk"></label>
-									<label for="r-chk">레지던스</label>
-								</span>
-								<span class="ipCst nth-5">
-									<input type="checkbox" id="r-chk5" class="chk-cst">
-									<label for="r-chk5"></label>
-									<label for="r-chk5">모텔</label>
-								</span>
-								<span class="ipCst nth-6">
-									<input type="checkbox" id="r-chk6" class="chk-cst">
-									<label for="r-chk6"></label>
-									<label for="r-chk6">유스호스텔</label>
-								</span>
-
-								<br>
-
-								<span class="ipCst nth-7">
-									<input type="checkbox" id="r-chk7" class="chk-cst">
-									<label for="r-chk7"></label>
-									<label for="r-chk7">펜션</label>
-								</span>
-								<span class="ipCst nth-8">
-									<input type="checkbox" id="r-chk8" class="chk-cst">
-									<label for="r-chk8"></label>
-									<label for="r-chk8">캠핑</label>
-								</span>
-								<span class="ipCst nth-9">
-									<input type="checkbox" id="r-chk9" class="chk-cst">
-									<label for="r-chk9"></label>
-									<label for="r-chk9">카라반</label>
-								</span>
-								<span class="ipCst nth-10">
-									<input type="checkbox" id="r-chk10" class="chk-cst">
-									<label for="r-chk10"></label>
-									<label for="r-chk10">풀빌라</label>
-								</span>
-								<span class="ipCst nth-11">
-									<input type="checkbox" id="r-chk11" class="chk-cst">
-									<label for="r-chk11"></label>
-									<label for="r-chk11">입장권</label>
-								</span>
-							</div>
-
-						</div>
-						<div class="d1 clr" id="htGrdBox">
-							<span class="lbl">호텔 등급</span>
-							<button class="ht-grd on">없음</button>
-							<button class="ht-grd">★</button>
-							<button class="ht-grd">★★</button>
-							<button class="ht-grd">★★★</button>
-							<button class="ht-grd">★★<br>★★</button>
-							<button class="ht-grd">★★<br>★★★</button>
-						</div>
-						<div class="d1 rgBox clr">
-							<span class="lbl type1">가격 범위</span>
-
-							<input id="prc-range">
-						</div>
-						<div class="d1 clr">
-							<span class="lbl type1">상세 장소</span>
-							<div class="d1-3 wdChkBox">
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk1" class="chk-cst">
-									<label for="rgn-chk1"></label>
-									<label for="rgn-chk1">강릉</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk2" class="chk-cst">
-									<label for="rgn-chk2"></label>
-									<label for="rgn-chk2">동해</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk3" class="chk-cst">
-									<label for="rgn-chk3"></label>
-									<label for="rgn-chk3">삼척</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk4" class="chk-cst">
-									<label for="rgn-chk"></label>
-									<label for="rgn-chk">속초</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk5" class="chk-cst">
-									<label for="rgn-chk5"></label>
-									<label for="rgn-chk5">원주</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk6" class="chk-cst">
-									<label for="rgn-chk6"></label>
-									<label for="rgn-chk6">춘천</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk7" class="chk-cst">
-									<label for="rgn-chk7"></label>
-									<label for="rgn-chk7">태백</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk8" class="chk-cst">
-									<label for="rgn-chk8"></label>
-									<label for="rgn-chk8">고성</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk9" class="chk-cst">
-									<label for="rgn-chk9"></label>
-									<label for="rgn-chk9">양양</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk10" class="chk-cst">
-									<label for="rgn-chk10"></label>
-									<label for="rgn-chk10">정선</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk11" class="chk-cst">
-									<label for="rgn-chk11"></label>
-									<label for="rgn-chk11">평창</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk12" class="chk-cst">
-									<label for="rgn-chk12"></label>
-									<label for="rgn-chk12">홍천</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="rgn-chk13" class="chk-cst">
-									<label for="rgn-chk13"></label>
-									<label for="rgn-chk13">횡성</label>
-								</span>
-							</div>
-						</div>
-						<div class="d1 rgBox scrRgBox clr">
-							<span class="lbl type1">고객 평점</span>
-
-							<input id="score-range">
-						</div>
-						<div class="d1 last clr">
-							<span class="lbl type1">고객 편의</span>
-							<div class="d1-3 wdChkBox-2">
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk1" class="chk-cst">
-									<label for="cv-chk1"></label>
-									<label for="cv-chk1">Wi-Fi</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk2" class="chk-cst">
-									<label for="cv-chk2"></label>
-									<label for="cv-chk2">조식</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk3" class="chk-cst">
-									<label for="cv-chk3"></label>
-									<label for="cv-chk3">주차</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk4" class="chk-cst">
-									<label for="cv-chk"></label>
-									<label for="cv-chk">욕조</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk5" class="chk-cst">
-									<label for="cv-chk5"></label>
-									<label for="cv-chk5">에어컨</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk6" class="chk-cst">
-									<label for="cv-chk6"></label>
-									<label for="cv-chk6">냉장고</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk7" class="chk-cst">
-									<label for="cv-chk7"></label>
-									<label for="cv-chk7">스파</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk8" class="chk-cst">
-									<label for="cv-chk8"></label>
-									<label for="cv-chk8">수영장</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk9" class="chk-cst">
-									<label for="cv-chk9"></label>
-									<label for="cv-chk9">연회장</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk10" class="chk-cst">
-									<label for="cv-chk10"></label>
-									<label for="cv-chk10">레스토랑</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk11" class="chk-cst">
-									<label for="cv-chk11"></label>
-									<label for="cv-chk11">노래방</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk12" class="chk-cst">
-									<label for="cv-chk12"></label>
-									<label for="cv-chk12">바베큐</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk13" class="chk-cst">
-									<label for="cv-chk13"></label>
-									<label for="cv-chk13">라운지</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk14" class="chk-cst">
-									<label for="cv-chk14"></label>
-									<label for="cv-chk14">취사가능</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk15" class="chk-cst">
-									<label for="cv-chk15"></label>
-									<label for="cv-chk15">반려동물</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk16" class="chk-cst">
-									<label for="cv-chk16"></label>
-									<label for="cv-chk16">TV</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk17" class="chk-cst">
-									<label for="cv-chk17"></label>
-									<label for="cv-chk17">피트니스</label>
-								</span>
-								<span class="ipCst">
-									<input type="checkbox" id="cv-chk18" class="chk-cst">
-									<label for="cv-chk18"></label>
-									<label for="cv-chk18">장애인시설</label>
-								</span>
-							</div>
-						</div>
-
-					</div>
-					<div class="rnL-mOuter bsLs clr"></div>
-
-				</div>
+                    <div class="rnL-mOuter bsLs clr" id="rnL-mOuter"></div>
+                </div>
 
 				<div class="rnL-listOuter bsLs" id="rnL-listOuter">
 					<!--검색시 예약 현황 퍼센트 등장-->
@@ -323,6 +62,16 @@
 								<a href="/views/product">
 									<div class="d1" style="background: url('http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1503649557_main1.jpg') no-repeat; background-size: 100% 100%;">
 										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+                                        <!-- 180320 객실예약완료시 -->
+                                        <div class="room-complete bg"><p class="in-txt bg"></p></div>
+                                        <div class="room-complete">
+                                            <p class="in-txt">
+                                                03/19<br>
+                                                객실예약<br>
+                                                완료
+                                            </p>
+                                        </div>
+                                        <!-- End -->
 									</div>
 									<div class="d2">
 										<p class="p1">
@@ -406,6 +155,15 @@
 							<li class="rcm-itm clr">
 								<div class="d1">
 									<img class="itm-img" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1426817972_main1.jpg" data-original="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1426817972_main1.jpg" alt="상품이미지">
+                                    <img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+                                    <!-- <div class="room-complete bg"><p class="in-txt bg"></p></div>
+                                    <div class="room-complete">
+                                        <p class="in-txt">
+                                            03/19<br>
+                                            객실예약<br>
+                                            완료
+                                        </p>
+                                    </div> -->
 								</div>
 								<div class="d2">
 									<p class="p1">

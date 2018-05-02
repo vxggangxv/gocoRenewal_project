@@ -6,14 +6,15 @@ $(function () {
 	$("#rnL-mOuter, #rnL-fOuter").css({
 		"position": "fixed",
 		"right": 0,
-		"top": "205px",
+		// "top": "205px",
+		"top": "245px",
 		"width": "40.5%"
 	});
 
-	
+
 	// 검색결과 예약현황 퍼센트 애니메이션
-    activeInfo();
-    
+ 	activeInfo();
+
 	/*함수 정의*/
 	function activeInfo () {
 
@@ -47,19 +48,26 @@ $(function () {
 					$circleTop.css( {
 						transform: 'rotate(' + degBottom + 'deg)'
 					} );
-					
+
 					$percentNumber.text( Math.floor( now ) );
 				}
 			} );
-		} );        
+		} );
 	}
-	
-	
 
 	// 필터보기/ 지도보기 클릭이벤트
 	$("#rnL-ctgr .slt-mf").on('click', function () {
 		$(this).toggleClass('on');
+		$("#rnL-fOuter").show();
+		$("body").removeClass("ft-none");
 	});
+
+	// 필터창 닫기 및 상품 가운대 정렬 효과
+	$("#rnL-fOuter .ft-clsBtn").on("click", function() {
+		$("#rnL-fOuter").hide();
+		$("body").addClass("ft-none");
+	});
+
 
 	// 정렬박스 텍스트 조절
 	$("#drop-box").on('click', function () {
@@ -80,27 +88,29 @@ $(function () {
 			$(this).closest('.ipCst').find('input + label').removeClass('on');
 		}
 	});
-	
+
 	// 호텔 등급 선택 시
 	$("#htGrdBox > .ht-grd").on("click", function() {
 		$(this).addClass('on').siblings().removeClass('on');
 	});
-	
+
 	// 필터링 range slider
 	$("#prc-range").ionRangeSlider({
 		type: "double",
 		min: 0,
-		max: 1026697,
-		from: 159290,
-		to: 723611,
+		max: 1000000,
+		from: 0,
+		to: 1000000,
 		prefix: "￦ ",
 		decorate_both: true,
 		step: 1000,
 		prettify_enabled: true,
     	prettify_separator: ",",
-		values_separator: " ~ "
+		values_separator: " ~ ",
+		onStart : price_change,
+		onChange : price_change
 	});
-	
+
 	$("#score-range").ionRangeSlider({
 		type: "double",
 		min: 0,
@@ -114,15 +124,26 @@ $(function () {
     	prettify_separator: ".",
 		values_separator: " ~ "
 	});
-	
-
-	
 
 	// 이미지 로딩 최적화
 	$("#rnL-listOuter img.itm-img").lazyload({
 		effect: "fadeIn"
 	});
-	
-	
 
 });
+
+var $inputFrom = $(".js-input-from"),
+$inputTo = $(".js-input-to")
+
+function price_change(data){
+	from = data.from;
+	to = data.to;
+	//alert(from+"||"+to+"||"+data);
+
+	/*$inputFrom.prop("value", from);
+	$inputTo.prop("value", to);	*/
+	$("input[name='min_price']").val(from);
+	$("input[name='max_price']").val(to);
+	//main_list_renew();//너무느림
+
+}

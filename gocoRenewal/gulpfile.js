@@ -31,7 +31,7 @@ var jsSrc   = config.staticOutput+'/js/**/*.js';
 // 밑줄 기호(_)가 붙은 파일은 컴파일 대상에서 제외.
 var ejsSrc  = config.input+'/ejs/**/!(_)*.ejs';
 // 부품(Parts) 폴더 _*.ejs 파일 주소
-var ejsPartsSrc = config.input+'/ejs/parts/_*.ejs';
+var ejsPartsSrc = config.input+'/ejs/parts/**/_*.ejs';
 
 /**
  * Gulp 업무(Tasks) 정의
@@ -57,10 +57,10 @@ gulp.task('connect', function() {
 // 브라우저 오픈 업무
 gulp.task('open', function() {
 	var options = {
-		url: 'http://localhost:'+config.port+'/views/main',
+		url: 'http://localhost:'+config.port+'/views/',
 		app: config.browser // chrome, firefox, iexplore, opera, safari
 	};
-	gulp.src(config.ejsOutput+'/main/index.html')
+	gulp.src(config.ejsOutput+'/index.html')
 		.pipe(open('<%file.path%>', options));
 });
 

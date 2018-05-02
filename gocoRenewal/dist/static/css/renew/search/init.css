@@ -3,7 +3,7 @@
 
 /* 인풋 태그 초기화 */
 .rnL-contents input[type=text]
-, .ipCst input.chk-cst[type=checkbox] {
+, .ipCst input.chk-cst[type=checkbox]  {
 	-webkit-appearance: none; -moz-appearance: none; appearance: none;
 }
 
@@ -36,10 +36,15 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-fOuter {position: relative; border-top: 4px solid #fa6b0a; border-left: 1px solid #ddd; background: #f9f9f9; height: 100%; overflow-y: auto;}
 .rnL-contents .rnL-fOuter .d1 {position: relative; width: 97.5%; float: right; padding: 20px 32px 20px 8px; font-size: 16px; border-bottom: 1px solid  #e2e2e2; font-size: 0;}
 .rnL-contents .rnL-fOuter .d1.last {padding-bottom: 80px;}
-.rnL-contents .rnL-fOuter h2 {color: #333; font-size: 21px; font-weight: 700;}
+.rnL-contents .rnL-fOuter h2 {position: relative; color: #333; font-size: 21px; font-weight: 700;}
+.rnL-contents .rnL-fOuter h2 .a-x {top: 0; right: 0;}
+.rnL-contents .rnL-fOuter h2 .a-x:before, .rnL-contents .rnL-fOuter h2 .a-x:after {height: 2px; background: #999;}
 .rnL-contents .rnL-fOuter .d1 .d1-1 {position: relative; margin-top: 10px; font-size: 16px;}
-.rnL-contents .rnL-fOuter .d1 .reset, .rnL-contents .rnL-fOuter .d1 .ht-grd {cursor: pointer;}
-.rnL-contents .rnL-fOuter .d1 .reset {position: relative; width: 100px; height: 36px; font-size: 15px; background: #fff; border-radius: 4px; border: 1px solid #c1c1c1; float: right; margin-top: -10px; top: 2px;}
+.rnL-contents .rnL-fOuter button.reset, .rnL-contents .rnL-fOuter .d1 .ht-grd {cursor: pointer;}
+.rnL-contents .rnL-fOuter button.reset {position: relative; width: 100px; height: 36px; font-size: 15px; background: #fff; border-radius: 4px; border: 1px solid #c1c1c1; }
+.rnL-contents .rnL-fOuter .d1 button.reset {float: right; margin-top: -10px; top: 2px;}
+.rnL-contents .rnL-fOuter .area-btn {clear: both; text-align: center; padding-top: 30px;}
+.rnL-contents .rnL-fOuter .area-btn button.reset {}
 .rnL-contents .rnL-fOuter .d1 .d1-3 {float: left; font-size: 16px;}
 .rnL-contents .rnL-fOuter .d1 .d1-2 {}
 .rnL-contents .rnL-fOuter .d1 .lbl, .rnL-contents .rnL-fOuter .d1 .ht-grd {position: relative; display: inline-block; vertical-align: middle;}
@@ -141,6 +146,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rcm-ul > li > div {float: left; position: relative;}
 .rcm-ul .d1 {width: 280px; height: 180px;}
 .rcm-ul .d1 img {width: 100%; height: 100%;}
+.rcm-ul .d1 .rn_rowPrc {position: absolute; top: 10px; right: 10px; width: 50px; height: 50px; border: 1px solid #000;}
 .rcm-ul .d2 {margin-left: 16px; width: 526px; width: 440px; width: 48.5%; min-height: 180px;}
 .rcm-ul .d2 .p1 {font-size: 16px; color: #727272; width: 78%;}
 .rcm-ul .d2 .p1 span:first-child {margin-right: 15px;}
@@ -170,21 +176,61 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rcm-ul .d3 .s-blSign {display: block; position: absolute; top: 7px; left: -101px; width: 108px; height: 37px; background: url(http://img.go.co.kr/renew/search/blSign.png) no-repeat; font-size: 14px;
 	color: #fff; font-weight: 600; text-align: center; padding-left: 7px; padding-top: 4px; letter-spacing: 0;}
 
-
+/* 객실예약완료시 */
+.rnL-contents .rnL-listOuter .room-complete {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.rnL-contents .rnL-listOuter .room-complete.bg {background: #fff; opacity: 0.7;}
+.rnL-contents .rnL-listOuter .room-complete .in-txt {position: absolute; box-sizing: border-box; left: 50%; margin-left: -60px; margin-top: -60px; top: 50%; padding: 5px; width: 120px; height: 120px; border-radius: 50%; text-align: center; color: #fff; font-size: 18px; padding-top: 20px;}
+.rnL-contents .rnL-listOuter .room-complete .in-txt.bg {background: #b00000;}
 
 /* fixed 설정 */
 .rnL-header, .rnL-ts, .rnL-ctgr {position: fixed; width: 100%; min-width: 1680px; background: #fff; z-index: 5;}
 .rnL-ts {z-index: 6;}
 .rnL-header {top: 0; z-index: 7;}
-.rnL-ts {top: 93px; background: #f2f2f2;}
-.rnL-ctgr {top: 143px;}
-.rnL-contents {margin-top: 193px;}
+.rnL-ts {top: 93px; background: #f2f2f2; /*top: 133px;*/}
+.rnL-ctgr {top: 143px; /*top: 183px;*/}
+.rnL-contents {margin-top: 193px; /*margin-top: 233px;*/}
 
 @media (max-width: 1680px) {
 	.rnL-contents .rnL-listOuter .bestC-outer {padding-bottom: 40px;}
-
 	.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li {height: 320px;}
 	.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d1 {height: 192px;}
-
 	.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p2 {font-size: 18px;}
+}
+
+/* 필터 비노출 시 상품 중앙정렬 및 기타 너비 수정*/
+.ft-none .rn-gwrap, .ft-none .rnL- header, .ft-none .rnL-ts, .ft-none .rnL-ctgr, .rnL-ctgr-ticket {min-width: 1470px;}
+
+.ft-none .rnL-contents .rnL-listOuter {width: 1054px; margin: 0 auto;}
+.ft-none .rnL-contents .rnL-listOuter .bestC-outer {padding-bottom: 50px;}
+.ft-none .rnL-contents .rnL-listOuter .bestC-outer .ul1 > li {height: 356px;}
+.ft-none .rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d1 {height: 212px;}
+.ft-none .rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p2 {font-size: 20px;}
+
+/* 입장권 콘텐츠 수정 */
+.case-ticket .rnL-contents {margin-top: 190px;}
+
+/* 입장권 필터 */
+.rnL-ctgr-ticket {position: fixed; top: 133px; left: 0; height: 62px; width: 100%; background: #f5f5f5; border-bottom: 1px solid #ddd;}
+.rnL-ctgr-ticket .ft-ticket {margin: 0 auto; padding-top: 12px;}
+.rnL-ctgr-ticket .ft-ticket > * {display: inline-block; vertical-align: middle; margin-left: 8px; color: #787878; font-size: 14px;}
+.rnL-ctgr-ticket .ft-ticket input.chk-cst[type=checkbox] + label {margin-right: 0px;}
+.rnL-ctgr-ticket .ft-ticket label {font-size: 14px;}
+.rnL-ctgr-ticket .ft-ticket > span:first-child {margin-left: 0;}
+.rnL-ctgr-ticket .ft-ticket .inp {width: 200px; height: 36px; border: 1px solid #bcbcbe; text-indent: 10px; margin-left: 20px;}
+.rnL-ctgr-ticket .ft-ticket .a-btn {height: 36px; padding: 0 15px; background: #555a78; color: #fff; line-height: 36px; margin-left: 5px;}
+
+/* 입장권 레이아웃 */
+.rnL-ctgr-ticket .ft-ticket,
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter {width: 1392px;}
+
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter {margin: 10px auto 0; left: -9px;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer {border-bottom: 0;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer .ul1 > li {width: auto; height: auto;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer .ul1 > li > a {width: 330px; height: 330px;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer .ul1 > li {margin: 9px;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer .ul1 > li .d2 .p2 {margin: 4px 0;}
+
+@media (max-width: 1392px) {
+	.rnL-ctgr-ticket .ft-ticket,
+	.ft-none .rnL-contents .rnL-listOuter.ticketOuter {width: 1044px;}
 }

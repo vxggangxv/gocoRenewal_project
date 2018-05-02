@@ -1,0 +1,174 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/search/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/ion.rangeSlider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/ion.rangeSlider.custom.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.lazyload.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/ion.rangeSlider.min.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<!-- 180320 필터 없을경우 body클래스 추가, 입장권일 경우 case-ticket 추가 -->
+<body class="ft-none case-ticket">
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+        <% include ../parts/search/_filterBar_ticket.ejs %>
+
+        <div class="rnL-contents">
+			<div class="rn-container">
+
+                <!-- 180320 티켓 아웃터 수정 ticketOuter 클래스 추가 -->
+				<div class="rnL-listOuter ticketOuter bsLs" id="rnL-listOuter">
+
+					<div class="bestC-outer">
+						<ul class="ul1 clr">
+							<li>
+								<a href="/views/product">
+									<div class="d1" style="background: url('http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img3/1490060344_main1.jpg') no-repeat; background-size: 100% 100%;">
+										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+									</div>
+									<div class="d2">
+										<p class="p1">
+											<span class="i-ctgr-water">워터파크</span>
+										</p>
+										<p class="p2"><strong>[충남] 파라다이스 스파도고</strong></p>
+										<p class="p4">
+											<em class="s1">21,700<span>원~</span></em>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="d1" style="background: url('http://file.go.co.kr/tour/img1/1502332779_1.jpg') no-repeat; background-size: 100% 100%;">
+										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+									</div>
+									<div class="d2">
+										<p class="p1">
+											<span class="i-ctgr-lepo">레포츠</span>
+										</p>
+										<p class="p2"><strong>[강원] 속초설악삼포비치바이크</strong></p>
+										<p class="p4">
+											<em class="s1">판매준비중</em>
+											<s class="s2">15,000원</s>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="d1" style="background: url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170427131925.jpg') no-repeat; background-size: 100% 100%;">
+										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+									</div>
+									<div class="d2">
+										<p class="p1">
+											<span class="i-ctgr-exp">체험/축제</span>
+										</p>
+										<p class="p2"><strong>[경기] 서울대공원 리프트 PKG</strong></p>
+										<p class="p4">
+											<em class="s1">4,800<span>원~</span></em>
+                                            <s class="s2">7,000원</s>
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li>
+								<a href="#">
+									<div class="d1" style="background: url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170501114810.jpg') no-repeat; background-size: 100% 100%;">
+										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+									</div>
+									<div class="d2">
+										<p class="p1">
+											<span class="i-ctgr-exp">체험/축제</span>
+										</p>
+										<p class="p2"><strong>[경남] 거제씨월드 입장권</strong></p>
+										<p class="p4">
+											<em class="s1">11,500<span>원~</span></em>
+                                            <s class="s2">16,000원</s>
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li>
+								<a href="#">
+									<div class="d1" style="background: url('http://cache.go.co.kr/media/1000/d1t4fn350b1qbw.cloudfront.net/5ce50734-fa01-474a-9cac-1b01d14df02d.jpg') no-repeat; background-size: 100% 100%;">
+										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+									</div>
+									<div class="d2">
+										<p class="p1">
+											<span class="i-ctgr-kiz">키즈</span>
+										</p>
+										<p class="p2"><strong>[경기] 딸기가 좋아 헤어리점</strong></p>
+										<p class="p4">
+											<em class="s1">10,500<span>원~</span></em>
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li>
+								<a href="#">
+									<div class="d1" style="background: url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170907164230.jpg') no-repeat; background-size: 100% 100%;">
+										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+									</div>
+									<div class="d2">
+										<p class="p1">
+											<span class="i-ctgr-theme">테마파크</span>
+										</p>
+										<p class="p2"><strong>[경기] 테마동물원 쥬쥬 입장권</strong></p>
+										<p class="p4">
+											<em class="s1">6,500<span>원~</span></em>
+                                            <s class="s2">15,000원</s>
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li>
+								<a href="#">
+									<div class="d1" style="background: url('http://cache.go.co.kr/media/1000/d1t4fn350b1qbw.cloudfront.net/2e2b3777-db74-4d5a-96bf-dd938532c46b.jpg') no-repeat; background-size: 100% 100%;">
+										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+									</div>
+									<div class="d2">
+										<p class="p1">
+											<span class="i-ctgr-ticket">입장권</span>
+										</p>
+										<p class="p2"><strong>[경북] 경주 한복 나드리</strong></p>
+										<p class="p4">
+											<em class="s1">9,000<span>원~</span></em>
+										</p>
+									</div>
+								</a>
+							</li>
+                            <li>
+								<a href="#">
+									<div class="d1" style="background: url('http://cache.go.co.kr/media/1000/admin.varonet.co.kr/bar/mshop_img/B_IMG20170501114810.jpg') no-repeat; background-size: 100% 100%;">
+										<img src="http://img.go.co.kr/mobile/banner_lowest_price.gif" alt="온라인최저가보장" class="rn_rowPrc">
+									</div>
+									<div class="d2">
+										<p class="p1">
+											<span class="i-ctgr-exp">체험/축제</span>
+										</p>
+										<p class="p2"><strong>[경남] 거제씨월드 입장권</strong></p>
+										<p class="p4">
+											<em class="s1">11,500<span>원~</span></em>
+                                            <s class="s2">16,000원</s>
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+    </div>
+
+</body>
+</html>

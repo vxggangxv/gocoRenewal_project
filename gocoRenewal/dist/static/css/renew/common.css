@@ -1,13 +1,14 @@
 @charset "utf-8";
-body {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; line-height:1.5; letter-spacing:0.5px;}
-body, a {color: #333;}
-a {text-decoration:none;}
+@import url(http://static.go.co.kr/css/faq-v1.1.css);
+
+body {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; line-height:1.5; letter-spacing:0.5px; color: #333;}
+a {text-decoration:none; color: inherit;}
 input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; color:#333;}
 
 
 /* 초기화 */
-.rn-schBox input[type=text] {
-	-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; outline: none;
+.rn-schBox input[type=text], input[type=text].reset {
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; outline: none; border-radius: 0;
 }
 
 /* 아이콘 */
@@ -64,6 +65,22 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .c-ic3.i-thumb {width: 43px; height: 47px; background-position: 0px -180px;}
 .c-ic3.i-spot {width: 11px; height: 14px; background-position: 0px -30px;}
 
+.c-ic4 {background: url(http://img.go.co.kr/renew/icon/type/icon_type.png) no-repeat; width: 54px; height: 54px;}
+.c-ic4.i-all {background-position: 0 0; width: 49px;}
+.c-ic4.i-hotel {background-position: -70px 0;}
+.c-ic4.i-condo {background-position: -140px 0;}
+.c-ic4.i-motel {background-position: -210px 0;}
+.c-ic4.i-guest {background-position: -280px 0;}
+.c-ic4.i-pension {background-position: -350px 0;}
+.c-ic4.i-ticket {background-position: -420px 0;}
+.on .c-ic4.i-all, .c-ic4.i-all.on {background-position: 0 -70px;}
+.on .c-ic4.i-hotel, .c-ic4.i-hotel.on {background-position: -70px -70px;}
+.on .c-ic4.i-condo, .c-ic4.i-condo.on {background-position: -140px -70px;}
+.on .c-ic4.i-motel, .c-ic4.i-motel.on {background-position: -210px -70px;}
+.on .c-ic4.i-guest, .c-ic4.i-guest.on {background-position: -280px -70px;}
+.on .c-ic4.i-pension, .c-ic4.i-pension.on {background-position: -350px -70px;}
+.on .c-ic4.i-ticket, .c-ic4.i-ticket.on {background-position: -420px -70px;}
+
 
 .i-new {position: relative; top: -2px; display: inline-block; font-size: 10px; text-align: center; vertical-align: middle; box-sizing: border-box; border-radius: 50%; width: 15px; height: 15px; background: #eb0045; border: 1px solid #e12130; color: #fff; font-family: "Arial", sans-serif; line-height: 13px; font-weight: 400;}
 .i-new:before {content: "N";}
@@ -82,6 +99,8 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .ftfm-mg, .ftfm-mg * {font-family: "Malgun Gothic", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif; letter-spacing: -1px;}
 .f-bd {font-weight: 700;}
 .f-bdr {font-weight: 800;}
+.pull-left {float: left;}
+.pull-right {float: right;}
 .s-i-Arr {position: relative; display: inline-block; width: 6px; height: 6px; border: 1px solid #d7d7d7;
 	-webkit-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
@@ -92,9 +111,14 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 }
 
 span[class*=i-ctgr-] {display: inline-block; color: #fff; padding: 2px 5px; border-radius: 3px; text-align: center; font-size: 14px; line-height: 1;}
-span.i-ctgr-01 {background: #117396;}
-span.i-ctgr-02 {background: #a9853d;}
-span.i-ctgr-03 {background: #0a347b; padding: 2px 10px;}
+span.i-ctgr-resort, span.i-ctgr-exp, span.i-ctgr-01 {background: #117396;}
+span.i-ctgr-condo, span.i-ctgr-ticket, span.i-ctgr-02 {background: #a9853d;}
+span.i-ctgr-hotel, span.i-ctgr-03 {background: #0a347b; padding: 2px 10px;}
+span.i-ctgr-water {background: #0879ba;}
+span.i-ctgr-lepo {background: #a51738;}
+span.i-ctgr-theme {background: #11967f;}
+span.i-ctgr-kiz {background: #f8851e;}
+span.i-ctgr-off {background: #555a78;}
 
 /* a태그 초기화 */
 /*.rn-gwrap a:focus {font-weight: 400;} */
@@ -145,17 +169,25 @@ div.pp_default .pp_nav {left: 6px; top: -2px; z-index: 1;}
 div.pp_default .pp_close {right: 5px;}
 div.pp_default .pp_description {position: relative; top: 4px;}
 
+/* Top 위로 버튼 */
+.goTop {position: fixed; display: none; width: 55px; height: 55px; bottom: 20px; right: 20px; z-index: 1;}
 
 /* 헤더 좌측 여백 */
-.rnL-header > .rn-container, .rnL-ts .rn-container
+.rnL-header  .rn-container, .rnL-ts .rn-container
 , .rnL-ctgr > .rn-container {padding-left: 30px;}
 .rnL-contents .rnL-listOuter {margin-left: 30px;}
 
 /* 헤더영역 */
-.rnL-header {position: relative; border-top: 3px solid #fa6b0a; border-bottom: 1px solid #ddd; height: 93px;}
-.rnL-header .d-box {position: relative; /*top: 20px;*/ top: 13px; font-size: 0;}
-.rnL-header .d-box .logo-a {position: relative; top: -4px;}
-.rnL-header .d-box .l-img {position: relative; /*width: 130px;*/}
+.rn-hdArea {border-top: 3px solid #fa6b0a; padding: 20px 0;}
+.rnL-header {position: relative; border-bottom: 1px solid #ddd;
+	/* height: 93px; height: 133px; */
+	/* border-top: 3px solid #fa6b0a; */
+}
+.rnL-header .d-box {position: relative; font-size: 0;
+	/*top: 20px;*/ /*top: 13px;*/
+}
+.rnL-header .d-box .logo-a {position: relative; top: -2px;}
+.rnL-header .d-box .l-img {position: relative; width: 146px;}
 .rnL-header .d-box > *, .rnL-header .d-box .schBox > * {vertical-align: middle;}
 .rnL-header .d-box .schBox {position: relative; margin-left: 36px; display: inline-block;}
 .rnL-header .d-box .schBox .schBor, .rnL-header .d-box .schBox .schBtn {position: relative; top: 0px; height: 47px; margin-left: -4px;}
@@ -179,7 +211,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-header .d-box .dLink-box a {font-size: 16px; color: #4d4d4d; font-weight: 700;}
 .rnL-header .d-box .dLink-box .mgl {position: relative; width: 1px; height: 14px; background: #d6d6d6; top: -5px; margin: 0 14px;}
 
-.rnL-header .flr-box {position: absolute; right: 26px; top: 36px; font-size: 16px;}
+.rnL-header .flr-box {position: absolute; right: 26px; top: 18px; /*top: 36px;*/ font-size: 16px;}
 .rnL-header .flr-box .rnL-nv {}
 .rnL-header .flr-box .rnL-nv > li {display: inline-block; margin: 0 17px;}
 .rnL-header .flr-box .rnL-nv > li.last {margin-right: 0;}
@@ -188,9 +220,23 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-header .flr-box .rnL-nv > li > a.myArea .i-comp {top: -2px;}
 .rnL-header .flr-box .rnL-nv > li > a.lgn {border: 1px solid #595959; padding: 2px 4px;}
 
+/* 구버전 고코용 */
+/* .rn-hdTop {height: 37px; background: #efefef; color: #4d4d4d; font-size: 13px; padding-top: 10px;}
+.rn-hdTop .gcApp {position: relative; top: -1px; width: 20px; margin-left: 10px; margin-right: 4px;}
+.rn-hdTop .rn-container > * {display: inline-block; vertical-align: middle;}
+.rn-hdTop .flr-box {position: relative; float: right; right: 26px;}
+.rn-hdTop .flr-box .rnL-nv {}
+.rn-hdTop .flr-box .rnL-nv > li {display: inline-block; margin: 0 10px;}
+.rn-hdTop .flr-box .rnL-nv > li.last {margin-right: 0;}
+.rn-hdTop .flr-box .rnL-nv > li > a {color: #5f5f5f;}
+.rn-hdTop .flr-box .rnL-nv > li > a.myArea {color: #fa6b0a;}
+.rn-hdTop .flr-box .rnL-nv > li > a.myArea .i-comp {top: -2px;}
+.rn-hdTop .flr-box .rnL-nv > li > a.lgn {border: 1px solid #595959; padding: 2px 4px;} */
+
 /* 푸터영역 */
-#Footer {background-color:#292929; padding-bottom:100px; position: relative;}
+#Footer {background-color:#323232; padding-bottom:100px; position: relative;}
 .f-area {position: relative; width:1190px; margin:0 auto;}
+
 .f-area .f-top {position: relative; padding:20px 0;}
 .f-area .f-top:after {content:''; display:block; clear:both;}
 .f-area .f-top .policy {float:left; color:#969696;}
@@ -209,16 +255,23 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 
 .f-area .f-bottom .address {float:left; margin-left:40px; margin-top: -8px; color: #a9a9a9;}
 .f-area .f-bottom .address p {font-size:14px; letter-spacing: 0px; line-height: 1.7}
-.f-area .f-bottom .address p.copy {letter-spacing:-0.3px; color: #a9a9a9;}
-.f-area .f-bottom .address p.store {display: none;}
+.f-area .f-bottom .address p.copy {color:#7f7f7f; letter-spacing:-0.3px; font-size: 13px; margin-top: 5px;}
+.f-area .f-bottom .address p.store {margin-top: 10px;}
 .f-area .f-bottom .address p.store > a {margin-left: 10px;}
 .f-area .f-bottom .address p.store > a:first-child {margin-left: 0;}
+.f-area .f-bottom .address p strong {color:#cdcdcd; font-size:15px;}
+.f-area .f-bottom .address p a {margin-left:5px; vertical-align:middle;}
+.f-area .f-bottom .address p span {color:#a3a3a3; vertical-align:middle;}
+
 .f-area .f-bottom .address .mgl {position: relative; width: 1px; height: 12px; background: #a9a9a9; margin: 0 8px;}
-.f-area .f-bottom .customer {float:right; width:190px;}
-.f-area .f-bottom .customer p, .f-area .f-bottom .customer p .fl-r {letter-spacing: -0.5px;}
-.f-area .f-bottom .customer p {font-size: 15px; color: #797979; }
-.f-area .f-bottom .customer p .fl-r {float: right;}
-.f-area .f-bottom .four-list {float: left; font-size:0; margin-left: 192px; margin-top: 15px;}
+.f-area .f-bottom .cust-box {position: absolute; width: 266px; border: 1px solid #7f7f7f; right: 0; top: 32px; box-sizing: border-box; padding: 5px 8px; color: #a4a4a4; font-size: 16px; letter-spacing: -0.5px;}
+.f-area .f-bottom .cust-box .p-0 {font-size: 17px; font-weight: 700;}
+.f-area .f-bottom .cust-box .p-0 > img {position: relative; top: -1px; margin-right: 6px;}
+.f-area .f-bottom .cust-box .p-1 {color: #898989;}
+.f-area .f-bottom .cust-box .p-2 {}
+.f-area .f-bottom .cust-box .a-btn {position: absolute; top: 34px; right: 10px; width: 67px; height: 64px; background: #9c9c9c; font-size: 16px; color: #323232; display: block; text-align: center; padding-top: 14px; box-sizing: border-box; line-height: 1.3;}
+
+.f-area .f-bottom .four-list {position:absolute; right:0; bottom: 20px; font-size:0;}
 .f-area .f-bottom .four-list a, .f-area .f-bottom .four-list img {margin-left:10px;}
 
 
@@ -251,19 +304,25 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-ctgr .slt-mf {position: absolute; right: 26px; top: 9px; width: 168px; height: 34px; border: 1px solid #ddd; font-size: 15px; color: #5f5f5f; padding: 4px 7px; cursor: pointer;}
 .rnL-ctgr .slt-mf > span {display: inline-block; vertical-align: middle;}
 .rnL-ctgr .slt-mf .i-mapv {margin-right: 2px;}
-.rnL-ctgr .slt-mf .s-txt:before {content: "지도보기";}
-.rnL-ctgr .slt-mf.on .s-txt:before {content: "필터보기";}
+.rnL-ctgr .slt-mf .s-txt:before {content: "필터보기";}
+/* .rnL-ctgr .slt-mf .s-txt:before {content: "지도보기";}
+.rnL-ctgr .slt-mf.on .s-txt:before {content: "필터보기";} */
 .rnL-ctgr .slt-mf .i-dArr {position: absolute; right: 7px; top: 6.5px;}
 
 
-/* 달력 */
+/* 모달 공통 */
 #backDrop, .backDrop {position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: block; z-index: 6;}
 #backDrop {display: none;}
-.rn-modal {position: absolute; box-shadow: 2px 4px 2px rgba(5, 5, 5, .15); border: 1px solid #ddd; border-top: 4px solid #fa6b0a; z-index: 11; display: none;}
-.rnSltCal {position: absolute; left: 0; top: 54px; background-color: #fff; letter-spacing: -0.5px; padding-bottom: 20px; width: 690px; /*height: 413px;*/ color: #3b3b3b;}
+.rn-modal {position: absolute; box-shadow: 2px 4px 2px rgba(5, 5, 5, .15); border: 1px solid #ddd; z-index: 11; display: none;
+	/*border-top: 4px solid #fa6b0a;*/
+}
+.rnSltCal, .rnSltReg {top: 42px;}
+
+/* 달력 */
+.rnSltCal {position: absolute; left: 0; background-color: #fff; letter-spacing: -0.5px; padding-bottom: 20px; width: 690px; /*height: 413px;*/ color: #3b3b3b;}
 .rnSltCal .cal-inner {position: relative; width: 50%; float: left; padding: 0 20px;}
 .rnSltCal .cal-inner:after {content: ""; position: absolute; right: 0; top: 73px; height: 210px; width: 1px; background: #edebea;}
-.rnSltCal p.p-1 {position: relative; text-align: center; font-size: 19px; margin-top: 20px;}
+.rnSltCal p.p-1 {position: relative; text-align: center; font-size: 19px; margin-top: 15px;}
 .rnSltCal p.p-1 em, .rnSltCal p.p-1 a {display: inline-block;}
 .rnSltCal p.p-1 em {font-weight: 700;}
 .rnSltCal p.p-1 .cal-btn-prev {left:85px;}
@@ -283,12 +342,12 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .ie8 .rnSltCal p.p-1 .next-a:before {content: "▶";}
 
 .rnSltCal .cal-inner {}
-.rnSltCal .cal-tb {position: relative; border-collapse: collapse; margin: 20px auto 0;}
+.rnSltCal .cal-tb {position: relative; border-collapse: collapse; margin: 12px auto 0;}
 .rnSltCal .cal-tb th, .rnSltCal .cal-tb td {width: 55px; font-size: 15px; text-align: center; line-height: 1.3em;}
 .rnSltCal .cal-tb th {padding-bottom: 12px;}
 .rnSltCal .cal-tb td {position: relative; font-family: "Arial", sans-serif; vertical-align: top; font-size:16px; padding: 0; cursor: pointer;}
 .rnSltCal .cal-tb td:hover {background: #f0f0f0;}
-.rnSltCal .cal-tb td > div {padding: 8px 0 12px; height: 100%; box-sizing: border-box;}
+.rnSltCal .cal-tb td > div {padding: 6px 0 12px; height: 100%; box-sizing: border-box;}
 
 /* 토, 일 체크 */
 .rnSltCal .cal-tb .sat, .rnSltCal .cal-tb .sat .prc {color: #00aeff;}
@@ -305,7 +364,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnSltCal .cal-tb td.off .prc {color: #969696;}
 .rnSltCal .cal-tb td.chkIn > div, .rnSltCal .cal-tb td.chkOut > div,
 .rnSltCal .cal-tb td.chkIn .prc, .rnSltCal .cal-tb td.chkOut .prc {color: #fff;}
-.rnSltCal .d-area {position: relative; text-align: center; font-size: 0; margin-top: 20px;}
+.rnSltCal .d-area {position: relative; text-align: center; font-size: 0; margin-top: 15px;}
 .rnSltCal .d-area a {display: inline-block; margin: 0px 5%; width: 40%; height: 42px; font-size: 18px; text-align: center; line-height: 40px; border-radius: 4px; font-size: 16px;}
 .rnSltCal .d-area .a1 {background: #fff; border: 1px solid #818181; color: #818181;}
 .rnSltCal .d-area .a1 .i-today {top: -3px; margin-right: 3px;}
@@ -314,20 +373,37 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 
 
 /* 지역 */
-.rnSltReg {position: absolute; left: 509px; top: 54px; background-color: #fff; letter-spacing: -0.5px; width: 582px; /*height: 413px;*/ color: #3b3b3b;}
+.rnSltReg {position: absolute; left: 509px; background-color: #fff; letter-spacing: -0.5px; width: 889px; /*height: 413px;*/ color: #3b3b3b;}
 .rnSltReg [class*=slt-dep] {padding: 20px 30px 20px 30px;}
 .rnSltReg [class*=slt-dep] > ul > li {float: left; margin-left: 15px; margin-top: 15px;}
-.rnSltReg [class*=slt-dep] > ul > li > a {position: relative;display: block; width: 71px; font-size: 16px; color: #666;}
+.rnSltReg [class*=slt-dep] > ul > li > a {position: relative;display: block; width: 76px; font-size: 16px; color: #666;}
 .rnSltReg [class*=slt-dep] > ul > li > a:hover, .rnSltReg [class*=slt-dep] > ul > li.on > a {color: #fa6b0a;}
 .rnSltReg .slt-dep1 {background: #fff;}
 .rnSltReg .slt-dep1 > ul > li.on a:before {content: ""; position: absolute; left: -15px; top: 7px; display: inline-block; width: 10px; height: 11px; background: url(http://img.go.co.kr/renew/rnLSprImg.png) no-repeat -120px -100px;}
-.rnSltReg .slt-dep2 {background: #fafafa; display: none;}
+.rnSltReg .slt-dep2 {background: #fafafa; display: none; border-top: 1px solid #d8d8d8;}
 
 /* 유형 */
-.rnSltCtg {width: 186px; left: 596px; top: 6px; background: #fff;}
-.rnSltCtg .ul1 {padding: 5px 0;}
-.rnSltCtg .ul1 > li > a {display: block; text-align: center; padding: 5px 0; font-size: 16px; color: #626262;}
+/* 변경 전 */
+.rnSltCtg {width: 200px; left: 690px; top: 6px; background: #fff;}
+.rnSltCtg .ul1 {padding: 4px 0;}
+.rnSltCtg .ul1 > li > a {display: block; text-align: center; padding: 4px 0; font-size: 16px; color: #626262;}
+.rnSltCtg .ul1 > li.bor-t {border-top: 1px dashed #c8c8c8;}
 .rnSltCtg .ul1 > li:hover > a {color: #fa6b0a;}
+/* 변경 후 */
+.rnSltCtg-2 {position: absolute; height: 150px; right: 56px; box-sizing: border-box; padding: 35px 10px; padding-left: 14px; background: #fff; top: 0px;}
+.rnSltCtg-2 .ul1 {font-size: 0; text-align: center;}
+.rnSltCtg-2 .ul1 > li {display: inline-block; vertical-align: middle; font-size: 16px; padding: 0 17px; cursor: default;}
+.rnSltCtg-2 .ul1 > li > a {position: relative; display: block;}
+.rnSltCtg-2 .ul1 > li > a > div {display: block; margin: 0 auto;}
+.rnSltCtg-2 .ul1 > li > a > p {position: relative; display: inline-block; margin-top: 5px; letter-spacing: -1.5px;}
+.rnSltCtg-2 .ul1 > li > a .i-chk {display: none; width: 16px; height: 9px; border: 3px solid #fa6b0a; border-top: 0; border-right: 0;
+	position: absolute; bottom: 11px; left: -19px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.rnSltCtg-2 .ul1 > li.on > a {color: #fa6b0a;}
+.rnSltCtg-2 .ul1 > li.on > a .i-chk {display: inline-block;}
 
 /* 객실/인원 선택 */
 .rnSltNum {left: 797px; top: 6px; width: 228px; background: #fff;}
@@ -345,3 +421,47 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnSltNum .quan > .s-l:before, .rnSltNum .quan > .s-r:before {left: 6px; top: 11px; width: 13px; height: 2px;}
 .rnSltNum .quan > .s-r:before {width: 12px; left: 6px;}
 .rnSltNum .quan > .s-r:after {width: 2px; height: 12px; left: 11px; top: 6px;}
+
+
+/* 레이어팝업 공통 */
+.allPopupWrap {z-index:9999; display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:url('http://img.go.co.kr/modal_bg.png') repeat 0 0; text-align:center;}
+.allPopupWrap:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
+/* 상품상세 최저가배너, 최저가안내 레이어팝업 추가 */
+.price_all_layer_pop .price_all_layer_area {display:inline-block; margin-left:-4px; vertical-align:middle; background-color:#fff; color:#282828;}
+.price_all_layer_pop .price_all_layer_area .price_top {position:relative; padding:20px 10px; background-color:#ffde00;}
+.price_all_layer_pop .price_all_layer_area .price_top .btn-popup-price-close {position:absolute; right:20px; top:50%; margin-top:-12px;}
+.price_all_layer_pop .price_all_layer_area .price_mid {padding:30px 20px 20px;}
+.price_all_layer_pop .price_all_layer_area .price_mid .note_txt {font-size:18px; margin-bottom:25px;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li {margin-top:10px; text-align:left;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li:first-child {margin-top:0;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li > p {position:relative; padding-left:16px; font-size:14px; font-weight:bold;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li > p:before {content:''; display:block; position:absolute; left:0; top:5px; width:11px; height:11px; background-color:#282828;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li .list_guide_inner {margin-top:5px; padding:10px; background-color:#f8f8f8; border:1px solid #ccc;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li .list_guide_inner > ul > li {margin-top:5px;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li .list_guide_inner > ul > li:first-child {margin-top:0;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li .list_guide_inner > ul > li > ul {padding-left:10px;}
+.price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li .list_guide_inner > ul > li > ul .sign {background-color:#ffdd00;}
+.price_all_layer_pop .price_all_layer_area .price_mid .btn_decl {text-align:center; margin-top:20px;}
+.price_all_layer_pop .price_all_layer_area .price_mid .btn_decl a {display:inline-block; width:194px; height:42px; line-height:42px; font-size:18px; color:#fff !important; background-color:#000;}
+/* 고코투어 앱 설치 레이어 팝업 추가 */
+.popup-app-download .coupon_pack_pop {display:inline-block; width:594px; height:342px; text-align:left; vertical-align:middle; background:#fff;}
+.popup-app-download .coupon_pack_pop_top {height:59px;line-height:59px;background:#001734;}
+.popup-app-download .coupon_pack_pop_top img{display:inline-block;float:left;padding:10px 0px 0px 24px;}
+.popup-app-download .coupon_pack_pop_top p{float:left;font-size:16px;color:#fff;font-weight:normal;margin-left:32px;}
+.popup-app-download .coupon_pack_pop_top a > img{display:inline-block;float:right;width:21px;padding:20px 21px 0px 0px; }
+.popup-app-download .coupon_pack_pop_contents {box-sizing:border-box; margin:30px;}
+.popup-app-download .coupon_pack_pop_contents ul li {float:left;}
+.popup-app-download .coupon_pack_pop_contents ul li.goco_app_icon{width:107px; margin:0 3px 0 7px;}
+.popup-app-download .coupon_pack_pop_contents p.title_txt{font-size:24px;font-weight:bold;color:#000000;}
+.popup-app-download .coupon_pack_pop_contents p.txt_m{margin-top:5px;font-size:18px;font-weight:normal;font-weight:700;}
+.popup-app-download .coupon_pack_pop_contents p.txt_s{margin-top:6px;font-size:16px;  font-weight:700;}
+.popup-app-download span.orange_txt{color:#ff5400;}
+.popup-app-download span.red_txt{color:#ff0000;text-decoration:underline;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box{clear:both;width:519px;margin:0 auto;padding-top:22px;height:54px;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient{width:404px;height:54px;line-height:54px;background:#ebebeb;border:1px solid #b2b2b2;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient label{font-size:15px;font-weight:700;margin:0px 15px 0px 18px;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient input{width:70px;height:32px;font-size:15px;background:#ffffff;border:1px solid #cdcdcd;text-align:center;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient span{font-size:20px;padding:0 8px;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.send_Btn {width:105px;height:56px;margin-left:8px;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.send_Btn input{width:100%;height:56px;background:#f95c24;font-size:20px;font-weight:bold;color:#fff;border:none;outline:none;cursor:pointer;}
+.popup-app-download .coupon_pack_pop_contents >  p{clear:both;margin:14px 0px 0px 7px;font-size:13px; }
