@@ -22,16 +22,22 @@
 .faqWrap .faq-tab .list .itm {float: left; display: block; width: 204px; height: 60px; cursor: pointer; box-sizing: border-box; border-top: 2px solid #000; color: #fff; background: #565656; font-size: 20px; margin-left: 2.5px; text-align: center; line-height: 60px; letter-spacing: -0.5px;}
 .faqWrap .faq-tab .list .itm:first-child {margin-left: 0;}
 .faqWrap .faq-tab .list .itm.on {font-weight: 700;}
-.faqWrap .faq-tab .list .itm.on.nth-1 {background: #44a8ff;}
+/*.faqWrap .faq-tab .list .itm.on.nth-1 {background: #44a8ff;}
 .faqWrap .faq-tab .list .itm.on.nth-2 {background: #ecb84a;}
 .faqWrap .faq-tab .list .itm.on.nth-3 {background: #da82ff;}
-.faqWrap .faq-tab .list .itm.on.nth-4 {background: #21ceb8;}
+.faqWrap .faq-tab .list .itm.on.nth-4 {background: #21ceb8;}*/
+
+.faqWrap .faq-tab .list .itm.on.nth-1 {background: #44a8ff;}
+.faqWrap .faq-tab .list .itm.on.nth-2 {background: #ecb84a;}
+.faqWrap .faq-tab .list .itm.on.nth-3 {background: #946fc7;}
+.faqWrap .faq-tab .list .itm.on.nth-4 {background: #33c19b;}
 .faqWrap .contents-tab {position: relative; width: 100%; height: 420px;}
 .faqWrap .contents-tab .faq-main {position: absolute; top: 0; left: 0; width: 100%; display: none;}
 .faqWrap .contents-tab .faq-main.on {display: block;}
 
 .faqWrap .faq-main {border: 2px solid #44a8ff; box-sizing: border-box;}
-.faqWrap h2 {background: #ff8b2d; color: #fff; font-size: 23px; width: 100%; height: 62px; text-align: center; padding-top: 21px; font-family: "NanumBarunGothic", "Nanum Gothic", sans-serif; letter-spacing: -0.5px; box-sizing: border-box; line-height: 1;}
+.faqWrap > h2:first-child {background: #ff8b2d;}
+.faqWrap h2 {background: #44a8ff; color: #fff; font-size: 23px; width: 100%; height: 62px; text-align: center; padding-top: 21px; font-family: "NanumBarunGothic", "Nanum Gothic", sans-serif; letter-spacing: -0.5px; box-sizing: border-box; line-height: 1;}
 .faqWrap h2 .s1 {color: #f6ff00;}
 .faqWrap h2 .i-x {position: absolute; top: 16px; right: 16px; }
 .faqWrap .ul1 {overflow-y: auto; height: 354px; /* height: 531px; */ background: #fff;}
@@ -71,21 +77,21 @@
 .faqWrap .bscondo {border-color: #ecb84a !important;}
 .faqWrap .bscondo .ul1 > li .d2:before,
 .faqWrap .bscondo .ul1 > li .d1.on .s-tit:after,
-.faqWrap .bscondo h2 {background: #ecb84a!important;}
+.faqWrap .bscondo h2 {background: #ecb84a !important;}
 .faqWrap .bscondo .ul1 > li .d1:hover,
 .faqWrap .bscondo .ul1 > li .d1.on {color: #ecb84a!important;}
 
 .faqWrap .mayhills {border-color: #946fc7 !important;}
 .faqWrap .mayhills .ul1 > li .d2:before,
 .faqWrap .mayhills .ul1 > li .d1.on .s-tit:after,
-.faqWrap .mayhills h2 {background: #946fc7!important;}
+.faqWrap .mayhills h2 {background: #946fc7 !important;}
 .faqWrap .mayhills .ul1 > li .d1:hover,
 .faqWrap .mayhills .ul1 > li .d1.on {color: #946fc7!important;}
 
 .faqWrap .yeonho {border-color: #33c19b !important;}
 .faqWrap .yeonho .ul1 > li .d2:before,
 .faqWrap .yeonho .ul1 > li .d1.on .s-tit:after,
-.faqWrap .yeonho h2 {background: #33c19b!important;}
+.faqWrap .yeonho h2 {background: #33c19b !important;}
 .faqWrap .yeonho .ul1 > li .d1:hover,
 .faqWrap .yeonho .ul1 > li .d1.on {color: #33c19b!important;}
 

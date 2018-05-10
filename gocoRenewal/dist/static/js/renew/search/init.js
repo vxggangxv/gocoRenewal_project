@@ -6,8 +6,8 @@ $(function () {
 	$("#rnL-mOuter, #rnL-fOuter").css({
 		"position": "fixed",
 		"right": 0,
-		// "top": "205px",
-		"top": "245px",
+		"top": "205px",
+		// "top": "245px",
 		"width": "40.5%"
 	});
 
@@ -57,9 +57,15 @@ $(function () {
 
 	// 필터보기/ 지도보기 클릭이벤트
 	$("#rnL-ctgr .slt-mf").on('click', function () {
-		$(this).toggleClass('on');
-		$("#rnL-fOuter").show();
-		$("body").removeClass("ft-none");
+		if($(this).hasClass("on")) {//열렸다 닫혔다하게
+			$(this).removeClass("on");
+			$("#rnL-fOuter").hide();
+			$("body").addClass("ft-none");
+		} else {
+			$(this).toggleClass('on');
+			$("#rnL-fOuter").show();
+			$("body").removeClass("ft-none");
+		}
 	});
 
 	// 필터창 닫기 및 상품 가운대 정렬 효과
@@ -103,7 +109,7 @@ $(function () {
 		to: 1000000,
 		prefix: "￦ ",
 		decorate_both: true,
-		step: 1000,
+		step: 10000,
 		prettify_enabled: true,
     	prettify_separator: ",",
 		values_separator: " ~ ",

@@ -17,107 +17,968 @@
 
         <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
 		<div id="backDrop"></div>
-        <% include ../parts/product/_bar_ticket.ejs %>
+        <% include ../parts/search/_filterBar.ejs %>
 
         <!--전체 콘텐츠 영역-->
 		<div class="rn-contents">
 			<!--상품소개-->
-			<section class="rn-container sec-prd-basic type-ticket">
-				<h2>[공연/전시] [대학로/연극] 극적인하룻밤
+			<section class="rn-container sec-prd-basic">
+				<h2>[리조트] ★오션투유리조트 속초설악비치 호텔앤콘도 [총판]</h2>
 
-                    <span class="pull-right d1">
-						<a class="a1" href="javascript:;"><span>리얼리뷰</span> <span class="thColor1 num">435</span><span>건</span></a>
-						<span class="mgl"></span>
-						<a class="a2" href="javascript:;" onclick="$(this).toggleClass('on');"><span class="c-ic3 prd-cmm i-heart"></span><span class="s1">찜하기</span></a>
-						<span class="mgl"></span>
-						<a class="a4" href="javascript:;"><span class="c-ic3 prd-cmm i-users"></span><span class="s1">단체문의</span></a>
-                    </span>
-                </h2>
-
-				<div class="prd-basic clr type-ticket">
+				<div class="prd-basic clr">
 					<div class="prd-imgBox">
-						<ul class="bxS">
-							<li style="background: url(http://cache.go.co.kr/media/375/ticketsuda.com/upfiles/product/3452722843.jpg) no-repeat; background-size: cover;"></li>
+						<ul class="bxS" id="bxS-1">
+							<li><img class="bxImg" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491388368_1.jpg" title="오션투유 리조트 외관" /></li>
+							<li><img class="bxImg" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203944_2.jpg" title="오션투유 리조트 실내" /></li>
+							<li><img class="bxImg" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_3.jpg" title="오션투유 룸1" /></li>
+							<li><img class="bxImg" src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_4.jpg" title="오션투유 룸2" /></li>
 						</ul>
+
+						<div class="bxP" id="bxP-1">
+							<a data-slide-index="0" href=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491388368_1.jpg" /></a>
+							<a data-slide-index="1" href=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203944_2.jpg" /></a>
+							<a data-slide-index="2" href=""><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_3.jpg" /></a>
+							<a class="more-a" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203910_4.jpg" rel="prettyPhoto[gallery1]" title="오션투유 룸2"><img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img1/1491203910_4.jpg" rel="prettyPhoto[gallery1]"/></a>
+							<a class="hidden" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491388368_1.jpg" rel="prettyPhoto[gallery1]" title="오션투유 리조트 외관"></a>
+							<a class="hidden" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203944_2.jpg" rel="prettyPhoto[gallery1]" title="오션투유 실내"></a>
+							<a class="hidden" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1491203910_3.jpg" rel="prettyPhoto[gallery1]" title="오션투유 룸1"></a>
+							<a class="hidden" href="http://cache.go.co.kr/media/1000/file.go.co.kr/tour/img1/1426829685_in1.jpg" rel="prettyPhoto[gallery1]" title="사이즈조절예시이미지"></a>
+						</div>
 					</div>
 					<div class="prd-infoBox" id="prd-infBox">
-                        <div class="d3 d-cmm">
-                            <span class="s-lbl">기간</span>
-                            <span class="s-txt">2018.01.01 ~ 2018.03.31</span>
-                        </div>
-                        <div class="d4 d-cmm">
-                            <span class="s-lbl">장소</span>
-                            <span class="s-txt">서울특별시 종로구 동숭동 1-60 5층 바탕골소극장</span>
+						<div class="d1">
+							<a class="a1" href="javascript:;"><span>리얼리뷰</span> <span class="thColor1 num">435</span><span>건</span></a>
+							<span class="mgl"></span>
+							<a class="a2" href="javascript:;" onclick="$(this).toggleClass('on');"><span class="c-ic3 prd-cmm i-heart"></span><span class="s1">찜하기</span></a>
+							<span class="mgl"></span>
+							<a class="a3" href="javascript:;" onclick="$('#share-pop-layer').toggleClass('on');"><span class="c-ic3 prd-cmm i-share"></span><span class="s1">공유</span></a>
+							<span class="mgl"></span>
+							<a class="a4" href="javascript:;"><span class="c-ic3 prd-cmm i-users"></span><span class="s1">단체문의</span></a>
+							<span class="mgl"></span>
+							<a class="a5" href="javascript:;" onclick="$('#app_download_pop').show();"><span class="c-ic3 prd-cmm i-coupon"></span><span class="s1">3만원 할인</span><span class="c-ic3 prd-cmm i-down"></span></a>
+
+							<!-- 공유 팝업 -->
+							<div class="pop-layer" id="share-pop-layer">
+								<ul class="ul-1 clr">
+									<li class="nth-1">
+										<a href="">
+											<div><span class="c-ic3 sha-cmm i-twit"></span></div>
+											<p>트위터</p>
+										</a>
+									</li>
+									<li class="nth-2">
+										<a href="">
+											<div><span class="c-ic3 sha-cmm i-faceb"></span></div>
+											<p>페이스북</p>
+										</a>
+									</li>
+									<li class="nth-3">
+										<a href="">
+											<div><span class="c-ic3 sha-cmm i-email"></span></div>
+											<p>이메일</p>
+										</a>
+									</li>
+									<li class="nth-4">
+										<a href="">
+											<div><span class="c-ic3 sha-cmm i-sms"></span></div>
+											<p>문자</p>
+										</a>
+									</li>
+								</ul>
+								<a href="javascript:;" onclick="$(this).closest('.pop-layer').hide();" class="clsBtn a-i-x a-x"></a>
+							</div>
+						</div>
+						<div class="d-date clr">
+							<div class="d-date-1">
+								<p class="p1">체크인</p>
+								<p class="p2"><span class="c-ic2 i-chkIn"></span></p>
+								<p class="p3">2017-10-18</p>
+							</div>
+							<div class="d-date-2">
+								<p class="p2"><span class="c-ic3 i-term"></span></p>
+								<p class="p3">1박</p>
+							</div>
+							<div class="d-date-3">
+								<p class="p1">체크아웃</p>
+								<p class="p2"><span class="c-ic2 i-chkOut"></span></p>
+								<p class="p3">2017-10-19</p>
+							</div>
+
+							<!--달력-->
+							<% include ../parts/components/calendar/_calendar_db_t02.ejs %>
+						</div>
+						<div class="d3 d-cmm">
+							<span class="s-lbl">분류</span>
+							<span class="s-txt">리조트 (총 객실 수: 249개)</span>
+						</div>
+						<div class="d4 d-cmm">
+							<span class="s-lbl">주소</span>
+							<span class="s-txt">강원 고성군 죽왕면 삼포리 243-13</span>
 							<a href="javascript:;"><img class="mvImg" src="http://img.go.co.kr/landing/point_icon02.jpg" alt="지도보기"></a>
 						</div>
 						<div class="d5 d-cmm">
-							<span class="s-lbl">공유하기</span>
-							<span class="s-txt s-icon">
-                                <a href=""><i class="c-ic i-facebook"></i></a>
-                                <a href=""><i class="c-ic i-twitter"></i></a>
-                                <a href=""><i class="c-ic i-link"></i></a>
-                                <a href=""><i class="c-ic i-at"></i></a>
-                            </span>
+							<span class="s-lbl">이용시간</span>
+							<span class="s-txt">체크인 15:00 / 체크아웃 11:00</span>
+						</div>
+						<div class="d6 d-cmm">
+							<span class="s-lbl">홈페이지</span>
+							<span class="s-txt">http://www.ocezn2you.co.kr</span>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!--상품리스트-->
-			<section class="sec-prd-listShow rn-container" id="sec-prd-list">
-                <table class="tb-show">
-                    <colgroup>
-                        <col class="nth-1">
-                        <col class="nth-2">
-                        <col class="nth-3">
-                        <col class="nth-4">
-                        <col class="nth-5">
-                        <col class="nth-6">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th class="nth-1">회차선택</th>
-                            <th class="nth-2">권종</th>
-                            <th class="nth-3">잔여수량</th>
-                            <th class="nth-4">할인가</th>
-                            <th class="nth-5">수량선택</th>
-                            <th class="nth-6">결제금액</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="nth-1">
-                                <select name="" id="">
-                                    <option value="">03월 31일 토 16시 10분</option>
-                                    <option value="">03월 31일 토 18시 10분</option>
-                                </select>
-                            </td>
-                            <td class="nth-2">주말 1인 관람권</td>
-                            <td class="nth-3">8매</td>
-                            <td class="nth-4"><span class="colr-red">할인가</span></td>
-                            <td class="nth-5">
-                                <p class="quan clr">
-                                    <span class="s-l">-</span>
-                                    <input type="text" class="inp" value="0"><span class="s-r">+</span>
-                                </p>
-                            </td>
-                            <td class="nth-6"><span class="f-bd">33,000원</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="tb-show-2">
-                    <colgroup>
-                        <col class="nth-1">
-                        <col class="nth-2">
-                        <col class="nth-3">
-                    </colgroup>
+			<!--예약하기-->
+			<div class="sec-prd-buy" id="sec-prd-buy">
+				<div class="rn-container prd-buy" id="prd-buy">
+					<ul class="ul1 clr">
+						<li class="li1">
+							<p class="p0">
+								<button type="button" class="appe-s-reset btn-chk">날짜확인</button>
+							</p>
+							<p class="p1 ftfm-mg">
+								<span class="s1">2017-10-18</span>
+								<span class="s2 c-ic3 i-rArrW"></span>
+								<span class="s3">2017-10-18</span>
+							</p>
+						</li>
+						<li class="li2">
+							<p class="p0">
+								<button type="button" class="appe-s-reset btn-chk">객실확인</button>
+								<span class="s-name">오션뷰 호텔 리노베이션</span>
+							</p>
+							<p class="p1">
+								객실 1 / 성인 2명, 소아 0명
+							</p>
+						</li>
+						<li class="li3">
+							<span class="s-box">
+								<s>330,000원</s>
+								<span class="s-pric">94,000</span>
+							</span>
+							<button type="button" class="appe-s-reset btn-b ftfm-mg">예약하기</button>
+						</li>
+					</ul>
+				</div>
+			</div>
 
-                </table>
+			<!--상품리스트-->
+			<section class="sec-prd-list" id="sec-prd-list">
+
+				<div class="thead rn-container">
+					<ul class="tr clr">
+						<li class="nth-1">상품선택</li>
+						<li class="nth-2">기준인원/최대인원</li>
+						<li class="nth-3">요금(세금 봉사료 포함) <span class="s-q" onclick="$('#discount_pop').fadeIn('fast');">?</span></li>
+						<li class="nth-4">고코 앱 특가 <span class="c-ic3 i-lowP" onclick="$('#lowestPric_pop').show();"></span></li>
+					</ul>
+					<!-- ? 아이콘 클릭 시 등장 -->
+					<div id="discount_pop" class="on">
+						<div class="tit">회원 추가할인 안내
+							<a href="javascript: $('#discount_pop').hide();" title="닫기"><img class="clsImg" src="http://img.go.co.kr/btn_x2.jpg" alt="닫기"></a>
+						</div>
+						<div class="text">
+							<p><b>1. 적립금 할인</b></p>
+							<p class="dot">회원가입시 바로 사용 가능한 <span>30,000원 쿠폰팩이 지급</span>됩니다.</p>
+							<p class="dot"> 로그인 후 결제시 <span>결제금액의 1%</span>를 적립금으로 돌려드립니다.</p>
+							<br>
+							<p><b>2. 쿠폰 할인</b></p>
+							<p class="dot"><span> 회원에게만 할인쿠폰</span>이 제공됩니다.</p>
+							<p class="dot">회원가입 후 다양한 쿠폰 혜택을 누리세요.</p>
+						</div>
+					</div>
+					<!-- 최저가 보상제 안내 팝업 -->
+					<div class="lowestPric_pop" id="lowestPric_pop">
+						<div class="lowestPric_area">
+							<div class="price_top">
+								<img src="http://img.go.co.kr/price_all_pop_title.jpg" alt="최저가보상제안내">
+								<a href="javascript:$('#lowestPric_pop').hide();" class="pop_close"><img src="http://img.go.co.kr/price_all_pop_close.jpg" alt="닫기"></a>
+							</div>
+							<div class="price_mid">
+								<p class="note_txt">
+									고코투어 보다 더 <strong>저렴한 요금을 발견</strong>하셨다면 <strong>신고</strong>해 주십시요.<br>
+									고코투어 캐시로 그 <strong>차액을 전액 보상</strong>해 드립니다.
+								</p>
+								<ul class="list_guide">
+									<li>
+										<p>
+											최저가로 보장 받은 예약건은 완전하게 이용이 완료되어야<br>
+											그 차액을 보상 받을 수 있습니다.
+										</p>
+									</li>
+									<li>
+										<p>최저가 보장제는 다음의 내용으로 진행 됩니다.</p>
+										<div class="list_guide_inner">
+											<ul>
+												<li>
+													1. 타 판매사이트의 판매가격이 고코보다 싸다면, 접수해 주세요.
+													<ul>
+														<li>- 접수는 아래 신고하기로 접수하시면 됩니다.</li>
+													</ul>
+												</li>
+												<li>
+													2. 접수시에는 타 판매사이트 최종 결제 진행방법을 안내해 주셔야합니다.
+													<ul>
+														<li>- 판매처, 판매처의 URL 혹은 카테고리, 캡쳐 등</li>
+														<li>- 고코투어 관리자가 객관적으로 확인 가능하여야 합닌다.</li>
+													</ul>
+												</li>
+												<li>3. 담당자가 확인 후 고객님께 답변 메일을 발송합니다.</li>
+												<li>4. 시설 이용일 기준으로 3일(영업일) 이내에 그 차액을 고코투어캐쉬로 지급됩니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p>아래의 조건과 부합되어야 합니다.</p>
+										<div class="list_guide_inner">
+											<ul>
+												<li>1. 예약 상품과 동일기간, 동일시설, 동일객실, 동일인원인 상품이어야 합니다.</li>
+												<li>2. 예약 상품과 변경 및 취소 등의 조건이 동일하여야 합니다.</li>
+												<li>3. 타 판매처의 자체 할인금(추천인할인, 적립금차감)에 의한 할인 가격은 제외됩니다.</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<p>다음의 상품은 최저가 보장에서 제외됩니다.</p>
+										<div class="list_guide_inner">
+											<ul>
+												<li>1. 전일 또는 당일 예약상품은 불가합니다.(담당자 확인 불가)</li>
+												<li>2. 고코투어 담당자가 해당 상품의 예약이 가능 하여야 합니다.(불가한 경우, 보상불가)</li>
+												<li>3. 취소 또는 환불된 상품</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<div class="btn_decl">
+									<a onclick="javascript:;">신고하기</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="tbody" id="prd-tb">
+					<div class="d-item">
+						<ul class="tr">
+							<li class="nth-1">
+								<span class="s-name">디럭스온돌[그라운드뷰]</span><span class="c-ic3 i-iv"></span>
+							</li>
+							<li class="nth-2">2인 / 3인</li>
+							<li class="nth-3">
+								<s>330,000원</s>
+								<span class="orig-pric">94,000원~</span>
+							</li>
+							<li class="nth-4">
+								<s>94,000원</s>
+								<span class="spec-pric">89,000원~</span>
+								<a href="javascript:;" class="app-bk">APP<br>예약</a>
+							</li>
+						</ul>
+						<div class="tr-detail">
+							<ul class="ul-step type2 clr">
+								<li class="nth-1">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP1 객실선택</span>
+									<span class="rightB"></span>
+								</li>
+								<li class="nth-2">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP2 패키지선택</span>
+									<span class="c-ic3 i-ivW" onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');"></span>
+									<span class="rightB"></span>
+
+									<div class="pop-layer">
+										<h3>
+											패키지 안내
+											<a href="javascript:;" onclick="$(this).closest('div').toggleClass('on');" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+										</h3>
+
+										<ul class="ul-1 clr">
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_1.png" alt="조식패키지"></div>
+													<p>조식 패키지</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_2.png" alt="바베큐 테이블"></div>
+													<p>바베큐 테이블</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_3.png" alt="전동 바이크"></div>
+													<p>전동 바이크</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_4.png" alt="조개잡이"></div>
+													<p>조개잡이</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nth-3">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">패키지 안내</span>
+									<span class="rightB"></span>
+								</li>
+							</ul>
+
+							<div class="d-detail">
+
+								<div class="rn-container area-trd-comp">
+									<div class="trd-comp-1">
+										<div class="pdtCal">
+											<p class="p-1"><a href="javascript:;" class="prev-a ic-lArrow"></a>2017년 10월<a href="javascript:;" class="next-a ic-rArrow"></a></p>
+											<table class="cal-tb">
+												<thead>
+													<tr>
+														<th class="sun">일</th>
+														<th>월</th>
+														<th>화</th>
+														<th>수</th>
+														<th>목</th>
+														<th>금</th>
+														<th class="sat">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="off sun"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="chkIn"><div><span class="s-txt">1</span><img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="chkOut"><div><span class="s-txt">2</span><img src="http://img.go.co.kr/renew/i_chkOut.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">3</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">4</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">5</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">6</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">7</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">8</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">9</span><span class="prc">52,000</span></div></td>
+														<td class="sat ddLine"><div><span class="s-txt">10</span><img src="http://img.go.co.kr/renew/i_ddLine.png" alt="예약마감" class="i-ddLine"><s class="prc">52,000</s></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">11</span><span class="prc">52,000</span></div></td>
+														<td class="undef"><div><span class="s-txt">12</span><img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span></div></td>
+														<td><div><span class="s-txt">13</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">14</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">15</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">16</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">17</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">18</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">19</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">20</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">21</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">22</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">23</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">24</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">25</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">26</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">27</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">28</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">29</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">30</span><span class="prc">52,000</span></div></td>
+														<td class="off sat"><div></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="d-ps">
+											이용을 원하시는 날짜를 선택하시면 이용박수 선택이 가능합니다.<br>
+											달력에 표시된 요금은 세금 미포함 금액입니다.
+										</div>
+										<!--<div class="area-slt">
+											<div class="d1">
+												<span class="s-lbl">객실</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">성인</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">소아</span>
+												<select name="" id="">
+													<option value="">0</option>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+											<div class="d2 clr">
+												<span class="s-l">객실단품금액</span>
+												<span class="s-r">94,000원</span>
+											</div>
+										</div>-->
+									</div>
+
+									<div class="trd-compX-2">
+										<p class="p-1">
+											<span class="s-lbl">투숙인원</span>
+											<select name="" id="" class="wd-1">
+												<option value="">성인1</option>
+											</select>
+											<span class="s-txt">소아</span>
+											<select name="" id="" class="wd-1">
+												<option value="">0</option>
+												<option value="">1</option>
+											</select>
+										</p>
+										<p class="p-2 f-bd">
+											기준인원 : 2명 / 최대인원 2명(1객실)
+										</p>
+										<p class="p-3 dot">
+											기준 인원 초과 시 인원 추가 비용은 현장 결제<br>
+   											부탁드립니다.
+										</p>
+										<p class="p-3 dot">
+											최대인원 초과 시 입실이 불가능합니다.
+										</p>
+
+										<hr>
+
+										<p class="p-2 f-bd">객실/ 베트타입 선택</p>
+										<p class="p-1">
+											<span class="s-lbl">객실</span>
+											<select name="" id="" class="wd-1">
+												<option value="">1</option>
+											</select>
+										</p>
+										<p class="p-1">
+											<span class="s-lbl">베드타입</span>
+											<select name="" id="" class="wd-2">
+												<option value="">트윈[싱글+싱글]</option>
+											</select>
+										</p>
+										<p class="p-1"></p>
+									</div>
+
+									<div class="trd-compX-3">
+										<ul class="ul-tb">
+											<li><span class="s-lbl">객실명</span><span class="s-txt">디럭스 온돌[그라운드뷰]</span></li>
+											<li><span class="s-lbl">베드타입</span><span class="s-txt">트윈[싱글+싱글]</span></li>
+											<li><span class="s-lbl">이용기간</span><span class="s-txt">2017.10.02~2017.10.03 / 1박</span></li>
+											<li><span class="s-lbl">투숙인원</span><span class="s-txt">성인 1명 / 소아 1명</span></li>
+											<li><span class="s-lbl">구매혜택</span><span class="s-txt">카드무이자<img src="http://img.go.co.kr/btn_card.jpg" alt="카드무이자"></span></li>
+										</ul>
+										<div class="d-bottom">
+											<p class="p-1">
+												<span class="s-txt">최종 결제금액</span>
+												<span class="s-pric"><span class="s-1">94,000</span><span class="s-won">원</span></span>
+											</p>
+											<p class="p-2">(VAT,봉사료,예약수수료 포함)</p>
+											<p class="area-btn"><a href="#" class="a-btn">예약하기</a></p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="d-item">
+						<ul class="tr">
+							<li class="nth-1">
+								<span class="s-name">오션투유 호텔 리노베이션</span><span class="c-ic3 i-iv"></span>
+							</li>
+							<li class="nth-2">4인 / 7인</li>
+							<li class="nth-3">
+								<s>330,000원</s>
+								<span class="orig-pric">94,000원~</span>
+							</li>
+							<li class="nth-4">
+								<s>94,000원</s>
+								<span class="spec-pric">89,000원~</span>
+								<a href="javascript:;" class="app-bk">APP<br>예약</a>
+							</li>
+						</ul>
+						<div class="tr-detail">
+							<ul class="ul-step type2 clr">
+								<li class="nth-1">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP1 객실선택</span>
+									<span class="rightB"></span>
+								</li>
+								<li class="nth-2">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP2 패키지선택</span>
+									<span class="c-ic3 i-ivW" onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');"></span>
+									<span class="rightB"></span>
+
+									<div class="pop-layer">
+										<h3>
+											패키지 안내
+											<a href="javascript:;" onclick="$(this).closest('div').toggleClass('on');" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+										</h3>
+
+										<ul class="ul-1 clr">
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_1.png" alt="조식패키지"></div>
+													<p>조식 패키지</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_2.png" alt="바베큐 테이블"></div>
+													<p>바베큐 테이블</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_3.png" alt="전동 바이크"></div>
+													<p>전동 바이크</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_4.png" alt="조개잡이"></div>
+													<p>조개잡이</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nth-3">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">패키지 안내</span>
+									<span class="rightB"></span>
+								</li>
+							</ul>
+
+							<div class="d-detail">
+
+								<div class="rn-container area-trd-comp">
+									<div class="trd-comp-1">
+										<div class="pdtCal">
+											<p class="p-1"><a href="javascript:;" class="prev-a ic-lArrow"></a>2017년 10월<a href="javascript:;" class="next-a ic-rArrow"></a></p>
+											<table class="cal-tb">
+												<thead>
+													<tr>
+														<th class="sun">일</th>
+														<th>월</th>
+														<th>화</th>
+														<th>수</th>
+														<th>목</th>
+														<th>금</th>
+														<th class="sat">토</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="off sun"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="off"><div></div></td>
+														<td class="chkIn"><div><span class="s-txt">1</span><img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="chkOut"><div><span class="s-txt">2</span><img src="http://img.go.co.kr/renew/i_chkOut.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">3</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">4</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">5</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">6</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">7</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">8</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">9</span><span class="prc">52,000</span></div></td>
+														<td class="sat ddLine"><div><span class="s-txt">10</span><img src="http://img.go.co.kr/renew/i_ddLine.png" alt="예약마감" class="i-ddLine"><s class="prc">52,000</s></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">11</span><span class="prc">52,000</span></div></td>
+														<td class="undef"><div><span class="s-txt">12</span><img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span></div></td>
+														<td><div><span class="s-txt">13</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">14</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">15</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">16</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">17</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">18</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">19</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">20</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">21</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">22</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">23</span><span class="prc">52,000</span></div></td>
+														<td class="sat"><div><span class="s-txt">24</span><span class="prc">52,000</span></div></td>
+													</tr>
+													<tr>
+														<td class="sun"><div><span class="s-txt">25</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">26</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">27</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">28</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">29</span><span class="prc">52,000</span></div></td>
+														<td><div><span class="s-txt">30</span><span class="prc">52,000</span></div></td>
+														<td class="off sat"><div></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+										<div class="d-ps">
+											이용을 원하시는 날짜를 선택하시면 이용박수 선택이 가능합니다.<br>
+											달력에 표시된 요금은 세금 미포함 금액입니다.
+										</div>
+										<!--<div class="area-slt">
+											<div class="d1">
+												<span class="s-lbl">객실</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">성인</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">소아</span>
+												<select name="" id="">
+													<option value="">0</option>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+											<div class="d2 clr">
+												<span class="s-l">객실단품금액</span>
+												<span class="s-r">94,000원</span>
+											</div>
+										</div>-->
+									</div>
+
+									<div class="trd-compX-2">
+										<p class="p-1">
+											<span class="s-lbl">투숙인원</span>
+											<select name="" id="" class="wd-1">
+												<option value="">성인1</option>
+											</select>
+											<span class="s-txt">소아</span>
+											<select name="" id="" class="wd-1">
+												<option value="">0</option>
+												<option value="">1</option>
+											</select>
+										</p>
+										<p class="p-2 f-bd">
+											기준인원 : 2명 / 최대인원 2명(1객실)
+										</p>
+										<p class="p-3 dot">
+											기준 인원 초과 시 인원 추가 비용은 현장 결제<br>
+   											부탁드립니다.
+										</p>
+										<p class="p-3 dot">
+											최대인원 초과 시 입실이 불가능합니다.
+										</p>
+
+										<hr>
+
+										<p class="p-2 f-bd">객실/ 베트타입 선택</p>
+										<p class="p-1">
+											<span class="s-lbl">객실</span>
+											<select name="" id="" class="wd-1">
+												<option value="">1</option>
+											</select>
+										</p>
+										<p class="p-1">
+											<span class="s-lbl">베드타입</span>
+											<select name="" id="" class="wd-2">
+												<option value="">트윈[싱글+싱글]</option>
+											</select>
+										</p>
+										<p class="p-1"></p>
+									</div>
+
+									<div class="trd-compX-3">
+										<ul class="ul-tb">
+											<li><span class="s-lbl">객실명</span><span class="s-txt">디럭스 온돌[그라운드뷰]</span></li>
+											<li><span class="s-lbl">베드타입</span><span class="s-txt">트윈[싱글+싱글]</span></li>
+											<li><span class="s-lbl">이용기간</span><span class="s-txt">2017.10.02~2017.10.03 / 1박</span></li>
+											<li><span class="s-lbl">투숙인원</span><span class="s-txt">성인 1명 / 소아 1명</span></li>
+											<li><span class="s-lbl">구매혜택</span><span class="s-txt">카드무이자<img src="http://img.go.co.kr/btn_card.jpg" alt="카드무이자"></span></li>
+										</ul>
+										<div class="d-bottom">
+											<p class="p-1">
+												<span class="s-txt">최종 결제금액</span>
+												<span class="s-pric"><span class="s-1">94,000</span><span class="s-won">원</span></span>
+											</p>
+											<p class="p-2">(VAT,봉사료,예약수수료 포함)</p>
+											<p class="area-btn"><a href="#" class="a-btn">예약하기</a></p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="d-item">
+						<ul class="tr">
+							<li class="nth-1">
+								<span class="s-name">오션투유 콘도</span><span class="c-ic3 i-iv"></span>
+							</li>
+							<li class="nth-2">4인 / 7인</li>
+							<li class="nth-3">
+								<s>330,000원</s>
+								<span class="orig-pric">84,000원~</span>
+							</li>
+							<li class="nth-4">
+								<s>94,000원</s>
+								<span class="spec-pric">79,000원~</span>
+								<a href="javascript:;" class="app-bk">APP<br>예약</a>
+							</li>
+						</ul>
+						<div class="tr-detail">
+							<ul class="ul-step type2 clr">
+								<li class="nth-1">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP1 객실선택</span>
+									<span class="rightB"></span>
+								</li>
+								<li class="nth-2">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">STEP2 패키지선택</span>
+									<span class="c-ic3 i-ivW" onclick="$(this).closest('li').find('.pop-layer').toggleClass('on');"></span>
+									<span class="rightB"></span>
+
+									<div class="pop-layer">
+										<h3>
+											패키지 안내
+											<a href="javascript:;" onclick="$(this).closest('div').toggleClass('on');" class="close-a"><img src="http://img.go.co.kr/mobile/my_close.png" alt="닫기"></a>
+										</h3>
+
+										<ul class="ul-1 clr">
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_1.png" alt="조식패키지"></div>
+													<p>조식 패키지</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_2.png" alt="바베큐 테이블"></div>
+													<p>바베큐 테이블</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_3.png" alt="전동 바이크"></div>
+													<p>전동 바이크</p>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<div><img src="http://img.go.co.kr/renew/product/pkgImg_4.png" alt="조개잡이"></div>
+													<p>조개잡이</p>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nth-3">
+									<span class="left-topB"></span><span class="left-bottomB"></span>
+									<span class="s-txt">패키지 안내</span>
+									<span class="rightB"></span>
+								</li>
+							</ul>
+
+							<div class="d-detail">
+
+								<div class="rn-container area-trd-comp">
+									<div class="trd-comp-1">
+										<% include ../parts/components/calendar/_calendar_sg.ejs %>
+
+										<div class="d-ps">
+											이용을 원하시는 날짜를 선택하시면 이용박수 선택이 가능합니다.<br>
+											달력에 표시된 요금은 세금 미포함 금액입니다.
+										</div>
+										<!--<div class="area-slt">
+											<div class="d1">
+												<span class="s-lbl">객실</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">성인</span>
+												<select name="" id="">
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+												<span class="s-lbl">소아</span>
+												<select name="" id="">
+													<option value="">0</option>
+													<option value="">1</option>
+													<option value="">2</option>
+												</select>
+											</div>
+											<div class="d2 clr">
+												<span class="s-l">객실단품금액</span>
+												<span class="s-r">94,000원</span>
+											</div>
+										</div>-->
+									</div>
+
+									<div class="trd-compX-2">
+										<p class="p-1">
+											<span class="s-lbl">투숙인원</span>
+											<select name="" id="" class="wd-1">
+												<option value="">성인1</option>
+											</select>
+											<span class="s-txt">소아</span>
+											<select name="" id="" class="wd-1">
+												<option value="">0</option>
+												<option value="">1</option>
+											</select>
+										</p>
+										<p class="p-2 f-bd">
+											기준인원 : 2명 / 최대인원 2명(1객실)
+										</p>
+										<p class="p-3 dot">
+											기준 인원 초과 시 인원 추가 비용은 현장 결제<br>
+   											부탁드립니다.
+										</p>
+										<p class="p-3 dot">
+											최대인원 초과 시 입실이 불가능합니다.
+										</p>
+
+										<hr>
+
+										<p class="p-2 f-bd">객실/ 베트타입 선택</p>
+										<p class="p-1">
+											<span class="s-lbl">객실</span>
+											<select name="" id="" class="wd-1">
+												<option value="">1</option>
+											</select>
+										</p>
+										<p class="p-1">
+											<span class="s-lbl">베드타입</span>
+											<select name="" id="" class="wd-2">
+												<option value="">트윈[싱글+싱글]</option>
+											</select>
+										</p>
+										<p class="p-1"></p>
+									</div>
+
+									<div class="trd-compX-3">
+										<ul class="ul-tb">
+											<li><span class="s-lbl">객실명</span><span class="s-txt">디럭스 온돌[그라운드뷰]</span></li>
+											<li><span class="s-lbl">베드타입</span><span class="s-txt">트윈[싱글+싱글]</span></li>
+											<li><span class="s-lbl">이용기간</span><span class="s-txt">2017.10.02~2017.10.03 / 1박</span></li>
+											<li><span class="s-lbl">투숙인원</span><span class="s-txt">성인 1명 / 소아 1명</span></li>
+											<li><span class="s-lbl">구매혜택</span><span class="s-txt">카드무이자<img src="http://img.go.co.kr/btn_card.jpg" alt="카드무이자"></span></li>
+										</ul>
+										<div class="d-bottom">
+											<p class="p-1">
+												<span class="s-txt">최종 결제금액</span>
+												<span class="s-pric"><span class="s-1">94,000</span><span class="s-won">원</span></span>
+											</p>
+											<p class="p-2">(VAT,봉사료,예약수수료 포함)</p>
+											<p class="area-btn"><a href="#" class="a-btn">예약하기</a></p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+
+
+				<script>
+					$(function() {
+						// 상품별 갤러리 bxSlider 함수 연결
+						$("#prd-tb .i-iv").on('click', function() {
+							$(this).toggleClass('on');
+							var gLeft = $(this).position().left;
+							gLeft += 86;
+
+							var prdGall = $('<div class="prd-gal-pop" style="left:' + gLeft + 'px;">'
+									+	'<div class="tit-box">'
+									+		'<strong>마운틴뷰 호텔 리노베이션</strong>'
+									+		'<a href="javascript:;" class="a-i-x a-x"></a>'
+									+	'</div>'
+									+	'<div class="cont-box">'
+									+		'<ul class="prdGal">'
+									+			'<li><img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201278_out5.jpg" alt="마운틴"></li>'
+									+			'<li><img src="http://cache.go.co.kr/media/220/file.go.co.kr/tour/img1/1491201279_out6.jpg" alt="마운틴"></li>'
+									+		'</ul>'
+									+	'</div>'
+									+ '</div>');
+
+							if ($(this).next().css("display") == 'block') {
+								$(this).next().remove();
+							} else {
+								prdGall.insertAfter($(this));
+								$("#prd-tb .prd-gal-pop .a-x").click(function() {
+									$(this).closest(".prd-gal-pop").remove();
+								});
+								$("#prd-tb .prdGal").bxSlider({
+									auto:true,
+									autoControls: true,
+									speed: 500,
+									duration: 3000,
+									prevText: '<img src="http://img.go.co.kr/renew/common/btn_prev.png" alt="이전">',
+									nextText: '<img src="http://img.go.co.kr/renew/common/btn_next.png" alt="다음">',
+								});
+							}
+						});
+
+
+					});
+				</script>
+
+
+				<!-- 앱 유도 팝업 -->
+				<div class="app_download_pop" id="app_download_pop">
+					<div class="pop_Bg_bk"></div>
+					<div class="popwrap">
+						<div class="coupon_pack_pop">
+							<div class="coupon_pack_pop_top">
+								<img class="goco" src="http://img.go.co.kr/logo_sh_b.png">
+								<p><span class="orange_txt">고코투어 앱</span>설치 시 <span class="red_txt">30,000원</span> 쿠폰팩 즉시 지급!</p>
+								<a class="clsBtn" href="javascript:;" onclick="$(this).parents('.app_download_pop').hide();" title="닫기"><img src="http://img.go.co.kr/pop_close_Sbtn.png" alt="닫기"></a>
+							</div>
+							<div class="coupon_pack_pop_contents">
+								<ul class="clr">
+									<li class="goco_app_icon"><img src="http://img.go.co.kr/goco_app_Icon_m.png"></li>
+									<li class="txt_box">
+										<p class="title_txt">지금 고코투어 앱을 다운받으세요</p>
+										<p class="title_txt"> <span class="red_txt">30,000원</span> 쿠폰팩을 지급해드립니다!</p>
+										<p class="txt_s">
+											핸드폰 번호를 입력하시면<br><span class="orange_txt">앱 설치 방법 안내를 문자</span>로 보내드립니다.
+										</p>
+									</li>
+								</ul>
+								<ul class="input_Box clr">
+									<li class="recipient"><label>·받는사람</label><input type="text" name="phone_d1" maxlength="3"><span>-</span><input type="text" name="phone_d2" maxlength="4"><span>-</span><input type="text" name="phone_d3" maxlength="4"></li>
+									<li class="send_Btn"><input type="button" value="전송"></li>
+								</ul>
+								<p>* 문자로 발송드린 URL을 클릭하시면 앱설치가 가능한 설치페이지로 이동합니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</section>
 
 			<!--상품 상세 설명-->
 			<section class="rn-container sec-prd-common">
-				<div class="area-prd-detail type-ticket" id="area-prd-detail">
+				<div class="area-prd-detail" id="area-prd-detail">
 					<ul class="ul-tab clr">
 						<li class="on"><a href="javascript:;">상품소개</a></li>
 						<li class=""><a href="javascript:;">이용후기</a></li>
@@ -1642,6 +2503,4 @@
 
         <% include ../parts/_footer.ejs %>
     </div>
-
 </body>
-</html>

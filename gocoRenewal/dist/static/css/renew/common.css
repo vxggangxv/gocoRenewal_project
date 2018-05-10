@@ -5,6 +5,18 @@ body {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; line-he
 a {text-decoration:none; color: inherit;}
 input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; color:#333;}
 
+/* 폰트어썸 ie 저 버전 지원*/
+[class^="icon-"], [class*=" icon-"] {
+	font-family: FontAwesome; font-weight: normal; font-style: normal; text-decoration: inherit; -webkit-font-smoothing: antialiased; *margin-right: .3em;
+	position: relative;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {display: inline-block;}
+[class^="icon-"].fliph:before, [class*=" icon-"].fliph:before {transform: rotate(90deg); filter:fliph('90');}
+.icon-facebook-f:before {content: "\f09a";}
+.icon-twitter:before {content: "\f099";}
+.icon-link:before {content: "\f0c1";}
+.icon-at:before {content: "\f1fa";}
+
 
 /* 초기화 */
 .rn-schBox input[type=text], input[type=text].reset {
@@ -22,9 +34,10 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .c-ic.i-mapv {width: 20px; background-position: 0 -30px;}
 .c-ic.i-dArr {width: 16px; background-position: -40px -30px;}
 .c-ic.i-alg {width: 18px; background-position: -80px -30px;}
-.c-ic.i-gCal, .c-ic.i-gSpot, .c-ic.i-rArr, .c-ic.i-yChk {width: 32px; height: 32px;}
+.c-ic.i-home, .c-ic.i-gCal, .c-ic.i-gSpot, .c-ic.i-rArr, .c-ic.i-yChk {width: 32px; height: 32px;}
 .c-ic.i-gCal {background-position: 0 -60px;}
 .c-ic.i-gSpot {background-position: -40px -60px;}
+.c-ic.i-home {background-position: -160px -60px;}
 .c-ic.i-rArr {width: 28px; background-position: -80px -60px;}
 .c-ic.i-yChk {width: 14px; background-position: -120px -60px;}
 .c-ic.i-chkIn, .c-ic.i-chkOut {width: 15px; height: 9px;}
@@ -32,6 +45,11 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .c-ic.i-chkOut {background-position: -40px -100px;}
 .c-ic.i-today {width: 18px; height: 17px; background-position: -80px -100px;}
 .c-ic.i-reg {width: 10px; height: 11px; background-position: -120px -100px;}
+.c-ic.i-facebook, .c-ic.i-twitter, .c-ic.i-link, .c-ic.i-at {width: 35px; height: 35px;}
+.c-ic.i-facebook {background-position: 0 -120px;}
+.c-ic.i-twitter {background-position: -40px -120px;}
+.c-ic.i-link {background-position: -80px -120px;}
+.c-ic.i-at {background-position: -120px -120px;}
 
 .c-ic2 {background: url(http://img.go.co.kr/renew/sch_sprt.png) no-repeat;}
 .c-ic2.i-dArr {width: 10px; height: 16px; background-position: 0px 0px;}
@@ -91,6 +109,8 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .thColor1 {color: #fa6b0a;}
 .thColor1-2 {color: #ff6700;}
 
+/* 공통 color */
+.colr-red {color: #eb1212;}
 
 /* 공통 css */
 .bsLs, .bsLs * {box-sizing: border-box; letter-spacing: -0.5px;}
@@ -290,6 +310,40 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-ts .d1 .regName, .rnL-ts .d1 .regDetail {color: #444; margin-left: 3px;}
 .rnL-ts .d1 .regName {font-size: 20px; font-weight: 600; position: relative; top: 1px;}
 .rnL-ts .d1 .regDetail {font-size: 18px;}
+
+.rnL-ts.type-ticket {border-bottom: 1px solid #ddd;}
+.rnL-ts.type-ticket .bar-ticket {font-size: 18px; height: 100%;}
+.rnL-ts.type-ticket [class^="path-"] {float: left; position: relative; padding: 0 25px; padding-top: 10px; height: 100%; min-width: 160px;}
+.rnL-ts.type-ticket [class^="path-"]:first-child:before,
+.rnL-ts.type-ticket [class^="path-"]:first-child:after {
+	display: none;
+}
+.rnL-ts.type-ticket [class^="path-"]:before,
+.rnL-ts.type-ticket [class^="path-"]:after {content: ""; display: inline-block; position: absolute; left: 0; top: -2px; width: 1px; height: 29px; background: #ddd;}
+.rnL-ts.type-ticket [class^="path-"]:before {
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+.rnL-ts.type-ticket [class^="path-"]:after {
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+	top: 23px;
+}
+.rnL-ts.type-ticket [class^="path-"] .ic-bArrow:after {top: -3px; margin-left: 30px; width: 10px; height: 10px;}
+.rnL-ts.type-ticket .slt {font-weight: 700;}
+.rnL-ts.type-ticket .path-dep0 {padding-left: 0; min-width: auto;}
+.rnL-ts.type-ticket .path-dep0 .i-home {margin-right: 2px;}
+.rnL-ts.type-ticket .path-dep1 {}
+.rnL-ts.type-ticket .path-dep2 {}
+/* .rnL-ts.type-ticket .slt-drop {display: none;} */
+.rnL-ts.type-ticket [class^="path-"]:hover > .slt-drop {display: block;}
+.rnL-ts.type-ticket .slt-drop {display: none; position: absolute; left: -7px; top: 50px; width: 100%; border: 1px solid #ddd; border-top: 0; box-sizing: border-box; z-index: 1; box-shadow: 2px 3px 4px rgba(0,0,0, 0.1);}
+.rnL-ts.type-ticket .slt-drop > li {position: relative;}
+.rnL-ts.type-ticket .slt-drop > li > a {display: block; padding: 10px 5px 10px 32px; border-top: 1px solid #ddd; background: #fff;}
+.rnL-ts.type-ticket .slt-drop > li:first-child > a {border: 0;}
+.rnL-ts.type-ticket .slt-drop > li.on > a {font-weight: 700;}
 
 /* 카테고리 */
 .rnL-ctgr {border-bottom: 1px solid #ddd;}
