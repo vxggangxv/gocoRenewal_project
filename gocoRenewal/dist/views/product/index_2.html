@@ -38,10 +38,11 @@
 
     <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
     <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
-    <script src="http://static.go.co.kr/js/renew/common.js"></script>
-    <script src="http://static.go.co.kr/js/renew/product/init.js"></script>
-    <!-- <script src="/static/js/renew/common.js"></script>
-<script src="/static/js/renew/product/init.js"></script> -->
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.lazyload.min.js"></script>
+    <!-- <script src="http://static.go.co.kr/js/renew/common.js"></script>
+<script src="http://static.go.co.kr/js/renew/product/init.js"></script> -->
+    <script src="/static/js/renew/common.js"></script>
+    <script src="/static/js/renew/product/init.js"></script>
 
 </head>
 
@@ -49,9 +50,10 @@
     <h1 class="hidden">고코투어</h1>
     <div class="rn-gwrap">
         <div>
-            <a href="/views/product/index.html">임시 - 1</a>&nbsp;&nbsp;
-            <a href="/views/product/index_1_2.html">임시 - 1-2</a>&nbsp;&nbsp;
-            <a href="/views/product/index_2.html">임시 - 2</a>
+            <a href="/views/product/index.html">숙박패키지 - 1</a>&nbsp;&nbsp;
+            <a href="/views/product/index_1_2.html">숙박 - 1-2</a>&nbsp;&nbsp;
+            <a href="/views/product/index_2.html">공연 - 2</a>&nbsp;&nbsp;
+            <a href="/views/product/index_3.html">레저 - 3</a>
         </div>
         <header class="rnL-header clr bsLs">
             <!-- 구버전 고코용 -->
@@ -552,7 +554,7 @@
                     </a>
                 </div>
                 <div class="path-dep1">
-                    <span class="slt ic-bArrow">공연/전시</span>
+                    <a href="javascript:;" class="slt ic-bArrow">공연/전시</a>
                     <ul class="slt-drop">
                         <li><a href="">국내숙박</a>
                         </li>
@@ -565,7 +567,7 @@
                     </ul>
                 </div>
                 <div class="path-dep2">
-                    <span class="slt ic-bArrow">연극</span>
+                    <a href="javascript:;" class="slt ic-bArrow">연극</a>
                     <ul class="slt-drop">
                         <li class="on"><a href="">연극</a>
                         </li>
@@ -623,7 +625,7 @@
                                 <img class="mvImg" src="http://img.go.co.kr/landing/point_icon02.jpg" alt="지도보기">
                             </a>
                         </div>
-                        <div class="d5 d-cmm">
+                        <div class="d-cmm row-icon">
                             <span class="s-lbl">공유하기</span>
                             <span class="s-txt s-icon">
 
@@ -642,7 +644,7 @@
             </section>
 
             <!--상품리스트-->
-            <section class="sec-prd-listShow rn-container" id="sec-prd-list">
+            <section class="sec-prd-listShow rn-container sec-prd-listTb">
                 <table class="tb-show">
                     <colgroup>
                         <col class="nth-1">
@@ -666,18 +668,22 @@
                         <tr>
                             <td class="nth-1">
                                 <select name="" id="">
+                                    <option value="">회차를 선택해주세요</option>
                                     <option value="">03월 31일 토 16시 10분</option>
                                     <option value="">03월 31일 토 18시 10분</option>
                                 </select>
                             </td>
+                            <!-- 기본 -->
+                            <!-- <td class="nth-2">-</td> -->
+                            <!-- 선택 시 -->
                             <td class="nth-2">주말 1인 관람권</td>
                             <td class="nth-3">8매</td>
-                            <td class="nth-4"><span class="colr-red">할인가</span>
+                            <td class="nth-4"><span class="colr-red f-bd">16,500원</span>
                             </td>
                             <td class="nth-5">
                                 <p class="quan clr">
                                     <span class="s-l">-</span>
-                                    <input type="text" class="inp" value="0"><span class="s-r">+</span>
+                                    <input type="text" class="inp" value="2"><span class="s-r">+</span>
                                 </p>
                             </td>
                             <td class="nth-6"><span class="f-bd">33,000원</span>
@@ -685,197 +691,200 @@
                         </tr>
                     </tbody>
                 </table>
-                <table class="tb-show-2">
+                <table class="tb-pay">
                     <colgroup>
                         <col class="nth-1">
                             <col class="nth-2">
                                 <col class="nth-3">
                     </colgroup>
-
+                    <tbody>
+                        <tr>
+                            <td class="nth-1">선택상품</td>
+                            <td class="nth-2">
+                                <p class="f-bd">상품명</p>
+                                <p>03월 31일 토 16시 10분 ㅣ 주말 1인 관람권 <span class="colr-red">2매</span>
+                                </p>
+                            </td>
+                            <td class="nth-3">
+                                <span class="square"></span>
+                                <div class="d-prc">
+                                    최종 결제금액
+                                    <span class="colr-red num">33,000</span>  <span class="sm colr-red">원</span>
+                                </div>
+                                <div class="area-btn">
+                                    <a href="" class="nth-1">앱으로 구매</a><a href="" class="nth-2">결제하기</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="tb-caution">
+                    <colgroup>
+                        <col class="nth-1">
+                            <col class="nth-2">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="2">구매전 꼭 확인하세요!</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="nth-1">
+                                안내 및 유의사항
+                            </td>
+                            <td class="nth-2">
+                                - 일요일 마지막회차 : 13,500원(2월)
+                                <br>· 02-03월 공연 일정
+                                <br>- 월~금 15:00, 17:00, 20:00
+                                <br>- 토~일 14:00, 16:10, 18:10, 20:15
+                                <br>* 02월14일 14:00, 16:10, 18:10, 20:15 -토요일판매가
+                                <br>* 02월15일 14:00, 16:10, 18:10 -토요일판매가
+                                <br>* 02월16일 15:00, 17:15, 19:15 -토요일판매가
+                                <br>
+                                <br>* 3월01일 14:00, 16시01분, 18시10분,20시15분-토요일 판매가
+                                <br>* 3월14일 15:00, 17:00, 20:00 -평일가
+                                <br>* 02월26일 ~ 28일 17:00, 20:00
+                                <br>
+                                <span class="colr-red f-bd">[연중무휴]</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td-sun">
+                                <div class="sun"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nth-1"></td>
+                            <td class="nth-2">
+                                <span class="f-bd">· 3월 가격 안내</span>
+                                <br>- 평일 10,900원
+                                <br>- 문화의날(마지막주 수요일,3/28) 9,000원
+                                <br>- 토요일 14:00, 16:00, 18:10, 20:15 16,500원
+                                <br>- 일요일 14:00, 16:00, 18:10 16,500원
+                                <br>- 일요일 마지막회차(20:15) 12,900원
+                                <br>* 2월부터 일요일 마지막회차 13,500원
+                                <br>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
 
             <!--상품 상세 설명-->
-            <section class="rn-container sec-prd-common">
-                <div class="area-prd-detail type-ticket" id="area-prd-detail">
-                    <ul class="ul-tab clr">
-                        <li class="on"><a href="javascript:;">상품소개</a>
-                        </li>
-                        <li class=""><a href="javascript:;">이용후기</a>
-                        </li>
-                        <li class=""><a href="javascript:;">오시는길</a>
-                        </li>
-                        <li class=""><a href="javascript:;">축제/관광지/맛집</a>
-                        </li>
-                        <li class=""><a href="javascript:;">상품문의</a>
-                        </li>
-                        <li class=""><a href="javascript:;">자주묻는질문</a>
-                        </li>
-                    </ul>
+            <section class="sec-prd-common">
+                <div class="area-prd-dtTicket" id="area-prd-detail">
 
-                    <ul class="ul-contents">
-                        <li class="on li-intro">
-                            <div class="d-row clr">
-                                <div class="d-tit">기준인원 안내</div>
-                                <div class="d-txt">
-                                    - 기준인원 초과시 추가요금 발생됩니다.(기준4/최대7인)
-                                    <br>- 1인 10,000원(8세 미만 무료)
-                                    <br>- 침구 추가시 1인세트 10,000원
-                                    <br>- 추가요금은 현장지불입니다.
-                                    <br>- 최대인원 초과시 입실 불가합니다.
-                                    <br>- 체크인시 인원확인 후 입실 가능합니다.
-                                </div>
+                    <div class="area-tab">
+                        <ul class="rn-container ul-tab clr">
+                            <li class="on"><a href="javascript:;">상품소개</a>
+                            </li>
+                            <li class=""><a href="javascript:;">이용후기</a>
+                            </li>
+                            <li class=""><a href="javascript:;">오시는길</a>
+                            </li>
+                            <li class=""><a href="javascript:;">축제/관광지/맛집</a>
+                            </li>
+                            <li class=""><a href="javascript:;">상품문의</a>
+                            </li>
+                            <li class=""><a href="javascript:;">자주묻는질문</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="rn-container ul-contents">
+                        <li class="on li-introTk clr">
+                            <div class="box-1 clr">
+                                <span class="info_txt">
+
+                                    <img class="img-full" src="http://v3.ticketsuda.com/upfiles/geditor/1211/ticketsuda005.jpg" data-original="http://v3.ticketsuda.com/upfiles/geditor/1211/ticketsuda005.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/ticket_info.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/ticket_info.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_01.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_01.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_03.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_03.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_04.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_04.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_02_01.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_02_01.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_02_02.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_02_02.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_07.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_07.jpg" alt="상품소개"><br>
+
+                                </span>
+                                <script>
+                                    $(function() {
+                                        // 이미지 로딩 최적화
+                                        $("#area-prd-detail img.img-full").lazyload({
+                                            effect: "fadeIn"
+                                        });
+                                    });
+                                </script>
                             </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">조식 이용인네</div>
-                                <div class="d-txt">
-                                    토요일, 일요일, 월요일 및 공휴일 조식은 아메리칸식 뷔페로운영됩니다.
-                                    <br>- 소세지, 스크램블, 베이컨, 감자튀김, 샐러드, 시리얼 등 25여개의 메뉴로 제공됩니다.
-                                    <br>- 아메리칸식 뷔페 운영은 오션투유 1층 한식당 에서 운영됩니다.
-                                    <br>- 아메리칸식 뷔페 운영시간은 아침 7시 30분부터 10시 까지입니다.
-                                    <br>- 아메리칸식 뷔페 이용요금은 다음과 같습니다.
-                                    <br>ㄱ. 성인 1인 : 12,000원
-                                    <br>ㄴ. 소인 1인 :9,000원(36개월 이상 ~ 8세 미만)
-                                    <br>평일 조식은 단품 메뉴로 운영됩니다.
-                                    <br>- 메뉴 및 가격
-                                    <br>ㄱ. 광어미역국12,000원
-                                    <br>ㄴ. 우거지갈비탕8,000원
-                                    <br>ㄷ. 황태해장국8,000원
-                                    <br>- 평일조식은 한식당 에서 제공합니다.
-                                    <br>- 단품 메뉴는 조식이외에, 다연 운영시간내 언제든 이용가능합니다.
-                                    <br>- 다연 운영시간은 아침 7시 30분 부터 저녁 8시 까지입니다.(주말의 경우 저녁 9시 까지 운영)
+                            <div class="box-2" id="introTk-side">
+                                <div class="d-1">
+                                    <em class="tit f-bd">[대학로/연극] 극적인하룻밤</em>
+                                    <hr class="sun">
+
+                                    <!-- 선택한 상품 없을 때, 회차선택하기 클릭시 상단으로 이동 -->
+                                    <!-- <div class="area-sltedItm">
+                                        <p class="f-bd mt-1">선택한 상품</p>
+                                        <a href="#" class="a-btn">회차 선택하기</a>
+                                    </div> -->
+                                    <!-- 선택한 상품 있을 때 -->
+                                    <div class="area-sltedItm">
+                                        <p class="f-bd mt-1">선택한 상품 (<span class="colr-org">1</span>)</p>
+                                        <div class="sltedItm">
+                                            <a href="javascript:;" class="a-i-x a-x"></a>
+                                            <p class="name f-bd">
+                                                03월 31일 토 16시 10분
+                                                <br>주말 1인 관람권
+                                            </p>
+                                            <hr class="sun">
+                                            <div>
+                                                <p class="quan clr">
+                                                    <span class="s-l">-</span>
+                                                    <input type="text" class="inp" value="2"><span class="s-r">+</span>
+                                                </p>
+                                                <span class="flt-r">
+
+                                                    <span class="f-bdr prc">33,000원</span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">바베큐장 이용안내</div>
-                                <div class="d-txt">
-                                    - 리얼바베큐그릴이 구비된 200석 규모의 바베큐장을 운영하고 있습니다.
-                                    <br>- 바베큐장은 16시 부터 22시까지 운영합니다.
-                                    <br>- 4인기준 30,000원에 2시간 이용가능합니다.(추가인원 1인당 5,000원)
-                                    <br>- 바베큐장 예약시, 테이블+참숯+그릴+집게+가위 가 무료제공됩니다.
-                                    <br>- 음식은 제공하지 않으니, 직접준비하여 오시기 바랍니다.
-                                    <br>- 기상악화로 바베큐장을 운영하지 못하는경우에는 전액 환불해 드립니다.
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">배달서비스 이용안내</div>
-                                <div class="d-txt">
-                                    - 계절 모듬회, 계절 모듬물회, 시카고리얼바베큐플레이츠를 리조트내 원하는 장소로 배달해 드립니다.
-                                    <br>- 모듬회는 대/중//소 사이즈로 선택이 가능합니다.
-                                    <br>계절 모듬회(대) 70,000원 / 계절 모듬회(중) 50,000원 / 계절 모듬회(소) 30,000원
-                                    <br>- 계절 모듬물회는 1인에 10,000원으로 2인이상 주문가능합니다.
-                                    <br>계절 물회(2인) 20,000원 / 계절 물회(3인) 30,000원 / 계절 물회(4인) 40,000원
-                                    <br>- 시카고리얼바베큐플레이츠 1쟁반 단위로 제공되며, 19,000원 입니다.
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">부대시설 안내</div>
-                                <div class="d-txt">
-                                    - 오션투유 전동바이크 : 1인승, 2인승으로 구비되어 있으며, 1시간 단위로 이용이 가능합니다.
-                                    <br>이용요금 : 1인승 1시간 15,000원1인승 2시간 26,000원2인승 1시간 20,000원2인승 2시간 30,000원
-                                    <br>- 라바짜 : 아메리카노 커피, 카푸치노 등 제공
-                                    <br>- 노래방 / 편의점 : 24:00시까지 운영
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">인사말</div>
-                                <div class="d-txt">
-                                    - 설악/속초/고성 위치! 삼포해수욕장 바로 앞 오션투유리조트
-                                    <br>- 설악/속초/고성 아우르는 최고의 리조트!
-                                    <br>- 에메랄드 빛 삼포해변 1분거리!
-                                    <br>- 얕은 수심, 어린아이 위한 해수욕장!
-                                    <br>- 해변에서 조개잡이 가능 (조개잡이 물품 대여가능)
-                                    <br>- 속초, 설악 모든 해변과 근접!
-                                    <br>- 최대80%할인 , 특가할인
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">단체 문의</div>
-                                <div class="d-txt">
-                                    오션투유콘도는 최대 1800명 까지 수용 가능한 대형콘도입니다.
-                                    <br>기업체/단체교육/워크샵/수학여행/수련회/세미나/ 워크샵/가족모임/행사/MICE(마이스)/설명회/연회장
-                                    <br>컨벤션/학회/기업행사/디너쇼/전시회/컨퍼런스/비지니스미팅/소규모모임/대규모모임
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">견적문의</div>
-                                <div class="d-txt">
-                                    단체 상담 및 견적문의 (예약실 : 1666-5683)
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">패키지 및 테마안내</div>
-                                <div class="d-txt">
-                                    [해수욕장숙소]삼포해수욕장 인근
-                                    <br>[바다전망]동해바다 전망객실 보유
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">부대시설</div>
-                                <div class="d-txt">
-                                    <ul class="facil-pict clr">
-                                        <li>
-                                            <img src="http://img.go.co.kr/establishment_icon13.png" alt="조식" class="pictImg">
-                                            <p>조식</p>
-                                        </li>
-                                        <li>
-                                            <img src="http://img.go.co.kr/establishment_icon9.png" alt="주차" class="pictImg">
-                                            <p>주차장</p>
-                                        </li>
-                                        <li>
-                                            <img src="http://img.go.co.kr/establishment_icon8.png" alt="식당" class="pictImg">
-                                            <p>식당</p>
-                                        </li>
-                                        <li>
-                                            <img src="http://img.go.co.kr/establishment_icon12.png" alt="BBQ" class="pictImg">
-                                            <p>공용 BBQ</p>
-                                        </li>
-                                        <li>
-                                            <img src="http://img.go.co.kr/establishment_icon5.png" alt="편의점" class="pictImg">
-                                            <p>편의점</p>
-                                        </li>
-                                        <li>
-                                            <img src="http://img.go.co.kr/establishment_icon15.png" alt="WIFI" class="pictImg">
-                                            <p>와이파이</p>
-                                        </li>
-                                        <li>
-                                            <img src="http://img.go.co.kr/establishment_icon6.png" alt="카페" class="pictImg">
-                                            <p>카페</p>
-                                        </li>
-                                        <li>
-                                            <img src="http://img.go.co.kr/establishment_icon7.png" alt="레스토랑" class="pictImg">
-                                            <p>레스토랑</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">추천여행지</div>
-                                <div class="d-txt">
-                                    삼포해수욕장: 오션투유리조트로 앞으로 펼쳐지는 해수욕장은 푸른 동해에서도 가장 깨끗한 해수욕장 중 하나로 꼽힙니다.
-                                    <br>잘 갖춰진 편의 시설과 깔끔한 민박단지로 구성되어 있습니다. 조개체험 가능합니다.
-                                </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">군부대</div>
-                                <div class="d-txt">
-                                    <p class="p-elli">
-                                        22사단예하부대, 22사단, 율곡부대, 뇌종부대, 고성종합체육관, 22사단53연대, 22사단55연대, 22사단56연대, 22사단정비
-                                        <br>대대, 22사단수색대대, 22사단53연대수색중대, 22사단55연대수색중대, 22사단56연대수색중대,22사단포병연대, 22사단
-                                        <br>53연대 본부중대, 22사단55연대본부중대, 22사단56연대본부중대, 22사단신교대대, 22사단신병교육대, 22사단훈련소
+                                <div class="d-2">
+                                    <p class="row-prc clr">
+                                        <span class="s-1 f-bd">최종 결제금액</span>
+                                        <span class="s-2 f-bd">
+
+                                            <span class="colr-red num">33,000</span><span class="colr-red sm">원</span>
+                                        </span>
                                     </p>
-                                    <p class="fold-txt">
-                                        율곡신병교육대, 22보병사단, 강원도고성22사단, 육군22사단, 22보병사단, 강원도고성율곡부대, 강원도고성뇌종부대, 고성22사단, 고성율곡부대, 고성뇌종부대,율곡한울부대, 공병대, 수색대, 화확대, 보수대, 의무대, 헌병대, 기무대, 수송대, 공병대대, 수색대대, 화확대대, 보수대대,의무대대, 헌병대대, 기무대대, 수송대대, 56연대1대대, 56연대2대대, 56연대3대대, 율곡청룡, 율곡천마, 율곡불곰, 278포병대대,279포병대대, 280포병대대,
-                                        639포병대대, 율곡십자성대대, 율곡승리대대, 율곡왕포대대, 율곡쌍호, 율곡백호, 율곡비호, 율곡맹호, 55연대1대대, 55연대2대대, 55연대3대대, 연대본부, 쌍호수색중대,통신대대
+                                    <p class="area-btn">
+                                        <a href="" class="nth-1">앱으로 구매</a><a href="" class="nth-2">결제하기</a>
                                     </p>
-                                    <a href="javascript:;" class="a-btn" onclick="$(this).parent().find('.fold-txt').slideToggle('fast');">더보기</a>
                                 </div>
-                            </div>
-                            <div class="d-row clr">
-                                <div class="d-tit">추천여행지</div>
-                                <div class="d-txt">
-                                    삼포해수욕장: 오션투유리조트로 앞으로 펼쳐지는 해수욕장은 푸른 동해에서도 가장 깨끗한 해수욕장 중 하나로 꼽힙니다.
-                                    <br>잘 갖춰진 편의 시설과 깔끔한 민박단지로 구성되어 있습니다. 조개체험 가능합니다.
+                                <div class="d-3 clr">
+                                    <a class="a-1" href="#area-prd-detail">
+                                        <span class="c-ic i-ticket"></span>
+                                        <span class="ta-left">이용권<br>필수정보</span>
+                                    </a>
+                                    <span class="sun sun-1"></span>
+                                    <a class="a-2" href="#area-prd-detail">
+                                        <span class="c-ic i-info"></span>
+                                        <br>이용기준
+                                    </a>
+                                    <span class="sun sun-2"></span>
+                                    <a class="a-3" href="javascript:;">
+                                        <span class="c-ic i-group"></span>
+                                        <br>단체문의
+                                    </a>
                                 </div>
                             </div>
                         </li>

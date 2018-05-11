@@ -50,6 +50,9 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .c-ic.i-twitter {background-position: -40px -120px;}
 .c-ic.i-link {background-position: -80px -120px;}
 .c-ic.i-at {background-position: -120px -120px;}
+.c-ic.i-ticket {width: 21px; height: 32px; background-position: 0 -160px;}
+.c-ic.i-info {width: 24px; height: 25px; background-position: -40px -160px;}
+.c-ic.i-group {width: 30px; height: 25px; background-position: -80px -160px;}
 
 .c-ic2 {background: url(http://img.go.co.kr/renew/sch_sprt.png) no-repeat;}
 .c-ic2.i-dArr {width: 10px; height: 16px; background-position: 0px 0px;}
@@ -111,6 +114,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 
 /* 공통 color */
 .colr-red {color: #eb1212;}
+.colr-org {color: #fd5426;}
 
 /* 공통 css */
 .bsLs, .bsLs * {box-sizing: border-box; letter-spacing: -0.5px;}
@@ -129,6 +133,10 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .s-i-Arr.rArr {
 	border-top: 0; border-left: 0; top: -3px;
 }
+.ta-left, .ta-center {display: inline-block;text-align: left;}
+.ta-left {text-align: left;}
+.ta-center {text-align: center;}
+.va-top {vertical-align: top;}
 
 span[class*=i-ctgr-] {display: inline-block; color: #fff; padding: 2px 5px; border-radius: 3px; text-align: center; font-size: 14px; line-height: 1;}
 span.i-ctgr-resort, span.i-ctgr-exp, span.i-ctgr-01 {background: #117396;}
@@ -144,7 +152,7 @@ span.i-ctgr-off {background: #555a78;}
 /*.rn-gwrap a:focus {font-weight: 400;} */
 
 /* 전체 wrap */
-.rn-gwrap {position: relative; width: 100%; min-width: 1680px; /*width: 1680px;*/}
+.rn-gwrap {position: relative; width: 100%; min-width: 1600px; /*width: 1680px;*/}
 /* 공통 콘텐츠 태그 클래스 */
 .rn-contents {position: relative;}
 .rn-container, .rn-containerF {position: relative; margin: 0 auto;}
@@ -161,6 +169,7 @@ span.i-ctgr-off {background: #555a78;}
 .rn-gwrap .prd-gal-pop .bx-wrapper .bx-controls-auto, .rn-gwrap .prd-gal-pop .bx-wrapper .bx-pager {display: none;}
 .rn-gwrap .bx-wrapper .bx-controls-direction {display: none;}
 .rn-gwrap .bx-wrapper .bx-controls-direction a {background: none;}
+.rn-gwrap .bx-wrapper .bx-pager {display: none;}
 /*.rn-gwrap .bx-wrapper .bx-controls {display: none;}*/
 /*.rn-gwrap .bx-wrapper .bx-controls-direction {position: absolute; width: 100%; width: 100%; left: 0; top: 50%; margin-top: -22.5px;}
 .rn-gwrap .bx-wrapper .bx-controls-direction a {background: none; width: 45px; height: 45px; top: 0; margin-top: 0; z-index: 1;}
@@ -476,6 +485,51 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnSltNum .quan > .s-r:before {width: 12px; left: 6px;}
 .rnSltNum .quan > .s-r:after {width: 2px; height: 12px; left: 11px; top: 6px;}
 
+/* 상품선택시 달력 */
+.pdtCal {position: relative; width: 382px; color: #3b3b3b; background: #fff;}
+.pdtCal p.p-1 {position: relative; text-align: center; padding: 8px 18px 9px; font-size: 18px; font-weight: 700; border: 1px solid #e6e6e6; border-bottom: 0;}
+.pdtCal p.p-1 a {width: 30px; height: 30px; border-radius: 50%; border: 1px solid #898989;}
+.pdtCal p.p-1 .prev-a {float: left;}
+.pdtCal p.p-1 .next-a {float: right;}
+.pdtCal .cal-tb {position: relative; width: 100%; border-collapse: collapse; margin: 0 auto;}
+.pdtCal .cal-tb th, .pdtCal .cal-tb td {font-size: 14px; line-height: 1.3em; width: 55px;}
+.pdtCal .cal-tb th {padding: 6px 0; text-align: center;}
+.pdtCal .cal-tb th:first-child {border-left: 1px solid #e6e6e6;}
+.pdtCal .cal-tb th.sat {border-right: 1px solid #e6e6e6;}
+.pdtCal .cal-tb td {position: relative; font-family: "Arial", sans-serif; height: 52px; vertical-align: top; font-size:16px; padding: 0; text-align: right; border: 1px solid #e6e6e6;}
+.pdtCal .cal-tb td > div {height: 100%; font-size: 13px;}
+.pdtCal .cal-tb td .s-txt {position: relative; right: 7px; display: inline-block; margin-top: 1px;}
+
+/* 토, 일 체크*/
+.pdtCal .cal-tb td.spPrc .prc {color: #014b8e;}
+.pdtCal .cal-tb .sat, .pdtCal .cal-tb td.sat .prc {color: #00aeff;}
+.pdtCal .cal-tb .sun, .pdtCal .cal-tb td.sun .prc {color: #ff2b5c;}
+
+.pdtCal .cal-tb td.off > div {color: #969696; background: #fff;}
+
+.pdtCal .cal-tb td.chkIn, .pdtCal .cal-tb td.chkOut, .pdtCal .cal-tb td.ddLine {position: relative; color: #fff; z-index: 1;}
+.pdtCal .cal-tb td.ddLine {color: #8f8f8f;}
+.pdtCal .cal-tb td.chkIn img, .pdtCal .cal-tb td.chkOut img
+, .pdtCal .cal-tb td.ddLine img, .pdtCal .cal-tb td.undef img {display: block; margin: -2px auto 0; position: relative; right: -1px;}
+.pdtCal .cal-tb td.ing > div {position: relative; background: #e5f4ff;}
+.pdtCal .cal-tb td.chkIn > div {background: #e33e3e;}
+.pdtCal .cal-tb td.chkOut > div {background: #5489e2;}
+.pdtCal .cal-tb td.ddLine > div {background: #f3f3f3;}
+.pdtCal .cal-tb td.chkIn:before, .pdtCal .cal-tb td.chkOut:before,
+.pdtCal .cal-tb td.ing:before {content: ""; display: block; position: absolute; top: -1px; left: -1px; width: 100%; height: 100%;}
+.pdtCal .cal-tb td.chkIn:before {border: 1px solid #b52b2b;}
+.pdtCal .cal-tb td.chkOut:before {border: 1px solid #335ea7;}
+.pdtCal .cal-tb td.ing:before {border: 1px solid #D1EAFD;}
+.pdtCal .cal-tb td .prc {position: absolute; bottom: -2px; right: 4px; font-size:11px; letter-spacing: -1px; display: block; width: 100%; color: #4561a0;}
+.pdtCal .cal-tb td.off .prc {color: #969696;}
+.pdtCal .cal-tb td.chkIn > div, .pdtCal .cal-tb td.chkOut > div,
+.pdtCal .cal-tb td.chkIn .prc, .pdtCal .cal-tb td.chkOut .prc {color: #fff;}
+.pdtCal .cal-tb td.ddLine .prc {color: #8f8f8f;}
+.pdtCal .cal-tb td.undef .prc {color: #3b3b3b;}
+.pdtCal .btn-a {clear: both; display: block; margin: 14px 50px 0; height: 42px; color: #fff; font-size: 18px; background: #ff7a2d; text-align: center; line-height: 40px;}
+.pdtCal .cal-tb td.spPrc > div {background: #f0f0f0; color: #969696; font-weight: 700;}
+.pdtCal .cal-tb td.spPrc:before {display: none;}
+.pdtCal .cal-tb td .i-spPrc {position: relative; top: -3px;}
 
 /* 레이어팝업 공통 */
 .allPopupWrap {z-index:9999; display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:url('http://img.go.co.kr/modal_bg.png') repeat 0 0; text-align:center;}
