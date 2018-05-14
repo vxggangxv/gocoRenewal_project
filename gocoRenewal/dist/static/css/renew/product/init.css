@@ -186,16 +186,6 @@
 .sec-prd-list .tbody > .d-item.on > .tr > li:first-child {font-weight: 700;}
 
 /* 공연 요금 */
-.sec-prd-listTb [class^="tb-"] {width: 100%;}
-.sec-prd-listTb [class^="tb-"] th,
-.sec-prd-listTb [class^="tb-"] td {position: relative;}
-.sec-prd-listShow {}
-.sec-prd-listShow .tb-show {margin-top: 25px;}
-.sec-prd-listShow .tb-show th,
-.sec-prd-listShow .tb-show td {border: 1px solid #c3c3c3; text-align: center; font-size: 17px; padding: 15px 0; vertical-align: middle;}
-.sec-prd-listShow .tb-show th {background: #888; color: #fff; padding: 12px 0;}
-/* .sec-prd-listShow .tb-show th:first-child,
-.sec-prd-listShow .tb-show td:first-child {border: 0;} */
 .sec-prd-listShow .tb-show col.nth-1 {width: 28%;}
 .sec-prd-listShow .tb-show col.nth-2 {width: 20%;}
 .sec-prd-listShow .tb-show col.nth-3,
@@ -205,19 +195,59 @@
 .sec-prd-listShow .tb-show col.nth-4 {}
 .sec-prd-listShow .tb-show col.nth-5 {}
 .sec-prd-listShow .tb-show col.nth-6 {}
+
+.sec-prd-listTicket .tb-show col.nth-1,
+.sec-prd-listTicket .tb-show col.nth-4 {width: 24%;}
+.sec-prd-listTicket .tb-show col.nth-2,
+.sec-prd-listTicket .tb-show col.nth-3,
+.sec-prd-listTicket .tb-show col.nth-5,
+.sec-prd-listTicket .tb-show col.nth-6 {width: 13%;}
+.sec-prd-listTicket .tb-show col.nth-4 {}
+.sec-prd-listTicket .tb-show col.nth-5 {width: 12%;}
+.sec-prd-listTicket .tb-show col.nth-6 {width: 14%;}
+
+.sec-prd-listTb [class^="tb-"] {width: 100%;}
+.sec-prd-listTb [class^="tb-"] th,
+.sec-prd-listTb [class^="tb-"] td {position: relative;}
+.sec-prd-listTicket,
+.sec-prd-listShow {}
+.sec-prd-listTicket .tb-show,
+.sec-prd-listShow .tb-show {margin-top: 25px;}
+.sec-prd-listTicket .tb-show th,
+.sec-prd-listTicket .tb-show td,
+.sec-prd-listShow .tb-show th,
+.sec-prd-listShow .tb-show td {border: 1px solid #c3c3c3; text-align: center; font-size: 17px; padding: 15px 0; vertical-align: middle;}
+.sec-prd-listTicket .tb-show th,
+.sec-prd-listShow .tb-show th {background: #888; color: #fff; padding: 12px 0;}
+
 .sec-prd-listShow .tb-show select {font-size: 16px; width: 264px; height: 36px; padding-left: 5px;}
-.sec-prd-listShow .quan {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+
+.sec-prd-listTicket .tb-show td {padding: 8px 0;}
+.sec-prd-listTicket .tb-show td.nth-1,
+.sec-prd-listTicket .tb-show td.nth-2,
+.sec-prd-listTicket .tb-show td.nth-3 {font-weight: 700;}
+
+.sec-prd-listTb tr.sun td {padding: 0; border: 0; border-bottom: 1px solid #848484;}
+.sec-prd-listTb .tb-show .i-lowP {top: -2px;}
+.sec-prd-listTb s {color: #888;}
+.sec-prd-listTb .tb-show td.nth-4 {font-size: 0;}
+.sec-prd-listTb .tb-show td.nth-4 > * {font-size: 17px; display: inline-block;}
+.sec-prd-listTb .tb-show td.nth-4 s {width: 50%; padding-right: 20px; text-align: right;}
+.sec-prd-listTb .tb-show td.nth-4 .arr {position: absolute; left: 50%; margin-left: -3px; color: #888;}
+.sec-prd-listTb .tb-show td.nth-4 .num {width: 50%; padding-right: 30px; text-align: right;}
+.sec-prd-listTb .tb-show td.nth-6 {text-align: right; padding-right: 15px;}
+
+.sec-prd-listTb .quan {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
     position: relative; width: 70px; height: 24px; margin: 0 auto; border: 1px solid #bbb; background: #e4e4e4; box-sizing: border-box; text-align: center; display: inline-block; margin-left: 5px; top: -1px; font-size: 0;
 }
-.sec-prd-listShow .quan input.inp {width: 32px; height: 24px; text-align: center; font-size: 13px; line-height: 1.7em; border: 1px solid #bbb; background: #fff; font-weight: 800; color: #999; position: relative; top: -1px;}
-.sec-prd-listShow .quan input.inp, .sec-prd-listShow .part-3 .ul-1 li .quan input.inp.on, .sec-prd-listShow .part-3 .ul-1 li td.on .quan input.inp {color: #202020;}
-.sec-prd-listShow .quan > span {position: relative; top: 0px; display: inline-block; width: 16px; height: 100%; font-size: 14px; text-align: center; cursor: pointer; line-height: 1.7em;}
-.sec-prd-listShow .quan > .s-l {float: left;}
-.sec-prd-listShow .quan > .s-r {float: right; right: 2px;}
-.sec-prd-listShow .tb-show td.nth-6 {text-align: right; padding-right: 15px;}
+.sec-prd-listTb .quan input.inp {width: 32px; height: 24px; text-align: center; font-size: 13px; line-height: 1.7em; border: 1px solid #bbb; background: #fff; font-weight: 800; color: #999; position: relative; top: -1px;}
+.sec-prd-listTb .quan input.inp.on {color: #202020;}
+.sec-prd-listTb .quan > span {position: relative; top: 0px; display: inline-block; width: 16px; height: 100%; font-size: 14px; text-align: center; cursor: pointer; line-height: 1.7em;}
+.sec-prd-listTb .quan > .s-l {float: left;}
+.sec-prd-listTb .quan > .s-r {float: right; right: 2px;}
 
 .sec-prd-listTb .tb-pay {margin-top: -1px;}
-.sec-prd-listTb .tb-pay td {border: 1px solid #c3c3c3; border-top-color: #848484; border-bottom-color: #848484; font-size: 17px; padding: 12px 0;}
+.sec-prd-listTb .tb-pay td {border: 1px solid #c3c3c3; border-top-color: #848484; border-bottom-color: #848484; font-size: 17px; padding: 18px 0;}
 .sec-prd-listTb .tb-pay col.nth-1 {width: 10%;}
 .sec-prd-listTb .tb-pay col.nth-2 {width: 43%;}
 .sec-prd-listTb .tb-pay col.nth-3 {width: 47%;}
@@ -225,29 +255,71 @@
 .sec-prd-listTb .tb-pay td.nth-3 {background: #f9f9fa;}
 .sec-prd-listTb .tb-pay td.nth-1 {font-weight: 700; text-align: center; vertical-align: middle;}
 .sec-prd-listTb .tb-pay td.nth-2 {vertical-align: top; padding-left: 18px;}
-.sec-prd-listTb .tb-pay td.nth-3 {padding-left: 15px; padding-right: 15px;}
-.sec-prd-listTb .tb-pay td.nth-3 .d-prc {border-bottom: 1px solid  #d9d9d9; text-align: right; font-size: 18px; vertical-align: bottom; font-weight: 700; padding-bottom: 2px;}
+.sec-prd-listTb .tb-pay td.nth-3 {padding-left: 15px; padding-right: 15px; vertical-align: bottom;}
+.sec-prd-listTb .tb-pay td.nth-3 .d-prc {border-bottom: 1px solid  #d9d9d9; text-align: right; font-size: 18px; vertical-align: bottom; font-weight: 700; padding-bottom: 5px;}
 .sec-prd-listTb .tb-pay td.nth-3 .d-prc > * {position: relative; display: inline-block;}
+.sec-prd-listTb .tb-pay td.nth-3 .d-prc s {margin-left: 15px; margin-right: -15px;}
 .sec-prd-listTb .tb-pay td.nth-3 .d-prc .num {font-size: 34px; top: 3px; margin-left: 30px;}
 .sec-prd-listTb .tb-pay td.nth-3 .d-prc .sm {font-size: 25px;}
-.sec-prd-listTb .tb-pay td.nth-3 .area-btn {margin-top: 10px; text-align: right;}
-.sec-prd-listTb .tb-pay td.nth-3 .area-btn a {display: inline-block; border: 1px solid #fd5426; border-radius: 2px; text-align: center; font-size: 18px; font-weight: 700; line-height: 50px;}
+.sec-prd-listTb .tb-pay td.nth-3 .area-btn {margin-top: 20px; text-align: right;}
+.sec-prd-listTb .tb-pay td.nth-3 .area-btn a {position: relative;  display: inline-block; border: 1px solid #fd5426; border-radius: 2px; text-align: center; font-size: 18px; font-weight: 700; line-height: 50px;}
 .sec-prd-listTb .tb-pay td.nth-3 .area-btn a.nth-1 {width: 150px; color: #fd5426;}
 .sec-prd-listTb .tb-pay td.nth-3 .area-btn a.nth-2 {width: 300px; background: #fd5426; color: #fff; margin-left: 10px;}
+.sec-prd-listTb .tb-pay td.nth-3 .btn-sale {position: absolute; top: -16px; left: 50%; margin-left: -32px; font-family: "Dotum", sans-serif; font-size: 11.5px; color: #888; font-weight: 400; line-height: 1.5; background: #fff; border: 1px solid #777; padding: 1px 5px 0; cursor: pointer;}
+.sec-prd-listTb .tb-pay td.nth-3 .btn-sale:before {content: ""; display: block; position: absolute; left: 50%; margin-left: -3.5px;  bottom: -5px; width: 7px; height: 7px; background: #fff; border: 1px solid #777; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); border-top: 0; border-right: 0;}
 .sec-prd-listTb .tb-pay td.nth-3 .square {display: block; position: absolute; top: 20px; left: -5px; width: 10px; height: 10px; background: #f9f9fa; border: 1px solid #c3c3c3; border-bottom: 0; border-right: 0;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+.sec-prd-listTicket .tb-pay td.nth-2 {padding-top: 0; padding-bottom: 0;}
+.sec-prd-listTb .tb-pay .area-sltedItm {padding-top: 12px; padding-bottom: 12px; position: relative; z-index: 1; max-height: 198px; overflow: auto;}
+.sec-prd-listTb .tb-pay .d-1 {margin-right: 20px; font-size: 16px;}
+.sec-prd-listTb .tb-pay .d-1 hr.sun {border: 0; margin: 5px auto; border-top: 1px solid #c3c3c3;}
+.sec-prd-listTb .tb-pay .d-1 .a-btn {background: #fd5426; color: #fff; text-align: center; font-size: 15px; display: block; border-radius: 2px; line-height: 47px;}
+.sec-prd-listTb .tb-pay .d-1 .sltedItm {position: relative; border: 1px solid #b8b8b8; padding: 8px; letter-spacing: -1px; margin-top: 10px; background: #f9f9fa;}
+.sec-prd-listTb .tb-pay .d-1:first-child .sltedItm {margin-top: 0;}
+.sec-prd-listTb .tb-pay .d-1 .sltedItm .a-x:before, .sec-prd-listTb .tb-pay .d-1 .sltedItm .a-x:after {background: #999;}
+.sec-prd-listTb .tb-pay .d-1 .sltedItm .flt-r {position: relative; top: 6px; float: right;}
+.sec-prd-listTb .tb-pay .d-1 .sltedItm .flt-r  s {color: #999; font-size: 14.5px; margin-right: 8px;}
+.sec-prd-listTb .tb-pay .quan {-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+    position: relative; width: 70px; height: 24px; margin: 0 auto; border: 1px solid #bbb; background: #e4e4e4; box-sizing: border-box; text-align: center; display: inline-block; top: -1px; font-size: 0;
+}
+.sec-prd-listTb .tb-pay .quan input.inp {width: 32px; height: 24px; text-align: center; font-size: 13px; line-height: 1.7em; border: 1px solid #bbb; background: #fff; font-weight: 800; color: #999; position: relative; top: -1px;}
+.sec-prd-listTb .tb-pay .quan input.inp, .sec-prd-listTb .tb-pay .part-3 .ul-1 li .quan input.inp.on, .sec-prd-listTb .tb-pay .part-3 .ul-1 li td.on .quan input.inp {color: #202020;}
+.sec-prd-listTb .tb-pay .quan > span {position: relative; top: 0px; display: inline-block; width: 16px; height: 100%; font-size: 14px; text-align: center; cursor: pointer; line-height: 1.7em;}
+.sec-prd-listTb .tb-pay .quan > .s-l {float: left;}
+.sec-prd-listTb .tb-pay .quan > .s-r {float: right; right: 2px;}
+
+
 .sec-prd-listTb .tb-caution {border: 1px solid #b8b8b8; margin-top: 15px;}
-.sec-prd-listTb .tb-caution col.nth-1 {width: 20%;}
-.sec-prd-listTb .tb-caution col.nth-2 {width: 80%;}
+.sec-prd-listTb .tb-ctFaq col.nth-1,
+.sec-prd-listTb .tb-caution col.nth-1 {width: 18%;}
+.sec-prd-listTb .tb-ctFaq col.nth-2,
+.sec-prd-listTb .tb-caution col.nth-2 {width: 82%;}
 .sec-prd-listTb .tb-caution th {border-bottom: 1px solid #c3c3c3; text-align: center; background: #f9f9fa; font-weight: 700; padding: 12px;}
+.sec-prd-listTb .tb-ctFaq td,
 .sec-prd-listTb .tb-caution td {padding: 35px; line-height: 1.7;}
+.sec-prd-listTb .tb-ctFaq td.nth-1,
 .sec-prd-listTb .tb-caution td.nth-1 {font-weight: 700;}
-.sec-prd-listTb .tb-caution td.nth-2 {text-align: left;}
+.sec-prd-listTb .tb-ctFaq td.nth-2,
+.sec-prd-listTb .tb-caution td.nth-2 {padding-left: 45px;}
 .sec-prd-listTb .tb-caution td.td-sun {padding-top: 0; padding-bottom: 0;}
 .sec-prd-listTb .tb-caution td .sun {height: 1px; background: #c3c3c3;}
+
+.sec-prd-listTb .area-ctFaq {position: relative; margin-top: 30px;}
+.sec-prd-listTb .area-ctFaq .ctFaq-tab {}
+.sec-prd-listTb .area-ctFaq .ctFaq-tab > li {width: 50%; float: left; border: 1px solid #b8b8b8; background: #e1e1e1; text-align: center; cursor: pointer; line-height: 54px; font-weight: 700; font-size: 17px;}
+.sec-prd-listTb .area-ctFaq .ctFaq-tab > li:first-child {border-right: 0;}
+.sec-prd-listTb .area-ctFaq .ctFaq-tab > li.on {background: #fff; border-bottom:0; color: #fd5426;}
+.sec-prd-listTb .area-ctFaq .ctFaq-contents {position: relative; width: 100%;}
+.sec-prd-listTb .area-ctFaq .ctFaq-contents > li {display: none; border: 1px solid #b8b8b8; border-top: 0;}
+.sec-prd-listTb .area-ctFaq .ctFaq-contents > li.on {display: block;}
+.sec-prd-listTb .area-ctFaq .ctFaq-contents .contents-1 {}
+.sec-prd-listTb .area-ctFaq .ctFaq-contents .contents-2 {}
+.sec-prd-listTb .tb-ctFaq {position: relative; width: 100%;}
+.sec-prd-listTb .tb-ctFaq td.nth-1 .sunV {position: absolute; display: block; right: 0px; top: 40px; width: 1px; height: 55px; background: #c3c3c3;}
 
 /* 상품별 갤러리 팝업 */
 .prd-gal-pop {position: absolute; width: 340px; height: 270px; bottom: 2px; left: 360px; /*display: none;*/ display: block; z-index: 7;}
