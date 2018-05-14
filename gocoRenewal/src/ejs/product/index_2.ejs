@@ -18,7 +18,7 @@
 
         <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
 		<div id="backDrop"></div>
-        <% include ../parts/product/_bar_ticket.ejs %>
+        <% include ../parts/product/_bar_show.ejs %>
 
         <!--전체 콘텐츠 영역-->
 		<div class="rn-contents">
@@ -65,7 +65,7 @@
 			</section>
 
 			<!--상품리스트-->
-			<section class="sec-prd-listShow rn-container sec-prd-listTb">
+			<section class="rn-container sec-prd-listTb sec-prd-listShow">
                 <table class="tb-show">
                     <colgroup>
                         <col class="nth-1">
@@ -136,51 +136,55 @@
                         </tr>
                     </tbody>
                 </table>
-                <table class="tb-caution">
-                    <colgroup>
-                        <col class="nth-1">
-                        <col class="nth-2">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th colspan="2">구매전 꼭 확인하세요!</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="nth-1">
-                                안내 및 유의사항
-                            </td>
-                            <td class="nth-2">
-                                - 일요일 마지막회차 :   13,500원(2월)<br>
-                                · 02-03월 공연 일정<br>
-                                - 월~금 15:00, 17:00, 20:00<br>
-                                - 토~일 14:00, 16:10, 18:10, 20:15<br>
-                                * 02월14일 14:00, 16:10, 18:10, 20:15 -토요일판매가<br>
-                                * 02월15일 14:00, 16:10, 18:10 -토요일판매가<br>
-                                * 02월16일 15:00, 17:15, 19:15 -토요일판매가<br>
-                                <br>
-                                * 3월01일 14:00, 16시01분, 18시10분,20시15분-토요일 판매가<br>
-                                * 3월14일 15:00, 17:00, 20:00 -평일가<br>
-                                * 02월26일 ~ 28일 17:00, 20:00<br>
-                                <span class="colr-red f-bd">[연중무휴]</span>
-                            </td>
-                        </tr>
-                        <tr><td colspan="2" class="td-sun"><div class="sun"></div></td></tr>
-                        <tr>
-                            <td class="nth-1"></td>
-                            <td class="nth-2">
-                                <span class="f-bd">· 3월 가격 안내</span><br>
-                                - 평일 10,900원<br>
-                                - 문화의날(마지막주 수요일,3/28) 9,000원<br>
-                                - 토요일 14:00, 16:00, 18:10, 20:15 16,500원<br>
-                                - 일요일 14:00, 16:00, 18:10 16,500원<br>
-                                - 일요일 마지막회차(20:15) 12,900원<br>
-                                * 2월부터 일요일 마지막회차 13,500원<br>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- 하나 일 경우 -->
+                <div class="area-ctFaq one">
+                    <ul class="ctFaq-tab cf">
+                        <li class="tab-1 on">구매전 꼭 확인하세요!</li>
+                    </ul>
+                    <ul class="ctFaq-contents">
+                        <li class="contents-1 on">
+                            <table class="tb-ctFaq tb-ct">
+                                <colgroup>
+                                    <col class="nth-1">
+                                    <col class="nth-2">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="nth-1">안내 및 유의사항</td>
+                                        <td class="nth-2">
+                                            - 일요일 마지막회차 :   13,500원(2월)<br>
+                                            · 02-03월 공연 일정<br>
+                                            - 월~금 15:00, 17:00, 20:00<br>
+                                            - 토~일 14:00, 16:10, 18:10, 20:15<br>
+                                            * 02월14일 14:00, 16:10, 18:10, 20:15 -토요일판매가<br>
+                                            * 02월15일 14:00, 16:10, 18:10 -토요일판매가<br>
+                                            * 02월16일 15:00, 17:15, 19:15 -토요일판매가<br>
+                                            <br>
+                                            * 3월01일 14:00, 16시01분, 18시10분,20시15분-토요일 판매가<br>
+                                            * 3월14일 15:00, 17:00, 20:00 -평일가<br>
+                                            * 02월26일 ~ 28일 17:00, 20:00<br>
+                                            <span class="colr-red f-bd">[연중무휴]</span>
+                                        </td>
+                                    </tr>
+                                    <tr><td colspan="2" class="td-sun"><div class="sun"></div></td></tr>
+                                    <tr>
+                                        <td class="nth-1"></td>
+                                        <td class="nth-2">
+                                            <span class="f-bd">· 3월 가격 안내</span><br>
+                                            - 평일 10,900원<br>
+                                            - 문화의날(마지막주 수요일,3/28) 9,000원<br>
+                                            - 토요일 14:00, 16:00, 18:10, 20:15 16,500원<br>
+                                            - 일요일 14:00, 16:00, 18:10 16,500원<br>
+                                            - 일요일 마지막회차(20:15) 12,900원<br>
+                                            * 2월부터 일요일 마지막회차 13,500원<br>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+
 			</section>
 
 			<!--상품 상세 설명-->

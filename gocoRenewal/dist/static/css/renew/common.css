@@ -40,6 +40,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .c-ic.i-home {background-position: -160px -60px;}
 .c-ic.i-rArr {width: 28px; background-position: -80px -60px;}
 .c-ic.i-yChk {width: 14px; background-position: -120px -60px;}
+.c-ic.i-wCal {width: 16px; height: 16px; background-position: -200px -60px;}
 .c-ic.i-chkIn, .c-ic.i-chkOut {width: 15px; height: 9px;}
 .c-ic.i-chkIn {background-position: -0px -100px;}
 .c-ic.i-chkOut {background-position: -40px -100px;}
@@ -531,6 +532,12 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .pdtCal .cal-tb td.spPrc:before {display: none;}
 .pdtCal .cal-tb td .i-spPrc {position: relative; top: -3px;}
 
+/* 레이어팝업 */
+.wrap-laypop {z-index: 100;}
+.wrap-laypop {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.wrap-laypop.fixed {position: fixed;}
+.wrap-laypop .bg-back {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: .58; filter: alpha(opacity=58);}
+.wrap-laypop .area-pop {position: relative; background: #fff;}
 /* 레이어팝업 공통 */
 .allPopupWrap {z-index:9999; display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:url('http://img.go.co.kr/modal_bg.png') repeat 0 0; text-align:center;}
 .allPopupWrap:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
@@ -566,8 +573,9 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .popup-app-download span.orange_txt{color:#ff5400;}
 .popup-app-download span.red_txt{color:#ff0000;text-decoration:underline;}
 .popup-app-download .coupon_pack_pop_contents ul.input_Box{clear:both;width:519px;margin:0 auto;padding-top:22px;height:54px;}
-.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient{width:404px;height:54px;line-height:54px;background:#ebebeb;border:1px solid #b2b2b2;}
-.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient label{font-size:15px;font-weight:700;margin:0px 15px 0px 18px;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient{width:404px;height:54px;line-height:54px;background:#ebebeb;border:1px solid #b2b2b2; font-size: 0; text-align: center;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient > * {vertical-align: middle;}
+.popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient label{font-size:15px;font-weight:700;margin:0px 15px;}
 .popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient input{width:70px;height:32px;font-size:15px;background:#ffffff;border:1px solid #cdcdcd;text-align:center;}
 .popup-app-download .coupon_pack_pop_contents ul.input_Box li.recipient span{font-size:20px;padding:0 8px;}
 .popup-app-download .coupon_pack_pop_contents ul.input_Box li.send_Btn {width:105px;height:56px;margin-left:8px;}

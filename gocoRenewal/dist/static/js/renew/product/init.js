@@ -90,7 +90,7 @@ $(function() {
 				top: "auto",
 				marginLeft: "20px"
 			});
-			$("#introTk-side").fadeIn();
+			$("#introTk-side").fadeIn("fast");
 		}
 		if ( scr >= scr_intro && scr < scr_bottom ) {
 			$("#introTk-side").css({
@@ -98,10 +98,10 @@ $(function() {
 				top: "0",
 				marginLeft: "820px"
 			});
-			$("#introTk-side").fadeIn();
+			$("#introTk-side").fadeIn("fast");
 		}
 		if ( scr >= scr_bottom ) {
-			$("#introTk-side").fadeOut();
+			$("#introTk-side").fadeOut("fast");
 		}
 
 
@@ -175,13 +175,11 @@ $(function() {
 		$(this).closest('li').find('.pkg-con .con-1').next().height(c2_ht);
 	});
 
-	// 상품소개 탭
-	$("#area-prd-detail .ul-tab > li").on("click", function() {
-		var idx = $(this).index();
+	// 구매전 확인, FAQ 자주묻는 질문
+	tabFn(".ctFaq-tab > li", ".ctFaq-contents > li");
 
-		$(this).addClass('on').siblings().removeClass('on');
-		$("#area-prd-detail .ul-contents > li").eq(idx).addClass('on').siblings().removeClass('on');
-	});
+	// 상품소개 탭
+	tabFn("#area-prd-detail .ul-tab > li", "#area-prd-detail .ul-contents > li");
 
 	// 이용후기
 	$("#t-review .tr-tit").on("click", function() {
@@ -229,3 +227,13 @@ $(function() {
 		return false;
 	});
 })
+
+function tabFn(tab, contents) {
+	$(tab).on("click", function() {
+		var idx = $(this).index();
+		console.log(idx);
+
+		$(this).addClass('on').siblings().removeClass('on');
+		$(contents).eq(idx).addClass('on').siblings().removeClass('on');
+	});
+}

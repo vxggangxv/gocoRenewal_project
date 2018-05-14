@@ -185,7 +185,21 @@
 .sec-prd-list .tbody > .d-item.on > .tr {background: #fff8f0;}
 .sec-prd-list .tbody > .d-item.on > .tr > li:first-child {font-weight: 700;}
 
-/* 공연 요금 */
+/* 이용날짜 */
+.sec-prd-listTb .row-useDate {position: relative; width: 100%; padding: 8px  0; background: #70707d; color: #fff; text-align: center; margin-top: 20px; margin-bottom: -1px;}
+.sec-prd-listTb .row-useDate + table {margin-top: 0;}
+.sec-prd-listTb .row-useDate .txt, .sec-prd-listTb .row-useDate .lbl-date {vertical-align: middle; display: inline-block;}
+.sec-prd-listTb .row-useDate .txt {margin-right: 8px;}
+.sec-prd-listTb .row-useDate .lbl-date {position: relative; width: 190px; height: 30px; border: 1px solid #70707d; font-size: 0; box-sizing: border-box; background: #fff;}
+.sec-prd-listTb .row-useDate .a-cal,
+.sec-prd-listTb .row-useDate input[type=text] {position: relative; height: 100%; display: inline-block; background: 0;}
+.sec-prd-listTb .row-useDate .a-cal {width: 30px; float: right; border-left: 1px solid #c3c3c3;}
+.sec-prd-listTb .row-useDate input[type=text] {width: 158px; font-size: 15px; text-indent: 10px; top: -1px; cursor: pointer;}
+.sec-prd-listTb .row-useDate .i-wCal {top: 5px;}
+
+.pdtCal.type-ticket {position: absolute; top: 44px; left: 50%; z-index: 2; margin-left: -175px; border: 2px solid #70707d;}
+
+/* 공연/전시, 레저/입장권  요금 */
 .sec-prd-listShow .tb-show col.nth-1 {width: 28%;}
 .sec-prd-listShow .tb-show col.nth-2 {width: 20%;}
 .sec-prd-listShow .tb-show col.nth-3,
@@ -212,7 +226,7 @@
 .sec-prd-listTicket,
 .sec-prd-listShow {}
 .sec-prd-listTicket .tb-show,
-.sec-prd-listShow .tb-show {margin-top: 25px;}
+.sec-prd-listShow .tb-show {margin-top: 20px;}
 .sec-prd-listTicket .tb-show th,
 .sec-prd-listTicket .tb-show td,
 .sec-prd-listShow .tb-show th,
@@ -261,11 +275,15 @@
 .sec-prd-listTb .tb-pay td.nth-3 .d-prc s {margin-left: 15px; margin-right: -15px;}
 .sec-prd-listTb .tb-pay td.nth-3 .d-prc .num {font-size: 34px; top: 3px; margin-left: 30px;}
 .sec-prd-listTb .tb-pay td.nth-3 .d-prc .sm {font-size: 25px;}
-.sec-prd-listTb .tb-pay td.nth-3 .area-btn {margin-top: 20px; text-align: right;}
-.sec-prd-listTb .tb-pay td.nth-3 .area-btn a {position: relative;  display: inline-block; border: 1px solid #fd5426; border-radius: 2px; text-align: center; font-size: 18px; font-weight: 700; line-height: 50px;}
+.sec-prd-listTb .tb-pay td.nth-3 .area-btn {position: relative; margin-top: 20px; text-align: right;}
+.sec-prd-listTb .tb-pay td.nth-3 .area-btn a {}
+.sec-prd-listTb .tb-pay td.nth-3 .area-btn a.nth-1,
+.sec-prd-listTb .tb-pay td.nth-3 .area-btn a.nth-2 {position: relative;  display: inline-block; border: 1px solid #fd5426; border-radius: 2px; text-align: center; font-size: 18px; font-weight: 700; line-height: 50px;}
 .sec-prd-listTb .tb-pay td.nth-3 .area-btn a.nth-1 {width: 150px; color: #fd5426;}
 .sec-prd-listTb .tb-pay td.nth-3 .area-btn a.nth-2 {width: 300px; background: #fd5426; color: #fff; margin-left: 10px;}
-.sec-prd-listTb .tb-pay td.nth-3 .btn-sale {position: absolute; top: -16px; left: 50%; margin-left: -32px; font-family: "Dotum", sans-serif; font-size: 11.5px; color: #888; font-weight: 400; line-height: 1.5; background: #fff; border: 1px solid #777; padding: 1px 5px 0; cursor: pointer;}
+.sec-prd-listTb .tb-pay td.nth-3 .area-btn .appH {position: relative; display: inline-block;}
+.sec-prd-listTb .tb-pay td.nth-3 .area-btn .appH:hover .btn-sale {display: block;}
+.sec-prd-listTb .tb-pay td.nth-3 .btn-sale {display: none; position: absolute; top: -16px; left: 50%; margin-left: -32px; font-family: "Dotum", sans-serif; font-size: 11.5px; color: #888; font-weight: 400; line-height: 1.5; background: #fff; border: 1px solid #777; padding: 1px 5px 0; cursor: pointer;}
 .sec-prd-listTb .tb-pay td.nth-3 .btn-sale:before {content: ""; display: block; position: absolute; left: 50%; margin-left: -3.5px;  bottom: -5px; width: 7px; height: 7px; background: #fff; border: 1px solid #777; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); border-top: 0; border-right: 0;}
 .sec-prd-listTb .tb-pay td.nth-3 .square {display: block; position: absolute; top: 20px; left: -5px; width: 10px; height: 10px; background: #f9f9fa; border: 1px solid #c3c3c3; border-bottom: 0; border-right: 0;
     -webkit-transform: rotate(-45deg);
@@ -293,26 +311,22 @@
 .sec-prd-listTb .tb-pay .quan > .s-r {float: right; right: 2px;}
 
 
-.sec-prd-listTb .tb-caution {border: 1px solid #b8b8b8; margin-top: 15px;}
-.sec-prd-listTb .tb-ctFaq col.nth-1,
-.sec-prd-listTb .tb-caution col.nth-1 {width: 18%;}
-.sec-prd-listTb .tb-ctFaq col.nth-2,
-.sec-prd-listTb .tb-caution col.nth-2 {width: 82%;}
-.sec-prd-listTb .tb-caution th {border-bottom: 1px solid #c3c3c3; text-align: center; background: #f9f9fa; font-weight: 700; padding: 12px;}
-.sec-prd-listTb .tb-ctFaq td,
-.sec-prd-listTb .tb-caution td {padding: 35px; line-height: 1.7;}
-.sec-prd-listTb .tb-ctFaq td.nth-1,
-.sec-prd-listTb .tb-caution td.nth-1 {font-weight: 700;}
-.sec-prd-listTb .tb-ctFaq td.nth-2,
-.sec-prd-listTb .tb-caution td.nth-2 {padding-left: 45px;}
-.sec-prd-listTb .tb-caution td.td-sun {padding-top: 0; padding-bottom: 0;}
-.sec-prd-listTb .tb-caution td .sun {height: 1px; background: #c3c3c3;}
+.sec-prd-listTb .tb-ctFaq col.nth-1 {width: 18%;}
+.sec-prd-listTb .tb-ctFaq col.nth-2 {width: 82%;}
+.sec-prd-listTb .tb-ctFaq td {padding: 35px; line-height: 1.7;}
+.sec-prd-listTb .tb-ctFaq td.nth-1 {font-weight: 700;}
+.sec-prd-listTb .tb-ctFaq td.nth-2 {padding-left: 45px;}
+.sec-prd-listTb .tb-ctFaq td .td-sun {padding-top: 0; padding-bottom: 0;}
+.sec-prd-listTb .tb-ctFaq td .sun {height: 1px; background: #c3c3c3;}
 
 .sec-prd-listTb .area-ctFaq {position: relative; margin-top: 30px;}
 .sec-prd-listTb .area-ctFaq .ctFaq-tab {}
 .sec-prd-listTb .area-ctFaq .ctFaq-tab > li {width: 50%; float: left; border: 1px solid #b8b8b8; background: #e1e1e1; text-align: center; cursor: pointer; line-height: 54px; font-weight: 700; font-size: 17px;}
 .sec-prd-listTb .area-ctFaq .ctFaq-tab > li:first-child {border-right: 0;}
 .sec-prd-listTb .area-ctFaq .ctFaq-tab > li.on {background: #fff; border-bottom:0; color: #fd5426;}
+.sec-prd-listTb .area-ctFaq.one .ctFaq-tab > li {width: 100%;}
+.sec-prd-listTb .area-ctFaq.one .ctFaq-tab > li:first-child {border-right: 1px solid #b8b8b8;}
+.sec-prd-listTb .area-ctFaq.one .ctFaq-tab > li.on {background: #fff; border-bottom: 1px solid #b8b8b8; background: #e1e1e1; color: #333;}
 .sec-prd-listTb .area-ctFaq .ctFaq-contents {position: relative; width: 100%;}
 .sec-prd-listTb .area-ctFaq .ctFaq-contents > li {display: none; border: 1px solid #b8b8b8; border-top: 0;}
 .sec-prd-listTb .area-ctFaq .ctFaq-contents > li.on {display: block;}
@@ -334,38 +348,6 @@
 .prd-gal-pop .cont-box .prdGal {position: relative; margin: 0 auto;}
 .prd-gal-pop .cont-box .prdGal > li {position: relative; overflow: hidden; width: 318px; height: 210px;}
 .prd-gal-pop .cont-box .prdGal > li img {/*width: 326px; height: 202px;*/ width: 100%;}
-
-/* 앱특가 팝업 */
-.app_download_pop{display:none; width:100%; position:relative;}
-.pop_Bg_bk{width:100%; height:100%; position:fixed; top:0; left:0; background:#000; opacity:0.5; filter: alpha(opacity=50); z-index: 9999;}
-.popwrap{width:100%; height:100%; position:fixed; top:0; left:0; z-index: 9999; letter-spacing: 0;}
-.coupon_pack_pop{ width:594px; height:334px; position:absolute; top:50%; left:50%; margin-top:-167px; margin-left:-297px; background:#fff;}
-.coupon_pack_pop_top{height:59px; background:#001734;}
-.coupon_pack_pop_top .goco {position: relative; display:inline-block; float:left; width: 100px; margin-left: 25px; top: 10px;}
-.coupon_pack_pop_top > p {position: relative; top: 18px; float:left; font-size:17px; color:#fff; font-weight:normal; margin-left:32px;}
-.coupon_pack_pop_top .clsBtn {position: relative; top: 16px; float: right; display: inline-block; width: 21px; margin-right: 20px;}
-.coupon_pack_pop_top .clsBtn > img {width: 100%;}
-.coupon_pack_pop_contents{margin-top:28px;}
-.coupon_pack_pop_contents ul li{float:left;}
-.coupon_pack_pop_contents ul li.goco_app_icon{width:107px; margin-left:40px; }
-.coupon_pack_pop_contents .txt_box {margin-top: -5px;}
-.coupon_pack_pop_contents p.title_txt{font-size:24px; font-weight:700; color:#000000; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif; line-height: 1.4;}
-.coupon_pack_pop_contents p.txt_m{margin-top:5px; font-size:18px; font-weight:normal; font-weight:700;}
-.coupon_pack_pop_contents p.txt_s{margin-top:10px; font-size:16px; font-weight:700; line-height: 1.4;}
-.coupon_pack_pop span.orange_txt, .coupon_pack_pop span.red_txt {font-weight: 700;}
-.coupon_pack_pop span.orange_txt{color:#ff5400;}
-.coupon_pack_pop span.red_txt{color:#ff0000; border-bottom: 1px solid #ff0000; display: inline-block; line-height: 1.2;}
-.coupon_pack_pop_contents ul.input_Box{width:519px; margin:0 auto; margin-top:22px; height:54px;}
-.coupon_pack_pop_contents ul.input_Box li{float:left;}
-.coupon_pack_pop_contents ul.input_Box li.recipient{width:404px; height:54px; padding-top: 9px; background:#ebebeb; border:1px solid #b2b2b2; vertical-align: middle;}
-.coupon_pack_pop_contents ul.input_Box li.recipient label{font-size:15px; font-weight:700; margin:0px 21px 0px 30px;}
-/*.coupon_pack_pop_contents ul.input_Box li.recipient > * {display: inline-block;}*/
-.coupon_pack_pop_contents ul.input_Box li.recipient input{width:70px; height:32px; font-size:15px; background:#ffffff; border:1px solid #cdcdcd; text-align:center;}
-.coupon_pack_pop_contents ul.input_Box li.recipient span{position: relative; font-size:20px; margin:0 8px; top: 2px;}
-.coupon_pack_pop_contents ul.input_Box li.send_Btn {width:105px; height:54px; margin-left:8px;}
-.coupon_pack_pop_contents ul.input_Box li.send_Btn input{width:100%; height:100%; background:#f95c24; font-size:20px; font-weight:bold; color:#fff; border:none; outline:none; cursor:pointer;}
-.coupon_pack_pop_contents >  p {margin:14px 0px 0px 40px; font-size:13px;}
-
 
 .sec-prd-list .tbody > .d-item > .tr-detail {position: relative; background: #f1f2f7; padding: 13px 0 20px; display: none;}
 .sec-prd-list .tbody > .d-item > .tr-detail.on {display: block;}
@@ -577,8 +559,18 @@
 .li-introTk hr.sun {border: 0; margin: 0 auto; border-top: 1px solid #c3c3c3;}
 .li-introTk .sltedItm hr.sun {margin: 8px auto;}
 .li-introTk .mt-1 {margin: 15px auto 10px;}
+
 .li-introTk .box-1 {width: 800px; padding-top: 10px;}
 .li-introTk .box-1 .img-full {width: 100%;}
+.tb-pdtInfo {}
+.li-introTk .tb-pdtInfo col.nth-1 {width: 20%;}
+.li-introTk .tb-pdtInfo col.nth-2 {width: 80%;}
+.li-introTk .tb-pdtInfo td {padding: 30px 0; line-height: 1.7; word-break: keep-all;}
+.li-introTk .tb-pdtInfo td.nth-1 {font-weight: 700; padding-right: 5px;}
+.li-introTk .tb-pdtInfo td.nth-2 {padding-left: 45px;}
+.li-introTk .tb-pdtInfo td.td-sun {padding: 0;}
+.li-introTk .tb-pdtInfo td .sun {height: 1px; background: #c3c3c3;}
+
 .li-introTk .box-2 {margin-left: 20px; width: 280px;}
 .li-introTk .box-2 [class^="d-"] {position: relative; border: 1px solid #b8b8b8;}
 .li-introTk .box-2 .d-1 {padding: 0 10px; font-size: 16px;}
@@ -607,9 +599,15 @@
 .li-introTk .box-2 .d-2 .row-prc .s-2 .num {top: 2px;}
 .li-introTk .box-2 .d-2 .row-prc .s-2 .sm {font-size: 25px;}
 .li-introTk .box-2 .d-2 .area-btn {position: relative; font-size: 0; margin-top: 22px;}
-.li-introTk .box-2 .d-2 .area-btn a {display: inline-block; border: 1px solid #fd5426; border-radius: 2px; text-align: center; font-size: 17px; font-weight: 700; line-height: 56px;}
-.li-introTk .box-2 .d-2 .area-btn a.nth-1 {width: 42%; color: #fd5426;}
-.li-introTk .box-2 .d-2 .area-btn a.nth-2 {width: 56%; background: #fd5426; color: #fff; margin-left: 2%;}
+.li-introTk .box-2 .d-2 .area-btn a {}
+.li-introTk .box-2 .d-2 .area-btn a.nth-1,
+.li-introTk .box-2 .d-2 .area-btn a.nth-2 {position: relative;  display: inline-block; border: 1px solid #fd5426; border-radius: 2px; text-align: center; font-size: 17px; font-weight: 700; line-height: 56px;}
+.li-introTk .box-2 .d-2 .area-btn a.nth-1 {width: 108px; color: #fd5426;}
+.li-introTk .box-2 .d-2 .area-btn a.nth-2 {width: 144px; background: #fd5426; color: #fff; margin-left: 5px;}
+.li-introTk .box-2 .d-2 .area-btn .appH {position: relative; display: inline-block;}
+.li-introTk .box-2 .d-2 .area-btn .appH:hover .btn-sale {display: block;}
+.li-introTk .box-2 .d-2 .area-btn .btn-sale {display: none; position: absolute; top: -16px; left: 50%; margin-left: -32px; font-family: "Dotum", sans-serif; font-size: 11.5px; color: #888; font-weight: 400; line-height: 1.5; background: #fff; border: 1px solid #777; padding: 1px 5px 0; cursor: pointer;}
+.li-introTk .box-2 .d-2 .area-btn .btn-sale:before {content: ""; display: block; position: absolute; left: 50%; margin-left: -3.5px;  bottom: -5px; width: 7px; height: 7px; background: #fff; border: 1px solid #777; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); border-top: 0; border-right: 0;}
 .li-introTk .box-2 .d-3 {height: 60px; font-size: 0; border-top: 0; overflow: hidden;}
 .li-introTk .box-2 .d-3 > a {position: relative; display: inline-block; font-size: 14px; width: 33.33%; vertical-align: middle; padding: 9px 0; text-align: center; color: #707070;}
 .li-introTk .box-2 .d-3 .a-1 {line-height: 1.3;}
