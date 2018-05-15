@@ -454,7 +454,7 @@
 .trd-comp-2 .part-con .dep-1 > li.on > .pkg-con .con-2 a.gal-link {position: relative; display: inline-block; background: #f5f5f5; border: 1px solid #d7d7d7; padding: 5px 10px; text-align: center; left: 15px; top: 10px; text-align: center;}
 
 
-.trd-comp-2 .d-total {display: block; clear: both; position: absolute; width: 100%; font-size: 16px; bottom: 0px; padding: 0 8px; padding-bottom: 8px; background: #fff; z-index: 2;}
+.trd-comp-2 .d-total {display: block; clear: both; position: absolute; width: 100%; font-size: 16px; bottom: 0px; padding: 0 8px; padding-bottom: 8px; background: #fff; z-index: 2;} 
 .trd-comp-2 .d-total .d-inner {width: 100%; background: #f2f2f2; border: 1px solid #d7d7d7; padding: 5px 8px 4px;}
 .trd-comp-2 .d-total .d-l {width: 420px;}
 .trd-comp-2 .d-total .d-inner hr.sun {width: 100%; margin: 4px auto; border: 0; border-top: 1px solid #d7d7d7;}
