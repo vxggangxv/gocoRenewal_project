@@ -1,9 +1,70 @@
-<div>
-	<a href="/views/product/index.html">숙박패키지 - 1</a>&nbsp;&nbsp;
-	<a href="/views/product/index_1_2.html">숙박 - 1-2</a>&nbsp;&nbsp;
-	<a href="/views/product/index_2.html">공연 - 2</a>&nbsp;&nbsp;
-	<a href="/views/product/index_3.html">레저 - 3</a>
+<!-- 상단 배너, 비활성화 -->
+<div id="bannerTop" style="display: none;">
+	<div class="close"><a href="javascript: popCls('#bannerTop')" title="닫기"><img src="http://img.go.co.kr/bn_app05.jpg?ver=20180515160714"></a></div>
+	<div class="btn">
+		<div class="detail">
+			<a href="javascript: popOpen('#bannerTop .contents')" onclick="$(this).hide()" title="자세히보기"><img src="http://img.go.co.kr/bn_app01.jpg" id="bannertop_btn"></a>
+		</div>
+		<a href="javascript: $('#bannerTop .contents').toggle()" onclick="$('#bannerTop .btn .detail a').toggle()" title="고코투어앱 혜택보기"><img src="http://img.go.co.kr/bn_app03.jpg?ver=20180515160714"></a>
+	</div>
+
+	<div class="contents" style="display: none;" id="bannertop_layer">
+		<div class="shopLink">
+			<div class="text">
+				고코투어앱 설치하고 <br>
+				<span> 70,000원 쿠폰팩</span>으로 할인받으세요!
+			</div>
+			<div class="download_btn">
+				<a href="javascript: popOpen('.popup-app-download')"><img src="http://img.go.co.kr/goco_app_btn.jpg?ver=20180515160714" alt="앱다운받기바로가기"></a>
+				<!--
+				<a href="http://www.go.co.kr/_appclick.php?val=android" target="_blank"><img src="http://img.go.co.kr/bn_app_btn01.jpg?ver=20180515160714" alt="안드로이드 다운로드" style="margin-right:10px"/></a>
+				<a href="http://www.go.co.kr/_appclick.php?val=ios" target="_blank"><img src="http://img.go.co.kr/bn_app_btn02.jpg?ver=20180515160714" alt="앱스토어 다운로드" style="margin-right:10px"/></a>
+				<a href="http://www.go.co.kr/_appclick.php?val=one" target="_blank"><img src="http://img.go.co.kr/bn_app_btn03.jpg?ver=20180515160714" alt="원스토어 다운로드"/></a>
+				-->
+			</div>
+			<div class="detail">
+				<a href="javascript: popCls('#bannerTop .contents')" onclick="$('#bannerTop .btn .detail a').toggle()" title="닫기"><img src="http://img.go.co.kr/bn_app02.jpg" id="bannertop_btn2"></a>
+			</div>
+		</div>
+	</div>
 </div>
+
+<!-- 우측 퀵 메뉴, 비활성화 -->
+<div id="quickMenu" class="quick_on on" style="display: none;">
+	<div class="ment">
+		<p class="logo">고코투어</p>
+			<!-- 비회원 -->
+			<!--<p class="point" style="font-size:12px">지금 간단한 절차를 통해<br/> 회원으로 가입 후<br/>예약하시면 10,000원이<br/> 즉시 추가 할인됩니다.</p>-->
+			<p class="point" style="font-size:12px">지금 간단한 절차를 통해<br> 회원으로 가입 후<br>70,000원<br> 쿠폰팩을 증정합니다.</p>
+			</div>
+		<div class="menu">
+		<p><a href="http://www.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZOEW5AMQg1UW8WR0Qbb0ArVSpMLRtaBkEkR2NxJlAqKmxnMg8Tbk0=" title="로그인">로그인</a></p>
+		<p><a href="http://www.go.co.kr/home/member/?dd=RgwkRix5MkozCg==" title="예약/구매조회">예약/구매조회</a></p>
+	</div>
+		<div class="viewGoods">
+			<p class="title">최근 본 상품<span class="point">(2)</span></p>
+		<div id="recent_box">
+
+		<a href="http://www.go.co.kr/home/view/?p_no=G0dwF24R">
+			<img src="http://cache.go.co.kr/media/220/admin.varonet.co.kr/bar/mshop_img/B_IMG20170427131925.jpg" alt="서울대공원 리프트PKG" width="100" height="60" style="margin-bottom:5px" onerror="this.error='http://img.go.co.kr/noimg.jpg'">
+			<p>서울대공원 ...<br>
+			<img src="http://img.go.co.kr/bullet_won.jpg"><b><span class="point">12,400원~</span></b></p>
+		</a><div class="minibtn"><a href="#" title="이전상품"><img src="http://img.go.co.kr/btn_quickMenu_prev.jpg"></a><a href="javascript:listing.recent_list('2')" title="다음상품"><img src="http://img.go.co.kr/btn_quickMenu_next.jpg"></a></div>		</div>
+	</div>
+	<div class="menu">
+		<p><a href="http://www.go.co.kr/home/customer/" title="고객센터">고객센터</a></p>
+		<p><a href="http://www.go.co.kr/home/customer/" title="예약진행절차">예약진행절차</a></p>
+		<p><a href="http://www.go.co.kr/home/member/?dd=RAcfTDBDAVQyF1xM&amp;brd=RhAlfD1HMEAlEg==" title="예약변경/취소">예약변경/취소</a></p>
+		<p><a href="http://www.go.co.kr/home/customer/" title="시설이용안내">시설이용안내</a></p>
+		<p><a href="http://www.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl&amp;stype=Wh0=" title="Q&amp;A 문의/내역">Q&amp;A 문의/내역</a></p>
+		<p><a href="http://www.go.co.kr/home/customer/?dd=Tx8x" title="자주묻는질문">자주묻는질문</a></p>
+	</div>
+	<div class="btn">
+		<a href="javascript: $('#quickMenu').toggleClass('on')" title="퀵메뉴"><img src="http://img.go.co.kr/btn_quickMenu_close.jpg" id="bt_img"></a>
+		<a href="javascript: $(window).scrollTop(0)" title="위로"><img src="http://img.go.co.kr/btn_quickMenu_top.jpg"></a>
+	</div>
+</div>
+
 <header class="rnL-header clr bsLs">
 	<!-- 구버전 고코용 -->
 	<!-- <div class="rn-hdTop clr bsLs">

@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* .rn-gwrap {min-width: 1430px;} */
 .rn-gwrap {min-width: 1600px;}
+.rn-gwrap .prd-imgBox .bx-wrapper .bx-pager {display: none;}
 
 .prd-basic .bx-wrapper .bx-caption {}
 .prd-basic .bx-wrapper .bx-caption span {font-size: 17px; padding: 7px 10px 7px 12px;;}
@@ -125,7 +126,7 @@
 .ie8 .prd-buy .ul1 .li3 .btn-b:before {content: "▶"; border: 0; top: 0;}
 
 /* 회원 추가할인 안내 팝업 */
-#discount_pop {position:absolute; top:34px; right:169px; width:275px; text-align:left; display: none; z-index: 1;}
+#discount_pop {position:absolute; top:34px; right:168px; width:275px; text-align:left; display: none; z-index: 1;}
 #discount_pop .tit {padding-top:13px; padding-left:10px; height:35px; color:#fff; font-weight:600; background:url(http://img.go.co.kr/discount_bg.png) no-repeat; font-size:13px;}
 #discount_pop .tit .clsImg {position: absolute; right: 0; top: 10px;}
 #discount_pop .text {padding:10px; color:#3a3a3a; font-size:12px; line-height:1.5; background:#fff; border-left:1px solid #3a3a3a; border-right:1px solid #3a3a3a; border-bottom:1px solid #3a3a3a}
@@ -133,26 +134,6 @@
 #discount_pop .text .dot:before {content: '-'; position: absolute; left: 5px;}
 #discount_pop .text span {color:#ec5700; font-weight:700;}
 
-/* 최저가 보상제 팝업 */
-.lowestPric_pop {position:fixed; left:0; top:0; width:100%; height:100%; background:url('http://img.go.co.kr/modal_bg.png') repeat 0 0; text-align:center; z-index:50; display: none;}
-.lowestPric_pop:after {content:''; display:inline-block; height:100%; vertical-align:middle;}
-.lowestPric_pop .lowestPric_area {display:inline-block; margin-left:-4px; vertical-align:middle; background-color:#fff; color:#282828;}
-.lowestPric_pop .lowestPric_area .price_top {position:relative; padding:20px 10px; background-color:#ffde00;}
-.lowestPric_pop .lowestPric_area .price_top .pop_close {position:absolute; right:20px; top:50%; margin-top:-12px;}
-.lowestPric_pop .lowestPric_area .price_mid {padding:30px 20px 20px;}
-.lowestPric_pop .lowestPric_area .price_mid .note_txt {font-size:18px; margin-bottom:25px;}
-.lowestPric_pop .lowestPric_area .price_mid .note_txt strong {font-weight: 700;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li {margin-top:10px; text-align:left;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li:first-child {margin-top:0;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li > p {position:relative; padding-left:16px; font-size:14px; font-weight:bold;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li > p:before {content:''; display:block; position:absolute; left:0; top:5px; width:11px; height:11px; background-color:#282828;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li .list_guide_inner {margin-top:5px; padding:10px; background-color:#f8f8f8; border:1px solid #ccc; font-size: 13px;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li .list_guide_inner > ul > li {margin-top:5px;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li .list_guide_inner > ul > li:first-child {margin-top:0;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li .list_guide_inner > ul > li > ul {padding-left:10px;}
-.lowestPric_pop .lowestPric_area .price_mid .list_guide > li .list_guide_inner > ul > li > ul .sign {background-color:#ffdd00;}
-.lowestPric_pop .lowestPric_area .price_mid .btn_decl {text-align:center; margin-top:20px;}
-.lowestPric_pop .lowestPric_area .price_mid .btn_decl a {display:inline-block; width:194px; height:42px; line-height:42px; font-size:18px; color:#fff !important; background-color:#000; cursor: pointer;}
 
 .sec-prd-list {}
 .sec-prd-list [class*=tr] {font-size: 0;}
@@ -186,7 +167,7 @@
 .sec-prd-list .tbody > .d-item.on > .tr > li:first-child {font-weight: 700;}
 
 /* 이용날짜 */
-.sec-prd-listTb .row-useDate {position: relative; width: 100%; padding: 8px  0; background: #70707d; color: #fff; text-align: center; margin-top: 20px; margin-bottom: -1px;}
+.sec-prd-listTb .row-useDate {position: relative; width: 100%; padding: 8px  0; background: #70707d; color: #fff; text-align: center; margin-top: 20px; margin-bottom: -2px; border: 1px solid #c3c3c3;}
 .sec-prd-listTb .row-useDate + table {margin-top: 0;}
 .sec-prd-listTb .row-useDate .txt, .sec-prd-listTb .row-useDate .lbl-date {vertical-align: middle; display: inline-block;}
 .sec-prd-listTb .row-useDate .txt {margin-right: 8px;}
@@ -220,9 +201,14 @@
 .sec-prd-listTicket .tb-show col.nth-5 {width: 12%;}
 .sec-prd-listTicket .tb-show col.nth-6 {width: 14%;}
 
-.sec-prd-listTb [class^="tb-"] {width: 100%;}
+.sec-prd-listTb [class^="tb-"] {position: relative; width: 100%; border-collapse: separate; border-top: 1px solid #c3c3c3; border-left: 1px solid #c3c3c3;}
 .sec-prd-listTb [class^="tb-"] th,
 .sec-prd-listTb [class^="tb-"] td {position: relative;}
+.sec-prd-listShow .tb-show th,
+.sec-prd-listShow .tb-show td,
+.sec-prd-listTb .tb-pay td,
+.sec-prd-listTicket .tb-show th,
+.sec-prd-listTicket .tb-show td {border-right: 1px solid #c3c3c3; border-bottom: 1px solid #c3c3c3;}
 .sec-prd-listTicket,
 .sec-prd-listShow {}
 .sec-prd-listTicket .tb-show,
@@ -230,11 +216,11 @@
 .sec-prd-listTicket .tb-show th,
 .sec-prd-listTicket .tb-show td,
 .sec-prd-listShow .tb-show th,
-.sec-prd-listShow .tb-show td {border: 1px solid #c3c3c3; text-align: center; font-size: 17px; padding: 15px 0; vertical-align: middle;}
+.sec-prd-listShow .tb-show td {text-align: center; font-size: 17px; padding: 15px 0; vertical-align: middle;}
 .sec-prd-listTicket .tb-show th,
 .sec-prd-listShow .tb-show th {background: #888; color: #fff; padding: 12px 0;}
 
-.sec-prd-listShow .tb-show select {font-size: 16px; width: 264px; height: 36px; padding-left: 5px;}
+.sec-prd-listShow .tb-show select {font-size: 16px; width: 264px; height: 36px; padding: 0 5px;}
 
 .sec-prd-listTicket .tb-show td {padding: 8px 0;}
 .sec-prd-listTicket .tb-show td.nth-1,
@@ -260,8 +246,8 @@
 .sec-prd-listTb .quan > .s-l {float: left;}
 .sec-prd-listTb .quan > .s-r {float: right; right: 2px;}
 
-.sec-prd-listTb .tb-pay {margin-top: -1px;}
-.sec-prd-listTb .tb-pay td {border: 1px solid #c3c3c3; border-top-color: #848484; border-bottom-color: #848484; font-size: 17px; padding: 18px 0;}
+.sec-prd-listTb .tb-pay {margin-top: -1px; border-top-color: #848484; z-index: 1;}
+.sec-prd-listTb .tb-pay td {border-bottom-color: #848484; font-size: 17px; padding: 18px 0;}
 .sec-prd-listTb .tb-pay col.nth-1 {width: 10%;}
 .sec-prd-listTb .tb-pay col.nth-2 {width: 43%;}
 .sec-prd-listTb .tb-pay col.nth-3 {width: 47%;}
@@ -311,6 +297,7 @@
 .sec-prd-listTb .tb-pay .quan > .s-r {float: right; right: 2px;}
 
 
+.sec-prd-listTb .tb-ctFaq {border: 0;}
 .sec-prd-listTb .tb-ctFaq col.nth-1 {width: 18%;}
 .sec-prd-listTb .tb-ctFaq col.nth-2 {width: 82%;}
 .sec-prd-listTb .tb-ctFaq td {padding: 35px; line-height: 1.7;}
@@ -645,7 +632,7 @@
 .li-review .t-review th, .li-review .t-review .tr-tit td {padding: 8px 0;}
 .li-review .t-review thead th {background: #f2f2f2; font-weight: 700;}
 .li-review .t-review .tr-tit .ta-left {text-align: left; padding-left: 50px;}
-.li-review .t-review .tr-tit.on td {background: #fff6f0;}
+.li-review .t-review .tr-tit.on {background: #fff6f0;}
 .li-review .t-review .tr-tit.on .ta-left {font-weight: 700;}
 .li-review .t-review .tr-cont {display: none;}
 /*.li-review .t-review .tr-cont.on {display: table-row;}*/
@@ -717,7 +704,7 @@
 .li-contact .d-box-2 {font-size: 17px; background: #f0f0f0; border: 1px solid #cfcfcf; padding: 15px 30px; margin-top: 12px;}
 .li-contact .d-box-2 .inp-box {position: relative; width: 909px; height: 67px; display: inline-block; margin-right: 12px;}
 .li-contact .d-box-2 .inp-box .write-area {width: 100%; height: 100%; border: 1px solid #cfcfcf; padding: 5px; resize: none;}
-.li-contact .d-box-2 .inp-box .s-ph {position: absolute; top: 22px; width: 100%;  text-align: center; font-weight: 700;}
+.li-contact .d-box-2 .inp-box .s-ph {position: absolute; left: 0; top: 22px; width: 100%;  text-align: center; font-weight: 700;}
 .li-contact .d-box-2 .inp-box .s-ph .s1 {color: #1452b9;}
 .li-contact .d-box-2  > input[type=button] {
 	width: 112px; height: 67px; border: 1px solid #cdcdcd; font-size: 16px; font-weight: 700;
@@ -771,7 +758,7 @@
 .li-faq .p-row {font-size: 17px; margin-top: 26px; letter-spacing: 0;}
 .li-faq .p-row .f-bd {font-size: 18px; display: block; margin-bottom: 6px;}
 .li-faq .q-tab {position: relative; width: 100%; margin: 15px auto 2px; border-bottom: 2px solid #ff610a;}
-.li-faq .q-tab > li {float: left; width: 20%; text-align: center; border: 1px solid #d3d3d5; border-left: 0; box-sizing: border-box;}
+.li-faq .q-tab > li {float: left; width: 20%; text-align: center; border: 1px solid #d3d3d5; border-left: 0; box-sizing: border-box; border-bottom: 0;}
 .li-faq .q-tab > li:first-child {border-left: 1px solid #d3d3d5;}
 .li-faq .q-tab > li > a {display: block; width: 100%; line-height: 40px; font-size: 15px; color: #6e6e6e;}
 .li-faq .q-tab > li.on {border-top-color: #f37720;}
@@ -789,7 +776,8 @@
 .li-faq .faq_t td a:hover {color:#ff610a}
 
 .li-faq .faq_t tr[id^=faq_cont] {display: none;}
-.li-faq .faq_t .reply {text-align: left; position: relative; background: #F6F4F5; padding: 30px 20px 20px 40px;}
+.li-faq .faq_t tr[id^=faq_cont], .li-faq .faq_t .tr-reply {background: #F6F4F5;}
+.li-faq .faq_t .reply {text-align: left; position: relative; padding: 30px 20px 20px 40px;}
 .li-faq .faq_t .reply > p {line-height: 1.4;}
 .li-faq .faq_t .faq_more {margin-left: 0; width: 100%; margin-top: 30px;}
 .li-faq .faq_t .faq_more h4 {margin-bottom: 5px; font-weight: 700; color: #ff610a; font-size: 17px;}

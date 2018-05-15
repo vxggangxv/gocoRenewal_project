@@ -113,6 +113,10 @@ function popOpen(itm) {
 	});
 }
 
+function popCls(itm) {
+	$(itm).hide();
+}
+
 function popClose(itm) {
 	$(itm).closest(".allPopupWrap").hide().off('scroll touchmove mousewheel');//allPopupWrap 팝업js용도로 쓰이는 class
 	//console.log('닫기');
@@ -187,6 +191,8 @@ function toggleOn(itm, type) {
 				}
 			}*/
 		});
+	} else if (type == "self") {
+		$(itm).toggle();
 	} else {
 		$(itm).on('click', function () {
 			var idx = $(this).parent().index();

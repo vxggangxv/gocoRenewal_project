@@ -63,12 +63,113 @@
         </div>
         <!--  -->
 
-        <div>
-            <a href="/views/product/index.html">숙박패키지 - 1</a>&nbsp;&nbsp;
-            <a href="/views/product/index_1_2.html">숙박 - 1-2</a>&nbsp;&nbsp;
-            <a href="/views/product/index_2.html">공연 - 2</a>&nbsp;&nbsp;
-            <a href="/views/product/index_3.html">레저 - 3</a>
+        <!-- 상단 배너, 비활성화 -->
+        <div id="bannerTop" style="display: none;">
+            <div class="close">
+                <a href="javascript: popCls('#bannerTop')" title="닫기">
+                    <img src="http://img.go.co.kr/bn_app05.jpg?ver=20180515160714">
+                </a>
+            </div>
+            <div class="btn">
+                <div class="detail">
+                    <a href="javascript: popOpen('#bannerTop .contents')" onclick="$(this).hide()" title="자세히보기">
+                        <img src="http://img.go.co.kr/bn_app01.jpg" id="bannertop_btn">
+                    </a>
+                </div>
+                <a href="javascript: $('#bannerTop .contents').toggle()" onclick="$('#bannerTop .btn .detail a').toggle()" title="고코투어앱 혜택보기">
+                    <img src="http://img.go.co.kr/bn_app03.jpg?ver=20180515160714">
+                </a>
+            </div>
+
+            <div class="contents" style="display: none;" id="bannertop_layer">
+                <div class="shopLink">
+                    <div class="text">
+                        고코투어앱 설치하고
+                        <br>
+                        <span> 70,000원 쿠폰팩</span>으로 할인받으세요!
+                    </div>
+                    <div class="download_btn">
+                        <a href="javascript: popOpen('.popup-app-download')">
+                            <img src="http://img.go.co.kr/goco_app_btn.jpg?ver=20180515160714" alt="앱다운받기바로가기">
+                        </a>
+                        <!--
+				<a href="http://www.go.co.kr/_appclick.php?val=android" target="_blank"><img src="http://img.go.co.kr/bn_app_btn01.jpg?ver=20180515160714" alt="안드로이드 다운로드" style="margin-right:10px"/></a>
+				<a href="http://www.go.co.kr/_appclick.php?val=ios" target="_blank"><img src="http://img.go.co.kr/bn_app_btn02.jpg?ver=20180515160714" alt="앱스토어 다운로드" style="margin-right:10px"/></a>
+				<a href="http://www.go.co.kr/_appclick.php?val=one" target="_blank"><img src="http://img.go.co.kr/bn_app_btn03.jpg?ver=20180515160714" alt="원스토어 다운로드"/></a>
+				-->
+                    </div>
+                    <div class="detail">
+                        <a href="javascript: popCls('#bannerTop .contents')" onclick="$('#bannerTop .btn .detail a').toggle()" title="닫기">
+                            <img src="http://img.go.co.kr/bn_app02.jpg" id="bannertop_btn2">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- 우측 퀵 메뉴, 비활성화 -->
+        <div id="quickMenu" class="quick_on on" style="display: none;">
+            <div class="ment">
+                <p class="logo">고코투어</p>
+                <!-- 비회원 -->
+                <!--<p class="point" style="font-size:12px">지금 간단한 절차를 통해<br/> 회원으로 가입 후<br/>예약하시면 10,000원이<br/> 즉시 추가 할인됩니다.</p>-->
+                <p class="point" style="font-size:12px">지금 간단한 절차를 통해
+                    <br>회원으로 가입 후
+                    <br>70,000원
+                    <br>쿠폰팩을 증정합니다.</p>
+            </div>
+            <div class="menu">
+                <p><a href="http://www.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZOEW5AMQg1UW8WR0Qbb0ArVSpMLRtaBkEkR2NxJlAqKmxnMg8Tbk0=" title="로그인">로그인</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/member/?dd=RgwkRix5MkozCg==" title="예약/구매조회">예약/구매조회</a>
+                </p>
+            </div>
+            <div class="viewGoods">
+                <p class="title">최근 본 상품<span class="point">(2)</span>
+                </p>
+                <div id="recent_box">
+
+                    <a href="http://www.go.co.kr/home/view/?p_no=G0dwF24R">
+                        <img src="http://cache.go.co.kr/media/220/admin.varonet.co.kr/bar/mshop_img/B_IMG20170427131925.jpg" alt="서울대공원 리프트PKG" width="100" height="60" style="margin-bottom:5px" onerror="this.error='http://img.go.co.kr/noimg.jpg'">
+                        <p>서울대공원 ...
+                            <br>
+                            <img src="http://img.go.co.kr/bullet_won.jpg"><b><span class="point">12,400원~</span></b>
+                        </p>
+                    </a>
+                    <div class="minibtn">
+                        <a href="#" title="이전상품">
+                            <img src="http://img.go.co.kr/btn_quickMenu_prev.jpg">
+                        </a>
+                        <a href="javascript:listing.recent_list('2')" title="다음상품">
+                            <img src="http://img.go.co.kr/btn_quickMenu_next.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <p><a href="http://www.go.co.kr/home/customer/" title="고객센터">고객센터</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/customer/" title="예약진행절차">예약진행절차</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/member/?dd=RAcfTDBDAVQyF1xM&amp;brd=RhAlfD1HMEAlEg==" title="예약변경/취소">예약변경/취소</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/customer/" title="시설이용안내">시설이용안내</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl&amp;stype=Wh0=" title="Q&amp;A 문의/내역">Q&amp;A 문의/내역</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/customer/?dd=Tx8x" title="자주묻는질문">자주묻는질문</a>
+                </p>
+            </div>
+            <div class="btn">
+                <a href="javascript: $('#quickMenu').toggleClass('on')" title="퀵메뉴">
+                    <img src="http://img.go.co.kr/btn_quickMenu_close.jpg" id="bt_img">
+                </a>
+                <a href="javascript: $(window).scrollTop(0)" title="위로">
+                    <img src="http://img.go.co.kr/btn_quickMenu_top.jpg">
+                </a>
+            </div>
+        </div>
+
         <header class="rnL-header clr bsLs">
             <!-- 구버전 고코용 -->
             <!-- <div class="rn-hdTop clr bsLs">
@@ -559,7 +660,7 @@
 
         <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
         <div id="backDrop"></div>
-        <div class="rnM-mainDoor bsLs">
+        <div class="rnM-mainDoor-2 bsLs">
             <div class="rn-container">
                 <strong class="main-text ftfm-mg">
 
@@ -572,557 +673,765 @@
                 <div class="rn-schBox clr" id="rn-schBox">
                     <h2 class="hidden">숙소검색</h2>
 
+                    <!-- 180515_메인 수정 -->
                     <div class="rn-schInner clr">
-                        <div class="d1 d-cmm">
-                            <p class="p0">지역선택</p>
-                            <p class="p1 cm-s1"><span class="regName">서울</span><span class="regDetail">강남구</span>
-                            </p>
-                        </div>
-                        <div class="d2 d2-1 d-cmm">
-                            <p class="p0">체크인</p>
-                            <p class="p1 cm-s2">2017-10-11</p>
-                        </div>
-                        <div class="d2 d2-2 d-cmm">
-                            <p class="p0">체크아웃</p>
-                            <p class="p1 cm-s3">2017-10-11</p>
-                        </div>
-                        <div class="d3 d-cmm">
-                            <p class="p0">유형선택</p>
-                            <p class="p1 cm-s1">호텔/리조트/콘도/모텔</p>
-                        </div>
-                        <!-- <div class="d4 d-cmm">
-							<p class="p0">객실/인원 선택</p>
-							<p class="p1 cm-s1"><span class="s1">객실 1</span> <span class="s2">성인 2명</span></p>
-						</div> -->
 
-                        <div class="rnModal-sec">
-                            <!--지역-->
-                            <div class="rnSltReg rn-modal">
-                                <div class="slt-dep1">
-                                    <ul class="clr">
-                                        <li><a href="javascript:;">서울</a>
-                                        </li>
-                                        <li><a href="javascript:;">경기</a>
-                                        </li>
-                                        <li><a href="javascript:;">인천</a>
-                                        </li>
-                                        <li class="on"><a href="javascript:;">강원</a>
-                                        </li>
-                                        <li><a href="javascript:;">대전</a>
-                                        </li>
-                                        <li><a href="javascript:;">충북</a>
-                                        </li>
-                                        <li><a href="javascript:;">충남</a>
-                                        </li>
-                                        <li><a href="javascript:;">부산</a>
-                                        </li>
-                                        <li><a href="javascript:;">울산</a>
-                                        </li>
-                                        <li><a href="javascript:;">경남</a>
-                                        </li>
-                                        <li><a href="javascript:;">대구</a>
-                                        </li>
-                                        <li><a href="javascript:;">경북</a>
-                                        </li>
-                                        <li><a href="javascript:;">광주</a>
-                                        </li>
-                                        <li><a href="javascript:;">전남</a>
-                                        </li>
-                                        <li><a href="javascript:;">전북</a>
-                                        </li>
-                                        <li><a href="javascript:;">제주</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="slt-dep2">
-                                    <ul class="clr">
-                                        <li><a href="javascript:;">전체</a>
-                                        </li>
-                                        <li><a href="javascript:;">평창군</a>
-                                        </li>
-                                        <li><a href="javascript:;">강릉시</a>
-                                        </li>
-                                        <li><a href="javascript:;">춘천시</a>
-                                        </li>
-                                        <li><a href="javascript:;">양양군</a>
-                                        </li>
-                                        <li><a href="javascript:;">홍천군</a>
-                                        </li>
-                                        <li><a href="javascript:;">속초시</a>
-                                        </li>
-                                        <li><a href="javascript:;">횡성군</a>
-                                        </li>
-                                        <li><a href="javascript:;">고성군</a>
-                                        </li>
-                                        <li><a href="javascript:;">원주시</a>
-                                        </li>
-                                        <li><a href="javascript:;">영원군</a>
-                                        </li>
-                                        <li><a href="javascript:;">정선시</a>
-                                        </li>
-                                        <li><a href="javascript:;">동해시</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;"></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;"></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;"></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;"></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;"></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <ul class="rn-menu">
+                            <li class="nth-1 on"><a href="#none">국내숙박</a>
+                            </li>
+                            <li class="nth-2"><a href="#none">레저/입장권</a>
+                            </li>
+                            <li class="nth-3"><a href="#none">공연/전시</a>
+                            </li>
+                            <li class="nth-4"><a href="#none">해외숙박</a>
+                            </li>
+                        </ul>
+
+                        <div class="rnModal-sec bsLs">
+                            <!-- 키워드 박스 -->
+                            <div class="d-cmm">
+                                <p class="p0">
+                                    <label for="keyword">키워드</label>
+                                </p>
+                            </div>
+                            <div class="kw-box">
+                                <span class="kw-input">
+
+                                    <input id="keyword" type="text" tabindex="1" title="키워드" placeholder="숙소명, 시설명 등을 입력해주세요." value="">
+
+                                    <button class="kw-btn" type="submit" tabindex="2">
+
+                                        <span class="kw-txt"><span class="c-ic i-mag"></span>검색</span>
+                                </button>
+                                </span>
                             </div>
 
-                            <!--달력-->
-                            <div class="rnSltCal rn-modal clr">
+                            <!-- 달력 -->
+                            <div class="cal-box">
+                                <!-- 체크인, 아웃 -->
+                                <div class="cal-1">
+                                    <div class="d-cmm d2">
+                                        <p class="p0">체크인</p>
+                                        <p class="p1 cm-s">2017-10-11</p>
+                                    </div>
+                                    <div class="d-cmm d2">
+                                        <p class="p0">체크아웃</p>
+                                        <p class="p1 cm-s">2017-10-11</p>
+                                    </div>
+                                    <!-- 달력 더블 -->
+                                    <div class="rnSltCal rn-modal clr">
 
-                                <div class="cal-inner">
-                                    <p class="p-1">
-                                        <a href="" class="prev-a"></a><em>2017년 06월</em>
-                                    </p>
-                                    <table class="cal-tb">
-                                        <thead>
-                                            <tr>
-                                                <th class="sun">일</th>
-                                                <th>월</th>
-                                                <th>화</th>
-                                                <th>수</th>
-                                                <th>목</th>
-                                                <th>금</th>
-                                                <th class="sat">토</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="off">
-                                                    <div></div>
-                                                </td>
-                                                <td class="off">
-                                                    <div></div>
-                                                </td>
-                                                <td class="off">
-                                                    <div></div>
-                                                </td>
-                                                <td class="off">
-                                                    <div></div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>1</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>2</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>3</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="off">
-                                                    <div>4</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>5</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>6</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>7</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>8</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>9</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>10</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="off">
-                                                    <div>11</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>12</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>13</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>14</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>15</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>16</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>17</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="off">
-                                                    <div>18</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>19</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>20</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>21</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>22</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>23</div>
-                                                </td>
-                                                <td class="off">
-                                                    <div>24</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="off">
-                                                    <div>25</div>
-                                                </td>
-                                                <!--날짜 미선택시-->
-                                                <!--<td><div>26</div></td>
+                                        <div class="cal-inner">
+                                            <p class="p-1">
+                                                <a href="" class="prev-a"></a><em>2017년 06월</em>
+                                            </p>
+                                            <table class="cal-tb">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="sun">일</th>
+                                                        <th>월</th>
+                                                        <th>화</th>
+                                                        <th>수</th>
+                                                        <th>목</th>
+                                                        <th>금</th>
+                                                        <th class="sat">토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>1</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>2</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>3</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div>4</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>5</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>6</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>7</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>8</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>9</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>10</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div>11</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>12</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>13</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>14</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>15</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>16</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>17</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div>18</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>19</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>20</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>21</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>22</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>23</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>24</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div>25</div>
+                                                        </td>
+                                                        <!--날짜 미선택시-->
+                                                        <!--<td><div>26</div></td>
                     <td><div>27</div></td>
                     <td><div>28</div></td>-->
-                                                <!--날짜 선택시-->
-                                                <td class="chkIn">
-                                                    <div>26<span class="c-ic i-chkIn"></span>
-                                                    </div>
-                                                </td>
-                                                <td class="ing">
-                                                    <div>27</div>
-                                                </td>
-                                                <td class="chkOut">
-                                                    <div>28<span class="c-ic i-chkOut"></span>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div>29</div>
-                                                </td>
-                                                <td>
-                                                    <div>30</div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="cal-inner">
-                                    <p class="p-1"><em>2017년 07월</em>
-                                        <a href="javascript:;" class="next-a"></a>
-                                    </p>
-                                    <table class="cal-tb">
-                                        <thead>
-                                            <tr>
-                                                <th class="sun">일</th>
-                                                <th>월</th>
-                                                <th>화</th>
-                                                <th>수</th>
-                                                <th>목</th>
-                                                <th>금</th>
-                                                <th class="sat">토</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td>
-                                                    <div></div>
-                                                </td>
-                                                <td class="sat">
-                                                    <div>1</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div>2</div>
-                                                </td>
-                                                <td>
-                                                    <div>3</div>
-                                                </td>
-                                                <td>
-                                                    <div>4</div>
-                                                </td>
-                                                <td>
-                                                    <div>5</div>
-                                                </td>
-                                                <td>
-                                                    <div>6</div>
-                                                </td>
-                                                <td>
-                                                    <div>7</div>
-                                                </td>
-                                                <td class="sat">
-                                                    <div>8</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div>9</div>
-                                                </td>
-                                                <td>
-                                                    <div>10</div>
-                                                </td>
-                                                <td>
-                                                    <div>11</div>
-                                                </td>
-                                                <td>
-                                                    <div>12</div>
-                                                </td>
-                                                <td>
-                                                    <div>13</div>
-                                                </td>
-                                                <td>
-                                                    <div>14</div>
-                                                </td>
-                                                <td class="sat">
-                                                    <div>15</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div>16</div>
-                                                </td>
-                                                <td>
-                                                    <div>17</div>
-                                                </td>
-                                                <td>
-                                                    <div>18</div>
-                                                </td>
-                                                <td>
-                                                    <div>19</div>
-                                                </td>
-                                                <td>
-                                                    <div>20</div>
-                                                </td>
-                                                <td>
-                                                    <div>21</div>
-                                                </td>
-                                                <td class="sat">
-                                                    <div>22</div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div>23</div>
-                                                </td>
-                                                <td>
-                                                    <div>24</div>
-                                                </td>
-                                                <td>
-                                                    <div>25</div>
-                                                </td>
-                                                <td>
-                                                    <div>26</div>
-                                                </td>
-                                                <td>
-                                                    <div>27</div>
-                                                </td>
-                                                <td>
-                                                    <div>28</div>
-                                                </td>
-                                                <td class="sat">
-                                                    <div>29</div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                                        <!--날짜 선택시-->
+                                                        <td class="chkIn">
+                                                            <div>26<span class="c-ic i-chkIn"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="ing">
+                                                            <div>27</div>
+                                                        </td>
+                                                        <td class="chkOut">
+                                                            <div>28<span class="c-ic i-chkOut"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div>29</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>30</div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="cal-inner">
+                                            <p class="p-1"><em>2017년 07월</em>
+                                                <a href="javascript:;" class="next-a"></a>
+                                            </p>
+                                            <table class="cal-tb">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="sun">일</th>
+                                                        <th>월</th>
+                                                        <th>화</th>
+                                                        <th>수</th>
+                                                        <th>목</th>
+                                                        <th>금</th>
+                                                        <th class="sat">토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="sat">
+                                                            <div>1</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div>2</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>3</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>4</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>5</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>6</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>7</div>
+                                                        </td>
+                                                        <td class="sat">
+                                                            <div>8</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div>9</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>10</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>11</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>12</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>13</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>14</div>
+                                                        </td>
+                                                        <td class="sat">
+                                                            <div>15</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div>16</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>17</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>18</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>19</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>20</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>21</div>
+                                                        </td>
+                                                        <td class="sat">
+                                                            <div>22</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div>23</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>24</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>25</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>26</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>27</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>28</div>
+                                                        </td>
+                                                        <td class="sat">
+                                                            <div>29</div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="clr"></div>
+                                        <div class="d-area">
+                                            <a href="#" class="a1"><span class="c-ic i-today"></span> 오늘 날짜로 변경</a>
+                                            <!--날짜 미선택시-->
+                                            <!--<a href="#" class="a2">선택완료</a>-->
+                                            <!--날짜 선택시-->
+                                            <a href="#" class="a2 on">선택완료</a>
+                                        </div>
+                                    </div>
+
+
                                 </div>
 
-                                <div class="clr"></div>
-                                <div class="d-area">
-                                    <a href="#" class="a1"><span class="c-ic i-today"></span> 오늘 날짜로 변경</a>
-                                    <!--날짜 미선택시-->
-                                    <!--<a href="#" class="a2">선택완료</a>-->
-                                    <!--날짜 선택시-->
-                                    <a href="#" class="a2 on">선택완료</a>
+                                <!-- 이용일자 -->
+                                <div class="cal-2 caltype-1" style="display:none">
+                                    <div class="d-cmm d2">
+                                        <p class="p0">이용일자</p>
+                                        <p class="p1 cm-s">2017-10-11</p>
+                                    </div>
+                                    <!-- 달력 싱글 -->
+                                    <div class="rnSltCal rn-modal clr">
+                                        <div class="cal-inner">
+                                            <p class="p-1">
+                                                <a href="" class="prev-a"></a>
+                                                <em>2017년 06월</em>
+                                                <a href="" class="next-a"></a>
+                                            </p>
+                                            <table class="cal-tb">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="sun">일</th>
+                                                        <th>월</th>
+                                                        <th>화</th>
+                                                        <th>수</th>
+                                                        <th>목</th>
+                                                        <th>금</th>
+                                                        <th class="sat">토</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div></div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>1</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>2</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>3</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div>4</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>5</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>6</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>7</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>8</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>9</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>10</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div>11</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>12</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>13</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>14</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>15</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>16</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>17</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div>18</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>19</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>20</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>21</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>22</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>23</div>
+                                                        </td>
+                                                        <td class="off">
+                                                            <div>24</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="off">
+                                                            <div>25</div>
+                                                        </td>
+                                                        <!--날짜 선택시-->
+                                                        <td class="chkIn">
+                                                            <div>26</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>27</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>28</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>29</div>
+                                                        </td>
+                                                        <td>
+                                                            <div>30</div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                        <td>
+                                                            <div></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="clr"></div>
+                                        <div class="d-area">
+                                            <a href="#" class="a1"><span class="c-ic i-today"></span> 오늘 날짜로 변경</a>
+                                            <!--날짜 미선택시-->
+                                            <!--<a href="#" class="a2">선택완료</a>-->
+                                            <!--날짜 선택시-->
+                                            <a href="#" class="a2 on">선택완료</a>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
+                            <!-- 유형 -->
+                            <div class="type-box">
+                                <div class="d-cmm">
+                                    <p class="p0">유형선택</p>
+                                </div>
 
-                            <!--유형-->
-                            <!-- 20180313 유형선택 수정 -->
-                            <div class="rnSltCtg-2 rn-modal">
-                                <ul class="ul1">
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-all"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">전체</span>
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="on">
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-hotel"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">호텔</span>
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="on">
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-condo"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">리조트/콘도</span>
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li class="on">
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-motel"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">모텔</span>
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-guest"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">게스트하우스</span>
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-pension"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">펜션</span>
-                                            </p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-ticket"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">레저/입장권</span>
-                                            </p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- <div class="rnSltCtg rn-modal">
-								<ul class="ul1">
-									<li><a href="javascript:;">전체</a></li>
-									<li><a href="javascript:;">호텔</a></li>
-									<li><a href="javascript:;">리조트</a></li>
-									<li><a href="javascript:;">콘도</a></li>
-									<li><a href="javascript:;">레지던스</a></li>
-									<li><a href="javascript:;">모텔</a></li>
-									<li><a href="javascript:;">유스호스텔</a></li>
-									<li><a href="javascript:;">펜션</a></li>
-									<li><a href="javascript:;">카라반</a></li>
-									<li><a href="javascript:;">풀빌라</a></li>
-                                    <li class="bor-t"><a href="javascript:;">레저/입장권</a></li>
-									<li class="bor-t"><a href="javascript:;">공연/전시장</a></li>
-								</ul>
-							</div> -->
+                                <!-- 국내숙박 -->
+                                <div class="p1 list-box-1 type-1">
+                                    <ul class="type-list">
+                                        <li class="on"><a href="javascript:;">전체</a>
+                                        </li>
+                                        <li><a href="javascript:;">호텔</a>
+                                        </li>
+                                        <li><a href="javascript:;">리조트/콘도</a>
+                                        </li>
+                                        <li><a href="javascript:;">모텔</a>
+                                        </li>
+                                        <li><a href="javascript:;">게스트하우스</a>
+                                        </li>
+                                        <li><a href="javascript:;">펜션</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                            <!--객실/인원 선택-->
-                            <div class="rnSltNum rn-modal">
-                                <ul class="ul1">
-                                    <li>
-                                        <span class="s-lbl">객실</span>
-                                        <div class="quan clr">
-                                            <span class="s-l"></span>
-                                            <!--숫자 증가시 on클래스 추가-->
-                                            <input type="text" class="inp on" placeholder="0" value="1">
-                                            <span class="s-r"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="s-lbl">성인</span>
-                                        <div class="quan clr">
-                                            <span class="s-l"></span>
-                                            <input type="text" class="inp" placeholder="0">
-                                            <span class="s-r"></span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="s-lbl">소아</span>
-                                        <div class="quan clr">
-                                            <span class="s-l"></span>
-                                            <input type="text" class="inp" placeholder="0">
-                                            <span class="s-r"></span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <!-- 레저/입장권 -->
+                                <div class="p1 list-box-2 type-2" style="display:none">
+                                    <ul class="type-list">
+                                        <li class="on"><a href="javascript:;">전체</a>
+                                        </li>
+                                        <li><a href="javascript:;">워터파크</a>
+                                        </li>
+                                        <li><a href="javascript:;">테마파크</a>
+                                        </li>
+                                        <li><a href="javascript:;">키즈</a>
+                                        </li>
+                                        <li><a href="javascript:;">입장권</a>
+                                        </li>
+                                        <li><a href="javascript:;">레포츠</a>
+                                        </li>
+                                        <li><a href="javascript:;">체험/축제</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- 공연/전시 -->
+                                <div class="p1 list-box-2 type-3" style="display:none">
+                                    <ul class="type-list">
+                                        <li class="on"><a href="javascript:;">전체</a>
+                                        </li>
+                                        <li><a href="javascript:;">공연</a>
+                                        </li>
+                                        <li><a href="javascript:;">전시</a>
+                                        </li>
+                                        <li><a href="javascript:;">체험</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- 해외숙박 -->
+                                <div class="p1 list-box-1 type-4" style="display:none">
+                                    <ul class="type-list">
+                                        <li class="on"><a href="javascript:;">전체</a>
+                                        </li>
+                                        <li><a href="javascript:;">호텔</a>
+                                        </li>
+                                        <li><a href="javascript:;">리조트/콘도</a>
+                                        </li>
+                                        <li><a href="javascript:;">모텔</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+
+                            <!-- 지역 -->
+                            <div class="reg-box">
+                                <div class="d-cmm">
+                                    <p class="p0">지역선택</p>
+                                </div>
+
+                                <!-- 국내숙박, 레저/입장권, 공연/전시 -->
+                                <div class="p1 rnSltReg reg-1">
+                                    <div class="slt-dep1">
+                                        <ul class="clr">
+                                            <li class="on"><a href="javascript:;">서울</a>
+                                            </li>
+                                            <li><a href="javascript:;">경기</a>
+                                            </li>
+                                            <li><a href="javascript:;">인천</a>
+                                            </li>
+                                            <li><a href="javascript:;">강원</a>
+                                            </li>
+                                            <li><a href="javascript:;">부산</a>
+                                            </li>
+                                            <li><a href="javascript:;">대구</a>
+                                            </li>
+                                            <li><a href="javascript:;">경남</a>
+                                            </li>
+                                            <li><a href="javascript:;">경북</a>
+                                            </li>
+                                            <li><a href="javascript:;">대전</a>
+                                            </li>
+                                            <li><a href="javascript:;">충남</a>
+                                            </li>
+                                            <li><a href="javascript:;">충북</a>
+                                            </li>
+                                            <li><a href="javascript:;">광주</a>
+                                            </li>
+                                            <li><a href="javascript:;">전남</a>
+                                            </li>
+                                            <li><a href="javascript:;">울산</a>
+                                            </li>
+                                            <li><a href="javascript:;">전북</a>
+                                            </li>
+                                            <li><a href="javascript:;">제주</a>
+                                            </li>
+                                            <li><a href="javascript:;">세종</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="slt-dep2">
+                                        <ul class="clr">
+                                            <li><a href="javascript:;">전체</a>
+                                            </li>
+                                            <li><a href="javascript:;">평창군</a>
+                                            </li>
+                                            <li><a href="javascript:;">강릉시</a>
+                                            </li>
+                                            <li><a href="javascript:;">춘천시</a>
+                                            </li>
+                                            <li><a href="javascript:;">양양군</a>
+                                            </li>
+                                            <li><a href="javascript:;">홍천군</a>
+                                            </li>
+                                            <li><a href="javascript:;">속초시</a>
+                                            </li>
+                                            <li><a href="javascript:;">횡성군</a>
+                                            </li>
+                                            <li><a href="javascript:;">고성군</a>
+                                            </li>
+                                            <li><a href="javascript:;">원주시</a>
+                                            </li>
+                                            <li><a href="javascript:;">영원군</a>
+                                            </li>
+                                            <li><a href="javascript:;">정선시</a>
+                                            </li>
+                                            <li><a href="javascript:;">동해시</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- 해외숙박 -->
+                                <div class="p1 rnSltReg reg-2" style="display:none">
+                                    <div class="slt-dep1">
+                                        <ul class="clr">
+                                            <li class="on"><a href="javascript:;">일본</a>
+                                            </li>
+                                            <li><a href="javascript:;">홍콩/중국</a>
+                                            </li>
+                                            <li><a href="javascript:;">동남아</a>
+                                            </li>
+                                            <li><a href="javascript:;">유럽</a>
+                                            </li>
+                                            <li><a href="javascript:;">미주</a>
+                                            </li>
+                                            <li><a href="javascript:;">남태평양</a>
+                                            </li>
+                                            <li><a href="javascript:;">중동/아프리카</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="slt-dep2">
+                                        <ul class="clr">
+                                            <li><a href="javascript:;">전체</a>
+                                            </li>
+                                            <li><a href="javascript:;">도쿄</a>
+                                            </li>
+                                            <li><a href="javascript:;">오사카</a>
+                                            </li>
+                                            <li><a href="javascript:;">후쿠오카</a>
+                                            </li>
+                                            <li><a href="javascript:;">삿포로</a>
+                                            </li>
+                                            <li><a href="javascript:;">오키나와</a>
+                                            </li>
+                                            <li><a href="javascript:;">교토</a>
+                                            </li>
+                                            <li><a href="javascript:;">고베</a>
+                                            </li>
+                                            <li><a href="javascript:;">나고야</a>
+                                            </li>
+                                            <li><a href="javascript:;">그 외</a>
+                                            </li>
+                                            <li><a href="javascript:;">고베</a>
+                                            </li>
+                                            <li><a href="javascript:;">나고야</a>
+                                            </li>
+                                            <li><a href="javascript:;">그 외</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-
                     </div>
-
-                    <div class="rn-schBtn">
-                        <button type="button"><span class="c-ic i-mag"></span> 검색</button>
-                    </div>
+                    <!--// -->
 
                 </div>
             </div>
         </div>
         <div class="rnM-contents">
             <div class="rn-container">
-                <div class="pic-sec bsLs">
-                    <ul class="ul1 clr">
-                        <li class="li-1"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">국내숙박</span></a>
-                        </li>
-                        <li class="li-2"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">레저/입장권</span></a>
-                        </li>
-                        <li class="li-3"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">공연/전시</span></a>
-                        </li>
-                        <li class="li-4"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">해외숙박</span></a>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
             <div class="bn-sec">
                 <div class="rn-container">
@@ -1330,12 +1639,13 @@
                         <img src="http://img.go.co.kr/f_logo.gif" alt="고코투어푸터로고">
                     </div>
                     <div class="address">
-                        <!--내용 수정-->
                         <p>
-                            (주)바로네트웍스<span class="mgl"></span>대표이사 : 전병권<span class="mgl"></span>메인문의 : help@go.co.kr
-                            <br>주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)
-                            <br>사업자등록번호 : 215-87-85373<span class="mgl"></span>통신판매업 : 제2017-서울강남-00561호
-                            <br>여행업등록번호 : 제2017-07호<span class="mgl"></span>여행영업보증서 : 국내여행 제100-000-2015 0144 5816호
+                            (주)바로네트웍스
+                            <br>대표이사 : 전병권<span class="mgl"></span>주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)
+                            <br>대표번호 : 1666-1243<span class="mgl"></span>메일문의 : help@go.co.kr
+                            <br>사업자등록번호 : 215-87-85373 <span class="mgl"></span>통신판매업 : 제2017-서울강남-00561호
+                            <br>여행업등록번호 : 제2017-07호
+                            <span class="mgl"></span>여행영업보증서 : 국내여행 제100-000-2015 0144 5816호
                             <br>국외여행업등록번호 : 제2017호-26호
                             <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2158785373" target="_blank">
                                 <img src="http://img.go.co.kr/btn_copyinfo_gray.gif">
@@ -1358,7 +1668,8 @@
                     <div class="cust-box">
                         <p class="p-0">
                             <img src="http://img.go.co.kr/pic_i.png" alt="information">고객센터 전화문의</p>
-                        <p class="p-1">업무시간 : 09:00~18:00</p>
+                        <p class="p-1">평일 : 09:30~25:00</p>
+                        <p class="p-1">주말 : 09:30~24:00</p>
                         <p class="p-2">예약확정/취소/변경문의
                             <br>이벤트, 결제관련 문의</p>
                         <a href="http://www.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl&amp;ltype=RAc=" class="a-btn">문의<br>하기</a>

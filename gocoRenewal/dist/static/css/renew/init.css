@@ -107,6 +107,93 @@
 .rnSltReg {left: 0;}
 .rnSltCal {left: 273px;}
 
+/* 180514_메인 수정_다솜 */
+.rnM-mainDoor-2 {position: relative; width: 100%; height:635px; background: #eaeaea url(http://img.go.co.kr/renew/mainDoor_01.jpg) no-repeat center 85%; padding-top: 42px;}
+.rnM-mainDoor-2 .main-text {display: block; width: 1067px; margin: 0 auto;}
+.rnM-mainDoor-2 .main-text > span {display: block; margin:0 auto; text-align:center; color: #fff; font-weight: 700; text-shadow: 2px 2px 2px rgba(0,0,0, .6);}
+.rnM-mainDoor-2 .main-text .s1 {font-size: 32px; line-height:43px; letter-spacing: -2px;}
+.rnM-mainDoor-2 .main-text .s2 {font-size: 52px; line-height:70px; letter-spacing: -6px;}
+
+.rnM-mainDoor-2 .rn-schBox {position: relative; width: 100%; margin: 20px auto 0; }
+.rnM-mainDoor-2 .rn-schInner {position: relative; width:1067px; height:386px; margin: 0 auto; border-top: 4px solid #fa6b0a; background: url(http://img.go.co.kr/rgbaW_80.png) repeat; padding:0;}
+/*.ie8 .rnM-mainDoor-2 .rn-schInner {background: #fff;}*/
+
+.rnM-mainDoor-2 .rn-menu {z-index:12; position: absolute; width:138px}
+.rnM-mainDoor-2 .rn-menu li {height:95px; text-align:center; border-top:2px solid #c5bac1}
+.rnM-mainDoor-2 .rn-menu li.nth-1 {border-top:0}
+.rnM-mainDoor-2 .rn-menu li a {position:relative; display:block; height:100%; padding-top:37px; font-size:21px; line-height:21px; font-weight:normal; color:#626262;}
+.rnM-mainDoor-2 .rn-menu li.on {border-top:2px solid #9f7d91; background:#fff; box-shadow:2px 1px 2px 0px rgba(0, 0, 0, 0.2);}
+.rnM-mainDoor-2 .rn-menu li.on + li {border-top:2px solid #9f7d91;}
+.rnM-mainDoor-2 .rn-menu li.nth-1.on {border-top:0;}
+.rnM-mainDoor-2 .rn-menu li.nth-4.on {margin-top:2px;}
+.rnM-mainDoor-2 .rn-menu li.on a {font-weight:bold; color:#fa6b0a;}
+.rnM-mainDoor-2 .rn-menu li.on a:after {content:''; display:block; position:absolute; width:20px; height:20px; top:50%; right:-10px; margin-top:-10px; background:#fff; transform: rotate(45deg); box-shadow:4px 0px 3px -1px rgba(0, 0, 0, 0.2);}
+.ie8 .rnM-mainDoor-2 .rn-menu li.on a:after {width:16px; height:93px; top:0; right:-15px; margin-top:0; background:url(http://img.go.co.kr/renew/bg_mainDoor_menu.png) no-repeat;}
+.ie8 .rnM-mainDoor-2 .rn-menu li.nth-1.on a:after {height:94px;}
+.ie8 .rnM-mainDoor-2 .rn-menu li.nth-4.on {margin-top:1px;}
+
+.rnM-mainDoor-2 .rnModal-sec {position:relative; margin:0 31px 0 170px; padding-top:9px;}
+.rnM-mainDoor-2 .bsLs, .rnM-mainDoor-2 .bsLs * {z-index:12}
+.rnM-mainDoor-2 .rnModal-sec .p0 {margin:14px 0 5px;}
+.rnM-mainDoor-2 .rnModal-sec .p1 {position:relative; height:56px; font-size: 19px; line-height:56px; color: #626262; background: #fff; border: 1px solid #c8c8c8; margin-top: 2px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.rnM-mainDoor-2 .rnModal-sec .kw-box {}
+.rnM-mainDoor-2 .rnModal-sec .kw-box .kw-input {}
+.rnM-mainDoor-2 .rnModal-sec .kw-box .kw-input input {display:inline-block; width:709px; height:53px; padding:0 21px; font-size:19px; line-height:53px; color:#626262; border:1px solid #c8c8c8; background:#fff}
+.rnM-mainDoor-2 .rnModal-sec .kw-box .kw-input .kw-btn {cursor: pointer; position:relative; display: inline-block; width:139px; height:53px; margin-left:14px; border: 0; background: #fa6b0a;}
+.rnM-mainDoor-2 .rnModal-sec .kw-box .kw-input .kw-btn .kw-txt {position:relative; padding-left:25px; font-size:20px; line-height:53px; font-weight:bold; color:#fff}
+.rnM-mainDoor-2 .rnModal-sec .kw-box .kw-input .kw-btn .c-ic {position:absolute; top:50%; left:0; margin-top:-12px;}
+
+.rnM-mainDoor-2 .rnModal-sec .cal-box {float:left; position:relative; display:inline-block}
+.rnM-mainDoor-2 .rnModal-sec .cal-box:before {content:''; display:block; clear:both}
+.rnM-mainDoor-2 .rnModal-sec .cal-box .d-cmm {position:relative; float:left}
+.rnM-mainDoor-2 .rnModal-sec .cal-box .d-cmm .cm-s {cursor:pointer; width:193px; padding: 0 10px 0 60px; border-left:0; margin-top: 2px; }
+.rnM-mainDoor-2 .rnModal-sec .cal-box .d-cmm .cm-s + .d-cmm .cm-s {border-left:1px solid #b1b1b2;}
+.rnM-mainDoor-2 .rnModal-sec .cal-box .d-cmm:first-child .cm-s {border-left:1px solid #c8c8c8;}
+.rnM-mainDoor-2 .rn-schInner .cm-s:after {content: ""; display: inline-block; position: absolute; width: 25px; height: 22px; position: absolute; left:30px; top: 18px; background: url(http://img.go.co.kr/renew/sch_sprt.png) no-repeat center; background-position: -60px 0px;}
+.rnM-mainDoor-2 .rnSltCal {top:98px; left:0}
+
+.rnM-mainDoor-2 .rnModal-sec .type-box {float:left; position:relative; display:inline-block; margin-left:23px;}
+.rnM-mainDoor-2 .rnModal-sec .type-box:after {content:''; display:block; clear:both}
+.rnM-mainDoor-2 .rnModal-sec .type-box .p1 {margin:0 auto; text-align:center}
+.rnM-mainDoor-2 .rnModal-sec .type-box .p1.list-box-1 {width:457px}
+.rnM-mainDoor-2 .rnModal-sec .type-box .p1.list-box-2 {width:650px}
+.rnM-mainDoor-2 .rnModal-sec .type-box .type-list {display:inline-block; width: auto; margin:0 auto}
+.rnM-mainDoor-2 .rnModal-sec .type-box .type-list:before, .rnM-mainDoor-2 .rnModal-sec .type-box .type-list:after {content:''; display:block; clear:both}
+.rnM-mainDoor-2 .rnModal-sec .type-box .type-list li {float:left; padding:0 8px;}
+.rnM-mainDoor-2 .rnModal-sec .type-box .type-list li a {font-size:18px; color:#626262}
+.rnM-mainDoor-2 .rnModal-sec .type-box .type-list li.on a {color:#ff6700}
+
+.rnM-mainDoor-2 .rnModal-sec .reg-box {}
+.rnM-mainDoor-2 .rnModal-sec .reg-box * {z-index:11}
+.rnM-mainDoor-2 .rnModal-sec .reg-box:before {content:''; display:block; clear:both}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .p1 {overflow:inherit; max-width: 866px; height:98px; border:0}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg {}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] {margin:0 auto; padding:15px 20px 0 40px; border: 1px solid #c8c8c8;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 [class*=slt-dep] {padding: 25px 20px 15px 68px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul {display:inline-block;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul > li {line-height:16px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 li  {margin:13px 60px 0 0;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul > li > a {display:inline-block; width:auto; line-height:16px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 > ul > li.on a:before {top:3px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 {border-top:0; /*min-height:100px;*/ background:#fafafa}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 li  {margin:13px 40px 0 0;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 a {/*min-width:43px;*/ text-align:left}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 {padding:10px 20px 3px 60px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 a {min-width:auto;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 a.on {color: #fa6b0a;}
+
+    /* 달력 이용날짜 */
+.caltype-1 .rnSltCal {width: 345px; padding-bottom: 12px;}
+.caltype-1 .rnSltCal .cal-inner {width: 100%;}
+.caltype-1 .rnSltCal .cal-tb td > div {padding: 6px 0;}
+.caltype-1 .rnSltCal .d-area {margin-top: 0;}
+.caltype-1 .rnSltCal .d-area a {display:block; width:auto;}
+.caltype-1 .rnSltCal .d-area .a1 {margin-bottom:10px;}
+
+
+
+
+
 /* 카테고리 픽토그램 링크*/
 .rnM-contents .pic-sec {position: relative; height: 180px; background: #fff; margin: 0 auto;}
 .rnM-contents .pic-sec .ul1 {position: absolute; margin-top: -53.5px; width: 100%;}
@@ -127,7 +214,7 @@
 .rnM-contents .bn-sec .bxSlider-1 > li
 , .rnM-contents .bn-sec .bxSlider-1 > li *
 	{font-family: "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif; letter-spacing: 0.5px;}
-.rnM-contents .bn-sec .bxSlider-1 > li {position: relative; height: 533px;}
+.rnM-contents .bn-sec .bxSlider-1 > li {position: relative; height: 533px; box-sizing: border-box;}
 .rnM-contents .bn-sec .bxSlider-1 > li .bn-contents {position: absolute;}
 .rnM-contents .bn-sec .bxSlider-1 > li .bn-contents .s1 {color: #ff6000;}
 .rnM-contents .bn-sec .bxSlider-1 > li .bn-contents > p {}

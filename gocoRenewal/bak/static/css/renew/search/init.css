@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+.rn-gwrap {min-width:  1680px;}
+
+/* 인풋 태그 초기화 */
+.rnL-contents input[type=text]
+, .ipCst input.chk-cst[type=checkbox]  {
+	-webkit-appearance: none; -moz-appearance: none; appearance: none;
+}
+
+.ipCst input.chk-cst[type=checkbox] {
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; position: absolute; width: 0; height: 0;
+}
+
+/* 인풋 박스 커스터마이즈 */
+.ipCst {font-size: 0;}
+.ipCst, .ipCst label {position: relative; display: inline-block;}
+.ipCst label {vertical-align: middle; font-size: 16px;}
+input.chk-cst[type=checkbox] + label {width: 15px; height: 15px; border: 1px solid #787878; border-radius: 1px; background: #fff; margin-right: 5px;}
+input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.kr/renew/chk_cst.png) no-repeat right center;}
+.rnL-contents input[type=text] {}
+
+/***** 콘텐츠 영역 *****/
+.rnL-contents {position: relative; padding-top: 12px; /*width: 1680px;*/}
+
+.rnL-contents .rnL-listOuter, .rnL-contents .rnL-fOuter {padding-bottom: 62px;}
+
+
+/* 우측 필터링 및 지도 */
+.rnL-contents .rnL-mfOuter {position: absolute; width: 680px; height: 100%; right: 0; width: 40.5%; /*z-index: 2;*/}
+
+.rnL-contents .rnL-mOuter, .rnL-contents .rnL-fOuter {height: 100%; min-width: 694px;}
+/* 지도 */
+.rnL-contents .rnL-mOuter {position: relative; display: none;}
+
+/* 필터링*/
+.rnL-contents .rnL-fOuter {position: relative; border-top: 4px solid #fa6b0a; border-left: 1px solid #ddd; background: #f9f9f9; height: 100%; overflow-y: auto;}
+.rnL-contents .rnL-fOuter .d1 {position: relative; width: 97.5%; float: right; padding: 20px 32px 20px 8px; font-size: 16px; border-bottom: 1px solid  #e2e2e2; font-size: 0;}
+.rnL-contents .rnL-fOuter .d1.last {padding-bottom: 80px;}
+.rnL-contents .rnL-fOuter h2 {position: relative; color: #333; font-size: 21px; font-weight: 700;}
+.rnL-contents .rnL-fOuter h2 .a-x {top: 0; right: 0;}
+.rnL-contents .rnL-fOuter h2 .a-x:before, .rnL-contents .rnL-fOuter h2 .a-x:after {height: 2px; background: #999;}
+.rnL-contents .rnL-fOuter .d1 .d1-1 {position: relative; margin-top: 10px; font-size: 16px;}
+.rnL-contents .rnL-fOuter button.reset, .rnL-contents .rnL-fOuter .d1 .ht-grd {cursor: pointer;}
+.rnL-contents .rnL-fOuter button.reset {position: relative; width: 100px; height: 36px; font-size: 15px; background: #fff; border-radius: 4px; border: 1px solid #c1c1c1; }
+.rnL-contents .rnL-fOuter .d1 button.reset {float: right; margin-top: -10px; top: 2px;}
+.rnL-contents .rnL-fOuter .area-btn {clear: both; text-align: center; padding-top: 30px;}
+.rnL-contents .rnL-fOuter .area-btn button.reset {}
+.rnL-contents .rnL-fOuter .d1 .d1-3 {float: left; font-size: 16px;}
+.rnL-contents .rnL-fOuter .d1 .d1-2 {}
+.rnL-contents .rnL-fOuter .d1 .lbl, .rnL-contents .rnL-fOuter .d1 .ht-grd {position: relative; display: inline-block; vertical-align: middle;}
+.rnL-contents .rnL-fOuter .d1 .lbl {width: 104px; font-size: 16px;}
+.rnL-contents .rnL-fOuter .d1 .lbl.type1 {top: 10px; float: left;}
+.rnL-contents .rnL-fOuter .d1 .d1-3 {width: 82.5%; margin-top: -10px;}
+.rnL-contents .rnL-fOuter .d1 .d1-3 .ipCst {padding: 0 21px 0 0; margin-top: 10px;}
+/*.rnL-contents .rnL-fOuter .d1 .d1-3 .ipCst input+label {margin-right: 5px;}*/
+.rnL-contents .rnL-fOuter .d1 .d1-3[class*=wdChkBox-] .ipCst {box-sizing: border-box; padding-right: 0;}
+.rnL-contents .rnL-fOuter .d1 .d1-3.wdChkBox .ipCst {width: 82px;}
+.rnL-contents .rnL-fOuter .d1 .d1-3.wdChkBox-2 .ipCst {width: 100px;}
+.rnL-contents .rnL-fOuter .d1 .d1-3 .ipCst.nth-4 {margin: 0 -14px 0 14px;}
+.rnL-contents .rnL-fOuter .d1 .d1-3 .ipCst.nth-6 {margin-left: 4px; padding-right: 0;}
+.rnL-contents .rnL-fOuter .d1 .d1-3 .ipCst.nth-9 {margin-left: 14px;}
+.rnL-contents .rnL-fOuter .d1 .ht-grd {width: 81px; height: 42px; font-size: 16px; color: #a2a2a2; border: 1px solid #b2b2b2; line-height: 1; text-align: center; border-radius: 4px; margin-left: 5px; background: #fff; outline: none;}
+.rnL-contents .rnL-fOuter .d1 .ht-grd.on {color: #fa6b0a; border-color: #fa6b0a;}
+.rnL-contents .rnL-fOuter .d1 .lbl + .ht-grd {margin-left: 0;}
+
+.rnL-contents .rnL-fOuter .rgBox .lbl.type1 {top: 20px;}
+
+/* 좌측 리스트 */
+.rnL-contents .rnL-listOuter {position: relative; width: 938px; width: 55.9%; min-height: 960px; background: #fff;}
+.rnL-contents .rnL-listOuter .h2-box {position: relative;}
+.rnL-contents .rnL-listOuter h2.first {padding-top: 18px;}
+.rnL-contents .rnL-listOuter h2 {color: #191919; font-size: 21px; padding: 25px 0; line-height: 1; font-weight: 700;}
+.rnL-contents .rnL-listOuter h2 > span {position: relative;}
+.rnL-contents .rnL-listOuter h2 .f-sm {display: inline-block; font-size: 17px; font-weight: 400; margin-left: 4px;}
+.rnL-contents .rnL-listOuter h2 .h2-sch {display: inline-block;}
+.rnL-contents .rnL-listOuter .h2-box.schBtn-non + ul > li {border-bottom: 0;}
+
+.rnL-contents .rnL-listOuter .bestC-outer {position: relative; padding-bottom: 50px; border-bottom: 1px solid #e2e2e2;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 {}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li {position: relative; float: left; width: 32%; margin-left: 2%; height: 356px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li > a {display: block; border: 1px solid #e2e2e2;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li:first-child {margin-left: 0;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d1 {position: relative; width: 100%; height: 212px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .itmImg {width: 100%;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .rn_rowPrc {position: absolute; top: 10px; right: 10px; width: 50px; border: 1px solid #000;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 {border-top: 1px solid #e2e2e2; padding: 15px 10px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 > p {line-height: 1.5; position: relative;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p1 {font-size: 15px; color: #767676;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p1 span:first-child {margin-right: 8px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p1 .s1 {color: #ff4848; font-weight: 600;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p1 .mgl {height: 12px; width: 1px; background: #888; margin: 0 6px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p2 {overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 20px; color: #030303;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p3 {font-size: 16px; color: #727272;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p3 .mgl {width: 1px; height: 14px; background: #727272; margin: 0 5px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p4 {margin-top: -4px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p4 .s1 {font-size: 24px; color: #303030; font-weight: 800;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p4 .s1 > span {font-size: 16px; margin-left: 2px; font-weight: 600; position: relative; top: -1px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p4 .s2 {font-size: 16px; color: #bcbcbc; font-weight: 600; letter-spacing: -1px; margin-left: 10px;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p4 .s3 {position: absolute; right: 0; top: 4px; font-size: 20px; color: #f00; font-weight: 600;}
+.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p4 .s3 > span {top: -2px; margin-left: 2px;}
+.rnL-contents .rnL-listOuter .bn-box {position: relative; height: 80px; width: 100%; overflow: hidden; background: #418ad6; margin: 10px 0;}
+.rnL-contents .rnL-listOuter .bn-box img {position: absolute; position: block; left: 50%; margin-left: -480px;}
+
+.rnL-contents .rnL-listOuter .schNonBox {position: absolute; width: 500px; text-align: center; top: 50%; margin-top: -250px; left: 50%; margin-left: -250px;}
+.rnL-contents .rnL-listOuter .schNonBox img {}
+.rnL-contents .rnL-listOuter .schNonBox .text {font-size: 18px; color: #757575; margin-top: 20px;}
+
+
+/* 객실 예약 현황 */
+.rnL-contents .rnL-listOuter .reserPerc {position: relative; height: 68px; font-size: 15px; border: 1px solid #e5e5e5; background: #fff3e0; overflow: hidden;}
+.rnL-contents .rnL-listOuter .reserPerc > div {position: relative; float: left;}
+.rnL-contents .rnL-listOuter .reserPerc .perBox {padding: 0 20px; top: 3px;}
+.rnL-contents .rnL-listOuter .reserPerc .psBox {top: 10px; margin-left: 20px;}
+.reserChart {position: relative; width: 100px; height: 100px;}
+.reserChart .circle-outer, .reserChart .circle-inner {position: absolute; width: 100px; height: 50px; overflow: hidden;}
+.reserChart .circle-outer.top {top: 0;}
+.reserChart .circle-outer.top .circle-inner {top: 100%; transform-origin: 50% 0%;}
+.reserChart .circle-body, .reserChart .circle-bodyBg {position: absolute; width: 100px; height: 100px; border-radius: 50%; background: #fa6b0a;}
+.reserChart .circle-bodyBg {background: #ccc;}
+.reserChart .circle-bodyBgIn {position: absolute; top: 7px; left: 7px; width: 86px; height: 86px; background: #fff3e0; border-radius: 50%;}
+.reserChart .circle-outer.top .circle-body {bottom: 0;}
+.reserChart .chart-content {position: absolute; top: 14px; left: 50%; margin-left: -23px; width: 46px; height: 46px; border: 1px solid #ccc; background: #dedede; border-radius: 50%;}
+.reserChart .chart-content .text {position: absolute; top: 50%; margin-top: -18px; left: 50%; margin-left: -18px; display: block; width: 36px; height: 36px; background: #fa6b0a; border-radius: 50%; text-align: center; color: #fff; letter-spacing: -1px; font-size: 12px; padding-top: 9px;}
+.ie8 .rnL-contents .rnL-listOuter .reserPerc .perBox {display: none;}
+
+
+/* BEST 추천숙소 */
+.rnL-contents .rnL-listOuter .drop-box {position: absolute; position: absolute; right: 0px; top: 14px; width: 168px; height: 34px; cursor: pointer; z-index: 1;}
+.rnL-contents .rnL-listOuter .drop-btn, .rnL-contents .rnL-listOuter .drop-menu {background: #fff;}
+.rnL-contents .rnL-listOuter .drop-btn {border: 1px solid #ddd; font-size: 15px; color: #5f5f5f; padding: 4px 7px; cursor: pointer; width: 100%; height: 100%; }
+.rnL-contents .rnL-listOuter .drop-btn > span {display: inline-block; vertical-align: middle;}
+.rnL-contents .rnL-listOuter .drop-btn .i-mapv {margin-right: 2px;}
+.rnL-contents .rnL-listOuter .drop-btn .i-dArr {position: absolute; right: 7px; top: 6.5px;}
+.rnL-contents .rnL-listOuter .drop-box .drop-menu {position: absolute; border: 1px solid #bbb; width: 100%; left: 0; margin-top: -1px; display: none;}
+.rnL-contents .rnL-listOuter .drop-box .drop-menu a {display: block; padding: 3px 10px; color: #5f5f5f; font-size: 14px; border-top: 1px solid #dddddd;}
+.rnL-contents .rnL-listOuter .drop-box .drop-menu li:first-child a {border-top: none;}
+.rnL-contents .rnL-listOuter .drop-box .drop-menu a:hover {background: #f1f1f1; color: #fa6b0a;}
+/*..rnL-contents .rnL-listOuter .drop-box .drop-menu > li:first-child {padding-top: 3px;}*/
+.rnL-contents .rnL-listOuter .drop-box.on .drop-menu {display: block;}
+
+
+/* 추천숙소 */
+.rcm-ul {position: relative; width: 100%;}
+.rcm-ul > li {position: relative; padding: 20px 0 16px; border-bottom: 1px solid #ddd;}
+.rcm-ul > li:first-child {margin-top: -20px;}
+.rcm-ul > li > div {float: left; position: relative;}
+.rcm-ul .d1 {width: 280px; height: 180px;}
+.rcm-ul .d1 img {width: 100%; height: 100%;}
+.rcm-ul .d1 .rn_rowPrc {position: absolute; top: 10px; right: 10px; width: 50px; height: 50px; border: 1px solid #000;}
+.rcm-ul .d2 {margin-left: 16px; width: 526px; width: 440px; width: 48.5%; min-height: 180px;}
+.rcm-ul .d2 .p1 {font-size: 16px; color: #727272; width: 78%;}
+.rcm-ul .d2 .p1 span:first-child {margin-right: 15px;}
+.rcm-ul .d2 .p1 .mgl {width: 1px; height: 14px; background: #727272; margin: 0 5px;}
+.rcm-ul .d2 .p2 {overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 20px; color: #030303; margin-top: 8px;}
+.rcm-ul .d2 .p3 {font-size: 15px; color: #767676;}
+.rcm-ul .d2 .p3 .p3-1 {position: relative; margin-top: 3px; padding-left: 8px;}
+.rcm-ul .d2 .p3 .p3-1:before {content: "·"; display: inline-block; position: absolute; left: 0px; top: 0;}
+.rcm-ul .d2 .p3 .p3-1 .s1 {color: #ff4848; font-weight: 600;}
+.rcm-ul .d2 .p3 .p3-1 .mgl {height: 12px; width: 1px; background: #888; margin: 0 6px;}
+.rcm-ul .d2 .p3 .p3-1 .s2 {display: inline-block; color: #21bbe1; border: 1px solid #21bbe1; font-size: 14px; line-height: 1; padding: 1px 6px; margin-left: 6px;}
+.rcm-ul .d3 {width: 186px; position: absolute; height: 160px; top: 20px; right: 0;}
+.rcm-ul .d3:before {content: ""; display: block; position: absolute; left: 0; top: 0; width: 1px; height: 172px; background: #ddd;}
+.rcm-ul .d3 .d3-inner {position: absolute; bottom: 0;}
+.rcm-ul .d3 p {float: right;}
+.rcm-ul .d3 .d3-inner > p {float: right;}
+.rcm-ul .d3 .p1 {font-size: 31px; color: #303030; font-weight: 800;}
+.rcm-ul .d3 .p1 > span {position: relative; top: -2px; font-size: 22px; margin-left: 2px; font-weight: 600;}
+.rcm-ul .d3 .p2 {}
+.rcm-ul .d3 .p2 .s1 {font-size: 20px; color: #f00; font-weight: 600;}
+.rcm-ul .d3 .p2 .s1 > span {top: -2px; margin-left: 2px;}
+.rcm-ul .d3 .p2 .s2 {font-size: 18px; color: #bcbcbc; font-weight: 600; letter-spacing: -1px; margin-left: 10px;}
+.rcm-ul .d3 .p3 {border: 1px solid #a0a0a0; background: #f9f9f9; color: #888; font-size: 15px; text-align: center; /*width: 156px;*/ min-width: 156px; padding: 0 5px; margin-top: 8px; letter-spacing: -1px;}
+.ie8 .rcm-ul .d3 .p3 {min-width: 146px;}
+.rcm-ul .d3 .p3 .s1 {color: #fa6b0a; font-weight: 700;}
+.rcm-ul .d3 .p4 .a1 {display: inline-block; background: #fa6b0a; color: #fff; font-size: 18px; width: 156px; height: 42px; text-align: center; line-height: 42px; margin-top: 6px;}
+.rcm-ul .d3 .s-blSign {display: block; position: absolute; top: 7px; left: -101px; width: 108px; height: 37px; background: url(http://img.go.co.kr/renew/search/blSign.png) no-repeat; font-size: 14px;
+	color: #fff; font-weight: 600; text-align: center; padding-left: 7px; padding-top: 4px; letter-spacing: 0;}
+
+/* 객실예약완료시 */
+.rnL-contents .rnL-listOuter .room-complete {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+.rnL-contents .rnL-listOuter .room-complete.bg {background: #fff; opacity: 0.7;}
+.rnL-contents .rnL-listOuter .room-complete .in-txt {position: absolute; box-sizing: border-box; left: 50%; margin-left: -60px; margin-top: -60px; top: 50%; padding: 5px; width: 120px; height: 120px; border-radius: 50%; text-align: center; color: #fff; font-size: 18px; padding-top: 20px;}
+.rnL-contents .rnL-listOuter .room-complete .in-txt.bg {background: #b00000;}
+
+/* fixed 설정 */
+.rnL-header, .rnL-ts, .rnL-ctgr {position: fixed; width: 100%; min-width: 1680px; background: #fff; z-index: 5;}
+.rnL-ts {z-index: 6;}
+.rnL-header {top: 0; z-index: 7;}
+.rnL-ts {top: 93px; background: #f2f2f2; /*top: 133px;*/}
+.rnL-ctgr {top: 143px; /*top: 183px;*/}
+.rnL-contents {margin-top: 193px; /*margin-top: 233px;*/}
+
+@media (max-width: 1680px) {
+	.rnL-contents .rnL-listOuter .bestC-outer {padding-bottom: 40px;}
+	.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li {height: 320px;}
+	.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d1 {height: 192px;}
+	.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p2 {font-size: 18px;}
+}
+
+/* 필터 비노출 시 상품 중앙정렬 및 기타 너비 수정*/
+.ft-none .rn-gwrap, .ft-none .rnL- header, .ft-none .rnL-ts, .ft-none .rnL-ctgr, .rnL-ctgr-ticket {min-width: 1470px;}
+
+.ft-none .rnL-contents .rnL-listOuter {width: 1054px; margin: 0 auto;}
+.ft-none .rnL-contents .rnL-listOuter .bestC-outer {padding-bottom: 50px;}
+.ft-none .rnL-contents .rnL-listOuter .bestC-outer .ul1 > li {height: 356px;}
+.ft-none .rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d1 {height: 212px;}
+.ft-none .rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d2 .p2 {font-size: 20px;}
+
+/* 입장권 콘텐츠 수정 */
+.case-ticket .rnL-contents {/*margin-top: 190px;*/ margin-top: 158px;}
+
+/* 입장권 필터 */
+.rnL-ctgr-ticket {position: fixed; /*top: 133px;*/ top: 96px; left: 0; height: 62px; width: 100%; background: #f5f5f5; border-bottom: 1px solid #ddd;}
+.rnL-ctgr-ticket .ft-ticket {margin: 0 auto; padding-top: 12px;}
+.rnL-ctgr-ticket .ft-ticket > * {display: inline-block; vertical-align: middle; margin-left: 8px; color: #787878; font-size: 14px;}
+.rnL-ctgr-ticket .ft-ticket input.chk-cst[type=checkbox] + label {margin-right: 0px;}
+.rnL-ctgr-ticket .ft-ticket label {font-size: 14px;}
+.rnL-ctgr-ticket .ft-ticket > span:first-child {margin-left: 0;}
+.rnL-ctgr-ticket .ft-ticket .inp {width: 200px; height: 36px; border: 1px solid #bcbcbe; text-indent: 10px; margin-left: 20px;}
+.rnL-ctgr-ticket .ft-ticket .a-btn {height: 36px; padding: 0 15px; background: #555a78; color: #fff; line-height: 36px; margin-left: 5px;}
+
+/* 입장권 레이아웃 */
+.rnL-ctgr-ticket .ft-ticket,
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter {width: 1392px;}
+
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter {margin: 10px auto 0; left: -9px;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer {border-bottom: 0;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer .ul1 > li {width: auto; height: auto;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer .ul1 > li > a {width: 330px; height: 330px;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer .ul1 > li {margin: 9px;}
+.ft-none .rnL-contents .rnL-listOuter.ticketOuter .bestC-outer .ul1 > li .d2 .p2 {margin: 4px 0;}
+
+@media (max-width: 1392px) {
+	.rnL-ctgr-ticket .ft-ticket,
+	.ft-none .rnL-contents .rnL-listOuter.ticketOuter {width: 1044px;}
+}

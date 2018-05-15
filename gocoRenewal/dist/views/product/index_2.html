@@ -49,12 +49,113 @@
 <body>
     <h1 class="hidden">고코투어</h1>
     <div class="rn-gwrap">
-        <div>
-            <a href="/views/product/index.html">숙박패키지 - 1</a>&nbsp;&nbsp;
-            <a href="/views/product/index_1_2.html">숙박 - 1-2</a>&nbsp;&nbsp;
-            <a href="/views/product/index_2.html">공연 - 2</a>&nbsp;&nbsp;
-            <a href="/views/product/index_3.html">레저 - 3</a>
+        <!-- 상단 배너, 비활성화 -->
+        <div id="bannerTop" style="display: none;">
+            <div class="close">
+                <a href="javascript: popCls('#bannerTop')" title="닫기">
+                    <img src="http://img.go.co.kr/bn_app05.jpg?ver=20180515160714">
+                </a>
+            </div>
+            <div class="btn">
+                <div class="detail">
+                    <a href="javascript: popOpen('#bannerTop .contents')" onclick="$(this).hide()" title="자세히보기">
+                        <img src="http://img.go.co.kr/bn_app01.jpg" id="bannertop_btn">
+                    </a>
+                </div>
+                <a href="javascript: $('#bannerTop .contents').toggle()" onclick="$('#bannerTop .btn .detail a').toggle()" title="고코투어앱 혜택보기">
+                    <img src="http://img.go.co.kr/bn_app03.jpg?ver=20180515160714">
+                </a>
+            </div>
+
+            <div class="contents" style="display: none;" id="bannertop_layer">
+                <div class="shopLink">
+                    <div class="text">
+                        고코투어앱 설치하고
+                        <br>
+                        <span> 70,000원 쿠폰팩</span>으로 할인받으세요!
+                    </div>
+                    <div class="download_btn">
+                        <a href="javascript: popOpen('.popup-app-download')">
+                            <img src="http://img.go.co.kr/goco_app_btn.jpg?ver=20180515160714" alt="앱다운받기바로가기">
+                        </a>
+                        <!--
+				<a href="http://www.go.co.kr/_appclick.php?val=android" target="_blank"><img src="http://img.go.co.kr/bn_app_btn01.jpg?ver=20180515160714" alt="안드로이드 다운로드" style="margin-right:10px"/></a>
+				<a href="http://www.go.co.kr/_appclick.php?val=ios" target="_blank"><img src="http://img.go.co.kr/bn_app_btn02.jpg?ver=20180515160714" alt="앱스토어 다운로드" style="margin-right:10px"/></a>
+				<a href="http://www.go.co.kr/_appclick.php?val=one" target="_blank"><img src="http://img.go.co.kr/bn_app_btn03.jpg?ver=20180515160714" alt="원스토어 다운로드"/></a>
+				-->
+                    </div>
+                    <div class="detail">
+                        <a href="javascript: popCls('#bannerTop .contents')" onclick="$('#bannerTop .btn .detail a').toggle()" title="닫기">
+                            <img src="http://img.go.co.kr/bn_app02.jpg" id="bannertop_btn2">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- 우측 퀵 메뉴, 비활성화 -->
+        <div id="quickMenu" class="quick_on on" style="display: none;">
+            <div class="ment">
+                <p class="logo">고코투어</p>
+                <!-- 비회원 -->
+                <!--<p class="point" style="font-size:12px">지금 간단한 절차를 통해<br/> 회원으로 가입 후<br/>예약하시면 10,000원이<br/> 즉시 추가 할인됩니다.</p>-->
+                <p class="point" style="font-size:12px">지금 간단한 절차를 통해
+                    <br>회원으로 가입 후
+                    <br>70,000원
+                    <br>쿠폰팩을 증정합니다.</p>
+            </div>
+            <div class="menu">
+                <p><a href="http://www.go.co.kr/home/member/?dd=RREnSjA=&amp;rurl=QQo0U2QJcVQ3CQZOEW5AMQg1UW8WR0Qbb0ArVSpMLRtaBkEkR2NxJlAqKmxnMg8Tbk0=" title="로그인">로그인</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/member/?dd=RgwkRix5MkozCg==" title="예약/구매조회">예약/구매조회</a>
+                </p>
+            </div>
+            <div class="viewGoods">
+                <p class="title">최근 본 상품<span class="point">(2)</span>
+                </p>
+                <div id="recent_box">
+
+                    <a href="http://www.go.co.kr/home/view/?p_no=G0dwF24R">
+                        <img src="http://cache.go.co.kr/media/220/admin.varonet.co.kr/bar/mshop_img/B_IMG20170427131925.jpg" alt="서울대공원 리프트PKG" width="100" height="60" style="margin-bottom:5px" onerror="this.error='http://img.go.co.kr/noimg.jpg'">
+                        <p>서울대공원 ...
+                            <br>
+                            <img src="http://img.go.co.kr/bullet_won.jpg"><b><span class="point">12,400원~</span></b>
+                        </p>
+                    </a>
+                    <div class="minibtn">
+                        <a href="#" title="이전상품">
+                            <img src="http://img.go.co.kr/btn_quickMenu_prev.jpg">
+                        </a>
+                        <a href="javascript:listing.recent_list('2')" title="다음상품">
+                            <img src="http://img.go.co.kr/btn_quickMenu_next.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <p><a href="http://www.go.co.kr/home/customer/" title="고객센터">고객센터</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/customer/" title="예약진행절차">예약진행절차</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/member/?dd=RAcfTDBDAVQyF1xM&amp;brd=RhAlfD1HMEAlEg==" title="예약변경/취소">예약변경/취소</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/customer/" title="시설이용안내">시설이용안내</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl&amp;stype=Wh0=" title="Q&amp;A 문의/내역">Q&amp;A 문의/내역</a>
+                </p>
+                <p><a href="http://www.go.co.kr/home/customer/?dd=Tx8x" title="자주묻는질문">자주묻는질문</a>
+                </p>
+            </div>
+            <div class="btn">
+                <a href="javascript: $('#quickMenu').toggleClass('on')" title="퀵메뉴">
+                    <img src="http://img.go.co.kr/btn_quickMenu_close.jpg" id="bt_img">
+                </a>
+                <a href="javascript: $(window).scrollTop(0)" title="위로">
+                    <img src="http://img.go.co.kr/btn_quickMenu_top.jpg">
+                </a>
+            </div>
+        </div>
+
         <header class="rnL-header clr bsLs">
             <!-- 구버전 고코용 -->
             <!-- <div class="rn-hdTop clr bsLs">
@@ -712,7 +813,13 @@
                                     <span class="colr-red num">33,000</span>  <span class="sm colr-red">원</span>
                                 </div>
                                 <div class="area-btn">
-                                    <a href="" class="nth-1">앱으로 구매</a><a href="" class="nth-2">결제하기</a>
+                                    <span class="appH">
+
+                                        <a href="" class="nth-1">앱으로 구매</a>
+
+                                        <span class="btn-sale" onclick="popOpen('.popup-app-download')">앱 추가할인</span>
+                                    </span>
+                                    <a href="" class="nth-2">결제하기</a>
                                 </div>
                             </td>
                         </tr>
@@ -871,7 +978,13 @@
                                         </span>
                                     </p>
                                     <p class="area-btn">
-                                        <a href="" class="nth-1">앱으로 구매</a><a href="" class="nth-2">결제하기</a>
+                                        <span class="appH">
+
+                                            <a href="" class="nth-1">앱으로 구매</a>
+
+                                            <span class="btn-sale" onclick="popOpen('.popup-app-download')">앱 추가할인</span>
+                                        </span>
+                                        <a href="" class="nth-2">결제하기</a>
                                     </p>
                                 </div>
                                 <div class="d-3 clr">
@@ -892,24 +1005,27 @@
                                 </div>
                             </div>
                         </li>
+
+                        <!-- 공통 부분 (이용후가, 오시는길, 축제, 상품문의, 질문) -->
+                        <!-- 공통 부분 (이용후가, 오시는길, 축제, 상품문의, 질문) -->
                         <li class="li-review">
                             <div class="d-tit clr">
                                 <div class="d-l">
                                     <h3>
 
-										전체 평점
+                전체 평점
 
-										<span class="s-star">
+                <span class="s-star">
 
-											<img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png">
+                    <img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png">
 
-											<img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png">
+                    <img src="http://img.go.co.kr/visor/star-on.png"><img src="http://img.go.co.kr/visor/star-on.png">
 
-											<img src="http://img.go.co.kr/visor/star-off.png">
+                    <img src="http://img.go.co.kr/visor/star-off.png">
 
-										</span>
+                </span>
 
-									</h3>
+            </h3>
                                     <p class="p-1"><strong class="thColor1 f-bd">8.1</strong> / 10</p>
                                     <p class="p-2">
                                         숙박을 하신 고객님들이 작성한
@@ -925,7 +1041,7 @@
                                         <span class="c-ic3 i-thumb"></span>
                                         <span class="s-1 i-borL-tran">
 
-											<span class="thColor1-2">고코투어에서는 실제 이용하신 분들만 이용후기 작성</span>이 가능합니다.
+                    <span class="thColor1-2">고코투어에서는 실제 이용하신 분들만 이용후기 작성</span>이 가능합니다.
                                         <br>여행을 준비하는 다른 분들을 위해 생생한 이용후기를 올려주세요!
                                         </span>
                                     </p>
@@ -1257,7 +1373,7 @@
                                     <!--페이지 링크-->
                                     <a class="a-1" href="">자주묻는 질문 바로가기</a>
                                     <!--문의하기 팝업 등장-->
-                                    <a class="a-2" href="javascript:;" onclick="$('#qna-pop-bg').show();">1:1 문의하기</a>
+                                    <a class="a-2" href="javascript:;" onclick="popOpen('#qna-pop-bg');">1:1 문의하기</a>
                                 </div>
                             </div>
                             <div class="d-box-2">
@@ -1287,16 +1403,16 @@
                             </ul>
                             <script>
                                 $(function() {
-                                									$("#q-tab li").on('click', function() {
-                                										$(this).addClass('on').siblings().removeClass('on');
-                                									});
-                                
-                                									$("#cus-call").on('click', function(e) {
-                                										e.preventDefault();
-                                										$("#tit-box em").hide();
-                                										$("#cus-box").show();
-                                									});
-                                								});
+                                    $("#q-tab li").on('click', function() {
+                                        $(this).addClass('on').siblings().removeClass('on');
+                                    });
+                        
+                                    $("#cus-call").on('click', function(e) {
+                                        e.preventDefault();
+                                        $("#tit-box em").hide();
+                                        $("#cus-box").show();
+                                    });
+                                });
                             </script>
                             <div id="faq">
                                 <table class="faq_t">
@@ -1321,7 +1437,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont0" class="">
+                                        <tr id="faq_cont0" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <div>
                                                     가상계좌(무통장입금)의 경우 '결제취소'가 불가능하기에 환불의 방법으로 진행을 하고 있습니다.</div>
@@ -1380,7 +1496,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont1" class="">
+                                        <tr id="faq_cont1" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     고객님이 현금 결제하신 경우에만 다음과 같이 발행해 드리고 있습니다.</p>
@@ -1422,7 +1538,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont2">
+                                        <tr id="faq_cont2" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     &nbsp;</p>
@@ -1471,7 +1587,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont3">
+                                        <tr id="faq_cont3" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <div>
                                                     "A"라는 펜션은</div>
@@ -1667,7 +1783,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont4">
+                                        <tr id="faq_cont4" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     일부 시설의 경우,&nbsp;</p>
@@ -1697,7 +1813,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont5">
+                                        <tr id="faq_cont5" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     &nbsp;</p>
@@ -1743,7 +1859,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont6">
+                                        <tr id="faq_cont6" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <div>
                                                     고코투어는</div>
@@ -1821,7 +1937,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont7">
+                                        <tr id="faq_cont7" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     &nbsp;</p>
@@ -1851,7 +1967,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont8">
+                                        <tr id="faq_cont8" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     &nbsp;</p>
@@ -1901,7 +2017,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont9">
+                                        <tr id="faq_cont9" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <div>
                                                     결제수단을 무통장입금으로 숙박 예약을 접수할경우 접수일기준 3일전까지 입금하여야 예약진행이 가능합니다.</div>
@@ -1937,7 +2053,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont10">
+                                        <tr id="faq_cont10" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     <strong>국내최대&nbsp;숙박할인예약&nbsp;GO.CO.kr&nbsp;고코투어&nbsp;입니다.&nbsp;</strong>
@@ -2006,7 +2122,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont11">
+                                        <tr id="faq_cont11" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     &nbsp;</p>
@@ -2036,7 +2152,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont12">
+                                        <tr id="faq_cont12" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     &nbsp;</p>
@@ -2078,7 +2194,7 @@
                                                 <img src="http://img.go.co.kr/icon_goco.jpg" alt="GOCO">
                                             </td>
                                         </tr>
-                                        <tr id="faq_cont13">
+                                        <tr id="faq_cont13" class="tr-reply">
                                             <td colspan="3" class="reply">
                                                 <p>
                                                     예약해주신 시설의 객실이 마감된 상황으로 문자를 받으신 것 같습니다.</p>
@@ -2137,147 +2253,147 @@
                                     </tbody>
                                 </table>
                             </div>
-                        </li>
 
-                        <div class="dropDown-bg" id="qna-pop-bg">
-                            <div class="qna-wrap">
-                                <div class="qna-th">
-                                    <p>1:1문의하기</p>
-                                    <a href="javascript:;" class="i-x" onclick="$(this).closest('#qna-pop-bg').hide();">
-                                        <img src="http://img.go.co.kr/faq_modal_close.png" alt="">
-                                    </a>
-                                    <!--버튼클릭시 레어어팝업 숨김-->
-                                </div>
+                            <!-- 1대1 문의하기 -->
+                            <div class="dropDown-bg" id="qna-pop-bg">
+                                <div class="qna-wrap">
+                                    <div class="qna-th">
+                                        <p>1:1문의하기</p>
+                                        <a href="javascript:;" class="i-x" onclick="$(this).closest('#qna-pop-bg').hide();">
+                                            <img src="http://img.go.co.kr/faq_modal_close.png" alt="">
+                                        </a>
+                                    </div>
 
 
-                                <table class="qna_t_write">
-                                    <colgroup>
-                                        <col width="100">
-                                            <col width="640">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th>질문구분</th>
-                                            <td>
-                                                <!--<input type="radio" name="category1" id="reserve_ac" value="예약변경" disabled=""><label for="reserve_ac"> 예약변경</label>&nbsp;&nbsp;
-													<input type="radio" name="category1" id="cancel_ac" value="취소/환불요청" disabled=""><label for="cancel_ac"> 취소/환불요청</label>&nbsp;&nbsp;-->
-                                                <input type="radio" name="category1" id="money_ac" value="요금관련" checked="">
-                                                <label for="money_ac">요금관련</label>&nbsp;&nbsp;
-                                                <input type="radio" name="category1" id="pay_ac" value="결제관련">
-                                                <label for="pay_ac">결제관련</label>&nbsp;&nbsp;
-                                                <input type="radio" name="category1" id="etc_ac" value="기타">
-                                                <label for="etc_ac">기타</label>&nbsp;&nbsp;
-                                                <input type="radio" name="category1" id="member_ac" value="회원정보/탈퇴">
-                                                <label for="member_ac">회원정보/탈퇴</label>&nbsp;&nbsp;
-                                                <input type="radio" name="category1" id="group_inquiry" value="단체문의">
-                                                <label for="group_inquiry">단체문의</label>&nbsp;&nbsp;
-                                            </td>
-                                        </tr>
+                                    <table class="qna_t_write">
+                                        <colgroup>
+                                            <col width="100">
+                                                <col width="640">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>질문구분</th>
+                                                <td>
+                                                    <input type="radio" name="category1" id="money_ac" value="요금관련" checked="">
+                                                    <label for="money_ac">요금관련</label>&nbsp;&nbsp;
+                                                    <input type="radio" name="category1" id="pay_ac" value="결제관련">
+                                                    <label for="pay_ac">결제관련</label>&nbsp;&nbsp;
+                                                    <input type="radio" name="category1" id="etc_ac" value="기타">
+                                                    <label for="etc_ac">기타</label>&nbsp;&nbsp;
+                                                    <input type="radio" name="category1" id="member_ac" value="회원정보/탈퇴">
+                                                    <label for="member_ac">회원정보/탈퇴</label>&nbsp;&nbsp;
+                                                    <input type="radio" name="category1" id="group_inquiry" value="단체문의">
+                                                    <label for="group_inquiry">단체문의</label>&nbsp;&nbsp;
+                                                </td>
+                                            </tr>
 
 
 
-                                        <tr>
-                                            <th>제목</th>
-                                            <td>
-                                                <div class="qna_title_search_list">
-                                                    <input name="subject" class="select02" id="subject" autocomplete="off" type="text" value="" onclick="$(this).next().show();">
-                                                    <div class="q_list_box">
-                                                        <a class="i-x" href="javascript:;" onclick="$(this).parent().hide();">X</a>
-                                                        <ul>
-                                                            <li><a href="#">예약확정은 언제 되나요?</a>
-                                                            </li>
-                                                            <li><a href="#">예약 취소는 어떻게 하나요?</a>
-                                                            </li>
-                                                            <li><a href="#">인원을 추가할 수 있나요?</a>
-                                                            </li>
-                                                            <li><a href="#">이용방법은 어떻게 되나요? </a>
-                                                            </li>
-                                                            <li><a href="#">소아(유아)의 기준 및 추가요금이 어떻게 되나요?</a>
-                                                            </li>
-                                                            <li><a href="#">예약확정에 대한 연락은 언제 받을 수 있나요?</a>
-                                                            </li>
-                                                            <li><a href="#">조식 인원을 추가하고 싶은데 가능한가요?</a>
-                                                            </li>
-                                                            <li><a href="#">만실(빈방없음) 예약 취소란?</a>
-                                                            </li>
-                                                            <li><a href="#">고코투어 믿을 만한 회사인가요?</a>
-                                                            </li>
-                                                            <li><a href="#">확정 전에 취소 하는 것도 위약금 규정이 발생되나요? </a>
-                                                            </li>
-                                                            <li><a href="#">결제 후, 호텔(시설)에 연락하니 예약이 아직 안되었다고 하네요?</a>
-                                                            </li>
-                                                            <li><a href="#">반려동물과 투숙이 가능할까요?</a>
-                                                            </li>
-                                                            <li><a href="#">스파 및 워터파크 패키지 구매시 해당시설에 무료 입장 가능한가요?</a>
-                                                            </li>
-                                                            <li><a href="#">예약취소시 취소/환불 절차</a>
-                                                            </li>
-                                                            <li><a href="#">[성함입실]이라고 문자가 왔습니다. 성함입실이 뭔가요?</a>
-                                                            </li>
-                                                            <li><a href="#">주문은 취소되었는데, 환불이 아직 안된 것 같습니다.</a>
-                                                            </li>
-                                                            <li><a href="#">예약을 2박3일 하고 1박만 이용 했을 경우 어떻게 되나요? </a>
-                                                            </li>
-                                                            <li><a href="#">고객센터 전화연결이 너무 안됩니다.</a>
-                                                            </li>
-                                                            <li><a href="#">결제 후, 객실 마감이면 어떻게 되나요? </a>
-                                                            </li>
-                                                            <li><a href="#">체크아웃을 연장 할수는 없나요? </a>
-                                                            </li>
-                                                            <li><a href="#">환불 문의</a>
-                                                            </li>
-                                                            <li><a href="#">예약 취소시, 위약금 규정은 어떻게 되나요?</a>
-                                                            </li>
-                                                            <li><a href="#">체크인 시간은 변경 가능한가요?</a>
-                                                            </li>
-                                                            <li><a href="#">객실 만실로인한 취소/환불 절차</a>
-                                                            </li>
-                                                            <li><a href="#">애완동물과 함께 투숙할 수 있나요?</a>
-                                                            </li>
-                                                            <li><a href="#">[해외] 호텔에 오니 예약 건이 없다고 합니다.</a>
-                                                            </li>
-                                                        </ul>
+                                            <tr>
+                                                <th>제목</th>
+                                                <td>
+                                                    <div class="qna_title_search_list">
+                                                        <input name="subject" class="select02" id="subject" autocomplete="off" type="text" value="" onclick="$(this).next().show();">
+                                                        <div class="q_list_box">
+                                                            <a class="i-x" href="javascript:;" onclick="$(this).parent().hide();">X</a>
+                                                            <ul>
+                                                                <li><a href="#">예약확정은 언제 되나요?</a>
+                                                                </li>
+                                                                <li><a href="#">예약 취소는 어떻게 하나요?</a>
+                                                                </li>
+                                                                <li><a href="#">인원을 추가할 수 있나요?</a>
+                                                                </li>
+                                                                <li><a href="#">이용방법은 어떻게 되나요? </a>
+                                                                </li>
+                                                                <li><a href="#">소아(유아)의 기준 및 추가요금이 어떻게 되나요?</a>
+                                                                </li>
+                                                                <li><a href="#">예약확정에 대한 연락은 언제 받을 수 있나요?</a>
+                                                                </li>
+                                                                <li><a href="#">조식 인원을 추가하고 싶은데 가능한가요?</a>
+                                                                </li>
+                                                                <li><a href="#">만실(빈방없음) 예약 취소란?</a>
+                                                                </li>
+                                                                <li><a href="#">고코투어 믿을 만한 회사인가요?</a>
+                                                                </li>
+                                                                <li><a href="#">확정 전에 취소 하는 것도 위약금 규정이 발생되나요? </a>
+                                                                </li>
+                                                                <li><a href="#">결제 후, 호텔(시설)에 연락하니 예약이 아직 안되었다고 하네요?</a>
+                                                                </li>
+                                                                <li><a href="#">반려동물과 투숙이 가능할까요?</a>
+                                                                </li>
+                                                                <li><a href="#">스파 및 워터파크 패키지 구매시 해당시설에 무료 입장 가능한가요?</a>
+                                                                </li>
+                                                                <li><a href="#">예약취소시 취소/환불 절차</a>
+                                                                </li>
+                                                                <li><a href="#">[성함입실]이라고 문자가 왔습니다. 성함입실이 뭔가요?</a>
+                                                                </li>
+                                                                <li><a href="#">주문은 취소되었는데, 환불이 아직 안된 것 같습니다.</a>
+                                                                </li>
+                                                                <li><a href="#">예약을 2박3일 하고 1박만 이용 했을 경우 어떻게 되나요? </a>
+                                                                </li>
+                                                                <li><a href="#">고객센터 전화연결이 너무 안됩니다.</a>
+                                                                </li>
+                                                                <li><a href="#">결제 후, 객실 마감이면 어떻게 되나요? </a>
+                                                                </li>
+                                                                <li><a href="#">체크아웃을 연장 할수는 없나요? </a>
+                                                                </li>
+                                                                <li><a href="#">환불 문의</a>
+                                                                </li>
+                                                                <li><a href="#">예약 취소시, 위약금 규정은 어떻게 되나요?</a>
+                                                                </li>
+                                                                <li><a href="#">체크인 시간은 변경 가능한가요?</a>
+                                                                </li>
+                                                                <li><a href="#">객실 만실로인한 취소/환불 절차</a>
+                                                                </li>
+                                                                <li><a href="#">애완동물과 함께 투숙할 수 있나요?</a>
+                                                                </li>
+                                                                <li><a href="#">[해외] 호텔에 오니 예약 건이 없다고 합니다.</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>작성자명</th>
-                                            <td>
-                                                <input name="name" class="select02" id="name" type="text" style="width:150px" readonly="" value="강혜준">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>휴대폰</th>
-                                            <td>
-                                                <input class="select02" type="text" numberonly="true" maxlength="3" size="5" id="phone1" name="phone1" value="010">-
-                                                <input class="select02" type="text" numberonly="true" maxlength="4" size="5" id="phone2" name="phone2" value="">-
-                                                <input class="select02" type="text" numberonly="true" maxlength="4" size="5" id="phone3" name="phone3" value="">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>이메일</th>
-                                            <td>
-                                                <input class="select02" type="text" maxlength="30" size="30" id="email" name="email" value="vxggangxv@naver.com">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th style="padding-bottom: 0; margin-bottom: 0;">내용</th>
-                                            <td colspan="3" style="padding-bottom: 0; margin-bottom: 0;">
-                                                <textarea name="contents" class="select03" id="contents">
-                                                    안녕하세요. 고코투어 입니다. 고코투어는 통신판매와 여행보증보험에 가입되어 있는 회사입니다. 따라서, 예약부터 최종 이용까지의 모든단계에서 혹시나 발생될 수 있는 고객님의 피해는 서울보증으로부터 모두 보장받을 수 있기 때문에 안심하시고 서비스를 이용하시면 됩니다. 최근 성수기 예약으로 인하여 전화량이 늘었고, 이에 전화연결이 지연되고 있습니다. 불편스럽더라도, 1:1 문의에 문의사항을 남겨주시면 확인하여 고객님의 불편사항을 빠르게 처리해 드리겠습니다.
-                                                    안심하시고 조금만 기다려 주십시요. 감사합니다.
-                                                </textarea>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>작성자명</th>
+                                                <td>
+                                                    <input name="name" class="select02" id="name" type="text" style="width:150px" readonly="" value="강혜준">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>휴대폰</th>
+                                                <td>
+                                                    <input class="select02" type="text" numberonly="true" maxlength="3" size="5" id="phone1" name="phone1" value="010">-
+                                                    <input class="select02" type="text" numberonly="true" maxlength="4" size="5" id="phone2" name="phone2" value="">-
+                                                    <input class="select02" type="text" numberonly="true" maxlength="4" size="5" id="phone3" name="phone3" value="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>이메일</th>
+                                                <td>
+                                                    <input class="select02" type="text" maxlength="30" size="30" id="email" name="email" value="vxggangxv@naver.com">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th style="padding-bottom: 0; margin-bottom: 0;">내용</th>
+                                                <td colspan="3" style="padding-bottom: 0; margin-bottom: 0;">
+                                                    <textarea name="contents" class="select03" id="contents">
+                                                        안녕하세요. 고코투어 입니다. 고코투어는 통신판매와 여행보증보험에 가입되어 있는 회사입니다. 따라서, 예약부터 최종 이용까지의 모든단계에서 혹시나 발생될 수 있는 고객님의 피해는 서울보증으로부터 모두 보장받을 수 있기 때문에 안심하시고 서비스를 이용하시면 됩니다. 최근 성수기 예약으로 인하여 전화량이 늘었고, 이에 전화연결이 지연되고 있습니다. 불편스럽더라도, 1:1 문의에 문의사항을 남겨주시면 확인하여 고객님의 불편사항을 빠르게 처리해 드리겠습니다.
+                                                        안심하시고 조금만 기다려 주십시요. 감사합니다.
+                                                    </textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
 
-                                <div class="btn-area"><a href="#" class="btn-a">등록하기</a><a href="javascript:;" class="btn-a cancle" onclick="$('#qna-pop-bg').hide();">취소</a>
+                                    <div class="btn-area"><a href="#" class="btn-a">등록하기</a><a href="javascript:;" class="btn-a cancle" onclick="$('#qna-pop-bg').hide();">취소</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+
+                        </li>
+
 
                     </ul>
                 </div>
@@ -2459,12 +2575,13 @@
                         <img src="http://img.go.co.kr/f_logo.gif" alt="고코투어푸터로고">
                     </div>
                     <div class="address">
-                        <!--내용 수정-->
                         <p>
-                            (주)바로네트웍스<span class="mgl"></span>대표이사 : 전병권<span class="mgl"></span>메인문의 : help@go.co.kr
-                            <br>주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)
-                            <br>사업자등록번호 : 215-87-85373<span class="mgl"></span>통신판매업 : 제2017-서울강남-00561호
-                            <br>여행업등록번호 : 제2017-07호<span class="mgl"></span>여행영업보증서 : 국내여행 제100-000-2015 0144 5816호
+                            (주)바로네트웍스
+                            <br>대표이사 : 전병권<span class="mgl"></span>주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)
+                            <br>대표번호 : 1666-1243<span class="mgl"></span>메일문의 : help@go.co.kr
+                            <br>사업자등록번호 : 215-87-85373 <span class="mgl"></span>통신판매업 : 제2017-서울강남-00561호
+                            <br>여행업등록번호 : 제2017-07호
+                            <span class="mgl"></span>여행영업보증서 : 국내여행 제100-000-2015 0144 5816호
                             <br>국외여행업등록번호 : 제2017호-26호
                             <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=2158785373" target="_blank">
                                 <img src="http://img.go.co.kr/btn_copyinfo_gray.gif">
@@ -2487,7 +2604,8 @@
                     <div class="cust-box">
                         <p class="p-0">
                             <img src="http://img.go.co.kr/pic_i.png" alt="information">고객센터 전화문의</p>
-                        <p class="p-1">업무시간 : 09:00~18:00</p>
+                        <p class="p-1">평일 : 09:30~25:00</p>
+                        <p class="p-1">주말 : 09:30~24:00</p>
                         <p class="p-2">예약확정/취소/변경문의
                             <br>이벤트, 결제관련 문의</p>
                         <a href="http://www.go.co.kr/home/customer/?dd=RRczV2w=&amp;brd=RhAl&amp;ltype=RAc=" class="a-btn">문의<br>하기</a>

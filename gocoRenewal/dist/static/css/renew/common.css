@@ -149,6 +149,38 @@ span.i-ctgr-theme {background: #11967f;}
 span.i-ctgr-kiz {background: #f8851e;}
 span.i-ctgr-off {background: #555a78;}
 
+/*최상단 배너*/
+#bannerTop {position:relative; width:100%; height:80px; background:#418BD6; text-align:center}
+#bannerTop .close {position:absolute; top:0; right:0; opacity: .2; filter: alpha(opacity=20);}
+#bannerTop .contents {position:absolute; z-index:9999; top:80px; right:0; width:100%; height:392px; background:#fff; border-bottom:2px solid #003157; text-align:center}
+#bannerTop .btn {position:relative; margin:auto; width:1001px; height:80px}
+#bannerTop .btn .detail {position:absolute; top:50px; right:0; z-index:9}
+#bannerTop .contents .shopLink {margin:auto; position:relative; width:1001px; height:392px; background:url(http://img.go.co.kr/bn_app04_2.jpg) no-repeat}
+#bannerTop .contents .shopLink .text {position:absolute; top:100px; left:310px; font-weight:600; font-size:24px; text-align:left; line-height:1.3; letter-spacing:-1px}
+#bannerTop .contents .shopLink .text span {display:inline-block; background:#fdff6c; color:#ff4800; text-decoration:underline; font-size:28px}
+#bannerTop .contents .shopLink .download_btn {position:absolute; top:285px; left:310px}
+#bannerTop .contents .detail {position:absolute; bottom:0; right:-110px;}
+
+/*우측퀵메뉴*/
+#quickMenu {position:relative; z-index:10; position:fixed; right: -124px; top:230px; width:123px; background:#fff; letter-spacing:-0.5px; text-align:center; color:#595858; border-top:2px solid #ff600b; border-left:1px solid #dfdddf; border-bottom:1px solid #dfdddf; font-size: 13px;}
+#quickMenu.on {right: 0;}
+#quickMenu .ment {border-bottom:1px solid #dfdddf}
+#quickMenu .ment p {padding:5px 0}
+#quickMenu .ment .logo {font-weight:800}
+#quickMenu .ment .point {color:#ff600b; font-size:12.5px}
+#quickMenu .menu {padding:5px 0; font-size:12.5px}
+#quickMenu .menu p {line-height:30px}
+#quickMenu .menu a {color:#595858}
+#quickMenu .menu a:hover {color:#ff600b; text-decoration:underline}
+#quickMenu .btn {position:absolute; left:-38px; top:40%; width:37px}
+#quickMenu .viewGoods {float:left; width:100%; border-top:1px solid #dfdddf; border-bottom:1px solid #dfdddf}
+#quickMenu .viewGoods a {color:#595858; font-size:11px; line-height:15px}
+#quickMenu .viewGoods .point {color:#ff600b}
+#quickMenu .viewGoods .title {font-weight:800; font-size:13px; line-height:30px}
+#quickMenu .viewGoods .minibtn {float:right; width:100%; padding-top:5px; text-align:right; font-size: 0;}
+#quickMenu .viewGoods .minibtn > a {font-size: 0;}
+#quickMenu .viewGoods .noimg {padding:15px 0 30px 0; font-size:12px; line-height:1.2; color:#808080}
+
 /* a태그 초기화 */
 /*.rn-gwrap a:focus {font-weight: 400;} */
 
@@ -170,8 +202,8 @@ span.i-ctgr-off {background: #555a78;}
 .rn-gwrap .prd-gal-pop .bx-wrapper .bx-controls-auto, .rn-gwrap .prd-gal-pop .bx-wrapper .bx-pager {display: none;}
 .rn-gwrap .bx-wrapper .bx-controls-direction {display: none;}
 .rn-gwrap .bx-wrapper .bx-controls-direction a {background: none;}
-.rn-gwrap .bx-wrapper .bx-pager {display: none;}
 /*.rn-gwrap .bx-wrapper .bx-controls {display: none;}*/
+/* .rn-gwrap .bx-wrapper .bx-pager {display: none;} */
 /*.rn-gwrap .bx-wrapper .bx-controls-direction {position: absolute; width: 100%; width: 100%; left: 0; top: 50%; margin-top: -22.5px;}
 .rn-gwrap .bx-wrapper .bx-controls-direction a {background: none; width: 45px; height: 45px; top: 0; margin-top: 0; z-index: 1;}
 .rn-gwrap .bx-wrapper .bx-prev {left: 20px;}
@@ -511,13 +543,15 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .pdtCal .cal-tb td.chkIn, .pdtCal .cal-tb td.chkOut, .pdtCal .cal-tb td.ddLine {position: relative; color: #fff; z-index: 1;}
 .pdtCal .cal-tb td.ddLine {color: #8f8f8f;}
 .pdtCal .cal-tb td.chkIn img, .pdtCal .cal-tb td.chkOut img
-, .pdtCal .cal-tb td.ddLine img, .pdtCal .cal-tb td.undef img {display: block; margin: -2px auto 0; position: relative; right: -1px;}
+, .pdtCal .cal-tb td.ddLine img, .pdtCal .cal-tb td.undef img,
+.pdtCal .cal-tb td.chkRec img {display: block; margin: -2px auto 0; position: relative; right: -1px;}
 .pdtCal .cal-tb td.ing > div {position: relative; background: #e5f4ff;}
 .pdtCal .cal-tb td.chkIn > div {background: #e33e3e;}
 .pdtCal .cal-tb td.chkOut > div {background: #5489e2;}
 .pdtCal .cal-tb td.ddLine > div {background: #f3f3f3;}
+.pdtCal .cal-tb td.chkRec > div {background: #fff102;}
 .pdtCal .cal-tb td.chkIn:before, .pdtCal .cal-tb td.chkOut:before,
-.pdtCal .cal-tb td.ing:before {content: ""; display: block; position: absolute; top: -1px; left: -1px; width: 100%; height: 100%;}
+.pdtCal .cal-tb td.ing:before, .pdtCal .cal-tb td.chkRec:before {content: ""; display: block; position: absolute; top: -1px; left: -1px; width: 100%; height: 100%;}
 .pdtCal .cal-tb td.chkIn:before {border: 1px solid #b52b2b;}
 .pdtCal .cal-tb td.chkOut:before {border: 1px solid #335ea7;}
 .pdtCal .cal-tb td.ing:before {border: 1px solid #D1EAFD;}
@@ -531,6 +565,13 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .pdtCal .cal-tb td.spPrc > div {background: #f0f0f0; color: #969696; font-weight: 700;}
 .pdtCal .cal-tb td.spPrc:before {display: none;}
 .pdtCal .cal-tb td .i-spPrc {position: relative; top: -3px;}
+
+/* 입장권 달력 */
+.pdtCal .s-chk,
+.pdtCal .s-ddLine,
+.pdtCal .s-undef {display: block; padding: 1px 0 0; color: #fff; font-size: 11px; width: 90%; text-align: center; line-height: 17px; margin: 0 auto; font-family: "Dotum", sans-serif;}
+.pdtCal .s-chk {background: #ff2b5c;}
+.pdtCal .s-ddLine {background: #8c8c8c;}
 
 /* 레이어팝업 */
 .wrap-laypop {z-index: 100;}

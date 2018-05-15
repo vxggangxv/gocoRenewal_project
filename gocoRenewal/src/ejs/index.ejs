@@ -32,7 +32,7 @@
 
         <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
 		<div id="backDrop"></div>
-		<div class="rnM-mainDoor bsLs">
+		<div class="rnM-mainDoor-2 bsLs">
 			<div class="rn-container">
 				<strong class="main-text ftfm-mg">
 					<span class="s1">지금 예약한다면 슈퍼 그뤠잇!</span>
@@ -42,194 +42,201 @@
 				<div class="rn-schBox clr" id="rn-schBox">
 					<h2 class="hidden">숙소검색</h2>
 
-					<div class="rn-schInner clr">
-						<div class="d1 d-cmm">
-							<p class="p0">지역선택</p>
-							<p class="p1 cm-s1"><span class="regName">서울</span><span class="regDetail">강남구</span></p>
-						</div>
-						<div class="d2 d2-1 d-cmm">
-							<p class="p0">체크인</p>
-							<p class="p1 cm-s2">2017-10-11</p>
-						</div>
-						<div class="d2 d2-2 d-cmm">
-							<p class="p0">체크아웃</p>
-							<p class="p1 cm-s3">2017-10-11</p>
-						</div>
-						<div class="d3 d-cmm">
-							<p class="p0">유형선택</p>
-							<p class="p1 cm-s1">호텔/리조트/콘도/모텔</p>
-						</div>
-						<!-- <div class="d4 d-cmm">
-							<p class="p0">객실/인원 선택</p>
-							<p class="p1 cm-s1"><span class="s1">객실 1</span> <span class="s2">성인 2명</span></p>
-						</div> -->
+                    <!-- 180515_메인 수정 -->
+                    <div class="rn-schInner clr">
 
-						<div class="rnModal-sec">
-							<!--지역-->
-							<div class="rnSltReg rn-modal">
-								<div class="slt-dep1">
-									<ul class="clr">
-										<li><a href="javascript:;">서울</a></li>
-										<li><a href="javascript:;">경기</a></li>
-										<li><a href="javascript:;">인천</a></li>
-										<li class="on"><a href="javascript:;">강원</a></li>
-										<li><a href="javascript:;">대전</a></li>
-										<li><a href="javascript:;">충북</a></li>
-										<li><a href="javascript:;">충남</a></li>
-										<li><a href="javascript:;">부산</a></li>
-										<li><a href="javascript:;">울산</a></li>
-										<li><a href="javascript:;">경남</a></li>
-										<li><a href="javascript:;">대구</a></li>
-										<li><a href="javascript:;">경북</a></li>
-										<li><a href="javascript:;">광주</a></li>
-										<li><a href="javascript:;">전남</a></li>
-										<li><a href="javascript:;">전북</a></li>
-										<li><a href="javascript:;">제주</a></li>
-									</ul>
-								</div>
-								<div class="slt-dep2">
-									<ul class="clr">
-										<li><a href="javascript:;">전체</a></li>
-										<li><a href="javascript:;">평창군</a></li>
-										<li><a href="javascript:;">강릉시</a></li>
-										<li><a href="javascript:;">춘천시</a></li>
-										<li><a href="javascript:;">양양군</a></li>
-										<li><a href="javascript:;">홍천군</a></li>
-										<li><a href="javascript:;">속초시</a></li>
-										<li><a href="javascript:;">횡성군</a></li>
-										<li><a href="javascript:;">고성군</a></li>
-										<li><a href="javascript:;">원주시</a></li>
-										<li><a href="javascript:;">영원군</a></li>
-										<li><a href="javascript:;">정선시</a></li>
-										<li><a href="javascript:;">동해시</a></li>
-										<li><a href="javascript:;"></a></li>
-										<li><a href="javascript:;"></a></li>
-										<li><a href="javascript:;"></a></li>
-										<li><a href="javascript:;"></a></li>
-										<li><a href="javascript:;"></a></li>
-									</ul>
-								</div>
-							</div>
+                        <ul class="rn-menu">
+                            <li class="nth-1 on"><a href="#none">국내숙박</a></li>
+                            <li class="nth-2"><a href="#none">레저/입장권</a></li>
+                            <li class="nth-3"><a href="#none">공연/전시</a></li>
+                            <li class="nth-4"><a href="#none">해외숙박</a></li>
+                        </ul>
 
-							<!--달력-->
-							<% include ./parts/components/calendar/_calendar_db.ejs %>
+                        <div class="rnModal-sec bsLs">
+                            <!-- 키워드 박스 -->
+                            <div class="d-cmm">
+                                <p class="p0"><label for="keyword">키워드</label></p>
+                            </div>
+                            <div class="kw-box">
+                                <span class="kw-input">
+                                    <input id="keyword" type="text" tabindex="1" title="키워드" placeholder="숙소명, 시설명 등을 입력해주세요." value="">
+                                    <button class="kw-btn" type="submit" tabindex="2">
+                                        <span class="kw-txt"><span class="c-ic i-mag"></span>검색</span>
+                                    </button>
+                                </span>
+                            </div>
 
-							<!--유형-->
-                            <!-- 20180313 유형선택 수정 -->
-                            <div class="rnSltCtg-2 rn-modal">
-								<ul class="ul1">
-									<li>
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-all"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">전체</span></p>
-                                        </a>
-                                    </li>
-                                    <li class="on">
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-hotel"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">호텔</span></p>
-                                        </a>
-                                    </li>
-                                    <li class="on">
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-condo"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">리조트/콘도</span></p>
-                                        </a>
-                                    </li>
-                                    <li class="on">
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-motel"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">모텔</span></p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-guest"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">게스트하우스</span></p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-pension"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">펜션</span></p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <div class="c-ic4 i-ticket"></div>
-                                            <p><span class="i-chk"></span><span class="s-txt">레저/입장권</span></p>
-                                        </a>
-                                    </li>
-								</ul>
-							</div>
-							<!-- <div class="rnSltCtg rn-modal">
-								<ul class="ul1">
-									<li><a href="javascript:;">전체</a></li>
-									<li><a href="javascript:;">호텔</a></li>
-									<li><a href="javascript:;">리조트</a></li>
-									<li><a href="javascript:;">콘도</a></li>
-									<li><a href="javascript:;">레지던스</a></li>
-									<li><a href="javascript:;">모텔</a></li>
-									<li><a href="javascript:;">유스호스텔</a></li>
-									<li><a href="javascript:;">펜션</a></li>
-									<li><a href="javascript:;">카라반</a></li>
-									<li><a href="javascript:;">풀빌라</a></li>
-                                    <li class="bor-t"><a href="javascript:;">레저/입장권</a></li>
-									<li class="bor-t"><a href="javascript:;">공연/전시장</a></li>
-								</ul>
-							</div> -->
+                            <!-- 달력 -->
+                            <div class="cal-box">
+                                <!-- 체크인, 아웃 -->
+                                <div class="cal-1">
+                                    <div class="d-cmm d2">
+                                        <p class="p0">체크인</p>
+                                        <p class="p1 cm-s">2017-10-11</p>
+                                    </div>
+                                    <div class="d-cmm d2">
+                                        <p class="p0">체크아웃</p>
+                                        <p class="p1 cm-s">2017-10-11</p>
+                                    </div>
+                                    <!-- 달력 더블 -->
+                                    <% include ./parts/components/calendar/_calendar_db.ejs %>
 
-							<!--객실/인원 선택-->
-							<div class="rnSltNum rn-modal">
-								<ul class="ul1">
-									<li>
-										<span class="s-lbl">객실</span>
-										<div class="quan clr">
-											<span class="s-l"></span>
-											<!--숫자 증가시 on클래스 추가-->
-											<input type="text" class="inp on" placeholder="0" value="1">
-											<span class="s-r"></span>
-										</div>
-									</li>
-									<li>
-										<span class="s-lbl">성인</span>
-										<div class="quan clr">
-											<span class="s-l"></span>
-											<input type="text" class="inp" placeholder="0">
-											<span class="s-r"></span>
-										</div>
-									</li>
-									<li>
-										<span class="s-lbl">소아</span>
-										<div class="quan clr">
-											<span class="s-l"></span>
-											<input type="text" class="inp" placeholder="0">
-											<span class="s-r"></span>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
+                                </div>
 
-					</div>
+                                <!-- 이용일자 -->
+                                <div class="cal-2 caltype-1" style="display:none">
+                                    <div class="d-cmm d2">
+                                        <p class="p0">이용일자</p>
+                                        <p class="p1 cm-s">2017-10-11</p>
+                                    </div>
+                                    <!-- 달력 싱글 -->
+                                    <% include ./parts/components/calendar/_calendar_dbSg.ejs %>
+                                </div>
+                            </div>
 
-					<div class="rn-schBtn">
-						<button type="button"><span class="c-ic i-mag"></span> 검색</button>
-					</div>
+                            <!-- 유형 -->
+                            <div class="type-box">
+                                <div class="d-cmm">
+                                    <p class="p0">유형선택</p>
+                                </div>
+
+                                <!-- 국내숙박 -->
+                                <div class="p1 list-box-1 type-1">
+                                    <ul class="type-list">
+                                        <li class="on"><a href="javascript:;">전체</a></li>
+                                        <li><a href="javascript:;">호텔</a></li>
+                                        <li><a href="javascript:;">리조트/콘도</a></li>
+                                        <li><a href="javascript:;">모텔</a></li>
+                                        <li><a href="javascript:;">게스트하우스</a></li>
+                                        <li><a href="javascript:;">펜션</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- 레저/입장권 -->
+                                <div class="p1 list-box-2 type-2" style="display:none">
+                                    <ul class="type-list">
+                                        <li class="on"><a href="javascript:;">전체</a></li>
+                                        <li><a href="javascript:;">워터파크</a></li>
+                                        <li><a href="javascript:;">테마파크</a></li>
+                                        <li><a href="javascript:;">키즈</a></li>
+                                        <li><a href="javascript:;">입장권</a></li>
+                                        <li><a href="javascript:;">레포츠</a></li>
+                                        <li><a href="javascript:;">체험/축제</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- 공연/전시 -->
+                                <div class="p1 list-box-2 type-3" style="display:none">
+                                    <ul class="type-list">
+                                        <li class="on"><a href="javascript:;">전체</a></li>
+                                        <li><a href="javascript:;">공연</a></li>
+                                        <li><a href="javascript:;">전시</a></li>
+                                        <li><a href="javascript:;">체험</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- 해외숙박 -->
+                                <div class="p1 list-box-1 type-4" style="display:none">
+                                    <ul class="type-list">
+                                        <li class="on"><a href="javascript:;">전체</a></li>
+                                        <li><a href="javascript:;">호텔</a></li>
+                                        <li><a href="javascript:;">리조트/콘도</a></li>
+                                        <li><a href="javascript:;">모텔</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- 지역 -->
+                            <div class="reg-box">
+                                <div class="d-cmm">
+                                    <p class="p0">지역선택</p>
+                                </div>
+
+                                <!-- 국내숙박, 레저/입장권, 공연/전시 -->
+                                <div class="p1 rnSltReg reg-1">
+                                    <div class="slt-dep1">
+                                        <ul class="clr">
+                                            <li class="on"><a href="javascript:;">서울</a></li>
+                                            <li><a href="javascript:;">경기</a></li>
+                                            <li><a href="javascript:;">인천</a></li>
+                                            <li><a href="javascript:;">강원</a></li>
+                                            <li><a href="javascript:;">부산</a></li>
+                                            <li><a href="javascript:;">대구</a></li>
+                                            <li><a href="javascript:;">경남</a></li>
+                                            <li><a href="javascript:;">경북</a></li>
+                                            <li><a href="javascript:;">대전</a></li>
+                                            <li><a href="javascript:;">충남</a></li>
+                                            <li><a href="javascript:;">충북</a></li>
+                                            <li><a href="javascript:;">광주</a></li>
+                                            <li><a href="javascript:;">전남</a></li>
+                                            <li><a href="javascript:;">울산</a></li>
+                                            <li><a href="javascript:;">전북</a></li>
+                                            <li><a href="javascript:;">제주</a></li>
+                                            <li><a href="javascript:;">세종</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slt-dep2">
+                                        <ul class="clr">
+                                            <li><a href="javascript:;">전체</a></li>
+                                            <li><a href="javascript:;">평창군</a></li>
+                                            <li><a href="javascript:;">강릉시</a></li>
+                                            <li><a href="javascript:;">춘천시</a></li>
+                                            <li><a href="javascript:;">양양군</a></li>
+                                            <li><a href="javascript:;">홍천군</a></li>
+                                            <li><a href="javascript:;">속초시</a></li>
+                                            <li><a href="javascript:;">횡성군</a></li>
+                                            <li><a href="javascript:;">고성군</a></li>
+                                            <li><a href="javascript:;">원주시</a></li>
+                                            <li><a href="javascript:;">영원군</a></li>
+                                            <li><a href="javascript:;">정선시</a></li>
+                                            <li><a href="javascript:;">동해시</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- 해외숙박 -->
+                                <div class="p1 rnSltReg reg-2" style="display:none">
+                                    <div class="slt-dep1">
+                                        <ul class="clr">
+                                            <li class="on"><a href="javascript:;">일본</a></li>
+                                            <li><a href="javascript:;">홍콩/중국</a></li>
+                                            <li><a href="javascript:;">동남아</a></li>
+                                            <li><a href="javascript:;">유럽</a></li>
+                                            <li><a href="javascript:;">미주</a></li>
+                                            <li><a href="javascript:;">남태평양</a></li>
+                                            <li><a href="javascript:;">중동/아프리카</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="slt-dep2">
+                                        <ul class="clr">
+                                            <li><a href="javascript:;">전체</a></li>
+                                            <li><a href="javascript:;">도쿄</a></li>
+                                            <li><a href="javascript:;">오사카</a></li>
+                                            <li><a href="javascript:;">후쿠오카</a></li>
+                                            <li><a href="javascript:;">삿포로</a></li>
+                                            <li><a href="javascript:;">오키나와</a></li>
+                                            <li><a href="javascript:;">교토</a></li>
+                                            <li><a href="javascript:;">고베</a></li>
+                                            <li><a href="javascript:;">나고야</a></li>
+                                            <li><a href="javascript:;">그 외</a></li>
+                                            <li><a href="javascript:;">고베</a></li>
+                                            <li><a href="javascript:;">나고야</a></li>
+                                            <li><a href="javascript:;">그 외</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--// -->
 
 				</div>
 			</div>
 		</div>
 		<div class="rnM-contents">
 			<div class="rn-container">
-				<div class="pic-sec bsLs">
-					<ul class="ul1 clr">
-						<li class="li-1"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">국내숙박</span></a></li>
-						<li class="li-2"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">레저/입장권</span></a></li>
-						<li class="li-3"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">공연/전시</span></a></li>
-						<li class="li-4"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">해외숙박</span></a></li>
-					</ul>
-				</div>
+
 			</div>
 			<div class="bn-sec">
 				<div class="rn-container">

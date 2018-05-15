@@ -81,6 +81,8 @@ $(function() {
 		// 공연, 티켓 상품소개 우측 결제하기
 		var scr_intro = $("#area-prd-detail").offset().top + $("#area-prd-detail .area-tab").outerHeight();
 		var scr_bottom =
+			$(document).height() - $(window).height();
+		var scr_footer =
 			$(document).height() - $(window).height()
 			- ( $(".sec-prd-around").height() + $("#Footer").outerHeight() );
 
@@ -100,16 +102,15 @@ $(function() {
 			});
 			$("#introTk-side").fadeIn("fast");
 		}
-		if ( scr >= scr_bottom ) {
+		if ( scr == scr_bottom ) {
 			$("#introTk-side").fadeOut("fast");
 		}
-
-
 	});
+
 
 	// APP 예약 클릭 시
 	$("#prd-tb .app-bk").on("click", function() {
-		$("#app_download_pop").show();
+		popOpen(".popup-app-download");
 	});
 
 	// STEP2 패키지 선택 높이 조절
@@ -231,7 +232,7 @@ $(function() {
 function tabFn(tab, contents) {
 	$(tab).on("click", function() {
 		var idx = $(this).index();
-		console.log(idx);
+		// console.log(idx);
 
 		$(this).addClass('on').siblings().removeClass('on');
 		$(contents).eq(idx).addClass('on').siblings().removeClass('on');
