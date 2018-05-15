@@ -208,7 +208,8 @@
 								<a href="javascript:;" class="app-bk">APP<br>예약</a>
 							</li>
 						</ul>
-						<div class="tr-detail">
+                        <!-- 작업중 -->
+						<div class="tr-detail" style="display: block">
 							<ul class="ul-step type1 clr">
 								<li class="nth-1">
 									<span class="left-topB"></span><span class="left-bottomB"></span>
@@ -289,7 +290,7 @@
 												</select>
 											</div>
 											<div class="d2 clr">
-												<span class="s-l">객실단품금액</span>
+												<span class="s-l">객실금액</span>
 												<span class="s-r">94,000원</span>
 											</div>
 										</div>
@@ -313,6 +314,7 @@
 																		<p class="quan clr">
 																			<span class="s-l">-</span><input type="text" class="inp" value="0"><span class="s-r">+</span>
 																		</p>
+
 																	</div>
 																</li>
 																<li class="clr">
@@ -537,11 +539,26 @@
 											</ul>
 										</div>
 										<div class="d-total clr">
-											<span class="s-l">객실 + 패키지 금액</span>
-
-											<span class="s-r">
-												(<span class="c-red">94,000</span>원+<span class="c-red">7,500</span>원+<span class="c-red">25,000</span>원+<span class="c-red">14,000</span>원+<span class="c-red">9,000</span>원) = <span class="c-red f-bd">149,500</span>원
-											</span>
+                                            <div class="d-inner cf">
+    											<div class="pull-left d-l">
+                                                    <p class="row cf p-1">
+                                                        <span class="s-l">객실 + 패키지 금액</span>
+                                                        <span class="s-r">
+                                                            (<span class="c-red">110,200</span>원+<span class="c-red">7,500</span>원) = <span class="c-red f-bd">117,700</span>원
+                                                        </span>
+                                                    </p>
+                                                    <hr class="cf sun"></hr>
+                                                    <p class="row cf p-2">
+                                                        <span class="s-l f-bd">최종 결제금액</span>
+                                                        <span class="s-r">
+                                                            <em class="c-red">117,700</em><span class="sm">원</span>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="pull-right d-r">
+                                                    <a href="" class="a-btn">예약하기</a>
+                                                </div>
+                                            </div>
 										</div>
 									</div>
 								</div>
@@ -626,69 +643,7 @@
 
 								<div class="rn-container area-trd-comp">
 									<div class="trd-comp-1">
-										<div class="pdtCal">
-											<p class="p-1"><a href="javascript:;" class="prev-a ic-lArrow"></a>2017년 10월<a href="javascript:;" class="next-a ic-rArrow"></a></p>
-											<table class="cal-tb">
-												<thead>
-													<tr>
-														<th class="sun">일</th>
-														<th>월</th>
-														<th>화</th>
-														<th>수</th>
-														<th>목</th>
-														<th>금</th>
-														<th class="sat">토</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="off sun"><div></div></td>
-														<td class="off"><div></div></td>
-														<td class="off"><div></div></td>
-														<td class="off"><div></div></td>
-														<td class="chkIn"><div><span class="s-txt">1</span><img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
-														<td class="chkOut"><div><span class="s-txt">2</span><img src="http://img.go.co.kr/renew/i_chkOut.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
-														<td class="sat"><div><span class="s-txt">3</span><span class="prc">52,000</span></div></td>
-													</tr>
-													<tr>
-														<td class="sun"><div><span class="s-txt">4</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">5</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">6</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">7</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">8</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">9</span><span class="prc">52,000</span></div></td>
-														<td class="sat ddLine"><div><span class="s-txt">10</span><img src="http://img.go.co.kr/renew/i_ddLine.png" alt="예약마감" class="i-ddLine"><s class="prc">52,000</s></div></td>
-													</tr>
-													<tr>
-														<td class="sun"><div><span class="s-txt">11</span><span class="prc">52,000</span></div></td>
-														<td class="undef"><div><span class="s-txt">12</span><img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span></div></td>
-														<td><div><span class="s-txt">13</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">14</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">15</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">16</span><span class="prc">52,000</span></div></td>
-														<td class="sat"><div><span class="s-txt">17</span><span class="prc">52,000</span></div></td>
-													</tr>
-													<tr>
-														<td class="sun"><div><span class="s-txt">18</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">19</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">20</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">21</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">22</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">23</span><span class="prc">52,000</span></div></td>
-														<td class="sat"><div><span class="s-txt">24</span><span class="prc">52,000</span></div></td>
-													</tr>
-													<tr>
-														<td class="sun"><div><span class="s-txt">25</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">26</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">27</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">28</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">29</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">30</span><span class="prc">52,000</span></div></td>
-														<td class="off sat"><div></div></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
+										<% include ../parts/components/calendar/_calendar_sg.ejs %>
 
 										<div class="area-slt">
 											<div class="d1">
@@ -710,7 +665,7 @@
 												</select>
 											</div>
 											<div class="d2 clr">
-												<span class="s-l">객실단품금액</span>
+												<span class="s-l">객실금액 <span class="l">!</span><span class="sm">(VAT,봉사료,예약수수료 포함)</span></span>
 												<span class="s-r">94,000원</span>
 											</div>
 										</div>
@@ -1045,69 +1000,8 @@
 
 								<div class="rn-container area-trd-comp">
 									<div class="trd-comp-1">
-										<div class="pdtCal">
-											<p class="p-1"><a href="javascript:;" class="prev-a ic-lArrow"></a>2017년 10월<a href="javascript:;" class="next-a ic-rArrow"></a></p>
-											<table class="cal-tb">
-												<thead>
-													<tr>
-														<th class="sun">일</th>
-														<th>월</th>
-														<th>화</th>
-														<th>수</th>
-														<th>목</th>
-														<th>금</th>
-														<th class="sat">토</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="off sun"><div></div></td>
-														<td class="off"><div></div></td>
-														<td class="off"><div></div></td>
-														<td class="off"><div></div></td>
-														<td class="chkIn"><div><span class="s-txt">1</span><img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
-														<td class="chkOut"><div><span class="s-txt">2</span><img src="http://img.go.co.kr/renew/i_chkOut.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span></div></td>
-														<td class="sat"><div><span class="s-txt">3</span><span class="prc">52,000</span></div></td>
-													</tr>
-													<tr>
-														<td class="sun"><div><span class="s-txt">4</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">5</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">6</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">7</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">8</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">9</span><span class="prc">52,000</span></div></td>
-														<td class="sat ddLine"><div><span class="s-txt">10</span><img src="http://img.go.co.kr/renew/i_ddLine.png" alt="예약마감" class="i-ddLine"><s class="prc">52,000</s></div></td>
-													</tr>
-													<tr>
-														<td class="sun"><div><span class="s-txt">11</span><span class="prc">52,000</span></div></td>
-														<td class="undef"><div><span class="s-txt">12</span><img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span></div></td>
-														<td><div><span class="s-txt">13</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">14</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">15</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">16</span><span class="prc">52,000</span></div></td>
-														<td class="sat"><div><span class="s-txt">17</span><span class="prc">52,000</span></div></td>
-													</tr>
-													<tr>
-														<td class="sun"><div><span class="s-txt">18</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">19</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">20</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">21</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">22</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">23</span><span class="prc">52,000</span></div></td>
-														<td class="sat"><div><span class="s-txt">24</span><span class="prc">52,000</span></div></td>
-													</tr>
-													<tr>
-														<td class="sun"><div><span class="s-txt">25</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">26</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">27</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">28</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">29</span><span class="prc">52,000</span></div></td>
-														<td><div><span class="s-txt">30</span><span class="prc">52,000</span></div></td>
-														<td class="off sat"><div></div></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
+                                        <!-- 달력 싱글 -->
+										<% include ../parts/components/calendar/_calendar_sg.ejs %>
 
 										<div class="area-slt">
 											<div class="d1">
@@ -1129,7 +1023,7 @@
 												</select>
 											</div>
 											<div class="d2 clr">
-												<span class="s-l">객실단품금액</span>
+												<span class="s-l">객실금액</span>
 												<span class="s-r">94,000원</span>
 											</div>
 										</div>

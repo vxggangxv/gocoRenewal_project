@@ -1627,7 +1627,8 @@
                                 <a href="javascript:;" class="app-bk">APP<br>예약</a>
                             </li>
                         </ul>
-                        <div class="tr-detail">
+                        <!-- 작업중 -->
+                        <div class="tr-detail" style="display: block">
                             <ul class="ul-step type1 clr">
                                 <li class="nth-1">
                                     <span class="left-topB"></span><span class="left-bottomB"></span>
@@ -1889,7 +1890,7 @@
                                                 </select>
                                             </div>
                                             <div class="d2 clr">
-                                                <span class="s-l">객실단품금액</span>
+                                                <span class="s-l">객실금액</span>
                                                 <span class="s-r">94,000원</span>
                                             </div>
                                         </div>
@@ -1914,6 +1915,7 @@
                                                                             <span class="s-l">-</span>
                                                                             <input type="text" class="inp" value="0"><span class="s-r">+</span>
                                                                         </p>
+
                                                                     </div>
                                                                 </li>
                                                                 <li class="clr">
@@ -2166,12 +2168,28 @@
                                             </ul>
                                         </div>
                                         <div class="d-total clr">
-                                            <span class="s-l">객실 + 패키지 금액</span>
+                                            <div class="d-inner cf">
+                                                <div class="pull-left d-l">
+                                                    <p class="row cf p-1">
+                                                        <span class="s-l">객실 + 패키지 금액</span>
+                                                        <span class="s-r">
 
-                                            <span class="s-r">
+                                                            (<span class="c-red">110,200</span>원+<span class="c-red">7,500</span>원) = <span class="c-red f-bd">117,700</span>원
+                                                        </span>
+                                                    </p>
+                                                    <hr class="cf sun"></hr>
+                                                    <p class="row cf p-2">
+                                                        <span class="s-l f-bd">최종 결제금액</span>
+                                                        <span class="s-r">
 
-												(<span class="c-red">94,000</span>원+<span class="c-red">7,500</span>원+<span class="c-red">25,000</span>원+<span class="c-red">14,000</span>원+<span class="c-red">9,000</span>원) = <span class="c-red f-bd">149,500</span>원
-                                            </span>
+                                                            <em class="c-red">117,700</em><span class="sm">원</span>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="pull-right d-r">
+                                                    <a href="" class="a-btn">예약하기</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2300,7 +2318,7 @@
                                                         </td>
                                                         <td class="chkIn">
                                                             <div><span class="s-txt">1</span>
-                                                                <img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span>
+                                                                <img src="http://img.go.co.kr/renew/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span>
                                                             </div>
                                                         </td>
                                                         <td class="chkOut">
@@ -2351,7 +2369,7 @@
                                                         </td>
                                                         <td class="undef">
                                                             <div><span class="s-txt">12</span>
-                                                                <img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span>
+                                                                <img src="http://img.go.co.kr/renew/i_undef.png" alt="예약미정" class="i-undef"><span class="prc">0</span>
                                                             </div>
                                                         </td>
                                                         <td>
@@ -2438,6 +2456,7 @@
                                             </table>
                                         </div>
 
+
                                         <div class="area-slt">
                                             <div class="d1">
                                                 <span class="s-lbl">객실</span>
@@ -2458,7 +2477,7 @@
                                                 </select>
                                             </div>
                                             <div class="d2 clr">
-                                                <span class="s-l">객실단품금액</span>
+                                                <span class="s-l">객실금액 <span class="l">!</span><span class="sm">(VAT,봉사료,예약수수료 포함)</span></span>
                                                 <span class="s-r">94,000원</span>
                                             </div>
                                         </div>
@@ -2834,6 +2853,7 @@
 
                                 <div class="rn-container area-trd-comp">
                                     <div class="trd-comp-1">
+                                        <!-- 달력 싱글 -->
                                         <div class="pdtCal">
                                             <p class="p-1">
                                                 <a href="javascript:;" class="prev-a ic-lArrow"></a>2017년 10월
@@ -2867,7 +2887,7 @@
                                                         </td>
                                                         <td class="chkIn">
                                                             <div><span class="s-txt">1</span>
-                                                                <img src="http://img.go.co.kr/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span>
+                                                                <img src="http://img.go.co.kr/renew/i_chkIn.png" alt="체크인" class="i-chkIn"><span class="prc">52,000</span>
                                                             </div>
                                                         </td>
                                                         <td class="chkOut">
@@ -2918,7 +2938,7 @@
                                                         </td>
                                                         <td class="undef">
                                                             <div><span class="s-txt">12</span>
-                                                                <img src="http://img.go.co.kr/renew/i_undef.png" alt="예약마감" class="i-undef"><span class="prc">0</span>
+                                                                <img src="http://img.go.co.kr/renew/i_undef.png" alt="예약미정" class="i-undef"><span class="prc">0</span>
                                                             </div>
                                                         </td>
                                                         <td>
@@ -3005,6 +3025,7 @@
                                             </table>
                                         </div>
 
+
                                         <div class="area-slt">
                                             <div class="d1">
                                                 <span class="s-lbl">객실</span>
@@ -3025,7 +3046,7 @@
                                                 </select>
                                             </div>
                                             <div class="d2 clr">
-                                                <span class="s-l">객실단품금액</span>
+                                                <span class="s-l">객실금액</span>
                                                 <span class="s-r">94,000원</span>
                                             </div>
                                         </div>

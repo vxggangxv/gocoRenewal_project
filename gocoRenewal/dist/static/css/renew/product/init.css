@@ -374,9 +374,11 @@
 .trd-comp-1 .area-slt, .trd-comp-1 .d-ps {position: relative; border: 1px solid #e6e6e6; background: #fff; padding: 8px; margin-top: 8px;}
 .trd-comp-1 .area-slt .s-lbl {font-size: 16px; vertical-align: middle; margin-left: 26px;}
 .trd-comp-1 .area-slt .s-lbl:first-child {margin-left: 0px;}
-.trd-comp-1 .area-slt select {border: 1px solid #c0c0c0; background: #fff; height: 26px; width: 65px; margin-left: 9px;}
+.trd-comp-1 .area-slt select {border: 1px solid #c0c0c0; background: #fff; height: 26px; width: 65px; margin-left: 9px; padding-left: 5px;}
 .trd-comp-1 .area-slt .d2 {border: 1px solid #d7d7d7; margin-top: 8px; font-size: 16px; background: #f2f2f2; padding: 5px 8px 4px;}
 .trd-comp-1 .area-slt .d2 .s-l {float: left;}
+.trd-comp-1 .area-slt .d2 .s-l .l {position: relative; top: -1px;color: #fff; background: #7d7d7d; display: inline-block; width: 17px; height: 17px; line-height: 17px; text-align: center; border-radius: 50%; font-size: 12px; font-weight: 600;}
+.trd-comp-1 .area-slt .d2 .s-l .sm {font-size: 12px; font-family: "Dotum", sans-serif; color: #666; margin-left: 2px;}
 .trd-comp-1 .area-slt .d2 .s-r {float: right; color: #f93d3e;}
 .trd-comp-1 .d-ps {font-size: 14px; margin-top: 6px; letter-spacing: -1px; padding-left: 18px;}
 .trd-comp-1 .d-ps:before {content: "*"; position: absolute; left: 8px;}
@@ -384,6 +386,7 @@
 
 .area-trd-comp .trd-comp-2 {}
 .trd-comp-2 {width: 712px; min-height: 300px; background: #fff; border: 1px solid #e6e6e6; margin-left: 6px; padding-bottom: 52px;}
+.trd-comp-2:before {content: ""; display: block; position: absolute; left: 439px; top: 0; height: 100%; width: 1px; background: #e6e6e6; z-index: 1;}
 /*.ie8 .trd-comp-2 {}*/
 .trd-comp-2 .c-red {font-size: 16px; color: #ff4748;}
 
@@ -450,7 +453,18 @@
 
 .trd-comp-2 .part-con .dep-1 > li.on > .pkg-con .con-2 a.gal-link {position: relative; display: inline-block; background: #f5f5f5; border: 1px solid #d7d7d7; padding: 5px 10px; text-align: center; left: 15px; top: 10px; text-align: center;}
 
-.trd-comp-2 .d-total {display: block; clear: both; position: absolute; left: 8px; width: 694px; border: 1px solid #d7d7d7; font-size: 16px; background: #f2f2f2; padding: 5px 8px 4px; bottom: 8px;}
+
+.trd-comp-2 .d-total {display: block; clear: both; position: absolute; width: 100%; font-size: 16px; bottom: 0px; padding: 0 8px; padding-bottom: 8px; background: #fff; z-index: 2;}
+.trd-comp-2 .d-total .d-inner {width: 100%; background: #f2f2f2; border: 1px solid #d7d7d7; padding: 5px 8px 4px;}
+.trd-comp-2 .d-total .d-l {width: 420px;}
+.trd-comp-2 .d-total .d-inner hr.sun {width: 100%; margin: 4px auto; border: 0; border-top: 1px solid #d7d7d7;}
+.trd-comp-2 .d-total .d-inner .p-2 {margin-bottom: -2px;}
+.trd-comp-2 .d-total .d-inner .p-2 .s-l {margin-top: 6px;}
+.trd-comp-2 .d-total .d-inner .p-2 .s-r {margin-top: -4px;}
+.trd-comp-2 .d-total .d-inner .p-2 .s-r em {font-size: 26px; font-weight: 700;}
+.trd-comp-2 .d-total .d-inner .p-2 .s-r .sm {position: relative; top: -1px; margin-left: 3px;}
+.trd-comp-2 .d-total .d-r .a-btn {position: relative; top: 4px; font-size: 18px; display: block; width: 230px; height: 55px; background: #fa6b0a; color: #fff; text-align: center; font-weight: 700; line-height: 55px;}
+.trd-comp-2 .d-total .d-r .a-btn:before {position: relative; display: inline-block; content: ""; width: 15px; height: 6px; border: 2px solid #fff; border-top: 0; border-right: 0; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);  margin-right: 12px; margin-left: -5px; top: -4px;}
 .trd-comp-2 .d-total .s-l {float: left;}
 .trd-comp-2 .d-total .s-r {float: right;}
 
