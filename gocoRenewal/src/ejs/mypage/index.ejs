@@ -1,0 +1,62 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container rn-container02">
+                <aside class="lab bsLsbo">
+                    <h2>마이페이지</h2>
+                    <nav class="lnb">
+                        <ul>
+                            <li class="on"><a href="">예약 내역 조회</a></li>
+                            <li><a href="">쿠폰 조회</a></li>
+                            <li><a href="">적립금 조회</a></li>
+                            <li><a href="">찜 목록</a></li>
+                            <li><a href="">나의 이용후기</a></li>
+                            <li><a href="">나의 문의내역</a></li>
+                            <li><a href="">무료숙박권 예약</a></li>
+                            <li class="type02"><a href="">회원 정보관리</a></li>
+                            <li class="type02"><a href="">개인 결제창</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="cus-call">
+                        <a href="#"><img src="http://img.go.co.kr/i_faqPh.png" alt="고객센터전화문의"> 고객센터 전화문의</a>
+                    </div>
+                </aside>
+
+                <div class="main">
+                    <p class="p-0">
+                        <span class="name">김지영(jiyoungkim)님, 안녕하세요!</span>
+                        <span class="s-r">
+                            <span class="point">
+                                <span class="txt">MY POINT</span>
+                                <span class="num"><span class="colr-org">25,222</span>P</span>
+                            </span>
+                            <span class="pieces"></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>

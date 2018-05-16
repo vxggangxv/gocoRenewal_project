@@ -121,11 +121,13 @@ table.sep td {
 .thColor1-2 {color: #ff6700;}
 
 /* 공통 color */
-.colr-red {color: #eb1212;}
+.c-red, .colr-red {color: #eb1212;}
 .colr-org {color: #fd5426;}
 
 /* 공통 css */
 .bsLs, .bsLs * {box-sizing: border-box; letter-spacing: -0.5px;}
+.boxs, .boxs * {box-sizing: border-box;}
+.letts, .letts * {letter-spacing: -0.5px;}
 .mgl, .mg- {display: inline-block; vertical-align: middle; position: relative;}
 .ftfm-nt, .ftfm-nt * {font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;}
 .ftfm-mg, .ftfm-mg * {font-family: "Malgun Gothic", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif; letter-spacing: -1px;}

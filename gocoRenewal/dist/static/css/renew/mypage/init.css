@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* 재설정 */
+/* .rnL-header {border-bottom:0;} */
+
+.rn-container02 {width: 1200px; margin-top: 70px;}
+
+/* 좌측 네비게이션 */
+.lab, .lab .lnb {position: relative;}
+.lab {width: 216px;}
+.lab h2, .lnb {border: 1px solid #dcdcdc;}
+.lab h2 {font-size: 23px; background: #f4f4f4; font-weight: 700; padding: 15px 0; border-bottom: 0;}
+.lnb {border: 1px solid #dcdcdc;}
+.lnb > ul > li > a {display: block; padding: 10px 0; border-top: 1px solid #dcdcdc;}
+.lnb > ul > li.on > a {border-left: 6px solid #fa6c0a; color: #fa6c0a;}
+.lnb > ul > li.type02 > a {background: #696d76; color: #fff;}
+.lnb > ul > li:first-child > a {border-top: 0;}
+.lab h2, .lnb > ul > li > a {padding-left: 20px;}
+.lab .cus-call {position: relative; margin-top: 20px; width: 100%; height: 50px; box-sizing: border-box; border: 1px solid #d0d0d0; border-top: 2px solid #696d76; text-align: center; font-size: 17px; color: #4d4d4d; font-weight: 600;
+	letter-spacing: -1px; background: #f7f7f7;}
+.lab .cus-call a {display: block; width: 100%; height: 100%;}
+.lab .cus-call a:after {content: ""; display: inline-block; height: 107%; vertical-align: middle;}
+.lab .cus-call a img {position: relative; top: -1px; margin-right: 10px;}
