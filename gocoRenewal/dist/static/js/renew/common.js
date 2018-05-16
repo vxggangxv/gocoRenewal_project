@@ -90,6 +90,29 @@ $(function() {
 		$(this).closest('div.schBox').find('.schEx').fadeOut('fast');
 	});
 
+	// 자주묻는질문
+	$("#faq table tr:odd").click(function() {
+		var scr = $(this).offset().top;
+		$(window).scrollTop(scr);
+
+		$(this).toggleClass('on').siblings().removeClass('on');
+
+		$("#faq table tbody tr:even").hide();
+		if ( $(this).hasClass('on') ) {
+			$(this).next().show();
+		} else {
+			$(this).next().hide();
+		}
+	});
+	$("#faq .faq_more .btn-q").click(function() {
+		$('#qna-pop-bg').show();
+		return false;
+	});
+	$("#faq .faq_more .btn-x").click(function() {
+		$(this).closest('tr').hide();
+		return false;
+	});
+
 });
 
 function top_search() {
@@ -169,6 +192,38 @@ function faq(login) {
 		qnaPopBack.hide();
 		faqBtn.removeClass('on');
 	});
+}
+
+function tabFn(tab, contents) {
+	$(tab).on("click", function() {
+		var idx = $(this).index();
+		// console.log(idx);
+
+		$(this).addClass('on').siblings().removeClass('on');
+		$(contents).eq(idx).addClass('on').siblings().removeClass('on');
+	});
+}
+
+/* 클릭 기능 active */
+var clickFn = {
+
+	sib : function(itm) {
+		$(itm).click(function() {
+			$(this).addClass("active").siblings().removeClass("active");
+		});
+	},
+	sibOn : function(itm) {
+		$(itm).click(function() {
+			$(this).addClass("on").siblings().removeClass("on");
+		});
+	},
+	contentTab : function(tab, contents) {
+		$(tab).children("a").click(function() {
+			var idx = $(this).index();
+			$(contents).eq(idx).addClass("active").siblings().removeClass("active");
+		});
+	}
+
 }
 
 function toggleOn(itm, type) {

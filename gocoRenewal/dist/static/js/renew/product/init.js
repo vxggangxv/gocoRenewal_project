@@ -194,10 +194,9 @@ $(function() {
 		}
 	});
 
-	// 페이지네이션
-	$("div[id^=pagenation] a").on('click', function() {
-		$(this).addClass('on').siblings().removeClass('on');
-	});
+	// 페이지네이션 & 자주묻는 질문 탭 버튼
+	clickFn.sibOn(".pagenation > a");
+	clickFn.sibOn("#q-tab li");
 
 	// 문의등록
 	$("#area-prd-detail .li-contact .d-box-2 .inp-box").click(function() {
@@ -205,36 +204,4 @@ $(function() {
 		$(this).find(".write-area").focus();
 	});
 
-	// 자주묻는질문
-	$("#faq table tr:odd").click(function() {
-		var scr = $(this).offset().top;
-		$(window).scrollTop(scr);
-
-		$(this).toggleClass('on').siblings().removeClass('on');
-
-		$("#faq table tr:even").hide();
-		if ( $(this).hasClass('on') ) {
-			$(this).next().show();
-		} else {
-			$(this).next().hide();
-		}
-	});
-	$("#faq .faq_more .btn-q").click(function() {
-		$('#qna-pop-bg').show();
-		return false;
-	});
-	$("#faq .faq_more .btn-x").click(function() {
-		$(this).closest('tr').hide();
-		return false;
-	});
 })
-
-function tabFn(tab, contents) {
-	$(tab).on("click", function() {
-		var idx = $(this).index();
-		// console.log(idx);
-
-		$(this).addClass('on').siblings().removeClass('on');
-		$(contents).eq(idx).addClass('on').siblings().removeClass('on');
-	});
-}
