@@ -1,0 +1,150 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container rn-container02">
+                <!-- 좌측 네비게이션 -->
+                <% include ../parts/mypage/_lab.ejs %>
+
+                <div class="main main-reserves bsLs">
+                    <p class="row-name">
+                        <span class="name">김지영(jiyoungkim)님, 안녕하세요!</span>
+                    </p>
+
+                    <section class="sec-cmm-2 cf sec-resHistory">
+                        <h2>나의 적립금 안내</h2>
+                        <div class="res-info">
+                            <div class="inner cf">
+                                <div class="pull-left cf d-l-1">
+                                    <figure>
+                                        <img src="http://img.go.co.kr/renew/icon/i_coin.png" alt="코인">
+                                    </figure>
+                                    <div class="d-txt">
+                                        <p>사용가능 적립금</p>
+                                        <p><span class="c-red">25,253,000</span><span class="sm">원</span></p>
+                                    </div>
+                                </div>
+                                <div class="pull-left cf d-l-2">
+                                    <figure>
+                                        <img src="http://img.go.co.kr/renew/icon/i_coin.png" alt="코인">
+                                    </figure>
+                                    <div class="d-txt">
+                                        <p>사용가능 적립금</p>
+                                        <p><span class="c-red">25,222</span><span class="sm">원</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h2>적립금 내역</h2>
+                        <table class="tb-bk tb-res">
+                            <colgroup>
+                                <col class="nth-1">
+                                <col class="nth-2">
+                                <col class="nth-3">
+                                <col class="nth-4">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="nth-1">날짜</th>
+                                    <th class="nth-2">내역</th>
+                                    <th class="nth-3">받은 적립금</th>
+                                    <th class="nth-4">사용 적립금</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 내용 없을 경우 -->
+                                <!-- <tr class="nothing">
+                                    <td colspan="4">
+                                        <p>적립금 내역이 없습니다.</p>
+                                    </td>
+                                </tr> -->
+
+                                <!-- 내용 있을 경우 -->
+                                <tr>
+                                    <td class="nth-1">2018.04.11</td>
+                                    <td class="nth-2" onclick="">
+                                        <span class="f-bd">적립</span> 위약금 적립
+                                    </td>
+                                    <td class="nth-3"><span class="f-bd thColor1">+ 8,000원</span></td>
+                                    <td class="nth-4"></td>
+                                </tr>
+                                <tr>
+                                    <td class="nth-1">2018.04.11</td>
+                                    <td class="nth-2" onclick="">
+                                        <span class="f-bd">사용</span> 오션투유리조트 속초설악비치 호텔앤콘도
+                                    </td>
+                                    <td class="nth-3"></td>
+                                    <td class="nth-4"><span class="f-bd">- 80,000원</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="nth-1">2018.04.11</td>
+                                    <td class="nth-2" onclick="">
+                                        <span class="f-bd">유효기한만료</span> 유효기한만료
+                                    </td>
+                                    <td class="nth-3"></td>
+                                    <td class="nth-4"><span class="f-bd">- 50원</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="row-btn"><a href="" class="a-btn"><span class="a-i-x a-x"></span>전체삭제</a></div>
+
+                        <div class="pagenation" id="pagenation">
+                            <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span><span class="ic-lArrow"></span></a>
+                            <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span></a>
+                            <a class="active" href="javascript:;">1</a>
+                            <a href="javascript:;">2</a>
+                            <a href="javascript:;">3</a>
+                            <a href="javascript:;">4</a>
+                            <a href="javascript:;">5</a>
+                            <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span></a>
+                            <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span><span class="ic-rArrow"></span></a>
+                        </div>
+
+                        <div class="d-caution">
+                            <em class="f-bd">적립금 사용안내</em>
+                            <p class="p-1">- 적립금은 숙박 및 숙박 외 상품 구매시 현금처럼 사용할 수 있습니다 .</p>
+                            <p class="p-1">- 적립금은 숙박상품 구매금액의 1% 금액이 적립됩니다. (체크아웃 후 7일 내)</p>
+                            <p class="p-1">- 숙박이용이 늘어나실수록 혜택도 늘어나는 현금 적립 서비스 제도입니다. </p>
+                            <p class="p-1">- 1,000원 이상의 적립금 부터 사용 가능합니다.</p>
+                            <p class="p-1">- 적립금은 본인만 사용 가능하며 타인에게 양도할 수 없습니다.</p>
+                            <p class="p-1">- 적립금은 환급되지 않으며 탈퇴 시 자동으로 소멸됩니다.</p>
+                            <p class="p-1">- 적립일로부터 1년간 유효합니다. 단 특정 이벤트에 따른 적립은 이벤트 내용에 따라 달라 질 수있으며, 별도 공지 됩니다. </p>
+                            <p class="p-1">- 유효기간 내 사용되지 않은 적립금은 자동 소멸됩니다.</p>
+                        </div>
+                    </section>
+
+
+                </div>
+                <!-- main end -->
+
+            </div>
+        </div>
+
+        <% include ../parts/components/laypop/_cancle.ejs %>
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>

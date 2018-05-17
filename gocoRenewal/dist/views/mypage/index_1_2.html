@@ -698,7 +698,15 @@
                         </span>
                         <span class="pieces">
 
-                                <span class="coupon-per">
+                                <!-- 0장일 경우 노출 -->
+
+                                <span class="box-sale" onclick="popOpen('.popup-app-download')">
+
+                                    <span class="c-red">7만원 할인쿠폰</span>을 받으세요
+                        <img src="http://img.go.co.kr/renew/icon/i_down_mn.jpg" alt="다운">
+                        </span>
+
+                        <span class="coupon-per">
 
                                     <span class="square01"></span><span class="square02">%</span>
                         <span class="sunV">
@@ -717,11 +725,11 @@
                     <section class="sec-cmm cf sec-bkHistory">
                         <h2>예약내역 조회</h2>
                         <ul class="row-tab cf">
-                            <li class="tab-1 on">이용가능</li>
-                            <li class="tab-2">이용완료</li>
+                            <li class="tab-1">이용가능</li>
+                            <li class="tab-2 on">이용완료</li>
                             <li class="tab-3">취소/환불</li>
                         </ul>
-                        <!-- 이용가능 테이블 -->
+                        <!-- 이용완료 테이블 -->
                         <table class="tb-bk tb-bk-1">
                             <colgroup>
                                 <col class="nth-1">
@@ -746,7 +754,6 @@
                                 <!-- <tr class="nothing">
                                     <td colspan="6">
                                         <p>예약/구매 내용이 없습니다.</p>
-                                        <p class="row-btn"><a href="" class="a-btn">구매하신 예약건이 보이지 않는다면, 여기를 클릭하세요. <span class="ic-rArrow rArrow"></span></a></p>
                                     </td>
                                 </tr> -->
                                 <!-- 내용 있을 경우 -->
@@ -763,11 +770,9 @@
                                     <td class="nth-4"><span class="f-bd">예약완료</span>
                                     </td>
                                     <td class="nth-5">
-                                        <a href="" class="a-btn">변경신청</a>
-                                        <a href="javascript: popOpen('#cancel_pop')" class="a-btn">예약취소신청</a>
+                                        -
                                     </td>
                                     <td class="nth-6">
-                                        <a href="" class="a-btn voucher">호텔바우처</a>
                                         <a href="" class="a-btn">영수증 발급</a>
                                     </td>
                                 </tr>

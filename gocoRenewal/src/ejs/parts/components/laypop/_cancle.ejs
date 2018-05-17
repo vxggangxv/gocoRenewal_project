@@ -1,0 +1,210 @@
+<div id="cancel_pop" style="display: none">
+	<div class="member_rsv_complete">
+		<!--- 동의단계 ---->
+		<div class="modal_area type2" id="cancel_step1">
+			<div class="top">
+				<strong>예약취소 및 결제 취소 수수료 규정안내</strong>
+				<a href="#" class="modal_close" onclick="popCls('#cancel_pop')"><img src="http://img.go.co.kr/modal_close2.gif" alt="닫기"></a>
+			</div>
+			<div class="mid">
+
+				<div id="cancel_wrap_sub">
+			<form name="refund_c_form" id="refund_c_form">
+			<input type="hidden" name="rnum" value="1723013">
+			<input type="hidden" name="cancel_date" value="0">
+			<input type="hidden" name="md" value="mode1">
+			<input type="hidden" name="r1" value="100%">
+			<input type="hidden" name="r2" value="0">
+			<input type="hidden" name="r3" value="11020">
+			<input type="hidden" name="r4" value="110200">
+
+			<input type="hidden" name="p1" value="0">
+			<input type="hidden" name="p2" value="110200">
+			<input type="hidden" name="p3" value="0">
+			<input type="hidden" name="p4" value="110200">
+			<input type="hidden" name="all_mile_chk" value="Y" id="all_mile_chk">
+			</form>
+			<div class="cancel_wrap" style="border-top:none;border-bottom:none;margin-top:-10px">
+			<table class="cancel_data">
+				<colgroup>
+				<col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;"><col style="width:8%;">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th rowspan="2">예약일</th>
+						<th rowspan="2">취소일</th>
+						<th rowspan="2">총결제</th>
+						<th colspan="3">결제금액</th>
+						<th rowspan="2">취소<br>수수료</th>
+						<th colspan="4" style="background:#fff000">환불액</th>
+						<th rowspan="2">적립금<br>지급</th>
+					</tr>
+					<tr>
+						<th>실결제</th>
+						<th>적립금</th>
+						<th>할인쿠폰</th>
+						<!--<th>총결제</th> -->
+						<th style="background:#fff000">실지급</th><th style="background:#fff000">적립금</th><th style="background:#fff000">쿠폰</th><th style="background:#fff000">총환불</th>
+					</tr>
+					<tr>
+						<td>05월 17일</td>
+						<td>0일전</td>
+						<td>110,200원</td>
+						<td>0원</td>
+						<td>110,200원</td>
+						<td>0원</td>
+						<td>110,200원</td>
+						<td style="background:#fff000">0원</td><td style="background:#fff000">0원</td><td style="background:#fff000">0원</td><td style="background:#fff000">0원</td>
+						<td>11,020원</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+
+			<div class="com_txt">
+				<!---  사인패드 영역 ---->
+				<div class="sign" style="position:relative">
+					<span class="tmp_txt">마우스로 이곳에 서명해주세요</span>
+					<div id="signature-pad" class="m-signature-pad" style="position:absolute;top:0;">
+						<div class="m-signature-pad--body">
+							<canvas height="90" width="340" style="touch-action: none;"></canvas>
+						</div>
+					</div>
+				</div>
+				<!---  사인패드 영역 ---->
+
+				<div class="modal_bullet" style="background:none;padding-left:0px">한번 취소처리된 주문건은 다시 원복처리가 불가합니다.<br>신중한 결정 부탁드립니다.<br><br><b>그래도 취소하시겠습니까?</b></div>
+
+			</div>
+			<div class="modal_btn">
+				<a href="#" class="chk">예</a>
+				<a href="#" class="no">아니요</a>
+			</div>
+
+			<div class="cancel_wrap" style="border-top:none">
+			<span style="font-size:15px;font-weight:bold">※ 취소수수료 규정</span>
+				<table class="cancel_data" style="margin-top:0px;">
+					<colgroup>
+						<col style="width:200px;">
+						<col style="width:*;">
+						<col style="width:190px;">
+						<col style="width:190px;">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>구분</th>
+							<th>취소수수료율</th>
+							<th>환불액</th>
+							<th>적립금 지급</th>
+						</tr>
+
+						<tr>
+							<td style="text-align:left">15일전</td>
+							<td>10%</td>
+							<td>결제금의 90% 환불</td>
+							<td>결제금의 10% 적립</td>
+						</tr>
+
+						<tr>
+							<td style="text-align:left">14~10일전</td>
+							<td>20%</td>
+							<td>결제금의 80% 환불</td>
+							<td>결제금의 10% 적립</td>
+						</tr>
+
+						<tr>
+							<td style="text-align:left">9~7일전</td>
+							<td>40%</td>
+							<td>결제금의 60% 환불</td>
+							<td>결제금의 10% 적립</td>
+						</tr>
+
+						<tr>
+							<td style="text-align:left">6일전</td>
+							<td>70%</td>
+							<td>결제금의 30% 환불</td>
+							<td>결제금의 10% 적립</td>
+						</tr>
+
+						<tr>
+							<td style="text-align:left">5일전~당일</td>
+							<td>100%</td>
+							<td>결제금의 0% 환불</td>
+							<td>결제금의 10% 적립</td>
+						</tr>
+
+					</tbody>
+				</table>
+				<div class="notice_txt" style="padding-left:0px">
+					※ 토요일, 일요일, 공휴일 및 평일 17시 이후의 취소신청접수시, 다음 영업일 기준의 취소수수료가 적용됩니다.<br>
+					※ 연박상품의 경우, 가장 빠른 이용일을 기준으로 취소수수료가 적용됩니다.<br>
+					※ 적립금은 취소에 따라 발생되는 고객님의 부담을 조금이나마 보상해드리기 위해서 고코투어에서<br>&nbsp;&nbsp;&nbsp;&nbsp;지급해 드리는 적립금입니다.<br>
+					※ 취소수수료가 실결제한 금액보다 클 경우, 실 결제금이 우선 차감되며 나머지는 적립금에서 차감됩니다.
+				</div>
+				</div></div>
+			</div>
+		</div>
+
+		<!--- 환불방식 선택 ---->
+		<div class="modal_area" id="cancel_step2" style="display:none">
+			<div class="top">
+				<strong>환불방식 선택</strong>
+				<a href="#" class="modal_close" onclick="reset_step();"><img src="http://img.go.co.kr/modal_close.gif" alt=""></a>
+			</div>
+			<div class="mid">
+				<div class="com_txt">
+					<p class="refund">환불 방식을 선택해주세요.</p>
+				</div>
+				<div class="modal_btn">
+					<a href="#" class="refund02" onclick="refund_choice('refund_mileage')">적립금 전환</a>
+					<a href="#" class="refund01" onclick="refund_choice('refund_cash')">환불받기</a>
+				</div>
+			</div>
+		</div>
+
+		<!--- 예약건에 따른 다른내용 노출 ---->
+		<div class="modal_area" id="cancel_step3" style="display:none"></div>
+
+
+		<!--- 취소가 불가능한 예약건일 때  ---->
+		<div class="modal_area" id="cancel_step4" style="display:none">
+			<div class="top">
+				<strong>예약취소불가</strong>
+				<a href="#" class="modal_close" onclick="reset_step();"><img src="http://img.go.co.kr/modal_close.gif" alt=""></a>
+			</div>
+			<div class="mid">
+				<div class="com_txt">
+					<strong>취소가 불가합니다.</strong>
+					<p>
+						- 결제를 2가지 이상으로 접수<br>
+						- 이미 변경한 예약건<br>
+						- 취소불가한 상품
+					</p>
+					<p style="margin-top:10px">
+						위 내용의 경우 취소가 불가합니다. 게시판을 통해 문의바랍니다.
+					</p>
+				</div>
+				<div class="modal_btn">
+					<a href="#" class="complete" onclick="close_layer('layout_3')">확인</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="http://static.go.co.kr/js/signature_pad.js"></script>
+	<script type="text/javascript">
+
+		var signaturePad;
+		var wrapper = document.getElementById("signature-pad"),
+		canvas = wrapper.querySelector("canvas"),
+		signaturePad;
+
+		signaturePad = new SignaturePad(canvas, {
+			onBegin: function() {
+				$(".tmp_txt").hide();
+			}
+		});
+		canvas.width = 340;
+	</script>
+</div>

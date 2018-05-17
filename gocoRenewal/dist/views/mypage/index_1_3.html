@@ -717,19 +717,18 @@
                     <section class="sec-cmm cf sec-bkHistory">
                         <h2>예약내역 조회</h2>
                         <ul class="row-tab cf">
-                            <li class="tab-1 on">이용가능</li>
+                            <li class="tab-1">이용가능</li>
                             <li class="tab-2">이용완료</li>
-                            <li class="tab-3">취소/환불</li>
+                            <li class="tab-3 on">취소/환불</li>
                         </ul>
-                        <!-- 이용가능 테이블 -->
-                        <table class="tb-bk tb-bk-1">
+                        <!-- 취소/환불 테이블 -->
+                        <table class="tb-bk tb-bk-3">
                             <colgroup>
                                 <col class="nth-1">
                                     <col class="nth-2">
                                         <col class="nth-3">
                                             <col class="nth-4">
                                                 <col class="nth-5">
-                                                    <col class="nth-6">
                             </colgroup>
                             <thead>
                                 <tr>
@@ -737,7 +736,6 @@
                                     <th class="nth-2">접수일자</th>
                                     <th class="nth-3">숙소명</th>
                                     <th class="nth-4">예약상태</th>
-                                    <th class="nth-5">변경/취소</th>
                                     <th class="nth-6">출력</th>
                                 </tr>
                             </thead>
@@ -746,7 +744,6 @@
                                 <!-- <tr class="nothing">
                                     <td colspan="6">
                                         <p>예약/구매 내용이 없습니다.</p>
-                                        <p class="row-btn"><a href="" class="a-btn">구매하신 예약건이 보이지 않는다면, 여기를 클릭하세요. <span class="ic-rArrow rArrow"></span></a></p>
                                     </td>
                                 </tr> -->
                                 <!-- 내용 있을 경우 -->
@@ -760,15 +757,10 @@
                                         <br>
                                         <span class="sm">투숙일: 2018.05.17 (금) ~ 2018.05.18 (토)</span>
                                     </td>
-                                    <td class="nth-4"><span class="f-bd">예약완료</span>
+                                    <td class="nth-4"><span class="f-bd">취소완료</span>
                                     </td>
                                     <td class="nth-5">
-                                        <a href="" class="a-btn">변경신청</a>
-                                        <a href="javascript: popOpen('#cancel_pop')" class="a-btn">예약취소신청</a>
-                                    </td>
-                                    <td class="nth-6">
-                                        <a href="" class="a-btn voucher">호텔바우처</a>
-                                        <a href="" class="a-btn">영수증 발급</a>
+                                        미발행
                                     </td>
                                 </tr>
                             </tbody>
