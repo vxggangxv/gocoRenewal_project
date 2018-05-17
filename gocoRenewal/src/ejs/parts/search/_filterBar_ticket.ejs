@@ -1,45 +1,80 @@
-<div class="rnL-ctgr-ticket bsLs" id="rnL-ctgr-ticket">
+<div class="rnL-ts bsLs" id="rnL-ts">
     <div class="rn-container">
-        <div class="ft-ticket">
-            <span class="ipCst">
-                <input type="checkbox" id="tk-chk1" class="chk-cst">
-                <label for="tk-chk1"></label>
-                <label for="tk-chk1">전체</label>
-            </span>
-            <span>|</span>
-            <span class="ipCst">
-                <input type="checkbox" id="" class="chk-cst">
-                <label for=""></label>
-                <label for="">워터파크</label>
-            </span>
-            <span class="ipCst">
-                <input type="checkbox" id="" class="chk-cst">
-                <label for=""></label>
-                <label for="">테마파크</label>
-            </span>
-            <span class="ipCst">
-                <input type="checkbox" id="" class="chk-cst">
-                <label for=""></label>
-                <label for="">키즈</label>
-            </span>
-            <span class="ipCst">
-                <input type="checkbox" id="" class="chk-cst">
-                <label for=""></label>
-                <label for="">입장권</label>
-            </span>
-            <span class="ipCst">
-                <input type="checkbox" id="" class="chk-cst">
-                <label for=""></label>
-                <label for="">레포츠</label>
-            </span>
-            <span class="ipCst">
-                <input type="checkbox" id="" class="chk-cst">
-                <label for=""></label>
-                <label for="">체험/축제</label>
-            </span>
+        <div class="d1">
+            <span class="c-ic i-gCal"></span>
+            <span class="inDate">2017-09-20</span>
+            <span class="mgl"></span>
+            <span class="c-ic i-gSpot"></span>
+            <span class="regName">강원</span>
+            <span class="regDetail">속초시</span>
 
-            <input type="text" class="reset inp" placeholder="티켓, 지역 입력">
-            <a href="javascript:;" class="a-btn">검색</a>
+            <!--달력-->
+            <% include ../components/calendar/_calendar_dbSg.ejs %>
+
+            <!--지역-->
+            <div class="rnSltReg rn-modal">
+                <div class="slt-dep1">
+                    <ul class="clr">
+                        <li><a href="javascript:;">서울</a></li>
+                        <li><a href="javascript:;">경기</a></li>
+                        <li><a href="javascript:;">인천</a></li>
+                        <li class="on"><a href="javascript:;">강원</a></li>
+                        <li><a href="javascript:;">대전</a></li>
+                        <li><a href="javascript:;">충북</a></li>
+                        <li><a href="javascript:;">충남</a></li>
+                        <li><a href="javascript:;">부산</a></li>
+                        <li><a href="javascript:;">울산</a></li>
+                        <li><a href="javascript:;">경남</a></li>
+                        <li><a href="javascript:;">대구</a></li>
+                        <li><a href="javascript:;">경북</a></li>
+                        <li><a href="javascript:;">광주</a></li>
+                        <li><a href="javascript:;">전남</a></li>
+                        <li><a href="javascript:;">전북</a></li>
+                        <li><a href="javascript:;">제주</a></li>
+                    </ul>
+                </div>
+                <div class="slt-dep2">
+                    <ul class="clr">
+                        <li><a href="javascript:;">평창군</a></li>
+                        <li><a href="javascript:;">강릉시</a></li>
+                        <li><a href="javascript:;">춘천시</a></li>
+                        <li><a href="javascript:;">양양군</a></li>
+                        <li><a href="javascript:;">홍천군</a></li>
+                        <li><a href="javascript:;">속초시</a></li>
+                        <li><a href="javascript:;">횡성군</a></li>
+                        <li><a href="javascript:;">고성군</a></li>
+                        <li><a href="javascript:;">원주시</a></li>
+                        <li><a href="javascript:;">영원군</a></li>
+                        <li><a href="javascript:;">정선시</a></li>
+                        <li><a href="javascript:;">동해시</a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </div>
+</div>
+<div class="rnL-ctgr bsLs" id="rnL-ctgr">
+    <div class="rn-container">
+        <ul class="ul1 clr">
+            <li class="on"><a href="#">전체</a></li>
+            <li><a href="#">워터파크</a></li>
+            <li><a href="#">테마파크</a></li>
+            <li><a href="#"></a>키즈</li>
+            <li><a href="#">입장권</a></li>
+            <li><a href="#">레포츠</a></li>
+            <li><a href="#">체험/축제</a></li>
+        </ul>
+
+        <!-- product 페이지 비노출 -->
+        <!-- <div class="slt-mf">
+            <span class="c-ic i-mapv"></span>
+            <span class="s-txt"></span>
+            <span class="c-ic i-dArr"></span>
+        </div> -->
     </div>
 </div>

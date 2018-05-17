@@ -182,17 +182,6 @@
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 a {min-width:auto;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 a.on {color: #fa6b0a;}
 
-    /* 달력 이용날짜 */
-.caltype-1 .rnSltCal {width: 345px; padding-bottom: 12px;}
-.caltype-1 .rnSltCal .cal-inner {width: 100%;}
-.caltype-1 .rnSltCal .cal-tb td > div {padding: 6px 0;}
-.caltype-1 .rnSltCal .d-area {margin-top: 0;}
-.caltype-1 .rnSltCal .d-area a {display:block; width:auto;}
-.caltype-1 .rnSltCal .d-area .a1 {margin-bottom:10px;}
-
-
-
-
 
 /* 카테고리 픽토그램 링크*/
 .rnM-contents .pic-sec {position: relative; height: 180px; background: #fff; margin: 0 auto;}

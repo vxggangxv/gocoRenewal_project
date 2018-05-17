@@ -91,13 +91,14 @@ $(function() {
 	});
 
 	// 자주묻는질문
-	$("#faq table tr:odd").click(function() {
+	$("#faq table tbody tr:even").click(function() {
+		console.log('hi');
 		var scr = $(this).offset().top;
 		$(window).scrollTop(scr);
 
 		$(this).toggleClass('on').siblings().removeClass('on');
 
-		$("#faq table tbody tr:even").hide();
+		$("#faq table tbody tr:odd").hide();
 		if ( $(this).hasClass('on') ) {
 			$(this).next().show();
 		} else {

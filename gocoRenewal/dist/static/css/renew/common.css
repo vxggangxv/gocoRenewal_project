@@ -542,6 +542,20 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .pdtCal .cal-tb td > div {height: 100%; font-size: 13px;}
 .pdtCal .cal-tb td .s-txt {position: relative; right: 7px; display: inline-block; margin-top: 1px;}
 
+/* 달력 1개짜리 이용날짜 */
+.rnSltCal.caltype-1,
+.caltype-1 .rnSltCal {width: 345px; padding-bottom: 12px;}
+.rnSltCal.caltype-1 .cal-inner,
+.caltype-1 .rnSltCal .cal-inner {width: 100%;}
+.rnSltCal.caltype-1 .cal-tb td > div,
+.caltype-1 .rnSltCal .cal-tb td > div {padding: 6px 0;}
+.rnSltCal.caltype-1 .d-area,
+.caltype-1 .rnSltCal .d-area {margin-top: 0;}
+.rnSltCal.caltype-1 .d-area a,
+.caltype-1 .rnSltCal .d-area a {display:block; width:auto;}
+.rnSltCal.caltype-1 .d-area .a1,
+.caltype-1 .rnSltCal .d-area .a1 {margin-bottom:10px;}
+
 /* 토, 일 체크*/
 .pdtCal .cal-tb td.spPrc .prc {color: #014b8e;}
 .pdtCal .cal-tb .sat, .pdtCal .cal-tb td.sat .prc {color: #00aeff;}

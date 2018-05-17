@@ -240,6 +240,10 @@ function cal_ajax() {
 		data	:	$("form[name='date_form']").serialize(),
 		success	:	function(e) {
 			$("#rnSltCal").html(e);
+			if($("input[name='month']").val() == 0) {
+				$("#rnSltCal2").html(e);
+				$("#rnSltCal").html("");
+			}
 		}
 	})
 }

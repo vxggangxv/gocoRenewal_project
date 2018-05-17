@@ -24,10 +24,10 @@
 
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/ion.rangeSlider.css">
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/ion.rangeSlider.custom.css">
-    <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
-<link rel="stylesheet" href="http://static.go.co.kr/css/renew/search/init.css"> -->
-    <link rel="stylesheet" href="/static/css/renew/common.css">
-    <link rel="stylesheet" href="/static/css/renew/search/init.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/search/init.css">
+    <!-- <link rel="stylesheet" href="/static/css/renew/common.css">
+<link rel="stylesheet" href="/static/css/renew/search/init.css"> -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="http://code.jquery.com/jquery.min.js"></script>
@@ -38,10 +38,10 @@
 
     <script src="http://static.go.co.kr/js/renew/libs/jquery.lazyload.min.js"></script>
     <script src="http://static.go.co.kr/js/renew/libs/ion.rangeSlider.min.js"></script>
-    <!-- <script src="http://static.go.co.kr/js/renew/common.js"></script>
-<script src="http://static.go.co.kr/js/renew/search/init.js"></script> -->
-    <script src="/static/js/renew/common.js"></script>
-    <script src="/static/js/renew/search/init.js"></script>
+    <script src="http://static.go.co.kr/js/renew/common.js"></script>
+    <script src="http://static.go.co.kr/js/renew/search/init.js"></script>
+    <!-- <script src="/static/js/renew/common.js"></script>
+<script src="/static/js/renew/search/init.js"></script> -->
 
 </head>
 <!-- 180320 필터 없을경우 body클래스 추가, 입장권일 경우 case-ticket 추가 -->
@@ -273,7 +273,7 @@
                             <!-- <li><a href="/views/search" class="myArea"><span class="c-ic i-comp"></span> 내 주변</a></li> -->
                             <li><a href="#">예약내역 <span class="i-new"></span></a>
                             </li>
-                            <li><a href="#">마이페이지</a>
+                            <li><a href="/views/mypage/">마이페이지</a>
                             </li>
                             <li class="last"><a href="#" class="lgn">로그아웃</a>
                             </li>
@@ -646,77 +646,301 @@
 
         <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
         <div id="backDrop"></div>
-        <div class="rnL-ctgr-ticket bsLs" id="rnL-ctgr-ticket">
+        <div class="rnL-ts bsLs" id="rnL-ts">
             <div class="rn-container">
-                <div class="ft-ticket">
-                    <span class="ipCst">
+                <div class="d1">
+                    <span class="c-ic i-gCal"></span>
+                    <span class="inDate">2017-09-20</span>
+                    <span class="mgl"></span>
+                    <span class="c-ic i-gSpot"></span>
+                    <span class="regName">강원</span>
+                    <span class="regDetail">속초시</span>
 
-                <input type="checkbox" id="tk-chk1" class="chk-cst">
+                    <!--달력-->
+                    <div class="rnSltCal rn-modal clr caltype-1">
+                        <div class="cal-inner">
+                            <p class="p-1">
+                                <a href="" class="prev-a"></a>
+                                <em>2017년 06월</em>
+                                <a href="" class="next-a"></a>
+                            </p>
+                            <table class="cal-tb">
+                                <thead>
+                                    <tr>
+                                        <th class="sun">일</th>
+                                        <th>월</th>
+                                        <th>화</th>
+                                        <th>수</th>
+                                        <th>목</th>
+                                        <th>금</th>
+                                        <th class="sat">토</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="off">
+                                            <div></div>
+                                        </td>
+                                        <td class="off">
+                                            <div></div>
+                                        </td>
+                                        <td class="off">
+                                            <div></div>
+                                        </td>
+                                        <td class="off">
+                                            <div></div>
+                                        </td>
+                                        <td class="off">
+                                            <div>1</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>2</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>3</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="off">
+                                            <div>4</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>5</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>6</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>7</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>8</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>9</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>10</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="off">
+                                            <div>11</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>12</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>13</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>14</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>15</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>16</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>17</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="off">
+                                            <div>18</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>19</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>20</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>21</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>22</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>23</div>
+                                        </td>
+                                        <td class="off">
+                                            <div>24</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="off">
+                                            <div>25</div>
+                                        </td>
+                                        <!--날짜 선택시-->
+                                        <td class="chkIn">
+                                            <div>26</div>
+                                        </td>
+                                        <td>
+                                            <div>27</div>
+                                        </td>
+                                        <td>
+                                            <div>28</div>
+                                        </td>
+                                        <td>
+                                            <div>29</div>
+                                        </td>
+                                        <td>
+                                            <div>30</div>
+                                        </td>
+                                        <td>
+                                            <div></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <div></div>
+                                        </td>
+                                        <td>
+                                            <div></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                <label for="tk-chk1"></label>
+                        <div class="clr"></div>
+                        <div class="d-area">
+                            <a href="#" class="a1"><span class="c-ic i-today"></span> 오늘 날짜로 변경</a>
+                            <!--날짜 미선택시-->
+                            <!--<a href="#" class="a2">선택완료</a>-->
+                            <!--날짜 선택시-->
+                            <a href="#" class="a2 on">선택완료</a>
+                        </div>
+                    </div>
 
-                <label for="tk-chk1">전체</label>
 
-            </span>
-                    <span>|</span>
-                    <span class="ipCst">
-
-                <input type="checkbox" id="" class="chk-cst">
-
-                <label for=""></label>
-
-                <label for="">워터파크</label>
-
-            </span>
-                    <span class="ipCst">
-
-                <input type="checkbox" id="" class="chk-cst">
-
-                <label for=""></label>
-
-                <label for="">테마파크</label>
-
-            </span>
-                    <span class="ipCst">
-
-                <input type="checkbox" id="" class="chk-cst">
-
-                <label for=""></label>
-
-                <label for="">키즈</label>
-
-            </span>
-                    <span class="ipCst">
-
-                <input type="checkbox" id="" class="chk-cst">
-
-                <label for=""></label>
-
-                <label for="">입장권</label>
-
-            </span>
-                    <span class="ipCst">
-
-                <input type="checkbox" id="" class="chk-cst">
-
-                <label for=""></label>
-
-                <label for="">레포츠</label>
-
-            </span>
-                    <span class="ipCst">
-
-                <input type="checkbox" id="" class="chk-cst">
-
-                <label for=""></label>
-
-                <label for="">체험/축제</label>
-
-            </span>
-
-                    <input type="text" class="reset inp" placeholder="티켓, 지역 입력">
-                    <a href="javascript:;" class="a-btn">검색</a>
+                    <!--지역-->
+                    <div class="rnSltReg rn-modal">
+                        <div class="slt-dep1">
+                            <ul class="clr">
+                                <li><a href="javascript:;">서울</a>
+                                </li>
+                                <li><a href="javascript:;">경기</a>
+                                </li>
+                                <li><a href="javascript:;">인천</a>
+                                </li>
+                                <li class="on"><a href="javascript:;">강원</a>
+                                </li>
+                                <li><a href="javascript:;">대전</a>
+                                </li>
+                                <li><a href="javascript:;">충북</a>
+                                </li>
+                                <li><a href="javascript:;">충남</a>
+                                </li>
+                                <li><a href="javascript:;">부산</a>
+                                </li>
+                                <li><a href="javascript:;">울산</a>
+                                </li>
+                                <li><a href="javascript:;">경남</a>
+                                </li>
+                                <li><a href="javascript:;">대구</a>
+                                </li>
+                                <li><a href="javascript:;">경북</a>
+                                </li>
+                                <li><a href="javascript:;">광주</a>
+                                </li>
+                                <li><a href="javascript:;">전남</a>
+                                </li>
+                                <li><a href="javascript:;">전북</a>
+                                </li>
+                                <li><a href="javascript:;">제주</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="slt-dep2">
+                            <ul class="clr">
+                                <li><a href="javascript:;">평창군</a>
+                                </li>
+                                <li><a href="javascript:;">강릉시</a>
+                                </li>
+                                <li><a href="javascript:;">춘천시</a>
+                                </li>
+                                <li><a href="javascript:;">양양군</a>
+                                </li>
+                                <li><a href="javascript:;">홍천군</a>
+                                </li>
+                                <li><a href="javascript:;">속초시</a>
+                                </li>
+                                <li><a href="javascript:;">횡성군</a>
+                                </li>
+                                <li><a href="javascript:;">고성군</a>
+                                </li>
+                                <li><a href="javascript:;">원주시</a>
+                                </li>
+                                <li><a href="javascript:;">영원군</a>
+                                </li>
+                                <li><a href="javascript:;">정선시</a>
+                                </li>
+                                <li><a href="javascript:;">동해시</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="rnL-ctgr bsLs" id="rnL-ctgr">
+            <div class="rn-container">
+                <ul class="ul1 clr">
+                    <li class="on"><a href="#">전체</a>
+                    </li>
+                    <li><a href="#">워터파크</a>
+                    </li>
+                    <li><a href="#">테마파크</a>
+                    </li>
+                    <li>
+                        <a href="#"></a>키즈</li>
+                    <li><a href="#">입장권</a>
+                    </li>
+                    <li><a href="#">레포츠</a>
+                    </li>
+                    <li><a href="#">체험/축제</a>
+                    </li>
+                </ul>
+
+                <!-- product 페이지 비노출 -->
+                <!-- <div class="slt-mf">
+            <span class="c-ic i-mapv"></span>
+            <span class="s-txt"></span>
+            <span class="c-ic i-dArr"></span>
+        </div> -->
             </div>
         </div>
 
