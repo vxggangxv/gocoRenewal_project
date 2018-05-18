@@ -209,6 +209,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 
 /* 입장권 콘텐츠 수정 */
 .case-ticket .rnL-contents {/*margin-top: 190px;*/ /*margin-top: 158px;*/}
+.rnSltCal.caltype-1 + .rnSltReg {left: 285px;}
 
 /* 입장권 필터 */
 .rnL-ctgr-ticket {position: fixed; /*top: 133px;*/ top: 96px; left: 0; height: 62px; width: 100%; background: #f5f5f5; border-bottom: 1px solid #ddd;}

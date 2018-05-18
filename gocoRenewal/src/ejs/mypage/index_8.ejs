@@ -1,0 +1,61 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container rn-container02">
+                <!-- 좌측 네비게이션 -->
+                <% include ../parts/mypage/_lab.ejs %>
+
+                <div class="main main-member bsLs">
+                    <section class="sec-cmm cf sec-member">
+                        <h2>회원정보관리 <span class="sm">개인정보 보호를 위해 비밀번호를 다시 한번 확인합니다.</span></h2>
+
+                        <table class="tb-member">
+                            <colgroup>
+                                <col class="nth-1">
+                                <col class="nth-2">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>아이디</th>
+                                    <td>devtest1</td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호</th>
+                                    <td><input type="text" class="pwd"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <!-- main end -->
+
+            </div>
+        </div>
+
+        <% include ../parts/components/laypop/_inquiry1on1.ejs %>
+        <% include ../parts/components/laypop/_cancle.ejs %>
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>

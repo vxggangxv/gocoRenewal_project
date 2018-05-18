@@ -10,7 +10,7 @@
 
     <% include ../parts/head/_headScript.ejs %>
     <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
-    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <script src=""></script>
     <% include ../parts/head/_commonScript.ejs %>
 </head>
 <body>
@@ -27,22 +27,78 @@
                 <!-- 좌측 네비게이션 -->
                 <% include ../parts/mypage/_lab.ejs %>
 
-                <div class="main main-myFaq bsLs">
-                    <section class="sec-cmm cf sec-mfHistory">
+                <div class="main main-myInquiry bsLs">
+                    <section class="sec-cmm cf sec-myInq">
                         <h2 class="cf">
-                            나의 문의내역 <span class="sm">FAQ에서 해결하지 못한 궁금증이 있으시면 문의글을 남겨주세요</span>
-                            <span class="pull-right s-r">
-                                <a href="javascipt:;" onclick="popOpen('.inquiry1on1')" class="btn-q">문의하기</a>
-                                <a href="" class="btn-allq">
-                                    <span class="box-bar">
-                                        <span class="bar bar-1"></span>
-                                        <span class="bar bar-2"></span>
-                                        <span class="bar bar-3"></span>
-                                    </span>
-                                    전체 문의내역
-                                </a>
-                            </span>
+                            나의 문의내역 <span class="sm">특정 상품에 관한 문의는 해당 상품 상세페이지의 Q&A를 이용하시면 더욱 편리합니다.</span>
                         </h2>
+                        <table class="tb-bk tb-myInq">
+                            <colgroup>
+                                <col class="nth-1">
+                                <col class="nth-2">
+                                <col class="nth-3">
+                                <col class="nth-4">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>질문구분</th>
+                                    <td colspan="3">예약변경/취소관련</td>
+                                </tr>
+                                <tr>
+                                    <th>제목</th>
+                                    <td colspan="3">기타 문의드려요</td>
+                                </tr>
+                                <tr>
+                                    <th>문의상품</th>
+                                    <td colspan="3">[최근 본 시설]</td>
+                                </tr>
+                                <tr>
+                                    <th>이메일</th>
+                                    <td>jiyongkim@ebiznetworks.co.kr</td>
+                                    <th>연락처</th>
+                                    <td>010-1234-5678</td>
+                                </tr>
+                                <tr>
+                                    <th>작성자명</th>
+                                    <td>김지영</td>
+                                    <th>등록일</th>
+                                    <td>2018-01-22</td>
+                                </tr>
+                                <tr class="pl-0">
+                                    <td colspan="4" class="borb-0">
+                                        <div class="box-txt">
+                                            시설명: 테스트입니다<br>
+                                            요청일:<br>
+                                            객실타입:<br>
+                                            인원수:<br>
+                                            입실일:<br>
+                                            퇴실일:<br>
+                                            문의내용: 문자 발송 내역 확인 테스트입니다.
+                                        </div>
+                                        <div class="box-answer">
+                                            <p class="p-date">
+                                                <span class="thColor1">ㄴ 고코투어</span> 2018-01-22<br>
+                                            </p>
+                                            [고코투어]<br>
+                                            Q&amp;A게시판 답변이 완료되었습니다.<br>
+                                            답변확인하기<br>
+                                            http://m.go.co.kr/s/?q=2&s=G
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="d-row-btn">
+                            <a href="" class="btn-1">목록</a>
+                            <a href="" class="btn-2">삭제</a>
+                            <a href="" class="btn-3">수</a>
+                        </div>
+
+                    </section>
+
+                    <section class="sec-cmm cf sec-mfHistory">
                         <table class="tb-bk tb-myFaq">
                             <colgroup>
                                 <col class="nth-1">
@@ -102,26 +158,12 @@
                             <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span><span class="ic-rArrow"></span></a>
                         </div>
                     </section>
-
-                    <section class="sec-cmm cf sec-faq">
-                        <div class="row-h cf">
-                            <h2 class="pull-left;">FAQ 자주묻는 질문 <span class="sm">여행에 대한 궁금증을 찾아보세요</span></h2>
-                            <span class="sch-box cf pull-right">
-        						<input name="keyword" class="in" type="text" value="" placeholder="무엇을 도와드릴까요?" onkeypress="if(event.keyCode == 13) { search_faq(); return false; }">
-        						<a href="javascript:search_faq();" class="i-mag">검색</a>
-        					</span>
-                        </div>
-
-                        <!-- faq 인클루드 -->
-                        <% include ../parts/mypage/_faq.ejs %>
-                    </section>
                 </div>
                 <!-- main end -->
 
             </div>
         </div>
 
-        <% include ../parts/components/laypop/_inquiry1on1.ejs %>
         <% include ../parts/components/laypop/_cancle.ejs %>
         <% include ../parts/_footer.ejs %>
     </div>

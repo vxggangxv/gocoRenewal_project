@@ -1,0 +1,414 @@
+<% include ../parts/_docHead.ejs %>
+
+    <head>
+        <!-- <%= initPage = '/product/' %> -->
+        <% include ../parts/head/_headMeta.ejs %>
+            <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+            <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+            <% include ../parts/head/_commonCss.ejs %>
+                <% include ../parts/head/_headScript.ejs %>
+                    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+                    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+                    <script src="http://static.go.co.kr/js/renew/libs/jquery.lazyload.min.js"></script>
+                    <% include ../parts/head/_commonScript.ejs %>
+    </head>
+
+    <body>
+        <h1 class="hidden">고코투어</h1>
+        <div class="rn-gwrap">
+            <% include ../parts/_header.ejs %>
+
+                <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+                <div id="backDrop"></div>
+                <% include ../parts/search/_filterBar_ticket.ejs %>
+
+                    <!--전체 콘텐츠 영역-->
+                    <div class="rn-contents">
+                        <!--상품소개-->
+                        <section class="rn-container sec-prd-basic type-ticket">
+                            <h2>[공연/전시] [대학로/연극] 극적인하룻밤
+
+
+
+                    <span class="pull-right d1">
+
+						<a class="a1" href="javascript:;"><span>리얼리뷰</span> <span class="thColor1 num">435</span><span>건</span></a>
+
+						<span class="mgl"></span>
+
+						<a class="a2" href="javascript:;" onclick="$(this).toggleClass('on');"><span class="c-ic3 prd-cmm i-heart"></span><span class="s1">찜하기</span></a>
+
+						<span class="mgl"></span>
+
+						<a class="a4" href="javascript:;"><span class="c-ic3 prd-cmm i-users"></span><span class="s1">단체문의</span></a>
+
+                    </span>
+
+                </h2>
+
+                            <div class="prd-basic clr type-ticket">
+                                <div class="prd-imgBox">
+                                    <ul class="bxS">
+                                        <li style="background: url(http://cache.go.co.kr/media/375/ticketsuda.com/upfiles/product/3452722843.jpg) no-repeat; background-size: cover;"></li>
+                                    </ul>
+                                </div>
+                                <div class="prd-infoBox" id="prd-infBox">
+                                    <div class="d3 d-cmm">
+                                        <span class="s-lbl">기간</span>
+                                        <span class="s-txt">2018.01.01 ~ 2018.03.31</span>
+                                    </div>
+                                    <div class="d4 d-cmm">
+                                        <span class="s-lbl">장소</span>
+                                        <span class="s-txt">서울특별시 종로구 동숭동 1-60 5층 바탕골소극장</span>
+                                        <a href="javascript:;">
+                                            <img class="mvImg" src="http://img.go.co.kr/landing/point_icon02.jpg" alt="지도보기">
+                                        </a>
+                                    </div>
+                                    <div class="d-cmm row-icon">
+                                        <span class="s-lbl">공유하기</span>
+                                        <span class="s-txt s-icon">
+
+                                <a href=""><i class="c-ic i-facebook"></i></a>
+
+                                <a href=""><i class="c-ic i-twitter"></i></a>
+
+                                <a href=""><i class="c-ic i-link"></i></a>
+
+                                <a href=""><i class="c-ic i-at"></i></a>
+
+                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!--상품리스트-->
+                        <section class="rn-container sec-prd-listTb sec-prd-listShow">
+                            <table class="tb-show">
+                                <colgroup>
+                                    <col class="nth-1">
+                                        <col class="nth-2">
+                                            <col class="nth-3">
+                                                <col class="nth-4">
+                                                    <col class="nth-5">
+                                                        <col class="nth-6">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="nth-1">회차선택</th>
+                                        <th class="nth-2">권종</th>
+                                        <th class="nth-3">잔여수량</th>
+                                        <th class="nth-4">할인가</th>
+                                        <th class="nth-5">수량선택</th>
+                                        <th class="nth-6">결제금액</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="nth-1">
+                                            <select name="" id="">
+                                                <option value="">회차를 선택해주세요</option>
+                                                <option value="">03월 31일 토 16시 10분</option>
+                                                <option value="">03월 31일 토 18시 10분</option>
+                                            </select>
+                                        </td>
+                                        <!-- 기본 -->
+                                        <!-- <td class="nth-2">-</td> -->
+                                        <!-- 선택 시 -->
+                                        <td class="nth-2">주말 1인 관람권</td>
+                                        <td class="nth-3">8매</td>
+                                        <td class="nth-4"><span class="colr-red f-bd">16,500원</span>
+                                        </td>
+                                        <td class="nth-5">
+                                            <p class="quan clr">
+                                                <span class="s-l">-</span>
+                                                <input type="text" class="inp on" value="2"><span class="s-r">+</span>
+                                            </p>
+                                        </td>
+                                        <td class="nth-6"><span class="f-bd">33,000원</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="tb-pay">
+                                <colgroup>
+                                    <col class="nth-1">
+                                        <col class="nth-2">
+                                            <col class="nth-3">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="nth-1">선택상품</td>
+                                        <td class="nth-2">
+                                            <p class="f-bd">상품명</p>
+                                            <p>03월 31일 토 16시 10분 ㅣ 주말 1인 관람권 <span class="colr-red">2매</span>
+                                            </p>
+                                        </td>
+                                        <td class="nth-3">
+                                            <span class="square"></span>
+                                            <div class="d-prc">
+                                                최종 결제금액
+                                                <span class="colr-red num">33,000</span>  <span class="sm colr-red">원</span>
+                                            </div>
+                                            <div class="area-btn">
+                                                <span class="appH">
+
+                                        <a href="" class="nth-1">앱으로 구매</a>
+
+                                        <span class="btn-sale" onclick="popOpen('.popup-app-download')">앱 추가할인</span>
+                                                </span>
+                                                <a href="" class="nth-2">결제하기</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 하나 일 경우 -->
+                            <div class="area-ctFaq one">
+                                <ul class="ctFaq-tab cf">
+                                    <li class="tab-1 on">구매전 꼭 확인하세요!</li>
+                                </ul>
+                                <ul class="ctFaq-contents">
+                                    <li class="contents-1 on">
+                                        <table class="tb-ctFaq tb-ct">
+                                            <colgroup>
+                                                <col class="nth-1">
+                                                    <col class="nth-2">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="nth-1">안내 및 유의사항</td>
+                                                    <td class="nth-2">
+                                                        - 일요일 마지막회차 : 13,500원(2월)
+                                                        <br>· 02-03월 공연 일정
+                                                        <br>- 월~금 15:00, 17:00, 20:00
+                                                        <br>- 토~일 14:00, 16:10, 18:10, 20:15
+                                                        <br>* 02월14일 14:00, 16:10, 18:10, 20:15 -토요일판매가
+                                                        <br>* 02월15일 14:00, 16:10, 18:10 -토요일판매가
+                                                        <br>* 02월16일 15:00, 17:15, 19:15 -토요일판매가
+                                                        <br>
+                                                        <br>* 3월01일 14:00, 16시01분, 18시10분,20시15분-토요일 판매가
+                                                        <br>* 3월14일 15:00, 17:00, 20:00 -평일가
+                                                        <br>* 02월26일 ~ 28일 17:00, 20:00
+                                                        <br>
+                                                        <span class="colr-red f-bd">[연중무휴]</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" class="td-sun">
+                                                        <div class="sun"></div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="nth-1"></td>
+                                                    <td class="nth-2">
+                                                        <span class="f-bd">· 3월 가격 안내</span>
+                                                        <br>- 평일 10,900원
+                                                        <br>- 문화의날(마지막주 수요일,3/28) 9,000원
+                                                        <br>- 토요일 14:00, 16:00, 18:10, 20:15 16,500원
+                                                        <br>- 일요일 14:00, 16:00, 18:10 16,500원
+                                                        <br>- 일요일 마지막회차(20:15) 12,900원
+                                                        <br>* 2월부터 일요일 마지막회차 13,500원
+                                                        <br>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </section>
+
+                        <!--상품 상세 설명-->
+                        <section class="sec-prd-common">
+                            <div class="area-prd-dtTicket" id="area-prd-detail">
+
+                                <div class="area-tab">
+                                    <ul class="rn-container ul-tab clr">
+                                        <li class="on"><a href="javascript:;">상품소개</a>
+                                        </li>
+                                        <li class=""><a href="javascript:;">이용후기</a>
+                                        </li>
+                                        <li class=""><a href="javascript:;">오시는길</a>
+                                        </li>
+                                        <li class=""><a href="javascript:;">축제/관광지/맛집</a>
+                                        </li>
+                                        <li class=""><a href="javascript:;">상품문의</a>
+                                        </li>
+                                        <li class=""><a href="javascript:;">자주묻는질문</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <ul class="rn-container ul-contents">
+                                    <li class="on li-introTk clr">
+                                        <div class="box-1 clr">
+                                            <span class="info_txt">
+
+                                    <img class="img-full" src="http://v3.ticketsuda.com/upfiles/geditor/1211/ticketsuda005.jpg" data-original="http://v3.ticketsuda.com/upfiles/geditor/1211/ticketsuda005.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/ticket_info.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/ticket_info.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_01.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_01.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_03.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_03.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_04.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_04.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_02_01.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_02_01.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_02_02.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_02_02.jpg" alt="상품소개"><br>
+
+                                    <img class="img-full"src="http://ticketsuda.com/upfiles/geditor/1211/haroo_07.jpg" data-original="http://ticketsuda.com/upfiles/geditor/1211/haroo_07.jpg" alt="상품소개"><br>
+
+                                </span>
+                                            <script>
+                                                $(function() {
+                                                    // 이미지 로딩 최적화
+                                                    $("#area-prd-detail img.img-full").lazyload({
+                                                        effect: "fadeIn"
+                                                    });
+                                                });
+                                            </script>
+                                        </div>
+                                        <div class="box-2" id="introTk-side">
+                                            <div class="d-1">
+                                                <em class="tit f-bd">[대학로/연극] 극적인하룻밤</em>
+                                                <hr class="sun">
+
+                                                <!-- 선택한 상품 없을 때, 회차선택하기 클릭시 상단으로 이동 -->
+                                                <!-- <div class="area-sltedItm">
+                                        <p class="f-bd mt-1">선택한 상품</p>
+                                        <a href="#" class="a-btn">회차 선택하기</a>
+                                    </div> -->
+                                                <!-- 선택한 상품 있을 때 -->
+                                                <div class="area-sltedItm">
+                                                    <p class="f-bd mt-1">선택한 상품 (<span class="colr-org">1</span>)</p>
+                                                    <div class="sltedItm">
+                                                        <a href="javascript:;" class="a-i-x a-x"></a>
+                                                        <p class="name f-bd">
+                                                            03월 31일 토 16시 10분
+                                                            <br>주말 1인 관람권
+                                                        </p>
+                                                        <hr class="sun">
+                                                        <div>
+                                                            <p class="quan clr">
+                                                                <span class="s-l">-</span>
+                                                                <input type="text" class="inp on" value="2"><span class="s-r">+</span>
+                                                            </p>
+                                                            <span class="flt-r">
+
+                                                    <span class="f-bdr prc">33,000원</span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="d-2">
+                                                <p class="row-prc clr">
+                                                    <span class="s-1 f-bd">최종 결제금액</span>
+                                                    <span class="s-2 f-bd">
+
+                                            <span class="colr-red num">33,000</span><span class="colr-red sm">원</span>
+                                                    </span>
+                                                </p>
+                                                <p class="area-btn">
+                                                    <span class="appH">
+
+                                            <a href="" class="nth-1">앱으로 구매</a>
+
+                                            <span class="btn-sale" onclick="popOpen('.popup-app-download')">앱 추가할인</span>
+                                                    </span>
+                                                    <a href="" class="nth-2">결제하기</a>
+                                                </p>
+                                            </div>
+                                            <div class="d-3 clr">
+                                                <a class="a-1" href="#area-prd-detail">
+                                                    <span class="c-ic i-ticket"></span>
+                                                    <span class="ta-left">이용권<br>필수정보</span>
+                                                </a>
+                                                <span class="sun sun-1"></span>
+                                                <a class="a-2" href="#area-prd-detail">
+                                                    <span class="c-ic i-info"></span>
+                                                    <br>이용기준
+                                                </a>
+                                                <span class="sun sun-2"></span>
+                                                <a class="a-3" href="javascript:;">
+                                                    <span class="c-ic i-group"></span>
+                                                    <br>단체문의
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- 공통 부분 (이용후가, 오시는길, 축제, 상품문의, 질문) -->
+                                    <% include ../parts/product/_commonDetail.ejs %>
+
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!--주변 다른 숙소-->
+                        <section class="sec-prd-around">
+                            <div class="prd-around">
+                                <h2>[<strong>오션투유 리조트</strong>] 주변 다른 숙소도 보시겠어요?</h2>
+
+                                <ul class="ul-list clr">
+                                    <li class="li-item">
+                                        <a href="">
+                                            <figure>
+                                                <img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1476348760_main1.jpg" alt="현대수콘도미니엄">
+                                            </figure>
+                                            <div class="d-txt">
+                                                <p class="p-name">현대수콘도미니엄</p>
+                                                <p class="p-pric"><span class="f-bd">52,000</span>원</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="li-item">
+                                        <a href="">
+                                            <figure>
+                                                <img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1498529278_main1.jpg" alt="낙산비치호텔">
+                                            </figure>
+                                            <div class="d-txt">
+                                                <p class="p-name">낙산비치호텔</p>
+                                                <p class="p-pric"><span class="f-bd">77,000</span>원</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="li-item">
+                                        <a href="">
+                                            <figure>
+                                                <img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1503900859_main1.jpg" alt="동강시스타리조트">
+                                            </figure>
+                                            <div class="d-txt">
+                                                <p class="p-name">동강시스타리조트</p>
+                                                <p class="p-pric"><span class="f-bd">84,900</span>원</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="li-item">
+                                        <a href="">
+                                            <figure>
+                                                <img src="http://cache.go.co.kr/media/375/file.go.co.kr/tour/img3/1488170837_main1.jpg" alt="강릉관광호텔">
+                                            </figure>
+                                            <div class="d-txt">
+                                                <p class="p-name">강릉관광호텔</p>
+                                                <p class="p-pric"><span class="f-bd">80,000</span>원</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                    <% include ../parts/_footer.ejs %>
+        </div>
+
+    </body>
+
+    </html>
