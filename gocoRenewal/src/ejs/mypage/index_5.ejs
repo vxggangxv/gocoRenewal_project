@@ -1,0 +1,131 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container rn-container02">
+                <!-- 좌측 네비게이션 -->
+                <% include ../parts/mypage/_lab.ejs %>
+
+                <div class="main main-reviews bsLs">
+                    <section class="sec-cmm cf sec-revHistory">
+                        <h2>나의 이용후기</h2>
+                        <p class="p-row-1">
+                            고객님께서 작성하신 상품평을 확인하실 수 있습니다.<br>
+                            도착일(호텔은 퇴실일) 이후부터 이용후기 작성이 가능합니다.
+                        </p>
+                        <table class="tb-bk tb-rev">
+                            <colgroup>
+                                <col class="nth-1">
+                                <col class="nth-2">
+                                <col class="nth-3">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="nth-1">이용후기</th>
+                                    <th class="nth-2">별점</th>
+                                    <th class="nth-3">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 내용 없을 경우 -->
+                                <!-- <tr class="nothing">
+                                    <td colspan="6">
+                                        <p>작성하신 이용 후기가 없습니다.</p>
+                                    </td>
+                                </tr> -->
+                                <!-- 내용 있을 경우 -->
+                                <tr>
+                                    <td class="nth-1">
+                                        <figure>
+                                            <img width="138" height="72" alt="" src="http://cache.go.co.kr/media/140/file.go.co.kr/tour/img3/1514427470_main1.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+                                        </figure>
+                                        <div class="txt cf">
+                                            <p class="p-1 f-bd">[리조트] 오션투유리조트 속초설악비치 호텔앤콘도</p>
+                                            <p class="p-2">
+                                                이벤트 당첨되서 재세공과금만 내고 숙박했는데 기대를 안하고 가서 그런지 생각보다<br>
+                                                나쁘진 않았어요~리노베이션 된곳이라그런지 더럽거나 그러진않았지만 침대 ...
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="nth-2">
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+                                    </td>
+                                    <td class="nth-3">
+                                        2018.04.13
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nth-1">
+                                        <figure>
+                                            <img width="138" height="72" alt="" src="http://cache.go.co.kr/media/140/file.go.co.kr/tour/img3/1476348760_main1.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
+                                        </figure>
+                                        <div class="txt cf">
+                                            <p class="p-1 f-bd">[리조트/콘도] 속초현대수콘도미니엄</p>
+                                            <p class="p-2">
+                                                물잘나오고 방도 따끈하고 잘 놀다왔습니다 강원도는 너무 많이갛다왔는지ㅎㅎㅎ돌아<br>
+                                                다닐때가 별루 없던것같아요 다음에는 다른대로 가야겠서요 수도 한 10번정도 ...
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td class="nth-2">
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+                                    </td>
+                                    <td class="nth-3">
+                                        2018.04.13
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="pagenation" id="pagenation">
+                            <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span><span class="ic-lArrow"></span></a>
+                            <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span></a>
+                            <a class="active" href="javascript:;">1</a>
+                            <a href="javascript:;">2</a>
+                            <a href="javascript:;">3</a>
+                            <a href="javascript:;">4</a>
+                            <a href="javascript:;">5</a>
+                            <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span></a>
+                            <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span><span class="ic-rArrow"></span></a>
+                        </div>
+                    </section>
+
+                </div>
+                <!-- main end -->
+
+            </div>
+        </div>
+
+        <% include ../parts/components/laypop/_cancle.ejs %>
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>

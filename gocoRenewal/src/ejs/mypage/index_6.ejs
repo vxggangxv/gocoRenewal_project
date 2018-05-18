@@ -27,86 +27,68 @@
                 <!-- 좌측 네비게이션 -->
                 <% include ../parts/mypage/_lab.ejs %>
 
-                <div class="main main-mypage bsLs">
-                    <p class="row-name">
-                        <span class="name">김지영(jiyoungkim)님, 안녕하세요!</span>
-                        <span class="s-r">
-                            <span class="point cf">
-                                <span class="txt">MY POINT</span>
-                                <span class="num"><span class="colr-org f-bdr">25,222</span>P</span>
-                            </span>
-                            <span class="pieces">
-                                <span class="coupon-per">
-                                    <span class="square01"></span><span class="square02">%</span>
-                                    <span class="sunV">
-                                            <span class="won"></span>
-                                            <span class="won"></span>
-                                            <span class="won"></span>
-                                            <span class="won"></span>
+                <div class="main main-myFaq bsLs">
+                    <section class="sec-cmm cf sec-mfHistory">
+                        <h2 class="cf">
+                            나의 문의내역 <span class="sm">FAQ에서 해결하지 못한 궁금증이 있으시면 문의글을 남겨주세요</span>
+                            <span class="pull-right s-r">
+                                <a href="" class="btn-q">문의하기</a>
+                                <a href="" class="btn-allq">
+                                    <span class="box-bar">
+                                        <span class="bar bar-1"></span>
+                                        <span class="bar bar-2"></span>
+                                        <span class="bar bar-3"></span>
                                     </span>
-                                </span>
-                                <span class="num f-bd"><span class="colr-org f-bdr">6</span>장</span>
+                                    전체 문의내역
+                                </a>
                             </span>
-                        </span>
-                    </p>
-
-                    <section class="sec-cmm cf sec-bkHistory">
-                        <h2>예약내역 조회</h2>
-                        <ul class="row-tab cf">
-                            <li class="tab-1 on">이용가능</li>
-                            <li class="tab-2">이용완료</li>
-                            <li class="tab-3">취소/환불</li>
-                        </ul>
-                        <!-- 이용가능 테이블 -->
-                        <table class="tb-bk tb-bk-1">
+                        </h2>
+                        <table class="tb-bk tb-myFaq">
                             <colgroup>
                                 <col class="nth-1">
                                 <col class="nth-2">
                                 <col class="nth-3">
-                                <col class="nth-4">
-                                <col class="nth-5">
-                                <col class="nth-6">
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th class="nth-1">예약처</th>
-                                    <th class="nth-2">접수일자</th>
-                                    <th class="nth-3">숙소명</th>
-                                    <th class="nth-4">예약상태</th>
-                                    <th class="nth-5">변경/취소</th>
-                                    <th class="nth-6">출력</th>
+                                    <th class="nth-1">제목</th>
+                                    <th class="nth-2">문의일</th>
+                                    <th class="nth-3">답변일</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <!-- 내용 없을 경우 -->
                                 <!-- <tr class="nothing">
                                     <td colspan="6">
-                                        <p>예약/구매 내용이 없습니다.</p>
-                                        <p class="row-btn"><a href="" class="a-btn">구매하신 예약건이 보이지 않는다면, 여기를 클릭하세요. <span class="ic-rArrow rArrow"></span></a></p>
+                                        <p>등록된 글이 없습니다.</p>
                                     </td>
                                 </tr> -->
                                 <!-- 내용 있을 경우 -->
                                 <tr>
-                                    <td class="nth-1"><img src="http://img.go.co.kr/renew/common/logo_mini.png" alt="고코투어"></td>
-                                    <td class="nth-2">2017.10.31</td>
-                                    <td class="nth-3" onclick="">
-                                        <span class="f-bd">오션투유리조트 속초설악비치 호텔앤콘도</span><br>
-                                        <span class="sm">투숙일: 2018.05.17 (금) ~ 2018.05.18 (토)</span>
+                                    <td class="nth-1">
+                                        <span href="" class="btn-answer wait">답변대기</span>
+                                        <span class="f-bd">[예약변경/취소관련]</span> 예약취소 문의 드려요
                                     </td>
-                                    <td class="nth-4"><span class="f-bd">예약완료</span></td>
-                                    <td class="nth-5">
-                                        <a href="" class="a-btn-2">변경신청</a>
-                                        <a href="javascript: popOpen('#cancel_pop')" class="a-btn-2">예약취소신청</a>
+                                    <td class="nth-2">
+                                        2018.04.11
                                     </td>
-                                    <td class="nth-6">
-                                        <a href="" class="a-btn-2 voucher">호텔바우처</a>
-                                        <a href="" class="a-btn-2">영수증 발급</a>
+                                    <td class="nth-3">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="nth-1">
+                                        <span href="" class="btn-answer ok">답변완료</span>
+                                        <span class="f-bd">[예약변경/취소관련]</span> 애플 앱스토어 리뷰쿠폰 신청
+                                    </td>
+                                    <td class="nth-2">
+                                        2018.04.11
+                                    </td>
+                                    <td class="nth-3">
+                                        2018-05-01 12:09
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-
-                        <div class="row-btn-x"><a href="" class="a-btn"><span class="a-i-x a-x"></span>전체삭제</a></div>
 
                         <div class="pagenation" id="pagenation">
                             <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span><span class="ic-lArrow"></span></a>
