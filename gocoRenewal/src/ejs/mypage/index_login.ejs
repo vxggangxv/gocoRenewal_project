@@ -1,0 +1,83 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container rn-container03">
+
+                <div class="main-login bsLs">
+                    <section class="sec-login">
+                        <h2>간편하게 로그인하기!</h2>
+                        <p class="p-1 f-bd">내 소셜 아이디로 간편하게 고코투어 가입과 로그인이 가능합니다.</p>
+
+                        <ul class="tab-sns">
+                            <li class="tab tab-naver">
+                                <a href=""><img src="http://img.go.co.kr/renew/mypage/login/logo_naver.jpg" alt="네이버로그인"><span>아이디로 로그인</span></a>
+                            </li>
+                            <li class="tab tab-facebook">
+                                <a href=""><img src="http://img.go.co.kr/renew/mypage/login/logo_facebook.jpg" alt="페이스북로그인"><span>아이디로 로그인</span></a>
+                            </li>
+                            <li class="tab tab-kakao">
+                                <a href=""><img src="http://img.go.co.kr/renew/mypage/login/logo_kakao.jpg" alt="카카오로그인"><span>아이디로 로그인</span></a>
+                            </li>
+                            <li class="tab tab-daum">
+                                <a href=""><img src="http://img.go.co.kr/renew/mypage/login/logo_daum.jpg" alt="다음로그인"><span>아이디로 로그인</span></a>
+                            </li>
+                            <li class="tab tab-gmail">
+                                <a href=""><img src="http://img.go.co.kr/renew/mypage/login/logo_gmail.jpg" alt="지메일로그인"><span>아이디로 로그인</span></a>
+                            </li>
+                        </ul>
+
+                        <p class="p-2">
+                            <span class="thColor1 f-bd">신규가입시 70,000원 쿠폰팩 증정, 결제금액 1% 적립</span><br>
+                            로그인/회원가입 시 이용약관, 개인정보취급방침에 동의하게 됩니다.<br>
+                            회원가입시 SMS/메일링 수신에 동의합니다
+                        </p>
+
+                        <p class="row-logo">
+                            <img class="l-img" src="http://img.go.co.kr/logo.png" alt="고코투어">
+                        </p>
+
+                        <div class="area-login">
+                            <p><input type="text" placeholder="아이디" class="reset"></p>
+                            <p><input type="password" placeholder="비밀번호" class="reset"></p>
+                            <p class="row-btn"><a href="">로그인</a></p>
+                            <p class="row-chk">
+                                <input type="checkbox" class="chk-login" id="ex1"><label for="ex1">로그인 상태 유지</label>
+                                <span class="mg-l">l</span>
+                                <a href="">아이디/비밀번호 찾기</a>
+                            </p>
+                        </div>
+
+
+                    </section>
+                </div>
+                <!-- main end -->
+
+            </div>
+        </div>
+
+        <% include ../parts/components/laypop/_cancle.ejs %>
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>

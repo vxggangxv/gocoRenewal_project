@@ -4,6 +4,7 @@
 body {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; line-height:1.5; letter-spacing:0.5px; color: #333;}
 a {text-decoration:none; color: inherit;}
 input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; color:#333;}
+label {cursor: pointer;}
 
 /* 폰트어썸 ie 저 버전 지원*/
 [class^="icon-"], [class*=" icon-"] {
@@ -143,7 +144,7 @@ table.sep td {
 .s-i-Arr.rArr {
 	border-top: 0; border-left: 0; top: -3px;
 }
-.ta-left, .ta-center {display: inline-block;text-align: left;}
+.ta-left, .ta-center {display: inline-block;}
 .ta-left {text-align: left;}
 .ta-center {text-align: center;}
 .va-top {vertical-align: top;}

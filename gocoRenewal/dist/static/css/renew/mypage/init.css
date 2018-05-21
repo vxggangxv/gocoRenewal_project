@@ -5,8 +5,36 @@
 /* .rnL-header {border-bottom:0;} */
 
 .rn-container02 {width: 1200px; margin-top: 70px;}
+.rn-container03 {width: 1200px; margin-top: 30px;}
 
 .lab, .main {position: relative; float: left;}
+
+/* 로그인 */
+.main-login {}
+.sec-login {color: #3d3d3d;}
+.sec-login h2, .sec-login > p,  .sec-login .tab-sns {text-align: center;}
+.sec-login h2 {font-size: 30px; font-family: "Noto Sans KR", sans-serif;}
+.sec-login .p-1 {margin: 5px auto 20px;}
+.sec-login .p-2 {font-size: 15px; margin: 15px auto 20px;}
+.sec-login .tab-sns > li {margin-top: 10px;}
+.sec-login .tab-sns > li a {display: block; width: 412px; height: 59px; margin: 0 auto; color: #737479; font-weight: 700;}
+.sec-login .tab-sns > li a > * {display: inline-block; vertical-align: middle; line-height: 59px;}
+.sec-login .tab-sns > li a > img {margin-right: 10px;}
+.sec-login .tab-sns > li.tab-naver a {border: 1px solid #00c73c;}
+.sec-login .tab-sns > li.tab-facebook a {border: 1px solid #3b5997;}
+.sec-login .tab-sns > li.tab-kakao a {border: 1px solid #f7c200;}
+.sec-login .tab-sns > li.tab-daum a {border: 1px solid #618ffc;}
+.sec-login .tab-sns > li.tab-gmail a {border: 1px solid #e54636;}
+.sec-login .area-login {position: relative; width: 412px; margin: 12px auto 0;}
+.sec-login .area-login input[type=text], .sec-login .area-login input[type=password],
+.sec-login .area-login .row-chk,
+.sec-login .area-login .row-btn {margin-top: 8px;}
+.sec-login .area-login input[type=text], .sec-login .area-login input[type=password] {height: 52px; border: 1px solid #dedede; font-size: 16px; padding-left: 20px; width: 100%; margin-top: 8px;}
+.sec-login .area-login .row-btn a {display: block; width: 100%; background: #fa6c0a; color: #fff; text-align: center; line-height: 52px;}
+.sec-login .area-login .row-chk {font-size: 13px; font-family: "Dotum", sans-serif;}
+.sec-login .area-login .row-chk > * {vertical-align: middle;}
+.sec-login .area-login .row-chk .mg-l {position: relative; top: 1px; font-size: 14px; margin: 0 10px;}
+.sec-login .area-login .row-chk .chk-login {width: 18px; height: 18px; margin: 0 3px;}
 
 /* 좌측 네비게이션 */
 .lab .lnb {position: relative;}
