@@ -20,7 +20,7 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 
 /* 초기화 */
 .rn-schBox input[type=text], input[type=text].reset {
-	-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; outline: none; border-radius: 0;
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; outline: none; border-radius: 0; border: 1px solid #bebebe;
 }
 table.sep {
 	border-collapse: separate; border-spacing: 0; border-top: 1px solid #c3c3c3; border-left: 1px solid #c3c3c3;

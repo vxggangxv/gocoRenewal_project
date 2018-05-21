@@ -658,7 +658,7 @@
                     <nav class="lnb">
                         <ul>
                             <!-- 활성화페이지 on -->
-                            <li class="on"><a href="/views/mypage/index.html">예약 내역 조회</a>
+                            <li class=""><a href="/views/mypage/index.html">예약 내역 조회</a>
                             </li>
                             <li><a href="/views/mypage/index_2.html">적립금 조회</a>
                             </li>
@@ -672,7 +672,7 @@
                             </li>
                             <li><a href="/views/mypage/index_7.html">무료숙박권 예약</a>
                             </li>
-                            <li class="type02"><a href="/views/mypage/index_8.html">회원 정보관리</a>
+                            <li class="type02 on"><a href="/views/mypage/index_8.html">회원 정보관리</a>
                             </li>
                             <li class="type02"><a href="/views/mypage/index_9.html">개인 결제창</a>
                             </li>
@@ -698,16 +698,25 @@
                             <tbody>
                                 <tr>
                                     <th>아이디</th>
-                                    <td>devtest1</td>
+                                    <td><span class="f-bd">devtest1</span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>비밀번호</th>
                                     <td>
-                                        <input type="text" class="pwd">
+                                        <input type="password" class="pwd reset">
+                                        <!-- 일치하지 않았을 때 등장 -->
+                                        <!-- <span class="c-red">비밀번호가 일치하지 않습니다. 다시 입력해 주세요.</span> -->
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+
+                        <p class="addTxt"><span class="thColor1">*</span> 회원님의 비밀번호가 타인에게 노출되지 않도록 주의해 주시기 바랍니다.</p>
+
+                        <div class="row-btn">
+                            <a href="" class="a-1">확인</a><a href="" class="a-2">취소</a>
+                        </div>
                     </section>
                 </div>
                 <!-- main end -->

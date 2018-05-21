@@ -40,7 +40,7 @@
     </script>
 
     <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
-    <script src=""></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
     <!-- <script src="http://static.go.co.kr/js/renew/common.js"></script>
 <script src="http://static.go.co.kr/js/renew/mypage/init.js"></script> -->
     <script src="/static/js/renew/common.js"></script>
@@ -686,143 +686,333 @@
                 </aside>
 
 
-                <div class="main main-myInquiry bsLs">
-                    <section class="sec-cmm cf sec-myInq">
-                        <h2 class="cf">
+                <div class="main main-member bsLs">
+                    <section class="sec-cmm cf sec-member">
+                        <h2>회원정보관리</h2>
 
-                            나의 문의내역 <span class="sm">특정 상품에 관한 문의는 해당 상품 상세페이지의 Q&A를 이용하시면 더욱 편리합니다.</span>
-
-                        </h2>
-                        <table class="tb-bk tb-myInq">
+                        <!-- <table class="tb-member tb-member-2">
                             <colgroup>
                                 <col class="nth-1">
-                                    <col class="nth-2">
-                                        <col class="nth-3">
-                                            <col class="nth-4">
+                                <col class="nth-2">
                             </colgroup>
                             <tbody>
                                 <tr>
-                                    <th>질문구분</th>
-                                    <td colspan="3">예약변경/취소관련</td>
+                                    <th>로그인 계정</th>
+                                    <td><span class="f-bd">devtest1</span></td>
                                 </tr>
                                 <tr>
-                                    <th>제목</th>
-                                    <td colspan="3">기타 문의드려요</td>
+                                    <th>새 비밀번호</th>
+                                    <td>
+                                        <input type="password" class="pwd reset">
+                                        <span class="s-txt">영문 대, 소문자, 숫자 포함 6~15자 내외</span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th>문의상품</th>
-                                    <td colspan="3">[최근 본 시설]</td>
+                                    <th>새 비밀번호</th>
+                                    <td>
+                                        <input type="password" class="pwd reset">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이름</th>
+                                    <td><span class="f-bd">김지영</span></td>
                                 </tr>
                                 <tr>
                                     <th>이메일</th>
-                                    <td>jiyongkim@ebiznetworks.co.kr</td>
-                                    <th>연락처</th>
-                                    <td>010-1234-5678</td>
-                                </tr>
-                                <tr>
-                                    <th>작성자명</th>
-                                    <td>김지영</td>
-                                    <th>등록일</th>
-                                    <td>2018-01-22</td>
-                                </tr>
-                                <tr class="pl-0">
-                                    <td colspan="4" class="borb-0">
-                                        <div class="box-txt">
-                                            시설명: 테스트입니다
-                                            <br>요청일:
-                                            <br>객실타입:
-                                            <br>인원수:
-                                            <br>입실일:
-                                            <br>퇴실일:
-                                            <br>문의내용: 문자 발송 내역 확인 테스트입니다.
-                                        </div>
-                                        <div class="box-answer">
-                                            <p class="p-date">
-                                                <span class="thColor1">ㄴ 고코투어</span> 2018-01-22
-                                                <br>
-                                            </p>
-                                            [고코투어]
-                                            <br>Q&amp;A게시판 답변이 완료되었습니다.
-                                            <br>답변확인하기
-                                            <br>http://m.go.co.kr/s/?q=2&s=G
-
-                                        </div>
+                                    <td>
+                                        <input type="text" value="jiyoungkim" class="reset type01">
+                                        <span class="at">＠</span>
+                                        <input type="text" value="ebiznetworks.co.kr" class="reset type02">
+                                        <select name="" id="" class="type01">
+                                            <option value="">naver.com</option>
+                                        </select>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td></td>
+                                </tr>
                             </tbody>
-                        </table>
+                        </table> -->
 
-                        <div class="d-row-btn">
-                            <a href="" class="btn-1">목록</a>
-                            <a href="" class="btn-2">삭제</a>
-                            <a href="" class="btn-3">수</a>
-                        </div>
-
-                    </section>
-
-                    <section class="sec-cmm cf sec-mfHistory">
-                        <table class="tb-bk tb-myFaq">
+                        <table class="modify_t">
                             <colgroup>
                                 <col class="nth-1">
                                     <col class="nth-2">
-                                        <col class="nth-3">
                             </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="nth-1">제목</th>
-                                    <th class="nth-2">문의일</th>
-                                    <th class="nth-3">답변일</th>
-                                </tr>
-                            </thead>
                             <tbody>
-                                <!-- 내용 없을 경우 -->
-                                <!-- <tr class="nothing">
-                                    <td colspan="6">
-                                        <p>등록된 글이 없습니다.</p>
+                                <!-- SNS 유형별 로그인  -->
+                                <!-- <tr>
+                                    <th>로그인 계정</th>
+                                    <td>
+                                        <span class="icon-bg facebook"><img src="http://img.go.co.kr/mobile/f_logo.jpg"></span>페이스북 로그인
+                                        <span class="icon-bg naver"><img src="http://img.go.co.kr/mobile/n_logo.jpg"></span>네이버 로그인
+                                        <span class="icon-bg daum"><img src="http://img.go.co.kr/mobile/daum_logo.jpg"></span>다음 로그인
+                                        <span class="icon-bg kakao"><img src="http://img.go.co.kr/mobile/k2_logo.jpg"></span>카카오톡 로그인
+                                        <span class="icon-bg google"><img src="http://img.go.co.kr/mobile/g_logo.jpg"></span>구글 로그인
                                     </td>
                                 </tr> -->
-                                <!-- 내용 있을 경우 -->
+
+                                <!-- 일반 로그인 시  -->
                                 <tr>
-                                    <td class="nth-1">
-                                        <span href="" class="btn-answer wait">답변대기</span>
-                                        <span class="f-bd">[예약변경/취소관련]</span> 예약취소 문의 드려요
-                                    </td>
-                                    <td class="nth-2">
-                                        2018.04.11
-                                    </td>
-                                    <td class="nth-3">
+                                    <th>로그인 계정</th>
+                                    <td class="f-bd">devtest1</td>
+                                </tr>
+
+                                <tr>
+                                    <th>새 비밀번호</th>
+                                    <td>
+                                        <input name="passwd" title="새 비밀번호" id="passwd" type="password" maxlength="15" value="" class="input" style="width:300px;ime-mode:disabled" onfocusout="mem.pwchk();">
+                                        <span id="pw_txt">영문 대,소문자,숫자 포함 6~15자 내외</span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="nth-1">
-                                        <span href="" class="btn-answer ok">답변완료</span>
-                                        <span class="f-bd">[예약변경/취소관련]</span> 애플 앱스토어 리뷰쿠폰 신청
+                                    <th>새 비밀번호 확인</th>
+                                    <td>
+                                        <input name="passwd_chk" title="새 비밀번호 확인" id="passwd_chk" type="password" maxlength="15" value="" class="input" style="width:300px;ime-mode:disabled" onfocusout="mem.pwcompare();">
+
                                     </td>
-                                    <td class="nth-2">
-                                        2018.04.11
+                                </tr>
+
+
+                                <tr>
+                                    <th>이름</th>
+                                    <td><span class="f-bd">김지영</span>
                                     </td>
-                                    <td class="nth-3">
-                                        2018-05-01 12:09
+                                </tr>
+                                <tr>
+                                    <th>이메일</th>
+                                    <td>
+                                        <input name="email1" title="이메일" id="email1" validatio="yes" type="text" value="wo5758" class="input" style="width:158px;ime-mode:disabled">@
+                                        <input name="email2" title="이메일" id="email2" validatio="yes" type="text" value="ebiznetworks.co.kr" class="input" style="width:158px;ime-mode:disabled">
+                                        <div class="select" id="" style="width:200px" onclick="util.select_display('email_sel_ul')">
+                                            <p><span id="email_txt">선택하세요</span>
+                                            </p>
+                                            <ul id="email_sel_ul" style="display: none;">
+                                                <!---클릭시 style="display:block" -->
+                                                <li onclick="util.field_setting('email2', 'naver.com', 'email_txt')">naver.com</li>
+                                                <li onclick="util.field_setting('email2', 'hanmail.net', 'email_txt')">hanmail.net</li>
+                                                <li onclick="util.field_setting('email2', 'nate.com', 'email_txt')">nate.com</li>
+                                                <li onclick="util.field_setting('email2', 'gmail.com', 'email_txt')">gmail.com</li>
+                                                <li onclick="util.field_setting('email2', 'hotmail.com', 'email_txt')">hotmail.com</li>
+                                                <li onclick="util.field_setting('email2', 'daum.net', 'email_txt')">daum.net</li>
+                                                <li onclick="util.field_setting('email2', 'lycos.co.kr', 'email_txt')">lycos.co.kr</li>
+                                                <li onclick="util.field_setting('email2', 'korea.kr', 'email_txt')">korea.kr</li>
+                                                <li onclick="util.field_setting('email2', 'empal.com', 'email_txt')">empal.com</li>
+                                                <li onclick="util.field_setting('email2', 'dreamwiz.com', 'email_txt')">dreamwiz.com</li>
+                                                <li onclick="util.field_setting('email2', 'paran.com', 'email_txt')">paran.com</li>
+                                                <li onclick="util.field_setting('email2', 'yahoo.co.kr', 'email_txt')">yahoo.co.kr</li>
+                                                <li onclick="util.field_setting('email2', 'korea.com', 'email_txt')">korea.com</li>
+                                                <li onclick="util.field_setting('email2', 'yahoo.com', 'email_txt')">yahoo.com</li>
+                                                <li onclick="util.field_setting('email2', 'empas.com', 'email_txt')">empas.com</li>
+                                                <li onclick="util.field_setting('email2', 'chol.com', 'email_txt')">chol.com</li>
+                                                <li onclick="util.field_setting('email2', '직접입력', 'email_txt')">직접입력</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>휴대전화</th>
+                                    <td>
+                                        <div class="select" style="width:120px" onclick="util.select_display('comp_ul')">
+                                            <p><span id="comp_txt">LGT</span>
+                                            </p>
+                                            <ul id="comp_ul" style="display: none;">
+                                                <li onclick="util.field_setting('comid', 'SKT', 'comp_txt')">SKT</li>
+                                                <li onclick="util.field_setting('comid', 'LGT', 'comp_txt')">LGT</li>
+                                                <li onclick="util.field_setting('comid', 'KT', 'comp_txt')">KT</li>
+                                            </ul>
+                                        </div>
+                                        <div class="select" style="width:120px" onclick="util.select_display('tel_ul')">
+                                            <p><span id="tel_txt">010</span>
+                                            </p>
+                                            <ul id="tel_ul" style="display: none; z-index:999">
+                                                <li onclick="util.field_setting('tel1', '010', 'tel_txt')">010</li>
+                                                <li onclick="util.field_setting('tel1', '011', 'tel_txt')">011</li>
+                                                <li onclick="util.field_setting('tel1', '016', 'tel_txt')">016</li>
+                                                <li onclick="util.field_setting('tel1', '017', 'tel_txt')">017</li>
+                                                <li onclick="util.field_setting('tel1', '018', 'tel_txt')">018</li>
+                                                <li onclick="util.field_setting('tel1', '019', 'tel_txt')">019</li>
+                                            </ul>
+                                        </div>-
+                                        <input name="tel2" title="연락처" validation="yes" id="tel2" type="text" maxlength="4" value="0000" class="input" style="width:124px" onkeyup="util.checknum('tel2', 'tel3', 3)">-
+                                        <input name="tel3" title="연락처" validation="yes" id="tel3" type="text" maxlength="4" value="0000" class="input" style="width:124px">
+                                    </td>
+                                </tr>
+                                <tr class="anniv">
+                                    <th>생일</th>
+                                    <td>
+                                        <input type="hidden" name="birth_chk" value="readonly">
+                                        <input type="text" class="input" maxlength="4" name="birth_year" value="1234" readonly="" onkeyup="util.checknum('birth_year','birth_month','3')">년
+                                        <input type="text" class="input modi_month" maxlength="2" name="birth_month" value="12" readonly="" onkeyup="util.checknum('birth_month','birth_day','1')">월
+                                        <input type="text" class="input modi_day" maxlength="2" name="birth_day" value="31" readonly="">일
+                                    </td>
+                                </tr>
+                                <tr class="anniv">
+                                    <th>결혼기념일</th>
+                                    <td>
+                                        <input type="text" class="input" maxlength="4" name="marry_year" value="" onkeyup="util.checknum('marry_year', 'marry_month', '3');">년
+                                        <input type="text" class="input modi_month" maxlength="2" name="marry_month" value="" onkeyup="util.checknum('marry_month', 'marry_day', '1');">월
+                                        <input type="text" class="input modi_day" maxlength="2" name="marry_day" value="">일
+                                    </td>
+                                </tr>
+                                <tr class="anniv">
+                                    <th>
+                                        <input type="text" placeholder="기념일" name="event_title_1" value="" class="in-evtTit">
+                                    </th>
+                                    <td>
+                                        <input type="text" class="input" name="event_year_1" maxlength="4" value="" onkeyup="util.checknum('event_year_1', 'event_month_1', '3')">년
+                                        <input type="text" class="input modi_month" name="event_month_1" value="" maxlength="2" onkeyup="util.checknum('event_month_1', 'event_day', '1');">월
+                                        <input type="text" class="input modi_day" name="event_day_1" value="" maxlength="2">일
+                                    </td>
+                                </tr>
+                                <tr class="anniv">
+                                    <th>
+                                        <input type="text" name="event_title_2" placeholder="기념일" value="" class="in-evtTit">
+                                    </th>
+                                    <td>
+                                        <input type="text" name="event_year_2" class="input" maxlength="4" value="" onkeyup="util.checknum('event_year_2', 'event_month_2', '3')">년
+                                        <input type="text" name="event_month_2" class="input modi_month" value="" maxlength="2" onkeyup="util.checknum('event_month_2', 'event_day_2', '1')">월
+                                        <input type="text" name="event_day_2" class="input modi_day" value="" maxlength="2">일
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                        			<td colspan="2" style="background-color:#f8f8f8; text-align:center;">
+                        				<a href="#">기념일 추가 <img src="http://img.go.co.kr/modify_ico_addday.gif" alt="" /></a>
+                        			</td>
+                        		</tr>-->
+                                <tr>
+                                    <td colspan="2" style="border-bottom:none">
+                                        <input name="mail_agree" id="mail_agree" type="checkbox" checked="checked" value="Y">
+                                        <label for="mail_agree" style="cursor:pointer">
+                                            &nbsp;<b>메일/문자 수신 동의</b> &nbsp;&nbsp;<span class="thColor1 f-bd">고코투어에서 제공하는 특가와 이벤트 정보를 받으시겠습니까?</span>
+                                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;회원에게만 제공되는 할인쿠폰을 메일로 보내드립니다.</label>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <div class="pagenation" id="pagenation">
-                            <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span><span class="ic-lArrow"></span></a>
-                            <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span></a>
-                            <a class="active" href="javascript:;">1</a>
-                            <a href="javascript:;">2</a>
-                            <a href="javascript:;">3</a>
-                            <a href="javascript:;">4</a>
-                            <a href="javascript:;">5</a>
-                            <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span></a>
-                            <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span><span class="ic-rArrow"></span></a>
+
+                        <div class="row-btn">
+                            <a href="" class="a-1">정보수정</a>
                         </div>
+
+                        <table class="modify_t type02">
+                            <colgroup>
+                                <col class="nth-1">
+                                    <col class="nth-2">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>회원탈퇴</th>
+                                    <td><a class="btn2" href="http://www.go.co.kr/home/member/?dd=RBstQTtUAUw1Cg==">자세히보기</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </section>
                 </div>
                 <!-- main end -->
 
+            </div>
+        </div>
+
+        <div class="dropDown-bg inquiry1on1" style="display: none">
+            <div class="qna-wrap" style="">
+                <div class="qna-th">
+                    <p>Q&A 문의하기</p>
+                    <a href="#" class="a-i-x a-x" onclick="popCls('.inquiry1on1')"></a>
+                </div>
+
+                <table class="qna_t_write">
+                    <colgroup>
+                        <col width="120">
+                            <col width="580">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>질문분류</th>
+                            <td>
+                                <input type="radio" name="category1" id="_type1" value="예약변경/취소관련" style="cursor:Pointer" checked="">
+                                <label for="_type1" style="cursor:Pointer">예약변경/취소관련</label>&nbsp;
+                                <input type="radio" name="category1" id="_type2" value="요금/결제관련" style="cursor:Pointer">
+                                <label for="_type2" style="cursor:Pointer">요금/결제관련</label>&nbsp;
+                                <input type="radio" name="category1" id="_type3" value="오류관련" style="cursor:Pointer">
+                                <label for="_type3" style="cursor:Pointer">오류관련</label>&nbsp;
+                                <input type="radio" name="category1" id="_type4" value="회원정보관련" style="cursor:Pointer">
+                                <label for="_type4" style="cursor:Pointer">회원정보관련</label>&nbsp;
+                                <input type="radio" name="category1" id="_type5" value="단체문의" style="cursor:Pointer">
+                                <label for="_type5" style="cursor:Pointer">단체문의</label>&nbsp;
+                                <input type="radio" name="category1" id="_type6" value="기타" style="cursor:Pointer">
+                                <label for="_type6" style="cursor:Pointer">기타</label>
+                            </td>
+                        </tr>
+                        <tr id="_type1_is" style="display: table-row;">
+                            <th>문의상품</th>
+                            <td>
+                                <select name="radioch">
+                                    <option value="287880">강릉관광호텔(최근본시설)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>제목</th>
+                            <td>
+                                <div class="qna_title_search_list">
+                                    <select class="select02" style="padding-left:5px;" name="subject" id="subject">
+                                        <option value="오션투유리조트 무료숙박권 관련 문의드려요.">오션투유리조트 무료숙박권 관련 문의드려요.</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>작성자명</th>
+                            <td>
+                                <input name="name" class="select02" id="name" type="text" style="padding-left:5px; width:168px" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>휴대폰</th>
+                            <td>
+                                <input class="select02" type="text" numberonly="true" maxlength="3" size="5" style="padding-left:5px; width:80px;" id="phone1" name="phone1" value="010">-
+                                <input class="select02" type="text" numberonly="true" maxlength="4" size="5" style="padding-left:5px; width:80px;" id="phone2" name="phone2" value="0000">-
+                                <input class="select02" type="text" numberonly="true" maxlength="4" size="5" style="padding-left:5px; width:80px;" id="phone3" name="phone3" value="0000">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>
+                                <input class="select02" type="text" maxlength="30" size="30" style="padding-left:5px; width:257px" id="email" name="email" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="padding-bottom: 0; margin-bottom: 0;">내용</th>
+                            <td colspan="3" style="padding-bottom: 0; margin-bottom: 0;">
+                                <textarea name="contents" class="select03" id="contents" style="" placeholder="안녕하세요. 고코투어입니다.
+
+본 문의처는 무료숙박권 이벤트와 관련된 문의만 요청가능합니다.
+
+문의에 대한 답변은 고코투어 사이트의 마이페이지 / 나의 문의내역에서 확인해 주세요.
+
+감사합니다."></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-area"><a href="javascript: reseve_write();" class="btn-a">문의하기</a>
+                </div>
             </div>
         </div>
 
