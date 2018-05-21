@@ -18,9 +18,9 @@
 .faqWrap {position: absolute; width: 824px; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -363px; letter-spacing: -1px; font-family: "Nanum Gothic", sans-serif; line-height: 1.5;}
 
 .faqWrap .faq-tab {position: relative;}
-.faqWrap .faq-tab .list {}
-.faqWrap .faq-tab .list .itm {float: left; display: block; width: 204px; height: 60px; cursor: pointer; box-sizing: border-box; border-top: 2px solid #000; color: #fff; background: #565656; font-size: 20px; margin-left: 2.5px; text-align: center; line-height: 60px; letter-spacing: -0.5px;}
-.faqWrap .faq-tab .list .itm:first-child {margin-left: 0;}
+.faqWrap .faq-tab .list {position: relative; width: 100%; display: table; table-layout: auto;}
+.faqWrap .faq-tab .list .itm {/* float:left; width: 204px; display: block; */ display: table-cell; height: 60px; cursor: pointer; box-sizing: border-box; border-top: 2px solid #000; color: #fff; background: #565656; font-size: 20px; border-left: 2px solid #000; text-align: center; line-height: 60px; letter-spacing: -0.5px;}
+.faqWrap .faq-tab .list .itm:first-child {margin-left: 0; border-left: 0;}
 .faqWrap .faq-tab .list .itm.on {font-weight: 700;}
 /*.faqWrap .faq-tab .list .itm.on.nth-1 {background: #44a8ff;}
 .faqWrap .faq-tab .list .itm.on.nth-2 {background: #ecb84a;}
@@ -31,6 +31,7 @@
 .faqWrap .faq-tab .list .itm.on.nth-2 {background: #ecb84a;}
 .faqWrap .faq-tab .list .itm.on.nth-3 {background: #946fc7;}
 .faqWrap .faq-tab .list .itm.on.nth-4 {background: #33c19b;}
+.faqWrap .faq-tab .list .itm.on.nth-5 {background: #009eb6;}
 .faqWrap .contents-tab {position: relative; width: 100%; height: 420px;}
 .faqWrap .contents-tab .faq-main {position: absolute; top: 0; left: 0; width: 100%; display: none;}
 .faqWrap .contents-tab .faq-main.on {display: block;}
@@ -94,6 +95,13 @@
 .faqWrap .yeonho h2 {background: #33c19b !important;}
 .faqWrap .yeonho .ul1 > li .d1:hover,
 .faqWrap .yeonho .ul1 > li .d1.on {color: #33c19b!important;}
+
+.faqWrap .taebaek {border-color: #009eb6 !important;}
+.faqWrap .taebaek .ul1 > li .d2:before,
+.faqWrap .taebaek .ul1 > li .d1.on .s-tit:after,
+.faqWrap .taebaek h2 {background: #009eb6 !important;}
+.faqWrap .taebaek .ul1 > li .d1:hover,
+.faqWrap .taebaek .ul1 > li .d1.on {color: #009eb6!important;}
 
 /* 1대1 문의하기 팝업 */
 .customer2 .qna-wrap, .customer2 .qna-wrap * {box-sizing: border-box;}

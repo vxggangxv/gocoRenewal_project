@@ -175,7 +175,7 @@
 .sec-prd-listTb .row-useDate .a-cal,
 .sec-prd-listTb .row-useDate input[type=text] {position: relative; height: 100%; display: inline-block; background: 0;}
 .sec-prd-listTb .row-useDate .a-cal {width: 30px; float: right; border-left: 1px solid #c3c3c3;}
-.sec-prd-listTb .row-useDate input[type=text] {width: 158px; font-size: 15px; text-indent: 10px; top: -1px; cursor: pointer;}
+.sec-prd-listTb .row-useDate input[type=text] {width: 158px; font-size: 15px; text-indent: 10px; top: -1px; cursor: pointer; border: 0;}
 .sec-prd-listTb .row-useDate .i-wCal {top: 5px;}
 
 .pdtCal.type-ticket {position: absolute; top: 44px; left: 50%; z-index: 2; margin-left: -175px; border: 2px solid #70707d;}
