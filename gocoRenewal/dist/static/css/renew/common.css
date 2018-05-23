@@ -251,7 +251,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-contents .rnL-listOuter {margin-left: 30px;}
 
 /* 헤더영역 */
-.rn-hdArea {border-top: 3px solid #fa6b0a; padding: 20px 0;}
+.rn-hdArea {border-top: 3px solid #fa6b0a; padding: 20px 0; background: #fff;}
 .rnL-header {position: relative; border-bottom: 1px solid #ddd;
 	/* height: 93px; height: 133px; */
 	/* border-top: 3px solid #fa6b0a; */
@@ -491,7 +491,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 
 /* 유형 */
 /* 변경 전 */
-.rnSltCtg {width: 200px; left: 690px; top: 6px; background: #fff;}
+.rnSltCtg {width: 200px; left: 689px; top: 0px; background: #fff;}
 .rnSltCtg .ul1 {padding: 4px 0;}
 .rnSltCtg .ul1 > li > a {display: block; text-align: center; padding: 4px 0; font-size: 16px; color: #626262;}
 .rnSltCtg .ul1 > li.bor-t {border-top: 1px dashed #c8c8c8;}

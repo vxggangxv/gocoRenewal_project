@@ -1,8 +1,8 @@
 $(function() {
-	
+
 	//함수 실행
 	randomBanner(); //배경 랜덤
-    
+
     if( $('div').hasClass('rnM-mainDoor') ){
     //기존 디자인 js
         // 배경 클릭 시
@@ -53,7 +53,7 @@ $(function() {
                 cal_ajax();
             }
         });
-        
+
         // 유형선택 등장
         $('#rn-schBox .d3').click(function() {
             if ($('#rn-schBox [class^=rnSltCtg]').css('display') == 'block') {
@@ -72,16 +72,16 @@ $(function() {
             $('#rn-schBox .d3 .p1').text(thTxt);
             $('#rn-schBox .rnSltCtg').hide();
         });
-        
+
     }else{
     //180515 변경된 디자인 js
-        
+
         //배경 클릭 시
         $('#backDrop').click(function() {
             $('.rnSltCal, .slt-dep2').hide(); //배경 클릭시 달력과, 지역선택 세부메뉴 닫음
             $(this).hide();
         });
-        
+
         //탭+내용
         var rnMenuList = new Array(
             ['숙소명, 시설명 등을 입력해주세요.'],
@@ -93,7 +93,7 @@ $(function() {
             var liIdx = $(this).index()+1;
 
             $(this).addClass('on').siblings().removeClass('on');
-            
+
             $(this).siblings().css({'border-top' : '2px solid #c5bac1'});
             $(this).css({'border-top' : '2px solid #9f7d91'}).next().css({'border-top' : '2px solid #9f7d91'});
             $('#rn-schBox .rn-menu li:first-child').css({'border-top' : '0'});
@@ -118,7 +118,7 @@ $(function() {
                 //그 외
                 $('#rn-schBox .cal-box > div.cal-2').show();
                 $('#rn-schBox .reg-box div.reg-1').show();
-                
+
                 if( liIdx == 3 ){
                     $('#rn-schBox .kw-box .kw-input input').attr('placeholder', rnMenuList[2]);
                 }else{
@@ -127,18 +127,18 @@ $(function() {
             }
 
         });
-        
+
         // 지역 모달 /기존 js 숨김처리
         $('#rn-schBox .rnSltReg .slt-dep1 > ul > li').on('click',function() {
             $(this).addClass('on').siblings().removeClass('on');
-            
+
             var dep2 = $(this).parents('.rnSltReg').find('.slt-dep2');
             var maxLiWid = 0;
-            
+
             dep2.show();
             $('#backDrop').show();
             $('.rnSltCal').hide();
-            
+
             for( var i = 0 ; i < dep2.find('li').length-1 ; i++ ){
                 if( maxLiWid <=  dep2.find('li:eq('+ i +') a').outerWidth() ){
                     maxLiWid = dep2.find('li:eq('+ i +') a').outerWidth()
@@ -146,13 +146,13 @@ $(function() {
                 }
             }
             dep2.find('li a').css({'width' : maxLiWid+'px'});
-            
+
             $('#rn-schBox .rnSltReg .slt-dep2 > ul > li').on('click', function() {
                 $(this).addClass('on').siblings().removeClass('on');
             });
 
         });
-        
+
         // 달력 등장
         $('#rn-schBox .d2').click(function() {
             if ($('#rn-schBox .rnSltCal').css('display') == 'block') {
@@ -165,12 +165,12 @@ $(function() {
                 cal_ajax();
             }
         });
-        
+
         //유형선택 토글 온
-        toggleOn("#rn-schBox .type-box li > a");
+        //toggleOn("#rn-schBox .type-box li > a");/*페이지에서 처리할게요*/
     }
 
-    
+
     // 선택완료 클릭 시
     $("#rn-schBox .rnSltCal .a2").on('click', function() {
         chk_date();
@@ -229,8 +229,8 @@ function randomBanner(){
 	var randomTxt = Math.floor(Math.random()*mainList.length);
 	var randomNum = Math.floor(randomTxt)+1;
 
-	$('.main-text').find('.s1').text(mainList[randomTxt][0]).end().find('.s2').text(mainList[randomTxt][1]);
-    $('div[class^=rnM-mainDoor]').css({'background-image': 'url(http://img.go.co.kr/renew/mainDoor_0'+randomNum+'.jpg)', "background-size":"cover"});
+	$('#main-text').find('.s1').text(mainList[randomTxt][0]).end().find('.s2').text(mainList[randomTxt][1]);
+    $('#rnM-mainDoor').css({'background-image': 'url(http://img.go.co.kr/renew/mainDoor_0'+randomNum+'.jpg)', "background-size":"cover"});
 }
 
 function cal_ajax() {
@@ -254,8 +254,25 @@ function area_ajax(val, first) {
 		url		:	"/state.php",
 		data	:	{"mode":"area_div", "area":val, "first_chk":first},
 		success	:	function(e) {
-			$(".slt-dep2").html(e);
+			if(val != 'all') {
+				$(".slt-dep2").html(e);
+				var dep2 = $('#rn-schBox .rnSltReg .slt-dep1 > ul > li').parents('.rnSltReg').find('.slt-dep2');
+				var maxLiWid = 0;
+
+				dep2.show();
+				$('#backDrop').show();
+				$('.rnSltCal').hide();
+
+				for( var i = 0 ; i < dep2.find('li').length-1 ; i++ ){
+					if( maxLiWid <=  dep2.find('li:eq('+ i +') a').outerWidth() ){
+						maxLiWid = dep2.find('li:eq('+ i +') a').outerWidth()
+						console.log(i, maxLiWid);
+					}
+				}
+				dep2.find('li a').css({'width' : maxLiWid+'px'});
+			} else {
+				$(".slt-dep2").hide();
+			}
 		}
 	})
 }
-

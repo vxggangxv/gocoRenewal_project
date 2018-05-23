@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.rnL-header {height: 96px;}
+.rn-hdArea.fixed {border-bottom: 1px solid #ddd}
+.fixed {position: fixed !important; left: 0; top: 0; width: 100%; z-index: 10;}
+
 /* 오디오 재생 */
 .media-wrap {}
 .btnBox-audio {position: absolute; right: -200px; top: 1px;}
@@ -67,13 +71,15 @@
 .rnM-mainDoor .rn-schInner > div {position: relative; float: left; margin-left: 30px; cursor: pointer; width: 100%;}
 /*.ie8 .rnM-mainDoor .rn-schBox .cm-s {background-position: 140px center;}*/
 .rnM-mainDoor .rn-schInner div[class*=d-cmm] {z-index: 11;}
-.rnM-mainDoor .rn-schInner .d1 {width: 243px;}
+.rnM-mainDoor .rn-schInner .d1,
+.rnM-mainDoor .rn-schInner .d1-1 {width: 243px;}
 .rnM-mainDoor .rn-schInner .d2 {position: relative; width: 193px;}
 .rnM-mainDoor .rn-schInner .d3 {width: 200px;}
 .rnM-mainDoor .rn-schInner .d4 {width: 228px;}
 .rnM-mainDoor .rn-schInner > div > p {position: relative;}
 .rnM-mainDoor .rn-schInner .p0 {color: #484848; font-size: 16px; padding-left: 4px;}
 .rnM-mainDoor .rn-schInner .p1 {color: #626262; font-size: 19px; height: 67px; background: #fff; border: 1px solid #c8c8c8; margin-top: 2px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.rnM-mainDoor .rn-schInner .d1-1 .in1 {color: #626262; font-size: 19px; height: 67px; background: #fff; border: 1px solid #c8c8c8; margin-top: 2px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 0 18px;}
 .rnM-mainDoor .rn-schInner .d2-1 .p1 {border-right: 0;}
 .rnM-mainDoor .rn-schInner .d2-2 {margin-left: 0;}
 .rnM-mainDoor .rn-schInner .d2-2 .p1 {border-left-color: #98989a;}
@@ -182,6 +188,45 @@
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 a {min-width:auto;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 a.on {color: #fa6b0a;}
 
+/* 해외숙박 메인 */
+.rnM-overseas {position: relative; width: 100%; height:284px; background: #eaeaea url(http://img.go.co.kr/renew/subVisual.jpg) no-repeat center; padding-top: 40px;}
+.rnM-overseas .main-text .p1 {display: block; color: #fff; font-weight: 700; text-shadow: 2px 2px 2px rgba(0,0,0, .6); font-size: 30px; text-align: center;}
+.rnM-overseas .rn-schInner {width: 950px; padding-left: 0;}
+.rnM-overseas .rn-container,
+.rnM-contents.contents-overseas .rn-container {width: 1100px;}
+.rnM-overseas.fixed {top: 96px;}
+.contents-region.fixed {top: 380px;}
+.fixed + .contents-overseas {padding-top: 330px;}
+
+.contents-region .row-region,
+.contents-overseas .outer-overseas {width: 1100px; margin: 0 auto;}
+
+.contents-region {background: #e4e8eb;}
+.contents-region .row-region {font-weight: 700; width: 1100px;}
+.contents-region .row-region .tit {display: inline-block; color: #032b49; padding-top: 12px;}
+.contents-region .row-region .tab-region {float: right;}
+.contents-region .row-region .tab-region > li {float: left;}
+.contents-region .row-region .tab-region > li > a {display: inline-block; padding: 12px 25px;}
+.contents-region .row-region .tab-region > li:hover > a,
+.contents-region .row-region .tab-region > li.on > a {background: #404d6c; color: #fff;}
+.contents-overseas .box-prod {margin: 50px auto;}
+.contents-overseas .box-prod h3 {border-bottom: 2px solid #555;}
+.contents-overseas .box-prod h3 * {position: relative;}
+.contents-overseas .box-prod h3 .big {font-size: 25px; font-weight: 700;}
+.contents-overseas .box-prod h3 .all {top: -2px; font-size: 15px;}
+.contents-overseas .box-prod h3 .all .gt { top: -1px; font-size: 13px;}
+.contents-overseas .box-prod h3 .more {top: 8px; font-size: 14px; font-weight: 700; border: 1px solid #000; border-radius: 2px; float: right; padding: 1px 5px;}
+.contents-overseas .box-prod .row-prod {margin-top: 12px;}
+.contents-overseas .box-prod .row-prod .itm {float: left; display: block; width: 260px; border: 1px solid #bfbfbf; margin-left: 20px;}
+.contents-overseas .box-prod .row-prod .itm:first-child {margin-left: 0;}
+.contents-overseas .box-prod .row-prod .itm figure {height: 175px; overflow: hidden;}
+.contents-overseas .box-prod .row-prod .itm figure img {width: 100%;}
+.contents-overseas .box-prod .row-prod .itm .info {padding: 8px 6px 5px; letter-spacing: -0.5px;}
+.contents-overseas .box-prod .row-prod .itm .info .s-l {font-size: 13px; color: #999;}
+.contents-overseas .box-prod .row-prod .itm .info .name {letter-spacing: -1px; font-weight: 700; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.contents-overseas .box-prod .row-prod .itm .info .p-1 {font-size: 15px;}
+.contents-overseas .box-prod .row-prod .itm .info .p-1 .s-star {position: relative; top: -2px;}
+.contents-overseas .box-prod .row-prod .itm .info .p-2 .won {font-size: 15px; font-weight: 700;}
 
 /* 카테고리 픽토그램 링크*/
 .rnM-contents .pic-sec {position: relative; height: 180px; background: #fff; margin: 0 auto;}

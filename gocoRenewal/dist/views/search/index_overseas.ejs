@@ -1,0 +1,519 @@
+<% include ./parts/_docHead.ejs %>
+
+    <head>
+        <!-- <%= initPage = '/' %> -->
+        <% include ./parts/head/_headMeta.ejs %>
+            <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+            <% include ./parts/head/_commonCss.ejs %>
+                <% include ./parts/head/_headScript.ejs %>
+                    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+                    <% include ./parts/head/_commonScript.ejs %>
+    </head>
+
+    <body>
+        <h1 class="hidden">고코투어</h1>
+        <div class="rn-gwrap">
+            <!-- 20180402 오디오 -->
+            <div class="media-wrap hidden" id="mediaWrap">
+                <audio controls id="goco2s">
+                    <source src="http://static.go.co.kr/media/Goco2s.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                </audio>
+                <audio controls autoplay id="goco5s">
+                    <source src="http://static.go.co.kr/media/Goco5s.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                </audio>
+                <audio controls id="goco7s">
+                    <source src="http://static.go.co.kr/media/Goco7s.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!--  -->
+
+            <% include ./parts/_header.ejs %>
+
+                <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+                <div id="backDrop"></div>
+                <div class="rnM-mainDoor rnM-overseas bsLs">
+                    <div class="rn-container">
+                        <strong class="main-text ftfm-mg">
+
+					<p class="p1">실시간 해외호텔 검색</p>
+
+				</strong>
+
+                        <div class="rn-schBox clr" id="rn-schBox">
+                            <h2 class="hidden">숙소검색</h2>
+
+                            <div class="rn-schInner clr">
+                                <div class="d1-1 d-cmm">
+                                    <p class="p0">검색어</p>
+                                    <input type="text" placeholder="도시 및 호텔이름으로 검색" class="in1">
+                                </div>
+                                <div class="d2 d2-1 d-cmm">
+                                    <p class="p0">체크인</p>
+                                    <p class="p1 cm-s2">2017-10-11</p>
+                                </div>
+                                <div class="d2 d2-2 d-cmm">
+                                    <p class="p0">체크아웃</p>
+                                    <p class="p1 cm-s3">2017-10-11</p>
+                                </div>
+                                <div class="d3 d-cmm">
+                                    <p class="p0">유형선택</p>
+                                    <p class="p1 cm-s1">전체</p>
+                                </div>
+                                <!-- <div class="d4 d-cmm">
+							<p class="p0">객실/인원 선택</p>
+							<p class="p1 cm-s1"><span class="s1">객실 1</span> <span class="s2">성인 2명</span></p>
+						</div> -->
+
+                                <div class="rnModal-sec">
+                                    <!--달력-->
+                                    <% include ./parts/components/calendar/_calendar_db.ejs %>
+
+                                        <!--유형-->
+                                        <div class="rnSltCtg rn-modal">
+                                            <ul class="ul1">
+                                                <li><a href="javascript:;">전체</a>
+                                                </li>
+                                                <li><a href="javascript:;">일본</a>
+                                                </li>
+                                                <li><a href="javascript:;">홍콩/중국</a>
+                                                </li>
+                                                <li><a href="javascript:;">동남아</a>
+                                                </li>
+                                                <li><a href="javascript:;">유럽</a>
+                                                </li>
+                                                <li><a href="javascript:;">미주</a>
+                                                </li>
+                                                <li><a href="javascript:;">남태평양</a>
+                                                </li>
+                                                <li><a href="javascript:;">중동/아프리카</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!--객실/인원 선택-->
+                                        <div class="rnSltNum rn-modal">
+                                            <ul class="ul1">
+                                                <li>
+                                                    <span class="s-lbl">객실</span>
+                                                    <div class="quan clr">
+                                                        <span class="s-l"></span>
+                                                        <!--숫자 증가시 on클래스 추가-->
+                                                        <input type="text" class="inp on" placeholder="0" value="1">
+                                                        <span class="s-r"></span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="s-lbl">성인</span>
+                                                    <div class="quan clr">
+                                                        <span class="s-l"></span>
+                                                        <input type="text" class="inp" placeholder="0">
+                                                        <span class="s-r"></span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <span class="s-lbl">소아</span>
+                                                    <div class="quan clr">
+                                                        <span class="s-l"></span>
+                                                        <input type="text" class="inp" placeholder="0">
+                                                        <span class="s-r"></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+
+                            </div>
+
+                            <div class="rn-schBtn">
+                                <button type="button"><span class="c-ic i-mag"></span> 검색</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rnM-contents contents-overseas">
+                    <div class="rn-containerF row-region boxs">
+                        <div class="rn-container">
+                            <em class="tit">해외 도시별 추천 호텔</em>
+                            <ul class="tab-region cf">
+                                <li class="tab-1 on"><a href="">일본</a>
+                                </li>
+                                <li class="tab-2"><a href="">홍콩/중국</a>
+                                </li>
+                                <li class="tab-3"><a href="">동남아</a>
+                                </li>
+                                <li class="tab-4"><a href="">유럽</a>
+                                </li>
+                                <li class="tab-5"><a href="">남태평양</a>
+                                </li>
+                                <li class="tab-6"><a href="">중동/아프리카</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rn-container">
+                        <div class="box-prod boxs">
+                            <h3>
+
+                        <span class="big">도쿄</span>
+
+                        <a href="" class="all">일본지역 전체보기 <span class="gt">&gt;</span></a>
+
+                        <a href="" class="more">+ 더보기</a>
+
+                    </h3>
+                            <div class="row-prod cf">
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/3000000/2600000/2591400/2591359/8d286724_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[도쿄]시티 호텔 N.U.T.S.</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/4000000/3760000/3752100/3752047/3752047_1_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[도쿄]시티 호텔 N.U.T.S.</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/5000000/4200000/4191200/4191168/4191168_35_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[도쿄]시티 스테이 신주쿠</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3.5성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/1000000/20000/10900/10857/10857_113_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[도쿄]호텔 타테시나</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-prod boxs">
+                            <h3>
+
+                        <span class="big">오사카</span>
+
+                        <a href="" class="all">일본지역 전체보기 <span class="gt">&gt;</span></a>
+
+                        <a href="" class="more">+ 더보기</a>
+
+                    </h3>
+                            <div class="row-prod cf">
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/2000000/1990000/1985000/1984925/1984925_96_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[오사카]호텔 브라이턴 시티 오사카...</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">547,500<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/11000000/10380000/10373300/10373231/944a956b_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[오사카]호스텔 주</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/1000000/30000/22900/22877/22877_169_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[오사카]하얏트 리젠시 오사카</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-half.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>4.5성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/1000000/200000/199200/199119/199119_288_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[오사카]리츠칼튼 오사카</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-prod boxs">
+                            <h3>
+
+                        <span class="big">후쿠오카</span>
+
+                        <a href="" class="all">일본지역 전체보기 <span class="gt">&gt;</span></a>
+
+                        <a href="" class="more">+ 더보기</a>
+
+                    </h3>
+                            <div class="row-prod cf">
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/4000000/3460000/3456300/3456231/0f45a44e_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[후쿠오카]다이와 로이넷 호텔 하카...</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/1000000/50000/48700/48626/48626_123_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[후쿠오카]그랜드 하얏트 후쿠오카</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/1000000/10000/4200/4174/4174_163_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[후쿠오카]호텔뉴 오타니 하카</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3.5성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="" class="itm cf">
+                                    <figure>
+                                        <img src="http://cache.go.co.kr/media/375/media.expedia.com/hotels/1000000/200000/190600/190592/190592_28_b.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'" class="room_img">
+                                    </figure>
+                                    <div class="info">
+                                        <em class="name">[후쿠오카]리가 로열 호텔 고쿠라</em>
+                                        <p class="p-1">
+                                            <span class="s-star">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-on.png">
+
+                                        <img src="http://img.go.co.kr/visor/star-off.png">
+
+                                    </span>
+                                            <span class="s-l">ㅣ</span>  <span>3성급</span>
+                                        </p>
+                                        <p class="p-2 cf"><span class="f-bdr c-red pull-right">112,100<span class="won">원~</span></span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <% include ./parts/_footer.ejs %>
+        </div>
+
+    </body>
+
+    </html>
