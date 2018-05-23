@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-    <!-- /mypage/ -->
+    <!-- / -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <title>고코 리뉴얼</title>
@@ -23,14 +23,10 @@
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"> -->
 
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
-    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
-    <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
-<link rel="stylesheet" href="http://static.go.co.kr/css/renew/mypage/init.css"> -->
-    <link rel="stylesheet" href="/static/css/renew/common.css">
-    <link rel="stylesheet" href="/static/css/renew/mypage/init.css">
-
-    <!-- 별도 css 추가 영역 -->
-    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/init.css">
+    <!-- <link rel="stylesheet" href="/static/css/renew/common.css">
+<link rel="stylesheet" href="/static/css/renew/init.css"> -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="http://code.jquery.com/jquery.min.js"></script>
@@ -40,17 +36,33 @@
     </script>
 
     <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
-    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
-    <!-- <script src="http://static.go.co.kr/js/renew/common.js"></script>
-<script src="http://static.go.co.kr/js/renew/mypage/init.js"></script> -->
-    <script src="/static/js/renew/common.js"></script>
-    <script src="/static/js/renew/mypage/init.js"></script>
+    <script src="http://static.go.co.kr/js/renew/common.js"></script>
+    <script src="http://static.go.co.kr/js/renew/init.js"></script>
+    <!-- <script src="/static/js/renew/common.js"></script>
+<script src="/static/js/renew/init.js"></script> -->
 
 </head>
 
 <body>
     <h1 class="hidden">고코투어</h1>
     <div class="rn-gwrap">
+        <!-- 20180402 오디오 -->
+        <div class="media-wrap hidden" id="mediaWrap">
+            <audio controls id="goco2s">
+                <source src="http://static.go.co.kr/media/Goco2s.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+            </audio>
+            <audio controls autoplay id="goco5s">
+                <source src="http://static.go.co.kr/media/Goco5s.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+            </audio>
+            <audio controls id="goco7s">
+                <source src="http://static.go.co.kr/media/Goco7s.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+            </audio>
+        </div>
+        <!--  -->
+
         <!-- 상단 배너, 비활성화 -->
         <div id="bannerTop" style="display: none;">
             <div class="close">
@@ -379,7 +391,7 @@
                                 <div class="d1"><span class="s-tit">무료인가요?</span>  <span class="s-dArr"></span>
                                 </div>
                                 <div class="d2">
-                                    네 무료숙박권으로 도고BS콘도를 무료 이용하실 수 있습니다. 다만, 경품지급에 따른 저세공과금과 서비스제공을 위한 봉사료 49,000원은 고객님이 부담하셔야 합니다.
+                                    네 무료숙박권으로 도고BS콘도를 무료 이용하실 수 있습니다. 다만, 경품지급에 따른 저세공과금과 서비스제공을 위한 봉사료 39,000원은 고객님이 부담하셔야 합니다.
                                     <br>(제세공과금이란? 부가가치세, 법인세 등 일체의 세금 및 공과금과 기타 법률에 의하여 부과되는 각종 세금 및 회사의 수수료, 봉사료 일체를 뜻합니다.)
                                 </div>
                             </li>
@@ -714,429 +726,610 @@
 
         <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
         <div id="backDrop"></div>
+        <div class="rnM-mainDoor bsLs">
+            <div class="rn-container">
+                <strong class="main-text ftfm-mg">
 
-        <!--전체 콘텐츠 영역-->
-        <div class="rn-contents">
-            <div class="rn-container rn-container02">
-                <!-- 좌측 네비게이션 -->
-                <aside class="lab bsLsbo">
-                    <h2>마이페이지</h2>
-                    <nav class="lnb">
-                        <ul>
-                            <!-- 활성화페이지 on -->
-                            <li class=""><a href="/views/mypage/index.html">예약 내역 조회</a>
-                            </li>
-                            <li><a href="/views/mypage/index_2.html">적립금 조회</a>
-                            </li>
-                            <li><a href="/views/mypage/index_3.html">쿠폰 조회</a>
-                            </li>
-                            <li><a href="/views/mypage/index_4.html">찜 목록</a>
-                            </li>
-                            <li><a href="/views/mypage/index_5.html">나의 이용후기</a>
-                            </li>
-                            <li><a href="/views/mypage/index_6.html">나의 문의내역</a>
-                            </li>
-                            <li><a href="/views/mypage/index_7.html">무료숙박권 예약</a>
-                            </li>
-                            <li class="type02 on"><a href="/views/mypage/index_8.html">회원 정보관리</a>
-                            </li>
-                            <li class="type02"><a href="/views/mypage/index_9.html">개인 결제창</a>
-                            </li>
-                        </ul>
-                    </nav>
+					<span class="s1">지금 예약한다면 슈퍼 그뤠잇!</span>
 
-                    <div class="cus-call">
-                        <a href="#">
-                            <img src="http://img.go.co.kr/i_faqPh.png" alt="고객센터전화문의">고객센터 전화문의</a>
-                    </div>
-                </aside>
+					<span class="s2">여행 가라고 등 떠미는 고코투어 특가!</span>
 
+				</strong>
 
-                <div class="main main-member bsLs">
-                    <section class="sec-cmm cf sec-member">
-                        <h2>회원정보관리</h2>
+                <div class="rn-schBox clr" id="rn-schBox">
+                    <h2 class="hidden">숙소검색</h2>
 
-                        <table class="tb-member tb-member-2">
-                            <colgroup>
-                                <col class="nth-1">
-                                    <col class="nth-2">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>로그인 계정</th>
-                                    <!-- <td><span class="f-bd">devtest1</span></td> -->
-                                    <!-- 소셜일 경우 -->
-                                    <td><span class="f-bd">devtest1</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>이름</th>
-                                    <td><span class="f-bd">김지영</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th></th>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <div class="row-btn">
-                            <a href="" class="a-1">정보수정</a>
+                    <div class="rn-schInner clr">
+                        <div class="d1 d-cmm">
+                            <p class="p0">지역선택</p>
+                            <p class="p1 cm-s1"><span class="regName">서울</span><span class="regDetail">강남구</span>
+                            </p>
                         </div>
-                    </section>
-                </div>
-                <!-- main end -->
+                        <div class="d2 d2-1 d-cmm">
+                            <p class="p0">체크인</p>
+                            <p class="p1 cm-s2">2017-10-11</p>
+                        </div>
+                        <div class="d2 d2-2 d-cmm">
+                            <p class="p0">체크아웃</p>
+                            <p class="p1 cm-s3">2017-10-11</p>
+                        </div>
+                        <div class="d3 d-cmm">
+                            <p class="p0">유형선택</p>
+                            <p class="p1 cm-s1">전체</p>
+                        </div>
+                        <!-- <div class="d4 d-cmm">
+							<p class="p0">객실/인원 선택</p>
+							<p class="p1 cm-s1"><span class="s1">객실 1</span> <span class="s2">성인 2명</span></p>
+						</div> -->
 
-            </div>
-        </div>
-
-        <div class="dropDown-bg inquiry1on1" style="display: none">
-            <div class="qna-wrap" style="">
-                <div class="qna-th">
-                    <p>Q&A 문의하기</p>
-                    <a href="#" class="a-i-x a-x" onclick="popCls('.inquiry1on1')"></a>
-                </div>
-
-                <table class="qna_t_write">
-                    <colgroup>
-                        <col width="120">
-                            <col width="580">
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <th>질문분류</th>
-                            <td>
-                                <input type="radio" name="category1" id="_type1" value="예약변경/취소관련" style="cursor:Pointer" checked="">
-                                <label for="_type1" style="cursor:Pointer">예약변경/취소관련</label>&nbsp;
-                                <input type="radio" name="category1" id="_type2" value="요금/결제관련" style="cursor:Pointer">
-                                <label for="_type2" style="cursor:Pointer">요금/결제관련</label>&nbsp;
-                                <input type="radio" name="category1" id="_type3" value="오류관련" style="cursor:Pointer">
-                                <label for="_type3" style="cursor:Pointer">오류관련</label>&nbsp;
-                                <input type="radio" name="category1" id="_type4" value="회원정보관련" style="cursor:Pointer">
-                                <label for="_type4" style="cursor:Pointer">회원정보관련</label>&nbsp;
-                                <input type="radio" name="category1" id="_type5" value="단체문의" style="cursor:Pointer">
-                                <label for="_type5" style="cursor:Pointer">단체문의</label>&nbsp;
-                                <input type="radio" name="category1" id="_type6" value="기타" style="cursor:Pointer">
-                                <label for="_type6" style="cursor:Pointer">기타</label>
-                            </td>
-                        </tr>
-                        <tr id="_type1_is" style="display: table-row;">
-                            <th>문의상품</th>
-                            <td>
-                                <select name="radioch">
-                                    <option value="287880">강릉관광호텔(최근본시설)</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>제목</th>
-                            <td>
-                                <div class="qna_title_search_list">
-                                    <select class="select02" style="padding-left:5px;" name="subject" id="subject">
-                                        <option value="오션투유리조트 무료숙박권 관련 문의드려요.">오션투유리조트 무료숙박권 관련 문의드려요.</option>
-                                    </select>
+                        <div class="rnModal-sec">
+                            <!--지역-->
+                            <div class="rnSltReg rn-modal">
+                                <div class="slt-dep1">
+                                    <ul class="clr">
+                                        <li><a href="javascript:;">서울</a>
+                                        </li>
+                                        <li><a href="javascript:;">경기</a>
+                                        </li>
+                                        <li><a href="javascript:;">인천</a>
+                                        </li>
+                                        <li class="on"><a href="javascript:;">강원</a>
+                                        </li>
+                                        <li><a href="javascript:;">대전</a>
+                                        </li>
+                                        <li><a href="javascript:;">충북</a>
+                                        </li>
+                                        <li><a href="javascript:;">충남</a>
+                                        </li>
+                                        <li><a href="javascript:;">부산</a>
+                                        </li>
+                                        <li><a href="javascript:;">울산</a>
+                                        </li>
+                                        <li><a href="javascript:;">경남</a>
+                                        </li>
+                                        <li><a href="javascript:;">대구</a>
+                                        </li>
+                                        <li><a href="javascript:;">경북</a>
+                                        </li>
+                                        <li><a href="javascript:;">광주</a>
+                                        </li>
+                                        <li><a href="javascript:;">전남</a>
+                                        </li>
+                                        <li><a href="javascript:;">전북</a>
+                                        </li>
+                                        <li><a href="javascript:;">제주</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>작성자명</th>
-                            <td>
-                                <input name="name" class="select02" id="name" type="text" style="padding-left:5px; width:168px" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>휴대폰</th>
-                            <td>
-                                <input class="select02" type="text" numberonly="true" maxlength="3" size="5" style="padding-left:5px; width:80px;" id="phone1" name="phone1" value="010">-
-                                <input class="select02" type="text" numberonly="true" maxlength="4" size="5" style="padding-left:5px; width:80px;" id="phone2" name="phone2" value="0000">-
-                                <input class="select02" type="text" numberonly="true" maxlength="4" size="5" style="padding-left:5px; width:80px;" id="phone3" name="phone3" value="0000">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>이메일</th>
-                            <td>
-                                <input class="select02" type="text" maxlength="30" size="30" style="padding-left:5px; width:257px" id="email" name="email" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="padding-bottom: 0; margin-bottom: 0;">내용</th>
-                            <td colspan="3" style="padding-bottom: 0; margin-bottom: 0;">
-                                <textarea name="contents" class="select03" id="contents" style="" placeholder="안녕하세요. 고코투어입니다.
-
-본 문의처는 무료숙박권 이벤트와 관련된 문의만 요청가능합니다.
-
-문의에 대한 답변은 고코투어 사이트의 마이페이지 / 나의 문의내역에서 확인해 주세요.
-
-감사합니다."></textarea>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="btn-area"><a href="javascript: reseve_write();" class="btn-a">문의하기</a>
-                </div>
-            </div>
-        </div>
-
-        <div id="cancel_pop" style="display: none">
-            <div class="member_rsv_complete">
-                <!--- 동의단계 ---->
-                <div class="modal_area type2" id="cancel_step1">
-                    <div class="top">
-                        <strong>예약취소 및 결제 취소 수수료 규정안내</strong>
-                        <a href="#" class="modal_close" onclick="popCls('#cancel_pop')">
-                            <img src="http://img.go.co.kr/modal_close2.gif" alt="닫기">
-                        </a>
-                    </div>
-                    <div class="mid">
-
-                        <div id="cancel_wrap_sub">
-                            <form name="refund_c_form" id="refund_c_form">
-                                <input type="hidden" name="rnum" value="1723013">
-                                <input type="hidden" name="cancel_date" value="0">
-                                <input type="hidden" name="md" value="mode1">
-                                <input type="hidden" name="r1" value="100%">
-                                <input type="hidden" name="r2" value="0">
-                                <input type="hidden" name="r3" value="11020">
-                                <input type="hidden" name="r4" value="110200">
-
-                                <input type="hidden" name="p1" value="0">
-                                <input type="hidden" name="p2" value="110200">
-                                <input type="hidden" name="p3" value="0">
-                                <input type="hidden" name="p4" value="110200">
-                                <input type="hidden" name="all_mile_chk" value="Y" id="all_mile_chk">
-                            </form>
-                            <div class="cancel_wrap" style="border-top:none;border-bottom:none;margin-top:-10px">
-                                <table class="cancel_data">
-                                    <colgroup>
-                                        <col style="width:8%;">
-                                            <col style="width:8%;">
-                                                <col style="width:8%;">
-                                                    <col style="width:8%;">
-                                                        <col style="width:8%;">
-                                                            <col style="width:8%;">
-                                                                <col style="width:8%;">
-                                                                    <col style="width:8%;">
-                                                                        <col style="width:8%;">
-                                                                            <col style="width:8%;">
-                                                                                <col style="width:8%;">
-                                                                                    <col style="width:8%;">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th rowspan="2">예약일</th>
-                                            <th rowspan="2">취소일</th>
-                                            <th rowspan="2">총결제</th>
-                                            <th colspan="3">결제금액</th>
-                                            <th rowspan="2">취소
-                                                <br>수수료</th>
-                                            <th colspan="4" style="background:#fff000">환불액</th>
-                                            <th rowspan="2">적립금
-                                                <br>지급</th>
-                                        </tr>
-                                        <tr>
-                                            <th>실결제</th>
-                                            <th>적립금</th>
-                                            <th>할인쿠폰</th>
-                                            <!--<th>총결제</th> -->
-                                            <th style="background:#fff000">실지급</th>
-                                            <th style="background:#fff000">적립금</th>
-                                            <th style="background:#fff000">쿠폰</th>
-                                            <th style="background:#fff000">총환불</th>
-                                        </tr>
-                                        <tr>
-                                            <td>05월 17일</td>
-                                            <td>0일전</td>
-                                            <td>110,200원</td>
-                                            <td>0원</td>
-                                            <td>110,200원</td>
-                                            <td>0원</td>
-                                            <td>110,200원</td>
-                                            <td style="background:#fff000">0원</td>
-                                            <td style="background:#fff000">0원</td>
-                                            <td style="background:#fff000">0원</td>
-                                            <td style="background:#fff000">0원</td>
-                                            <td>11,020원</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="slt-dep2">
+                                    <ul class="clr">
+                                        <li><a href="javascript:;">평창군</a>
+                                        </li>
+                                        <li><a href="javascript:;">강릉시</a>
+                                        </li>
+                                        <li><a href="javascript:;">춘천시</a>
+                                        </li>
+                                        <li><a href="javascript:;">양양군</a>
+                                        </li>
+                                        <li><a href="javascript:;">홍천군</a>
+                                        </li>
+                                        <li><a href="javascript:;">속초시</a>
+                                        </li>
+                                        <li><a href="javascript:;">횡성군</a>
+                                        </li>
+                                        <li><a href="javascript:;">고성군</a>
+                                        </li>
+                                        <li><a href="javascript:;">원주시</a>
+                                        </li>
+                                        <li><a href="javascript:;">영원군</a>
+                                        </li>
+                                        <li><a href="javascript:;">정선시</a>
+                                        </li>
+                                        <li><a href="javascript:;">동해시</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;"></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div class="com_txt">
-                                <!---  사인패드 영역 ---->
-                                <div class="sign" style="position:relative">
-                                    <span class="tmp_txt">마우스로 이곳에 서명해주세요</span>
-                                    <div id="signature-pad" class="m-signature-pad" style="position:absolute;top:0;">
-                                        <div class="m-signature-pad--body">
-                                            <canvas height="90" width="340" style="touch-action: none;"></canvas>
+                            <!--달력-->
+                            <div class="rnSltCal rn-modal clr">
+
+                                <div class="cal-inner">
+                                    <p class="p-1">
+                                        <a href="" class="prev-a"></a><em>2017년 06월</em>
+                                    </p>
+                                    <table class="cal-tb">
+                                        <thead>
+                                            <tr>
+                                                <th class="sun">일</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th class="sat">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="off">
+                                                    <div></div>
+                                                </td>
+                                                <td class="off">
+                                                    <div></div>
+                                                </td>
+                                                <td class="off">
+                                                    <div></div>
+                                                </td>
+                                                <td class="off">
+                                                    <div></div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>1</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>2</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>3</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="off">
+                                                    <div>4</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>5</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>6</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>7</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>8</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>9</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>10</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="off">
+                                                    <div>11</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>12</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>13</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>14</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>15</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>16</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>17</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="off">
+                                                    <div>18</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>19</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>20</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>21</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>22</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>23</div>
+                                                </td>
+                                                <td class="off">
+                                                    <div>24</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="off">
+                                                    <div>25</div>
+                                                </td>
+                                                <!--날짜 미선택시-->
+                                                <!--<td><div>26</div></td>
+                    <td><div>27</div></td>
+                    <td><div>28</div></td>-->
+                                                <!--날짜 선택시-->
+                                                <td class="chkIn">
+                                                    <div>26<span class="c-ic i-chkIn"></span>
+                                                    </div>
+                                                </td>
+                                                <td class="ing">
+                                                    <div>27</div>
+                                                </td>
+                                                <td class="chkOut">
+                                                    <div>28<span class="c-ic i-chkOut"></span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>29</div>
+                                                </td>
+                                                <td>
+                                                    <div>30</div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="cal-inner">
+                                    <p class="p-1"><em>2017년 07월</em>
+                                        <a href="javascript:;" class="next-a"></a>
+                                    </p>
+                                    <table class="cal-tb">
+                                        <thead>
+                                            <tr>
+                                                <th class="sun">일</th>
+                                                <th>월</th>
+                                                <th>화</th>
+                                                <th>수</th>
+                                                <th>목</th>
+                                                <th>금</th>
+                                                <th class="sat">토</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td>
+                                                    <div></div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>1</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>2</div>
+                                                </td>
+                                                <td>
+                                                    <div>3</div>
+                                                </td>
+                                                <td>
+                                                    <div>4</div>
+                                                </td>
+                                                <td>
+                                                    <div>5</div>
+                                                </td>
+                                                <td>
+                                                    <div>6</div>
+                                                </td>
+                                                <td>
+                                                    <div>7</div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>8</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>9</div>
+                                                </td>
+                                                <td>
+                                                    <div>10</div>
+                                                </td>
+                                                <td>
+                                                    <div>11</div>
+                                                </td>
+                                                <td>
+                                                    <div>12</div>
+                                                </td>
+                                                <td>
+                                                    <div>13</div>
+                                                </td>
+                                                <td>
+                                                    <div>14</div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>15</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>16</div>
+                                                </td>
+                                                <td>
+                                                    <div>17</div>
+                                                </td>
+                                                <td>
+                                                    <div>18</div>
+                                                </td>
+                                                <td>
+                                                    <div>19</div>
+                                                </td>
+                                                <td>
+                                                    <div>20</div>
+                                                </td>
+                                                <td>
+                                                    <div>21</div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>22</div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div>23</div>
+                                                </td>
+                                                <td>
+                                                    <div>24</div>
+                                                </td>
+                                                <td>
+                                                    <div>25</div>
+                                                </td>
+                                                <td>
+                                                    <div>26</div>
+                                                </td>
+                                                <td>
+                                                    <div>27</div>
+                                                </td>
+                                                <td>
+                                                    <div>28</div>
+                                                </td>
+                                                <td class="sat">
+                                                    <div>29</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="clr"></div>
+                                <div class="d-area">
+                                    <a href="#" class="a1"><span class="c-ic i-today"></span> 오늘 날짜로 변경</a>
+                                    <!--날짜 미선택시-->
+                                    <!--<a href="#" class="a2">선택완료</a>-->
+                                    <!--날짜 선택시-->
+                                    <a href="#" class="a2 on">선택완료</a>
+                                </div>
+                            </div>
+
+
+                            <!--유형-->
+                            <div class="rnSltCtg rn-modal">
+                                <ul class="ul1">
+                                    <li><a href="javascript:;">전체</a>
+                                    </li>
+                                    <li><a href="javascript:;">호텔</a>
+                                    </li>
+                                    <li><a href="javascript:;">리조트</a>
+                                    </li>
+                                    <li><a href="javascript:;">콘도</a>
+                                    </li>
+                                    <li><a href="javascript:;">레지던스</a>
+                                    </li>
+                                    <li><a href="javascript:;">모텔</a>
+                                    </li>
+                                    <li><a href="javascript:;">유스호스텔</a>
+                                    </li>
+                                    <li><a href="javascript:;">펜션</a>
+                                    </li>
+                                    <li><a href="javascript:;">카라반</a>
+                                    </li>
+                                    <li><a href="javascript:;">풀빌라</a>
+                                    </li>
+                                    <li><a href="javascript:;">레저</a>
+                                    </li>
+                                    <li><a href="javascript:;">입장권</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--객실/인원 선택-->
+                            <div class="rnSltNum rn-modal">
+                                <ul class="ul1">
+                                    <li>
+                                        <span class="s-lbl">객실</span>
+                                        <div class="quan clr">
+                                            <span class="s-l"></span>
+                                            <!--숫자 증가시 on클래스 추가-->
+                                            <input type="text" class="inp on" placeholder="0" value="1">
+                                            <span class="s-r"></span>
                                         </div>
-                                    </div>
-                                </div>
-                                <!---  사인패드 영역 ---->
-
-                                <div class="modal_bullet" style="background:none;padding-left:0px">한번 취소처리된 주문건은 다시 원복처리가 불가합니다.
-                                    <br>신중한 결정 부탁드립니다.
-                                    <br>
-                                    <br><b>그래도 취소하시겠습니까?</b>
-                                </div>
-
-                            </div>
-                            <div class="modal_btn">
-                                <a href="#" class="chk">예</a>
-                                <a href="#" class="no">아니요</a>
-                            </div>
-
-                            <div class="cancel_wrap" style="border-top:none">
-                                <span style="font-size:15px;font-weight:bold">※ 취소수수료 규정</span>
-                                <table class="cancel_data" style="margin-top:0px;">
-                                    <colgroup>
-                                        <col style="width:200px;">
-                                            <col style="width:*;">
-                                                <col style="width:190px;">
-                                                    <col style="width:190px;">
-                                    </colgroup>
-                                    <tbody>
-                                        <tr>
-                                            <th>구분</th>
-                                            <th>취소수수료율</th>
-                                            <th>환불액</th>
-                                            <th>적립금 지급</th>
-                                        </tr>
-
-                                        <tr>
-                                            <td style="text-align:left">15일전</td>
-                                            <td>10%</td>
-                                            <td>결제금의 90% 환불</td>
-                                            <td>결제금의 10% 적립</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td style="text-align:left">14~10일전</td>
-                                            <td>20%</td>
-                                            <td>결제금의 80% 환불</td>
-                                            <td>결제금의 10% 적립</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td style="text-align:left">9~7일전</td>
-                                            <td>40%</td>
-                                            <td>결제금의 60% 환불</td>
-                                            <td>결제금의 10% 적립</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td style="text-align:left">6일전</td>
-                                            <td>70%</td>
-                                            <td>결제금의 30% 환불</td>
-                                            <td>결제금의 10% 적립</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td style="text-align:left">5일전~당일</td>
-                                            <td>100%</td>
-                                            <td>결제금의 0% 환불</td>
-                                            <td>결제금의 10% 적립</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                                <div class="notice_txt" style="padding-left:0px">
-                                    ※ 토요일, 일요일, 공휴일 및 평일 17시 이후의 취소신청접수시, 다음 영업일 기준의 취소수수료가 적용됩니다.
-                                    <br>※ 연박상품의 경우, 가장 빠른 이용일을 기준으로 취소수수료가 적용됩니다.
-                                    <br>※ 적립금은 취소에 따라 발생되는 고객님의 부담을 조금이나마 보상해드리기 위해서 고코투어에서
-                                    <br>&nbsp;&nbsp;&nbsp;&nbsp;지급해 드리는 적립금입니다.
-                                    <br>※ 취소수수료가 실결제한 금액보다 클 경우, 실 결제금이 우선 차감되며 나머지는 적립금에서 차감됩니다.
-                                </div>
+                                    </li>
+                                    <li>
+                                        <span class="s-lbl">성인</span>
+                                        <div class="quan clr">
+                                            <span class="s-l"></span>
+                                            <input type="text" class="inp" placeholder="0">
+                                            <span class="s-r"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="s-lbl">소아</span>
+                                        <div class="quan clr">
+                                            <span class="s-l"></span>
+                                            <input type="text" class="inp" placeholder="0">
+                                            <span class="s-r"></span>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+
                     </div>
+
+                    <div class="rn-schBtn">
+                        <button type="button"><span class="c-ic i-mag"></span> 검색</button>
+                    </div>
+
                 </div>
-
-                <!--- 환불방식 선택 ---->
-                <div class="modal_area" id="cancel_step2" style="display:none">
-                    <div class="top">
-                        <strong>환불방식 선택</strong>
-                        <a href="#" class="modal_close" onclick="reset_step();">
-                            <img src="http://img.go.co.kr/modal_close.gif" alt="">
-                        </a>
-                    </div>
-                    <div class="mid">
-                        <div class="com_txt">
-                            <p class="refund">환불 방식을 선택해주세요.</p>
-                        </div>
-                        <div class="modal_btn">
-                            <a href="#" class="refund02" onclick="refund_choice('refund_mileage')">적립금 전환</a>
-                            <a href="#" class="refund01" onclick="refund_choice('refund_cash')">환불받기</a>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="rnM-contents">
+            <div class="rn-container">
+                <div class="pic-sec bsLs">
+                    <ul class="ul1 clr">
+                        <li class="li-1"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">국내숙박</span></a>
+                        </li>
+                        <li class="li-2"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">레저/입장권</span></a>
+                        </li>
+                        <li class="li-3"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">공연/전시</span></a>
+                        </li>
+                        <li class="li-4"><a href="javascript:;"><span class="c-ic2"></span><span class="s-text">해외숙박</span></a>
+                        </li>
+                    </ul>
                 </div>
-
-                <!--- 예약건에 따른 다른내용 노출 ---->
-                <div class="modal_area" id="cancel_step3" style="display:none"></div>
-
-
-                <!--- 취소가 불가능한 예약건일 때  ---->
-                <div class="modal_area" id="cancel_step4" style="display:none">
-                    <div class="top">
-                        <strong>예약취소불가</strong>
-                        <a href="#" class="modal_close" onclick="reset_step();">
-                            <img src="http://img.go.co.kr/modal_close.gif" alt="">
-                        </a>
-                    </div>
-                    <div class="mid">
-                        <div class="com_txt">
-                            <strong>취소가 불가합니다.</strong>
-                            <p>
-                                - 결제를 2가지 이상으로 접수
-                                <br>- 이미 변경한 예약건
-                                <br>- 취소불가한 상품
-                            </p>
-                            <p style="margin-top:10px">
-                                위 내용의 경우 취소가 불가합니다. 게시판을 통해 문의바랍니다.
-                            </p>
-                        </div>
-                        <div class="modal_btn">
-                            <a href="#" class="complete" onclick="close_layer('layout_3')">확인</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="bn-sec">
+                <div class="rn-container">
+                    <ul id="bnSlider-1" class="bxSlider-1">
+                        <li class="li-1">
+                            <img class="bn-img" src="http://img.go.co.kr/renew/bn1_img.png" alt="고코투어모바일APP혜택">
+                            <div class="bn-contents">
+                                <p class="p1">모바일로 더 쉽고 편리하게!</p>
+                                <p class="p2">고코투어 모바일 <span class="s1">APP</span>
+                                </p>
+                                <p class="p3">이젠 고코투어를 더 쉽고 편하게 만나보세요!
+                                    <br>고코투어 앱으로 <span class="f-bd">더 많은 혜택</span>을 누리자!</p>
+                                <div class="d-store">
+                                    <a href="#">
+                                        <img src="http://img.go.co.kr/renew/ggStoreBtn.png" alt="구글스토어">
+                                    </a>
+                                    <a href="#">
+                                        <img src="http://img.go.co.kr/renew/appStoreBtn.png" alt="앱스토어">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li-2">
+                            <img class="bn-img" src="http://img.go.co.kr/renew/bn2_img.png" alt="고코투어와함께하세요">
+                            <div class="bn-contents">
+                                <p class="p1">귀사에 <span class="f-bd">예약서비스의 최고 경쟁력</span>을 드립니다.</p>
+                                <p class="p2">고코투어와 <span class="s1">함께 하세요!</span>
+                                </p>
+                                <p class="p3">고코투어는 여러 분야의 협력업체와 제휴를 통하여
+                                    <br>고객에게 보다 감각적이고 새로운 서비스를 제공합니다.</p>
+                                <div class="d-btnArea">
+                                    <a href="#" class="a1">고고투어 광고 신청</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-
             </div>
 
-            <script src="http://static.go.co.kr/js/signature_pad.js"></script>
-            <script type="text/javascript">
-                var signaturePad;
-                		var wrapper = document.getElementById("signature-pad"),
-                		canvas = wrapper.querySelector("canvas"),
-                		signaturePad;
-                
-                		signaturePad = new SignaturePad(canvas, {
-                			onBegin: function() {
-                				$(".tmp_txt").hide();
-                			}
-                		});
-                		canvas.width = 340;
-            </script>
+            <div class="add-sec">
+                <div class="rn-container">
+                    <ul class="ul1 clr">
+                        <li class="clr" onClick="popOpen('.price_all_layer_pop')">
+                            <div class="d1">
+                                <img src="http://img.go.co.kr/renew/lowPrcImg.png" alt="온라인최저가 보장">
+                            </div>
+                            <div class="d2">
+                                <p class="p1">온라인 최저가 보상</p>
+                                <p class="p2 ftfm-mg">
+                                    동일한 숙박에 대해 더 저렴한
+                                    <br>요금을 발견하셨다면 고코투어가
+                                    <br>보상해드리겠습니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="clr" onclick="popOpen('.popup-app-download')">
+                            <div class="d1">
+                                <img src="http://img.go.co.kr/mobile/i_gc.png" alt="고코투어앱">
+                            </div>
+                            <div class="d2 ftfm-mg">
+                                <p class="p1">무료 앱 다운로드</p>
+                                <p class="p2">
+                                    이동 중에도 다양한 상품을 찾고
+                                    <br>푸짐한 혜택을 더 할 수 있습니다.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="clr">
+                            <div class="d1">
+                                <img src="http://img.go.co.kr/renew/secuImg.png" alt="보안예약">
+                            </div>
+                            <div class="d2 ftfm-mg">
+                                <p class="p1">보안 예약</p>
+                                <p class="p2">
+                                    암호화 기술을 사용하여
+                                    <br>고객님의 소중한 데이터를 안전하게
+                                    <br>보호합니다.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
 
         <footer id="Footer" class="clr ftfm-mg">
@@ -1437,4 +1630,7 @@
 
 
     </div>
+
 </body>
+
+</html>
