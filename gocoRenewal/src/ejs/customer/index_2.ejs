@@ -1,0 +1,52 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container rn-container02">
+                <!-- 좌측 네비게이션 -->
+                <% include ../parts/customer/_lab.ejs %>
+
+                <div class="main main-mypage main-customer bsLs">
+                    <section class="sec-cmm cf sec-faq">
+                        <div class="row-h cf">
+                            <h2 class="pull-left;">FAQ 자주묻는 질문 <span class="sm">여행에 대한 궁금증을 찾아보세요</span></h2>
+                            <span class="sch-box cf pull-right">
+        						<input name="keyword" class="in reset" type="text" value="" placeholder="무엇을 도와드릴까요?" onkeypress="if(event.keyCode == 13) { search_faq(); return false; }">
+        						<a href="javascript:search_faq();" class="i-mag">검색</a>
+        					</span>
+                        </div>
+
+                        <!-- faq 인클루드 -->
+                        <% include ../parts/mypage/_faq_long.ejs %>
+                    </section>
+                </div>
+                <!-- main end -->
+
+            </div>
+        </div>
+
+        <% include ../parts/components/laypop/_cancle.ejs %>
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>
