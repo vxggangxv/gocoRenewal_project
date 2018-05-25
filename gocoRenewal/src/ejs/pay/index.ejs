@@ -1,0 +1,107 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/pay/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container container-pay">
+
+                <div class="main main-pay bsLs">
+                    <h2 class="cf">
+                        <span class="f-bd">예약자 정보입력</span>
+                        <span class="pull-right s-r">
+                            <span class="on">01. 예약정보입력/결제</span>
+                            <span class="ic-rArrow rArrow"></span>
+                            <span>02. 예약접수 완료</span>
+                        </span>
+                    </h2>
+                    <table class="tb-info">
+                        <colgroup>
+                            <col class="nth-1">
+                            <col class="nth-2">
+                        </colgroup>
+                        <tbody>
+                            <tr class="nth-1">
+                                <th>· 투숙자명</th>
+                                <td><input type="text" class="inp reset inp-1"></td>
+                            </tr>
+                            <tr class="nth-2">
+                                <th>· 연락처</th>
+                                <td>
+                                    <input type="text" class="inp reset inp-2">
+                                    <span class="s-">-</span>
+                                    <input type="text" class="inp reset inp-2">
+                                    <span class="s-">-</span>
+                                    <input type="text" class="inp reset inp-2">
+                                </td>
+                            </tr>
+                            <tr class="nth-3">
+                                <th class="va-top">· 이메일</th>
+                                <td>
+                                    <input type="text" class="inp reset inp-2">
+                                    <span class="at">@</span>
+                                    <input type="text" class="inp reset inp-3">
+                                    <select name="" id="" class="sel sel-1">
+                                        <option value="">직접입력</option>
+                                    </select>
+                                    <p class="p-1 c-red dot"><span class="dot">*</span> 예약 후 객실 및 예약안내는 예약하시는 분의 휴대폰과 이메일로 보내드리오니 정확하게 입력해주세요</p>
+                                </td>
+                            </tr>
+                            <tr class="nth-4">
+                                <td colspan="2" class="etc">
+                                    <div class="box">
+                                        <div>
+                                            기타요청사항
+                                             <p class="p-2 dot"><span class="dot">*</span> 요청사항은 투숙일 당일 현지 사정에 따라 가능여부가 확인되며, 가능하지 않을 수 있는 점 참고 바랍니다.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>결제수단 선택</h3>
+                    <div class="way">
+                        <p class="p-row"><input type="radio"> 신용카드 간편결제(법인카드 포함)</p>
+                        <p class="p-row"></p>
+                        <p class="p-row"></p>
+                        <div class="addTxt">
+                            · 신용카드 간편결제는 <span class="borB">별도의 설치없이 카드정보 입력만으로 결제가 가능</span>합니다.<br>
+                            · 신용카드, 체크카드, 법인카드로 결제가 가능합니다.
+                        </div>
+                    </div>
+                    <div class="d-ps">
+
+                    </div>
+                </div>
+                <!-- main end -->
+
+                <aside class="rab-pay bsLs">
+
+                </aside>
+
+            </div>
+        </div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>

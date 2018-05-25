@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+#Footer {margin-top: 50px;}
+
+/* 결제페이지 너비 조정 */
+.container-pay {width: 1040px; margin-top: 60px;}
+.container-pay > [class*=-pay] {float: left; position: relative;}
+
+.main-pay {width: 670px;}
+.main-pay h2 {font-size: 28px; border-bottom: 2px solid #959da8; padding-bottom: 5px; font-family: "Noto Sans KR", sans-serif;}
+.main-pay h2 .s-r {margin-top: 15px; font-size: 16px;}
+.main-pay h2 .s-r > span {letter-spacing: -1px; color: #b7b8ba;}
+.main-pay h2 .s-r > span.on {color: #3b67b0;}
+.main-pay h2 .s-r .rArrow:after {width: 9px; height: 9px; top: 0px; margin: 0 5px;}
+
+.tb-info {width: 100%;}
+.tb-info col.nth-1 {width: 15%;}
+.tb-info col.nth-2 {width: 85%;}
+.tb-info tbody th, .tb-info tbody td {padding: 10px 0; vertical-align: middle;}
+.tb-info tbody tr:first-child th, .tb-info tbody tr:first-child td {padding-top: 20px;}
+.tb-info tbody th {font-weight: 700;}
+.tb-info .inp, .tb-info select.sel {height: 26px; border: 1px solid #bebebe; font-size: 15px;}
+.tb-info .inp-1 {width: 150px;}
+.tb-info .inp-2 {width: 100px;}
+.tb-info .inp-3 {width: 190px;}
+.tb-info .sel-1 {width: 160px;}
+.tb-info tbody td .p-1 {font-size: 13.5px; word-break: keep-all; margin-top: 10px;}
+.tb-info tbody td p.dot {position: relative; padding-left: 12px;}
+.tb-info tbody td p.dot .dot {position: absolute; left: 0;}
+.tb-info tbody td.etc {padding: 0;}
+.tb-info tbody td.etc .box {border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; background: #fafafa; padding: 15px;}
+.tb-info tbody td.etc .box > div {border: 1px solid #c8c8c8; background: #fff; padding: 6px 12px; font-size: 13.5px; color: #888;}
+
+.main-pay h3 {font-size: 22px; font-family: "Noto Sans KR", sans-serif; padding-bottom: 5px; border-bottom: 1px solid #959da8; margin-top: 25px;}
+
+.rab-pay {margin-left: 20px; width: 350px; border: 1px solid #c8c8c8;}
