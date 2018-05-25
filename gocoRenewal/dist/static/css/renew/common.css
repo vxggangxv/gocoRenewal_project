@@ -50,6 +50,7 @@ table.sep td {
 .c-ic.i-rArr {width: 28px; background-position: -80px -60px;}
 .c-ic.i-yChk {width: 14px; background-position: -120px -60px;}
 .c-ic.i-wCal {width: 16px; height: 16px; background-position: -200px -60px;}
+.c-ic.i-wCal2 {width: 19px; height: 19px; background-position: -240px -60px;}
 .c-ic.i-chkIn, .c-ic.i-chkOut {width: 15px; height: 9px;}
 .c-ic.i-chkIn {background-position: -0px -100px;}
 .c-ic.i-chkOut {background-position: -40px -100px;}
@@ -196,7 +197,7 @@ span.i-ctgr-off {background: #555a78;}
 /*.rn-gwrap a:focus {font-weight: 400;} */
 
 /* 전체 wrap */
-.rn-gwrap {position: relative; width: 100%; min-width: 1600px; /*width: 1680px;*/}
+.rn-gwrap {position: relative; width: 100%; min-width: 1200px; /*width: 1680px;*/}
 /* 공통 콘텐츠 태그 클래스 */
 .rn-contents {position: relative;}
 .rn-container, .rn-containerF {position: relative; margin: 0 auto;}
@@ -264,7 +265,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-header .d-box > *, .rnL-header .d-box .schBox > * {vertical-align: middle;}
 .rnL-header .d-box .schBox {position: relative; margin-left: 36px; display: inline-block;}
 .rnL-header .d-box .schBox .schBor, .rnL-header .d-box .schBox .schBtn {position: relative; top: 0px; height: 47px; margin-left: -4px;}
-.rnL-header .d-box .schBox .schBor {display: inline-block; border: 2px solid #fa6b0a; width: 405px;}
+.rnL-header .d-box .schBox .schBor {display: inline-block; border: 2px solid #fa6b0a; width: 350px;}
 .rnL-header .d-box .schBox .schBor input[type=text] {position: relative; display: block; top: 11px; width: 93%; border: none; background: 0; font-size: 18px; outline: none; letter-spacing: 0; margin: 0 auto; color: #555;}
 
 .rnL-header .d-box .schBox .schBtn {display: inline-block; border: 0; width: 47px; background: #fa6b0a;}
@@ -280,13 +281,13 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-header .d-box .schBox .schEx .d-area {position: relative; border-top: 1px solid #EBEEF3; font-size: 12.5px; padding: 8px 12px;}
 .rnL-header .d-box .schBox .schEx .d-area .a1 {position: absolute; right: 10px; top: 7px; border: 1px solid #bfc8d9; padding: 4px 6px; line-height: 1;}
 
-.rnL-header .d-box .dLink-box {position: relative;display: inline-block; margin-left: 40px; top: 4px;}
+.rnL-header .d-box .dLink-box {position: relative;display: inline-block; margin-left: 25px; top: 4px;}
 .rnL-header .d-box .dLink-box a {font-size: 16px; color: #4d4d4d; font-weight: 700;}
 .rnL-header .d-box .dLink-box .mgl {position: relative; width: 1px; height: 14px; background: #d6d6d6; top: -5px; margin: 0 14px;}
 
 .rnL-header .flr-box {position: absolute; right: 26px; top: 18px; /*top: 36px;*/ font-size: 16px;}
 .rnL-header .flr-box .rnL-nv {}
-.rnL-header .flr-box .rnL-nv > li {display: inline-block; margin: 0 17px;}
+.rnL-header .flr-box .rnL-nv > li {display: inline-block; margin: 0 8px;}
 .rnL-header .flr-box .rnL-nv > li.last {margin-right: 0;}
 .rnL-header .flr-box .rnL-nv > li > a {color: #5f5f5f;}
 .rnL-header .flr-box .rnL-nv > li > a.myArea {color: #fa6b0a;}
@@ -424,8 +425,14 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 	/*border-top: 4px solid #fa6b0a;*/
 }
 .rnSltCal, .rnSltReg {top: 42px;}
+.rnSltCal, .rnSltCal * {box-sizing: border-box;}
 
 /* 달력 */
+.wrap-laypop .rnSltCal {display: block; left: 50%; margin-left: -345px; top: 50%; margin-top: -206px; border: 0;}
+.wrap-laypop .rnSltCal.caltype-1 {margin-left: -172.5px; margin-top: -202px;}
+.rnSltCal h2.tit {background: #FA6B0A; color: #fff; text-align: center; padding: 8px 0; font-size: 17px;}
+.rnSltCal h2.tit .a-x {}
+.rnSltCal h2.tit .a-x:before, .rnSltCal h2.tit .a-x:after {background: #fff; height: 2px;}
 .rnSltCal {position: absolute; left: 0; background-color: #fff; letter-spacing: -0.5px; padding-bottom: 20px; width: 690px; /*height: 413px;*/ color: #3b3b3b;}
 .rnSltCal .cal-inner {position: relative; width: 50%; float: left; padding: 0 20px;}
 .rnSltCal .cal-inner:after {content: ""; position: absolute; right: 0; top: 73px; height: 210px; width: 1px; background: #edebea;}
@@ -597,6 +604,33 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .pdtCal .s-undef {display: block; padding: 1px 0 0; color: #fff; font-size: 11px; width: 90%; text-align: center; line-height: 17px; margin: 0 auto; font-family: "Dotum", sans-serif;}
 .pdtCal .s-chk {background: #ff2b5c;}
 .pdtCal .s-ddLine {background: #8c8c8c;}
+
+/* 마이페이지, 고객센터 좌측 네비게이션 */
+.lab .lnb {position: relative;}
+.lab {width: 216px;}
+.lab h2, .lnb {border: 1px solid #dcdcdc;}
+.lab h2 {font-size: 23px; background: #f4f4f4; font-weight: 700; padding: 15px 0; border-bottom: 0;}
+.lnb {border: 1px solid #dcdcdc;}
+.lnb > ul > li > a {display: block; padding: 10px 0; border-top: 1px solid #dcdcdc;}
+.lnb > ul > li.on > a {border-left: 6px solid #fa6c0a; color: #fa6c0a;}
+.lnb > ul > li.type02 > a {background: #696d76; color: #fff;}
+.lnb > ul > li.type02.on > a {background: #fa6c0a;}
+.lnb > ul > li:first-child > a {border-top: 0;}
+.lab h2, .lnb > ul > li > a {padding-left: 20px;}
+.lab .cus-call {position: relative; margin-top: 20px; width: 100%; height: 50px; box-sizing: border-box; border: 1px solid #d0d0d0; border-top: 2px solid #696d76; font-size: 17px; color: #4d4d4d; letter-spacing: -1px; background: #f7f7f7;}
+.lab .cus-call a {display: block; width: 100%; height: 100%; padding-left: 15px;}
+.lab .cus-call a:after {content: ""; display: inline-block; height: 107%; vertical-align: middle;}
+.lab .cus-call a img {position: relative; top: -1px; margin-right: 10px;}
+.lab .cus-call a .i-faqPh {position: relative; top: -2px; margin-right: 5px; display: inline-block; width: 25px; height: 25px; background: url(http://img.go.co.kr/i_faqPh.png); vertical-align: middle;}
+.lab .cus-call.on {background: #696d76; color: #fff; border: 0;}
+.lab .cus-call.on a .i-faqPh {background: url(http://img.go.co.kr/i_faqPh_on.png);}
+.lab .cus-call .center {display: none; text-align: left; padding: 7px 0; padding-left: 15px; border: 1px solid #d0d0d0; border-top: 0;}
+.lab .cus-call.on .center {display: block;}
+.lab .cus-call .center {font-size: 15px; color: #666;}
+.lab .cus-call .center > span {display: inline-block;}
+.lab .cus-call .center .s-1 {font-size: 16px; color: #232323;}
+.lab .cus-call .center .s-2 {font-size: 28px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2;}
+.lab .cus-call .center .s-3 {line-height: 1.4; margin-top: 2px;}
 
 /* 레이어팝업 */
 .wrap-laypop {z-index: 100;}

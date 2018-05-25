@@ -24,10 +24,10 @@
 
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
-    <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
-<link rel="stylesheet" href="http://static.go.co.kr/css/renew/mypage/init.css"> -->
-    <link rel="stylesheet" href="/static/css/renew/common.css">
-    <link rel="stylesheet" href="/static/css/renew/mypage/init.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/mypage/init.css">
+    <!-- <link rel="stylesheet" href="/static/css/renew/common.css">
+<link rel="stylesheet" href="/static/css/renew/mypage/init.css"> -->
 
     <!-- 별도 css 추가 영역 -->
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
@@ -41,10 +41,10 @@
 
     <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
     <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
-    <!-- <script src="http://static.go.co.kr/js/renew/common.js"></script>
-<script src="http://static.go.co.kr/js/renew/mypage/init.js"></script> -->
-    <script src="/static/js/renew/common.js"></script>
-    <script src="/static/js/renew/mypage/init.js"></script>
+    <script src="http://static.go.co.kr/js/renew/common.js"></script>
+    <script src="http://static.go.co.kr/js/renew/mypage/init.js"></script>
+    <!-- <script src="/static/js/renew/common.js"></script>
+<script src="/static/js/renew/mypage/init.js"></script> -->
 
 </head>
 
@@ -176,7 +176,9 @@
 			</div>
 		</div>
 	</div> -->
-            <div class="rn-hdArea fixed">
+            <!-- 해외숙박경우 fixed 추가 -->
+            <!-- <div class="rn-hdArea fixed"> -->
+            <div class="rn-hdArea">
                 <div class="rn-container">
                     <div class="d-box clr">
                         <a class="logo-a" href="/views/">
@@ -188,7 +190,7 @@
                             <span class="schBor" id="schBor">
 						<input type="text" tabindex="1" title="검색어" placeholder="어디로 떠나고 싶으신가요?" value="">
 					</span>
-                            <button class="schBtn" type="submit" tabindex="2" title="검색">
+                            <button class="schBtn" type="submit" tabindex="2" title="검색" onclick="location.href='/views/search/'">
                                 <span class="c-ic i-mag"></span>
                             </button>
                             <div class="schEx">
@@ -243,11 +245,11 @@
 
                         <!--새로운 이벤트 있을 경우 i-new 아이콘 추가 -->
                         <div class="dLink-box">
-                            <a href="#">이벤트 <span class="i-new"></span></a>
-                            <span class="mgl"></span>
-                            <a href="/views/search/">숙소 추천받기</a>
-                            <span class="mgl"></span>
-                            <a href="#">광고/입점 제휴문의</a>
+                            <a href="/views/customer/index_3.html">이벤트 <span class="i-new"></span></a>
+                            <!-- <span class="mgl"></span>
+					<a href="/views/search/">숙소 추천받기</a>
+					<span class="mgl"></span>
+					<a href="#">광고/입점 제휴문의</a> -->
 
                             <!-- <div class="btnBox-audio">
 						<button type="button" onclick="playAudioA()">Goco2s</button>
@@ -719,7 +721,7 @@
         <div class="rn-contents">
             <div class="rn-container rn-container02">
                 <!-- 좌측 네비게이션 -->
-                <aside class="lab bsLsbo">
+                <aside class="lab bsLs">
                     <h2>마이페이지</h2>
                     <nav class="lnb">
                         <ul>
@@ -746,8 +748,20 @@
                     </nav>
 
                     <div class="cus-call">
-                        <a href="#">
-                            <img src="http://img.go.co.kr/i_faqPh.png" alt="고객센터전화문의">고객센터 전화문의</a>
+                        <a href="javascript:;" onclick="clickFn.selfOn('.cus-call')"><span class="i-faqPh"></span> 고객센터 전화문의</a>
+                        <div class="center">
+                            <span class="s-1 f-bd">고코투어 고객센터</span>
+                            <br>
+                            <span class="s-2 thColor1 f-bd">1666-1243</span>
+                            <br>
+                            <span class="s-3">
+
+                주중 09:30~18:00<br>
+
+                주말/공휴일 09:30~17:00
+
+            </span>
+                        </div>
                     </div>
                 </aside>
 
@@ -1381,6 +1395,94 @@
                         </li>
                     </ul>
                     <p>* 문자로 발송드린 URL을 클릭하시면 앱설치가 가능한 설치페이지로 이동합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1대1 문의하기 -->
+        <div class="dropDown-bg inquiry1on1" style="display: none">
+            <div class="qna-wrap" style="">
+                <div class="qna-th">
+                    <p>Q&A 문의하기</p>
+                    <a href="#" class="a-i-x a-x" onclick="popCls('.inquiry1on1')"></a>
+                </div>
+
+                <table class="qna_t_write">
+                    <colgroup>
+                        <col width="120">
+                            <col width="580">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>질문분류</th>
+                            <td>
+                                <input type="radio" name="category1" id="_type1" value="예약변경/취소관련" style="cursor:Pointer" checked="">
+                                <label for="_type1" style="cursor:Pointer">예약변경/취소관련</label>&nbsp;
+                                <input type="radio" name="category1" id="_type2" value="요금/결제관련" style="cursor:Pointer">
+                                <label for="_type2" style="cursor:Pointer">요금/결제관련</label>&nbsp;
+                                <input type="radio" name="category1" id="_type3" value="오류관련" style="cursor:Pointer">
+                                <label for="_type3" style="cursor:Pointer">오류관련</label>&nbsp;
+                                <input type="radio" name="category1" id="_type4" value="회원정보관련" style="cursor:Pointer">
+                                <label for="_type4" style="cursor:Pointer">회원정보관련</label>&nbsp;
+                                <input type="radio" name="category1" id="_type5" value="단체문의" style="cursor:Pointer">
+                                <label for="_type5" style="cursor:Pointer">단체문의</label>&nbsp;
+                                <input type="radio" name="category1" id="_type6" value="기타" style="cursor:Pointer">
+                                <label for="_type6" style="cursor:Pointer">기타</label>
+                            </td>
+                        </tr>
+                        <tr id="_type1_is" style="display: table-row;">
+                            <th>문의상품</th>
+                            <td>
+                                <select name="radioch">
+                                    <option value="287880">강릉관광호텔(최근본시설)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>제목</th>
+                            <td>
+                                <div class="qna_title_search_list">
+                                    <select class="select02" style="padding-left:5px;" name="subject" id="subject">
+                                        <option value="오션투유리조트 무료숙박권 관련 문의드려요.">오션투유리조트 무료숙박권 관련 문의드려요.</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>작성자명</th>
+                            <td>
+                                <input name="name" class="select02" id="name" type="text" style="padding-left:5px; width:168px" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>휴대폰</th>
+                            <td>
+                                <input class="select02" type="text" numberonly="true" maxlength="3" size="5" style="padding-left:5px; width:80px;" id="phone1" name="phone1" value="010">-
+                                <input class="select02" type="text" numberonly="true" maxlength="4" size="5" style="padding-left:5px; width:80px;" id="phone2" name="phone2" value="0000">-
+                                <input class="select02" type="text" numberonly="true" maxlength="4" size="5" style="padding-left:5px; width:80px;" id="phone3" name="phone3" value="0000">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>
+                                <input class="select02" type="text" maxlength="30" size="30" style="padding-left:5px; width:257px" id="email" name="email" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="padding-bottom: 0; margin-bottom: 0;">내용</th>
+                            <td colspan="3" style="padding-bottom: 0; margin-bottom: 0;">
+                                <textarea name="contents" class="select03" id="contents" style="" placeholder="안녕하세요. 고코투어입니다.
+
+본 문의처는 무료숙박권 이벤트와 관련된 문의만 요청가능합니다.
+
+문의에 대한 답변은 고코투어 사이트의 마이페이지 / 나의 문의내역에서 확인해 주세요.
+
+감사합니다."></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn-area"><a href="javascript: reseve_write();" class="btn-a">문의하기</a>
                 </div>
             </div>
         </div>

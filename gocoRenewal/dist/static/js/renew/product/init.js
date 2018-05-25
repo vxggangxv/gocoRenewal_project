@@ -63,12 +63,13 @@ $(function() {
 	// 스크롤 이동시 날짜확인, 하단 픽스
 	$(window).scroll(function() {
 		var scr = $(window).scrollTop();
+		var objTop = $("#sec-prd-list").offset().top;
 
 		//console.log(scr);
-		if (scr == 700) {
+		if (scr == objTop) {
 			$("#sec-prd-buy").hide();
 		}
-		if (scr >= 700) {
+		if (scr >= objTop) {
 			$("#sec-prd-buy").fadeIn('fast');
 			$("#sec-prd-buy").addClass('affix');
 			$("#sec-prd-list").css("margin-top", "90px");

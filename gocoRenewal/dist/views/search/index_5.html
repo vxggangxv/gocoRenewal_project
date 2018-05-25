@@ -24,10 +24,10 @@
 
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/ion.rangeSlider.css">
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/ion.rangeSlider.custom.css">
-    <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
-<link rel="stylesheet" href="http://static.go.co.kr/css/renew/search/init.css"> -->
-    <link rel="stylesheet" href="/static/css/renew/common.css">
-    <link rel="stylesheet" href="/static/css/renew/search/init.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/search/init.css">
+    <!-- <link rel="stylesheet" href="/static/css/renew/common.css">
+<link rel="stylesheet" href="/static/css/renew/search/init.css"> -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="http://code.jquery.com/jquery.min.js"></script>
@@ -38,10 +38,10 @@
 
     <script src="http://static.go.co.kr/js/renew/libs/jquery.lazyload.min.js"></script>
     <script src="http://static.go.co.kr/js/renew/libs/ion.rangeSlider.min.js"></script>
-    <!-- <script src="http://static.go.co.kr/js/renew/common.js"></script>
-<script src="http://static.go.co.kr/js/renew/search/init.js"></script> -->
-    <script src="/static/js/renew/common.js"></script>
-    <script src="/static/js/renew/search/init.js"></script>
+    <script src="http://static.go.co.kr/js/renew/common.js"></script>
+    <script src="http://static.go.co.kr/js/renew/search/init.js"></script>
+    <!-- <script src="/static/js/renew/common.js"></script>
+<script src="/static/js/renew/search/init.js"></script> -->
 
 </head>
 <!-- 180320 필터 없을경우 body클래스 추가, 입장권일 경우 case-ticket 추가 -->
@@ -174,7 +174,9 @@
 			</div>
 		</div>
 	</div> -->
-            <div class="rn-hdArea fixed">
+            <!-- 해외숙박경우 fixed 추가 -->
+            <!-- <div class="rn-hdArea fixed"> -->
+            <div class="rn-hdArea">
                 <div class="rn-container">
                     <div class="d-box clr">
                         <a class="logo-a" href="/views/">
@@ -186,7 +188,7 @@
                             <span class="schBor" id="schBor">
 						<input type="text" tabindex="1" title="검색어" placeholder="어디로 떠나고 싶으신가요?" value="">
 					</span>
-                            <button class="schBtn" type="submit" tabindex="2" title="검색">
+                            <button class="schBtn" type="submit" tabindex="2" title="검색" onclick="location.href='/views/search/'">
                                 <span class="c-ic i-mag"></span>
                             </button>
                             <div class="schEx">
@@ -241,11 +243,11 @@
 
                         <!--새로운 이벤트 있을 경우 i-new 아이콘 추가 -->
                         <div class="dLink-box">
-                            <a href="#">이벤트 <span class="i-new"></span></a>
-                            <span class="mgl"></span>
-                            <a href="/views/search/">숙소 추천받기</a>
-                            <span class="mgl"></span>
-                            <a href="#">광고/입점 제휴문의</a>
+                            <a href="/views/customer/index_3.html">이벤트 <span class="i-new"></span></a>
+                            <!-- <span class="mgl"></span>
+					<a href="/views/search/">숙소 추천받기</a>
+					<span class="mgl"></span>
+					<a href="#">광고/입점 제휴문의</a> -->
 
                             <!-- <div class="btnBox-audio">
 						<button type="button" onclick="playAudioA()">Goco2s</button>

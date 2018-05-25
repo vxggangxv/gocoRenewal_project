@@ -106,7 +106,7 @@ $(function() {
 		}
 	});
 	$("#faq .faq_more .btn-q").click(function() {
-		$('#qna-pop-bg').show();
+		$('.inquiry1on1').show();
 		return false;
 	});
 	$("#faq .faq_more .btn-x").click(function() {
@@ -173,6 +173,7 @@ function faq(login) {
 			case 1:	$("#subject").val("도고BS콘도 무료숙박권 관련 문의드려요.");		break;
 			case 2:	$("#subject").val("메이힐스리조트 무료숙박권 관련 문의드려요.");	break;
 			case 3:	$("#subject").val("연호리조트 무료숙박권 관련 문의드려요.");		break;
+			case 4:	$("#subject").val("태백라마다호텔 무료숙박권 관련 문의드려요.");	break;
 		}
 	});
 	wrap.find(".a-pop").click(function() {
@@ -208,6 +209,11 @@ function tabFn(tab, contents) {
 /* 클릭 기능 active */
 var clickFn = {
 
+	selfOn : function(itm) {
+		$(itm).click(function() {
+			$(this).toggleClass("on");
+		});
+	},
 	sib : function(itm) {
 		$(itm).click(function() {
 			$(this).addClass("active").siblings().removeClass("active");

@@ -210,10 +210,11 @@
 .contents-region .row-region .tab-region > li > a {display: inline-block; padding: 12px 25px;}
 .contents-region .row-region .tab-region > li:hover > a,
 .contents-region .row-region .tab-region > li.on > a {background: #404d6c; color: #fff;}
+.contents-overseas {margin-bottom: 80px;}
 .contents-overseas .box-prod {margin: 50px auto;}
 .contents-overseas .box-prod h3 {border-bottom: 2px solid #555;}
 .contents-overseas .box-prod h3 * {position: relative;}
-.contents-overseas .box-prod h3 .big {font-size: 25px; font-weight: 700;}
+.contents-overseas .box-prod h3 .big {font-size: 25px; font-weight: 700; font-family: "Noto Sans KR", sans-serif;}
 .contents-overseas .box-prod h3 .all {top: -2px; font-size: 15px;}
 .contents-overseas .box-prod h3 .all .gt { top: -1px; font-size: 13px;}
 .contents-overseas .box-prod h3 .more {top: 8px; font-size: 14px; font-weight: 700; border: 1px solid #000; border-radius: 2px; float: right; padding: 1px 5px;}
