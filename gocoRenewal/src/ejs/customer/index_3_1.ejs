@@ -1,0 +1,65 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.lazyload.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/ion.rangeSlider.min.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container rn-container02">
+                <!-- 좌측 네비게이션 -->
+                <% include ../parts/customer/_lab.ejs %>
+
+                <div class="main main-mypage main-customer bsLs" id="main-customer">
+                    <section class="sec-cmm cf sec-evt">
+                        <h2>
+                            7만원 쿠폰팩 지급 이벤트 <span class="sm">(2018.05.08~ 진행중)</span>
+                            <a href="" class="pull-right btn-list"><span class="ic-lArrow lArrow"></span> 이벤트 목록</a>
+                        </h2>
+
+                        <!-- 이벤트 내용 영역 -->
+                        <div class="contents-evtDetail">
+                            <!-- 7만원 쿠폰팩 이벤트 -->
+                        	<!-- <img src="http://img.go.co.kr/mobile/landing/20170915_appEvent/appEvent_pc.jpg" alt="70000원 쿠폰팩받고 즉시할인 혜택누리자" border="0" usemap="#Map" style="display: block; margin: 0 auto;">
+                        	<map name="Map" id="Map">
+                        		<area shape="rect" coords="49,1305,349,1385" href="javascript:app_event_location('w_and_n1');" onfocus="this.blur()">
+                        		<area shape="rect" coords="389,1305,690,1385" href="javascript:app_event_location('w_ios_n1');" onfocus="this.blur()">
+                        	</map> -->
+                            <!-- 리스타그램 -->
+                            <img src="http://img.go.co.kr/mobile/20170927_instagram/goco_instagram.jpg?ver=20180525143115" border="0" onclick="" style="cursor:pointer">
+
+                            <!-- 종료된 이벤트 등장 -->
+                            <div class="laypop-endEvt">
+                                <a href="javascript:;" class="a-i-x a-x" onclick="popCls('.laypop-endEvt')"></a>
+                                <p class="p-1"><em class="f-bd">아쉽지만 종료된 이벤트</em>입니다!</p>
+                                <p>진행중인 다른 이벤트를 확인해주세요</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- main end -->
+
+            </div>
+        </div>
+
+        <% include ../parts/components/laypop/_cancle.ejs %>
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>
