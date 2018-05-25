@@ -1,0 +1,99 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.lazyload.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/ion.rangeSlider.min.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<div class="rn-contents">
+            <div class="rn-container rn-container02">
+                <!-- 좌측 네비게이션 -->
+                <% include ../parts/customer/_lab.ejs %>
+
+                <div class="main main-mypage main-customer bsLs" id="main-customer">
+                    <section class="sec-cmm cf sec-evt">
+                        <h2>이벤트</h2>
+                        <ul class="tab-evt cf">
+                            <li class="tab-1 on">진행중인 이벤트(6)</li>
+                            <li class="tab-2">종료된 이벤트</li>
+                        </ul>
+
+                        <div class="contents-evt">
+                            <div class="contents-1 on">
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">이벤트</span><span class="f-bd">7만원 쿠폰팩 지급 이벤트</span></p>
+                                    <p class="txt">고코투어 역대급 통 큰 혜택이 쏟아진다!</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/cpPack70.jpg" data-original="http://img.go.co.kr/renew/event/cpPack70.jpg" alt="7만원 쿠폰팩"></a>
+                                </div>
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">쿠폰혜택</span><span class="f-bd">친구에게 5,000원 할인쿠폰 선물하기</span></p>
+                                    <p class="txt">친구가 사용할 때마다 나에게 5,000원씩 자동적립</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/friends5.jpg" data-original="http://img.go.co.kr/renew/event/friends5.jpg" alt="친구할인쿠폰"></a>
+                                </div>
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">쿠폰혜택</span><span class="f-bd">고코투어 생일 축하 할인쿠폰</span></p>
+                                    <p class="txt">단 하루뿐인 생일을 축하드리는 마음으로 준비한 할인쿠폰</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/birth.jpg" data-original="http://img.go.co.kr/renew/event/birth.jpg" alt="생일할인쿠폰"></a>
+                                </div>
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">이벤트</span><span class="f-bd">2468 이벤트 2탄</span></p>
+                                    <p class="txt">천혜의 절경이 펼쳐진 오션투유리조트 무료숙박권 추첨</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/oc2y2468_2.jpg" data-original="http://img.go.co.kr/renew/event/oc2y2468_2.jpg" alt="오션투유이벤트"></a>
+                                </div>
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">이벤트</span><span class="f-bd">삼삼구 이벤트</span></p>
+                                    <p class="txt">동해와 설악을 한번에! 연호리조트 무료숙박권 추첨</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/yeonho339.jpg" data-original="http://img.go.co.kr/renew/event/yeonho339.jpg" alt="연호리조트이벤트"></a>
+                                </div>
+                            </div>
+                            <div class="contents-2">
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">종료</span><span class="f-bd">2468 이벤트 1탄</span></p>
+                                    <p class="txt">천혜의 절경이 펼쳐진 오션투유리조트 무료숙박권 추첨</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/oc2y2468_1.jpg" data-original="http://img.go.co.kr/renew/event/oc2y2468_1.jpg" alt="오션투유이벤트"></a>
+                                </div>
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">종료</span><span class="f-bd">리그램 이벤트</span></p>
+                                    <p class="txt">고코투어 인스타그램 오픈기념! 리그램 이벤트</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/regram.jpg" data-original="http://img.go.co.kr/renew/event/regram.jpg" alt="리그램이벤트"></a>
+                                </div>
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">종료</span><span class="f-bd">최저가 워터파크 할인대전</span></p>
+                                    <p class="txt">고코투어가 최저라고 보장하는 기획전</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/waterparkSale.jpg" data-original="http://img.go.co.kr/renew/event/waterparkSale.jpg" alt="워터파크할인대전"></a>
+                                </div>
+                                <div class="itm">
+                                    <p class="name"><span class="s-1">종료</span><span class="f-bd">3만원 쿠폰 지급 이벤트</span></p>
+                                    <p class="txt">고코투어 역대급 통 큰 헤택이 쏟아진다!</p>
+                                    <a href=""><img class="img-evt" src="http://img.go.co.kr/renew/event/cpPack30.jpg" data-original="http://img.go.co.kr/renew/event/cpPack30.jpg" alt="3만원쿠폰"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- main end -->
+
+            </div>
+        </div>
+
+        <% include ../parts/components/laypop/_cancle.ejs %>
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>
