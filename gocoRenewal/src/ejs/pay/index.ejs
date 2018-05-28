@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
 
     <% include ../parts/head/_headScript.ejs %>
-    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
-    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
     <% include ../parts/head/_commonScript.ejs %>
 </head>
 <body>
@@ -69,10 +67,8 @@
                             <tr class="nth-4">
                                 <td colspan="2" class="etc">
                                     <div class="box">
-                                        <div>
-                                            기타요청사항
-                                             <p class="p-2 dot"><span class="dot">*</span> 요청사항은 투숙일 당일 현지 사정에 따라 가능여부가 확인되며, 가능하지 않을 수 있는 점 참고 바랍니다.</p>
-                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="기타요청사항
+* 요청사항은 투숙일 당일 현지 사정에 따라 가능여부가 확인되며 가능하지 않을 수 있는 점 참고 바랍니다."></textarea>
                                     </div>
                                 </td>
                             </tr>
@@ -83,7 +79,7 @@
                     <div class="way">
 
                         <ul class="area-chk cf">
-                            <li class="nth-1"><label><input type="radio" name="wayChk"> 신용카드 간편결제(법인카드 포함)</label></li>
+                            <li class="nth-1"><label><input type="radio" name="wayChk" checked> 신용카드 간편결제(법인카드 포함)</label></li>
                             <li class="nth-2"><label><input type="radio" name="wayChk"> 신용카드 ISP결제(인증서 제출방식, 앱카드)</label></li>
                             <li class="nth-3"><label><input type="radio" name="wayChk"> 휴대폰결제</label></li>
                             <li class="nth-4"><label><input type="radio" name="wayChk"> <img src="http://img.go.co.kr/icon_npay.jpg" width="90" alt="네이버페이"></label></li>
@@ -206,7 +202,7 @@
             <div class="bg-back"></div>
             <div id="pay_discount_pop">
                 <a href="javascript:;" class="a-i-x a-x" onclick="popCls('#layPop-payDiscount')"></a>
-                <h3>- 쿠폰 할인 </h3>
+                <h3>쿠폰 할인 </h3>
                 <table>
                     <colgroup>
                         <col width="165">
@@ -214,7 +210,7 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <th>사용할 수 있는 쿠폰</th>
+                            <th>적용가능 쿠폰</th>
                             <td>
 
                                 <select name="my_coupon" class="select" id="my_coupon" style="width: 200px" onchange="coupon_chk($(this).val())">
@@ -223,14 +219,14 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>쿠폰 할인금액</th>
+                            <th>쿠폰 할인 금액</th>
                             <td><span class="dis" id="after_coupon">0</span>원</td>
                         </tr>
                     </tbody>
                 </table>
 
 
-                <h3>- 적립금 할인</h3>
+                <h3>적립금 할인</h3>
                 <table>
                     <colgroup>
                         <col width="165">
@@ -246,7 +242,7 @@
                             <td>
 
                                 <input name="use_mileage" title="이용금액" id="use_mileage" type="text" maxlength="15" value="0" class="input" style="width:60px;text-align:right" onkeyup="util.checktype('number', 'use_mileage');">원
-                                <input type="checkbox" name="all_mile" id="all_mile"><label for="all_mile">전액사용</label>
+                                <a href="" class="btn-use">전액사용</a>
                             </td>
                         </tr>
                         <tr>
@@ -256,7 +252,7 @@
                     </tbody>
                 </table>
 
-                <h3>- 계산결과</h3>
+                <h3>할인내역</h3>
                 <table style="margin-bottom:10px">
                     <colgroup>
                         <col width="165">
@@ -279,10 +275,93 @@
                 </table>
 
                 <div class="btn">
-                    <a href="javascript:;" onclick="popCls('#layPop-payDiscount')"><img src="http://img.go.co.kr/btn_x3.jpg" alt="닫기"></a>
-                    <a href="javascript:;"><img src="http://img.go.co.kr/btn_ok6.jpg" alt="할인적용"></a>
+                    <a href="javascript:;" onclick="popCls('#layPop-payDiscount')">할인적용</a>
                 </div>
             </div>
+        </div>
+
+        <!-- 입장권 등록 레이어팝업 -->
+        <div class="wrap-laypop fixed" id="memberChk" style="display: none">
+            <div class="bg-back"></div>
+
+            <div class="memberChk step-1" style="display: block">
+    			<h2>예약자 정보 확인<a href="javascript: void(0)" class="clsBtn" onclick="popCls('#memberChk')"></a></h2>
+    			<div class="d-cont">
+    				<p class="p-top">
+    					예약자명이 <span class="s-name">“지하test11111”</span>님이 맞습니까?<br>
+    					시설 이용을 위한 정확한 이름이 필요합니다.
+    				</p>
+    				<div class="d-mid">
+    					<p class="p-name">
+    						<span class="s-lbl">예약자</span><span class="s-txt">지하test1111</span>
+    					</p>
+    					<p class="p-num">
+    						<span class="s-lbl">연락처</span><span class="s-txt">010-5858-5758</span>
+    					</p>
+    					<p class="p-mail">
+    						<span class="s-lbl">이메일</span><span class="s-txt">wo5758@ebiznetworks.co.kr</span>
+    					</p>
+    				</div>
+    				<p class="area-btn">
+    					<a href="#" class="a-1">수정하기</a>
+    					<a href="#" class="a-2">결제하기</a>
+    				</p>
+    			</div>
+    		</div>
+
+    		<!-- step-2-->
+    		<div class="memberChk step-2" style="display: none">
+    			<h2>예약자 정보 수정<a href="javascript: void(0)" class="clsBtn" onclick="popCls('#memberChk')"></a></h2>
+    			<div class="d-cont">
+    				<p class="p-top">
+    					수정하실 예약자 정보를 정확히 입력해주세요.
+    				</p>
+    				<div class="d-mid">
+    					<p class="p-name">
+    						<span class="s-lbl">예약자</span><input type="text" class="in-txt">
+    					</p>
+    					<p class="p-num">
+    						<span class="s-lbl">연락처</span><input type="text" class="in-num">
+    						<span class="mg-"></span>
+    						<input type="text" class="in-num">
+    						<span class="mg-"></span>
+    						<input type="text" class="in-num">
+    					</p>
+    					<p class="p-mail">
+    						<span class="s-lbl">이메일</span><input type="text" class="in-txt">
+    					</p>
+    				</div>
+    				<p class="area-btn">
+    					<a href="#" class="a-1">수정하기</a>
+    				</p>
+    			</div>
+    		</div>
+
+    		<!-- step-3-->
+    		<div class="memberChk step-3" style="display: none">
+    			<h2>예약자 정보 안내 및 결제<a href="javascript: void(0)" class="clsBtn" onclick="popCls('#memberChk')"></a></h2>
+    			<div class="d-cont">
+    				<p class="p-top">
+    					예약자 정보가 수정되었습니다.<br>
+    					아래 예약자 정보로 결제를 진행하시겠습니까?
+    				</p>
+    				<div class="d-mid">
+    					<p class="p-name">
+    						<span class="s-lbl">예약자</span><span class="s-txt">지하test1111</span>
+    					</p>
+    					<p class="p-num">
+    						<span class="s-lbl">연락처</span><span class="s-txt">010-5858-5758</span>
+    					</p>
+    					<p class="p-mail">
+    						<span class="s-lbl">이메일</span><span class="s-txt">wo5758@ebiznetworks.co.kr</span>
+    					</p>
+    				</div>
+    				<p class="area-btn">
+    					<a href="#" class="a-1">수정하기</a>
+    					<a href="#" class="a-2">결제하기</a>
+    				</p>
+    			</div>
+    		</div>
         </div>
 
         <% include ../parts/_footer.ejs %>

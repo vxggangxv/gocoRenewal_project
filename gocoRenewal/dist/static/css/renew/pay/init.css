@@ -19,7 +19,7 @@
 .tb-info tbody th, .tb-info tbody td {padding: 10px 0; vertical-align: middle;}
 .tb-info tbody tr:first-child th, .tb-info tbody tr:first-child td {padding-top: 20px;}
 .tb-info tbody th {font-weight: 700;}
-.tb-info .inp, .tb-info select.sel {height: 26px; border: 1px solid #bebebe; font-size: 15px;}
+.tb-info .inp, .tb-info select.sel {height: 26px; border: 1px solid #bebebe; font-size: 15px; padding-left: 5px;}
 .tb-info .inp-1 {width: 150px;}
 .tb-info .inp-2 {width: 100px;}
 .tb-info .inp-3 {width: 190px;}
@@ -29,7 +29,8 @@
 .tb-info tbody td p.dot .dot {position: absolute; left: 0;}
 .tb-info tbody td.etc {padding: 0;}
 .tb-info tbody td.etc .box {border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; background: #fafafa; padding: 15px;}
-.tb-info tbody td.etc .box > div {border: 1px solid #c8c8c8; background: #fff; padding: 6px 12px; font-size: 13.5px; color: #888;}
+.tb-info tbody td.etc .box textarea {width: 100%; height: 80px; border: 1px solid #c8c8c8; background: #fff; padding: 6px 12px; font-size: 13.5px; color: #888; resize: none; color: #333; letter-spacing: 0;}
+.tb-info tbody td.etc .box > div {}
 
 .main-pay h3 {font-size: 22px; font-family: "Noto Sans KR", sans-serif; padding-bottom: 5px; border-bottom: 1px solid #959da8; margin-top: 25px;}
 
@@ -87,19 +88,59 @@
 .rab-pay .area-info-3 .total .won * {letter-spacing: -1px;}
 .rab-pay .area-info-3 .total .vat {position: relative; top: -3px; font-size: 14px; color: #565656;  font-weight: 400;}
 .rab-pay .area-btn {}
-.rab-pay .area-btn .a-pay {display: block; font-size: 18px; font-size: 18px; color: #fff; background: #ff4143; text-align: center; line-height: 58px;}
+.rab-pay .area-btn .a-pay {display: block; font-size: 18px; color: #fff; background: #ff4143; text-align: center; line-height: 58px;}
 
 
-#pay_discount_pop {position: absolute; left: 50%; top: 50%; margin-top: -280px; margin-left: -222.5px; padding:15px; width:445px; height:510px; background:#fff; border:3px solid #fd581d; font-size: 13px;}
+#pay_discount_pop {position: absolute; left: 50%; top: 50%; margin-top: -280px; margin-left: -222.5px; padding:15px; width:445px; background:#fff; border:3px solid #fd581d; font-size: 13px;}
 #pay_discount_pop .a-x {top: -33px; right: 0; width: 30px; height: 30px;}
 #pay_discount_pop .a-x:before, #pay_discount_pop .a-x:after {width: 32px; left: 0px; top: 14px; background: #fff;}
-#pay_discount_pop h3 {font-size:16px; font-weight:700; color:#fd581d; margin-bottom: 5px;}
-#pay_discount_pop table {margin-bottom:30px; width:100%; border-top:1px solid #e5e5e8; text-align:left}
+#pay_discount_pop h3 {font-size:16px; font-weight:700; color:#222; margin-bottom: 5px;}
+#pay_discount_pop table {margin-bottom:30px; width:100%; border-top: 2px solid #777; text-align:left}
 #pay_discount_pop table th, #pay_discount_pop table td {vertical-align: middle;}
 #pay_discount_pop table th {height:35px; background:#f5f5f5; padding-left:15px; font-weight:600; border-bottom:1px solid #e5e5e8}
 #pay_discount_pop table td {height:35px; padding-left:15px; border-bottom:1px solid #e5e5e8}
-#pay_discount_pop table .dis {color:#ff0000; font-weight:bold; font-family:Tahoma}
-#pay_discount_pop table .pri {font-weight:bold; font-family:Tahoma}
-#pay_discount_pop .btn {width:100%; text-align:center; margin-top: 20px;}
-#pay_discount_pop .input {padding:5px; height:10px; border:1px solid #dedede; text-align:left; font-weight:bold; font-family:Tahoma}
+#pay_discount_pop table .dis {color:#ff4143; font-weight:bold;}
+#pay_discount_pop table .pri {font-weight:bold;}
+#pay_discount_pop .btn-use {display: inline-block; border: 1px solid #818181; font-size: 12px; font-family: "Dotum", sans-serif; color: #777; letter-spacing: -1px; padding: 1px 6px 0; vertical-align: middle; margin-left: 10px;}
+#pay_discount_pop .input {padding:5px; height:10px; border:1px solid #dedede; text-align:left; font-weight:bold;}
 #pay_discount_pop .select {padding:3px; height:25px; border:1px solid #dedede; text-align:left}
+#pay_discount_pop .btn {width:100%; text-align:center; margin-top: 20px;}
+#pay_discount_pop .btn > a {display: inline-block; width: 80%; font-size: 18px; color: #fff; background: #ff4143; text-align: center; line-height: 52px;}
+
+/* 예약자정보확인 팝업 _혜준 */
+.memberChk {}
+.memberChk {position: fixed; z-index: 6; width: 430px; top: 50%; margin-top: -170px; left: 50%; margin-left: -215px; background: #f1f1f1; box-sizing: border-box;  border-radius: 2px; font-family: "Nanum Gothic", sans-serif;}
+.memberChk * {letter-spacing: -0.5px; color: #282828;}
+.memberChk h2 {height: 54px; font-size: 20px; color: #fff; font-weight: 700; text-align: center; line-height: 56px; background: #ff4143; letter-spacing: 0;}
+.memberChk .clsBtn {position: absolute; right: 20px; top: 15px; display: inline-block; width: 22px; height: 22px;
+	background: url("http://img.go.co.kr/x_btn.png") no-repeat;
+}
+.memberChk .d-cont {padding: 20px 20px;}
+.memberChk .p-top {font-size: 20px; line-height: 1.5em; text-align: center; box-sizing: border-box; letter-spacing: -0.2px;}
+.memberChk .p-top .s-name {color: #d80000; font-weight: 700;}
+.memberChk .d-mid {border: 1px solid #c1c1c1; border-top: 2px solid #666; position: relative; background: #fff; margin-top: 8px; padding: 5px 0;}
+.memberChk .d-mid > p {font-size: 18px; line-height: 1.5em; color: #242424; margin: 4px 0;}
+.memberChk.step-2 .d-mid > p {margin: 10px 0;}
+.memberChk .d-mid > p > span {display: inline-block; vertical-align: middle;}
+.memberChk .d-mid > p > .s-lbl {width: 84px; font-weight: 700; text-indent: 19px; font-size: 17px;}
+.memberChk .d-mid > p > input {
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; border: 1px solid #787878; color: #242424; position: relative; height: 34px;
+	font-size: 16px; text-indent: 10px;
+}
+.memberChk .d-mid > p > .in-txt {width: 274px;}
+.memberChk .d-mid > p:first-child > .in-txt {width: 220px;}
+.memberChk .d-mid > p > .in-num {width: 60px; text-indent: 0px; text-align: center;}
+.memberChk .d-mid > p > .mg- {display: inline-block; background: #787878; width: 11px; height: 1px; margin: 0 4px 0 5px;}
+
+.memberChk .p-name {}
+.memberChk .p-num {}
+.memberChk .p-mail {}
+.memberChk .area-btn {text-align: center; margin-top: 20px;}
+.memberChk .area-btn > a {position: relative; display: inline-block; width: 100%; height: 48px; border-radius: 2px; font-size: 19px; width: 42%;}
+.memberChk .area-btn .a-1 {color: #fff; background: #A7A7A7;}
+.memberChk .area-btn .a-2 {color: #ff4143; color: #fff; background: #ff4143;}
+.memberChk .area-btn > a:first-child + a {margin-left: 20px;}
+.memberChk .area-btn > a:after {content: ""; display: inline-block; height: 107%; vertical-align: middle;}
+
+.memberChk.step-2 {margin-top: -192px;}
+.memberChk.step-2 .area-btn .a-1 {border-color: #ff4143; background: #ff4143;}
