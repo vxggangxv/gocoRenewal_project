@@ -81,22 +81,118 @@
 
                     <h3>결제수단 선택</h3>
                     <div class="way">
-                        <p class="p-row"><input type="radio"> 신용카드 간편결제(법인카드 포함)</p>
-                        <p class="p-row"></p>
-                        <p class="p-row"></p>
-                        <div class="addTxt">
-                            · 신용카드 간편결제는 <span class="borB">별도의 설치없이 카드정보 입력만으로 결제가 가능</span>합니다.<br>
-                            · 신용카드, 체크카드, 법인카드로 결제가 가능합니다.
+
+                        <ul class="area-chk cf">
+                            <li class="nth-1"><label><input type="radio" name="wayChk"> 신용카드 간편결제(법인카드 포함)</label></li>
+                            <li class="nth-2"><label><input type="radio" name="wayChk"> 신용카드 ISP결제(인증서 제출방식, 앱카드)</label></li>
+                            <li class="nth-3"><label><input type="radio" name="wayChk"> 휴대폰결제</label></li>
+                            <li class="nth-4"><label><input type="radio" name="wayChk"> <img src="http://img.go.co.kr/icon_npay.jpg" width="90" alt="네이버페이"></label></li>
+                            <li class="nth-5"><label><input type="radio" name="wayChk"> 해외카드 간편결제(해외카드 전용)</label></li>
+                        </ul>
+
+                        <ul class="area-txt">
+                            <li class="nth-1 on">
+                                <p class="p-1 dot"><span class="dot">·</span> 신용카드 간편결제는 <span class="borB">별도의 설치없이 카드정보 입력만으로 결제가 가능</span>합니다.</p>
+                                <p class="p-1 dot"><span class="dot">·</span> 신용카드, 체크카드, 법인카드로 결제가 가능합니다.</p>
+                            </li>
+                            <li class="nth-2">
+                                <p class="p-1 dot">
+                                    <span class="dot">*</span> 은행계 카드사인 BC, KB, 외환, 신한카드의 무이자 할부 행사 진행 시, 해당 은행의 계열 은행 발급 카드는 제외됩니다.<br>
+                                    (예. KB카드 무이자 할부 행사 시, KB BC카드 제외, 신한카드 무이자 할부 행사 시, 신한BC카드, 전북은행, 제주 은행카드는 제외)
+                                </p>
+                                <p class="p-1 dot"><span class="dot">·</span> BC카드에서 매입하는 모든 저축은행카드의 경우, 일반 BC카드 결제와 동일하게 진행하시면 됩니다.</p>
+                            </li>
+                            <li class="nth-3">
+                                <p class="p-1 dot"><span class="dot">·</span> 통신3사 휴대폰 결제 한도금액이 월 30만원에서 50만원으로 상향조정 되었습니다. 단, 고객님이 통신사에 동의하신 경우에 한도가 조정되니, 이용중인 통신사에 문의해주시기 바랍니다. (휴대폰에서 114)</p>
+                                <p class="p-1 dot"><span class="dot">·</span> 개인에 따라 실제 한도 금액은 차이가 있을 수 있습니다.</p>
+                            </li>
+                            <li class="nth-4">
+                                <p class="p-1 dot"><span class="dot">·</span> 주문 변경 시 카드사 혜택 및 할부 적용 여부는 해당 카드사 정책에 따라 변경될 수 있습니다.</p>
+                                <p class="p-1 dot"><span class="dot">·</span> 네이버페이는 네이버ID로 별도 앱 설치 없이 신용카드 또는 은행계좌 정보를 등록하여 네이버페이 비밀번호로 결제할 수 있는 간편결제 서비스입니다.</p>
+                                <p class="p-1 dot"><span class="dot">·</span> 결제가능한 신용카드 : 신한, 삼성, 현대, BC, 국민, 하나, 롯데, NH농협, 씨티</p>
+                                <p class="p-1 dot"><span class="dot">·</span> 결제가능한 은행 : NH농협, 국민, 신한, 우리, 기업, SC제일, 부산, 경남, 수협, 우체국</p>
+                                <p class="p-1 dot"><span class="dot">·</span> 네이버페이 카드 간편결제는 네이버페이에서 제공하는 카드사 별 무이자, 청구할인 혜택을 받을 수 있습니다.</p>
+                            </li>
+                            <li class="nth-5">
+                                <p class="p-1 dot"><span class="dot">·</span> 신용카드 간편결제는 <span class="borB">별도의 설치없이 카드정보 입력만으로 결제가 가능</span>합니다.</p>
+                            </li>
+                        </ul>
+
+                        <div class="caution">
+                            <p class="p-1 dot">
+                                <span class="dot">1.</span> 예약접수[결제] 후에 예약 담당자가 숙박업체의 <span class="c-blue">객실예약 가능여부 확인 후 예약확정 안내문자를 발송</span>해드립니다.<br>
+                                * <span class="c-blue">예약번호를 전송받아야만 예약확정이 완료</span>된 것이며, 근무시간내 발송됩니다.<br>
+                                * 체크인시 예약번호나 투숙자 성함으로 입실
+                            </p>
+                            <p class="p-1 dot"><span class="dot">2.</span> 예약접수[결제] 후에도 <span class="c-blue">객실이 마감되어 결제가 자동취소</span> 될 수 있습니다. [취소시 유선/문자통보]</p>
+                            <p class="p-1 dot"><span class="dot">3.</span> 예약접수를 위한 결제는 <span class="c-blue borB">보다 빠른 예약진행을 위하여</span> 불가피하게 이루어지는 부분이므로 고객님의 양해 부탁드립니다.</p>
                         </div>
                     </div>
-                    <div class="d-ps">
 
-                    </div>
                 </div>
                 <!-- main end -->
 
                 <aside class="rab-pay bsLs">
-
+                    <div class="area-info-1">
+                        <div class="row-img cf">
+                            <img src="http://cache.go.co.kr/media/140/file.go.co.kr/tour/img3/1514427470_main1.jpg" width="108" height="80">
+                            <span class="name">
+                                ★오션투유리조트 속초설악비치 호텔앤콘도<br>
+                                <span class="det">- 오션뷰 콘도 리노베이션</span>
+                            </span>
+                        </div>
+                        <div class="row-date cf">
+                            <div class="d-1">
+                                <p class="p-1">체크인</p>
+                                <p class="p-2">2018-03-27</p>
+                                <p class="p-3">15:00 이후</p>
+                            </div>
+                            <div class="d-2">
+                                <img src="http://img.go.co.kr/check_inOut_arrow.png">
+                            </div>
+                            <div class="d-3">
+                                <p class="p-1">체크아웃</p>
+                                <p class="p-2">2018-03-28</p>
+                                <p class="p-3">11:00 이전</p>
+                            </div>
+                        </div>
+                        <hr class="sun cf">
+                        <div class="row-num">
+                            <p class="cf"><span class="pull-left">이용기간</span><span class="pull-right f-bd">1박2일 / 2명</span></p>
+                            <p class="cf"><span class="pull-left">기준인원</span><span class="pull-right f-bd">4명 / 최대 7명</span></p>
+                            <p class="c-red">* 기준 인원 초과 시 인원 추가 비용 현장 결제</p>
+                        </div>
+                    </div>
+                    <hr class="sun cf">
+                    <div class="area-info-2">
+                        <div class="addPack">
+                            <p class="addName">바베튜 테이블 대여</p>
+                            <p class="cf"><span class="pull-left">이용일</span><span class="pull-right f-bd">2018-05-28</span></p>
+                            <p class="cf sm"><span class="pull-left">이용시간</span><span class="pull-right f-bd">1부 : 16:00 ~ 18:00</span></p>
+                        </div>
+                        <hr class="sun cf">
+                        <div class="addPack">
+                            <p class="addName">와인 패키지</p>
+                            <p class="cf"><span class="pull-left">이용일</span><span class="pull-right f-bd">2018-05-28</span></p>
+                            <p class="cf sm"><span class="pull-left">세트</span><span class="pull-right f-bd">카비앙카 모스카토 다스티 1개</span></p>
+                        </div>
+                    </div>
+                    <div class="area-info-3">
+                        <p class="cf"><span class="pull-left">이용요금</span><span class="pull-right won">110,000원</span></p>
+                        <hr class="sun">
+                        <p class="cf"><span class="pull-left">적립금 할인</span><span class="pull-right won">- 0원</span></p>
+                        <p class="cf sm"><span class="pull-left">(보유적립금 11,474,834원)</span><span class="pull-right"><a href="javascript:;" class="cp">할인적용</a></span></p>
+                        <p class="cf"><span class="pull-left">쿠폰 할인</span><span class="pull-right won">- 0원</span></p>
+                        <p class="cf sm"><span class="pull-left">(보유 쿠폰7장)</span><span class="pull-right"><a href="javascript:;" class="cp">쿠폰적용</a></span></p>
+                        <p class="cf total">
+                            <span class="pull-left">최종 결제 금액</span>
+                            <span class="pull-right c-red won">
+                                110,000원<br>
+                                <span class="vat">(VAT,봉사료,예약수수료 포함)</span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="area-btn"><a href="" class="a-pay">결제하기</a></div>
                 </aside>
 
             </div>

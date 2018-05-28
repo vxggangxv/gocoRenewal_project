@@ -33,4 +33,49 @@
 
 .main-pay h3 {font-size: 22px; font-family: "Noto Sans KR", sans-serif; padding-bottom: 5px; border-bottom: 1px solid #959da8; margin-top: 25px;}
 
-.rab-pay {margin-left: 20px; width: 350px; border: 1px solid #c8c8c8;}
+.way {}
+.way .area-chk {font-size: 15px;}
+.way .area-chk li:first-child {margin-top: 15px;}
+.way .area-chk li {float: left; margin-top: 12px; font-weight: 700;}
+.way .area-chk li.nth-3 {margin-left: 20px;}
+.way .area-chk li.nth-2,
+.way .area-chk li.nth-4 {clear: both;}
+.way .area-chk li.nth-5 {margin-left: 35px;}
+.way .area-chk li input {margin-right: 8px;}
+.way .area-txt {clear: both; position: relative; margin-top: 20px;}
+.way .area-txt > li {display: none; background: #fafafa; border: 1px solid #c8c8c8; padding: 10px; font-size: 13px; font-family: "Dotum", sans-serif;}
+.way .area-txt > li.on {display: block;}
+.way .area-txt > li .p-1 {position: relative; padding-left: 10px; letter-spacing: -1px; word-break: keep-all;}
+.way .area-txt > li span.dot {position: absolute; left: 0; top: 0; font-size: 14px; font-weight: 700; font-family: "Nanum Gothic", sans-serif;}
+.way .area-txt > li .borB {border-bottom: 1px solid #333; padding-bottom: 1px;}
+.way .caution {position: relative; margin-top: 20px; padding-top: 20px; border-top: 1px solid #c8c8c8;}
+.way .caution > p {line-height: 1.6;}
+.way .caution > p {position: relative; padding-left: 14px; font-size: 13px; font-family: "Dotum", sans-serif;}
+.way .caution span.dot {position: absolute; left: 0; top: 0;}
+.way .caution .c-blue {color: #3b67b0;}
+.way .caution .borB {border-bottom: 1px solid #3b67b0; padding-bottom: 1px;}
+
+.rab-pay {margin-left: 20px; width: 350px; border: 1px solid #c8c8c8; padding: 18px 0;}
+.rab-pay [class*=area-info], .rab-pay [class*=row-] {position: relative;}
+.rab-pay [class*=area-info] {padding: 0 18px;}
+.rab-pay hr.sun {border: 0; border-top: 1px solid #c8c8c8; margin: 10px auto;}
+.rab-pay .area-info-1 .row-img > * {float: left;}
+.rab-pay .area-info-1 .row-img > img {border: 1px solid #c8c8c8;}
+.rab-pay .area-info-1 .row-img > .name {display: inline-block; width: 204px; padding-left: 15px; font-size: 18px; font-weight: 700; letter-spacing: -1px;}
+.rab-pay .area-info-1 .row-img > .name .det {font-size: 15px; font-weight: 400;}
+.rab-pay .area-info-1 .row-date {margin-top: 15px;}
+.rab-pay .area-info-1 .row-date > div {float: left; position: relative;}
+.rab-pay .area-info-1 .row-date .d-2 {position: absolute; left: 50%; margin-left: -10px; top: 29px;}
+.rab-pay .area-info-1 .row-date .d-1 {}
+.rab-pay .area-info-1 .row-date .d-3 {float: right;}
+.rab-pay .area-info-1 .row-date > div .p-2 {font-size: 24px; font-weight: 700; letter-spacing: -1px;}
+.rab-pay .area-info-1 .row-date > div .p-3 {color: #656565;}
+.rab-pay .area-info-1 .row-num {line-height: 1.7;}
+.rab-pay .area-info-1 .row-num .c-red {font-size: 15px;}
+.rab-pay .area-info-2 .addPack .addName {font-weight: 700; margin-bottom: 5px;}
+.rab-pay .area-info-2 .addPack .sm {font-size: 14px;}
+.rab-pay .area-info-3 {margin-top: 15px; padding-top: 10px; background: #f5f5f5;}
+.rab-pay .area-info-3 .won {font-size: 17px; font-weight: 700;}
+.rab-pay .area-info-3 .sm {font-size: 14px;}
+.rab-pay .area-info-3 .cp {display: inline-block; font-family: "Dotum", sans-serif; font-size: 12px; color: #ff6a01; border: 1px solid #ff6a01; padding: 0 6px;}
+.rab-pay .area-btn {}
