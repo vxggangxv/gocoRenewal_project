@@ -55,10 +55,11 @@
 .way .caution .c-blue {color: #3b67b0;}
 .way .caution .borB {border-bottom: 1px solid #3b67b0; padding-bottom: 1px;}
 
-.rab-pay {margin-left: 20px; width: 350px; border: 1px solid #c8c8c8; padding: 18px 0;}
+.rab-pay {margin-left: 20px; width: 350px; border: 1px solid #c8c8c8; padding-top: 18px;}
 .rab-pay [class*=area-info], .rab-pay [class*=row-] {position: relative;}
 .rab-pay [class*=area-info] {padding: 0 18px;}
 .rab-pay hr.sun {border: 0; border-top: 1px solid #c8c8c8; margin: 10px auto;}
+.rab-pay hr.sun2 {margin: 15px auto;}
 .rab-pay .area-info-1 .row-img > * {float: left;}
 .rab-pay .area-info-1 .row-img > img {border: 1px solid #c8c8c8;}
 .rab-pay .area-info-1 .row-img > .name {display: inline-block; width: 204px; padding-left: 15px; font-size: 18px; font-weight: 700; letter-spacing: -1px;}
@@ -70,12 +71,35 @@
 .rab-pay .area-info-1 .row-date .d-3 {float: right;}
 .rab-pay .area-info-1 .row-date > div .p-2 {font-size: 24px; font-weight: 700; letter-spacing: -1px;}
 .rab-pay .area-info-1 .row-date > div .p-3 {color: #656565;}
-.rab-pay .area-info-1 .row-num {line-height: 1.7;}
+.rab-pay .area-info-1 .row-num {line-height: 1.7; padding-bottom: 5px;}
 .rab-pay .area-info-1 .row-num .c-red {font-size: 15px;}
 .rab-pay .area-info-2 .addPack .addName {font-weight: 700; margin-bottom: 5px;}
 .rab-pay .area-info-2 .addPack .sm {font-size: 14px;}
-.rab-pay .area-info-3 {margin-top: 15px; padding-top: 10px; background: #f5f5f5;}
+.rab-pay .area-info-3 {margin-top: 15px; padding-top: 10px; padding-bottom: 20px; background: #f5f5f5;}
 .rab-pay .area-info-3 .won {font-size: 17px; font-weight: 700;}
 .rab-pay .area-info-3 .sm {font-size: 14px;}
 .rab-pay .area-info-3 .cp {display: inline-block; font-family: "Dotum", sans-serif; font-size: 12px; color: #ff6a01; border: 1px solid #ff6a01; padding: 0 6px;}
+.rab-pay .area-info-3 .mt-1 {margin-top: 10px;}
+.rab-pay .area-info-3 .total {font-weight: 700;}
+.rab-pay .area-info-3 .total .pull-left {margin-top: 6px;}
+.rab-pay .area-info-3 .total .won {text-align: right; font-size: 28px; display: inline-block; line-height: 1;}
+.rab-pay .area-info-3 .total .won,
+.rab-pay .area-info-3 .total .won * {letter-spacing: -1px;}
+.rab-pay .area-info-3 .total .vat {position: relative; top: -3px; font-size: 14px; color: #565656;  font-weight: 400;}
 .rab-pay .area-btn {}
+.rab-pay .area-btn .a-pay {display: block; font-size: 18px; font-size: 18px; color: #fff; background: #ff4143; text-align: center; line-height: 58px;}
+
+
+#pay_discount_pop {position: absolute; left: 50%; top: 50%; margin-top: -280px; margin-left: -222.5px; padding:15px; width:445px; height:510px; background:#fff; border:3px solid #fd581d; font-size: 13px;}
+#pay_discount_pop .a-x {top: -33px; right: 0; width: 30px; height: 30px;}
+#pay_discount_pop .a-x:before, #pay_discount_pop .a-x:after {width: 32px; left: 0px; top: 14px; background: #fff;}
+#pay_discount_pop h3 {font-size:16px; font-weight:700; color:#fd581d; margin-bottom: 5px;}
+#pay_discount_pop table {margin-bottom:30px; width:100%; border-top:1px solid #e5e5e8; text-align:left}
+#pay_discount_pop table th, #pay_discount_pop table td {vertical-align: middle;}
+#pay_discount_pop table th {height:35px; background:#f5f5f5; padding-left:15px; font-weight:600; border-bottom:1px solid #e5e5e8}
+#pay_discount_pop table td {height:35px; padding-left:15px; border-bottom:1px solid #e5e5e8}
+#pay_discount_pop table .dis {color:#ff0000; font-weight:bold; font-family:Tahoma}
+#pay_discount_pop table .pri {font-weight:bold; font-family:Tahoma}
+#pay_discount_pop .btn {width:100%; text-align:center; margin-top: 20px;}
+#pay_discount_pop .input {padding:5px; height:10px; border:1px solid #dedede; text-align:left; font-weight:bold; font-family:Tahoma}
+#pay_discount_pop .select {padding:3px; height:25px; border:1px solid #dedede; text-align:left}
