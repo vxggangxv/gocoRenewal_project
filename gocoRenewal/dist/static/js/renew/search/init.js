@@ -1,8 +1,10 @@
 $(function () {
 
-	var moHeight = $(window).height() - 205;
+	$(window).resize(function() {
+		var moHeight = $(window).height() - 205;
+		var mHeight = $("#rnL-mOuter #map, #rnL-fOuter").height(moHeight);
+	}).resize();
 	//console.log(moHeight);
-	var mHeight = $("#rnL-mOuter #map, #rnL-fOuter").height(moHeight);
 	$("#rnL-mOuter, #rnL-fOuter").css({
 		"position": "fixed",
 		"right": 0,

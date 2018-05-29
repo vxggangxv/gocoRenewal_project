@@ -192,6 +192,9 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents {margin-top: 193px; /*margin-top: 233px;*/}
 
 @media (max-width: 1680px) {
+	.rnL-contents .rnL-listOuter {border-right: 1px solid #ddd;}
+	.rcm-ul .d3 .d3-inner {right: 10px;}
+
 	.rnL-contents .rnL-listOuter .bestC-outer {padding-bottom: 40px;}
 	.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li {height: 320px;}
 	.rnL-contents .rnL-listOuter .bestC-outer .ul1 > li .d1 {height: 192px;}
