@@ -135,7 +135,14 @@ $(function() {
             var dep2 = $(this).parents('.rnSltReg').find('.slt-dep2');
             var maxLiWid = 0;
 
-            dep2.show();
+			var show_chk = $("input[name='show']").val();
+			console.log(show_chk);
+			if(show_chk != 1) {
+				dep2.show();
+			} else {
+				console.log("hide");
+				dep2.hide();
+			}
             $('#backDrop').show();
             $('.rnSltCal').hide();
 
@@ -249,17 +256,29 @@ function cal_ajax() {
 }
 
 function area_ajax(val, first) {
+	if($("input[name='show']").val() == "1") {
+		first = "list_show";
+	}
+	if(first == "list_show") {
+		$(".slt-dep2").hide();
+	}
 	$.ajax({
 		type	:	"POST",
 		url		:	"/state.php",
 		data	:	{"mode":"area_div", "area":val, "first_chk":first},
 		success	:	function(e) {
 			if(val != 'all') {
+				if(first == "list_show") {
+					console.log(first);
+					$(".slt-dep2").hide();
+				}
 				$(".slt-dep2").html(e);
 				var dep2 = $('#rn-schBox .rnSltReg .slt-dep1 > ul > li').parents('.rnSltReg').find('.slt-dep2');
 				var maxLiWid = 0;
 
-				dep2.show();
+				if(first != "list_show") {
+					dep2.show();
+				}
 				$('#backDrop').show();
 				$('.rnSltCal').hide();
 

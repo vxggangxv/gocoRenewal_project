@@ -64,6 +64,7 @@ $(function() {
 		var thTxt = $(this).find('a').text();
 
 		$('#rnL-ts .rnSltReg .slt-dep2 > ul > li').on('click', function() {
+			console.log("area");
 			var thTxt2 = $(this).find('a').text();
 			$('#rnL-ts .d1 .regName').text(thTxt);
 			$('#rnL-ts .d1 .regDetail').text(thTxt2);
@@ -106,7 +107,7 @@ $(function() {
 		}
 	});
 	$("#faq .faq_more .btn-q").click(function() {
-		$('.inquiry1on1').show();
+		$('#qna-pop-bg').show();
 		return false;
 	});
 	$("#faq .faq_more .btn-x").click(function() {
@@ -167,7 +168,6 @@ function faq(login) {
 		var idx = $(this).index();
 		$(this).addClass("on").siblings().removeClass("on");
 		wrap.find(".contents-tab > .faq-main").eq(idx).show().siblings().hide();
-		console.log(idx);
 		switch(idx) {
 			case 0:	$("#subject").val("오션투유리조트 무료숙박권 관련 문의드려요.");	break;
 			case 1:	$("#subject").val("도고BS콘도 무료숙박권 관련 문의드려요.");		break;

@@ -375,11 +375,11 @@
 .main .sec-faq .faq_t .faq_more p .btn-q .gt {position: relative; top: -1px;font-size: 13px; font-weight: 400; margin-left: 8px;}
 .main .sec-faq .faq_t .faq_more p .btn-x {position: absolute; right: 0; top: 0; width: 90px; text-align: center; border: 1px solid #838383; color: #737373;}
 
-#membership {float:right; margin-top:30px; width:100%; min-height:800px; background:#fff; letter-spacing:-0.1px; font-size: 13px;}
+#membership {float:right; margin-top:30px; width:100%; min-height:800px; background:#fff; letter-spacing:-0.1px; font-size: 16px;}
 #membership .notice {font-weight:600; color:#ff610a}
 #membership .notice2 {float:right; font-weight:600; color:#ff610a}
 
-#membership p {line-height:1.3; font-size:14px}
+/* #membership p {line-height:1.3; font-size:14px} */
 #membership p a:hover {color:#ff610a}
 #membership .reser_notice_txt {color:#5b5c61; font-size:12px}
 
@@ -391,29 +391,40 @@
 #membership .member_t .cts04 {padding-left:60px; height:105px; background:url(http://img.go.co.kr/member_img04.jpg) 15px 35px  no-repeat}
 #membership .member_t span {font-weight:600; color:#ff610a; font-size:18px; font-family:Tahoma}
 
-#membership h3 {display:block; float:left; width:100%; height:30px; text-align:left}
-#membership h4 {display:block; float:left; width:100%; height:30px; text-align:left}
+#membership h3,
+#membership h4 {display:block; float:left; width:100%; text-align:left; font-size: 18px; font-weight: 700; padding-bottom: 8px;}
+#membership h4 .rArrow:after {border-color: #333; width: 7px; height: 7px; border-width: 2px; top: -1px;}
 
 #membership .member_info_t {clear:both; float:left; margin-bottom:20px; width:740px; text-align:left; border-top:1px solid #dfdfdf}
 #membership .member_info_t tr:hover {background:#fef1e9; cursor:pointer}
 #membership .member_info_t th {height:35px; background:#f5f5f5; border-bottom:1px solid #dfdfdf; text-align:center}
 #membership .member_info_t td {height:35px; border-bottom:1px solid #dfdfdf; text-align:center}
-#membership .member_info_t span {font-weight:600; color:#ff610a}
+#membership .member_info_t span {font-weight:600;}
 #membership .member_info_t .name {padding-left:10px; text-align:left}
 
-#membership .detail_t {clear:both; float:left; margin-bottom:20px; width:100%; text-align:left; border-top:1px solid #dfdfdf}
-#membership .detail_t th {height:35px; text-align:left; padding-left:15px; background:#f5f5f5; border-bottom:1px solid #dfdfdf;}
-#membership .detail_t td {height:20px; text-align:left; padding-left:15px; padding-top:10px; padding-bottom:10px; border-bottom:1px solid #dfdfdf}
-#membership .detail_t span {font-weight:600; color:#ff610a}
-#membership .detail_t .input2 {padding:5px; border:1px solid #dfdfdf; background:#fff; font-size:15px; color:#999999; text-align:left}
+#membership .detail_t {clear:both; float:left; margin-bottom:30px; width:100%; text-align:left; border-top:1px solid #dfdfdf}
+#membership .detail_t th,
+#membership .detail_t td {text-align:left; padding: 10px 0; padding-left:15px; border-bottom:1px solid #dfdfdf;}
+#membership .detail_t td .bk-confirm, #membership .detail_t td .bk-receipt {display: inline-block; padding: 3px 8px; font-size: 13px; font-family: "Dotum", sans-serif; font-weight: 700;}
+#membership .detail_t td .bk-confirm {color: #ff610a; border: 1px solid #ff610a;}
+#membership .detail_t td .bk-receipt {color: #676767; border: 1px solid #676767; margin-left: 10px;}
+#membership .detail_t th {background:#f5f5f5;}
+#membership .detail_t span {font-weight:600;}
+#membership .detail_t .input2 {padding:5px; height: 36px; border:1px solid #dfdfdf; background:#fff; font-size:16px; color:#333; text-align:left;}
+#membership .detail_t .input2 + .a-sms {display: inline-block; padding: 6px 14px; background: #898989; color: #fff; vertical-align: middle; font-size: 15px; margin-left: 10px;}
 #membership .detail_t .cash {padding:15px; background:#fef1e9}
-#membership .detail_t .cash p {line-height:2.5}
+#membership .detail_t .cash p {margin-top: 10px;}
+#membership .detail_t .cash p:first-child {margin-top: 0;}
 #membership .detail_t .center {text-align:center; padding-left:0px; padding-top:10px; padding-bottom:10px}
+#membership .detail_t .cancel_data {border: 1px solid #b8b8b8;}
+#membership .detail_t .cancel_data tr:last-child th, #membership .detail_t .cancel_data tr:last-child td {border-bottom-color: #b8b8b8;}
 #membership .detail_t .cancel_data th {vertical-align: middle;}
+#membership .detail_t .cancel_data td {text-align: center;}
+#membership .detail_t .cancel_data tr td:first-child {padding-left: 25px;}
 #membership .detail_t .cancel_t {width:500px; font-family:Dotum,'돋움'; font-size:11px}
-#membership .detail_t .cancel_t td {padding:0px; height:20px; border:1px solid #c8c8c8; text-align:center; background:#fff}
+#membership .detail_t .cancel_t td {padding:0px; height:20px; border:1px solid #c8c8c8; text-align:center; background:#fff;}
 #membership .detail_t .cancel_t th {padding:0px; height:20px; border:1px solid #c8c8c8; background:#e4e3e3; text-align:center; font-weight:bold}
-#membership .detail_t .cancel_txt {font-family:Dotum,'돋움'; font-size:11px}
+#membership .detail_t .cancel_txt {font-size: 16px;}
 
 #membership .etc_t {clear:both; float:left; margin-bottom:20px; width:740px; text-align:left; border-top:1px solid #dfdfdf}
 #membership .etc_t th {height:35px; text-align:center; background:#f5f5f5; border-bottom:1px solid #dfdfdf}
@@ -488,10 +499,11 @@
 .new_faq_list_wrap .best_faq a {float:right; padding-top:5px; font-size:11px;}
 .new_faq_list_wrap .best_faq a:active {color:#363636;}
 .new_faq_list_wrap .new_faq_list {overflow:hidden; margin-right:-16px;}
-.new_faq_list_wrap .new_faq_list > li {float:left; overflow:hidden; position:relative; width:284px; height:224px; margin:0 16px 16px 0; padding:60px 15px 0; border:1px solid #c0c0c0; box-sizing:border-box; cursor:pointer;}
+.new_faq_list_wrap .new_faq_list > li {float:left; overflow:hidden; position:relative; /*width:284px;*/ width: 299px; height:224px; margin:0 16px 16px 0; padding:60px 15px 0; border:1px solid #c0c0c0; box-sizing:border-box; cursor:pointer;}
 .new_faq_list_wrap .new_faq_list > li:before {content:'Q'; display:block; position:absolute; left:15px; top:5px; color:#ff610a; font-weight:bold; font-size:34px;}
 .new_faq_list_wrap .new_faq_list > li:after {content:''; display:block; position:absolute; right:15px; top:20px; width:32px; height:32px; background:url('http://img.go.co.kr/btn_faq_more_off.png') no-repeat 0 0;}
-.new_faq_list_wrap .new_faq_list > li:first-child {width:584px;}
+/* .new_faq_list_wrap .new_faq_list > li:first-child {width:584px;} */
+.new_faq_list_wrap .new_faq_list > li:first-child {width:614px;}
 .new_faq_list_wrap .new_faq_list > li:hover {border:1px solid #ff7e23; background-color:#ff7e23;}
 .new_faq_list_wrap .new_faq_list > li:hover:before {color:#fff;}
 .new_faq_list_wrap .new_faq_list > li:hover:after {background:url('http://img.go.co.kr/btn_faq_more_on.png') no-repeat 0 0;}
@@ -514,8 +526,8 @@
 .faq_modal_layer .faq_modal_area .faq_modal_area_mid .faq_content {overflow:auto; height:380px; padding:20px 25px 15px 24px; border-top:1px solid #e1e4e6;}
 .faq_modal_layer .faq_modal_area .faq_modal_area_mid .faq_content > p {color:#444; font-size:16px; letter-spacing:-1px;}
 .faq_modal_layer .faq_modal_area .faq_modal_area_mid .faq_content .a-btn.qna {display: block; margin: 15px auto; width: 110px; height: 35px; border-radius: 5px; background: #7b7b7b; letter-spacing: -0.3px; color: #fff; font-size: 14px; line-height: 2.4; font-weight: 600; text-align: center; text-decoration: none;}
-.faq_modal_layer .faq_modal_area .faq_modal_area_mid .faq_content .new_faq_list_wrap {width:604px; margin-top:0;}
-.faq_modal_layer .faq_modal_area .faq_modal_area_mid .faq_content .new_faq_list_wrap .new_faq_list > li {width:294px; height:162px;}
+.faq_modal_layer .faq_modal_area .faq_modal_area_mid .new_faq_list_wrap {width:608px; margin:0 auto; right: -8px;}
+.faq_modal_layer .faq_modal_area .faq_modal_area_mid .new_faq_list_wrap .new_faq_list > li {width:290px; height:162px;}
 
 .main .pagenation {text-align: center; font-size: 0; margin-top: 50px;}
 .main .pagenation a {display: inline-block; font-size: 14px; width: 32px; height: 32px; vertical-align: middle; line-height: 2.2em; border: 1px solid #ccc; color: #4c4c4c; font-family: "Nanum Gothic"; margin: 0 3px;}

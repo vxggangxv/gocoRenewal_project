@@ -51,14 +51,14 @@
                     </p>
 
                     <div id="membership">
-                        <h3><img src="http://img.go.co.kr/customer_txt011.jpg" alt="예약현황 안내"></h3>
+                        <h3>예약 진행 순서 안내</h3>
 
                         <div class="reser_step02">
-                            <img src="http://img.go.co.kr/reser_step05.jpg" alt="결제대기">
+                            <img src="http://img.go.co.kr/renew/mypage/bk_confirm.jpg" alt="예약확인">
 
                             <p style="height:25px"></p>
                         </div>
-                        <h4><img src="http://img.go.co.kr/member_txt07.jpg" alt="예약정보"></h4>
+                        <h4><span class="ic-rArrow rArrow"></span> 예약정보</h4>
                         <table class="detail_t">
                             <colgroup>
                                 <col width="20%">
@@ -66,18 +66,12 @@
                             </colgroup>
                             <tbody>
                                 <tr>
-                                    <th>구매처</th>
-                                    <td><span>바로넷</span></td>
-                                </tr>
-                                <tr>
                                     <th>예약번호</th>
-                                    <td>
-                                        고코투어<span> (go2018051712120759823)</span>
-                                    </td>
+                                    <td><span class="f-bd">고코투어</span> <span class="thColor1">(go2018051712120759823)</span></td>
                                 </tr>
                                 <tr>
                                     <th>구매상태</th>
-                                    <td><span>예약확정</span></td>
+                                    <td><span class="thColor1">예약확정</span></td>
                                 </tr>
 
                                 <tr>
@@ -85,7 +79,7 @@
                                 </tr>
                                 <tr>
                                     <th>상품명</th>
-                                    <td><b>여수해상케이블카</b></td>
+                                    <td><span class="f-bd">여수해상케이블카</span></td>
                                 </tr>
                                 <tr>
                                     <th>주소</th>
@@ -107,7 +101,7 @@
                             </tbody>
                         </table>
 
-                        <h4><img src="http://img.go.co.kr/member_txt08.jpg" alt="예약자 정보"></h4>
+                        <h4><span class="ic-rArrow rArrow"></span> 예약자 정보</h4>
                         <table class="detail_t">
                             <colgroup>
                                 <col width="20%">
@@ -128,13 +122,12 @@
                                 </tr>
                                 <tr>
                                     <th>기타요청사항</th>
-                                    <td>
-                                    </td>
+                                    <td></td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <h4><img src="http://img.go.co.kr/member_txt09.jpg" alt="결제정보"></h4>
+                        <h4><span class="ic-rArrow rArrow"></span> 결제 정보</h4>
                         <table class="detail_t">
                             <colgroup>
                                 <col width="20%">
@@ -159,18 +152,18 @@
                                 <tr>
                                     <th>확인서 출력</th>
                                     <td>
-                                        <a href="javascript:mem.rsv_confirm('ThFyE28ebhZxSRkbT3ITaRNnG3JN')" title="예약확인서"><img src="http://img.go.co.kr/member_img06.jpg" alt="예약확인서"></a>
-                                        <a href="javascript:mem.receipt2('GElyEG4XZw==')"><img src="http://img.go.co.kr/member_img05.jpg" alt="영수증" style="margin-top:3px"></a>
+                                        <a href="javascript:mem.rsv_confirm('ThFyE28ebhZxSRkbT3ITaRNnG3JN')" title="예약확인서" class="bk-confirm">예약확인서</a>
+                                        <a href="javascript:mem.receipt2('GElyEG4XZw==')" class="bk-receipt">영수증발급</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <th>최종결제금액</th>
-                                    <td><span>0원</span></td>
+                                    <td><span class="thColor1">0원</span></td>
                                 </tr>
                                 <tr>
                                     <th>취소수수료</th>
                                     <td>
-                                        <p class="cancel_txt">** 결제가 된 순간부터, 예약접수가 진행됨에 따라, 확정을 받기 전일지라도 위약금 발생될수 있으니 이점 참고바랍니다. (취소문의는 일대일문의통해 접수가능)</p>
+                                        <p class="cancel_txt">결제가 된 순간부터, 예약접수가 진행됨에 따라, 확정을 받기 전일지라도 위약금 발생될수 있으니 이점 참고바랍니다. (취소문의는 일대일문의통해 접수가능)</p>
                                         티켓 사용여부 확인 후 취소/환불 처리 이용기간 이후 취소 및 환불 불가 </td>
                                 </tr>
                             </tbody>
@@ -210,7 +203,7 @@
                         <div class="faq_modal_area">
                             <div class="faq_modal_area_top">
                                 <p style="font-size: 21px;"><span>Q</span> 결제를 하면 예약확정 아닌가요?</p>
-                                <a href="#" class="faq_modal_lose"><img src="http://img.go.co.kr/faq_modal_close.png" alt=""></a>
+                                <a href="#" class="faq_modal_lose" onclick="popCls('.faq_modal_layer')"><img src="http://img.go.co.kr/faq_modal_close.png" alt="닫기"></a>
                             </div>
 
 
