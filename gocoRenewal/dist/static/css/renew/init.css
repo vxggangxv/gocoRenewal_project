@@ -128,7 +128,7 @@
 .rnM-mainDoor-2 .rn-menu {z-index:12; position: absolute; width:138px}
 .rnM-mainDoor-2 .rn-menu li {height:95px; text-align:center; border-top:2px solid #c5bac1}
 .rnM-mainDoor-2 .rn-menu li.nth-1 {border-top:0}
-.rnM-mainDoor-2 .rn-menu li a {position:relative; display:block; height:100%; padding-top:37px; font-size:21px; line-height:21px; font-weight:normal; color:#626262;}
+.rnM-mainDoor-2 .rn-menu li a {position:relative; display:block; height:100%; padding-top:37px; font-size:21px; line-height:21px; font-weight:normal; color:#626262; cursor: pointer;}
 .rnM-mainDoor-2 .rn-menu li.on {border-top:2px solid #9f7d91; background:#fff; box-shadow:2px 1px 2px 0px rgba(0, 0, 0, 0.2);}
 .rnM-mainDoor-2 .rn-menu li.on + li {border-top:2px solid #9f7d91;}
 .rnM-mainDoor-2 .rn-menu li.nth-1.on {border-top:0;}

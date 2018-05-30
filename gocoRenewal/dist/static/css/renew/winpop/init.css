@@ -33,3 +33,8 @@
 #reser_pop .top_info .mini {margin:10px; width:270px; background:#fff; font-size:12px}
 #reser_pop .top_info .mini td {padding-left:10px; border:3px solid #f5f5f5; font-size:12px}
 #reser_pop .top_info .mini th {padding-left:10px; border:3px solid #f5f5f5; color:#652701; font-weight:600; font-size:12px}
+
+/* 개인정보 수집 및 이용동의  */
+#popup_notice { width: 685px; margin: auto; }
+#popup_notice .text { width: 625px; margin: auto; text-align: left; overflow: auto; height: 576px; padding: 10px; background-color: #fff; }
+#popup_notice .img { width: 625px; margin: auto; text-align: center; overflow: auto; height: 530px; padding: 10px; background-color: #fff; }

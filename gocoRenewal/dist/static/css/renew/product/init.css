@@ -863,3 +863,47 @@
 .prd-around .li-item .d-txt {font-weight: 700;}
 .prd-around .li-item .d-txt .p-name {margin-top: 16px;}
 .prd-around .li-item .d-txt .p-pric .f-bd {font-weight: 800;}
+
+/* 메일 공유 팝업 */
+.share-cmm .sun {border: 0; border-top: 1px solid #ddd;}
+.share-cmm .borB {border-bottom: 1px solid #222; padding-bottom: 2px; margin: 0 auto;}
+.share-cmm {left: 50%; top: 50%;}
+.share-cmm .area-pop .pop-header {padding: 25px 0 10px;}
+.share-cmm .area-pop .pop-header h1 {text-align: center; font-size: 19px;}
+.share-cmm .area-pop .pop-header .a-x {width: 26px; height: 26px; top: 15px; right: 20px;}
+.share-cmm .area-pop .pop-header .a-x:before, .share-cmm .area-pop .pop-header .a-x:after {width: 30px; background: #999;}
+.share-cmm .area-pop .pop-main {padding: 0 25px;}
+.share-cmm .area-pop .pop-main .area-form {padding: 12px 0;}
+.share-cmm .area-pop {width: 469px; padding-bottom: 20px; border: 1px solid #c8c8c8;}
+.share-cmm .area-pop .pop-main .area-bottom * {letter-spacing: -1px;}
+.share-cmm .area-pop .pop-main .area-bottom .row {font-size: 15px;}
+.share-cmm .area-pop .pop-main .area-bottom .row input[type=checkbox] {position: relative; top: -1px; width: 15px; height: 15px; margin-right: 5px;}
+.share-cmm .area-pop .pop-main .area-bottom .row-btn {margin-top: 20px; text-align: center;}
+.share-cmm .area-pop .pop-main .area-bottom .row-btn .a-send {display: inline-block; background: #fa7a22; color: #fff; border-radius: 2px; font-size: 18px; padding: 10px 65px;}
+
+.laypop-mail {margin-left: -234.5px; margin-top: -253px;}
+.laypop-mail .area-pop .pop-main {}
+.laypop-mail .area-pop .pop-main .form-tb {width: 100%;}
+.laypop-mail .area-pop .pop-main .form-tr {font-size: 0;}
+.laypop-mail .area-pop .pop-main .form-th,
+.laypop-mail .area-pop .pop-main .form-td {position: relative; display: inline-block; font-size: 18px; padding: 5px 0;}
+.laypop-mail .area-pop .pop-main .form-th {width: 32%; letter-spacing: -1px;}
+.laypop-mail .area-pop .pop-main .form-td {width: 68%;}
+.laypop-mail .area-pop .pop-main .form-td .inp {background: #f8f8f8; border: 1px solid #ccc; height: 40px; width: 100%; padding-left: 10px; font-size: 18px;}
+.laypop-mail .area-pop .pop-main .form-td textarea.inp {resize: none; height: 100px; padding: 10px;}
+.laypop-mail .area-pop .pop-main .area-bottom .row label + a {font-size: 14px;}
+
+.laypop-sms {margin-left: -234.5px; margin-top: -166px;}
+.laypop-sms .area-pop .pop-main .area-form {text-align: center;}
+.laypop-sms .area-pop .pop-main .area-form * {vertical-align: middle;}
+.laypop-sms .area-pop .pop-main .area-form .s-th {font-size: 18px; margin-right: 10px;}
+.laypop-sms .area-pop .pop-main .area-form .inp {height: 45px; padding-left: 10px; font-size: 18px; background: #f8f8f8; border: 1px solid #ccc; width: 175px;}
+.laypop-sms .area-pop .pop-main .area-form input.inp::-webkit-input-placeholder {color: #b8b8b8;}
+.laypop-sms .area-pop .pop-main .area-form input.inp::-moz-placeholder {color: #b8b8b8;}
+.laypop-sms .area-pop .pop-main .area-form input.inp:-ms-input-placeholder {color: #b8b8b8;}
+.laypop-sms .area-pop .pop-main .area-form input.inp:-moz-placeholder {color: #b8b8b8;}
+.laypop-sms .area-pop .pop-main .area-form select.inp {width: 85px; padding-left: 5px;}
+.laypop-sms .area-pop .pop-main .area-form .s- {display: inline-block; width: 10px; height: 1px; background: #aaa; margin: 0 3px;}
+.laypop-sms .area-pop .pop-main .area-bottom {padding: 0 15px;}
+.laypop-sms .area-pop .pop-main .area-bottom .row-2 {padding-left: 18px; font-size: 15px;}
+.laypop-sms .area-pop .pop-main .area-bottom .row-2 a {color: #000;}

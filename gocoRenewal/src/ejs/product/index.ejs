@@ -73,13 +73,13 @@
 										</a>
 									</li>
 									<li class="nth-3">
-										<a href="">
+										<a href="javascript: popOpen('#laypop-mail')">
 											<div><span class="c-ic3 sha-cmm i-email"></span></div>
 											<p>이메일</p>
 										</a>
 									</li>
 									<li class="nth-4">
-										<a href="">
+										<a href="javascript: popOpen('#laypop-sms')">
 											<div><span class="c-ic3 sha-cmm i-sms"></span></div>
 											<p>문자</p>
 										</a>
@@ -87,6 +87,7 @@
 								</ul>
 								<a href="javascript:;" onclick="$(this).closest('.pop-layer').hide();" class="clsBtn a-i-x a-x"></a>
 							</div>
+
 						</div>
 						<div class="d-date clr">
 							<div class="d-date-1">
@@ -1615,6 +1616,79 @@
 				</div>
 			</section>
 		</div>
+
+        <!-- 메일 공유 팝업 -->
+        <div class="wrap-laypop bsLs fixed share-cmm laypop-mail" id="laypop-mail" style="display: none">
+            <div class="bg-back"></div>
+            <section class="area-pop">
+                <header class="pop-header">
+                    <h1>친구 또는 지인이게<br> <span class="borB">이 상품을 <span class="f-bd">메일로 공유</span>하실 수 있습니다.</span></h1>
+                    <a href="javascript:;" class="a-i-x a-x" onclick="popCls('#laypop-mail')"></a>
+                </header>
+                <div class="pop-main">
+                    <div class="area-form">
+                        <ul class="form-tb">
+                            <li class="form-tr cf">
+                                <div class="form-th">이메일(받는분)</div>
+                                <div class="form-td"><input type="text" class="reset inp"></div>
+                            </li>
+                            <li class="form-tr cf">
+                                <div class="form-th va-top">내용</div>
+                                <div class="form-td"><textarea name="" id="" cols="30" rows="10" class="inp"></textarea></div>
+                            </li>
+                            <li class="form-tr cf">
+                                <div class="form-th">이름(보내는 분)</div>
+                                <div class="form-td"><input type="text" class="reset inp"></div>
+                            </li>
+                            <li class="form-tr cf">
+                                <div class="form-th">이메일(보내는 분)</div>
+                                <div class="form-td"><input type="text" class="reset inp"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="sun">
+                    <div class="area-bottom">
+                        <p class="row">
+                            <label><input type="checkbox"> 개인정보 수집 및 이용동의에 동의합니다.</label>
+                            <a href="javascript:;">[개인정보 수집 및 이용 동의]</a>
+                        </p>
+                        <p class="row-btn"><a href="" class="a-send">보내기</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- 이메일 공유 팝업 -->
+        <div class="wrap-laypop bsLs fixed share-cmm laypop-sms" id="laypop-sms" style="display: none">
+            <div class="bg-back"></div>
+            <div class="area-pop">
+                <header class="pop-header">
+                    <h1>친구 또는 내 휴대폰으로<br> <span class="borB"><span class="f-bd">모바일 상품 URL을 전송</span>해드립니다.</span></h1>
+                    <a href="javascript:;" class="a-i-x a-x" onclick="popCls('#laypop-sms')"></a>
+                </header>
+                <div class="pop-main">
+                    <div class="area-form">
+                        <span class="s-th">휴대폰</span>
+                        <select name="" id="" class="inp">
+                            <option value="">010</option>
+                            <option value="">010</option>
+                        </select>
+                        <span class="s-"></span>
+                        <input type="text" class="inp" placeholder="'-'를 제외하고 입력">
+                    </div>
+                    <hr class="sun">
+                    <div class="area-bottom">
+                        <p class="row">
+                            <label><input type="checkbox"> 개인정보 수집 및 이용동의에 동의합니다.</label><br>
+                        </p>
+                        <p class="row-2">
+                            <a href="javascript:;">[개인정보 수집 및 이용 동의]</a><br>
+                            입력하신 정보는 마케팅 용도로 사용되지 않습니다.(무료전송)
+                        </p>
+                        <p class="row-btn"><a href="" class="a-send">보내기</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <% include ../parts/_footer.ejs %>
     </div>

@@ -1,3 +1,6 @@
+#etcFile
+*.zip
+
 #fontFile
 *.ttf
 *.woff
