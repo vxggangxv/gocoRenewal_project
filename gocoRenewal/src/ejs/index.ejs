@@ -32,7 +32,8 @@
 
         <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
 		<div id="backDrop"></div>
-		<div class="rnM-mainDoor-2 bsLs" id="rnM-mainDoor">
+        <!-- 180605 메인 수정 -->
+		<div class="rnM-mainDoor-2 type-2 bsLs" id="rnM-mainDoor">
 			<div class="rn-container">
 				<strong class="main-text ftfm-mg" id="main-text">
 					<span class="s1">지금 예약한다면 슈퍼 그뤠잇!</span>
@@ -42,7 +43,7 @@
 				<div class="rn-schBox clr" id="rn-schBox">
 					<h2 class="hidden">숙소검색</h2>
 
-                    <!-- 180515_메인 수정 -->
+                    <!-- 180605 메인 수정 -->
                     <div class="rn-schInner clr">
 
                         <ul class="rn-menu">
@@ -53,18 +54,6 @@
                         </ul>
 
                         <div class="rnModal-sec bsLs">
-                            <!-- 키워드 박스 -->
-                            <div class="d-cmm">
-                                <p class="p0"><label for="keyword">키워드</label></p>
-                            </div>
-                            <div class="kw-box">
-                                <span class="kw-input">
-                                    <input id="keyword" type="text" tabindex="1" title="키워드" placeholder="숙소명, 시설명 등을 입력해주세요." value="">
-                                    <button class="kw-btn" type="submit" tabindex="2">
-                                        <span class="kw-txt"><span class="c-ic i-mag"></span>검색</span>
-                                    </button>
-                                </span>
-                            </div>
 
                             <!-- 달력 -->
                             <div class="cal-box">
@@ -164,7 +153,6 @@
                                             <li><a href="javascript:;">대구</a></li>
                                             <li><a href="javascript:;">경남</a></li>
                                             <li><a href="javascript:;">경북</a></li>
-                                            <li><a href="javascript:;">대전</a></li>
                                             <li><a href="javascript:;">충남</a></li>
                                             <li><a href="javascript:;">충북</a></li>
                                             <li><a href="javascript:;">광주</a></li>
@@ -175,9 +163,8 @@
                                             <li><a href="javascript:;">세종</a></li>
                                         </ul>
                                     </div>
-                                    <div class="slt-dep2">
+                                    <div class="slt-dep2" style="display: block">
                                         <ul class="clr">
-                                            <li><a href="javascript:;">전체</a></li>
                                             <li><a href="javascript:;">평창군</a></li>
                                             <li><a href="javascript:;">강릉시</a></li>
                                             <li><a href="javascript:;">춘천시</a></li>
@@ -207,7 +194,7 @@
                                             <li><a href="javascript:;">중동/아프리카</a></li>
                                         </ul>
                                     </div>
-                                    <div class="slt-dep2">
+                                    <div class="slt-dep2" style="display: block">
                                         <ul class="clr">
                                             <li><a href="javascript:;">전체</a></li>
                                             <li><a href="javascript:;">도쿄</a></li>
@@ -226,6 +213,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <button class="kw-btn type-2" type="submit" tabindex="2" onclick="javascript:main_submit();">
+                                <span class="kw-txt"><span class="c-ic i-mag"></span><br>검색</span>
+                            </button>
 
                         </div>
                     </div>

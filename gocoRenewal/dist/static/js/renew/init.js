@@ -98,7 +98,7 @@ $(function() {
             $(this).css({'border-top' : '2px solid #9f7d91'}).next().css({'border-top' : '2px solid #9f7d91'});
             $('#rn-schBox .rn-menu li:first-child').css({'border-top' : '0'});
 
-            $('.rnSltCal, .slt-dep2').hide();
+            //$('.rnSltCal, .slt-dep2').hide();
             $('#rn-schBox .cal-box > div[class*=cal-], #rn-schBox .type-box div[class*=type-], #rn-schBox .reg-box div[class*=reg-]').hide();
 
             $('#rn-schBox .type-box div[class*=type-'+liIdx+']').show();//유형

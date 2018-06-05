@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* .rn-gwrap {min-width: 1430px;} */
-.rn-gwrap {min-width: 1600px;}
+/* .rn-gwrap {min-width: 1600px;} */
 .rn-gwrap .prd-imgBox .bx-wrapper .bx-pager {display: none;}
 
 .prd-basic .bx-wrapper .bx-caption {}
@@ -902,7 +902,7 @@
 .laypop-sms .area-pop .pop-main .area-form input.inp::-moz-placeholder {color: #b8b8b8;}
 .laypop-sms .area-pop .pop-main .area-form input.inp:-ms-input-placeholder {color: #b8b8b8;}
 .laypop-sms .area-pop .pop-main .area-form input.inp:-moz-placeholder {color: #b8b8b8;}
-.laypop-sms .area-pop .pop-main .area-form select.inp {width: 85px; padding-left: 5px;}
+.laypop-sms .area-pop .pop-main .area-form select.inp {width: 85px; pl5}
 .laypop-sms .area-pop .pop-main .area-form .s- {display: inline-block; width: 10px; height: 1px; background: #aaa; margin: 0 3px;}
 .laypop-sms .area-pop .pop-main .area-bottom {padding: 0 15px;}
 .laypop-sms .area-pop .pop-main .area-bottom .row-2 {padding-left: 18px; font-size: 15px;}

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.rn-gwrap {min-width:  1680px;}
+/* .rn-gwrap {min-width:  1680px;} */
 
 /* 인풋 태그 초기화 */
 .rnL-contents input[type=text]
@@ -67,7 +67,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-fOuter .rgBox .lbl.type1 {top: 20px;}
 
 /* 좌측 리스트 */
-.rnL-contents .rnL-listOuter {position: relative; width: 938px; width: 55.9%; min-height: 960px; background: #fff;}
+.rnL-contents .rnL-listOuter {position: relative; width: 938px; width: 55.9%; min-width: 940px; min-height: 960px; background: #fff;}
 .rnL-contents .rnL-listOuter .h2-box {position: relative;}
 .rnL-contents .rnL-listOuter h2.first {padding-top: 18px;}
 .rnL-contents .rnL-listOuter h2 {color: #191919; font-size: 21px; padding: 25px 0; line-height: 1; font-weight: 700;}
@@ -184,7 +184,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-listOuter .room-complete .in-txt.bg {background: #b00000;}
 
 /* fixed 설정 */
-.rnL-header, .rnL-ts, .rnL-ctgr {position: fixed; width: 100%; min-width: 1680px; background: #fff; z-index: 5;}
+.rnL-header, .rnL-ts, .rnL-ctgr {position: fixed; width: 100%; min-width: 1200px; background: #fff; z-index: 5;}
 .rnL-ts {z-index: 6;}
 .rnL-header {top: 0; z-index: 7;}
 .rnL-ts {top: 93px; background: #f2f2f2; /*top: 133px;*/}
@@ -192,7 +192,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents {margin-top: 193px; /*margin-top: 233px;*/}
 
 @media (max-width: 1680px) {
-	.rnL-contents .rnL-listOuter {border-right: 1px solid #ddd;}
+	/* .rnL-contents .rnL-listOuter {border-right: 1px solid #ddd;} */
 	.rcm-ul .d3 .d3-inner {right: 10px;}
 
 	.rnL-contents .rnL-listOuter .bestC-outer {padding-bottom: 40px;}
@@ -202,7 +202,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 }
 
 /* 필터 비노출 시 상품 중앙정렬 및 기타 너비 수정*/
-.ft-none .rn-gwrap, .ft-none .rnL- header, .ft-none .rnL-ts, .ft-none .rnL-ctgr, .rnL-ctgr-ticket {min-width: 1470px;}
+/* .ft-none .rn-gwrap, .ft-none .rnL- header, .ft-none .rnL-ts, .ft-none .rnL-ctgr, .rnL-ctgr-ticket {min-width: 1470px;} */
 
 .ft-none .rnL-contents .rnL-listOuter {width: 1054px; margin: 0 auto;}
 .ft-none .rnL-contents .rnL-listOuter .bestC-outer {padding-bottom: 50px;}
