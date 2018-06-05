@@ -147,6 +147,10 @@ function popClose(itm) {
 	//console.log('닫기');
 }
 
+function popToggle(itm) {
+	$(itm).toggle();
+}
+
 function faq(login) {
 	var wrap = $("#faqWrap"),
 		wrapBack = $("#faqWrap-back"),

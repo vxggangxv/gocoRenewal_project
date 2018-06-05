@@ -183,19 +183,22 @@
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg {}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] {margin:0 auto; padding:15px 20px 0 40px; border: 1px solid #c8c8c8;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 [class*=slt-dep] {padding: 25px 20px 15px 68px;}
-.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 [class*=slt-dep] {padding: 25px 20px 15px 60px;}
+.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 [class*=slt-dep] {padding: 25px 20px 15px 40px;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul {display:inline-block;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul > li {line-height:16px;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 li  {margin:13px 60px 0 0;}
-.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 li  {margin:13px 58px 0 0;}
-.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep1 li  {margin:13px 46px 0 0;}
+.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 li  {margin:13px 48px 0 0;}
+.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep1 li  {margin:13px 40px 0 0;}
+.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 #single_area {padding: 15px 0px 14px 10px}
+.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 #single_area li {margin: 13px 40px 0 0;}
+
 .rnM-mainDoor-2.type-2 .rnModal-sec .kw-btn.type-2 {float: left; cursor: pointer; position:relative; display: inline-block; width:90px; height:98px; margin-left:14px; border: 0; background: #fa6b0a; margin-top: 47px; text-align: center;}
 .rnM-mainDoor-2.type-2 .rnModal-sec .kw-btn.type-2 .kw-txt {position:relative; font-size:20px; font-weight:bold; color:#fff}
 .rnM-mainDoor-2.type-2 .rnModal-sec .kw-btn.type-2 .c-ic {display: inline-block; left: 4px;}
 
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul > li > a {display:inline-block; width:auto; line-height:16px;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 > ul > li.on a:before {top:3px;}
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 {border-top:0; /*min-height:100px;*/ background:#fafafa}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 {border-top:0; /*min-height:100px;*/ background:#fafafa; padding-left: 31px;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 li  {margin:13px 40px 0 0;}
 .rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 li  {margin:13px 10px 0 0; min-width: 77px;}
 .rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 li  {display: inline-block; min-width: auto; margin:13px 39px 0 0; min-width: 57px;}
