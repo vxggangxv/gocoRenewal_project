@@ -1,5 +1,5 @@
 <!-- 공통 부분 (이용후가, 오시는길, 축제, 상품문의, 질문) -->
-<li class="li-review">
+<li class="li-review on">
     <div class="d-tit clr">
         <div class="d-l">
             <h3>
@@ -19,7 +19,8 @@
                 <a href="" class="a-btn"><span class="c-ic3 i-pen"></span> 리얼후기 쓰기</a>
             </p>
         </div>
-        <div class="d-r">
+        <!-- 로그인 전 -->
+        <!-- <div class="d-r">
             <p class="p-1 f-bd">
                 <span class="c-ic3 i-thumb"></span>
                 <span class="s-1 i-borL-tran">
@@ -34,6 +35,28 @@
             <p class="p-3">
                 이용후기 작성시 <span class="thColor1-2 f-bd">5,000원의 적립금</span>이 지급 됩니다. (첫 후기 작성 이후에는 1,000원이 적립됩니다.)
             </p>
+        </div> -->
+        <!-- 로그인 후 -->
+        <div id="review_write2" class="review_write2 cf">
+            <p id="text_name">작성자 <span>지하test</span></p>
+
+            <div class="box-rating cf">
+                <input type="text" class="writer" placeholder="제목을 입력해주세요." name="review_subject" id="review_subject">
+                <div class="box-star cf">
+                    <div id="star">
+                        <img src="http://img.go.co.kr/star-on.png" alt="1" title="bad"> <img src="http://img.go.co.kr/star-on.png" alt="2" title="poor"> <img src="http://img.go.co.kr/star-on.png" alt="3" title="regular"> <img src="http://img.go.co.kr/star-on.png" alt="4" title="good"> <img src="http://img.go.co.kr/star-on.png" alt="5" title="gorgeous"><input type="hidden" name="score" value="5">
+                    </div>
+                    <div id="star_rating">
+                        <label for="displayStarRating"><span id="displayStarRating">5</span></label>
+                    </div>
+                    <p id="star_text">별점을 클릭하세요</p>
+                </div>
+            </div>
+            <div class="area-regist cf">
+                <p id="text_limit">(<span id="cur_text">0</span> / 100)</p>
+                <textarea class="rv_textbox" placeholder="해당 업체를 경험한 여러분들의 느낌과 평가를 자유롭게 공유하는 공간입니다. 이용후기 작성시 1,000원의 적립금이 지급 됩니다.(첫 후기 작성 이후에는 200원이 적립됩니다.)" name="review_contents" id="review_contents" onkeyup="util.text_lenchk('review_contents')"></textarea>
+                <a href="javascript:brd.new_review_ok()" class="btn_register">등록하기</a>
+            </div>
         </div>
     </div>
 

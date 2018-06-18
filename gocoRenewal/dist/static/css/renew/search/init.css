@@ -29,13 +29,13 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 /* 우측 필터링 및 지도 */
 .rnL-contents .rnL-mfOuter {position: absolute; width: 680px; height: 100%; right: 0; width: 40.5%; /*z-index: 2;*/}
 
-.rnL-contents .rnL-mOuter, .rnL-contents .rnL-fOuter {height: 100%; min-width: 694px;}
+.rnL-contents .rnL-mOuter, .rnL-contents .rnL-fOuter {height: 100%; min-width: 440px;}
 /* 지도 */
 .rnL-contents .rnL-mOuter {position: relative; display: none;}
 
 /* 필터링*/
 .rnL-contents .rnL-fOuter {position: relative; border-top: 4px solid #fa6b0a; border-left: 1px solid #ddd; background: #f9f9f9; height: 100%; overflow-y: auto;}
-.rnL-contents .rnL-fOuter .d1 {position: relative; width: 97.5%; float: right; padding: 20px 32px 20px 8px; font-size: 16px; border-bottom: 1px solid  #e2e2e2; font-size: 0;}
+.rnL-contents .rnL-fOuter .d1 {position: relative; width: 98%; float: right; padding: 20px 3% 20px 1%; font-size: 16px; border-bottom: 1px solid  #e2e2e2; font-size: 0;}
 .rnL-contents .rnL-fOuter .d1.last {padding-bottom: 80px;}
 .rnL-contents .rnL-fOuter h2 {position: relative; color: #333; font-size: 21px; font-weight: 700;}
 .rnL-contents .rnL-fOuter h2 .a-x {top: 0; right: 0;}
@@ -65,6 +65,12 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-fOuter .d1 .lbl + .ht-grd {margin-left: 0;}
 
 .rnL-contents .rnL-fOuter .rgBox .lbl.type1 {top: 20px;}
+
+@media (max-width: 1680px) {
+	.rnL-contents .rnL-mfOuter {width: 31% !important;}
+	.rnL-contents .rnL-fOuter .d1 .d1-3,
+	.rnL-contents .rnL-mfOuter .rgBox .lbl + .irs {width: 74% !important; z-index: 0;}
+}
 
 /* 좌측 리스트 */
 .rnL-contents .rnL-listOuter {position: relative; width: 938px; width: 55.9%; min-width: 940px; min-height: 960px; background: #fff;}

@@ -712,6 +712,21 @@
 .li-review .pagenation a.pprev, .li-review .pagenation a.nnext {background: #d3d3d3; border-color: #d3d3d3; color: #636363;}
 .li-review .pagenation a.pprev {text-indent: -3px;}
 
+.li-review #review_write2 {float: left; width: 799px; padding: 10px; padding-top: 15px; border-left: 1px solid #c6c6c6; position:relative; background:#f4f3f3}
+.li-review #review_write2 #text_name{}
+.li-review #review_write2 #text_name span{color:#fe5b0e; font-size:14px; font-weight:600}
+.li-review #review_write2 .box-rating {margin-top: 10px;}
+.li-review #review_write2 .writer{float:left; width:385px; height:35px; border:1px solid #e6e6e6; font-size:13px; padding:5px;}
+.li-review #review_write2 .box-star {float:left; margin-top: -5px;}
+.li-review #review_write2 #star, .li-review #review_write2 #star_text {margin-left: 10px;}
+.li-review #review_write2 #star{float:left; cursor: pointer;}
+.li-review #review_write2 #star_rating{float:left; font-size:20px; font-weight:600; color:#ff252c; margin-left: 5px;}
+.li-review #review_write2 #star_text{clear: both; position: relative; top: -6px; color:#939393; font-size: 13px;}
+.li-review #review_write2 .area-regist {position: relative; height: 86px; margin-top: 5px;}
+.li-review #review_write2 #text_limit{position:absolute; top: -20px; font-size: 14px; right:0px; letter-spacing:-0.3px}
+.li-review #review_write2 .rv_textbox{float:left; width:88%; height:100%; border:1px solid #e6e6e6; font-size:13px; padding:5px; resize: none;}
+.li-review #review_write2 .btn_register{float:left; display:block; width:12%; height:100%; background-color:#5c5c5c; font-size:16px; color:#fff; text-align:center; line-height:5}
+
 /* 오시는 길 */
 .li-way {padding-top: 24px;}
 .li-way .p-1 {font-size: 17px; margin-top: 4px; letter-spacing: 0;}

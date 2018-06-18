@@ -223,14 +223,14 @@
                         </div>
 
                         <!--새로운 이벤트 있을 경우 i-new 아이콘 추가 -->
-                        <div class="dLink-box">
-                            <a href="/views/customer/index_3.html">이벤트 <span class="i-new"></span></a>
-                            <!-- <span class="mgl"></span>
+                        <!-- <div class="dLink-box">
+					<a href="/views/customer/index_3.html">이벤트 <span class="i-new"></span></a>
+					<span class="mgl"></span>
 					<a href="/views/search/">숙소 추천받기</a>
 					<span class="mgl"></span>
-					<a href="#">광고/입점 제휴문의</a> -->
+					<a href="#">광고/입점 제휴문의</a>
 
-                            <!-- <div class="btnBox-audio">
+					<div class="btnBox-audio">
 						<button type="button" onclick="playAudioA()">Goco2s</button>
 						<button type="button" onclick="playAudioB()">Goco5s</button>
 						<button type="button" onclick="playAudioC()">Goco7s</button>
@@ -243,8 +243,8 @@
 							 function playAudioB() { b.play(); a.pause(); c.pause(); }
 							 function playAudioC() { c.play(); b.pause(); b.pause(); }
 						</script>
-					</div> -->
-                        </div>
+					</div>
+				</div> -->
                     </div>
                     <!-- 차후 신버전 고코용 -->
                     <!--새로운 예약내역 있을 경우 i-new 아이콘 추가 -->
@@ -254,6 +254,8 @@
                         </div>
                         <ul class="rnL-nv clr">
                             <!-- <li><a href="/views/search" class="myArea"><span class="c-ic i-comp"></span> 내 주변</a></li> -->
+                            <li><a href="/views/customer/index_3.html">이벤트</a>
+                            </li>
                             <li><a href="#">예약내역 <span class="i-new"></span></a>
                             </li>
                             <li><a href="/views/mypage/">마이페이지</a>
@@ -1716,7 +1718,7 @@
 
                         <!-- 공통 부분 (이용후가, 오시는길, 축제, 상품문의, 질문) -->
                         <!-- 공통 부분 (이용후가, 오시는길, 축제, 상품문의, 질문) -->
-                        <li class="li-review">
+                        <li class="li-review on">
                             <div class="d-tit clr">
                                 <div class="d-l">
                                     <h3>
@@ -1744,22 +1746,51 @@
                                         <a href="" class="a-btn"><span class="c-ic3 i-pen"></span> 리얼후기 쓰기</a>
                                     </p>
                                 </div>
-                                <div class="d-r">
-                                    <p class="p-1 f-bd">
-                                        <span class="c-ic3 i-thumb"></span>
-                                        <span class="s-1 i-borL-tran">
+                                <!-- 로그인 전 -->
+                                <!-- <div class="d-r">
+            <p class="p-1 f-bd">
+                <span class="c-ic3 i-thumb"></span>
+                <span class="s-1 i-borL-tran">
+                    <span class="thColor1-2">고코투어에서는 실제 이용하신 분들만 이용후기 작성</span>이 가능합니다.<br>
+                    여행을 준비하는 다른 분들을 위해 생생한 이용후기를 올려주세요!
+                </span>
+            </p>
+            <p class="p-2">
+                <span class="f-bd">오션투유리조트 속초설악비치 호텔앤콘도</span> 에 대해서 다른 여행자에게도 알려주세요!<br>
+                제공해주신 이용후기는 다른 여행자에게 큰 도움이 되는 소중한 정보가 될 것입니다.
+            </p>
+            <p class="p-3">
+                이용후기 작성시 <span class="thColor1-2 f-bd">5,000원의 적립금</span>이 지급 됩니다. (첫 후기 작성 이후에는 1,000원이 적립됩니다.)
+            </p>
+        </div> -->
+                                <!-- 로그인 후 -->
+                                <div id="review_write2" class="review_write2 cf">
+                                    <p id="text_name">작성자 <span>지하test</span>
+                                    </p>
 
-                    <span class="thColor1-2">고코투어에서는 실제 이용하신 분들만 이용후기 작성</span>이 가능합니다.
-                                        <br>여행을 준비하는 다른 분들을 위해 생생한 이용후기를 올려주세요!
-                                        </span>
-                                    </p>
-                                    <p class="p-2">
-                                        <span class="f-bd">오션투유리조트 속초설악비치 호텔앤콘도</span> 에 대해서 다른 여행자에게도 알려주세요!
-                                        <br>제공해주신 이용후기는 다른 여행자에게 큰 도움이 되는 소중한 정보가 될 것입니다.
-                                    </p>
-                                    <p class="p-3">
-                                        이용후기 작성시 <span class="thColor1-2 f-bd">5,000원의 적립금</span>이 지급 됩니다. (첫 후기 작성 이후에는 1,000원이 적립됩니다.)
-                                    </p>
+                                    <div class="box-rating cf">
+                                        <input type="text" class="writer" placeholder="제목을 입력해주세요." name="review_subject" id="review_subject">
+                                        <div class="box-star cf">
+                                            <div id="star">
+                                                <img src="http://img.go.co.kr/star-on.png" alt="1" title="bad">
+                                                <img src="http://img.go.co.kr/star-on.png" alt="2" title="poor">
+                                                <img src="http://img.go.co.kr/star-on.png" alt="3" title="regular">
+                                                <img src="http://img.go.co.kr/star-on.png" alt="4" title="good">
+                                                <img src="http://img.go.co.kr/star-on.png" alt="5" title="gorgeous">
+                                                <input type="hidden" name="score" value="5">
+                                            </div>
+                                            <div id="star_rating">
+                                                <label for="displayStarRating"><span id="displayStarRating">5</span>
+                                                </label>
+                                            </div>
+                                            <p id="star_text">별점을 클릭하세요</p>
+                                        </div>
+                                    </div>
+                                    <div class="area-regist cf">
+                                        <p id="text_limit">(<span id="cur_text">0</span> / 100)</p>
+                                        <textarea class="rv_textbox" placeholder="해당 업체를 경험한 여러분들의 느낌과 평가를 자유롭게 공유하는 공간입니다. 이용후기 작성시 1,000원의 적립금이 지급 됩니다.(첫 후기 작성 이후에는 200원이 적립됩니다.)" name="review_contents" id="review_contents" onkeyup="util.text_lenchk('review_contents')"></textarea>
+                                        <a href="javascript:brd.new_review_ok()" class="btn_register">등록하기</a>
+                                    </div>
                                 </div>
                             </div>
 

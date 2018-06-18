@@ -5,13 +5,12 @@ $(function () {
 		var mHeight = $("#rnL-mOuter #map, #rnL-fOuter").height(moHeight);
 	}).resize();
 	//console.log(moHeight);
-	$("#rnL-mOuter, #rnL-fOuter").css({
-		"position": "fixed",
-		"right": 0,
-		"top": "205px",
-		// "top": "245px",
-		"width": "40.5%"
-	});
+	// $("#rnL-mOuter, #rnL-fOuter").css({
+	// 	"position": "fixed",
+	// 	"right": 0,
+	// 	"top": "205px",
+	// 	"width": "40.5%"
+	// });
 
 
 	// 검색결과 예약현황 퍼센트 애니메이션
