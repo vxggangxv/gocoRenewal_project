@@ -197,7 +197,7 @@ span.i-ctgr-off {background: #555a78;}
 /*.rn-gwrap a:focus {font-weight: 400;} */
 
 /* 전체 wrap */
-.rn-gwrap {position: relative; width: 100%; min-width: 1200px; /*width: 1680px;*/}
+.rn-gwrap {position: relative; width: 100%; min-width: 1260px; /*width: 1680px;*/}
 /* 공통 콘텐츠 태그 클래스 */
 .rn-contents {position: relative;}
 .rn-container, .rn-containerF {position: relative; margin: 0 auto;}
@@ -308,7 +308,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rn-hdTop .flr-box .rnL-nv > li > a.lgn {border: 1px solid #595959; padding: 2px 4px;} */
 
 /* 푸터영역 */
-#Footer {background-color:#323232; padding-bottom:100px; position: relative;}
+#Footer {background-color:#323232; padding-bottom:50px; position: relative;}
 .f-area {position: relative; width:1190px; margin:0 auto;}
 
 .f-area .f-top {position: relative; padding:20px 0;}
@@ -324,7 +324,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .f-area .f-top .family-site .site li {padding:3px 0;}
 .f-area .f-top .family-site .site li a {display:block; padding-left:10px; color:#a3a3a3; font-size: 14px;}
 .f-area .f-top .family-site .site li a:hover {font-weight:bold;}
-.f-area .f-bottom {overflow:hidden; position:relative; padding-top:35px; border-top:1px solid #505050;}
+.f-area .f-bottom {overflow:hidden; position:relative; padding-top:35px; padding-bottom: 50px; border-top:1px solid #505050;}
 .f-area .f-bottom .f_logo {float:left;}
 
 .f-area .f-bottom .address {float:left; margin-left:40px; margin-top: -8px; color: #a9a9a9;}
@@ -444,7 +444,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnSltCal h2.tit {background: #FA6B0A; color: #fff; text-align: center; padding: 8px 0; font-size: 17px;}
 .rnSltCal h2.tit .a-x {}
 .rnSltCal h2.tit .a-x:before, .rnSltCal h2.tit .a-x:after {background: #fff; height: 2px;}
-.rnSltCal {position: absolute; left: 0; background-color: #fff; letter-spacing: -0.5px; padding-bottom: 20px; width: 690px; /*height: 413px;*/ color: #3b3b3b;}
+.rnSltCal {position: absolute; left: 204px; background-color: #fff; letter-spacing: -0.5px; padding-bottom: 20px; width: 690px; /*height: 413px;*/ color: #3b3b3b;}
 .rnSltCal .cal-inner {position: relative; width: 50%; float: left; padding: 0 20px;}
 .rnSltCal .cal-inner:after {content: ""; position: absolute; right: 0; top: 73px; height: 210px; width: 1px; background: #edebea;}
 .rnSltCal p.p-1 {position: relative; text-align: center; font-size: 19px; margin-top: 15px;}
@@ -498,13 +498,13 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 
 
 /* 지역 */
-.rnSltReg {position: absolute; left: 509px; background-color: #fff; letter-spacing: -0.5px; width: 889px; /*height: 413px;*/ color: #3b3b3b;}
+.rnSltReg {position: absolute; left: 692px; background-color: #fff; letter-spacing: -0.5px; max-width: 700px; /*height: 413px;*/ color: #3b3b3b;}
 .rnSltReg [class*=slt-dep] {padding: 5px 30px 20px 30px;}
 .rnSltReg [class*=slt-dep] > ul > li {float: left; margin-left: 15px; margin-top: 15px;}
 .rnSltReg [class*=slt-dep] > ul > li > a {position: relative;display: block; width: 76px; font-size: 16px; color: #666;}
 .rnSltReg [class*=slt-dep] > ul > li > a:hover, .rnSltReg [class*=slt-dep] > ul > li.on > a {color: #fa6b0a;}
 .rnSltReg .slt-dep1 {background: #fff;}
-.rnSltReg .slt-dep1 > ul > li.on a:before {content: ""; position: absolute; left: -15px; top: 7px; display: inline-block; width: 10px; height: 11px; background: url(http://img.go.co.kr/renew/rnLSprImg.png) no-repeat -120px -100px;}
+.rnSltReg .slt-dep1 > ul > li.on a:before {content: ""; position: absolute; left: -10px; top: 7px; display: inline-block; width: 10px; height: 11px; background: url(http://img.go.co.kr/renew/rnLSprImg.png) no-repeat -120px -100px;}
 .rnSltReg .slt-dep2 {background: #fafafa; display: none; border-top: 1px solid #d8d8d8;}
 
 /* 유형 */
@@ -656,7 +656,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .price_all_layer_pop .price_all_layer_area {display:inline-block; margin-left:-4px; vertical-align:middle; background-color:#fff; color:#282828;}
 .price_all_layer_pop .price_all_layer_area .price_top {position:relative; padding:20px 10px; background-color:#ffde00;}
 .price_all_layer_pop .price_all_layer_area .price_top .btn-popup-price-close {position:absolute; right:20px; top:50%; margin-top:-12px;}
-.price_all_layer_pop .price_all_layer_area .price_mid {padding:30px 20px 20px;}
+.price_all_layer_pop .price_all_layer_area .price_mid {padding:30px 20px 20px; letter-spacing: -0.2px;}
 .price_all_layer_pop .price_all_layer_area .price_mid .note_txt {font-size:18px; margin-bottom:25px;}
 .price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li {margin-top:10px; text-align:left;}
 .price_all_layer_pop .price_all_layer_area .price_mid .list_guide > li:first-child {margin-top:0;}

@@ -3,11 +3,11 @@
 #Footer {margin-top: 50px;}
 
 /* 결제페이지 너비 조정 */
-.container-pay {width: 1040px; margin-top: 60px;}
+.container-pay {width: 1040px; margin-top: 60px; min-height: 870px;}
 .container-pay > [class*=-pay] {float: left; position: relative;}
 
 .main-pay {width: 670px;}
-.main-pay h2 {font-size: 28px; border-bottom: 2px solid #959da8; padding-bottom: 5px; font-family: "Noto Sans KR", sans-serif;}
+/* .main-pay h2 {font-size: 28px; border-bottom: 2px solid #959da8; padding-bottom: 5px; font-family: "Noto Sans KR", sans-serif;} */
 .main-pay h2 .s-r {margin-top: 15px; font-size: 16px;}
 .main-pay h2 .s-r > span {letter-spacing: -1px; color: #b7b8ba;}
 .main-pay h2 .s-r > span.on {color: #3b67b0;}
@@ -18,7 +18,7 @@
 .tb-info col.nth-2 {width: 85%;}
 .tb-info tbody th, .tb-info tbody td {padding: 10px 0; vertical-align: middle;}
 .tb-info tbody tr:first-child th, .tb-info tbody tr:first-child td {padding-top: 20px;}
-.tb-info tbody th {font-weight: 700;}
+/* .tb-info tbody th {font-weight: 700;} */
 .tb-info .inp, .tb-info select.sel {height: 26px; border: 1px solid #bebebe; font-size: 15px; padding-left: 5px;}
 .tb-info .inp-1 {width: 150px;}
 .tb-info .inp-2 {width: 100px;}
@@ -32,26 +32,28 @@
 .tb-info tbody td.etc .box textarea {width: 100%; height: 80px; border: 1px solid #c8c8c8; background: #fff; padding: 6px 12px; font-size: 13.5px; color: #888; resize: none; color: #333; letter-spacing: 0;}
 .tb-info tbody td.etc .box > div {}
 
-.main-pay h3 {font-size: 22px; font-family: "Noto Sans KR", sans-serif; padding-bottom: 5px; border-bottom: 1px solid #959da8; margin-top: 25px;}
+.main-pay h2,
+.main-pay h3 {font-size: 22px; font-weight: 700; padding-bottom: 5px; border-bottom: 1px solid #c8c8c8; margin-top: 25px;}
+.main-pay h2 {margin-top: 0;}
 
 .way {}
 .way .area-chk {font-size: 15px;}
-.way .area-chk li:first-child {margin-top: 15px;}
-.way .area-chk li {float: left; margin-top: 12px; font-weight: 700;}
-.way .area-chk li.nth-3 {margin-left: 20px;}
-.way .area-chk li.nth-2,
-.way .area-chk li.nth-4 {clear: both;}
-.way .area-chk li.nth-5 {margin-left: 35px;}
+.way .area-chk li {float: left; margin-top: 12px; width: 50%;}
+/* .way .area-chk li:first-child {margin-top: 15px;} */
+/* .way .area-chk li.nth-3 {margin-left: 20px;} */
+/* .way .area-chk li.nth-2,
+.way .area-chk li.nth-4 {clear: both;} */
+/* .way .area-chk li.nth-5 {margin-left: 35px;} */
 .way .area-chk li input {margin-right: 8px;}
 .way .area-txt {clear: both; position: relative; margin-top: 20px;}
-.way .area-txt > li {display: none; background: #fafafa; border: 1px solid #c8c8c8; padding: 10px; font-size: 13px; font-family: "Dotum", sans-serif;}
+.way .area-txt > li {display: none; background: #fafafa; border: 1px solid #c8c8c8; padding: 10px; font-size: 13px; /*font-family: "Dotum", sans-serif;*/}
 .way .area-txt > li.on {display: block;}
-.way .area-txt > li .p-1 {position: relative; padding-left: 10px; letter-spacing: -1px; word-break: keep-all;}
+.way .area-txt > li .p-1 {position: relative; padding-left: 10px; /*letter-spacing: -1px;*/ word-break: keep-all;}
 .way .area-txt > li span.dot {position: absolute; left: 0; top: 0; font-size: 14px; font-weight: 700; font-family: "Nanum Gothic", sans-serif;}
 .way .area-txt > li .borB {border-bottom: 1px solid #333; padding-bottom: 1px;}
 .way .caution {position: relative; margin-top: 20px; padding-top: 20px; border-top: 1px solid #c8c8c8;}
 .way .caution > p {line-height: 1.6;}
-.way .caution > p {position: relative; padding-left: 14px; font-size: 13px; font-family: "Dotum", sans-serif;}
+.way .caution > p {position: relative; padding-left: 14px; font-size: 13px; /*font-family: "Dotum", sans-serif;*/}
 .way .caution span.dot {position: absolute; left: 0; top: 0;}
 .way .caution .c-blue {color: #3b67b0;}
 .way .caution .borB {border-bottom: 1px solid #3b67b0; padding-bottom: 1px;}
@@ -76,6 +78,7 @@
 .rab-pay .area-info-1 .row-num .c-red {font-size: 15px;}
 .rab-pay .area-info-2 .addPack .addName {font-weight: 700; margin-bottom: 5px;}
 .rab-pay .area-info-2 .addPack .sm {font-size: 14px;}
+.rab-pay .area-info-2 .addPack .sm .pull-right {width: 77%; text-align: right;}
 .rab-pay .area-info-3 {margin-top: 15px; padding-top: 10px; padding-bottom: 20px; background: #f5f5f5;}
 .rab-pay .area-info-3 .won {font-size: 17px; font-weight: 700;}
 .rab-pay .area-info-3 .sm {font-size: 14px;}

@@ -98,7 +98,7 @@ $(function() {
             $(this).css({'border-top' : '2px solid #9f7d91'}).next().css({'border-top' : '2px solid #9f7d91'});
             $('#rn-schBox .rn-menu li:first-child').css({'border-top' : '0'});
 
-            $('.rnSltCal, .slt-dep2').hide();
+            //$('.rnSltCal, .slt-dep2').hide();
             $('#rn-schBox .cal-box > div[class*=cal-], #rn-schBox .type-box div[class*=type-], #rn-schBox .reg-box div[class*=reg-]').hide();
 
             $('#rn-schBox .type-box div[class*=type-'+liIdx+']').show();//유형
@@ -225,19 +225,18 @@ $(function() {
 // 페이지 로드마다 메인 배경 및 텍스트 랜덤하게 등장
 function randomBanner(){
 	var mainList = new Array(
-		['지금 예약한다면 슈퍼 그뤠잇!', '여행 가라고 등 떠미는 고코투어 특가!'],
-		['이렇게 아름답고 새로운 봄!', '고코투어 할인쿠폰으로 어디든 떠나세요!'],
-		['제주만의 아름다운 바다와 꽃 !', '제주 유채꽃 축제로 떠나보는 건 어떨까요?'],
-		['봄바람 살랑 살랑~ 어디든 나서야겠죠?', '고코투어의 초특급 할인으로 즐거운 여행'],
-		['두근 두근 가슴설레는 봄바다 !', '고코가 엄선한 테마별 투어를 만나보세요!'],
-		['나의 봄날에 떠나는 여행', '당신의 봄여행에 특별함을 도와드릴게요!'],
-		['봄여행을 특별하게 만드는 방법', '테마 별 다양한 투어 지금 떠나세요!']
+		['눈부신 햇살과 푸른 바다, 제주 !', '아름다운 제주로 떠나보는 건 어떨까요?'],
+		['슬며시 다가오는 나만의 여름 !', '고코투어의 파격 할인으로 신나는 여행'],
+		['기다렸던 특별한 여름휴가 !', '테마 별 다양한 투어를 지금 만나보세요 !'],
+		['여름을 위한 최고의 바다, 동해 !', '고코투어의 추천숙소를 만나보세요 !'],
+		['여름 하늘의 바람과 별은 어떤가요?', '자연과 하나가 되는 캠핑이 영원한 추억이 됩니다.'],
+		['나를 위한 여름휴가여행 !', '고코투어 할인쿠폰으로 어디든 떠나보세요 !']
 	);
 	var randomTxt = Math.floor(Math.random()*mainList.length);
 	var randomNum = Math.floor(randomTxt)+1;
 
 	$('#main-text').find('.s1').text(mainList[randomTxt][0]).end().find('.s2').text(mainList[randomTxt][1]);
-    $('#rnM-mainDoor').css({'background-image': 'url(http://img.go.co.kr/renew/mainDoor_0'+randomNum+'.jpg)', "background-size":"cover"});
+    $('#rnM-mainDoor').css({'background-image': 'url(http://img.go.co.kr/renew/mainDoor/summer/mainDoor_0'+randomNum+'.jpg)', "background-size":"cover"});
 }
 
 function cal_ajax() {

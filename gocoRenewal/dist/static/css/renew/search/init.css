@@ -21,7 +21,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents input[type=text] {}
 
 /***** 콘텐츠 영역 *****/
-.rnL-contents {position: relative; padding-top: 12px; /*width: 1680px;*/}
+.rnL-contents {position: relative; padding-top: 12px; /*width: 1680px;*/ min-height: 1080px;}
 
 .rnL-contents .rnL-listOuter, .rnL-contents .rnL-fOuter {padding-bottom: 62px;}
 
@@ -34,7 +34,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-mOuter {position: relative; display: none;}
 
 /* 필터링*/
-.rnL-contents .rnL-fOuter {position: relative; border-top: 4px solid #fa6b0a; border-left: 1px solid #ddd; background: #f9f9f9; height: 100%; overflow-y: auto;}
+.rnL-contents .rnL-fOuter {position: relative; border-top: 4px solid #fa6b0a; border-left: 1px solid #ddd; border-bottom: 1px solid #ddd; background: #f9f9f9; height: 100%; overflow-y: auto;}
 .rnL-contents .rnL-fOuter .d1 {position: relative; width: 98%; float: right; padding: 20px 3% 20px 1%; font-size: 16px; border-bottom: 1px solid  #e2e2e2; font-size: 0;}
 .rnL-contents .rnL-fOuter .d1.last {padding-bottom: 80px;}
 .rnL-contents .rnL-fOuter h2 {position: relative; color: #333; font-size: 21px; font-weight: 700;}
@@ -67,9 +67,10 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-fOuter .rgBox .lbl.type1 {top: 20px;}
 
 @media (max-width: 1680px) {
-	.rnL-contents .rnL-mfOuter {width: 31% !important;}
+	.rnL-contents .rnL-mfOuter {width: 30% !important;}
 	.rnL-contents .rnL-fOuter .d1 .d1-3,
-	.rnL-contents .rnL-mfOuter .rgBox .lbl + .irs {width: 74% !important; z-index: 0;}
+	.rnL-contents .rnL-mfOuter .rgBox .lbl + .irs {width: 70% !important; z-index: 0;}
+	.rnL-contents .rnL-mfOuter .rgBox .lbl + .irs {width: 61.5% !important;}
 }
 
 /* 좌측 리스트 */
@@ -190,7 +191,7 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 .rnL-contents .rnL-listOuter .room-complete .in-txt.bg {background: #b00000;}
 
 /* fixed 설정 */
-.rnL-header, .rnL-ts, .rnL-ctgr {position: fixed; width: 100%; min-width: 1200px; background: #fff; z-index: 5;}
+.rnL-header, .rnL-ts, .rnL-ctgr {position: fixed; width: 100%; min-width: 1260px; background: #fff; z-index: 5;}
 .rnL-ts {z-index: 6;}
 .rnL-header {top: 0; z-index: 7;}
 .rnL-ts {top: 93px; background: #f2f2f2; /*top: 133px;*/}
@@ -218,7 +219,8 @@ input.chk-cst[type=checkbox] + label.on {background: #fff url(http://img.go.co.k
 
 /* 입장권 콘텐츠 수정 */
 .case-ticket .rnL-contents {/*margin-top: 190px;*/ /*margin-top: 158px;*/}
-.rnSltCal.caltype-1 + .rnSltReg {left: 285px;}
+/*.rnSltCal.caltype-1 + .rnSltReg {left: 285px;}*/
+.rnSltCal.caltype-1 + .rnSltReg {left: 445px;}
 
 /* 입장권 필터 */
 .rnL-ctgr-ticket {position: fixed; /*top: 133px;*/ top: 96px; left: 0; height: 62px; width: 100%; background: #f5f5f5; border-bottom: 1px solid #ddd;}
