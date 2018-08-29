@@ -24,6 +24,9 @@
 
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
     <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css">
     <!-- <link rel="stylesheet" href="http://static.go.co.kr/css/renew/common.css">
 <link rel="stylesheet" href="http://static.go.co.kr/css/renew/mypage/init.css"> -->
     <link rel="stylesheet" href="/static/css/renew/common.css">
@@ -769,149 +772,171 @@
         <div id="backDrop"></div>
 
         <!--전체 콘텐츠 영역-->
-        <div class="rn-contents">
-            <div class="rn-container rn-container02">
-                <!-- 좌측 네비게이션 -->
-                <aside class="lab bsLs">
-                    <h2>마이페이지</h2>
-                    <nav class="lnb">
-                        <ul>
-                            <!-- 활성화페이지 on -->
-                            <li class=""><a href="/views/mypage/index.html">예약 내역 조회</a>
-                            </li>
-                            <li><a href="/views/mypage/index_2.html">적립금 조회</a>
-                            </li>
-                            <li><a href="/views/mypage/index_3.html">쿠폰 조회</a>
-                            </li>
-                            <li><a href="/views/mypage/index_4.html">찜 목록</a>
-                            </li>
-                            <li><a href="/views/mypage/index_5.html">나의 이용후기</a>
-                            </li>
-                            <li><a href="/views/mypage/index_6.html">나의 문의내역</a>
-                            </li>
-                            <li><a href="/views/mypage/index_7.html">무료숙박권 예약</a>
-                            </li>
-                            <li class="type02 on"><a href="/views/mypage/index_8.html">회원 정보관리</a>
-                            </li>
-                            <li class="type02"><a href="">개인 결제창</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="cus-call">
-                        <a href="javascript:;" onclick="clickFn.selfOn('.cus-call')"><span class="i-faqPh"></span> 고객센터 전화문의</a>
-                        <div class="center">
-                            <span class="s-1 f-bd">고코투어 고객센터</span>
-                            <br>
-                            <span class="s-2 thColor1 f-bd">1666-1243</span>
-                            <br>
-                            <span class="s-3">
-
-                주중 09:30~18:00<br>
-
-                주말/공휴일 09:30~17:00
-
-            </span>
-                        </div>
-                    </div>
-                </aside>
-
-
-                <div class="main main-like bsLs">
-                    <section class="sec-cmm cf sec-likHistory">
-                        <h2>찜 목록 <span class="sm">회원님께서 찜하신 관심상품 정보를 확인하실 수 있습니다.</span></h2>
-                        <ul class="row-tab cf">
-                            <li class="tab-1 on">국내시설</li>
-                            <li class="tab-2">해외시설</li>
-                        </ul>
-                        <table class="tb-bk tb-lik">
-                            <colgroup>
-                                <col class="nth-1">
-                                    <col class="nth-2">
-                                        <col class="nth-3">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="nth-1">선택</th>
-                                    <th class="nth-2">상품명</th>
-                                    <th class="nth-3">최저가격</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- 내용 없을 경우 -->
-                                <!-- <tr class="nothing">
-                                    <td colspan="6">
-                                        <p>찜한 상품이 없습니다.</p>
-                                        <p class="row-btn"><a href="" class="a-btn">추천 숙소 보러가기</a></p>
-                                    </td>
-                                </tr> -->
-                                <!-- 내용 있을 경우 -->
-                                <tr>
-                                    <td class="nth-1">
-                                        <input type="checkbox">
-                                    </td>
-                                    <td class="nth-2">
-                                        <figure>
-                                            <img width="138" height="72" alt="" src="http://cache.go.co.kr/media/140/file.go.co.kr/tour/img3/1514427470_main1.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
-                                        </figure>
-                                        <div class="txt cf">
-                                            <p class="p-1 f-bd">[리조트] 오션투유리조트 속초설악비치 호텔앤콘도</p>
-                                            <p class="p-2">
-                                                강원 고성군 죽왕면
-                                                <br>이용후기 <span class="c-blue">1,063</span> 건
-                                            </p>
-                                        </div>
-                                    </td>
-                                    <td class="nth-3" onclick="">
-                                        <div class="c-red f-bd prc">54,000원~</div>
-                                        <a href="" class="btn-bk">예약하기</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="nth-1">
-                                        <input type="checkbox">
-                                    </td>
-                                    <td class="nth-2">
-                                        <figure>
-                                            <img width="138" height="72" alt="" src="http://cache.go.co.kr/media/140/file.go.co.kr/tour/img3/1476348760_main1.jpg" onerror="this.src='http://img.go.co.kr/noimg.jpg'">
-                                        </figure>
-                                        <div class="txt cf">
-                                            <p class="p-1 f-bd">[콘도] 속초현대수콘도미니엄</p>
-                                            <p class="p-2">
-                                                강원 속초시 노학동
-                                                <br>이용후기 <span class="c-blue">282</span> 건
-                                            </p>
-                                        </div>
-                                    </td>
-                                    <td class="nth-3" onclick="">
-                                        <div class="c-red f-bd prc">52,000원~</div>
-                                        <a href="" class="btn-bk">예약하기</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <div class="row-btn-x"><a href="" class="a-btn"><span class="a-i-x a-x"></span>선택상품 삭제</a>
-                        </div>
-
-                        <div class="pagenation" id="pagenation">
-                            <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span><span class="ic-lArrow"></span></a>
-                            <a class="pprev" href="javascript:;"><span class="ic-lArrow"></span></a>
-                            <a class="active" href="javascript:;">1</a>
-                            <a href="javascript:;">2</a>
-                            <a href="javascript:;">3</a>
-                            <a href="javascript:;">4</a>
-                            <a href="javascript:;">5</a>
-                            <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span></a>
-                            <a class="nnext" href="javascript:;"><span class="ic-rArrow"></span><span class="ic-rArrow"></span></a>
-                        </div>
-                    </section>
-
-                </div>
-                <!-- main end -->
+        <!-- <div class="rn-contents">
+            <div class="rn-container rn-container03">
 
             </div>
+        </div> -->
+
+        <!-- 고코 이전 로그 -->
+        <div class="clr"></div>
+        <div id="wrapper" class="noover">
+            <div id="left_mn">
+                <h3>로그인</h3>
+                <h4>로그인<br>&amp;예약/구매조회</h4>
+            </div>
+            <div id="customer">
+                <div class="Login">
+                    <div class="naverLogin" style="margin-top:-20px">
+                        <h4>간단하게 로그인</h4>
+                        <ul class="snsLarge">
+
+                            <li class="naver">
+                                <a href="javascript:n_login2();">
+                                    <img src="http://img.go.co.kr/mobile/n_logo.jpg" width="20">&nbsp;&nbsp;<span>네이버 아이디로 로그인</span>
+                                </a>
+                            </li>
+                            <li class="daum">
+                                <a href="javascript:d_login();">
+                                    <img src="http://img.go.co.kr/mobile/daum_logo.jpg" style="top:12px; left:15px" width="25">&nbsp;&nbsp;<span>다음 아이디로 로그인</span>
+                                </a>
+                            </li>
+                            <li class="kakao">
+                                <a href="javascript:kakaologin();">
+                                    <img src="http://img.go.co.kr/mobile/k2_logo.jpg">&nbsp;&nbsp;<span>카카오톡 아이디로 로그인</span>
+                                </a>
+                            </li>
+                            <li class="facebook">
+                                <a href="javascript:f_login();">
+                                    <img src="http://img.go.co.kr/mobile/f_logo.jpg" width="25">&nbsp;&nbsp;<span>페이스북 아이디로 로그인</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="alert" style="margin-top:15px;margin-bottom:10px;">
+                            <div class="img">
+                                <img src="http://img.go.co.kr/icon_alert.jpg">
+                            </div>
+                            <div class="text">
+                                내 소셜 아이디로 간편하게 고코투어 가입과 로그인이 가능합니다.
+                                <br>
+                                <span>신규가입시 70,000원 쿠폰팩 증정, 결제금액 1% 적립</span>
+                                <br>로그인/회원가입 시 이용약관, 개인정보취급방침에 동의하게 됩니다.
+                                <br>회원가입시 SMS/메일링 수신에 동의합니다.
+                                <br>
+                                <p id="jehu_link" style="margin-top:25px;font-size:16px;margin-left:100px">
+                                    <a href="http://www.go.co.kr/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의"><b>광고/입점/제휴문의 &gt;</b></a>
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line" style="margin-top:-20px"></div>
+                    <div class="member">
+                        <p class="tit2">일반아이디 로그인</p>
+                        <form name="login" id="login" method="post" action="state.php">
+                            <input type="hidden" name="encrypt" value="0">
+                            <input type="hidden" name="mode" value="RREnSjA=">
+
+                            <input type="hidden" name="rtn" id="rtn" value="UVFvMFUyUUpjVlEzQ1FaT0VXNUFNUWcxVVc4PQ==">
+
+                            <input type="hidden" name="member_chk" value="member">
+                            <table style="margin-left:217px">
+                                <colgroup>
+                                    <col width="225">
+                                        <col width="110">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input name="userid" title="아이디" validation="yes" id="userid" type="text" maxlength="40" placeholder="아이디" class="input" tabindex="1" value="">
+                                        </td>
+                                        <td rowspan="2" align="right">
+                                            <p class="btnOK2"><a onclick="utils.inst_fchk('login', 'submit', '');return false;" href="#" tabindex="3">로그인</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input name="passwd" title="비밀번호" validation="yes" id="passwd" type="password" maxlength="15" placeholder="비밀번호" class="input" tabindex="2" onkeypress="if(event.keyCode==13) { utils.inst_fchk('login', 'submit', ''); return false; }">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="position:relative; padding-top:10px;text-align:center">
+                                            <div style="position:absolute; top:22px; left:0; z-index:9999; display:none" id="login_guide">
+                                                <img src="http://img.go.co.kr/alert_login.png">
+                                            </div>
+                                            <input name="auto_login" id="auto_login" type="checkbox" value="Y" onmouseover="util.basic_l_on('login_guide')" onmouseout="util.basic_l_on('login_guide')">
+                                            <label for="auto_login" onmouseover="util.basic_l_on('login_guide')" onmouseout="utils.basic_l_on('login_guide')">로그인 상태 유지</label>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" class="popup">아이디/비밀번호 찾기</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="padding-top:15px;padding-left:80px">
+                                            <span class="googleMini"><a href="javascript:g_login();" title="구글 아이디로 로그인"><img src="http://img.go.co.kr/mobile/g_logo.jpg" width="25"> 구글</a></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </form>
+                    </div>
+
+
+                    <p style="clear:left"></p>
+
+                    <img alt="회원가입혜택" src="http://img.go.co.kr/join_img01.jpg" style="margin-top:20px">
+                </div>
+            </div>
         </div>
+        <div class="clr"></div>
+        <!-- // -->
+
+        <!--- 180828 다음 로그인 종료 안내 --->
+        <section class="wrap-laypop login-daumEnd cf">
+            <div class="bg-back"></div>
+            <div class="area">
+                <div class="area-top"><a href="javascript: ;" onclick="$(this).closest('.login-daumEnd').hide();" class="a-i-x a-x">닫기</a>
+                </div>
+                <div class="area-notice">
+                    <h2>
+
+                        <img src="http://img.go.co.kr/mobile/d_logo.jpg" class="logo-daum">
+
+                        다음 로그인 종료 안내
+
+                    </h2>
+                    <p class="an-p1">
+                        다음서비스를 통한 로그인은 금년 12월말까지만 이용이 가능하며
+                        <br>신규 계정으로도 더 이상 이용이 불가합니다.
+                    </p>
+                    <p class="an-p2">
+                        다음아이디로 로그인을 하셨던 고객님께서는
+                        <br>
+                        <span class="color-1">다른 서비스로의 계정전환이 필요하오니 아래에 준비된<br>
+
+                            서비스계정을 선택 후 계정을 전환하여 주십시오.</span>
+                    </p>
+                </div>
+
+                <div id="snsLogin">
+                    <ul class="snsLarge">
+                        <li class="kakao">
+                            <a href="javascript:;"><span><img src="http://img.go.co.kr/mobile/k_logo.jpg" height="25"><span>카카오톡 아이디로 전환</span></span></a>
+                        </li>
+                        <li class="naver">
+                            <a href="javascript:;"><span><img src="http://img.go.co.kr/mobile/n_logo.jpg" height="20"><span>네이버 아이디로 전환</span></span></a>
+                        </li>
+                        <li class="facebook">
+                            <a href="javascript:;"><span><img src="http://img.go.co.kr/mobile/f_logo.jpg" height="25"><span>페이스북 아이디로 전환</span></span></a>
+                        </li>
+                        <li class="google">
+                            <a href="javascript:;"><span><img src="http://img.go.co.kr/mobile/g_logo.jpg" height="25"><span>구글 아이디로 전환</span></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- // -->
 
         <div id="cancel_pop" style="display: none">
             <div class="member_rsv_complete">

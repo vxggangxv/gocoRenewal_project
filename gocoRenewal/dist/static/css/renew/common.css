@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
+@import url(http://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
 @import url(http://static.go.co.kr/css/faq-v1.1.css);
 /* @import url(../faq-v1.1.css); */
 
@@ -266,7 +268,7 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .rnL-header .d-box .schBox {position: relative; margin-left: 36px; display: inline-block;}
 .rnL-header .d-box .schBox .schBor, .rnL-header .d-box .schBox .schBtn {position: relative; top: 0px; height: 47px; margin-left: -4px;}
 .rnL-header .d-box .schBox .schBor {display: inline-block; border: 2px solid #fa6b0a; width: 350px;}
-.rnL-header .d-box .schBox .schBor input[type=text] {position: relative; display: block; top: 11px; width: 93%; border: none; background: 0; font-size: 18px; outline: none; letter-spacing: 0; margin: 0 auto; color: #555;}
+.rnL-header .d-box .schBox .schBor input[type=text] {position: relative; display: block; top: 11px; width: 93%; border: none; background: 0; font-size: 18px; outline: none; letter-spacing: 0; margin: 0 auto; color: #555; line-height: 1;}
 
 .rnL-header .d-box .schBox .schBtn {display: inline-block; border: 0; width: 47px; background: #fa6b0a;}
 .rnL-header .d-box .schBox .schBtn .i-mag {cursor: pointer;}
@@ -711,3 +713,6 @@ div.pp_default .pp_description {position: relative; top: 4px;}
 .inquiry1on1 .qna_t_write th {text-align:left; background-color:#f2f2f2; border-bottom:#c8c8c8 1px solid;  font-weight:600; padding-left: 20px;}
 .inquiry1on1 .qna_t_write td {padding:5px 10px; border-bottom:#c8c8c8 1px solid}
 .inquiry1on1 .qna_t_write textarea {margin:10px 0 0; padding:10px; width:97%; height:188px; line-height:2; text-align:left; resize: none; color: #737373;}
+
+/* 이전 고코 재수정 */
+#login td {vertical-align: middle;}

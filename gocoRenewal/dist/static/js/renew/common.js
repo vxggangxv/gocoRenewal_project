@@ -107,7 +107,7 @@ $(function() {
 		}
 	});
 	$("#faq .faq_more .btn-q").click(function() {
-		$('#qna-pop-bg').show();
+		$('#qna-pop-bg2').show();
 		return false;
 	});
 	$("#faq .faq_more .btn-x").click(function() {
@@ -155,7 +155,7 @@ function faq(login) {
 	var wrap = $("#faqWrap"),
 		wrapBack = $("#faqWrap-back"),
 		faqBtn = $("#faq-a"),
-		qnaPopBack = $("#qna-pop-bg");
+		qnaPopBack = $("#qna-pop-bg2");
 	faqBtn.on('click', function() {
 		$('body').css({
 			"position": "fixed",
@@ -189,7 +189,7 @@ function faq(login) {
 			wrapBack.hide();
 		}
 	});
-	$("#faqWrap .i-x, #qna-pop-bg .i-x").on('click', function() {
+	$("#faqWrap .i-x, #qna-pop-bg2 .i-x").on('click', function() {
 		$('body').css({
 			"position": "relative",
 			"width": "100%"

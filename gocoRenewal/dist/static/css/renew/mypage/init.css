@@ -564,3 +564,42 @@
 .main-customer .sec-evt .laypop-endEvt .a-x:before, .main-customer .sec-evt .laypop-endEvt .a-x:after {width: 34px; left: 0; top: 15px; background: #222;}
 .main-customer .sec-evt .laypop-endEvt > p {font-size: 22px;}
 .main-customer .sec-evt .laypop-endEvt > p.p-1 {font-size: 37px;}
+
+/* 다음 서비스 계정 전환 */
+.login-daumEnd {position: fixed;}
+.login-daumEnd .area {position: absolute; width: 470px; background: #fff; top: 50%; margin-top: -282px; left: 50%; margin-left: -235px; padding-bottom: 30px; box-sizing: border-box;}
+.login-daumEnd .area .area-top {padding-bottom: 20px;}
+.login-daumEnd .area .a-x {width: 60px; height: 40px; font-size: 18px; line-height: 2.3; color: #8b8b8b; font-family: "NanumSquare", sans-serif; font-weight: 700; top: 5px; padding-left: 22px; box-sizing: border-box;}
+.login-daumEnd .area .a-x:before, .login-daumEnd .area .a-x:after {left: 8px; background: #8b8b8b; width: 2px;}
+.login-daumEnd .area-notice {text-align: center; padding: 20px 0;}
+.login-daumEnd .area-notice * {letter-spacing: -1px;}
+.login-daumEnd .area-notice h2 {color: #4b79e2; font-size: 26px; font-family: "NanumSquare", sans-serif; font-weight: 700; border-bottom: 1px dotted #000; display: inline-block; padding: 8px 0;}
+.login-daumEnd .area-notice h2 .logo-daum {position: relative; display: inline-block; top: -2px; width: 82px; vertical-align: middle; margin-right: 3px;}
+.login-daumEnd .area-notice [class*=an-p] {font-size: 15px; line-height: 1.4;}
+.login-daumEnd .area-notice .an-p1 {margin-top: 12px;}
+.login-daumEnd .area-notice .an-p2 {margin-top: 22px;}
+.login-daumEnd .area-notice .an-p2 .color-1 {color: #ff5400;}
+.login-daumEnd #snsLogin {width: 100%;}
+/* .login-daumEnd #snsLogin h3 {width: 90%; margin: 20px auto 10px;} */
+.login-daumEnd #snsLogin .snsLarge li {line-height: 63px;}
+.login-daumEnd #snsLogin .snsLarge li:first-child {margin-top: -3px;}
+/* .login-daumEnd #snsLogin .snsLarge .google, .login-daumEnd #snsLogin .snsLarge .facebook, .login-daumEnd #snsLogin .snsLarge .naver,
+.login-daumEnd #snsLogin .snsLarge .kakao, .login-daumEnd #snsLogin .snsLarge .daum {background: none; height: auto; margin-bottom: 0; font-size: 16px;} */
+.login-daumEnd #snsLogin .snsLarge li a {display: block; height: auto; padding: 5px 0; width: 320px; color: #fff; font-weight: 700; font-size: 16px; margin: 0 auto; font-weight: 400;}
+.login-daumEnd #snsLogin .snsLarge .kakao a {color: #3b1e1e;}
+.login-daumEnd #snsLogin .snsLarge li a > span {position: relative; display: block; border-radius: 5px; width: 90%; margin: 0 auto; height: 63px; box-sizing: border-box; line-height: 60px; text-align: center; float: none;}
+.login-daumEnd #snsLogin .snsLarge .google a > span {background: #d34836; border: 3px solid #d34836;}
+.login-daumEnd #snsLogin .snsLarge .naver a > span {background: #1ec800; border: 3px solid #1ec800;}
+.login-daumEnd #snsLogin .snsLarge .kakao a > span {background: #fee600; border: 3px solid #fee600;}
+.login-daumEnd #snsLogin .snsLarge .facebook a > span {background: #3b5998; border: 3px solid #3b5998;}
+/* .login-daumEnd #snsLogin .snsLarge .daum {border: none;} */
+.login-daumEnd #snsLogin .snsLarge .daum a > span {border: 3px solid #4681bd;}
+.login-daumEnd #snsLogin .snsLarge .google a > span img {top: 18px;}
+.login-daumEnd #snsLogin .snsLarge .google a > span img {position: absolute; left: 20px; width: 26px;}
+.login-daumEnd #snsLogin .snsLarge .naver a > span img {position: absolute; left: 20px; width: 26px; top: 20px;}
+.login-daumEnd #snsLogin .snsLarge .kakao a > span img {position: absolute; left: 16px; width: 32px;}
+.login-daumEnd #snsLogin .snsLarge .facebook a > span img {position: absolute; left: 17px; width: 26px; top: 17px;}
+/* .login-daumEnd #snsLogin .snsLarge .daum a > span img {position: absolute; left: 20px; width: 25px; top: 18px;} */
+.login-daumEnd #snsLogin .snsLarge li a > span > span {display: block; margin-left: 68px; height: 100%; border-left: 0; float: none; width: auto;}
+.login-daumEnd #snsLogin .snsLarge li a > span > span:after {position: absolute; top: -3px; left: 0px; width: 1px; height: 63px; content: ""; background-color: rgba(0,0,0,.196);}
+/* .login-daumEnd #snsLogin p {width: 90%; margin: 0 auto;} */

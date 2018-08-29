@@ -1,0 +1,163 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/mypage/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/jquery.bxslider.css">
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/libs/prettyPhoto.css">
+
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://static.go.co.kr/css/layout_new3.css">
+    <% include ../parts/head/_commonCss.ejs %>
+    <!-- 별도 css 추가 영역 -->
+    <link rel="stylesheet" href="http://static.go.co.kr/css/renew/laypop/init.css">
+
+    <% include ../parts/head/_headScript.ejs %>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.bxslider.min.js"></script>
+    <script src="http://static.go.co.kr/js/renew/libs/jquery.prettyPhoto.js"></script>
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">고코투어</h1>
+    <div class="rn-gwrap">
+        <% include ../parts/_header.ejs %>
+
+        <!--백드롭, 달력 클릭시 뒤에 전체 배경-->
+		<div id="backDrop"></div>
+
+        <!--전체 콘텐츠 영역-->
+		<!-- <div class="rn-contents">
+            <div class="rn-container rn-container03">
+
+            </div>
+        </div> -->
+
+        <!-- 고코 이전 로그 -->
+        <div class="clr"></div>
+        <div id="wrapper" class="noover">
+            <div id="left_mn">
+        		<h3>로그인</h3>
+        		<h4>로그인<br>&amp;예약/구매조회</h4>
+    		</div>
+            <div id="customer">
+                <div class="Login">
+                    <div class="naverLogin" style="margin-top:-20px">
+                        <h4>간단하게 로그인</h4>
+                        <ul class="snsLarge">
+
+                            <li class="naver"><a href="javascript:n_login2();"><img src="http://img.go.co.kr/mobile/n_logo.jpg" width="20">&nbsp;&nbsp;<span>네이버 아이디로 로그인</span></a></li>
+                            <li class="daum"><a href="javascript:d_login();"><img src="http://img.go.co.kr/mobile/daum_logo.jpg" style="top:12px; left:15px" width="25">&nbsp;&nbsp;<span>다음 아이디로 로그인</span></a></li>
+                            <li class="kakao"><a href="javascript:kakaologin();"><img src="http://img.go.co.kr/mobile/k2_logo.jpg">&nbsp;&nbsp;<span>카카오톡 아이디로 로그인</span></a></li>
+                            <li class="facebook"><a href="javascript:f_login();"><img src="http://img.go.co.kr/mobile/f_logo.jpg" width="25">&nbsp;&nbsp;<span>페이스북 아이디로 로그인</span></a></li>
+                        </ul>
+                        <div class="alert" style="margin-top:15px;margin-bottom:10px;">
+                            <div class="img"><img src="http://img.go.co.kr/icon_alert.jpg"></div>
+                            <div class="text">
+                                내 소셜 아이디로 간편하게 고코투어 가입과 로그인이 가능합니다.<br>
+                                <span>신규가입시 70,000원 쿠폰팩 증정, 결제금액 1% 적립</span><br> 로그인/회원가입 시 이용약관, 개인정보취급방침에 동의하게 됩니다.<br> 회원가입시 SMS/메일링 수신에 동의합니다.
+                                <br>
+                                <p id="jehu_link" style="margin-top:25px;font-size:16px;margin-left:100px">
+                                    <a href="http://www.go.co.kr/home/brd/?dd=QxsoVg==" title="광고/입점/제휴문의"><b>광고/입점/제휴문의 &gt;</b></a>
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line" style="margin-top:-20px"></div>
+                    <div class="member">
+                        <p class="tit2">일반아이디 로그인</p>
+                        <form name="login" id="login" method="post" action="state.php">
+                            <input type="hidden" name="encrypt" value="0">
+                            <input type="hidden" name="mode" value="RREnSjA=">
+
+                            <input type="hidden" name="rtn" id="rtn" value="UVFvMFUyUUpjVlEzQ1FaT0VXNUFNUWcxVVc4PQ==">
+
+                            <input type="hidden" name="member_chk" value="member">
+                            <table style="margin-left:217px">
+                                <colgroup>
+                                    <col width="225">
+                                    <col width="110">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td><input name="userid" title="아이디" validation="yes" id="userid" type="text" maxlength="40" placeholder="아이디" class="input" tabindex="1" value=""></td>
+                                        <td rowspan="2" align="right">
+                                            <p class="btnOK2"><a onclick="utils.inst_fchk('login', 'submit', '');return false;" href="#" tabindex="3">로그인</a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input name="passwd" title="비밀번호" validation="yes" id="passwd" type="password" maxlength="15" placeholder="비밀번호" class="input" tabindex="2" onkeypress="if(event.keyCode==13) { utils.inst_fchk('login', 'submit', ''); return false; }"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="position:relative; padding-top:10px;text-align:center">
+                                            <div style="position:absolute; top:22px; left:0; z-index:9999; display:none" id="login_guide"><img src="http://img.go.co.kr/alert_login.png"></div>
+                                            <input name="auto_login" id="auto_login" type="checkbox" value="Y" onmouseover="util.basic_l_on('login_guide')" onmouseout="util.basic_l_on('login_guide')"> <label for="auto_login" onmouseover="util.basic_l_on('login_guide')"
+                                                onmouseout="utils.basic_l_on('login_guide')">로그인 상태 유지</label>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" class="popup">아이디/비밀번호 찾기</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="padding-top:15px;padding-left:80px">
+                                            <span class="googleMini"><a href="javascript:g_login();" title="구글 아이디로 로그인"><img src="http://img.go.co.kr/mobile/g_logo.jpg" width="25"> 구글</a></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </form>
+                    </div>
+
+
+                    <p style="clear:left"></p>
+
+                    <img alt="회원가입혜택" src="http://img.go.co.kr/join_img01.jpg" style="margin-top:20px">
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+        <!-- // -->
+
+        <!--- 180828 다음 로그인 종료 안내 --->
+		<section class="wrap-laypop login-daumEnd cf">
+            <div class="bg-back"></div>
+			<div class="area">
+                <div class="area-top"><a href="javascript: ;" onclick="$(this).closest('.login-daumEnd').hide();" class="a-i-x a-x">닫기</a></div>
+                <div class="area-notice">
+                    <h2>
+                        <img src="http://img.go.co.kr/mobile/d_logo.jpg" class="logo-daum">
+                        다음 로그인 종료 안내
+                    </h2>
+                    <p class="an-p1">
+                        다음서비스를 통한 로그인은 금년 12월말까지만 이용이 가능하며 <br>
+                        신규 계정으로도 더 이상 이용이 불가합니다.
+                    </p>
+                    <p class="an-p2">
+                        다음아이디로 로그인을 하셨던 고객님께서는<br>
+                        <span class="color-1">다른 서비스로의 계정전환이 필요하오니 아래에 준비된<br>
+                            서비스계정을 선택 후 계정을 전환하여 주십시오.</span>
+                    </p>
+                </div>
+
+                <div id="snsLogin">
+                    <ul class="snsLarge">
+                        <li class="kakao">
+                            <a href="javascript:;"><span><img src="http://img.go.co.kr/mobile/k_logo.jpg" height="25"><span>카카오톡 아이디로 전환</span></span></a>
+                        </li>
+                        <li class="naver">
+                            <a href="javascript:;"><span><img src="http://img.go.co.kr/mobile/n_logo.jpg" height="20"><span>네이버 아이디로 전환</span></span></a>
+                        </li>
+                        <li class="facebook">
+                            <a href="javascript:;"><span><img src="http://img.go.co.kr/mobile/f_logo.jpg" height="25"><span>페이스북 아이디로 전환</span></span></a>
+                        </li>
+                        <li class="google">
+                            <a href="javascript:;"><span><img src="http://img.go.co.kr/mobile/g_logo.jpg" height="25"><span>구글 아이디로 전환</span></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+		</section>
+		<!-- // -->
+
+        <% include ../parts/components/laypop/_cancle.ejs %>
+        <% include ../parts/_footer.ejs %>
+    </div>
+</body>

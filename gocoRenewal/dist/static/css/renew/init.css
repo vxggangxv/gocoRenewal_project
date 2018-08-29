@@ -116,7 +116,7 @@
 
 /* 180514_메인 수정_다솜 */
 .rnM-mainDoor-2 {position: relative; width: 100%; height:635px; background: #eaeaea url(http://img.go.co.kr/renew/mainDoor_01.jpg) no-repeat center 85%; padding-top: 42px;}
-.rnM-mainDoor-2 .main-text {display: block; width: 1067px; margin: 0 auto;}
+.rnM-mainDoor-2 .main-text {display: block; /* width: 1067px; */ margin: 0 auto;}
 .rnM-mainDoor-2 .main-text > span {display: block; margin:0 auto; text-align:center; color: #fff; font-weight: 700; text-shadow: 2px 2px 2px rgba(0,0,0, .6);}
 .rnM-mainDoor-2 .main-text .s1 {font-size: 32px; line-height:43px; letter-spacing: -2px;}
 .rnM-mainDoor-2 .main-text .s2 {font-size: 52px; line-height:70px; letter-spacing: -6px;}
@@ -162,7 +162,7 @@
 .rnM-mainDoor-2 .rnModal-sec .cal-box .d-cmm:first-child .cm-s {border-left:1px solid #c8c8c8;}
 .rnM-mainDoor-2 .rn-schInner .cm-s:after {content: ""; display: inline-block; position: absolute; width: 25px; height: 22px; position: absolute; left:30px; top: 18px; background: url(http://img.go.co.kr/renew/sch_sprt.png) no-repeat center; background-position: -60px 0px;}
 .rnM-mainDoor-2 .rnModal-sec .cal-box .d-cmm:first-child .cm-s:after {background-position: -30px 0px;}
-.rnM-mainDoor-2 .rnSltCal {top:98px; left:0}
+.rnM-mainDoor-2 .rnSltCal {top:101px; left:0}
 
 .rnM-mainDoor-2 .rnModal-sec .type-box {float:left; position:relative; display:inline-block; margin-left:23px;}
 .rnM-mainDoor-2 .rnModal-sec .type-box:after {content:''; display:block; clear:both}
@@ -179,14 +179,26 @@
 .rnM-mainDoor-2 .rnModal-sec .reg-box * {z-index:11}
 .rnM-mainDoor-2 .rnModal-sec .reg-box:before {content:''; display:block; clear:both}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .p1 {overflow:inherit; max-width: 866px; height:98px; border:0}
-.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .p1 {width: 761px;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg {}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] {margin:0 auto; padding:15px 20px 0 40px; border: 1px solid #c8c8c8;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 [class*=slt-dep] {padding: 25px 20px 15px 68px;}
-.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 [class*=slt-dep] {padding: 25px 20px 15px 40px;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul {display:inline-block;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul > li {line-height:16px;}
 .rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 li  {margin:13px 60px 0 0;}
+
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul > li > a {display:inline-block; width:auto; line-height:16px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 > ul > li.on a:before {top:3px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 {border-top:0; /*min-height:100px;*/ background:#fafafa; padding-left: 31px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 li  {margin:13px 40px 0 0;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 a {/*min-width:43px;*/ text-align:left}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 {padding:10px 20px 3px 60px;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 a {min-width:auto;}
+.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 a.on {color: #fa6b0a;}
+
+/* 180803 css 수정 */
+.rnSltReg [class*=slt-dep] > ul > li {text-align:left;}
+.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .p1 {width: 761px;}
+.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 [class*=slt-dep] {padding: 25px 20px 16px 40px;}
 .rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 li  {margin:13px 48px 0 0;}
 .rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep1 li  {margin:13px 40px 0 0;}
 .rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 #single_area {padding: 15px 0px 14px 10px}
@@ -196,16 +208,10 @@
 .rnM-mainDoor-2.type-2 .rnModal-sec .kw-btn.type-2 .kw-txt {position:relative; font-size:20px; font-weight:bold; color:#fff}
 .rnM-mainDoor-2.type-2 .rnModal-sec .kw-btn.type-2 .c-ic {display: inline-block; left: 4px;}
 
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg [class*=slt-dep] > ul > li > a {display:inline-block; width:auto; line-height:16px;}
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep1 > ul > li.on a:before {top:3px;}
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 {border-top:0; /*min-height:100px;*/ background:#fafafa; padding-left: 31px;}
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 li  {margin:13px 40px 0 0;}
 .rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 li  {margin:13px 10px 0 0; min-width: 77px;}
-.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 li  {display: inline-block; min-width: auto; margin:13px 39px 0 0; min-width: 57px;}
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 a {/*min-width:43px;*/ text-align:left}
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 {padding:10px 20px 3px 60px;}
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg.reg-2 .slt-dep2 a {min-width:auto;}
-.rnM-mainDoor-2 .rnModal-sec .reg-box .rnSltReg .slt-dep2 a.on {color: #fa6b0a;}
+.rnM-mainDoor-2.type-2 .rnModal-sec .reg-box .rnSltReg.reg-4 .slt-dep2 li  {display: inline-block; min-width: auto; margin:13px 39px 0 0; min-width: 57px;}
+
+
 
 /* 해외숙박 메인 */
 .rnM-overseas {position: relative; width: 100%; height:284px; background: #eaeaea url(http://img.go.co.kr/renew/subVisual.jpg) no-repeat center; padding-top: 40px;}
